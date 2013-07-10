@@ -1,0 +1,862 @@
+#AREA
+Rosentoe Farm~
+Borodin~
+~
+
+0 0
+0
+#ROOMS
+
+#60000
+Entrance to a Small Field~
+Surveying the farm area, there is a lack of crops in the field off to the
+
+north.  What appears to be a small home stands to the west, showing the
+
+first stages of construction.  To the east, a small patch of weeds cling
+
+to the land, awaiting the plans of the new landholder.  A hastily
+
+constructed, wooden gate protects the entrance to the farm area.
+
+~
+~
+-235405304 2 5 0
+D0
+~
+~
+0 -1 60004 10 10 5
+D1
+~
+~
+0 -1 60001 10 10 5
+D2
+simple, wooden gate~
+wooden gate~
+131 -1 77050 10 10 5
+D3
+~
+~
+0 -1 60002 10 10 5
+E
+wooden gate~
+This simple, wooden gate is made from recently cut birch branches. 
+
+Several lengths of rope hold the branches together in a boxed-z pattern.
+
+~
+-1
+S
+
+#60001
+Amongst the Weeds~
+The hard ground here supports a variety of weeds and bugs, with a tall,
+
+stiff grass dominant.  Far to the north you spy a freshly tilled field,
+
+while to the west is the farm's entrance.  A stone wall lies to the east
+
+and south, dividing the area from the village.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 60003 10 10 5
+D3
+~
+~
+0 -1 60000 10 10 5
+E
+weeds bugs~
+This plant life is untamed and filled with many creeping insects that
+
+call this area home.
+
+~
+E
+south~
+A low, stone wall seperates this farm from the village.
+
+~
+E
+east~
+A low, stone wall seperates this farm from the village.
+
+~
+A
+search~
+grass weeds~
+if( !mob_in_room( 1, room ) ) {
+
+  if( rflag( reset0, room ) ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #search, ch );
+
+    act_notchar( #search2, ch );
+
+    mload( 1, room );
+
+    }
+
+  else {
+
+    act_tochar( #search3, ch );
+
+    act_notchar( #search4, ch );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #search3, ch );
+
+  act_notchar( #search4, ch );
+
+  }
+
+end;
+
+~
+E
+search~
+As you rummage through the growth, you surprise a brown snake, causing it
+
+to come out of hiding.
+
+~
+E
+search2~
+As $n searches the undergrowth, a brown snake slithers out.
+
+~
+E
+search3~
+Your rummaging through the undergrowth provides little entertainment.
+
+~
+E
+search4~
+$n starts playing in the weeds, as you stand watching.
+
+~
+!
+0 0 0
+-1
+S
+
+#60002
+Infrastructure of a Cottage~
+The cottage being built here is truly in its first stages of construction. 
+
+The walls of the house have only been built up a foot high, with room for
+
+the door left in the eastern side.  The floor is partially completed,
+
+with the south west corner lined with large flat stones.  The rest of the
+
+floor is semi-packed earth, awaiting a stone to be fitted to it.  To the
+
+west and south runs the farm's bordering stone wall, over which the
+
+village can be seen.  To the north, a tilled field awaits a crop to be
+
+planted.
+
+~
+~
+-235405312 0 9 0
+D0
+~
+~
+0 -1 60005 10 10 5
+D1
+~
+~
+0 -1 60000 10 10 5
+E
+floor~
+Upon closer examination, you notice the stones of the floor have only
+
+been laid and not sealed, leaving changes still possible.
+
+~
+E
+walls~
+Made from a greyish colored stone bonded with cement, the walls form an
+
+outline of a simple one room home.
+
+~
+E
+south~
+A low, stone wall seperates this farm from the village.
+
+~
+E
+west~
+A low, stone wall seperates this farm from the village.
+
+~
+2348 9 1509949540 3 0
+2349 9 1509949540 3 0
+2349 9 1509949540 3 0
+-1
+S
+
+#60003
+Rubbish~
+Piled all around you are rocks, branches, stumps and weeds liberated from
+
+the fields to the north.  Without much use in building, the piles are
+
+stored here, just in case they may be needed in the future.  Except for
+
+the piles, the ground here is empty and hard packed.  The farm's field is
+
+off to the north, while the farm's stone wall is to the east.
+
+~
+~
+-235405304 2 9 0
+D0
+~
+~
+0 -1 60006 10 10 5
+D2
+~
+~
+0 -1 60001 10 10 5
+D3
+~
+~
+0 -1 60004 10 10 5
+E
+east~
+Looking over the stone wall, a lightly wooded area can be seen.  Past the
+
+woods, the Dakari river flows from north to south.
+
+~
+E
+branches stumps~
+The parts of several trees lie here, removed from the fields to the north.
+
+~
+E
+rocks~
+Piled here are rocks of various shapes and sizes.  Taken from the field
+
+to the north, these rocks are unsuitable for most building projects and
+
+are likely to be removed once construction is complete.
+
+~
+E
+weeds~
+Wilting in the sun, the remains of the northern field's smaller plant
+
+life lie here awaiting proper disposal.
+
+~
+78 17 1509949540 -2 0
+-1
+S
+
+#60004
+Approaching the Field~
+The path you walk on leads from the farm's entrance to the south to its
+
+field to the north.  The ground here is mostly hard packed from the
+
+travel of small feet.  A small patch of wildflowers has been left growing
+
+here, either overlooked by the workers or left to brighten their day. 
+
+Piles of rubbish rest off the the east, while the building materials for
+
+the farm house are to the west.
+
+~
+~
+-235405304 2 9 0
+D0
+~
+~
+0 -1 60007 10 10 5
+D1
+~
+~
+0 -1 60003 10 10 5
+D2
+~
+~
+0 -1 60000 10 10 5
+D3
+~
+~
+0 -1 60005 10 10 5
+E
+wildflowers flowers~
+This patch of flowers is filled with yellows, reds, and violets,
+
+providing a pleasant distraction from the dull colors of construction. 
+
+You notice several small bees are hard at work, harvesting pollen from
+
+the flowers.
+
+~
+-1
+S
+
+#60005
+Clutter of Construction~
+Dominating this area are several piles of properly shaped building rocks
+
+for the home to the south.  Dull grey in color, the rocks are roughly
+
+chiseled to be similar in size.  Other piles of flatter, smoother rocks
+
+are also here, obviously meant for the floor of the home.  In another
+
+neatly arranged pile, the tools for building wait to be used.  Over the
+
+piles to the north, there is the farm's freshly tilled field, while to
+
+the west, several pieces of farming equipment are stored.
+
+~
+~
+-235405304 2 9 0
+D0
+~
+~
+0 -1 60008 10 10 5
+D1
+~
+~
+0 -1 60004 10 10 5
+D2
+~
+~
+0 -1 60002 10 10 5
+D3
+~
+~
+0 -1 60009 10 10 5
+E
+rocks piles~
+These greyish rocks look suitable for building, but not much else.
+
+~
+E
+tools~
+An assortment of hammers, chisels, shovels, and other instruments of
+
+building lie carefully arranged and in plain sight, in order to not be
+
+lost or stepped on by accident.
+
+~
+2350 9 1509949540 3 0
+-1
+S
+
+#60006
+Young Orchard~
+Several young fruit trees have recently been planted here.  Planted in
+
+rows, the trees continue to the north, following the farm wall off to the
+
+east.  A wide variety of trees have been planted, including cherry, pear,
+
+and even lemon trees.  Although not currently bearing fruit, these trees
+
+will soon grow to provide food for the farm.  Off to the west, there is
+
+more field, while to the south is uncultivated land.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 60014 10 10 5
+D2
+~
+~
+0 -1 60003 10 10 5
+D3
+~
+~
+0 -1 60007 10 10 5
+E
+east~
+Looking over the stone wall, a lightly wooded area can be seen.  Past
+
+thewoods, the Dakari river flows from north to south.
+
+~
+2351 9 1509949540 3 0
+-1
+S
+
+#60007
+Tilled Field~
+Freshly turned soil feels spongy beneath your feet, as you wander in the
+
+southern part of this field.  The dirt looks moist still and has an
+
+earthy smell to it.  To the east, there are the beginnings of an
+
+orchard, while to the field for more temporary crops continues to the
+
+north and west.  The entrance of the farm is a ways south of here.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 60013 10 10 5
+D1
+~
+~
+0 -1 60006 10 10 5
+D2
+~
+~
+0 -1 60004 10 10 5
+D3
+~
+~
+0 -1 60008 10 10 5
+-1
+S
+
+#60008
+Tilled Field~
+In sharp contrast to the clutter of building materials to the south, this
+
+area of field is clear of everything but dirt.  Cleared and tilled, the
+
+moist soil here awaits the sowing of seed.  More field can be seen to the
+
+north, east and west.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 60012 10 10 5
+D1
+~
+~
+0 -1 60007 10 10 5
+D2
+~
+~
+0 -1 60005 10 10 5
+D3
+~
+~
+0 -1 60010 10 10 5
+-1
+S
+
+#60009
+Clutter of Farming~
+Bordered on the south and west by the farm's dividing stone wall, this
+
+area has been claimed by the workers clearing the northern field.  The
+
+dominant piece of equipment here is a large, iron plow, with a hitch
+
+about the size for a small horse.  Other farming tools lean up against
+
+the stone wall.  To the east, there are piles of building stones.
+
+~
+~
+-235405304 2 9 0
+D0
+~
+~
+0 -1 60010 10 10 5
+D1
+~
+~
+0 -1 60005 10 10 5
+E
+south west~
+A low, stone wall seperates this farm from the village.
+
+~
+E
+plow~
+Looking to be of good craftmanship, the iron plow is well worn and
+
+slightly rusty.  Considering the time and materials required to make such
+
+an instrument, it is likely used by most of the townsfolk.
+
+~
+E
+tools~
+Hoes, shovels, and assorted axes lean up against the stone wall, waiting
+
+for their next task.
+
+~
+2346 9 1509949540 3 0
+-1
+S
+
+#60010
+Tilled Field~
+Plowed up to the dividing wall to the west, this field awaits planting. 
+
+Curiously, a large rock remains to the north, preventing complete use of
+
+this section as field.  Perhaps the field's caretakers are waiting for
+
+more help to remove the rock.  Idle farm equipment can be seen to the
+
+south, as the moisture slowly evaporates from the tilled earth.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 60011 10 10 5
+D1
+~
+~
+0 -1 60008 10 10 5
+D2
+~
+~
+0 -1 60009 10 10 5
+E
+west~
+Over the dividing wall, you can see a neighboring farmyard.
+
+~
+-1
+S
+
+#60011
+Beside a Large Boulder~
+Before you, a very large boulder rises from the ground, preventing the
+
+ground in this area to be tilled fully.  The boulder has been worn
+
+relatively smooth by the elements except for several deep grooves marring
+
+its surface periodically.  Running close to the boulder, the farm's wall
+
+brackets the boulder on the north and west side.  The tilled ground
+
+continues to both the east and south.
+
+~
+[Narri] decifer -> decipher
+
+~
+-235405312 2 9 0
+D1
+~
+~
+0 -1 60012 10 10 5
+D2
+~
+~
+0 -1 60010 10 10 5
+E
+west north~
+Over the dividing wall, you can see a neighboring farmyard.
+
+~
+E
+boulder rock~
+This large, grey-white rock is smooth to the touch.  Deep grooves appear
+
+periodically around the boulder.  Perhaps a closer examination will prove
+
+informative.
+
+~
+E
+grooves~
+Upon closer examination, the grooves appear to have a pattern to them. 
+
+Although you cannot decipher the runes they form, you are fairly certain
+
+they are from an ancient language, given the condition of the rock.
+
+~
+2301 9 1509949540 3 0
+932 9 1509949540 3 0
+1678 17 1509949540 -2 0
+-1
+S
+
+#60012
+Tilled Field~
+The smell of freshly turned dirt fills the air, while the ground feels
+
+spongy beneath your feet.  It doesn't look like seed has been planted
+
+yet, possibly waiting until the large rock to the west is cleared.  The
+
+field continues to the east and south, while to the far south the land
+
+appears cluttered with objects.
+
+~
+~
+-235405312 2 9 0
+D1
+~
+~
+0 -1 60013 10 10 5
+D2
+~
+~
+0 -1 60008 10 10 5
+D3
+~
+~
+0 -1 60011 10 10 5
+E
+north~
+Just past the dividing wall, you can see the side of the neighboring
+
+farm's barn.
+
+~
+-1
+S
+
+#60013
+Tilled Field~
+Freshly tilled soil covers the ground and gives off an earthy smell. 
+
+Just to the east, some young fruit trees have been planted.  Obviously
+
+the land here is meant for annual vegetables, which have yet to be
+
+planted.  The field continues to the south and west, while the farm wall
+
+stands to the north.
+
+~
+~
+-235405312 2 9 0
+D1
+~
+~
+0 -1 60014 10 10 5
+D2
+~
+~
+0 -1 60007 10 10 5
+D3
+~
+~
+0 -1 60012 10 10 5
+E
+north~
+The view over the north wall shows the edge of the village meeting the
+
+unclaimed forest.
+
+~
+200 9 1509949540 3 0
+-1
+S
+
+#60014
+Young Orchard~
+Rows of young, fruit trees can be seen running from the farm wall to the
+
+north into the southern area of the field.  Still too young to bare much
+
+fruit, these trees will eventually provide enough food for this homestead
+
+to get through the winter months, as well as some to sell in the
+
+marketplace.  Just past the wall to the east, a large oak tree grows, its
+
+branches partially extending over the wall.
+
+~
+~
+-235405312 2 9 0
+D2
+~
+~
+0 -1 60006 10 10 5
+D3
+~
+~
+0 -1 60013 10 10 5
+E
+oak tree~
+This tree is truely a magnificant sight.  Rising up over 70 feet, the
+
+oak provides a great deal of shade, even on this side of the wall.  On
+
+one of the branches just over the wall, you notice an object hanging from
+
+it.
+
+~
+E
+branch object~
+The limb hanging just over the wall appears to have a beehive hanging
+
+from it.  With most of the flowering vegetation removed, the bees will
+
+have to look elsewhere for their pollen.
+
+~
+E
+east~
+The view over the eastern wall is blocked by a towering, oak tree.
+
+~
+E
+north~
+A forested area can be seen over the north wall, yet to be claimed land
+
+outside of the village.
+
+~
+A
+search~
+hive beehive~
+if( find_stat( ch, dex ) > 8 ) {
+
+  if( rflag( reset0, room ) ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #chsearch1, ch );
+
+    act_notchar( #rmsearch1, ch );
+
+    obj_to_char( oload( 3577 ), ch );
+
+    }
+
+  else {
+
+    act_tochar( #chsearch2, ch );
+
+    act_notchar( #rmsearch2, ch );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #chsearch3, ch );
+
+  act_notchar( #rmsearch3, ch );
+
+  }
+
+end;
+
+~
+E
+chsearch1~
+Carefully climbing up the wall, you get within arms reach of the hive. 
+
+Thrusting your hand into the hive, you manage to grab a chunk of
+
+honeycomb.
+
+~
+E
+rmsearch1~
+Curiously, $n climbs up on the wall and reaches into a beehive.
+
+~
+E
+chsearch2~
+After bravely scaling the small wall, you eagerly thrust your hand into
+
+the beehive.  Unfortunately, the bees are not keen on your interest and
+
+begin stinging you.
+
+~
+E
+rmsearch2~
+You marvel as $n scales the dividing wall and starts to investigate a
+
+beehive.  From the look on $s face, you realize $n has made a rather
+
+unpleasant discovery.
+
+~
+E
+chsearch3~
+With your confidence high, you begin to scale the wall.  Unfortunately,
+
+you can not seem to find the right footing and end up where you began.
+
+~
+E
+rmsearch3~
+Oddly, $n approaches the dividing wall and makes a pathetic attempt to
+
+scale it.
+
+~
+E
+chsearch4~
+This task is better preformed after your battle is done.
+
+~
+!
+0 0 0
+A
+climb~
+wall~
+act_tochar( #chclimb1, ch );
+
+end;
+
+~
+E
+chclimb1~
+Aimlessly climbing walls really doesn't get you anywhere.  Perhaps if had
+
+a goal in mind, it might be a worthwile activity.
+
+~
+!
+0 0 0
+932 9 1509949540 3 0
+-1
+S
+
+#0
+

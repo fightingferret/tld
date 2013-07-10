@@ -1,0 +1,1433 @@
+#AREA
+Dwarven Quarry~
+Oaen~
+~
+
+0 0
+3
+#ROOMS
+
+#47500
+A Small Work Area~
+This is a small area, off to one corner in a quarry.  A short table sits
+
+here, covered by various papers being held down by bits of rock.  The
+
+ground is rough hewn stone, an indescernable grey color, and lightly
+
+covered by finely powdered dust.  Small niches are carved into the rock
+
+face to the north.  A small brazier sits haphazardly on a halfling sized
+
+chunk of stone.  A large wooden barrel lying on its corner sits against
+
+the west rock face, kept from rolling away by a tiny bit of rock jammed
+
+under it.  Two ledges run out from this shelf, one heading east, the
+
+other heading south.  Both hug the steep quarry walls tightly.  By the
+
+eastern ledge an easel has been propped against the wall.
+
+~
+~
+-235405311 1 5 0
+D1
+~
+~
+0 -1 47501 10 10 5
+D2
+~
+~
+0 -1 47513 10 10 5
+E
+table~
+A short table, knee high on a human perhaps, but the appropriate height
+
+for one of smaller stature.  It is standing on three rickety legs, the
+
+fourth corner is held up by a long, thin shard of stone, the leg broken
+
+halfway down.  The part of the finish you can see beneath all the papers,
+
+is heavily nicked and scarred.
+
+~
+E
+papers~
+A huge mass of papers, in seeming disorder.  Most of the larger pieces
+
+are held down by various bits of stone, to keep them from blowing around. 
+
+One small stack, near one of the corners, is being held down by a tiny
+
+hamer and chisel.  The papers are covered with strange scribbles,
+
+diagrams, and a runic language you cannot decipher.  The largest paper,
+
+covering most of the center of the table appears to be a map of sorts,
+
+depicting a square area.
+
+~
+E
+niches~
+A series of circular niches, about the same height as the table top, run
+
+across the rock face.  Upon closer examination, each niche is marked by a
+
+short set of runes.  Also, each niche contains what looks like a large
+
+rolled parchment.  There are eight niches in all.
+
+~
+E
+brazier~
+About the size of a small warrior's shield, this iron brazier is balanced
+
+precariously on top of a chunk of rock about as big as a halfling.  Some
+
+attempt was made to keep it from sliding clean off the top, evidenced by
+
+a small bit of stone wedged under one of the stubby legs.  The brazier is
+
+filled with greyish coals, but a small flame still burns brightly in the
+
+center, consuming a small bundle of twigs.
+
+~
+E
+large wood barrel~
+A standard barrel, it looks like it could hold a large amount of liquid. 
+
+It is currently lying on its side, kept from rolling away by a triangle
+
+shaped chunk of stone jammed roughly under it.  A wooden spigot pokes out
+
+from the bottom edge of the sealed lid.  There is a nail hammered into
+
+the top edge of the lid, opposite the spigot.  On the nail hangs a ladle
+
+with a cup size bowl.  A rune has been crudely burned into the center of
+
+the lid, most likely to identify the contents.  Unfortunately, you can
+
+only guess at what it means.
+
+~
+E
+easel~
+An old easel, possibly once used by a great artist, now it serves a more
+
+mundane task.  A large board is setting on it, holding small pieces of
+
+paper, pinned up with small nails.  Most of the notes are covered in
+
+writing, two have pictures instead.
+
+~
+E
+notes~
+List of things that should be fixed/looked at (imnsho):
+
+*Able to look in a container (liquid) to see how full it is.
+
+*Some (all) custom items need a hard look.  *Some are customee only, and
+
+this doesn't make sense, others are not, and should be.
+
+*Weapons need a looksee.  weapons made alike (fe: steel swords) should
+
+all be same level.
+
+*Weapon classes need some major tinkering. Put bluntly, they are useless.
+
+----too much is wrong, highly slanted to swords.
+
+*Help files need fixing/updating.  help metal still needs a little help,
+
+its missing codite.  help files for armor and weapon types/classes should
+
+be added.
+
+
+
+Can a mob check for an object on player, if_true run prog ?
+
+how load equip on mob
+
+need a mprog for mob death, to explain lack of corpse.
+
+~
+E
+pictures~
+There are two pictures posted here.  Actually, they look like they were
+
+deliberately hung rather then mindlessly tacked up.
+
+The first is a picture of a cute redheaded woman and a tall brown haired
+
+man sitting together on the hood of an older, shiny black, four wheel
+
+drive pickup truck.
+
+The second picture is of the same two people and a sports car.  The man
+
+is half out from under the car, a look of surprise on his grease-smeared
+
+face.  The woman is leaning against the driver's door, a look of
+
+amusement on her face.
+
+--
+
+okay so its ooc, it's called artistic liberty ;)
+
+i intend to remove the easel when the zone opens.
+
+~
+2454 9 1509949540 3 0
+-1
+S
+
+#47501
+Northern Rock Ledge~
+This is a stone ledge, carved out of the solid rock of the mountain. 
+
+Smooth to the touch, worn by the elements, the rock face to the north
+
+blends smoothly into the floor beneath you.  The south edge of the ledge
+
+overlooks empty space, a sharp drop into open air a scant pace or two
+
+away.  To the west the ledge meets a platform carved into the rock like
+
+the ledge you stand on, but much wider.  To the east, the ledge follows
+
+the face, rolling in and out as the mountain does.
+
+~
+~
+-235405311 1 5 0
+D1
+~
+~
+0 -1 47502 10 10 5
+D3
+~
+~
+0 -1 47500 10 10 5
+-1
+S
+
+#47502
+Northern Rock Ledge~
+Age old rock forms a ledge beneath you.  Having been carved from the
+
+mountain centuries before, the elements have worn the rock to a fairly
+
+smooth finish.  About two paces wide, the ledge follows the mountain's
+
+face that forms the north edge.  The south edge breaks off into nothing,
+
+forming a straight drop to the depths below.  The ledge continues on to
+
+the east and to the west.
+
+~
+~
+-235405311 1 5 0
+D1
+~
+~
+0 -1 47503 10 10 5
+D3
+~
+~
+0 -1 47501 10 10 5
+-1
+S
+
+#47503
+Northern Rock Ledge~
+A ledge runs beneath you here.  Only a scant pace or two from the rock
+
+that makes the north edge, it drops off into the wide open air.  Having
+
+been cut a long time ago, the constant exposure to the elements has worn
+
+all of the rough, sharp edges away, leaving a mostly smooth surface.  A
+
+few knobs of rock protrude here and there, but they are as worn as the
+
+rest of the area.  The ledge follows the mountain, heading east or west
+
+of where you are now.
+
+~
+~
+-235405311 1 5 0
+D1
+~
+~
+0 -1 47504 10 10 5
+D3
+~
+~
+0 -1 47502 10 10 5
+E
+knobs~
+Several knobby protrusions jut from the face of the stone before you.  If
+
+they weren't so polished smooth it might be possible to climb them.  On
+
+the other hand, maybe they weren't worn by the weather, but the passage
+
+of many hands and feet.
+
+~
+-1
+S
+
+#47504
+Northern Rock Ledge~
+You are on a wide ledge that heads east and west.  To the north, a
+
+vertical stone wall rises up and reaches for the sky.  To the south, a
+
+scant pace away, the ledge falls off into nothing, a short step to a
+
+quick death.  The rough surface of the stone at your feet has been worn
+
+into a smooth track.  A small knob and a slight crack are all that mars
+
+the even surface.
+
+~
+~
+-235405311 1 5 0
+D1
+~
+~
+0 -1 47505 10 10 5
+D3
+~
+~
+0 -1 47503 10 10 5
+E
+knob~
+A small knob of rock sticking up from the otherwise smooth surface. 
+
+Being close the edge of the walkway, should one trip over it it would
+
+likely send them flying out into the open air, no hope of stopping
+
+themself.
+
+~
+E
+crack~
+A thin crack, starting from the adrupt edge and running in on an angle. 
+
+A little shorter then your forearm, it appears to be caused by aging or
+
+possibly something large hitting it on the way over the edge.
+
+~
+-1
+S
+
+#47505
+Northern Rock Ledge~
+A wide ledge runs by here, holding tight to the sheer rock face that
+
+makes the northern edge.  The floor of the ledge, although once rough
+
+cut, has been worn smooth by centuries of exposure to the elements.  A
+
+few paces from the north face, the ledge ends abruptly, leaving you
+
+staring out into open space.  The ledge follows the rock face's curves,
+
+heading west.  To the east a short distance away, you can see a large
+
+section carved into the rock, much like the ledge you are on now.
+
+~
+~
+-235405311 1 5 0
+D1
+~
+~
+0 -1 47506 10 10 5
+D3
+~
+~
+0 -1 47504 10 10 5
+-1
+S
+
+#47506
+A Broad Rock Shelf~
+At your feet is a broad area of stone, cut flat, and worn smooth in
+
+certain areas, most likely by the never-ending passage of feet.  To the
+
+east is a sheer stone wall that soars up to meet the open sky, far above
+
+you.  A stone ledge leaves the platform and heads west.  Another ledge,
+
+identical to the one leading west, heads south.  In the north wall a
+
+large grotto has been carved, its dark maw opening out before you.  A
+
+small stone monolith stands upright by each side of the grotto's mouth.
+
+~
+~
+-235405311 1 5 0
+D0
+~
+~
+0 -1 47529 10 10 5
+D2
+~
+~
+0 -1 47507 10 10 5
+D3
+~
+~
+0 -1 47505 10 10 5
+E
+grotto~
+The large opening before you is only tall enough to allow the passage of
+
+a smaller creature.  However, it is wide enough that several could walk
+
+side by side, without a problem.  A closer look reveals the edges of the
+
+rock have been elegantly carved and decorated.  From the sharpness of the
+
+carvings, you would guess they are more recent than the surrounding area. 
+
+The inky blackness of the tunnel before you isn't as forbidding as much
+
+as it seems abandoned.
+
+~
+-1
+S
+
+#47507
+Eastern Rock Ledge~
+A short ledge, holding tight to the east wall, ends abruptly at a rickety
+
+looking wooden bridge.  A short gap between the end of the stone ledge,
+
+and the start of the wooden planking reveals a sharp jagged edge of stone. 
+
+To the west, the ledge opens out into empty space, an unpleasently long
+
+drop a scant pace or two away.  The stone ledge beneath you is well worn,
+
+especially the center, where one would naturally walk.
+
+~
+~
+-235405311 1 5 0
+D0
+~
+~
+0 -1 47506 10 10 5
+D2
+~
+~
+0 -1 47508 10 10 5
+-1
+S
+
+#47508
+A Short Bridge~
+A small wooden bridge, barely wide enough to let a fat ogre through, and
+
+not nearly sturdy enough to support such a ponderous weight spans a gap
+
+in the stone ledge here.  Rough planking, secured only enough to prevent
+
+its sliding away, spans two equally rough poles.  The whole contraption
+
+is held up by a few iron spikes driven into the shear rock face east of
+
+you.  There is no handrailing, and the west side of this little bridge is
+
+wide open, allowing a quick trip to the bottom, however far down it may
+
+be.
+
+~
+~
+-235405311 1 5 0
+D0
+~
+~
+0 -1 47507 10 10 5
+D2
+~
+~
+0 -1 47509 10 10 5
+-1
+S
+
+#47509
+Eastern Rock Ledge~
+A freshly cut stone ledge edges suddenly, the jagged edge of the stone
+
+meeting a rough wooden bridge.  Chisel marks still show on the stone face
+
+on the east side of the ledge, and the stone beneath you hasn't had time
+
+to wear from the elements yet.  Aside from crossing over the rickety
+
+bridge, or following the ledge south, there is no place else to go.  A
+
+shear stone wall forms an eastern wall, and the west side of the ledge
+
+drops away, yawning out into emptiness.
+
+~
+~
+-235405311 1 5 0
+D0
+~
+~
+0 -1 47508 10 10 5
+D2
+~
+~
+0 -1 47510 10 10 5
+-1
+S
+
+#47510
+Eastern Rock Ledge~
+You are on a wide stone ledge.  Sharp tool marks point to recent work. 
+
+Several chips of rock and bits of debris tell of work done in a hurry. 
+
+Despite the look of recent work, there is a worn section on the floor,
+
+about two paces in from the abrupt edge.  It appears that there has been
+
+a signifigant amount of traffic in the short time this has been here.  To
+
+the west, the ledge falls off into empty air.  To the north, the side of
+
+the mountain begins to close in on the ledge, narrowing the walkway. 
+
+South of you it looks like it meets a corner of some sort.  A few
+
+pinpoints of light in that direction catch your eye.
+
+~
+~
+-235405311 1 5 0
+D0
+~
+~
+0 -1 47509 10 10 5
+D2
+~
+~
+0 -1 47511 10 10 5
+-1
+S
+
+#47511
+Eastern Rock Ledge~
+A wide ledge runs beneath you here, heading north and south.  To the
+
+south it ends at a wider rock outcropping.  To the north it continues on,
+
+holding line with the mountain's stony face.  Rough cut work, not yet
+
+worn by exposure to endless seasons speaks of construction not too long
+
+ago.  A small section has been worn smooth, slightly.  It is the center
+
+of the ledge, sort of like a well traveled path in the woods.  The worn
+
+spot keeps a safe distance from the sheer drop off at the western side of
+
+this ledge.  In fact, it is about an arm's reach from the stone face to
+
+the east.
+
+~
+~
+-235405311 1 5 0
+D0
+~
+~
+0 -1 47510 10 10 5
+D2
+~
+~
+0 -1 47512 10 10 5
+-1
+S
+
+#47512
+Top Of A Stone Ramp~
+You are on a large outcropping that juts from the side of the mountain
+
+before you.  The top surface has been neatly chiseled flat, although it
+
+is still quite rough.  Two ledges lead off the platform, one heads north,
+
+following the east wall of rock.  The second heads west, following the
+
+south wall.  Between them, the outcropping starts to slope, heading down. 
+
+As you look over the edge, you notice the slope increases to form a ramp,
+
+heading down.  Stacked in the far corner are a few small torches and
+
+several handkegs, reeking of oil.  The surface of the rock beneath your
+
+feet, and along the walls is still quite rough, and a few minor
+
+imperfections show the haste of the masons.
+
+~
+~
+-235405311 1 5 0
+D0
+~
+~
+0 -1 47511 10 10 5
+D3
+~
+~
+0 -1 47523 10 10 5
+D5
+~
+~
+0 -1 47524 10 10 5
+A
+~
+~
+act_tochar( #self, ch );
+
+act_notchar( #room, ch );
+
+continue;
+
+~
+E
+~
+new self
+
+delete
+
+~
+E
+self~
+You head down the stone ramp to the lower ledge.
+
+~
+E
+room~
+$n heads down the stone ramp to the ledge below.
+
+~
+!
+3 0 32
+26 17 1509949540 -2 0
+26 17 1509949540 -2 0
+26 17 1509949540 -2 0
+25 17 1509957190 -2 0
+229 17 1509949465 -2 0
+229 17 1509949465 -2 0
+229 17 1509949465 -2 0
+-1
+S
+
+#47513
+Western Rock Ledge~
+A wide stone ledge runs beneath you here.  It's just wide enough for two
+
+people to walk side by side without coming too close the abrupt edge of
+
+the eastern side.  A sheer stone face, rough hewn, but uniformly cut,
+
+rises from the west edge of the ledge, towering far up into the sky.  The
+
+ledge runs north to a corner, as well as continuing on to the south,
+
+hugging tight to the sheer wall.
+
+~
+~
+-235405311 1 5 0
+D0
+~
+~
+0 -1 47500 10 10 5
+D2
+~
+~
+0 -1 47514 10 10 5
+-1
+S
+
+#47514
+Western Rock Ledge~
+You are on a stone ledge, about three paces wide.  A steep stone wall
+
+forms the west edge, while the eastern edge plunges out into the open air. 
+
+The rough surfaces of the stone show chisel marks from some work that has
+
+been done fairly recently.  The ledge continues north and south.  A quick
+
+look at the edge suggests heading east isn't such a good idea.
+
+~
+~
+-235405311 1 5 0
+D0
+~
+~
+0 -1 47513 10 10 5
+D2
+~
+~
+0 -1 47515 10 10 5
+-1
+S
+
+#47515
+Western Rock Ledge~
+This stone ledge looks like it was carved out not too long ago.  The
+
+rough surfaces of the stone haven't yet been worn by the elements, nor
+
+the booted feet of the mine workers.  A cliff-like edge to the east hangs
+
+out into the open.  A vertical wall of uncut stone meets the eastern edge
+
+of this ledge.  The ledge itself runs north and south of you.
+
+~
+~
+-235405311 1 5 0
+D0
+~
+~
+0 -1 47514 10 10 5
+D2
+~
+~
+0 -1 47516 10 10 5
+-1
+S
+
+#47516
+Western Rock Ledge~
+You are on a stone ledge barely several paces wide.  Sharp cut marks,
+
+probably from the miner's chisels, are still well defined on the wall to
+
+the west.  An abrupt edge to the east meets a wide expanse of open air. 
+
+Small piles of rock shards and dust, left after a hasty cleanup most
+
+likely, have been left brushed to the west edge of the ledge.  From the
+
+condition of the rock around you, this is fairly recent construction.
+
+~
+~
+-235405311 1 5 0
+D0
+~
+~
+0 -1 47515 10 10 5
+D2
+~
+~
+0 -1 47517 10 10 5
+-1
+S
+
+#47517
+Western Rock Ledge~
+The rough, unfinished surface of the stone under you causes you to be
+
+extra careful when traversing this ledge.  Small knobs and other
+
+protrusions jut from the wall to the west.  The floor under you has not
+
+been finish cut yet, small pockmarks from the end of the chisel used to
+
+cut it form neat rows from wall across the floor to the edge.  A few bits
+
+and fragments of rock still lay in piles of dust near the edge, waiting
+
+for the wind to carry them away.  The ledge continues north, or heads
+
+south, to what looks like a wider shelf.
+
+~
+~
+-235405311 1 5 0
+D0
+~
+~
+0 -1 47516 10 10 5
+D2
+~
+~
+0 -1 47518 10 10 5
+-1
+S
+
+#47518
+A Large Shelf~
+This is a wide shelf of rock, cut out of the mountain itself.  Roughly
+
+circluar in shape, two ledges run out from it.  One heads north and the
+
+other heads east.  The floor beneath you is still rough near the north
+
+edge, but there is an abrupt line in the middle of the floor where it
+
+steps off slightly, to a much smoother finished floor.  The sheer walls
+
+forming the other edges of this platform are cut the same way.  Except
+
+the line isn't quite as far as the line on the floor.  It also only
+
+reaches a few spans high, letting the natural rock take over from there
+
+on up.
+
+~
+~
+-235405311 1 5 0
+D0
+~
+~
+0 -1 47517 10 10 5
+D1
+~
+~
+0 -1 47519 10 10 5
+-1
+S
+
+#47519
+Southern Rock Ledge~
+A step has been carved into the sheer side of the mountain here.  It
+
+forms a ledge a few paces wide, allowing enough room for two people to
+
+walk next to each other.  Sharp chisel marks on the walls give evidence
+
+to recent construction, recent enough that the weather hasn't had time to
+
+wear them away.  The ledge continues on to the east, and meets a wider
+
+shelf to the west.  The stone face of the mountain forms a wall to the
+
+south, while the north edge looks out into empty space.
+
+~
+~
+-235405311 1 5 0
+D1
+~
+~
+0 -1 47520 10 10 5
+D3
+~
+~
+0 -1 47518 10 10 5
+-1
+S
+
+#47520
+Near A Rock Slide~
+The shelf you are on is nothing more then a large step, a couple of paces
+
+deep.  It comes from the west, and ends before you at a stone wall to the
+
+east.  South of you is the mountain side, almost a perfectly vertical
+
+wall of rock.  To the north, a steep drop awaits anyone foolish enough to
+
+walk off the edge.  The only way off this ledge is to the west, following
+
+the small ledge as it hugs the mountain.  Small bits and pieces of rock
+
+lie about the base of the wall.  Several larger chunks, bigger then your
+
+head, litter the shelf as well.  A much larger slab teeters on the top of
+
+the wall.
+
+~
+remove east exit, make it climbable (climb wall)
+
+~
+-235405311 1 5 0
+D3
+~
+~
+0 -1 47519 10 10 5
+E
+wall~
+A high stone wall that was, quite obviously, meant to hold up to great
+
+stress.  Massive stone buttresses support the wall, each only a hand's
+
+breadth apart.  No seams or cracks show, and the whole wall is the same
+
+rock as the mountain to the south of you.  Perhaps this was carved from
+
+the solid mountain.
+
+~
+E
+slab~
+It's a very large stone slab.  About as big around as several ogres and
+
+at least as tall as two.  The slab is balanced on the edge of the wall,
+
+like it was pushed there by something and left just short of tumbling
+
+down onto the ledge where you are.
+
+~
+A
+climb~
+up wall~
+if( can_fly( ch ) ) {
+
+send_to_char( #fly-u, ch );
+
+act_notchar( #flying-d, ch );
+
+transfer( ch, find_room( 47521 ) );
+
+act_notchar( #flying2-d, ch );
+
+end;
+
+}
+
+if( find_skill( ch, climb ) > random( 8, 10 ) ) {
+
+send_to_char( #succ-d, ch );
+
+act_notchar( #osucc-d, ch );
+
+transfer( ch, find_room( 47521 ) );
+
+act_notchar( #odrop-d, ch );
+
+}
+
+else {
+
+send_to_char( #fail-d, ch );
+
+act_notchar( #failed-d, ch );
+
+end;
+
+}
+
+loop( followers ) {
+
+ch = rch;
+
+acode( room, 1 );
+
+}
+
+~
+E
+fly-u~
+You fly up over the wall.
+
+~
+E
+flying-d~
+$n flies up over the wall.
+
+~
+E
+flying2-d~
+$n comes flying up over the wall.
+
+~
+E
+succ-d~
+You climb up the wall.
+
+~
+E
+osucc-d~
+$n climbs up the wall.
+
+~
+E
+odrop-d~
+$n comes climbing up the wall.
+
+~
+E
+fail-d~
+You try to climb up the wall but you slip off and fall back down.
+
+~
+E
+failed-d~
+$n tries to climb up the wall but falls off a little way up.
+
+~
+!
+0 0 0
+-1
+S
+
+#47521
+A Rock Slide~
+You are in the midst of a massive pile of rock debris.  South of you the
+
+pile is supported by a shear mountain wall.  To the north bits and pieces
+
+of the pile tumble away into nothing, heading for whatever serves as the
+
+ground, far, far below you.  The huge pile is contained from the east and
+
+west by large stone walls, their finished tops just barely peeking out of
+
+the rubble.  Gradual shifting and settling of the rock makes footing very
+
+unsteady.  Occasionally small amounts of rock come plummeting down, from
+
+high above, adding to the already huge pile.
+
+~
+add acodes for falling rock, shifting pile
+
+possible to have player swept away (random check vs str and dex)
+
+more players = more possibility of shift and fall
+
+fail str check = fall
+
+fail dex check = hit by falling debris
+
+remove EW exits. add item resets.
+
+~
+-235405311 1 5 0
+E
+debris rock pile~
+A massive pile of talus, waste rock left over from mining.  Large slabs,
+
+each bigger then several ogres and weighing many tons make up the most of
+
+the pile.  A large amount of smaller debris is mixed in with them. 
+
+Several slabs come to wickedly sharp and jagged points.  The whole pile
+
+is many different types of rock, showing the layers that are stripped
+
+away as operations continue.
+
+~
+A
+climb~
+down wall~
+send_to_char( #which-way, ch );
+
+act_notchar( #rwhich-way, ch );
+
+end;
+
+~
+E
+which-way~
+You look from one side of the rockslide to the other, trying to decide
+
+which way is the best way down.
+
+~
+E
+rwhich-way~
+$n looks around, as if trying to decide which way to go.
+
+~
+!
+0 0 0
+-1
+S
+
+#47522
+Near A Rock Slide~
+You are on a stone ledge, barely wide enough to take more then a few
+
+steps before you reach the northern edge.  An edge that falls off into
+
+empty air.  South of you is the face of the mountain from which the ledge
+
+was carved.  To your west, a massively thick stone wall rises frome ledge
+
+to a height well over your head.  Bits and pieces of stone are scattered
+
+about the base of the wall, like someone spilled a barrow full of stone
+
+fill and neglected to clean it up.  The ledge runs east, staying tight to
+
+the mountain.
+
+~
+remove west exit, make it climbable (climb wall)
+
+~
+-235405311 3 5 0
+D1
+~
+~
+0 -1 47523 10 10 5
+-1
+S
+
+#47523
+Southern Rock Ledge~
+You are on a ledge, recently constructed if the chisel marks on the floor
+
+and wall are any indication.  South of you is the mountain from which the
+
+ledge was carved.  To the north, the ledge ends abruptly, falling out
+
+into empty space, and a long drop to whatever is below.  The ledge heads
+
+east and west of you here.
+
+~
+~
+-235405311 1 5 0
+D1
+~
+~
+0 -1 47512 10 10 5
+D3
+~
+~
+0 -1 47522 10 10 5
+E
+1 east~
+The ledge meets a much wider area, coming to a dead end or a corner, it's
+
+too far to tell from here.
+
+~
+-1
+S
+
+#47524
+Upper Stone Ramp~
+This slope forms a ramp between two ledges.  Carved from the solid stone
+
+of the mountain, it allows passage between the two ledges.  Short stone
+
+walls border each side of the ramp.  The center is worn more then the
+
+rest of the ramp, in two parallel tracks and one wider section in between
+
+the tracks.  Scones are set in the top of the low walls at regular
+
+intervals, each holding a torch meant to be lit should they be needed to
+
+show the way.
+
+~
+~
+-235405311 1 9 0
+D4
+~
+~
+0 -1 47512 10 10 5
+E
+walls~
+The low walls flank the broad ramp, each only about knee-high to a dwarf. 
+
+Mounted in the top surface at regular intervals are metal scones,
+
+designed to hold torches or oil pots.
+
+~
+E
+scones~
+Metal baskets designed to hold burning torches or oil pots for lighting
+
+the way at night.  They are spaced evenly along the stone walls, each
+
+solidly embedded in the top.  The strange thing is they all appear shiny,
+
+the bright polish of recently buffed steel.  Strange because the well
+
+worn stone around them speaks of long time exposure to the elements,
+
+something that should have rusted the scones to nothing by now.
+
+~
+A
+~
+~
+act_tochar( #self, ch );
+
+act_notchar( #room, ch );
+
+continue;
+
+~
+E
+self~
+You head up the stone ramp to the ledge above you.
+
+~
+E
+room~
+$n heads up the stone ramp to the ledge up above.
+
+~
+!
+3 0 16
+-1
+S
+
+#47525
+The Whispering Void~
+You are floating about in a strange gray mist.  There is no sense of
+
+weight, and despite your actions, there is no sense of movement either. 
+
+Soft whispers float about, like the wind lightly rustling through
+
+treetops at night, or a ghost passing nearby.  Due to the lack of
+
+reference points, or feeling of direction, including up or down, you get
+
+disoriented and nausiated looking out into the swirling mist.  Suddenly,
+
+a strange line of pulsing green light slides into view, out of the mists,
+
+forming a square in front of you.
+
+~
+~
+-235405311 1 9 0
+E
+green light line square~
+A strange line of light, as intangable as the rest of the mists, it
+
+somehow manages to look solid.  The line itself forms the border of sorts. 
+
+In the center is a mass of tiny swirling lights.  As you concentrate on
+
+them, they slowly slide together to form writing.
+
+~
+E
+words writing~
+As the green light solidifies and settles into place, you can see it
+
+forms a list.  A list of names and numbers.
+
+You Are Here       Rm 47525
+
+Dwarven Quarry     Rm 47500
+
+Old Stone-Paved Road     Rm 47526
+
+
+In the bottom right corner of the frame is a small blinking box.
+
+~
+E
+small blinking box~
+A little box, about the size of a large thumbprint.  It blinks steadily,
+
+a soft glowing green.
+
+~
+E
+smaller panel~
+A smaller version of the main panel, it contains the same swirling lights
+
+the larger one has as well.  They form a different list though: 
+
+
+vnum 2454 a pech
+
+vnum 2535 a sandling
+
+~
+A
+press push touch~
+small blinking box~
+act_tochar(#panel_out, ch );
+
+~
+E
+panel_out~
+You touch the small blinking box and a smaller panel slides out from the
+
+left side of the main window.
+
+~
+!
+0 0 0
+-1
+S
+
+#47526
+Old Stone-Paved Road~
+You are standing on what used to be a carefully laid stone road.  Each
+
+one of the large, dark blue flagstones is the size of a knight's heavy
+
+shield.  Now, instead of an even surface, the flagstones are buckled,
+
+cracked and broken.  Some are overgrown by mosses, grass, and weeds.  A
+
+few have sunk into the ground, the only evidence they were ever there is
+
+the shallow depression that has been left behind, already grown over by
+
+the grass and weeds.  A small sapling has defiantly shrugged aside two of
+
+the flagstones and is growing up between them.  It appears as though the
+
+forest is trying to reclaim the land.
+
+~
+REDs for flagstones, mosses/grasses/weeds, depressions, sapling 
+
+and all exits
+
+~
+-235405311 1 9 0
+D2
+~
+~
+0 -1 47527 10 10 5
+-1
+S
+
+#47527
+Old Stone-Paved Road~
+The road here is in extremely poor condition, broken and buckled
+
+flagstones are everywhere.  At the edges of the road the flagstones are
+
+being swallowed up, almost literally.  They are tilted down to the
+
+forest, half sunken into the ground already.  A few small shrubs have
+
+made the first advance into the roadway, growing from underneath the
+
+crazily tilted and sunken flagstones.  Tall grass and numerous weeds grow
+
+through the once tight-fitted, but now loose, seams of the roadway.
+
+~
+REDs for flagstones, mosses/grasses/weeds, seams, shrubbery 
+
+and all exits
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 47526 10 10 5
+D2
+~
+~
+0 -1 47528 10 10 5
+-1
+S
+
+#47528
+End of an Old Stone-Paved Road~
+The flagstone road ends here at a tall wall.  A small side road, about
+
+one cart wide, leads off to the east here.  The smaller roadway has been
+
+swallowed up by the forest already, ending a few paces from the main
+
+roadway.  The flagstones here are in as sad a shape as the rest of the
+
+road to the north, a few broken, many tilted and uneven, quite a few
+
+buckled or sunk.  The forest has not stopped its relentless task of
+
+reclaiming the land either, shrubs, a few small saplings, and quite a bit
+
+of small grasses grow throughout this area.  The flagstones come all the
+
+way to meet the wall, and those that meet the gate continue on through,
+
+into the open courtyard you see beyond the gate.
+
+~
+REDs for flagstones, mosses/grasses/weeds, side road, shrubs, sapplings,
+
+wall, gate, courtyard 
+
+and all exits
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 47527 10 10 5
+-1
+S
+
+#47529
+Inside The Grotto~
+Under Construction.
+
+this be the equipment room.
+
+~
+~
+-235405311 1 9 0
+D2
+~
+~
+0 -1 47506 10 10 5
+2589 17 100 -2 0
+25 17 1509949540 -2 0
+26 17 1509949540 -2 0
+1489 17 1509949540 -2 0
+229 17 1509949540 -2 0
+949 17 1509949540 -2 0
+143 17 1509949540 -2 0
+143 17 1509949540 -2 0
+143 17 1509949540 -2 0
+1588 17 1509949540 -2 0
+-1
+S
+
+#0
+

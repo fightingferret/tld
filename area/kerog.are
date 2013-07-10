@@ -1,0 +1,458 @@
+#AREA
+Kerog~
+Ashkai, Marek~
+~
+
+0 0
+0
+#ROOMS
+
+#34750
+Scarlet Altar~
+On all sides and above you you see ancient trees blocking all sight of
+
+what is beyond them.  Before them is a carefully placed ring of stones
+
+worn by the ages.  This obviously is a place of power.  At your feet you
+
+see a blood covered altar made of a strange fiery red stone, that has
+
+fallen into severe disarray.  Upon taking a closer look at the altar, you
+
+see that some of the blood is surprisingly fresh and is running down some
+
+rivulets that are etched into the shape of a sword.  
+
+~
+~
+-235405183 3 5 0
+D0
+~
+~
+0 -1 34756 10 10 5
+E
+bowl bowls~
+The separated bowls are made of stone.  You can see steam rising from the
+
+fresh blood which pools within them.
+
+~
+E
+stones~
+The stones create a semi-circle before the trees.  Perhaps their presence
+
+helps to increase the power of the altar.  The faces of the stones are
+
+pitted from many sword blows.
+
+~
+A
+sacrifice~
+corpse~
+if( has_obj( 10, ch, ) ) {
+
+  if( !obj_in_room( 1496, room ) ) {
+
+    if( rflag( reset1, room ) ) {
+
+      remove_rflag( reset1, room );
+
+      obj = has_obj( 10, ch );
+
+      junk_obj( obj, 1 );
+
+      act_tochar( #sac, ch );
+
+      act_notchar( #rsac, ch );
+
+      wait( 1 );
+
+      send_to_room( #smoke, room );
+
+      wait( 2 );
+
+      send_to_room( #portal, room );
+
+      obj_to_room( oload( 1496 ), room );
+
+      wait( 5 );
+
+      send_to_room( #bye, room );
+
+      obj = obj_in_room( 1496, room );
+
+      junk_obj( obj );
+
+      set_rflag( reset1, room );
+
+      }
+
+    else {
+
+      obj = has_obj( 10, ch );
+
+      act_tochar( #already, ch );
+
+      junk_obj( obj, 1 );
+
+      }
+
+    }
+
+  else {
+
+    obj = has_obj( 10, ch );
+
+    act_tochar( #already, ch );
+
+    junk_obj( obj, 1 );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #nope, ch );
+
+~
+E
+area~
+All of a sudden the whole sky is illuminated as a bright column of flame
+
+rises above the trees to the southwest!  
+
+~
+E
+rsac~
+$n lays a corpse on the altar.
+
+~
+E
+sac~
+You lay the corpse on the altar as a sacrifice to your deity.
+
+~
+E
+smoke~
+The corpse on the altar begins to smoke faintly, wisps of acrid grey
+
+rising from it in billowing tendrils.
+
+~
+E
+already~
+You lay the corpse on the altar, but nothing seems to happen.
+
+~
+E
+nope~
+You don't seem to have a corpse.
+
+~
+E
+portal~
+You step back as a roaring column of flame bursts from the corpse,
+
+blazing high up into the air.  The flames flicker and die again almost
+
+instantly, leaving behind a glimmering portal.
+
+~
+E
+bye~
+The portal flickers then winks out of existence.
+
+~
+!
+0 10 0
+A
+enter~
+portal~
+if( obj_in_room( 1496, room ) ) {
+
+  act_tochar( #enter, ch );
+
+  act_notchar( #renter, ch );
+
+  transfer( ch, find_room( 34000 ) );
+
+  act_notchar( #arrive, ch, );
+
+  obj = obj_in_room( 1496, room );
+
+  }
+
+else
+
+  act_tochar( #nope, ch );
+
+~
+E
+enter~
+Your stomach lurches as you are pulled through the portal to another
+
+place.
+
+~
+E
+renter~
+$n steps into the portal, vanishing from sight.
+
+~
+E
+arrive~
+A portal opens and $n steps out.
+
+~
+E
+nope~
+Nothing found matching 'portal'.
+
+~
+E
+bye~
+The portal flickers then winks out of existence.
+
+~
+!
+0 -1 1
+A
+dr drink~
+bowl bowls blood~
+send_to_char( #char, ch );
+
+act_notchar( #room, ch );
+
+~
+E
+room~
+You gag as you watch $n drink the blood from the bowls.  $n slips into a
+
+slight trance momentarily, then shakes it off.
+
+~
+E
+char~
+You feel empowered by the gods as you quench your thirst with the blood
+
+within the bowls.  Unfortunately, the power subsides just as quickly.
+
+~
+!
+0 0 0
+478 17 1509949540 -2 0
+-1
+S
+
+#34751
+Forest Valley - Faint Path~
+You are on a barely visible path that winds into a dense patch of trees. 
+
+To the north you can see light streaming down, but to the west you can
+
+only see darkness as you approach the center of the thicket.  
+
+~
+put loops here for pets to enter bushes too.
+
+~
+-235405311 3 9 0
+D0
+~
+~
+20 -1 33029 10 10 5
+D1
+~
+~
+0 -1 33026 10 10 5
+D3
+~
+~
+0 -1 34756 10 10 5
+A
+enter~
+bushes~
+act_tochar( #ch, ch );
+
+act_notchar( #room, ch );
+
+transfer( ch, find_room( 34750 ) );
+
+act_notchar( #arr, ch );
+
+~
+E
+arr~
+$n has appeared from nowhere.
+
+~
+E
+room~
+$n fades in to the bright red leaves as if called to another plane.
+
+~
+E
+ch~
+As you step into the bright red leaves, you feel yourself being called to
+
+another place.....  
+
+~
+!
+0 0 0
+755 9 1509949540 3 0
+-1
+S
+
+#34752
+Forrest Path~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D2
+~
+~
+0 -1 34751 10 10 5
+-1
+S
+
+#34754
+Lava Pool~
+As you look around this room you see countless small openings in the
+
+walls, none of which are any bigger than your head.  As you study these
+
+looking for a way out you notice smoke is begining to pour out of each of
+
+the openings.  
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 34754 10 10 5
+D1
+~
+~
+0 -1 34754 10 10 5
+D2
+~
+~
+0 -1 34754 10 10 5
+D3
+~
+~
+0 -1 34754 10 10 5
+A
+~
+~
+if( rflag( reset0, room ) ) {
+
+  send_to_room( #lava, room );
+
+  loop( all_in_room ) {
+
+    dam_element( rch, 5d8, "burning pit of lava", 1 );
+
+    inflict_fire( rch, mob, 5d8, "burning pit of lava" );
+
+    }
+
+  }
+
+~
+E
+lava~
+@RYou scream as the red hot lava sucks you down, burning you slowly to death!!@n
+
+~
+!
+2 1500 0
+A
+~
+~
+act_tochar( "The lava offers no surface to walk on, and you sink back down!", ch );
+
+~
+!
+3 -1 15
+-1
+S
+
+#34755
+Lava Pool~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D2
+~
+~
+0 -1 34754 10 10 5
+-1
+S
+
+#34756
+Forest Path~
+You are on a very faint path in a section of very old trees.  Their
+
+branches are so interwoven by time that no sign of the sky can be seen. 
+
+To the south you can make out a carefully placed ring of stones.  The
+
+trees have encroached on the ring for many years and it looks like it is
+
+a place of ancient times.  
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 34751 10 10 5
+D2
+~
+~
+0 -1 34750 10 10 5
+D3
+~
+~
+0 -1 34757 10 10 5
+E
+south~
+none~
+415 17 1509949540 -2 0
+-1
+S
+
+#34757
+Forest Path~
+The path turns again to follow the river, which in the distance enters
+
+the ring of cliffs surrounding this plateau.  The cliffs are notched by a
+
+small canyon to the south, and the river paces the path to the west.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 34756 10 10 5
+D2
+~
+~
+0 -1 35304 10 10 5
+-1
+S
+
+#0
+

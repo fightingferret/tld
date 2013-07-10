@@ -1,0 +1,1495 @@
+#AREA
+Field of Valor~
+Rhen Cyron~
+~
+
+0 200
+0
+#ROOMS
+
+#41250
+Abandoned Cellar~
+The cellar of the building seems to have survived the fire surprisingly
+
+well.  The braces and beams supporting the roof are only slightly
+
+charred, and the large wine casks resting along the wall are still in one
+
+piece.  Most of the stone walls are covered with black char from the fire. 
+
+The wooden floor seems to have taken the most damage from the fire, as
+
+many of the planks have been severly burned.
+
+~
+~
+-503840768 0 5 0
+D0
+~
+~
+0 -1 41251 10 10 5
+D3
+~
+~
+0 -1 41253 10 10 5
+D4
+~
+~
+0 -1 36302 10 10 5
+E
+wine casks~
+The wooden barrels that house the wine seem very old and smell of aged,
+
+sour wine.  Dark red liquid has stained the surrounding boards upon which
+
+the casks rest.  You notice something glinting behind one of the barrels.
+
+~
+A
+push barrel~
+~
+send_to_char( #c_ring, ch );
+
+act_notchar( #r_ring, ch );
+
+obj_to_char( oload(977),ch );
+
+~
+E
+no_ring~
+You tip the barrel onto its side, but don't find anything.
+
+~
+E
+r_ring~
+$n tips one of the barrels onto its side and seems ecstatic to find a silver ring.
+
+~
+E
+c_ring~
+You tip the barrel onto its side and find a small silver circlet!
+
+~
+!
+0 0 0
+-1
+S
+
+#41251
+Abandoned Cellar~
+Under construction.
+
+~
+~
+-503840767 0 5 0
+D2
+~
+~
+0 -1 41250 10 10 5
+D3
+~
+~
+0 -1 41252 10 10 5
+-1
+S
+
+#41252
+Abandoned Cellar~
+Under Construction.
+
+
+~
+This down exit needs to be hidden and have an action that takes player to
+
+the caves below 
+
+I also want to make the action size restrictive, too small for ogres and
+
+trolls but just fine for everyone else 
+
+~
+-503840767 0 5 0
+D1
+~
+~
+0 -1 41251 10 10 5
+D2
+~
+~
+0 -1 41253 10 10 5
+-1
+S
+
+#41253
+Abandoned Cellar~
+Under Construction.
+
+~
+~
+-503840767 0 5 0
+D0
+~
+~
+0 -1 41252 10 10 5
+D1
+~
+~
+0 -1 41250 10 10 5
+-1
+S
+
+#41254
+Arena of Valor~
+The floor of the arena has been covered with a thin scattering of wood
+
+shavings.  The edges of the arena are defined by two foot tall planks
+
+which seperate the grandstands from the fighting area.
+
+~
+~
+-168296447 11 7 0
+D1
+~
+~
+0 -1 41255 10 10 5
+D2
+~
+~
+0 -1 41256 10 10 5
+-1
+S
+
+#41255
+Arena of Valor~
+The floor of the arena has been covered with a thin scattering of wood
+
+shavings.  The edges of the arena are defined by two foot tall planks
+
+which seperate the grandstands from the fighting area.
+
+~
+~
+-168296427 0 7 0
+D2
+~
+~
+0 -1 41257 10 10 5
+D3
+~
+~
+0 -1 41254 10 10 5
+-1
+S
+
+#41256
+Arena of Valor~
+The floor of the arena has been covered with a thin scattering of wood
+
+shavings.  The edges of the arena are defined by two foot tall planks
+
+which seperate the grandstands from the fighting area.
+
+~
+~
+-168296447 11 7 0
+D0
+~
+~
+0 -1 41254 10 10 5
+D1
+~
+~
+0 -1 41257 10 10 5
+D2
+~
+~
+0 -1 41259 10 10 5
+-1
+S
+
+#41257
+Arena of Valor~
+The floor of the arena has been covered with a thin scattering of wood
+
+shavings.  The edges of the arena are defined by two foot tall planks
+
+which seperate the grandstands from the fighting area.
+
+~
+~
+-168296447 11 7 0
+D0
+~
+~
+0 -1 41255 10 10 5
+D2
+~
+~
+0 -1 41258 10 10 5
+D3
+~
+~
+0 -1 41256 10 10 5
+-1
+S
+
+#41258
+Arena of Valor~
+The floor of the arena has been covered with a thin scattering of wood
+
+shavings.  The edges of the arena are defined by two foot tall planks
+
+which seperate the grandstands from the fighting area.
+
+~
+~
+-168296447 11 7 0
+D0
+~
+~
+0 -1 41257 10 10 5
+D2
+flap~
+flap~
+131 -1 41260 10 10 5
+D3
+~
+~
+0 -1 41259 10 10 5
+A
+1 south~
+~
+if( is_player( ch ) )
+
+  continue;
+
+else {
+
+  act_tochar( #denied , ch );
+
+  end;
+
+  }
+
+~
+E
+denied~
+You cannot leave the arena in your current form.
+
+~
+E
+arrives~
+$n arrives from the north.
+
+~
+!
+0 0 0
+-1
+S
+
+#41259
+Arena of Valor~
+The floor of the arena has been covered with a thin scattering of wood
+
+shavings.  The edges of the arena are defined by two foot tall planks
+
+which seperate the grandstands from the fighting area.
+
+~
+~
+-168296447 11 7 0
+D0
+~
+~
+0 -1 41256 10 10 5
+D1
+~
+~
+0 -1 41258 10 10 5
+-1
+S
+
+#41260
+Tent Entrance~
+White canvas has been stretched along poles lining the east and west to
+
+form an entrance to the large tent tot he north.  Strips of canvas hang
+
+from the sides of the large tent.  A large pole stands in the center of
+
+the entrance to support the canvas which covers it.  A @Rsign@n hangs
+
+from the large center pole.
+
+~
+[Cyron] All ticket codes are acodes.. there is nothing
+
+[Cyron] on the collector (who is a copied med guard, btw).
+
+[Cyron] Activate Acode 6 for Tourneys, using: aset command 1 north
+
+[Cyron] Acode 6 now lets spectators in at any time.
+
+[Cyron] De-activate Acode 8 for tourneys, using: aset command blahblah
+
+~
+-235405309 11 7 0
+D0
+flap~
+flap~
+131 -1 41258 10 10 5
+D2
+~
+~
+0 -1 21086 10 10 5
+D4
+~
+~
+0 -1 41261 10 10 5
+E
+sign~
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+       Welcome to Medienne's Arena of Valor
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+
+You may enter at any time you wish to test your skills and match wits
+
+with your friends or foes.  Admission is free for participants, but
+
+spectator seating will require a white ticket, sold by the entrance
+
+monitor.
+
+
+Tickets for organized events are sold here also.  The color groups are
+
+currently defined as: 
+
+
+Yellow   -    Levels 15 and Under
+
+Green    -    Levels 25 and Under
+
+Blue     -    Levels 35 and Under
+
+Red      -    Levels 60 and Under
+
+~
+A
+admit~
+none~
+mob = mob_in_room( 2395, room );
+
+if( find_stat( ch, level ) < 91 ) {
+
+  act_tochar( #refuse, ch );
+
+  end;
+
+  }
+
+if( rflag( reset0, room ) ) {
+
+  act_tochar( #already, ch );
+
+  end;
+
+  }
+
+else {
+
+  act_tochar( #none_set, ch );
+
+  set_rflag( reset0, room );
+
+  interpret( mob, "say Now denying entry to everyone." );
+
+  }
+
+~
+E
+already~
+Already blocking all entries.
+
+~
+E
+none_set~
+The ticket collector acknowledges your request. Now refusing all tickets.
+
+~
+E
+refuse~
+The ticket collector refuses to take orders from you.
+
+~
+!
+0 0 0
+A
+admit~
+yellow~
+mob = mob_in_room( 2395, room );
+
+if( find_stat( ch, level ) < 91 ) {
+
+  act_tochar( #refuse, ch );
+
+  end;
+
+  }
+
+remove_rflag( reset0, room );
+
+set_rflag( status0, room );
+
+remove_rflag( status1, room );
+
+remove_rflag( status2, room );
+
+act_tochar( #yellow_set, ch );
+
+interpret( mob, "say Now permitting entry for yellow ticket holders and all spectators." );
+
+end;
+
+~
+E
+yellow_set~
+The ticket collector acknowledges your request. Now accepting yellow tickets.
+
+~
+E
+refuse~
+The ticket collector refuses to take orders from you.
+
+~
+!
+0 0 0
+A
+admit~
+green~
+mob = mob_in_room( 2395, room );
+
+if( find_stat( ch, level ) < 91 ) {
+
+  act_tochar( #refuse, ch );
+
+  end;
+
+  }
+
+remove_rflag( reset0, room );
+
+remove_rflag( status0, room );
+
+set_rflag( status1, room );
+
+remove_rflag( status2, room );
+
+act_tochar( #green_set, ch );
+
+interpret( mob, "say Now permitting entry for green ticket holders and all spectators." );
+
+end;
+
+~
+E
+green_set~
+The ticket collector acknowledges your request. Now accepting green tickets.
+
+~
+E
+refuse~
+The ticket collector refuses to take orders from you.
+
+~
+!
+0 0 0
+A
+admit~
+blue~
+mob = mob_in_room( 2395, room );
+
+if( find_stat( ch, level ) < 91 ) {
+
+  act_tochar( #refuse, ch );
+
+  end;
+
+  }
+
+remove_rflag( reset0, room );
+
+remove_rflag( status0, room );
+
+remove_rflag( status1, room );
+
+set_rflag( status2, room );
+
+act_tochar( #blue_set, ch );
+
+interpret( mob, "say Now permitting entry for blue ticket holders and all spectators." );
+
+end;
+
+~
+E
+blue_set~
+The ticket collector acknowledges your request. Now accepting blue tickets.
+
+~
+E
+refuse~
+The ticket collector refuses to take orders from you.
+
+~
+!
+0 0 0
+A
+admit~
+red~
+mob = mob_in_room( 2395, room );
+
+if( find_stat( ch, level ) < 91 ) {
+
+  act_tochar( #refuse, ch );
+
+  end;
+
+  }
+
+remove_rflag( reset0, room );
+
+set_rflag( status0, room );
+
+set_rflag( status1, room );
+
+set_rflag( status2, room );
+
+act_tochar( #red_set, ch );
+
+interpret( mob, "say Now permitting entry for red ticket holders and all spectators." );
+
+end;
+
+~
+E
+red_set~
+The ticket collector acknowledges your request. Now accepting red tickets.
+
+~
+E
+refuse~
+The ticket collector refuses to take orders from you.
+
+~
+!
+0 0 0
+A
+blahblah~
+~
+i = 20;
+
+mob = mob_in_room( 2395, room );
+
+if( has_obj( 3631, ch ) ) {
+
+  act_tochar( #pass_white, ch );
+
+  act_notchar( #rpass_white, ch );
+
+  wait( 1 );
+
+  junk_obj( has_obj( 3631, ch ), 1 );
+
+  act_notchar( #stepin_stands, ch );
+
+  transfer( ch, find_room( 41261 ) );
+
+  act_notchar( #spec_enters, ch );
+
+  }
+
+if( rflag( reset0, room ) ) {
+
+  act_tochar( #deny, ch );
+
+  act_notchar( #rdeny, ch );
+
+  wait( 1 );
+
+  tell( mob, ch, "Only spectators are allowed to pass at this time."  );
+
+  end;
+
+  }
+
+if( !rflag( status0, room ) ) {
+
+  if( !rflag( status1, room ) ) {
+
+    if( !rflag( status2, room ) ) {
+
+      act_notchar( #stepin, ch );
+
+      transfer( ch, find_room( 41258 ) );
+
+      end;
+
+      }
+
+    }
+
+  }
+
+if( rflag( status0, room ) ) {
+
+  if( !rflag( status1, room ) ) {
+
+    if( !rflag( status2, room ) ) {
+
+      if( has_obj( 3624, ch ) ) {
+
+        if( find_stat( ch, level ) <= 15 ) {
+
+          act_tochar( #pass_yellow, ch );
+
+          act_notchar( #rpass_yellow, ch );
+
+          wait( 1 );
+
+          junk_obj( has_obj( 3624, ch ), 1 );
+
+          act_notchar( #stepin, ch );
+
+          transfer( ch, find_room( 41258 ) );
+
+          }
+
+        else {
+
+          act_tochar( #level_deny, ch );
+
+          act_notchar( #rdeny, ch );
+
+          wait( 1 );
+
+          tell( mob, ch, #wrong_color );
+
+          end;
+
+          }
+
+        }
+
+      else {
+
+        act_tochar( #deny, ch );
+
+        act_notchar( #rdeny, ch );
+
+        wait( 1 );
+
+        tell( mob, ch, "I am only granting entry to those with yellow tickets and spectators." );
+
+        end;
+
+        }
+
+      }
+
+    }
+
+  }
+
+if( !rflag( status0, room ) ) {
+
+  if( rflag( status1, room ) ) {
+
+    if( !rflag( status2, room ) ) {
+
+      if( has_obj( 3625, ch ) ) {
+
+        if( find_stat( ch, level ) <= 25 ) {
+
+          act_tochar( #pass_green, ch );
+
+          act_notchar( #rpass_green, ch );
+
+          wait( 1 );
+
+          junk_obj( has_obj( 3625, ch ), 1 );
+
+          act_notchar( #stepin, ch );
+
+          transfer( ch, find_room( 41258 ) );
+
+          }
+
+        else {
+
+          act_tochar( #level_deny, ch );
+
+          act_notchar( #rdeny, ch );
+
+          wait( 1 );
+
+          tell( mob, ch, #wrong_color );
+
+          end;
+
+          }
+
+        }
+
+      else {
+
+        act_tochar( #deny, ch );
+
+        act_notchar( #rdeny, ch );
+
+        wait( 1 );
+
+        tell( mob, ch, "I am only granting entry to those with green tickets and spectators." );
+
+        }
+
+      }
+
+    }
+
+  }
+
+if( !rflag( status0, room ) ) {
+
+  if( !rflag( status1, room ) ) {
+
+    if( rflag( status2, room ) ) {
+
+      if( has_obj( 3626, ch ) ) {
+
+        if( find_stat( ch, level ) <= 35 ) {
+
+          act_tochar( #pass_blue, ch );
+
+          act_notchar( #rpass_blue, ch );
+
+          wait( 1 );
+
+          junk_obj( has_obj( 3626, ch ), 1 );
+
+          act_notchar( #stepin, ch );
+
+          transfer( ch, find_room( 41258 ) );
+
+          }
+
+        else {
+
+          act_tochar( #level_deny, ch );
+
+          act_notchar( #rdeny, ch );
+
+          wait( 1 );
+
+          tell( mob, ch, #wrong_color );
+
+          end;
+
+          }
+
+        }
+
+      else {
+
+        act_tochar( #deny, ch );
+
+        act_notchar( #rdeny, ch );
+
+        wait( 1 );
+
+        tell( mob, ch, "I am only granting entry to those with blue tickets and spectators." );
+
+        }
+
+      }
+
+    }
+
+  }
+
+if( rflag( status0, room ) ) {
+
+  if( rflag( status1, room ) ) {
+
+    if( rflag( status2, room ) ) {
+
+      if( has_obj( 3627, ch ) ) {
+
+        if( find_stat( ch, level ) <= 60 ) {
+
+          act_tochar( #pass_red, ch );
+
+          act_notchar( #rpass_red, ch );
+
+          wait( 1 );
+
+          junk_obj( has_obj( 3627, ch ), 1 );
+
+          act_notchar( #stepin, ch );
+
+          transfer( ch, find_room( 41258 ) );
+
+          }
+
+        else {
+
+          act_tochar( #level_deny, ch );
+
+          act_notchar( #rdeny, ch );
+
+          wait( 1 );
+
+          tell( mob, ch, #wrong_color );
+
+          end;
+
+          }
+
+        }
+
+      else {
+
+        act_tochar( #deny, ch );
+
+        act_notchar( #rdeny, ch );
+
+        wait( 1 );
+
+        tell( mob, ch, "I am only granting entry to those with red tickets and spectators." );
+
+        }
+
+      }
+
+    }
+
+  }
+
+~
+E
+deny~
+The ticket collector steps in front of you, denying entry into the tent.
+
+~
+E
+rdeny~
+The ticket collector steps in front of $n, denying entry into the tent.
+
+~
+E
+pass_yellow~
+You give the ticket collector your yellow ticket, and he allows you to pass.
+
+~
+E
+rpass_yellow~
+$n gives the ticket collector a yellow ticket, and is allowed to pass.
+
+~
+E
+pass_green~
+You give the ticket collector your green ticket, and he allows you to pass.
+
+~
+E
+rpass_green~
+$n gives the ticket collector a green ticket, and is allowed to pass.
+
+~
+E
+pass_blue~
+You give the ticket collector your blue ticket, and he allows you to pass.
+
+~
+E
+rpass_blue~
+$n gives the ticket collector a blue ticket, and is allowed to pass.
+
+~
+E
+pass_red~
+You give the ticket collector your red ticket, and he allows you to pass.
+
+~
+E
+rpass_red~
+$n gives the ticket collector a red ticket, and is allowed to pass.
+
+~
+E
+stepin~
+$n steps through the tent entrance, vanishing from site.
+
+~
+E
+pass_white~
+You give the ticket collector your white ticket, and he directs you to the seating area.
+
+~
+E
+rpass_white~
+$n gives the ticket collector a white ticket, and is allowed to pass.
+
+~
+E
+stepin_stands~
+$n steps through the tent entrance, and heads toward the seating area.
+
+~
+E
+spec_enters~
+$n arrives from the tent entrance below.
+
+~
+E
+level_deny~
+The guard checks your ticket, and notices that you are in the wrong color group.
+
+~
+E
+wrong_color~
+Please see an event organizer about exchanging your ticket for the appropriate color.
+
+~
+!
+0 0 0
+A
+admit~
+all~
+mob = mob_in_room( 2395, room );
+
+if( find_stat( ch, level ) < 91 ) {
+
+  act_tochar( #refuse, ch );
+
+  end;
+
+  }
+
+remove_rflag( reset0, room );
+
+remove_rflag( status0, room );
+
+remove_rflag( status1, room );
+
+remove_rflag( status2, room );
+
+act_tochar( #all_set, ch );
+
+interpret( mob, "say Now permitting entry to everyone." );
+
+end;
+
+~
+E
+all_set~
+The ticket collector acknowledges your request. Now permitting entrance to all.
+
+~
+E
+refuse~
+The ticket collector refuses to take orders from you.
+
+~
+!
+0 0 0
+A
+1 north~
+~
+if( has_obj( 3631, ch ) ) {
+
+  act_tochar( #pass_white, ch );
+
+  act_notchar( #rpass_white, ch );
+
+  wait( 1 );
+
+  junk_obj( has_obj( 3631, ch ), 1 );
+
+  act_notchar( #stepin_stands, ch );
+
+  transfer( ch, find_room( 41261 ) );
+
+  act_notchar( #spec_enters, ch );
+
+  }
+
+else
+
+continue;
+
+~
+E
+pass_white~
+You give the ticket collector your white ticket, and he directs you to the seating area.
+
+~
+E
+rpass_white~
+$n gives the ticket collector a white ticket, and is allowed to pass.
+
+~
+E
+stepin_stands~
+$n steps through the tent entrance, and heads toward the seating area.
+
+~
+E
+spec_enters~
+$n arrives from the tent entrance below.
+
+~
+!
+0 0 0
+2395 9 1509949540 3 0
+3631 17 1509949540 -1 0
+3631 17 1509949540 -1 0
+3624 17 1509949540 -1 0
+3624 17 1509949540 -1 0
+3625 17 1509949540 -1 0
+3625 17 1509949540 -1 0
+3626 17 1509949540 -1 0
+3626 17 1509949540 -1 0
+3627 17 1509949540 -1 0
+3627 17 1509949540 -1 0
+-1
+S
+
+#41261
+Arena Grandstands~
+Rows of seating made of crude wooden planks on a steel frame form a
+
+horseshoe, surrounding all but the entrance side of the Arena of Valor. 
+
+The rows slope steeply upward, providing an excellent vantage point for
+
+the entire field.
+
+~
+~
+-235405307 11 7 0
+D5
+~
+~
+0 -1 41260 10 10 5
+A
+watch~
+~
+act_tochar( #msg, ch );
+
+room = find_room( 41257 );
+
+arena_watch( ch, room );
+
+~
+E
+not_in~
+This command has been temporarily disabled for repair.
+
+~
+E
+msg~
+Type return to stop watching.
+
+~
+!
+0 0 0
+-1
+S
+
+#41262
+Underground Caves~
+Under Construction.
+
+~
+~
+-503840767 11 7 0
+D0
+~
+~
+0 -1 41265 10 10 5
+D3
+~
+~
+0 -1 41263 10 10 5
+-1
+S
+
+#41263
+Underground Caves~
+Under Construction.
+
+~
+~
+-503840767 11 7 0
+D0
+~
+~
+0 -1 41264 10 10 5
+D1
+~
+~
+0 -1 41262 10 10 5
+-1
+S
+
+#41264
+Underground Caves~
+Under Construction.
+
+~
+~
+-503840767 11 7 0
+D1
+~
+~
+0 -1 41265 10 10 5
+D2
+~
+~
+0 -1 41263 10 10 5
+-1
+S
+
+#41265
+Underground Caves~
+Under Construction.
+
+~
+~
+-503840767 11 7 0
+D2
+~
+~
+0 -1 41262 10 10 5
+D3
+~
+~
+0 -1 41264 10 10 5
+-1
+S
+
+#41266
+Underground Caves~
+Under Construction.
+
+~
+~
+-503840767 11 7 0
+D1
+~
+~
+0 -1 41267 10 10 5
+D3
+~
+~
+0 -1 41276 10 10 5
+-1
+S
+
+#41267
+Underground Caves~
+Under Construction.
+
+~
+~
+-503840767 11 7 0
+D1
+~
+~
+0 -1 41268 10 10 5
+D3
+~
+~
+0 -1 41266 10 10 5
+-1
+S
+
+#41268
+Underground Caves~
+Under Construction.
+
+~
+~
+-503840767 11 7 0
+D1
+~
+~
+0 -1 41269 10 10 5
+D3
+~
+~
+0 -1 41267 10 10 5
+-1
+S
+
+#41269
+Underground Caves~
+Under Construction.
+
+~
+~
+-503840767 11 7 0
+D1
+~
+~
+0 -1 41272 10 10 5
+D2
+~
+~
+0 -1 41270 10 10 5
+D3
+~
+~
+0 -1 41268 10 10 5
+-1
+S
+
+#41270
+Underground Caves~
+Under Construction.
+
+~
+~
+-503840767 11 7 0
+D0
+~
+~
+0 -1 41269 10 10 5
+D1
+~
+~
+0 -1 41271 10 10 5
+-1
+S
+
+#41271
+Underground Caves~
+Under Construction.
+
+~
+~
+-503840767 11 7 0
+D0
+~
+~
+0 -1 41272 10 10 5
+D1
+~
+~
+0 -1 41274 10 10 5
+D3
+~
+~
+0 -1 41270 10 10 5
+-1
+S
+
+#41272
+Underground Caves~
+Under Construction.
+
+~
+~
+-503840767 11 7 0
+D1
+~
+~
+0 -1 41273 10 10 5
+D2
+~
+~
+0 -1 41271 10 10 5
+D3
+~
+~
+0 -1 41269 10 10 5
+-1
+S
+
+#41273
+Underground Caves~
+Under Construction.
+
+~
+~
+-503840767 11 7 0
+D2
+~
+~
+0 -1 41274 10 10 5
+D3
+~
+~
+0 -1 41272 10 10 5
+-1
+S
+
+#41274
+Underground Caves~
+Under Construction.
+
+~
+~
+-503840767 11 7 0
+D0
+~
+~
+0 -1 41273 10 10 5
+D3
+~
+~
+0 -1 41271 10 10 5
+-1
+S
+
+#41275
+Arena Grandstands~
+Under Construction.
+
+~
+~
+-235405291 0 9 0
+-1
+S
+
+#41276
+Underground Caves~
+Under Construction.
+
+~
+~
+-503840767 11 7 0
+D1
+~
+~
+0 -1 41266 10 10 5
+D3
+~
+~
+0 -1 41277 10 10 5
+-1
+S
+
+#41277
+Underground Caves~
+Under Construction.
+
+~
+~
+-503840767 11 7 0
+D1
+~
+~
+0 -1 41276 10 10 5
+D2
+~
+~
+0 -1 41278 10 10 5
+D3
+~
+~
+0 -1 41280 10 10 5
+-1
+S
+
+#41278
+Underground Caves~
+Under Construction.
+
+~
+~
+-503840767 11 7 0
+D0
+~
+~
+0 -1 41277 10 10 5
+D3
+~
+~
+0 -1 41279 10 10 5
+-1
+S
+
+#41279
+Underground Caves~
+Under Construction.
+
+~
+~
+-503840767 11 7 0
+D0
+~
+~
+0 -1 41280 10 10 5
+D1
+~
+~
+0 -1 41278 10 10 5
+-1
+S
+
+#41280
+Underground Caves~
+Under Construction.
+
+~
+~
+-503840767 11 7 0
+D1
+~
+~
+0 -1 41277 10 10 5
+D2
+~
+~
+0 -1 41279 10 10 5
+-1
+S
+
+#41281
+Arena Grandstands~
+Under Construction.
+
+~
+~
+-235405291 0 9 0
+-1
+S
+
+#41282
+Underground Caves~
+Under Construction.
+
+~
+~
+-168296447 11 9 0
+-1
+S
+
+#41283
+Arena Grandstands~
+Under Construction.
+
+~
+~
+-235405307 11 9 0
+-1
+S
+
+#0
+

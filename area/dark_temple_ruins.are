@@ -1,0 +1,807 @@
+#AREA
+The Lost Temple~
+Rhen, Cyron~
+~
+
+0 20
+3
+#ROOMS
+
+#78000
+Broken Path~
+Large, vine covered monoliths line an ancient and cracked pathway of
+
+black stone which leads south.  Dead branches and various debris are
+
+scattered about the path.  The path has buckled in places where large
+
+roots from surrounding trees have grown beneath the pavers.
+
+~
+~
+-235405312 3 5 0
+D0
+bushes and vines~
+bush vines~
+163 -1 31138 10 10 5
+D2
+~
+~
+0 -1 78001 10 10 5
+E
+monoliths~
+The monoliths, standing some fifteen feet tall, are covered with vines
+
+and overshadowed by large trees which grows behind them.
+
+~
+A
+move open~
+vines bush north~
+act_tochar( "You find a path through the bushes and vines.", ch );
+
+act_notchar( "$n manages to clear a path through the vines and bushes to the north.", ch );
+
+open( room, north );
+
+~
+!
+0 0 0
+2374 9 1509949540 3 0
+-1
+S
+
+#78001
+Broken Path~
+Several of the stone pavers have crumbled, leaving large indentions in
+
+the path.  Tall, dark monoliths line either side of the pathway and stand
+
+testament to a past glory.
+
+~
+~
+-235405312 3 5 0
+D0
+~
+~
+0 -1 78000 10 10 5
+D2
+~
+~
+0 -1 78002 10 10 5
+-1
+S
+
+#78002
+Broken Path - Intersection~
+The pathway of black stone intersects another pathway of red stone which
+
+runs east and west.  The black pathway continues between the monoliths to
+
+the north and the south.  The red pathway is lined upon either side by
+
+large sandstone columns.
+
+~
+~
+-235405312 3 6 0
+D0
+~
+~
+0 -1 78001 10 10 5
+D1
+~
+~
+0 -1 78004 10 10 5
+D2
+~
+~
+0 -1 78005 10 10 5
+D3
+~
+~
+0 -1 78003 10 10 5
+2374 9 1509949540 3 0
+-1
+S
+
+#78003
+Broken Path~
+The path is paved with red sandstone blocks, most of which are broken and
+
+buckled from the large roots serving the trees beyond the columns.  The
+
+columns lining either side of the path stand some twenty feet tall and
+
+have a diameter of about twelve feet.  The column which once stood to the
+
+north has fallen and now spans the two columns it once stood between.
+
+~
+~
+-235405312 3 5 0
+D1
+~
+~
+0 -1 78002 10 10 5
+D3
+~
+~
+0 -1 78006 10 10 5
+-1
+S
+
+#78004
+Arbored Path~
+Stone arbors span the path from atop the massive columns which line
+
+either side of the path running east and west.  Red sandstone blocks,
+
+most of which are crimbled and broken, cover the path and make the
+
+foundation for the columns.  Thick vines grow along the pavers, wend up
+
+the sides of the columns and grow across the arbors.
+
+~
+~
+-235405312 3 5 0
+D1
+~
+~
+0 -1 78017 10 10 5
+D3
+~
+~
+0 -1 78002 10 10 5
+E
+columns arbor~
+The massive sandstone columns support stone arbors spanning the the path. 
+
+Each column stands about twenty feet tall and has a diameter of about
+
+twelve feet.
+
+~
+-1
+S
+
+#78005
+Overgrown Causeway~
+What once was a paved pathway, is now a causeway through the surrounding
+
+swamp.  Thick vines grow along the waters edge to the east and west. 
+
+Remnants of the stone block which once paved this path, are scattered
+
+about.
+
+~
+~
+-235405312 3 5 0
+D0
+~
+~
+0 -1 78002 10 10 5
+D2
+~
+~
+0 -1 78020 10 10 5
+-1
+S
+
+#78006
+Broken Path~
+The path of red sandstone blocks runs east and west but are somewhat less
+
+buckled as you look west.  Thick vines wend about the columns standing
+
+both north and south.  Branches and leaves are scattered the path and
+
+seem to have fallen from the trees beyond the columns.
+
+~
+~
+-235405312 3 5 0
+D1
+~
+~
+0 -1 78003 10 10 5
+D3
+~
+~
+0 -1 78007 10 10 5
+E
+columns~
+The columns are made of the same red sandstone as the path they line. 
+
+They stand about twenty feet tall and have a diameter of twelve feet.
+
+~
+2374 9 1509949540 3 0
+-1
+S
+
+#78007
+Broken Path~
+The path is littered with a scattering of leaves and branches which seem
+
+to have fallen from the trees beyond the columns to the north and the
+
+south.  Most of the red sandstone pavers are in decent condition but a
+
+few have cracked and crumbled from years of neglect.
+
+~
+~
+-235405312 3 5 0
+D1
+~
+~
+0 -1 78006 10 10 5
+D3
+~
+~
+0 -1 78008 10 10 5
+E
+columns~
+The columns are constructed of red sandstone and stand about twenty feet
+
+tall with a diameter of about twelve feet.
+
+~
+-1
+S
+
+#78008
+Littered Courtyard~
+Massive columns surround an open courtyard containing a murky pool which
+
+occupies the center.  The ground around the pool is covered with the same
+
+red sandstone blocks as the the path leading away from the courtyard. 
+
+Tangles of vines grow along the sides of the columns and along the ground
+
+around the murky pool.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 78009 10 10 5
+D1
+~
+~
+0 -1 78007 10 10 5
+D2
+~
+~
+0 -1 78010 10 10 5
+D3
+~
+~
+0 -1 78011 10 10 5
+2374 9 1509949540 3 0
+-1
+S
+
+#78009
+Ancient Courtyard - Northeast Corner~
+An ancient statue stands in the northeast corner of the courtyard between
+
+two columns that straddle the corner.  Thick vines all but obscure the
+
+statue and cover most of the columns behind it.
+
+~
+~
+-235405312 3 9 0
+D2
+~
+~
+0 -1 78008 10 10 5
+D3
+~
+~
+0 -1 78014 10 10 5
+-1
+S
+
+#78010
+Ancient Courtyard - Southeast Corner~
+Massive columns stand along the eastern and southern edges of a littered
+
+courtyard.  Fallen branches and dead leaves are scattered atop broken and
+
+crumbled blocks made of red sandstone.  The roots of tall trees which
+
+grow behind the columns have buckled some of the blocks.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 78008 10 10 5
+D3
+~
+~
+0 -1 78013 10 10 5
+-1
+S
+
+#78011
+Pool of Murky Water~
+The murky water is littred with years of dead leaves and branches which
+
+have fallen from the surrounding trees.  The water has become so black,
+
+the surface reflects the surroundings much like a mirror.
+
+~
+~
+-235405312 6 5 0
+D0
+~
+~
+0 -1 78014 10 10 5
+D1
+~
+~
+0 -1 78008 10 10 5
+D2
+~
+~
+0 -1 78013 10 10 5
+D3
+~
+~
+0 -1 78012 10 10 5
+-1
+S
+
+#78012
+Pool of Murky Water - Before a Fountain~
+The pool of murky water is littered witht he remains of fallen branches
+
+and dead leaves which has created an enormous amount of debris along the
+
+bottom.  A staue stands in front of the looming wall to the west.
+
+~
+~
+-235405312 6 5 0
+D0
+~
+~
+0 -1 78016 10 10 5
+D1
+~
+~
+0 -1 78011 10 10 5
+D2
+~
+~
+0 -1 78015 10 10 5
+D5
+~
+~
+171 -1 78027 10 10 5
+E
+wall looming~
+The wall is constructed of large blocks carved from red sandstone.  It
+
+looms about forty feet into the air above the pool.
+
+~
+E
+fountain statue~
+The statue stands about seven feet tall and holds an upturned urn which
+
+is slowly filling the pool with a trickle of water.  The statue's eyes
+
+are hollowed as though something once occupied the sockets.
+
+~
+2374 9 1509949540 3 0
+-1
+S
+
+#78013
+Ancient Courtyard - Beside a Murky Pool~
+Massive columns stand before tall trees, both of which line the courtyard
+
+along its southern boundaries.  Red sandstone blocks pave the courtyard
+
+alongside a murky pool outlined by a black stone mantle.  The courtyard
+
+is littered with a scattering of fallen branches and dead leaves.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 78011 10 10 5
+D1
+~
+~
+0 -1 78010 10 10 5
+D3
+~
+~
+0 -1 78015 10 10 5
+-1
+S
+
+#78014
+Ancient Courtyard~
+Massive columns standing along the northern boundary of the courtyard are
+
+flanked by a thick growth of trees.  The yard is littered with fallen
+
+branches and dead leaves.  Some of the pavers have buckled from the
+
+encroaching roots of the trees.  A murky pool framed with a black stone
+
+mantle lies to the south.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 78009 10 10 5
+D2
+~
+~
+0 -1 78011 10 10 5
+D3
+~
+~
+0 -1 78016 10 10 5
+-1
+S
+
+#78015
+Vine Covered Wall~
+An immense, vine covered wall stands along the western edge of the
+
+courtyard.  Massive columns stand in front of a thick growth of trees
+
+which border the south.  Several of red sandstone pavers have buckled
+
+from the encroaching roots of the trees.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 78012 10 10 5
+D1
+~
+~
+0 -1 78013 10 10 5
+2374 9 1509949540 3 0
+-1
+S
+
+#78016
+Vine Covered Wall~
+A wall of red sandstone blocks looms along the western edge of the
+
+courtyard.  Thick vines grow along its surface, obscuring most of the
+
+wall.  A pool of murky water framed with black stone mantle lies to the
+
+south.  Massive columns stand tot he north and are flanked by equally
+
+massive trees.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 78014 10 10 5
+D2
+~
+~
+0 -1 78012 10 10 5
+E
+wall~
+The wall is constructed of huge blocks of red sandstone and stands about
+
+forty feet tall.  The condition of the north end of the wall seems as
+
+though this entire area may have once been surrounded by this wall.
+
+~
+2374 9 1509949540 3 0
+-1
+S
+
+#78017
+Arbored Path~
+Stone arbors span the path from atop the massive columns which line
+
+either side of the path running east and west.  Red sandstone blocks,
+
+buckled from an undergrowth of roots, cover the path and form the
+
+foundation for the columns.  Thick vines grow along the surface of the
+
+pavers and wend up the sides of the columns.  The ruins of a once large
+
+building lie to the south.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 78018 10 10 5
+D2
+~
+~
+0 -1 78022 10 10 5
+D3
+~
+~
+0 -1 78004 10 10 5
+2374 9 1509949540 3 0
+-1
+S
+
+#78018
+Arbored Path~
+Stone arbors span the path atop massive columns which line each side of
+
+the path.  Beyond the columns stand tall trees casting thier shade over
+
+the path.  Some of the red sandstone pavers have buckled from the
+
+encraoching roots of the trees.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 78019 10 10 5
+D3
+~
+~
+0 -1 78017 10 10 5
+-1
+S
+
+#78019
+Crumbled Intersection~
+The path of stone blocks intersects the remains of a huge wall to the
+
+east.  Once, in the distant past, the path continued north and south but
+
+all that remains now are a few crumbled blocks half submerged in the
+
+swamp.  A strange plaque of a face has been set into the wall.
+
+~
+~
+-235405312 3 9 0
+D3
+~
+~
+0 -1 78018 10 10 5
+E
+face plaque~
+The face is that of a demon with two great curved horns atop his head and
+
+four smaller horns growing from his chin.  The face has his mouth wide
+
+open and nothing but blackness can seen within.
+
+~
+A
+3 search~
+mouth~
+~
+!
+0 0 0
+2374 9 1509949540 3 0
+-1
+S
+
+#78020
+Overgrown Causeway~
+The casueway crosses a dark and dank swamp thick with vines and trees. 
+
+The remnants of a building can be seen off in the distance to the west
+
+but the water seems to be too deep to cross.  Stone blacks are scttered
+
+here and there, some still resting in their original placement.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 78005 10 10 5
+-1
+S
+
+#78021
+Before a Large Face~
+The causeway ends at a large wall which extends into the swamp to the
+
+east and west but ends shortly thereafter.  A huge face of black granite
+
+has been set into the vine covered wall.  The path is well covered with
+
+the stone blocks put there centuries ago.  A pedestal of black granite
+
+stands a few feet from the face but directly in front of it.
+
+~
+~
+-235405312 3 9 0
+E
+face wall~
+The face is topped with three horns, the center being the largest, and
+
+has two piercing eyes which seem to have once been painted red.  Two
+
+tusks extend from its closed mouth and a long beard grows from its chin.
+
+~
+2374 9 1509949540 3 0
+2374 9 1509949540 3 0
+-1
+S
+
+#78022
+Stone Ruins~
+All that remains of this once elegant structure are the walls that
+
+defined it.  The tops of trees and open sky can be seen above you where
+
+once a ceiling stood.  The floor is still covered with the stone blocks
+
+laid there centuries ago.  Two alcoves extend from this room to the east
+
+and to the west.
+
+~
+~
+-235405312 3 6 0
+D0
+~
+~
+0 -1 78017 10 10 5
+D1
+~
+~
+0 -1 78024 10 10 5
+D2
+~
+~
+0 -1 78025 10 10 5
+D3
+~
+~
+0 -1 78023 10 10 5
+-1
+S
+
+#78023
+Stone Ruins - Alcove~
+What once occupied this alcove is unclear, the stone floor offers no clue
+
+as to what had possibly sat upon it.  The alcove is set into the wall
+
+about six feet and has an arched ceiling about eight feet high.
+
+~
+~
+-235405312 3 4 0
+D1
+~
+~
+0 -1 78022 10 10 5
+2374 9 1509949540 3 0
+-1
+S
+
+#78024
+Stone Ruins - Alcove~
+What once occupied this room is unclear as the stone fllor offers no clue
+
+as to what had possibly been placed here.  The alcove is set into the
+
+wall about six feet and has an arched ceiling about eight feet high.
+
+~
+~
+-235405312 3 4 0
+D3
+~
+~
+0 -1 78022 10 10 5
+2374 9 1509949540 3 0
+-1
+S
+
+#78025
+Stone Ruins~
+A rather large shell of a room is all that remains of this once huge
+
+domain.  The ceiling has long since decayed and disappeared, leaving a
+
+view of the open sky.  The thick walls of the ancient building stand as
+
+testament to the greatness this building once held.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 78022 10 10 5
+D1
+~
+~
+0 -1 78026 10 10 5
+2374 9 1509949540 3 0
+-1
+S
+
+#78026
+Below a Staircase~
+This hollowed out room has a few windows which look out into the swamp
+
+surrouding the ruins.  A staircase ascends to nowhere along the east
+
+wall, ending where a second level use to be.
+
+~
+~
+-235405312 3 6 0
+D3
+~
+~
+0 -1 78025 10 10 5
+2374 9 1509949540 3 0
+-1
+S
+
+#78027
+Pool of Murky Water - Before a Fountain~
+Under Construction.
+
+~
+~
+-235405312 6 9 0
+D4
+~
+~
+171 -1 78012 10 10 5
+-1
+S
+
+#0
+

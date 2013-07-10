@@ -1,0 +1,2486 @@
+#AREA
+Hidden caves~
+Carth~
+Hidden caves~
+
+5 0
+0
+#ROOMS
+
+#4500
+At the Bottom of the Waterfall~
+The sound of water falling from above into the pool here is almost
+
+deafening.  The pool is deep, but not so deep you have to swim.  To the
+
+north the pool overflows and a river flows north from it.  Looking up,
+
+through the falling water, you can see enough handholds to be able to
+
+climb up through the hole.
+
+~
+~
+-235405312 13 5 0
+D0
+~
+~
+0 -1 4501 10 10 5
+D4
+~
+~
+1024 -1 4502 10 10 5
+A
+up~
+~
+send_to_char( "You look up the hole and realise that climbing will be the only way to get out.", ch );
+
+act_notchar( "$n takes a long, thoughful look up the hole.", ch );
+
+~
+!
+0 0 0
+A
+climb~
+1 up hole~
+if( !is_player( ch ) || find_skill( ch, climb ) ) {
+
+  act_tochar( #start_1, ch );
+
+  act_notchar( #start_2, ch );
+
+  wait( 1 );
+
+  if( random( 1, 10 ) <= 7 ) {
+
+    act_tochar( #worked_1, ch );
+
+    act_notchar( #worked_2, ch );
+
+    transfer( ch, find_room( 4502 ) );
+
+    act_notchar( "Puffing and panting, $n clambers up the hole.", ch );
+
+    }
+
+  else {
+
+    act_tochar( #fail_1, ch );
+
+    act_notchar( #fail_2, ch );
+
+    i = 1d4;
+
+    dam_message( ch, i, "the short fall" );
+
+    inflict( ch, mob, i, "short fall" );
+
+    }
+
+  }
+
+else
+
+  send_to_char( "You lack the skills to climb out of this hole.", ch );
+
+~
+E
+start_1~
+Finding a firm handhold, you start the long climb up.
+
+~
+E
+start_2~
+After finding a suitable handhold, $n begins to climb up.
+
+~
+E
+worked_1~
+Struggling against the water, you finally pull yourself up.
+
+~
+E
+worked_2~
+After struggling against the water, $n finally makes it up the tunnel.
+
+~
+E
+fail_1~
+The water coming through the hole suddenly catches you full in the face. 
+
+Unable to stop yourself, you slip and fall back into the pool.
+
+~
+E
+fail_2~
+$n struggles for a while until, suddenly, the water coming through the
+
+hole catches $m in the face!  With a splash and a thump, $e ends back in
+
+the pool.
+
+~
+!
+0 0 0
+2299 9 1509949540 3 0
+2299 9 1509949540 3 0
+2299 9 1509949490 3 0
+1513 17 1509949540 -2 0
+-1
+S
+
+#4501
+North of the Pool~
+A river flows in from the south then turns east and flows through the
+
+cave.  This cave is huge, its walls and ceiling extending beyond sight. 
+
+Through the gloom a number of stalactites emerge, hanging down over the
+
+water and dripping chalky liquid into it.
+
+~
+~
+-235274236 13 9 0
+D1
+~
+~
+0 -1 4503 10 10 5
+D2
+~
+~
+0 -1 4500 10 10 5
+E
+cave roof ceiling shadows~
+No matter how high you hold your light you cannot pierce the shadows
+
+enough to see the roof of this part of the cave.  The only visible part
+
+is the stalagtites that hang down, almost touching the water.
+
+~
+E
+river~
+The river is shallow here, no thicker than your finger, and it spreads
+
+from wall to wall as it rapidly heads east.
+
+~
+A
+~
+~
+send_to_room( #drip, room );
+
+~
+E
+drip~
+Water drips from one of the stactites into the river.  The splash is loud
+
+enough to startle in the quiet cavern.
+
+~
+!
+2 150 0
+1127 9 1509949540 3 0
+324 17 1509949540 -2 0
+-1
+S
+
+#4502
+Halfway Down the Hole~
+After climbing for a while you find a spot where the rocks are large
+
+enough to rest a while.  Even then, a continuous stream of water from
+
+above forces you to keep close to the walls.  The water splashes around
+
+you, sending up a spray when it hits the few rocks that jut out from the
+
+wall.  Beneath you, and mercifully not too far away, you hear the sound
+
+of the water hitting a pool.  Above you, clear skies beckon.
+
+~
+~
+-235405312 11 5 0
+D4
+~
+~
+1024 -1 4511 10 10 5
+D5
+~
+~
+1024 -1 4500 10 10 5
+E
+rocks walls~
+There are a number of rocks poking out of this narrow tunnel.  There
+
+appear enough to make climbing up or down easy but the water continously
+
+splashes off them making them wet, slippery and treacherous.
+
+~
+A
+climb~
+1 up~
+act_tochar( #up_1, ch );
+
+act_notchar( #up_2, ch );
+
+wait( 1 );
+
+transfer( ch , find_room( 4511 ) );
+
+act_notchar( #up_3, ch );
+
+~
+E
+up_1~
+Struggling against the falling water you carry on up to the surface.
+
+~
+E
+up_2~
+Struggling against the water, $n climbs up to the surface.
+
+~
+E
+up_3~
+$n squeezes out of the sinkhole!
+
+~
+!
+0 0 0
+A
+climb~
+1 down~
+act_tochar( #down_1, ch );
+
+act_notchar( #down_2, ch );
+
+wait( 1 );
+
+transfer( ch, find_room( 4500 ) );
+
+act_notchar( #down_3, ch );
+
+~
+E
+down_1~
+Finding suitable handholds, you carry on down to the pool below.
+
+~
+E
+down_2~
+Carefully looking for handholds, $n climbs down the hole.
+
+~
+E
+down_3~
+Slipping and sliding, $n makes $s way down from the hole above.
+
+~
+!
+0 0 0
+A
+~
+~
+send_to_char( "You will need to climb to go that way!", ch );
+
+~
+!
+3 0 48
+-1
+S
+
+#4503
+Near a Shallow Pool~
+The river splits here, with a smaller stream running through a hole in
+
+the north wall.  Beyond the hole the water collects in a shallow pool. 
+
+The main stream still carries on its east-west course.  To the west,
+
+hanging low over the water, you see a number of large stalactites.
+
+~
+~
+-235274236 13 9 0
+D0
+~
+~
+0 -1 4504 10 10 5
+D1
+~
+~
+0 -1 4505 10 10 5
+D3
+~
+~
+0 -1 4501 10 10 5
+324 17 1509949540 -2 0
+-1
+S
+
+#4504
+A Quiet Pool in the Cave~
+A small rivulet from the stream to the south has formed a pool here.  The
+
+walls of this cave are damp and covered in moss and lichen which shows
+
+that much of this room is often underwater.  A hole in the eastern wall
+
+appears to open into a drier cave system and, to the south, you can see
+
+the main tunnel and the underground stream.
+
+~
+~
+-235274236 13 5 0
+D1
+~
+~
+0 -1 4520 10 10 5
+D2
+~
+~
+0 -1 4503 10 10 5
+E
+moss lichen~
+A think layer of blue-green moss and lichen covers the walls and roof of
+
+this cave.  It is still damp and growing healthily indicating that this
+
+part of the cave was underwater recently.
+
+~
+1127 9 1509949473 3 0
+2299 9 1509949540 3 0
+1513 17 1509949540 -2 0
+-1
+S
+
+#4505
+Deep Water~
+The walls of the tunnel narrow as the passage heads east.  The river
+
+flows east but narrows and deepens as it heads that way.  To the west you
+
+can hear a faint roaring sound of water hitting water.  To the east you
+
+will have to swim.
+
+~
+~
+-235274236 8 9 0
+D1
+~
+~
+0 -1 4506 10 10 5
+D3
+~
+~
+0 -1 4503 10 10 5
+2299 9 1509949540 3 0
+324 17 1509949540 -2 0
+-1
+S
+
+#4506
+West of an Underground Pool~
+The river to the west opens up here to a large pool.  Deep water
+
+stretches away to the east and north.  A sheer rock wall to the south
+
+blocks movement in that direction, its wet walls worn smooth by the
+
+passage of water.  Underfoot you feel small pebbles crunch beneath your
+
+feet.
+
+~
+~
+-235274236 8 9 0
+D0
+~
+~
+0 -1 4507 10 10 5
+D1
+~
+~
+0 -1 4510 10 10 5
+D3
+~
+~
+0 -1 4505 10 10 5
+1127 9 1509949540 3 0
+2299 9 1509949540 3 0
+2299 9 1509949450 3 0
+1513 17 1509949540 -2 0
+-1
+S
+
+#4507
+West of an Underground Pool~
+The eastern current in this part of the pool has worn the northern wall
+
+down until it crumbled and fell into the water.  This created a beach of
+
+pebbles and rocks and revealed a tunnel to the north.  To the west is a
+
+smooth cave wall while to the south and east stretches a large pool of
+
+water.
+
+~
+~
+-235274236 13 9 0
+D0
+~
+~
+0 -1 4512 10 10 5
+D1
+~
+~
+0 -1 4508 10 10 5
+D2
+~
+~
+0 -1 4506 10 10 5
+E
+pool~
+Cold, still water stretches as far south and east as you can see.  There
+
+must be a slight current for the pool isn't still.  Instead, a myriad of
+
+tiny ripples move across it, reflecting any light onto the walls in
+
+strange, flickering patterns.
+
+~
+1513 17 1509949540 -2 0
+-1
+S
+
+#4508
+East of the Pool~
+A large pool stretches to the west and south of here.  To the east is a
+
+hole, large enough for a large humanoid to fit through.  Water flows
+
+through the hole at quite a pace, pulling you in that direction.  To
+
+the west of of the pool you can see the wall has crumbled, creating a
+
+beach of sorts.
+
+~
+~
+-235274236 8 9 0
+D1
+~
+~
+0 -1 4509 10 10 5
+D2
+~
+~
+0 -1 4510 10 10 5
+D3
+~
+~
+0 -1 4507 10 10 5
+E
+hole wall 1 east~
+Water splashes through the hole in the eastern wall at quite a pace.  You
+
+can feel the current pulling your legs strongly in that direction.  A
+
+weak swimmer might have problems getting out of there.
+
+~
+A
+~
+~
+send_to_room( #message, room );
+
+~
+E
+message~
+The current pulls you toward the hole in the eastern wall.  You almost
+
+lose your balance!
+
+~
+!
+2 300 0
+2299 9 1509949540 3 0
+1513 17 1509949540 -2 0
+-1
+S
+
+#4509
+A Whirlpool~
+Water rushes into this chamber from the east.  There are no obvious
+
+exits; the walls are smooth and sheer, worn down by the passage of water.
+
+However, beneath your feet there is a small hole and the water is flowing
+
+into it at quite a rate, creating a whirlpool that tries to suck you down
+
+through the hole.  The only exit you will survive leaving through is to
+
+the west but, swimming against the current will be quite a task.
+
+~
+~
+-235274236 13 9 0
+D3
+~
+~
+0 -1 4508 10 10 5
+A
+~
+~
+if( !is_player( ch ) ) {
+
+  act_notchar( "$n struggles against the current and swims towards the hole.", ch );
+
+  continue;
+
+  }
+
+else {
+
+  i = find_skill( ch, swimming );
+
+  j = random( 1, 10 );
+
+  if( i >= j ) {
+
+    act_tochar( "You struggle against the current and swim towards the hole.", ch );
+
+    continue;
+
+    }
+
+  else {
+
+    act_tochar( "You struggle against the current but fail to make it to the hole.", ch );
+
+    act_notchar("$n tries to swim through the hole, but the current drags $m back", ch );
+
+    }
+
+  }
+
+~
+!
+3 0 8
+2300 9 1509949540 3 0
+1513 17 1509949540 -2 0
+-1
+S
+
+#4510
+East Side of the Underground Pool~
+The southern wall curves round to the east here, its smooth stone, worn
+
+down by the passage of so much water, blocking passage in those
+
+directions.  To the north and west lies a lake of deep, still, cold water. 
+
+A slight current pulls you to the north and, in that direction, you can
+
+hear the sound of moving water.
+
+~
+~
+-235274236 8 9 0
+D0
+~
+~
+0 -1 4508 10 10 5
+D3
+~
+~
+0 -1 4506 10 10 5
+1127 9 1509949540 3 0
+1513 17 1509949540 -2 0
+-1
+S
+
+#4511
+By The Sinkhole~
+After winding its way around the bushes the stream ends here, tumbling
+
+down a sinkhole and out of sight.  The hole is large enough to admit a
+
+humanoid, but going by the edges of rough stone, the climb would be
+
+difficult.  To the north, stretching as far as the eye can see, sage
+
+bushes grow in abundance and fill the air with their scent.  To the south
+
+and east the hills marking the edge of Chiiron valley stretch, towering
+
+above your head.
+
+~
+~
+-235405312 8 9 0
+D3
+~
+~
+0 -1 24043 10 10 5
+D5
+~
+~
+1024 -1 4502 10 10 5
+E
+sage bushes~
+Sage bushes spread to the north as far as you can see.  When the wind
+
+turns in your direction it carries their heavy scent.  A few bees move
+
+from bush to bush adding their gentle buzzing to the other sounds of
+
+wildlife.
+
+~
+E
+cliffs east south~
+Lush, green and steep, the valley walls stretch to the east and south. 
+
+The grass growing upon them is too short for you to get a handhold.
+
+~
+E
+sinkhole hole down~
+With a splash and gurgle, the stream dissappears down the hole.  Going by
+
+the splashing sounds the hole would seem quite deep.  A close inspection
+
+of the edges reveals rough stone.  Perhaps this hole was smaller recently...
+
+~
+A
+climb~
+1 down hole~
+if( is_player( ch ) ) {
+
+  if( find_skill( ch, climb ) >= 3 ) {
+
+    act_tochar( #climb_1, ch );
+
+    act_notchar( #climb_2, ch );
+
+    wait( 1 );
+
+    act_tochar( #climb_4, ch );
+
+    act_notchar( #climb_5, ch );
+
+    transfer( ch, find_room( 4502 ) );
+
+    act_notchar( "$n scrambles down from the rocks above.", ch );
+
+    }
+
+  else
+
+    act_tochar( #climb_3, ch );
+
+  }
+
+else {
+
+  act_notchar( #climb_2, ch );
+
+  wait( 1 );
+
+  act_notchar( #climb_5, ch );
+
+  transfer( ch, find_room( 4502 ) );
+
+  act_notchar( "$n scrambles down from the rocks above.", ch );
+
+  }
+
+~
+E
+climb_1~
+Taking a deep breath you carefully start to climb down the the hole.
+
+~
+E
+climb_2~
+Taking a deep breath, $n carefully starts to climb down the hole.
+
+~
+E
+climb_3~
+You start to climb down but find the task is beyond you.  Perhaps you
+
+should learn to climb better.
+
+~
+E
+climb_4~
+With water splashing about you, you make it down the hole!
+
+~
+E
+climb_5~
+Water splashing about $m, $n dissapears from view.
+
+~
+!
+0 0 0
+A
+down~
+~
+send_to_char( #climb, ch );
+
+~
+E
+climb~
+Looking down the hole you come to a conclusion.  You will need to climb
+
+to get down there.
+
+~
+!
+0 100 0
+A
+~
+~
+send_to_room( #splash, room );
+
+wait( 5 );
+
+send_to_room( #splash_2, room );
+
+~
+E
+splash~
+Water splashes off the rocks about the hole.
+
+~
+E
+splash_2~
+For a moment the air is filled with @ctwinkling@n droplets.
+
+~
+!
+2 300 0
+-1
+S
+
+#4512
+The End of a Damp Tunnel~
+A few pebbles cover the ground from the beach to the south.  To the west
+
+the passage narrows down to a tight tunnel heading deeper into the rock. 
+
+The walls are extremely damp and covered in a blue-green moss.  The moss
+
+extends almost to the ceiling, stopping less than a hand's width from it.
+
+~
+~
+-235274228 11 5 0
+D1
+~
+~
+0 -1 4513 10 10 5
+D2
+~
+~
+0 -1 4507 10 10 5
+E
+moss blue-green~
+Dark and damp, the moss clings to the walls on all sides of the tunnel. 
+
+It grows from the floor almost to the ceiling, stopping less than a
+
+hand's with from it.  In some places the moss looks thick enough for you
+
+to be able to scrape if from the walls.
+
+~
+A
+get pick scrape~
+moss~
+if( rflag( reset0, room ) ) {
+
+  act_tochar( #pick, ch );
+
+  act_notchar( #pick_room, ch );
+
+  i = random( 1, 5 );
+
+  if( i == 1 )
+
+    obj_to_char( oload( 3480 ), ch );
+
+  else if( i == 2 )
+
+    obj_to_char( oload( 3482 ), ch );
+
+  else if( i == 3 )
+
+    obj_to_char( oload( 3483 ), ch );
+
+  else
+
+    obj_to_char( oload( 3481 ), ch );
+
+  
+
+  if( random( 1, 3 ) == 1 )
+
+    remove_rflag( reset0, room );
+
+  }
+
+else
+
+  act_tochar( #none, ch );
+
+~
+E
+pick~
+You pick a loose piece of moss from the wall.
+
+~
+E
+pick_room~
+$n picks some moss from the wall.
+
+~
+E
+none~
+You cannot find a piece of moss loose enough to take.
+
+~
+!
+0 0 0
+-1
+S
+
+#4513
+In a Twisting Underground Tunnel~
+Several puddles of water are here width one especially deep one crossing
+
+the tunnel where it turns north.  Blue-green moss covers the walls and
+
+grows almost up to the ceiling.  It appears thicker to the west where the
+
+tunnel slopes slightly down.
+
+~
+~
+-235274236 11 5 0
+D0
+~
+~
+0 -1 4514 10 10 5
+D3
+~
+~
+0 -1 4512 10 10 5
+E
+puddles~
+The puddles appear to be filled by water dripping through the mosses on
+
+the walls.  The water looks like it may be drinkable but it will probably
+
+taste terrible.
+
+~
+E
+moss blue-green~
+Dark and damp, the moss clings to the walls on all sides of the tunnel. 
+
+It grows from the floor almost to the ceiling, stopping less than a
+
+hand's width from it.  In some places the moss looks thick enough for you
+
+to be able to scrape if from the walls.
+
+~
+A
+~
+~
+act_tochar( "You splash through the puddles and head north.", ch );
+
+act_notchar( "$n splashes through the puddles and heads north.", ch );
+
+continue;
+
+~
+!
+3 0 1
+A
+get pick scrape~
+moss~
+if( rflag( reset0, room ) ) {
+
+  act_tochar( #pick, ch );
+
+  act_notchar( #pick_room, ch );
+
+  i = random( 1, 5 );
+
+  if( i == 1 )
+
+    obj_to_char( oload( 3480 ), ch );
+
+  else if( i == 2 )
+
+    obj_to_char( oload( 3482 ), ch );
+
+  else if( i == 3 )
+
+    obj_to_char( oload( 3483 ), ch );
+
+  else
+
+    obj_to_char( oload( 3481 ), ch );
+
+  
+
+  if( random( 1, 3 ) == 1 )
+
+    remove_rflag( reset0, room );
+
+  }
+
+else
+
+  act_tochar( #none, ch );
+
+~
+E
+pick~
+You pick a loose piece of moss from the wall.
+
+~
+E
+pick_room~
+$n picks some moss from the wall.
+
+~
+E
+none~
+You cannot find a piece of moss loose enough to take.
+
+~
+!
+0 0 0
+A
+drink~
+~
+~
+!
+0 0 0
+A
+drink~
+puddle~
+act_tochar( "You kneel down and take a drink from the puddle.", ch );
+
+act_notchar( "$n kneels down and drinks from a puddle.", ch );
+
+wait( 1 );
+
+act_tochar( #jump_ch, ch );
+
+act_notchar( #jump_room, ch );
+
+~
+E
+jump_ch~
+Your mouth starts to @Rburn@n and you spit the water out!
+
+~
+E
+jump_room~
+$n makes a choking sound and spits the water out!
+
+~
+!
+0 0 0
+-1
+S
+
+#4514
+In a Twisting Underground Tunnel~
+The tunnel heads north and south from here.  The walls are damp, and
+
+moisture drips in places, making a faint pattering sound upon the ground. 
+
+In the distance to the north you see the tunnel twist westward.  From the
+
+south comes the sound of moving water.
+
+~
+~
+-235274236 11 5 0
+D0
+~
+~
+0 -1 4515 10 10 5
+D2
+~
+~
+0 -1 4513 10 10 5
+E
+walls damp moisture~
+The chalky walls drip with water.  The beads of water run down the walls
+
+to the floor and then down the slope to the south.
+
+~
+2295 9 1509949540 3 0
+-1
+S
+
+#4515
+In a Twisting Underground Tunnel~
+A mildly acrid smell fills the air.  The smell is stronger towards the
+
+west, where you can see a pale green glow in the distance.  The tunnel
+
+turns sharply here, with branches leading to the west and south.  The
+
+walls are smooth to the touch and slightly discoloured, as if burned. 
+
+From the south comes a faint sound of running water.
+
+~
+~
+-235274236 11 5 0
+D2
+~
+~
+0 -1 4514 10 10 5
+D3
+~
+~
+0 -1 4516 10 10 5
+E
+green glow pale 1 west~
+Off to the west you see a pale green light.  The light pulsates in a slow
+
+beat, becoming brighter every few heartbeats then dimming again quickly. 
+
+If it is a torch or fire it is unlike one you have ever encountered.
+
+~
+-1
+S
+
+#4516
+By a Hole in the Wall~
+The tunnel heads east and south from here.  The @wwhite@n chalk walls
+
+appear strangely smooth, as if carved, yet they are uneven and rounded
+
+unlike the straight walls of a dwarven mine.  In the west wall there is a
+
+smaller hole with some strange formations in the stone around it.
+
+~
+~
+-235274236 11 5 0
+D1
+~
+~
+0 -1 4515 10 10 5
+D2
+~
+~
+0 -1 4517 10 10 5
+D3
+~
+~
+0 -1 4525 10 10 5
+E
+walls~
+Close examination of the walls reveals a few darkened areas on the smooth
+
+@Wwhite@n stone.  It would appear that the tunnel was worn smooth by a
+
+strong acid.
+
+~
+E
+hole stone 1 west~
+The hole appears to have been eaten into the wall by a very strong acid. 
+
+Stone has been turned to liquid by the forces involved and dribbles of
+
+chalky stone have run down the wall.
+
+~
+A
+~
+~
+act_tochar( #toch, ch );
+
+act_notchar( #torm, ch );
+
+continue;
+
+~
+E
+toch~
+You squeeze your way into the hole in the west wall.
+
+~
+E
+torm~
+$n squeezes $s way into the hole in the west wall.
+
+~
+!
+3 0 8
+2295 9 1509949540 3 0
+-1
+S
+
+#4517
+In the Tunnels, a Cave-in~
+The chalk roof of this tunnel has crumbled in the past, and has fallen
+
+into the cave, exposing another tunnel above this one.  Rocks and rubble
+
+block your way west but it is possible to head north or risk a further
+
+landslide by climbing up to the tunnel above.
+
+~
+~
+-235274236 11 5 0
+D0
+~
+~
+0 -1 4516 10 10 5
+D4
+~
+~
+0 -1 4518 10 10 5
+E
+landslide rubble rock~
+The landslide has completely plugged the passage to the west.  The rocks
+
+look too large for you to attempt to move.
+
+~
+A
+up~
+~
+send_to_char( "You will have to climb to get up there.", ch );
+
+~
+!
+0 0 0
+A
+climb~
+1 up rockslide~
+if( !is_player( ch ) || find_skill( ch, climb ) > 0 ) {
+
+  act_tochar( #climb_1, ch );
+
+  act_notchar( #climb_2, ch );
+
+  act_tochar( #climb_3, ch );
+
+  act_notchar( #climb_4, ch );
+
+  transfer( ch, find_room( 4518 ) );
+
+  loop( followers ) {
+
+    send_to_char( "You scramble up the rockslide too.", rch );
+
+    transfer( rch, find_room( 4518 ) );
+
+    act_notchar( "$n arrives from below.", rch );
+
+    }
+
+  }
+
+else
+
+  send_to_char( #cant_climb );
+
+~
+E
+climb_1~
+You start climbing up the rockslide.
+
+~
+E
+climb_2~
+$n starts to climb up the rockslide.
+
+~
+E
+climb_3~
+You make it safely to the tunnel above!
+
+~
+E
+climb_4~
+$n dissappears into the tunnel above!
+
+~
+E
+cant_climb~
+You need to be able to climb to get up there!
+
+~
+!
+0 0 1
+2295 9 1509949540 3 0
+-1
+S
+
+#4518
+On Top of a Pile of Rubble~
+At some time in the past the floor of this tunnel collapsed into the
+
+tunnel below.  Rubble has fallen into the lower tunnel and blocked one of
+
+the exits.  However, with care, it is still possible to pass over the
+
+fall and continue north or south, or to climb down the pile and explore
+
+the tunnel below.
+
+~
+~
+-235274236 11 5 0
+D0
+~
+~
+0 -1 4527 10 10 5
+D2
+~
+~
+0 -1 4519 10 10 5
+D5
+~
+~
+0 -1 4517 10 10 5
+E
+rubble down~
+The chalky floor has crubled into tunnel below.  The stones and rubble
+
+have blocked the western tunnel but you could still climb down and go
+
+east.
+
+~
+A
+dig~
+down pile rock fall~
+send_to_char( #nodig, ch );
+
+~
+E
+nodig~
+The rocks are too large and too well set for you to be able to dig
+
+through them.
+
+~
+!
+0 0 0
+A
+~
+~
+if( is_player( ch ) ) {
+
+  if( random( 1, 20 ) == 1 ) {
+
+    act_tochar( #trip, ch );
+
+    act_notchar( #trip_2, ch );
+
+    i = 1d2+1;
+
+    dam_message( ch, i, "the fall");
+
+    inflict( ch, mob, i, "falling over a stone" );
+
+    interpret( ch, "sit" );
+
+    }
+
+  else
+
+    continue;
+
+  }
+
+else
+
+  continue;
+
+~
+E
+trip~
+Your foot slips on a loose stone!
+
+~
+E
+trip_2~
+$n's foot slips on a lose stone and they go down!
+
+~
+!
+3 -1 37
+A
+~
+~
+send_to_room( #tumble, room );
+
+~
+E
+tumble~
+A few stones fall with a clatter from the rockside.
+
+~
+!
+2 300 0
+A
+~
+rocks landslide~
+if( random( 1, 20 ) == 1 ) {
+
+  act_tochar( "@GA quick search through the rocks reveals a nice looking pebble!", ch );
+
+  obj_to_char( oload( 78 ), ch );
+
+  }
+
+else
+
+  act_tochar( "You rummage through the rocks but find nothing useful.", ch );
+
+act_notchar( "$n rummages through the rocks in the landslide.", ch );
+
+~
+!
+9 0 0
+-1
+S
+
+#4519
+In the Tunnel~
+The tunnel turns sharply north and west here, and slopes steeply upwards
+
+to the north where it seems drier.  The lower part of the walls have a
+
+dark line marked on it.  The mark stretches in a perfectly straight line
+
+from near the top of the tunnel to the west to just a few handspans from the
+
+floor to the east.  To the west can be heard the sound of running water.
+
+~
+~
+-235274236 11 5 0
+D0
+~
+~
+0 -1 4518 10 10 5
+D3
+~
+~
+0 -1 4524 10 10 5
+E
+mark line wall~
+Along the wall stretches a line of blue-green lichen.  To the west the
+
+mark starts near the ceiling, but it slopes down as the passage turns
+
+northward and the floor rises.  Below the line, the wall is slightly damp. 
+
+Above it the wall is completely dry.
+
+~
+-1
+S
+
+#4520
+A Twisting, Damp Tunnel~
+Water splashes over the floor of the tunnel, making the bare rock damp
+
+and slippery.  The chalk and limestone walls are green with algae showing
+
+how this part of the tunnel system floods regularly.  The tunnel heads up
+
+and west from here, above you the tunnel narrows to a narrow crack, just
+
+wide enough for you to squeeze through, but it seems to open up a little
+
+beyond that.  To the west lies a pool of water.
+
+~
+~
+-235405300 11 5 0
+D3
+~
+~
+0 -1 4504 10 10 5
+D4
+~
+~
+0 -1 4521 10 10 5
+E
+walls algae~
+The walls are covered in a thin layer of blue-green algae.  It still
+
+seems damp and is growing healthily which would indicate that this part
+
+of the tunnel spends a lot of its time underwater.
+
+~
+E
+hole 1 up~
+The hole above you narrows down to barly more than a crack.  You should
+
+be able to fit through, but it will be a very tight squeeze.
+
+~
+E
+water pool floor~
+Occasional wavelets from the pool to the west splash over the ground here. 
+
+As a result everything seems damp and slimy and keeping your balance is
+
+hard.
+
+~
+-1
+S
+
+#4521
+Above a Hole~
+Beneath your feet a hole leads down to a larger space.  Down there you
+
+can hear the sound of water moving and the slight breeze coming through
+
+the hole feels cold and damp.  To the west a narrow, twisting passage
+
+leads off, turning north in the distance.
+
+~
+~
+-235274236 11 5 0
+D3
+~
+~
+0 -1 4522 10 10 5
+D5
+~
+~
+0 -1 4520 10 10 5
+E
+hole 1 down~
+Through the hole comes an occasional gust of cold air, chilled by the
+
+water you can hear moving below.
+
+~
+-1
+S
+
+#4522
+A Twisting, Damp Tunnel~
+The tunnel heads north and east here, and slopes upward towards the north
+
+at such a rate you almost need to climb.  The chalky walls are damp,
+
+dirty and discoloured by patches of moss and lichen.  The air feels cool
+
+and damp towards the east and you can hear the sound of water moving in
+
+that direction.
+
+~
+~
+-235274236 11 5 0
+D0
+~
+~
+0 -1 4523 10 10 5
+D1
+~
+~
+0 -1 4521 10 10 5
+E
+walls moss lichen~
+Blue-green moss clings to the walls in patches.  It appears to be
+
+thriving in this damp enviroment.
+
+~
+A
+~
+~
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+continue;
+
+~
+E
+msg~
+Scrabbling on hands and knees, you finally make it up the slope!
+
+~
+E
+rmsg~
+No description.
+
+~
+E
+2~
+~
+!
+3 0 1
+-1
+S
+
+#4523
+A Twisting, Damp Tunnel~
+The tunnel here twists and turns.  Sometimes it opens up into small
+
+caverns that are large enough for you to stand in. But at other
+
+times you have to squeeze through tiny holes.  To the east the passage
+
+narrows down to a hole barely larger than a crack.  You can head south
+
+from here, where the tunnel slopes down sharply and the walls run with
+
+damp, or head east through the tight, but drier, passage in that
+
+direction.
+
+~
+~
+-235274236 11 5 0
+D1
+~
+~
+0 -1 4524 10 10 5
+D2
+~
+~
+0 -1 4522 10 10 5
+E
+crack hole east~
+The roof of the tunnel drops down to meet the floor leaving a small but
+
+wide gap.  Looking at the gap you note that you @emay@n be able to fit
+
+through, if you breathe in.  But the stone around the hole seems rough
+
+and jagged and you may get a scratch or two if you try to squeeze yourself
+
+through.
+
+~
+A
+~
+~
+if( is_player( ch ) ) {
+
+  act_tochar( #msg, ch );
+
+  act_notchar( #rmsg, ch );
+
+  i = 2d2;
+
+  dam_message( ch, i, "the jagged rocks" );
+
+  inflict( ch, mob,  i, "jagged rocks" );
+
+  loop( followers ) {
+
+    i = 2d2;
+
+    dam_message( rch, i, "the jagged rocks" );
+
+    transfer( rch, find_room( 4524 ) );
+
+    act_notchar( #arrive, rch );
+
+    }
+
+  transfer( ch, find_room( 4524 ) );
+
+  act_notchar( #arrive, ch );
+
+  }
+
+else
+
+  continue;
+
+inflict( rch, mob, i, "jagged rocks" );
+
+~
+E
+msg~
+As you squeeze through the rocks you cut yourself on the rough surface!
+
+~
+E
+rmsg~
+$n squeezes through the rocks, cutting $mself on their sharp edges!
+
+~
+E
+arrive~
+With visible effort, and covered in scratches, $n arrives from the east.
+
+~
+!
+3 0 2
+-1
+S
+
+#4524
+A Twisting, Damp Tunnel~
+This tunnel runs, vaguely, east to west and slopes slightly upwards
+
+toward the east.  It is almost impossible to see what may lie in either
+
+direction as the walls twist and turn, closing in and opening out almost
+
+at random.  To the west comes the sound of running water.
+
+~
+~
+-235274236 11 5 0
+D1
+~
+~
+0 -1 4519 10 10 5
+D3
+~
+~
+0 -1 4523 10 10 5
+A
+~
+~
+act_tochar( "Breathing in, you carefully work your way through the narrow passage.", ch );
+
+continue;
+
+~
+!
+3 0 8
+-1
+S
+
+#4525
+A Smooth-Walled Tunnel~
+The walls of this narrow east-west tunnel are smooth and slippery to the
+
+touch.  Whatever burned this hole into the rock melted the walls leaving
+
+them with the texture of glass.  To the east you can return to the main
+
+tunnel while to the west the passage opens to a larger chamber.  Coming
+
+from the chamber is a pale @Ggreen@n glow.
+
+~
+~
+-235274228 11 5 0
+D1
+~
+~
+0 -1 4516 10 10 5
+D3
+~
+~
+0 -1 4526 10 10 5
+E
+wall glass tunnel~
+The walls are smooth, sheer and slippery to the touch.  Whatever created
+
+this passageway did so with such force that the stone melted to glass.
+
+~
+-1
+S
+
+#4526
+A Glass-Walled Chamber~
+The eastern tunnel opens into a large circular chamber.  The walls have
+
+been melted by acids so powerful that the stone has been turned to a
+
+glass-like substance.  Here and there on the sides of the chamber cling
+
+tiny spots of green slime.  These give off a powerful @Ggreen@n glow,
+
+bright enough for you not to need other forms of light.  Scattered around
+
+the ground are a number of humanoid corpses, some still in their armor.
+
+~
+~
+-235274235 11 6 0
+D1
+~
+~
+0 -1 4525 10 10 5
+E
+slimes walls~
+Several small lumps of a strange green slime cling to the walls. 
+
+Occasionally one of them moves fitfully, giving off a bright @Ggreen@n
+
+glow.
+
+~
+E
+corpses humanoid bones~
+The bodies are largely intact.  They appear to be the corpses of previous
+
+adventurers who fell foul of the slimes.  Some of them still have items
+
+of clothing about them and perhaps a quick search will provide something
+
+usable.
+
+~
+2296 137 1509949540 3 0
+3487 49 1509949540 -2 0
+2 81 1509949490 -2 0
+2002 81 33554452 -2 0
+2022 81 16777236 -2 0
+281 81 1509949470 -2 0
+-1
+S
+
+#4527
+A Mossy Tunnel~
+The tunnel slopes downwards from north to south.  The walls are thickly
+
+covered with a dark green moss, more so to the south where the walls
+
+appear damp.  A faint sound of running water comes from the south.
+
+~
+~
+-235274228 11 5 0
+D0
+~
+~
+0 -1 4528 10 10 5
+D2
+~
+~
+0 -1 4518 10 10 5
+E
+walls moss~
+@gGreen@n moss grows on every surface here, sucking up moisture from the
+
+walls and choking the air with it's spores.  Someone with a strong
+
+stomach, and a knowledge of herblore, may be able to tell which parts, if
+
+any, are edible.
+
+~
+A
+get pick scrape~
+moss~
+if( rflag( reset0, room ) ) {
+
+  act_tochar( #pick, ch );
+
+  act_notchar( #pick_room, ch );
+
+  i = random( 1, 5 );
+
+  if( i == 1 )
+
+    obj_to_char( oload( 3480 ), ch );
+
+  else if( i == 2 )
+
+    obj_to_char( oload( 3482 ), ch );
+
+  else if( i == 3 )
+
+    obj_to_char( oload( 3483 ), ch );
+
+  else
+
+    obj_to_char( oload( 3481 ), ch );
+
+  
+
+  if( random( 1, 3 ) == 1 )
+
+    remove_rflag( reset0, room );
+
+  }
+
+else
+
+  act_tochar( #none, ch );
+
+~
+E
+pick~
+You pick a loose piece of moss from the wall.
+
+~
+E
+pick_room~
+$n picks some moss from the wall.
+
+~
+E
+none~
+You cannot find a piece of moss loose enough to take.
+
+~
+!
+0 0 0
+-1
+S
+
+#4528
+A Mossy Tunnel~
+The tunnel makes a sharp turn west here and slants slightly upwards in
+
+that direction.  @GGreen@n moss covers the walls, thickening towards the
+
+south where it spreads to the the floor and ceiling.  In the centre of
+
+the tunnel is a small patch where the moss has withered and died.
+
+~
+~
+-235274236 11 5 0
+D2
+~
+~
+0 -1 4527 10 10 5
+D3
+~
+~
+0 -1 4529 10 10 5
+E
+moss walls floor ceiling~
+@GGreen@n moss grows on every surface here, sucking up moisture from the
+
+walls and choking the air with its spores.  Someone with a strong
+
+stomach, and a knowledge of herblore, may be able to tell which parts, if
+
+any, are edible.
+
+~
+E
+patch~
+In the centre of the floor is a spot where the moss has darkened and died. 
+
+Looking closely it appears that fire or acid has burned it, leaving a
+
+dark stain on the white chalk.
+
+~
+A
+touch~
+patch dark~
+act_tochar( #touch_1, ch );
+
+act_notchar( #touch_2, ch );
+
+i = 2d2+2;
+
+dam_element( ch, i, "the burning acid", 3 );
+
+inflict_acid( ch, mob, i, "touching a patch of acid" );
+
+~
+E
+budy~
+Arent you a little busy for exploring?
+
+~
+E
+touch_1~
+You reach out to touch the darkened patch, but you jump back suddenly
+
+with a yelp of pain!  The moss has been burned by acid!
+
+~
+E
+touch_2~
+$n leans forward to touch the darkened patch of moss, but then suddenly
+
+jumps back, clutching $s fingers and giving a yelp of pain!
+
+~
+!
+0 0 0
+A
+get pick scrape~
+moss~
+if( rflag( reset0, room ) ) {
+
+  act_tochar( #pick, ch );
+
+  act_notchar( #pick_room, ch );
+
+  i = random( 1, 5 );
+
+  if( i == 1 )
+
+    obj_to_char( oload( 3480 ), ch );
+
+  else if( i == 2 )
+
+    obj_to_char( oload( 3482 ), ch );
+
+  else if( i == 3 )
+
+    obj_to_char( oload( 3483 ), ch );
+
+  else
+
+    obj_to_char( oload( 3481 ), ch );
+
+  
+
+  if( random( 1, 3 ) == 1 )
+
+    remove_rflag( reset0, room );
+
+  }
+
+else
+
+  act_tochar( #none, ch );
+
+~
+E
+pick~
+you pick a loose piece of moss from the wall.
+
+~
+E
+pick_room~
+$n picks some moss from the wall.
+
+~
+E
+none~
+You cannot find a piece of moss loose enough to take.
+
+~
+!
+0 0 0
+2295 137 1509949540 3 0
+-1
+S
+
+#4529
+A Mossy Tunnel~
+Moss flourishes at this point in the tunnel, growing in thick clumps
+
+along the wall and ceiling.  It is only on the western wall, where a
+
+small hole leads off into the darkness, that you can see the white chalk
+
+that it grows on.  The main tunnel leads south and east from here.
+
+~
+~
+-235274236 11 5 0
+D1
+~
+~
+0 -1 4528 10 10 5
+D2
+~
+~
+0 -1 4531 10 10 5
+D3
+~
+~
+0 -1 4530 10 10 5
+E
+moss wall~
+The thick moss clings to every surface and gives the air a warm, damp
+
+feeling.
+
+~
+E
+hole 1 west~
+The hole in the western wall is smaller than the main tunnel but is still
+
+large enough for even a troll to pass through comfortably.  You cannot
+
+quite see where it leads but you get the impression of a large, open
+
+space beyond it.
+
+~
+A
+get pick scrape~
+moss~
+act_tochar( "You try to take some moss, but it falls apart in your hands.", ch );
+
+~
+!
+0 0 0
+2292 9 1509949540 3 0
+2292 9 1509949540 3 0
+-1
+S
+
+#4530
+A Sleeping Area~
+The floor slopes slightly down from the tunnel to the east, and the walls
+
+open up into a large, oval chamber.  Large roots poke through the chalk
+
+walls into the chamber, binding the walls together and shoring up the
+
+ceiling.  Other than the roots, the walls and floor are completely bare
+
+except for a few loose pebbles and six oval depressions in the soft earth
+
+near the western wall.
+
+exit
+
+~
+~
+-235274236 11 6 0
+D1
+~
+~
+0 -1 4529 10 10 5
+E
+roots~
+The roots range in size from hair-thin to larger than your wrist.  Some
+
+of them have clearly come from a very large, and very old tree.
+
+~
+E
+oval depressions earth 1 west~
+Along the western wall are six egg-shaped depressions in the ground. 
+
+They all appear to point in the same direction and have been kept clear
+
+of the roots and stones found elsewhere in this room.  It would appear a
+
+number of creatures use this part of the tunnels as a sleeping area.
+
+~
+A
+pull push~
+root~
+act_tochar( "You tug on one of the dangling roots.", ch );
+
+act_notchar( "$n tugs on one of the dangling roots.", ch );
+
+send_to_room( #fall_1, room );
+
+loop( all_in_room ) {
+
+  i = 1d4;
+
+  dam_message( rch, i, "the falling earth" );
+
+  inflict( rch, mob, i, "falling earth" );
+
+  }
+
+~
+E
+fall_1~
+Suddenly stones and earth start falling from around the root!
+
+~
+!
+0 0 0
+2292 9 1509949540 0 0
+2292 9 1509949540 3 0
+78 17 1509949540 -2 0
+78 17 1509949500 -2 0
+78 17 1509949470 -2 0
+-1
+S
+
+#4531
+A Mossy Tunnel~
+The tunnel leads west and north from here and a faint breeze blows in
+
+from the west.  The air seems fresh but there is a trace of rot coming
+
+from the @rred@n and @Ggreen@n mosses that grow on the walls and ceiling. 
+
+To the south is a hole that is slightly smaller than the main tunnel but
+
+still large enough to walk through.  The hole seems irregular, as if it
+
+had been tunnelled badly or had received some heavy blows in the recent
+
+past.
+
+~
+~
+-235274236 11 5 0
+D0
+~
+~
+0 -1 4529 10 10 5
+D2
+~
+~
+0 -1 4532 10 10 5
+D3
+~
+~
+0 -1 4533 10 10 5
+E
+moss red green~
+Mostly @ggreen@n with a few @rred@n patches, a spongy carpet of moss
+
+covers almost every surface.  Every once in a while one of the red
+
+patches shoot tiny spores into the air.
+
+~
+E
+hole 1 south~
+Strewn about the ground near the large hole are chunks of broken earth
+
+and stones.
+
+~
+E
+earth stone~
+Looking closely at the piles of earth you notice that some of it appears
+
+to have been melted, as if by a very hot fire or strong acid, into glassy
+
+lumps.
+
+~
+A
+~
+~
+send_to_room( "A patch of @Rred@n moss bursts. For a moment the air is filled with spores.", room );
+
+~
+!
+2 500 0
+A
+get pick scrape~
+moss~
+act_tochar( "You try to take some moss but it falls apart in your hands.", ch );
+
+~
+!
+0 0 0
+-1
+S
+
+#4532
+A Messy Nest~
+There appears to have been a massive fight here recently.  Of whoever the
+
+combatants were there is no obvious clue, but the mosses and grasses that
+
+cover the floor have been ripped and messed.  A few clumps of grass are
+
+stained red with traces of blood.  The walls are pitted with deep
+
+scratches that concentrate around the northern entrance.
+
+~
+~
+-235274236 11 6 0
+D0
+~
+~
+0 -1 4531 10 10 5
+E
+moss floor~
+The moss and grasses that once would have made a comfortable carpet or
+
+sleeping mat are in total disarray.  The greens and browns of the foliage
+
+are spotted with red blood and, in one corner, you catch a glimpse of
+
+something white.
+
+~
+E
+scratches hole wall north~
+Whatever happened here has left its mark.  Around the walls you find a
+
+number of scratches that are deep and wide enough for you to insert a
+
+finger.  These seem to concentrate around the hole in the northern wall
+
+which has been damaged almost to the point of collapse.  Perhaps you
+
+should get out fast.
+
+~
+A
+~
+~
+send_to_room( "Clumps of dirt fall from the damaged entrance.", room );
+
+~
+!
+2 15 0
+A
+search~
+moss grasses ground~
+if( rflag( reset0, room ) ) {
+
+  act_tochar( "You rummage through the moss and find some small bones.", ch );
+
+  act_notchar( "$n rummages through the mosses for a while.", ch );
+
+  obj_to_char( oload( 3485 ), ch );
+
+  remove_rflag( reset0, room );
+
+  }
+
+else
+
+  act_tochar( "You look through the moss but fail to find anything.", ch );
+
+~
+!
+0 0 0
+2292 9 1509949540 3 0
+-1
+S
+
+#4533
+The End of a Mossy Tunnel~
+Fresh air comes in a gentle breeze from the small hole leading north and
+
+up.  The breeze gives this part of the tunnel complex a fresher feeling
+
+than elsewhere, with fewer spores in the air and less of a smell of
+
+rotting vegetation.  The earthen walls to the the north and west are
+
+still mostly covered in green and brown moss, while the southern wall is
+
+mostly clear except for a man-sized hole.  The main tunnel runs to the
+
+east from here.
+
+~
+~
+-235274236 11 5 0
+D1
+~
+~
+0 -1 4531 10 10 5
+D2
+~
+~
+0 -1 4534 10 10 5
+D4
+~
+~
+0 -1 4535 10 10 5
+E
+wall hole 1 south~
+The wall to the south is large, easily large enough for a human or even a
+
+troll to walk through.  Around the mouth of the hole are some light
+
+scratches.
+
+~
+E
+scratches marks~
+The scratches look light and don't disturb the earth around the hole. 
+
+Most of them are found to the bottom of the hole and seem to have been
+
+made by a heavy creature moving in and out of the tunnel.
+
+~
+E
+small exit 1 up~
+The small hole in the ceiling appears to be freshly dug.  From it comes a
+
+slight breeze, bringing with it a faint smell of grass from the world
+
+outside these caves.  It is certainly too small for you, even a gnome
+
+would be unable to fit into such a tiny hole.
+
+~
+A
+get pick scrape~
+moss~
+act_tochar( "You try to take some moss, but it falls apart in your hands.", ch );
+
+~
+!
+0 0 0
+2292 9 1509949540 3 0
+-1
+S
+
+#4534
+A Large, Airy Burrow~
+A slight breeze enters this burrow from the north, stirring up smells
+
+from the drying moss and grasses on the floor.  The walls are mostly bare
+
+of moss, but the chalky soil shows a few scratch marks where it has been
+
+scraped off and mixed in with the other plant life that lays in a thick
+
+carpet from wall to wall.
+
+~
+~
+-235274236 11 6 0
+D0
+~
+~
+0 -1 4533 10 10 5
+E
+walls~
+The walls are bare earth, worn smooth by the passage of many bodies.  A
+
+little moss clings to them in @ggreen@n patches, but most has been scraped
+
+away.
+
+~
+E
+moss floor~
+The floor is covered with spongy moss and fresh, fragrant grasses. 
+
+Whenever you move the smell of lavender and thyme fills the air.
+
+~
+2293 137 1509949540 3 0
+2294 137 1509949540 3 0
+2294 137 1509949490 3 0
+-1
+S
+
+#4535
+Half Way Up a Hole~
+This small, vertical tunnel snakes its way up through the earth.  As you
+
+squeeze your way through the soft dirt and stones it gives way beneath
+
+your weight, forcing you to lose your grip.  No matter how you try you
+
+cannot continue upwards.
+
+~
+~
+-235405308 11 2 0
+D5
+~
+~
+0 -1 4533 10 10 5
+A
+~
+~
+wait( 5 );
+
+if( char_in_room( ch, find_room( 4535 ) ) ) {
+
+  act_tochar( #fall, ch );
+
+  wait( 1 );
+
+  transfer( ch, find_room( 4533 ) );
+
+  act_notchar( #land, ch );
+
+  }
+
+~
+E
+fall~
+The soft earth about you crumbles.  No matter how hard you try you start
+
+falling backwards!
+
+~
+E
+land~
+With a loud thump and a shower of earth, someone falls out of the tunnel
+
+above!
+
+~
+!
+1 -1 48
+-1
+S
+
+#4536
+In A Sunny Clearing~
+Thick stands of tall oak trees gather about this wide clearing concealing
+
+the rest of the forest, leaving no clear path back the way you came.  The
+
+ground is covered by short, dark green grass that ripples softly in the
+
+slight breeze.  In the centre of the clearing, upon a slight mound, is a
+
+marble altar that shines a brilliant white in the summer sun.  Forming a
+
+circle about the altar are seven standing stones made of a translucent
+
+crystal.  Each stone glows faintly in the sunlight, shining single colour
+
+of the rainbow upon the altar in the centre.
+
+~
+~
+-235405305 3 9 0
+D5
+~
+~
+0 -1 33752 10 10 5
+-1
+S
+
+#0
+

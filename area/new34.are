@@ -1,0 +1,2810 @@
+#AREA
+Port of Rynbala~
+Noone~
+~
+
+0 0
+5
+#ROOMS
+
+#81250
+Atop the Walls of Rynbala - A Corner of the Wall~
+Thick slabs of gleaming white marble join here to form a corner of the
+
+formidable white wall that runs north into the distance toward a large
+
+mountain, and east toward a large port facility.  A thick silver rail
+
+rail runs along the top of the wall, and merlons are set every five paces
+
+like teeth rising up from the marble.  The wall is wide enough for ten
+
+men to stand abreast.  Waves murmur softly against the rocky coastline
+
+that drops off steeply beneath the wall down a sheer rock embankment to
+
+crystal-blue waters.
+
+~
+[Orb] 1
+
+[Orb] corner of wall
+
+[Orb] sentry here,
+
+[Orb] down exit will be removed
+
+~
+-235405311 1 5 0
+D0
+~
+~
+0 -1 81251 10 10 5
+D3
+~
+~
+0 -1 75 10 10 5
+D5
+~
+~
+0 -1 81313 10 10 5
+E
+merlons~
+This is a projection of white stone that rises up from the wall and is
+
+wide enough to shelter the body of a man.  A small depression has been
+
+hollowed out at the base of the merlon in which several quivers of
+
+steel-tipped arrows lie bundled tightly together.
+
+~
+-1
+S
+
+#81251
+Nothing~
+Under Construction.
+
+~
+[Orb] 2
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81252 10 10 5
+D2
+~
+~
+0 -1 81250 10 10 5
+-1
+S
+
+#81252
+Nothing~
+Under Construction.
+
+~
+[Orb] 3
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81253 10 10 5
+D2
+~
+~
+0 -1 81251 10 10 5
+-1
+S
+
+#81253
+Nothing~
+Under Construction.
+
+~
+[Orb] 4
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81254 10 10 5
+D2
+~
+~
+0 -1 81252 10 10 5
+-1
+S
+
+#81254
+Nothing~
+Under Construction.
+
+~
+[Orb] 5
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81255 10 10 5
+D2
+~
+~
+0 -1 81253 10 10 5
+-1
+S
+
+#81255
+Nothing~
+Under Construction.
+
+~
+[Orb] 6
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81256 10 10 5
+D2
+~
+~
+0 -1 81254 10 10 5
+-1
+S
+
+#81256
+Nothing~
+Under Construction.
+
+~
+[Orb] 7
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81257 10 10 5
+D2
+~
+~
+0 -1 81255 10 10 5
+-1
+S
+
+#81257
+Nothing~
+Under Construction.
+
+~
+[Orb] 8
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81258 10 10 5
+D2
+~
+~
+0 -1 81256 10 10 5
+-1
+S
+
+#81258
+Nothing~
+Under Construction.
+
+~
+[Orb] 9
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81259 10 10 5
+D2
+~
+~
+0 -1 81257 10 10 5
+-1
+S
+
+#81259
+Nothing~
+Under Construction.
+
+~
+[Orb] 10
+
+[Orb] gate here
+
+[Orb] north was 81260
+
+[Orb] gate east as 81312
+
+~
+-235405311 1 9 0
+D2
+~
+~
+0 -1 81258 10 10 5
+D5
+~
+~
+0 -1 81314 10 10 5
+-1
+S
+
+#81260
+Nothing~
+Under Construction.
+
+~
+[Orb] 11
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81261 10 10 5
+D5
+~
+~
+0 -1 81316 10 10 5
+-1
+S
+
+#81261
+Nothing~
+Under Construction.
+
+~
+[Orb] 12
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81262 10 10 5
+D2
+~
+~
+0 -1 81260 10 10 5
+-1
+S
+
+#81262
+Nothing~
+Under Construction.
+
+~
+[Orb] 13
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81263 10 10 5
+D2
+~
+~
+0 -1 81261 10 10 5
+-1
+S
+
+#81263
+Nothing~
+Under Construction.
+
+~
+[Orb] 14
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81264 10 10 5
+D2
+~
+~
+0 -1 81262 10 10 5
+-1
+S
+
+#81264
+Nothing~
+Under Construction.
+
+~
+[Orb] 15
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81265 10 10 5
+D2
+~
+~
+0 -1 81263 10 10 5
+-1
+S
+
+#81265
+Nothing~
+Under Construction.
+
+~
+[Orb] 16
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81266 10 10 5
+D2
+~
+~
+0 -1 81264 10 10 5
+-1
+S
+
+#81266
+Nothing~
+Under Construction.
+
+~
+[Orb] 17
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81267 10 10 5
+D2
+~
+~
+0 -1 81265 10 10 5
+-1
+S
+
+#81267
+Nothing~
+Under Construction.
+
+~
+[Orb] 18
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81268 10 10 5
+D2
+~
+~
+0 -1 81266 10 10 5
+-1
+S
+
+#81268
+Nothing~
+Under Construction.
+
+~
+[Orb] 19
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81269 10 10 5
+D2
+~
+~
+0 -1 81267 10 10 5
+-1
+S
+
+#81269
+Nothing~
+Under Construction.
+
+~
+[Orb] 20
+
+[Orb] 1 east
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81270 10 10 5
+D2
+~
+~
+0 -1 81268 10 10 5
+-1
+S
+
+#81270
+Nothing~
+Under Construction.
+
+~
+[Orb] 2
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81271 10 10 5
+D3
+~
+~
+0 -1 81269 10 10 5
+-1
+S
+
+#81271
+Nothing~
+Under Construction.
+
+~
+[Orb] 3
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81272 10 10 5
+D3
+~
+~
+0 -1 81270 10 10 5
+-1
+S
+
+#81272
+Nothing~
+Under Construction.
+
+~
+[Orb] 4
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81273 10 10 5
+D3
+~
+~
+0 -1 81271 10 10 5
+-1
+S
+
+#81273
+Nothing~
+Under Construction.
+
+~
+[Orb] 5
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81274 10 10 5
+D3
+~
+~
+0 -1 81272 10 10 5
+-1
+S
+
+#81274
+Nothing~
+Under Construction.
+
+~
+[Orb] 6
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81275 10 10 5
+D3
+~
+~
+0 -1 81273 10 10 5
+-1
+S
+
+#81275
+Nothing~
+Under Construction.
+
+~
+[Orb] 7
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81276 10 10 5
+D3
+~
+~
+0 -1 81274 10 10 5
+-1
+S
+
+#81276
+Nothing~
+Under Construction.
+
+~
+[Orb] 8
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81277 10 10 5
+D3
+~
+~
+0 -1 81275 10 10 5
+-1
+S
+
+#81277
+Nothing~
+Under Construction.
+
+~
+[Orb] 9
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81278 10 10 5
+D3
+~
+~
+0 -1 81276 10 10 5
+-1
+S
+
+#81278
+Nothing~
+Under Construction.
+
+~
+[Orb] 10
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81279 10 10 5
+D3
+~
+~
+0 -1 81277 10 10 5
+-1
+S
+
+#81279
+Nothing~
+Under Construction.
+
+~
+[Orb] 11
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81280 10 10 5
+D3
+~
+~
+0 -1 81278 10 10 5
+-1
+S
+
+#81280
+Nothing~
+Under Construction.
+
+~
+[Orb] 12
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81281 10 10 5
+D3
+~
+~
+0 -1 81279 10 10 5
+-1
+S
+
+#81281
+Nothing~
+Under Construction.
+
+~
+[Orb] 13
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81282 10 10 5
+D3
+~
+~
+0 -1 81280 10 10 5
+-1
+S
+
+#81282
+Nothing~
+Under Construction.
+
+~
+[Orb] 14
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81283 10 10 5
+D3
+~
+~
+0 -1 81281 10 10 5
+-1
+S
+
+#81283
+Nothing~
+Under Construction.
+
+~
+[Orb] 15
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81284 10 10 5
+D3
+~
+~
+0 -1 81282 10 10 5
+-1
+S
+
+#81284
+Nothing~
+Under Construction.
+
+~
+[Orb] 16
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81285 10 10 5
+D3
+~
+~
+0 -1 81283 10 10 5
+-1
+S
+
+#81285
+Nothing~
+Under Construction.
+
+~
+[Orb] 17
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81286 10 10 5
+D3
+~
+~
+0 -1 81284 10 10 5
+-1
+S
+
+#81286
+Nothing~
+Under Construction.
+
+~
+[Orb] 18
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81287 10 10 5
+D3
+~
+~
+0 -1 81285 10 10 5
+-1
+S
+
+#81287
+Nothing~
+Under Construction.
+
+~
+[Orb] 19
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81288 10 10 5
+D3
+~
+~
+0 -1 81286 10 10 5
+-1
+S
+
+#81288
+Nothing~
+Under Construction.
+
+~
+[Orb] 20
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81289 10 10 5
+D3
+~
+~
+0 -1 81287 10 10 5
+-1
+S
+
+#81289
+Nothing~
+Under Construction.
+
+~
+[Orb] 21
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81290 10 10 5
+D3
+~
+~
+0 -1 81288 10 10 5
+-1
+S
+
+#81290
+Nothing~
+Under Construction.
+
+~
+[Orb] 22
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81291 10 10 5
+D3
+~
+~
+0 -1 81289 10 10 5
+-1
+S
+
+#81291
+Nothing~
+Under Construction.
+
+~
+[Orb] 23
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81292 10 10 5
+D3
+~
+~
+0 -1 81290 10 10 5
+-1
+S
+
+#81292
+Nothing~
+Under Construction.
+
+~
+[Orb] 24
+
+[Orb] 1 south
+
+~
+-235405311 1 9 0
+D2
+~
+~
+0 -1 81293 10 10 5
+D3
+~
+~
+0 -1 81291 10 10 5
+-1
+S
+
+#81293
+Nothing~
+Under Construction.
+
+~
+[Orb] 2
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81292 10 10 5
+D2
+~
+~
+0 -1 81294 10 10 5
+-1
+S
+
+#81294
+Nothing~
+Under Construction.
+
+~
+[Orb] 3
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81293 10 10 5
+D2
+~
+~
+0 -1 81295 10 10 5
+-1
+S
+
+#81295
+Nothing~
+Under Construction.
+
+~
+[Orb] 4
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81294 10 10 5
+D2
+~
+~
+0 -1 81296 10 10 5
+-1
+S
+
+#81296
+Nothing~
+Under Construction.
+
+~
+[Orb] 5
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81295 10 10 5
+D2
+~
+~
+0 -1 81297 10 10 5
+-1
+S
+
+#81297
+Nothing~
+Under Construction.
+
+~
+[Orb] 6
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81296 10 10 5
+D2
+~
+~
+0 -1 81298 10 10 5
+-1
+S
+
+#81298
+Nothing~
+Under Construction.
+
+~
+[Orb] 7
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81297 10 10 5
+D2
+~
+~
+0 -1 81299 10 10 5
+-1
+S
+
+#81299
+Nothing~
+Under Construction.
+
+~
+[Orb] 8
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81298 10 10 5
+D2
+~
+~
+0 -1 81300 10 10 5
+-1
+S
+
+#81300
+Nothing~
+Under Construction.
+
+~
+[Orb] 9
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81299 10 10 5
+D5
+~
+~
+0 -1 81319 10 10 5
+-1
+S
+
+#81301
+Nothing~
+Under Construction.
+
+~
+[Orb] 10
+
+[Orb] gate here
+
+[Orb] north was 81300
+
+~
+-235405311 1 9 0
+D2
+~
+~
+0 -1 81302 10 10 5
+D5
+~
+~
+0 -1 81317 10 10 5
+-1
+S
+
+#81302
+Nothing~
+Under Construction.
+
+~
+[Orb] 11
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81301 10 10 5
+D2
+~
+~
+0 -1 81303 10 10 5
+-1
+S
+
+#81303
+Nothing~
+Under Construction.
+
+~
+[Orb] 12
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81302 10 10 5
+D2
+~
+~
+0 -1 81304 10 10 5
+-1
+S
+
+#81304
+Nothing~
+Under Construction.
+
+~
+[Orb] 13
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81303 10 10 5
+D2
+~
+~
+0 -1 81305 10 10 5
+-1
+S
+
+#81305
+Nothing~
+Under Construction.
+
+~
+[Orb] 14
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81304 10 10 5
+D2
+~
+~
+0 -1 81306 10 10 5
+-1
+S
+
+#81306
+Nothing~
+Under Construction.
+
+~
+[Orb] 15
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81305 10 10 5
+D2
+~
+~
+0 -1 81307 10 10 5
+-1
+S
+
+#81307
+Nothing~
+Under Construction.
+
+~
+[Orb] 16
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81306 10 10 5
+D2
+~
+~
+0 -1 81308 10 10 5
+-1
+S
+
+#81308
+Nothing~
+Under Construction.
+
+~
+[Orb] 17
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81307 10 10 5
+D2
+~
+~
+0 -1 81309 10 10 5
+-1
+S
+
+#81309
+Nothing~
+Under Construction.
+
+~
+[Orb] 18
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81308 10 10 5
+D2
+~
+~
+0 -1 81310 10 10 5
+-1
+S
+
+#81310
+Nothing~
+Under Construction.
+
+~
+[Orb] 19
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81309 10 10 5
+D2
+~
+~
+0 -1 81311 10 10 5
+-1
+S
+
+#81311
+Nothing~
+Under Construction.
+
+~
+[Orb] 20 finally!
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81310 10 10 5
+-1
+S
+
+#81312
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 1 9 0
+D3
+~
+~
+0 -1 81315 10 10 5
+-1
+S
+
+#81313
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 1 9 0
+D4
+~
+~
+0 -1 81250 10 10 5
+-1
+S
+
+#81314
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81315 10 10 5
+D4
+~
+~
+0 -1 81259 10 10 5
+-1
+S
+
+#81315
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81316 10 10 5
+D1
+~
+~
+0 -1 81312 10 10 5
+D2
+~
+~
+0 -1 81314 10 10 5
+-1
+S
+
+#81316
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 1 9 0
+D2
+~
+~
+0 -1 81315 10 10 5
+D4
+~
+~
+0 -1 81260 10 10 5
+-1
+S
+
+#81317
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81318 10 10 5
+D4
+~
+~
+0 -1 81301 10 10 5
+-1
+S
+
+#81318
+Nothing~
+Under Construction.
+
+~
+[Orb] Gate
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81319 10 10 5
+D2
+~
+~
+0 -1 81317 10 10 5
+-1
+S
+
+#81319
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 1 9 0
+D2
+~
+~
+0 -1 81318 10 10 5
+D4
+~
+~
+0 -1 81300 10 10 5
+-1
+S
+
+#81320
+Nothing~
+Under Construction.
+
+~
+[Orb] Electrum
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81321 10 10 5
+D2
+~
+~
+0 -1 81335 10 10 5
+-1
+S
+
+#81321
+Nothing~
+Under Construction.
+
+~
+[Orb] something
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81322 10 10 5
+D2
+~
+~
+0 -1 81336 10 10 5
+D3
+~
+~
+0 -1 81320 10 10 5
+-1
+S
+
+#81322
+Nothing~
+Under Construction.
+
+~
+[Orb] platinum
+
+~
+-235405311 1 9 0
+D2
+~
+~
+0 -1 81323 10 10 5
+D3
+~
+~
+0 -1 81321 10 10 5
+-1
+S
+
+#81323
+Nothing~
+Under Construction.
+
+~
+[Orb] glass corridor
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81322 10 10 5
+D1
+~
+~
+0 -1 81341 10 10 5
+D3
+~
+~
+0 -1 81336 10 10 5
+D4
+~
+~
+0 -1 81325 10 10 5
+-1
+S
+
+#81324
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81325 10 10 5
+D2
+~
+~
+0 -1 81326 10 10 5
+-1
+S
+
+#81325
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 1 9 0
+D2
+~
+~
+0 -1 81324 10 10 5
+D5
+~
+~
+0 -1 81323 10 10 5
+-1
+S
+
+#81326
+Nothing~
+Under Construction.
+
+~
+[Orb] a platform and the entrance to the corridor
+
+[Orb] if has detect_magic going will sense an aura around the glass.
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81324 10 10 5
+D5
+~
+~
+0 -1 81327 10 10 5
+-1
+S
+
+#81327
+(tentatively) Inside the Jeweler's Guild~
+This vaulted room is little more than an entrance way into the guildhall. 
+
+A spiraling staircase wends its way up the northern wall to a small
+
+platform at the top.  The white stone floor is polished to a dull gleam,
+
+though a few scuff marks mar the shine near the southern archway that
+
+leads into a room beyond.  The greenery of a garden can be glimpsed
+
+through the ornamental gate of white iron which stands to the east.
+
+~
+[Orb] glass corridor
+
+[Orb] climb stairs here
+
+[Orb] extra for east
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81346 10 10 5
+D2
+~
+~
+0 -1 81328 10 10 5
+D3
+~
+~
+0 -1 81340 10 10 5
+D4
+~
+~
+0 -1 81326 10 10 5
+E
+staircase~
+Made of the same white iron as the gate, the steps and railing wind in a
+
+tight spiral to a narrow platform near the ceiling.
+
+~
+E
+platform~
+All you can see is the bottom of the narrow piece of metal.
+
+~
+-1
+S
+
+#81328
+(tentatively) The Jeweler's Guild - A Silversmithy~
+Despite the opulence of the outside of the building, this wide chamber is
+
+clearly a functional workroom.  Balls of soft white mist hover at random
+
+about the room, emitting the light necessary for such fine work as
+
+jewel-craft requires.  Wide tables are set in rows around a hearth at
+
+which dances a blazing bluish fire.  A display case lies along the
+
+southern wall of the room, housing the finished wares of the jewelers as
+
+well as loose stones yet to be set in any particular piece.  An archway
+
+leads into another workroom to the west, while a more elegant chamber can
+
+be seen through the northern arch.
+
+~
+[Orb] Silver
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81327 10 10 5
+D3
+~
+~
+0 -1 81329 10 10 5
+E
+hearth flame~
+This octagonal hearth is raised to chest-height of an average human.  A
+
+peculiar blue flame blazes in the middle of the hearth.  Although the
+
+flame crackles merrily, you can see no material fueling it and it appears
+
+to give off no heat.
+
+~
+E
+display case~
+This rough display case if obviously not of the type a shopkeeper would
+
+use for his wares.  The glass that covers the top of the case is thick
+
+and slightly warped in places which distorts the view of the jewelry. 
+
+Every manner of silver jewelry rests inside, from simple sterling ring
+
+brooches to elaborate, gem-encrusted headdresses.  A thick iron lock
+
+binds the case shut tightly.
+
+~
+-1
+S
+
+#81329
+(t) The Jeweler's Guild - Coppersmithy~
+Two large spools of copper wire sit unobtrusively along the southern wall
+
+of the room - the tops of the spools have been pressed into service as
+
+makeshift tables.  Other work areas, lit by spheres of opalescent mist,
+
+are huddled around a raised hearth in which a greenish flame burns
+
+fitfully with frequent flares and starts.  Arches are set into the east
+
+and west walls through which other workrooms are visible, and to the
+
+north the gleam of polished marble can be seen through the arching
+
+doorway.  A roughly made display case sits carelessly atop one of the
+
+spools of wire.
+
+~
+[Orb] 81329
+
+[Orb] Copper
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81340 10 10 5
+D1
+~
+~
+0 -1 81328 10 10 5
+D3
+~
+~
+0 -1 81330 10 10 5
+E
+hearth flame~
+A sputtering greenish flame flares and hisses in the eight-sided, raised
+
+metal hearth.  Although the flame rises and falls erratically, it seems
+
+to give off no heat at all.
+
+~
+E
+display case~
+This rough wooden display case is covered with a sheet of thick, greenish
+
+glass which lends an olive caste to the copper jewelry held inside. 
+
+Almost all of the pieces of copper jewelry are simple, made mainly for
+
+common, everyday wear.
+
+~
+-1
+S
+
+#81330
+(t) The Jeweler's Guild - Goldsmith~
+A nearly white flame blazes steadily in a raised hearth in the center of
+
+the room.  Stacked in a bin in the western corner of the room is a pile
+
+of small gold bars.  Shallow coffers of gemstones sit carelessly open on
+
+a table next to the bin; a few stones are sorted onto velvet in front of
+
+each small container.  Jewelry in various states completion lies in a
+
+locked display case next to the coffers.  Sturdy wood and metal tables
+
+are set haphazardly about the room, and above each is a shimmering ball
+
+of white light.
+
+~
+[Orb] Gold
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81331 10 10 5
+D1
+~
+~
+0 -1 81329 10 10 5
+E
+hearth flame~
+The white-gold flames in the hearth burn with a stolid steadiness.  For
+
+all the white-hot appearance of the blaze, no heat radiates from the
+
+hearth.
+
+~
+E
+display case~
+Most of the jewelry in this case appears unfinished - there are gold
+
+bands without stones set into them, pendants without chains, chains
+
+without clasps.  The case is nevertheless locked tight.
+
+~
+E
+coffers velvet gems~
+These small metal coffers teem with gems of every color, size and shape. 
+
+A few piles of stones of similar sizes are scattered about on black
+
+velvet cloth that lies in front of the coffers.
+
+~
+-1
+S
+
+#81331
+(t) The Jeweler's Guild - Beneath a Spiral Staircase~
+Spiraling up the north wall, a staircase winds its way ever higher until
+
+reaching a thin metal platform that is anchored to the white marble near
+
+the ceiling of the chamber.  Three diamond-shaped windows are set into
+
+the wall, two level with each other and the third slightly above the
+
+other two.  A few scuff marks mar the glossy finish of the polished floor
+
+near a southern archway that leads to a somewhat messy workroom.
+
+~
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81340 10 10 5
+D2
+~
+~
+0 -1 81330 10 10 5
+D4
+~
+~
+0 -1 81332 10 10 5
+-1
+S
+
+#81332
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81333 10 10 5
+D5
+~
+~
+0 -1 81331 10 10 5
+-1
+S
+
+#81333
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81334 10 10 5
+D2
+~
+~
+0 -1 81332 10 10 5
+-1
+S
+
+#81334
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 1 9 0
+D2
+~
+~
+0 -1 81333 10 10 5
+D5
+~
+~
+0 -1 81335 10 10 5
+-1
+S
+
+#81335
+Nothing~
+Under Construction.
+
+~
+[Orb] glass corridor
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81320 10 10 5
+D1
+~
+~
+0 -1 81336 10 10 5
+D4
+~
+~
+0 -1 81334 10 10 5
+-1
+S
+
+#81336
+Nothing~
+Under Construction.
+
+~
+[Orb] glass corridor
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81321 10 10 5
+D1
+~
+~
+0 -1 81323 10 10 5
+D3
+~
+~
+0 -1 81335 10 10 5
+D4
+~
+~
+0 -1 81337 10 10 5
+-1
+S
+
+#81337
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 1 9 0
+D2
+~
+~
+0 -1 81338 10 10 5
+D5
+~
+~
+0 -1 81336 10 10 5
+-1
+S
+
+#81338
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81337 10 10 5
+D2
+~
+~
+0 -1 81339 10 10 5
+-1
+S
+
+#81339
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81338 10 10 5
+D5
+~
+~
+0 -1 81340 10 10 5
+-1
+S
+
+#81340
+(t) The Jeweler's Guild - Beneath a Spiral Staircase~
+A mural depicting a silver lion rampant upon a white background graces
+
+the floor of this chamber.  The border of silver that encircles the crest
+
+has been worn smooth by years of being walked on.  A staircase of ornate
+
+white iron spirals its way up along the northern wall to a thin platform
+
+set high into the wall.  Arched doorways lead south, east, and west.
+
+~
+[Orb] glass corridor
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81327 10 10 5
+D2
+~
+~
+0 -1 81329 10 10 5
+D3
+~
+~
+0 -1 81331 10 10 5
+D4
+~
+~
+0 -1 81339 10 10 5
+E
+mural floor lion~
+A silver lion stands on his hind legs, his mouth agape in a soundless
+
+roar.
+
+~
+-1
+S
+
+#81341
+Nothing~
+Under Construction.
+
+~
+[Orb] pretty garden archway here
+
+[Orb] arch south, gate west, sentry at gate
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81342 10 10 5
+D1
+~
+~
+0 -1 81360 10 10 5
+D2
+~
+~
+0 -1 81362 10 10 5
+D3
+~
+~
+0 -1 81323 10 10 5
+-1
+S
+
+#81342
+Nothing~
+Under Construction.
+
+~
+[Orb] pool of water
+
+~
+-235405311 13 9 0
+D1
+~
+~
+0 -1 81348 10 10 5
+D2
+~
+~
+0 -1 81341 10 10 5
+-1
+S
+
+#81343
+removed~
+Under Construction.
+
+~
+~
+-235405311 1 9 0
+D2
+~
+~
+0 -1 81344 10 10 5
+-1
+S
+
+#81344
+removed~
+Under Construction.
+
+~
+[Orb] pretty bridge
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81343 10 10 5
+D2
+~
+~
+0 -1 81345 10 10 5
+-1
+S
+
+#81345
+removed~
+Under Construction.
+
+~
+[Orb] pretty bridge
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81344 10 10 5
+-1
+S
+
+#81346
+A Formal Garden - Before a Wrought Iron Gate~
+Neatly manicured lawns are intersected by a white stone walkway that runs
+
+east to west across the vivid hues of this formal garden.  Precisely laid
+
+out beds of flowers are set back perhaps ten feet from the walkway on
+
+either side of it, hiding the verdant grass in faultlessly rectangular
+
+arrays of red or white blossoms.  A decorative curtain of white wrought
+
+iron ends in a whimsical arch at the walls of the alabaster, palace-like
+
+building to the west, cutting the garden off from the bustle of the
+
+street to the north.
+
+~
+[Orb] 81346 yep
+
+[Orb] Garden.  Pretty entrance here
+
+[Orb] arch north, gate west, sentry at gate
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81362 10 10 5
+D1
+~
+~
+0 -1 81358 10 10 5
+D2
+~
+~
+0 -1 81347 10 10 5
+D3
+~
+~
+0 -1 81327 10 10 5
+E
+building palace west~
+This two story building is made of pure white stone, unblemished by any
+
+pit or discoloration.  Graceful pillars stand all around the building,
+
+bearing the weight of the flat roof.  The structure seems divided into
+
+two sections, joined at the middle by three clear corridors of what seems
+
+to be glass.
+
+~
+E
+pillars~
+Carved in the forms of various beautiful - and scantily clad - women, the
+
+pillars stand with their stone arms bearing the inestimable weight of the
+
+flat stone roof.
+
+~
+E
+glass corridors~
+Cylindrical in shape and utterly clear, these three corridors extend over
+
+the street from one side of the building to the next.
+
+~
+E
+gate~
+Spirals of delicately wrought white metal lace together to form this
+
+decorative gate.  Although the gate seems purely ornamental, the hinges
+
+and posts that hold the gate are sturdy and strong.
+
+~
+-1
+S
+
+#81347
+A Crystal-Blue Pool~
+This shallow pool of crystalline water is perhaps three paces across and
+
+runs parallel to a formal garden to the north.  A scattering of silver
+
+and copper coins lies along the bottom of the pool.  Tiny fish dart
+
+through the clear blue water, their glittery silver color making them
+
+almost indistinguishable from the silver coins.  A rose-covered fence of
+
+white iron runs out from the wall barring the way south.
+
+~
+[Orb] pool of water
+
+[Orb] pick roses, for red and white
+
+~
+-235405311 13 9 0
+D0
+~
+~
+0 -1 81346 10 10 5
+D1
+~
+~
+0 -1 81353 10 10 5
+-1
+S
+
+#81348
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 13 9 0
+D1
+~
+~
+0 -1 81349 10 10 5
+D3
+~
+~
+0 -1 81342 10 10 5
+-1
+S
+
+#81349
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 13 9 0
+D1
+~
+~
+0 -1 81350 10 10 5
+D3
+~
+~
+0 -1 81348 10 10 5
+-1
+S
+
+#81350
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 13 9 0
+D2
+~
+~
+0 -1 81351 10 10 5
+D3
+~
+~
+0 -1 81349 10 10 5
+-1
+S
+
+#81351
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 13 9 0
+D0
+~
+~
+0 -1 81350 10 10 5
+D1
+~
+~
+0 -1 81352 10 10 5
+-1
+S
+
+#81352
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 13 9 0
+D3
+~
+~
+0 -1 81351 10 10 5
+-1
+S
+
+#81353
+A Crystal-Blue Pool~
+The bottom of this shallow pool is covered with intricate silver spirals
+
+that overlap and twine together into a mesh of glittering lines.  The
+
+shadows cast by the rose-covered fence to the south lend a subtle mystery
+
+with the patterns of light and dark dancing across the pool as the water
+
+ripples calmly.  A few small coins lie along the bottom of the pool.
+
+~
+[Orb] get coins
+
+[Orb] pick roses
+
+~
+-235405311 13 9 0
+D1
+~
+~
+0 -1 81354 10 10 5
+D3
+~
+~
+0 -1 81347 10 10 5
+E
+mural silver bottom~
+It is impossible to tell what actual shape this design actually holds,
+
+the wavering water reduces it to a shimmering nexus of silver lines.
+
+~
+-1
+S
+
+#81354
+A Crystal-Blue Pool~
+Small waves ripple through the pool as a slight breeze washes through the
+
+area, carrying the scent of newly mown grass and a flurry of red and
+
+white petals from the roses which blanket the white fence to the south. 
+
+To the north, beds of flowers border a well-manicured lawn of verdant
+
+green.  Through the dizzily wavering reflections the outline of a lily
+
+engraved in the marble of the pool's basin is visible.
+
+~
+[Orb] pick roses
+
+~
+-235405311 13 9 0
+D1
+~
+~
+0 -1 81355 10 10 5
+D3
+~
+~
+0 -1 81353 10 10 5
+E
+lily bottom~
+The delicate, silver-limned petals of this finely engraved lily seem to
+
+waver almost as if in the wind as the surface of the water ripples.
+
+~
+-1
+S
+
+#81355
+A Crystal-Blue Pool - Corner of the Pool~
+The pool turns at a perfect right angle, the shape of the marble basin
+
+smoothly channeling the clear blue water northward.  Following the path
+
+of the pool, a white iron fence borders the bluish water at south and
+
+east, now raining down rose petals from two sides.  A small lilypad
+
+floats in the corner of the pool, boasting a single lavender blossom, and
+
+a pile of small coins has accumulated in the corner beneath the lilypad.
+
+~
+[Orb] code for blossom
+
+[Orb] coins acode
+
+[Orb] pick roses
+
+~
+-235405311 13 9 0
+D0
+~
+~
+0 -1 81356 10 10 5
+D3
+~
+~
+0 -1 81354 10 10 5
+E
+lilypad~
+This round green pad has one lavender blossom growing out of the very
+
+center.
+
+~
+-1
+S
+
+#81356
+A Crystal-Blue Pool - Corner of the Pool~
+The beautiful garden that lies to the west of the pool is a splash of
+
+color against the large white building that looms over the lawns and
+
+flowers.  A thorny vine that is covered in red and white roses runs along
+
+the western edge of the pool, providing an effective, if decorative,
+
+barrier between the pool and the garden, and an ornate fence of white
+
+iron covered in the same rose vines stands to the north.  Though you can
+
+hear the bustle of the street to the north, the delicate fence of white
+
+wrought iron closes you off from it.  The silhouette of a rearing lion
+
+can be seen standing amongst the green grass and vivid flowers to the
+
+west.
+
+~
+[Orb] pick roses
+
+~
+-235405311 13 9 0
+D1
+~
+~
+0 -1 81357 10 10 5
+D2
+~
+~
+0 -1 81355 10 10 5
+E
+statue lion silhouette~
+This gnome-sized statue depicts a lion rearing back on his hind legs,
+
+jaws agape in a silent roar.
+
+~
+-1
+S
+
+#81357
+A Crystal-Blue Pool - Pool's End~
+The pool ends here in a squared-off section of marble, and is fenced
+
+around with a curtain of delicately wrought white iron.  A cascade of red
+
+and white roses covers the fence, obscuring all visibility beyond it. 
+
+Petals rain down from the flowers to cover the surface of the pool.
+
+~
+[Orb] pick roses
+
+~
+-235405311 13 9 0
+D3
+~
+~
+0 -1 81356 10 10 5
+-1
+S
+
+#81358
+A Formal Garden~
+Enclosed between a pool of crystal blue water on the south and a
+
+delicately wrought fence of white iron to the north, this neatly laid-out
+
+garden practically radiates peaceful serenity.  The deep green lawn is
+
+bordered by red and white flowers that bloom heartily in their
+
+rectangular beds.  A white pathway runs straight down the middle of the
+
+garden.
+
+~
+[Orb] garden
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81359 10 10 5
+D3
+~
+~
+0 -1 81346 10 10 5
+E
+pathway~
+Made of white rectangular stones, this walkway bisects the garden into
+
+two precise halves as it runs from east to west.
+
+~
+-1
+S
+
+#81359
+A Formal Garden~
+Bordered by beds of red or white flowers, this verdant lawn gleams
+
+healthily from excellent care.  Crystal-blue water borders the garden on
+
+three sides, with a decorative fence of white wrought iron running along
+
+the north to wall the garden off from the bustle of the city.  A small
+
+statue of a rearing white lion stands near the water to the east.
+
+~
+[Orb] garden
+
+[Orb] used borders too much
+
+~
+-235405311 1 9 0
+D3
+~
+~
+0 -1 81358 10 10 5
+E
+statue lion~
+Rearing majestically on its two hind legs, the male lion's jaws are open
+
+wide in a roar.
+
+~
+-1
+S
+
+#81360
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81361 10 10 5
+D3
+~
+~
+0 -1 81341 10 10 5
+-1
+S
+
+#81361
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 1 9 0
+D3
+~
+~
+0 -1 81360 10 10 5
+-1
+S
+
+#81362
+Nothing~
+Under Construction.
+
+~
+[Orb] gates into jewelers garden.  Bridge above
+
+[Orb] 81362 yeah
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 81341 10 10 5
+D1
+~
+~
+0 -1 81366 10 10 5
+D2
+~
+~
+0 -1 81346 10 10 5
+D3
+~
+~
+0 -1 81363 10 10 5
+-1
+S
+
+#81363
+Nothing~
+Under Construction.
+
+~
+[Orb] glass corridor over head, courtyard here
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81362 10 10 5
+D3
+~
+~
+0 -1 81364 10 10 5
+-1
+S
+
+#81364
+Nothing~
+Under Construction.
+
+~
+[Orb] glass corridor overhead courtyard here
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81363 10 10 5
+D3
+~
+~
+0 -1 81365 10 10 5
+-1
+S
+
+#81365
+Nothing~
+Under Construction.
+
+~
+[Orb] glass corridor overhead, courtyard here
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81364 10 10 5
+-1
+S
+
+#81366
+Nothing~
+Under Construction.
+
+~
+[Orb] road
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81367 10 10 5
+D3
+~
+~
+0 -1 81362 10 10 5
+-1
+S
+
+#81367
+Nothing~
+Under Construction.
+
+~
+[Orb] road
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81368 10 10 5
+D3
+~
+~
+0 -1 81366 10 10 5
+-1
+S
+
+#81368
+Nothing~
+Under Construction.
+
+~
+[Orb] road
+
+~
+-235405311 1 9 0
+D1
+~
+~
+0 -1 81369 10 10 5
+D3
+~
+~
+0 -1 81367 10 10 5
+-1
+S
+
+#81369
+Nothing~
+Under Construction.
+
+~
+[Orb] road
+
+~
+-235405311 1 9 0
+D3
+~
+~
+0 -1 81368 10 10 5
+-1
+S
+
+#0
+

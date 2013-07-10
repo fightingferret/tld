@@ -1,0 +1,1160 @@
+#AREA
+Abandoned Farm~
+Ylena Janua~
+~
+
+0 0
+0
+#ROOMS
+
+#50750
+Entrance to the Abandoned Farm~
+The cobblestone entrance shows much sign of neglect with many weeds
+
+growing up between the individual cobblestones as well as several cracked
+
+and misplaced stones lying around the place.  To the south the
+
+farmhouse's door is weathered and splintered badly, how it still manages
+
+to stay attached to the doorframe is a small mystery.  Also barely
+
+managing to cling to their hinges are the barn doors to the west,
+
+although they are in better condition than the farmhouse's door, they
+
+still show many signs of neglect.  A large tree to the east seems to be
+
+the only thing around here that isn't showing signs of abandonment.
+
+~
+~
+-235405312 2 5 0
+D0
+~
+~
+0 -1 77054 10 10 5
+D1
+~
+~
+0 -1 50752 10 10 5
+D2
+splintered wooden door~
+farmhouse door south~
+131 -1 50759 3 10 5
+D3
+neglected wooden door~
+wooden door west barn~
+131 -1 50751 3 10 5
+A
+~
+~
+if( mob_in_room( 2337, find_room( 50758 ) ) ) {
+
+  if( rflag( reset0, room ) ) {
+
+    if( is_player( ch ) ) {
+
+      send_to_room( #blood, room );
+
+      remove_rflag( reset0, room );
+
+      }
+
+    }
+
+  }
+
+~
+E
+blood~
+@R"All who enter my domain
+
+I will slice down with my blade.
+
+Then eat you up, bones and all
+
+And dip my red cap in your blood!"@n
+
+~
+!
+1 0 1
+A
+~
+~
+if( !rflag( reset0, room ) ) {
+
+  set_rflag( reset0, room );
+
+  continue;
+
+  }
+
+else
+
+  continue;
+
+~
+!
+3 0 15
+-1
+S
+
+#50751
+Inside the Barn~
+Broken crates, ruined tools, a smashed wagon and pieces of the barn's
+
+walls are scattered throughout here, and there is evidence that at least
+
+one fire had been started in here.  The wreckage continues on toward the
+
+south, and to the east is a pair of barn doors that look to have escaped
+
+relatively unscathed from the unknown force that was unleashed here.
+
+~
+~
+-235405308 0 5 0
+D1
+wooden door~
+wooden door east~
+131 -1 50750 3 10 5
+D2
+~
+~
+0 -1 50760 10 10 5
+A
+~
+~
+if( rflag( reset0, room ) ) {
+
+  if( !mob_in_room( 2336, room ) ) {
+
+    if( is_player( ch ) ) {
+
+      remove_rflag( reset0, room );
+
+      send_to_room( #rock, room );
+
+      junk_obj( obj_in_room( 3507, room ), 1 );
+
+      mload( 2336, room );
+
+      end;
+
+      }
+
+    }
+
+  if( mob_in_room( 2336, room ) ) {
+
+    remove_rflag( reset0, room );
+
+    continue;
+
+    }
+
+  }
+
+else
+
+  continue;
+
+~
+E
+rock~
+@WYou are momentarily stunned as a rock begins to move and change shape
+
+before your very eyes, forming into a strange humanoid creature!!@n 
+
+~
+!
+3 0 6
+3507 17 1509949540 -2 0
+-1
+S
+
+#50752
+An Abandoned Farm - At a Cherry Tree~
+A large cherry tree dominates this part of the farm with it's branches
+
+spreading out to provide shade for most of this area.  Around the trunk
+
+of the tree has been constructed a bench that encircles it completely and
+
+looks capable of seating at least ten halflings.  A stone fence blocks
+
+access to a road that runs along the northern border of the farm while to
+
+the south is a farmhouse.  A field of green and gold lies to the east,
+
+while to the west is the entrance to this abandoned farm.
+
+~
+[Dalthas] no xtras
+
+~
+-235405312 2 9 0
+D1
+~
+~
+0 -1 50753 10 10 5
+D3
+~
+~
+0 -1 50750 10 10 5
+E
+stone fence~
+The fence is about two feet high, and has been constructed by carefully
+
+stacking large stones on top of another, with the occasional use of
+
+mortar to add strength and stability to the fence.  As a result of this
+
+method of construction, the base is slightly broader than the top.
+
+~
+3507 17 1509949540 -2 0
+210 17 1509949540 -2 0
+-1
+S
+
+#50753
+An Untended Field of Corn~
+Rows of a dwarf species of corn grow here resembling a sea of green and
+
+gold.  Already gone to seed the corn is well past its harvest time and is
+
+only fit to provide sustenance to the odd critter that wanders by.  The
+
+fields of corn continue to the south and east while to the west grow a
+
+cherry tree.  A fence to the north blocks access to a road that passes by
+
+the farm.
+
+~
+~
+-235405312 2 9 0
+D1
+~
+~
+0 -1 50754 10 10 5
+D2
+~
+~
+0 -1 50757 10 10 5
+D3
+~
+~
+0 -1 50752 10 10 5
+E
+stone fence~
+The fence is about two feet high, and has been constructed by carefully
+
+stacking large stones on top of another, with the occasional use of
+
+mortar to add strength and stability to the fence.  As a result of this
+
+method of construction, the base is slightly broader than the top.
+
+~
+A
+pick search~
+corn~
+if( rflag( reset0, room ) ) {
+
+  if( random( 1, 10 ) == 1 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #luck, ch );
+
+    act_notchar( #rpick, ch );
+
+    obj_to_char( oload( 1597 ), ch );
+
+    }
+
+  else {
+
+    act_tochar( #none, ch );
+
+    remove_rflag( reset0, room );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #none, ch );
+
+~
+E
+luck~
+By a stroke of luck you manage to find an ear of corn suitable to eat!
+
+~
+E
+rpick~
+With a stroke of luck $n manages to find an ear of corn suitable to eat!
+
+~
+E
+none~
+You search through the field of corn but find nothing worth picking.
+
+~
+!
+0 0 0
+A
+~
+~
+if( rflag( reset0, room ) ) {
+
+  if( !mob_in_room( 2336, room ) ) {
+
+    if( is_player( ch ) ) {
+
+      remove_rflag( reset0, room );
+
+      send_to_room( #rock, room );
+
+      junk_obj( obj_in_room( 3507, room ), 1 );
+
+      mload( 2336, room );
+
+      end;
+
+      }
+
+    }
+
+  if( mob_in_room( 2336, room ) ) {
+
+    continue;
+
+    remove_rflag( reset0, room );
+
+    }
+
+  }
+
+else
+
+  continue;
+
+~
+E
+rock~
+@WYou are momentarily stunned as a rock begins to move and change shape
+
+before your very eyes, forming into a strange humanoid creature!!@n 
+
+~
+!
+3 0 14
+3507 17 1509949540 -2 0
+3508 17 1509949540 -2 0
+-1
+S
+
+#50754
+An Untended Field of Corn~
+Rows of corn, that have gone to seed, sway in the breeze looking like a
+
+sea of green and gold.  More corn fields lie to the south and west, while
+
+on the northern and eastern side of the pasture a stone fence blocks
+
+access to a road that goes past the farm.
+
+~
+~
+-235405312 2 9 0
+D2
+~
+~
+0 -1 50755 10 10 5
+D3
+~
+~
+0 -1 50753 10 10 5
+E
+stone fence~
+The fence is about two feet high, and has been constructed by carefully
+
+stacking large stones on top of another, with the occasional use of
+
+mortar to add strength and stability to the fence.  As a result of this
+
+method of construction, the base is slightly broader than the top.
+
+~
+A
+pick search~
+corn~
+acode( find_room( 50753 ), 1 );
+
+~
+!
+0 0 0
+-1
+S
+
+#50755
+An Untended Field of Corn~
+Rows of a dwarf variety of corn grow here, resembling a sea of green and
+
+gold.  The corn cobs are well past the point of picking and the majority
+
+of them have seeded, what few that haven't have either been eaten by birds
+
+or fallen to the ground to rot.  More untended fields lie to the north
+
+and west, while to the east and south is an apple orchard.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 50754 10 10 5
+D1
+~
+~
+0 -1 50756 10 10 5
+D2
+~
+~
+0 -1 50764 10 10 5
+D3
+~
+~
+0 -1 50757 10 10 5
+A
+pick search~
+corn~
+acode( find_room( 50753 ), 1 );
+
+~
+!
+0 0 0
+A
+~
+~
+if( rflag( reset0, room ) ) {
+
+  if( !mob_in_room( 2336, room ) ) {
+
+    if( is_player( ch ) ) {
+
+      remove_rflag( reset0, room );
+
+      send_to_room( #rock, room );
+
+      junk_obj( obj_in_room( 3508, room ), 1 );
+
+      mload( 2336, room );
+
+      end;
+
+      }
+
+    }
+
+  if( mob_in_room( 2336, room ) ) {
+
+    remove_rflag( reset0, room );
+
+    continue;
+
+    }
+
+  }
+
+else
+
+  continue;
+
+~
+E
+rock~
+@WYou are momentarily stunned as a rock begins to move and change shape
+
+before your very eyes, forming into a strange humanoid creature!!@n 
+
+~
+!
+3 0 15
+3508 17 1509949540 -2 0
+-1
+S
+
+#50756
+An Abandoned Apple Orchard~
+A road can be seen over the fence that runs along the north and eastern
+
+border of this part of the apple orchard, meanwhile, in the orchard
+
+itself, the ground is littered with rotting apples that would normally
+
+have been picked and sent to market by now.  Another section of apple
+
+littered orchard lies to the south, while to the west is an untended
+
+field.
+
+~
+~
+-235405312 3 9 0
+D2
+~
+~
+0 -1 50765 10 10 5
+D3
+~
+~
+0 -1 50755 10 10 5
+E
+stone fence~
+The fence is about two feet high, and has been constructed by carefully
+
+stacking large stones on top of another, with the occasional use of
+
+mortar to add strength and stability to the fence.  As a result of this
+
+method of construction, the base is slightly broader than the top.
+
+~
+E
+apple tree~
+Reaching proudly towards the sky, these healthy looking apple trees are
+
+covered in verdant leaves and fruit ready to be harvested.
+
+~
+A
+~
+~
+if( rflag( reset0, room ) ) {
+
+  if( !mob_in_room( 2336, room ) ) {
+
+    if( is_player( ch ) ) {
+
+      remove_rflag( reset0, room );
+
+      send_to_room( #rock, room );
+
+      junk_obj( obj_in_room( 3508, room ), 1 );
+
+      mload( 2336, room );
+
+      end;
+
+      }
+
+    }
+
+  if( mob_in_room( 2336, room ) ) {
+
+    remove_rflag( reset0, room );
+
+    continue;
+
+    }
+
+  }
+
+else
+
+  continue;
+
+~
+E
+rock~
+@WYou are momentarily stunned as a rock begins to move and change shape
+
+before your very eyes, forming into a strange humanoid creature!!@n 
+
+~
+!
+3 0 12
+3508 17 1509949540 -2 0
+-1
+S
+
+#50757
+An Untended Field of Corn~
+A sea of green and gold dwarf corn grows in rows here.  The corn is long
+
+past its harvest time and the majority of the crop has gone to seed, with
+
+some of the corn having been used for some critters meal or fallen to the
+
+ground to rot.  Buffeting the corn field to the west is a run down
+
+farmhouse, while to the south is an apple orchard.  The sea of corn also
+
+extends to the north and east.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 50753 10 10 5
+D1
+~
+~
+0 -1 50755 10 10 5
+D2
+~
+~
+0 -1 50763 10 10 5
+A
+pick search~
+corn~
+acode( find_room( 50753 ), 1 );
+
+~
+!
+0 0 0
+3508 17 1509949540 -2 0
+-1
+S
+
+#50758
+Inside the Abandoned Farmhouse - Bedroom~
+Bed linen lies in shredded piles about the room, while the bed itself is
+
+now a ruined heap with its mattress torn to pieces, one of it legs
+
+missing, and the once nicely carved bedhead bearing many scratches and
+
+deep gashes.  The wardrobe and chest of drawers have been emptied of their
+
+contents and now lie on their sides, the wardrobe's doors have been torn
+
+off and now lie discarded on the floor and broken drawers are spread
+
+throughout the room.  More of the same type of destruction lies to the
+
+west.
+
+~
+~
+-235405308 0 5 0
+D3
+~
+~
+0 -1 50759 10 10 5
+2337 9 1509949540 3 0
+-1
+S
+
+#50759
+Inside the Abandoned Farmhouse - Kitchen~
+This room is an absolute mess, dishes and assorted crockery have been
+
+smashed around the room, what would have been a table and chairs is now a
+
+broken heap of wood, doors have been ripped off cupboards and the
+
+contents spread to all corners of the room.  Both doors of this room show
+
+signs of abuse, having huge gash marks in them as well as pieces missing
+
+from them, while the window frames now only have jagged remains of the
+
+glass panels they used to hold.  A similar scene can be seen in the room
+
+to the east.
+
+~
+~
+-235405308 0 5 0
+D0
+farmhouse door~
+farmhouse door north~
+131 -1 50750 3 10 5
+D1
+~
+~
+0 -1 50758 10 10 5
+D2
+back door~
+back door south~
+131 -1 50761 3 10 5
+210 17 1509949540 -2 0
+-1
+S
+
+#50760
+Inside the Barn - At a Forge~
+A small forge along the eastern wall shows no sign of recent use, and
+
+it's coals have been scattered throughout the room.  Also lying around
+
+the room are the broken and bent tools that would have been used to help
+
+hold and mould the metal that the forge would have heated up to white hot
+
+temperatures, while in the south-east corner sits a smashed, iron-banded
+
+barrel.  The wreckage continues toward the north.
+
+~
+~
+-235405308 0 5 0
+D0
+~
+~
+0 -1 50751 10 10 5
+E
+tools~
+Several large iron, pliers-styled tools are bent to such a degree that
+
+they are now no longer useable, and several hammers of varying sizes have
+
+all been broken so that they are no longer able to be wielded.  Next to
+
+the forge is a pile of broken metal, and with a bit of examination and
+
+pondering, you soon come to realise that the pile was once an anvil.
+
+~
+E
+barrel~
+The iron-banded barrel has holes smashed into it in several places,
+
+making it no longer suitable to hold water, or anything else for that
+
+matter.  A quick look inside the barrel shows that a there is still an
+
+inch or so of oily water in the bottom.
+
+~
+A
+search~
+pile metal anvil~
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  if( random( 1, 3 ) == 1 ) {
+
+    act_tochar( #find, ch );
+
+    act_notchar( #rfind, ch );
+
+    obj_to_char( oload( 639 ), ch );
+
+    }
+
+  else
+
+    act_tochar( #nothing, ch );
+
+  }
+
+else
+
+  act_tochar( #nothing, ch );
+
+~
+E
+find~
+You find an iron ingot amongst the broken remains of the anvil.
+
+~
+E
+rfind~
+$n finds an iron ingot amongst the broken remains of the anvil.
+
+~
+E
+nothing~
+Your search of the broken anvil reveals nothing.
+
+~
+!
+0 0 0
+3508 17 1509949540 -2 0
+-1
+S
+
+#50761
+Abandoned Farm Yard~
+The calf-length, unkempt grass is evidence that no one is around that
+
+cares about the upkeep of this farm any more.  The only things that seem
+
+to be keeping the grass in check is a stone fence the runs along the
+
+southern border of the farm then wraps around to the west.  On the other
+
+side of this fence is a silent, dark wood.  In the center of this
+
+forsaken yard is a well, while to the north a splintered door leads into
+
+a run down farmhouse.
+
+~
+well is here
+
+~
+-235405312 2 9 0
+D0
+back door~
+back door north~
+131 -1 50759 3 10 5
+D1
+~
+~
+0 -1 50762 10 10 5
+E
+stone fence~
+The fence is about two feet high, and has been constructed by carefully
+
+stacking large stones on top of another, with the occasional use of
+
+mortar to add strength and stability to the fence.  As a result of this
+
+method of construction, the base is slightly broader than the top.
+
+~
+E
+silent forest~
+No sounds can be detected coming from the dark forest, giving the
+
+impression that it maybe brooding over something.  Even the light seems
+
+to not want to risk irritating the forest, sending down only a few weak
+
+rays to give illumination to the various plants and trees growing beneath
+
+the main canopy.
+
+~
+A
+~
+~
+if( rflag( reset0, room ) ) {
+
+  if( !mob_in_room( 2336, room ) ) {
+
+    if( is_player( ch ) ) {
+
+      remove_rflag( reset0, room );
+
+      send_to_room( #rock, room );
+
+      junk_obj( obj_in_room( 3508, room ), 1 );
+
+      mload( 2336, room );
+
+      end;
+
+      }
+
+    }
+
+  if( mob_in_room( 2336, room ) ) {
+
+    remove_rflag( reset0, room );
+
+    continue;
+
+    }
+
+  }
+
+else
+
+  continue;
+
+~
+E
+rock~
+@WYou are momentarily stunned as a rock begins to move and change shape
+
+before your very eyes, forming into a strange humanoid creature!!@n 
+
+~
+!
+3 0 3
+82 17 1509949540 -2 0
+3508 17 1509949540 -2 0
+-1
+S
+
+#50762
+An Overgrown Herb Garden~
+Weeds are taking over what once looked like a neat herb patch, with the
+
+herbs that have still managed to keep a hold upon their territory
+
+appearing haggard, as if the fight against the weeds are sapping both
+
+their resources and spirit.  A weed covered path runs in a east-west
+
+direction through here, leading to an overgrown yard to the west and
+
+toward some apple trees to the east.  Bordering the north is a rundown
+
+farmhouse, while along the south a stone fence stands before a silent,
+
+dark forest.
+
+~
+~
+-235405312 2 9 0
+D1
+~
+~
+0 -1 50763 10 10 5
+D3
+~
+~
+0 -1 50761 10 10 5
+E
+stone fence~
+The fence is about two feet high, and has been constructed by carefully
+
+stacking large stones on top of another, with the occasional use of
+
+mortar to add strength and stability to the fence.  As a result of this
+
+method of construction, the base is slightly broader than the top.
+
+~
+E
+silent forest~
+No sounds can be detected coming from the dark forest, giving the
+
+impression that it maybe brooding over something.  Even the light seems
+
+to not want to risk irritating the forest, sending down only a few weak
+
+rays to give illumination to the various plants and trees growing beneath
+
+the main canopy.
+
+~
+415 17 1509949540 -2 0
+3508 17 1509949540 -2 0
+3508 17 1509949540 -2 0
+3507 17 1509949540 -2 0
+3507 17 1509949540 -2 0
+-1
+S
+
+#50763
+An Abandoned Apple Orchard~
+Rotting apples lie on the ground under the apple tree that seems
+
+blissfully unaware of the surrounding chaos.  Toward the west is an
+
+overgrown garden, northward lies an untended field, while to the east
+
+more apples litter the ground under another apple tree.  A stone fence to
+
+the south keeps a silent, dark forest a bay.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 50757 10 10 5
+D1
+~
+~
+0 -1 50764 10 10 5
+D3
+~
+~
+0 -1 50762 10 10 5
+E
+stone fence~
+The fence is about two feet high, and has been constructed by carefully
+
+stacking large stones on top of another, with the occasional use of
+
+mortar to add strength and stability to the fence.  As a result of this
+
+method of construction, the base is slightly broader than the top.
+
+~
+E
+forest~
+No sounds can be detected coming from the dark forest, giving the
+
+impression that it maybe brooding over something.  Even the light seems
+
+to not want to risk irritating the forest, sending down only a few weak
+
+rays to give illumination to the various plants and trees growing beneath
+
+the main canopy.
+
+~
+E
+apple tree~
+Reaching proudly towards the sky, these healthy looking apple trees are
+
+covered in verdant leaves and fruit ready to be harvested.
+
+~
+A
+~
+~
+if( rflag( reset0, room ) ) {
+
+  if( !mob_in_room( 2336, room ) ) {
+
+    if( is_player( ch ) ) {
+
+      remove_rflag( reset0, room );
+
+      send_to_room( #rock, room );
+
+      junk_obj( obj_in_room( 3507, room ), 1 );
+
+      mload( 2336, room );
+
+      end;
+
+      }
+
+    }
+
+  if( mob_in_room( 2336, room ) ) {
+
+    remove_rflag( reset0, room );
+
+    continue;
+
+    }
+
+  }
+
+else
+
+  continue;
+
+~
+E
+rock~
+@WYou are momentarily stunned as a rock begins to move and change shape
+
+before your very eyes, forming into a strange humanoid creature!!@n 
+
+~
+!
+3 0 11
+3507 17 1509949540 -2 0
+3507 17 1509949540 -2 0
+-1
+S
+
+#50764
+An Abandoned Apple Orchard~
+Reaching for the sky is an apple tree that is unaware of the chaos that
+
+surrounds it, and which even presents itself at it's very feet in the form
+
+of it's unpicked fruit, having been allowed to fall to the ground and rot. 
+
+To both the east and west more apple trees grow, northward is an untended
+
+field, and a stone fence blocks the way south.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 50755 10 10 5
+D1
+~
+~
+0 -1 50765 10 10 5
+D3
+~
+~
+0 -1 50763 10 10 5
+E
+stone fence~
+The fence is about two feet high, and has been constructed by carefully
+
+stacking large stones on top of another, with the occasional use of
+
+mortar to add strength and stability to the fence.  As a result of this
+
+method of construction, the base is slightly broader than the top.
+
+~
+E
+apple tree~
+Reaching proudly towards the sky, these healthy looking apple trees are
+
+covered in verdant leaves and fruit ready to be harvested.
+
+~
+3507 17 1509949540 -2 0
+3508 17 1509949540 -2 0
+-1
+S
+
+#50765
+An Abandoned Apple Orchard~
+Bordered by a stone fence to the south and east, this section of the
+
+apple orchard shows signs of neglect with the trees fruit being allowed
+
+to fall to the ground to rot.  More apple trees grow to the north and
+
+west, while just over the stone wall a road can be seen.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 50756 10 10 5
+D3
+~
+~
+0 -1 50764 10 10 5
+E
+stone fence~
+The fence is about two feet high, and has been constructed by carefully
+
+stacking large stones on top of another, with the occasional use of
+
+mortar to add strength and stability to the fence.  As a result of this
+
+method of construction, the base is slightly broader than the top.
+
+~
+E
+apple tree~
+Reaching proudly towards the sky, these healthy looking apple trees are
+
+covered in verdant leaves and fruit ready to be harvested.
+
+~
+-1
+S
+
+#0
+

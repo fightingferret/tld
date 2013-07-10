@@ -1,0 +1,755 @@
+#AREA
+North Appleglen Farm~
+Carth~
+~
+
+0 0
+0
+#ROOMS
+
+#60500
+Farm Entrance~
+A path of white stone winds its way northwards through the grass, turning
+
+east along a wall you can see to the north.  The grass extends east of
+
+here.  To the south is a low stone wall while, to the west, a small,
+
+wooden gate stands between you and the North Cranberry Road.
+
+~
+~
+-235405304 2 5 0
+D0
+~
+~
+0 -1 60503 10 10 5
+D1
+~
+~
+0 -1 60501 10 10 5
+D3
+small wooden gate~
+small wooden gate~
+131 -1 77028 3 10 5
+-1
+S
+
+#60501
+A Grassy Field~
+A low wall made of stone extends to the south and east, dividing this
+
+farm from the next.  The field is covered completely in grass.  It is
+
+short, but uneven, clearly trimmed by animals.  To the west and north of
+
+here, winding unevenly through the field, is a path of white stone.  The
+
+path extends from a wooden gate in the west to the entrance to the farm
+
+proper in the north.  Far in the north you can make out the entrance to
+
+the farmhouse.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 60502 10 10 5
+D3
+~
+~
+0 -1 60500 10 10 5
+2308 137 1509949540 3 0
+-1
+S
+
+#60502
+Before the Farmyard~
+Beyond the northern gate you see the farm yard, with an entrance to the
+
+farmhouse.  West and south of here stretches a field of grass, trimmed
+
+short by some domestic animal.  It's flat green surface is broken only by
+
+a path of white stone that leads west before turning south and following
+
+the wall down to the main farm entrance.  East of you is a low wall
+
+comprised of unshaped stone that divides this farm from the next.
+
+~
+~
+-235405312 2 9 0
+D0
+three-bar gate~
+three bar gate~
+131 -1 60505 10 10 5
+D2
+~
+~
+0 -1 60501 10 10 5
+D3
+~
+~
+0 -1 60503 10 10 5
+-1
+S
+
+#60503
+A Grassy Field, a Path~
+The white path turns south and east here, and moves along the side of a
+
+wall.  Set in the wall is a small window and, in the gloom behind it, you
+
+can vaguely make out the inside of a farmhouse kitchen.  West, over a low
+
+wall, you can see the North Cranberry Road.  East and south there
+
+stretches a field covered in grass.
+
+~
+~
+-235405312 2 9 0
+D1
+~
+~
+0 -1 60502 10 10 5
+D2
+~
+~
+0 -1 60500 10 10 5
+-1
+S
+
+#60504
+The Farmhouse Kitchen~
+This small room is cluttered with household items.  A large wooden table
+
+fills most of the space in the room, except for near the western wall
+
+where shelves have been set from floor to ceiling.  The shelves are
+
+cluttered, each one containing a different type of item.  One shelf
+
+contains plates and cups, others contain varying types of herbs, or small
+
+piles of potatoes and carrots.  Hanging from the wooden beams that hold
+
+up the ceiling are more vegetables, particularly strings of onions and
+
+garlic.  In one corner is a small range.  The heat coming from it is
+
+quite powerful, as is the smell of baking bread.  A door in the eastern
+
+wall leads out into the farmyard and a doorway to the north leads through
+
+to what appears to be a bedroom.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 60511 10 10 5
+D1
+wooden door~
+wooden door~
+131 -1 60505 10 10 5
+2331 9 1509949540 3 0
+-1
+S
+
+#60505
+The Farmyard~
+The farm's main yard is simply a square of compacted dirt.  It is rough
+
+and uneven; on rainy days things must be quite muddy.  To the west, and
+
+sensibly provided with a mat and boot scraper, is the door to the
+
+farmhouse.  The yard heads north, where you can see a small stable in the
+
+distance, and east to a barn.  To the south, beyond a low gate, is a
+
+field of grass with a path of white stone running through it.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 60510 10 10 5
+D1
+~
+~
+0 -1 60506 10 10 5
+D2
+three-bar gate~
+three bar gate~
+131 -1 60502 10 10 5
+D3
+wooden door~
+wooden door~
+131 -1 60504 10 10 5
+E
+boot scraper~
+Made from wrought iron shaped into a dragon, this little device is
+
+designed to remove the worst of the mud from one's shoes.
+
+~
+A
+scrape clean~
+boots shoes feet foot~
+act_tochar( "@YYou clean your footwear. How civilised!@n", ch );
+
+act_notchar( "$n does the civilised thing and cleans $s footwear.", ch );
+
+~
+!
+0 0 0
+-1
+S
+
+#60506
+Outside the Barn~
+To the north, past a low gate, there is a field of hops.  The wind
+
+catches them occasionally, filling the air with there musty smell.  East
+
+of here stands a rickety wooden barn.  This part of the yard has been
+
+strewn with the tools of farming, all of them in various states of
+
+disrepair.  Next to a small chicken coop is a small plough.  It has been
+
+covered by a tarpaulin but it's shape is still clearly recognisable. 
+
+West, to the other side of the yard, you can see the farmhouse.
+
+~
+~
+-235405312 2 9 0
+D0
+three-bar gate~
+three-bar gate~
+131 -1 60509 10 10 5
+D1
+~
+~
+0 -1 60507 10 10 5
+D3
+~
+~
+0 -1 60505 10 10 5
+E
+cage coop chicken~
+A simple structure of wood and wire, the coop stands against the wall. 
+
+The inside of the cage is filled with straw that has been arranged into
+
+two crude nests.
+
+~
+A
+open~
+coo coop~
+if( rflag( reset0, room ) ) {
+
+  act_tochar( #open_c, ch );
+
+  act_notchar( #open_r, ch );
+
+  wait( 1 );
+
+  act_room( #explode, ch );
+
+  remove_rflag( reset0, room );
+
+  mload( 2310, find_room( 60506 ) );
+
+  mload( 2311, find_room( 60506 ) );
+
+  }
+
+else
+
+  act_tochar( #nothing, ch );
+
+~
+E
+open_c~
+You reach out and open the coop door.
+
+~
+E
+open_r~
+$n opens the door to the chicken coop.
+
+~
+E
+explode~
+Clucking loudly and scattering feathers, two chickens leap out of the coop!
+
+~
+E
+nothing~
+The coop has already been opened.
+
+~
+!
+0 0 0
+-1
+S
+
+#60507
+The Barn~
+Tall and wooden and musty, this barn has been stacked high with farm
+
+produce.  What light there is in here comes from between the uneven
+
+wooden boards that comprise the walls.  To the back of the barn lay
+
+filled sacks, pilled unevenly to about head height for a halfling. 
+
+Beside them, and piled much higher, bales of hay await the day they will
+
+be turned into horse food.  Scattered about, either leaning against a
+
+wall or hanging from one, harneses and farmyard equipment have been
+
+stored.
+
+~
+~
+-235405312 2 9 0
+D3
+~
+~
+0 -1 60506 10 10 5
+-1
+S
+
+#60508
+A Field of Hops~
+This part of the field is bordered to the east by a high wall and to the
+
+south by the side of a barn.  The field is filled by row after row of
+
+hops, filling the air with their musky scent.  Towards the top of one of
+
+the plants you see a tiny round ball, the nest of a mouse.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 60515 10 10 5
+D3
+~
+~
+0 -1 60509 10 10 5
+A
+search~
+bal ball nes nest~
+if( rflag( reset0, room ) ) {
+
+  act_tochar( #poke_c, ch );
+
+  act_notchar( #poke_r, ch );
+
+  wait( 1 );
+
+  act_tochar( #bite_c, ch );
+
+  act_notchar( #bite_r, ch );
+
+  i = random( 1, 3 );
+
+  dam_message( ch, i, "the mouse bite" );
+
+  inflict( ch, mob, i, "an angry mouse" );
+
+  mload( 2301, find_room( 60508 ) );
+
+  }
+
+else
+
+  act_tochar( #nothing, ch );
+
+~
+E
+poke_c~
+You poke your finger into the nest to see what you can see.
+
+~
+E
+poke_r~
+@R$n pokes $s finger into the tiny nest.
+
+~
+E
+bite_c~
+You yelp loudly in surprise when something bites your finger!
+
+~
+E
+bite_r~
+@r$n suddenly yelps and jumps back holding $s finger!
+
+~
+E
+nothing~
+You poke around in the nest, but it appears to be empty.
+
+~
+!
+0 0 0
+2301 9 1509949540 3 0
+-1
+S
+
+#60509
+A Field of Hops~
+Surrounding you and stretching to the north and east, stretch row after
+
+row of plants.  The plants bear a passing resemblance to wheat yet are
+
+shorter and the stems are a darker brown in colour.  To the north, beyond
+
+the field, you can see a low range of hills.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 60514 10 10 5
+D1
+~
+~
+0 -1 60508 10 10 5
+D2
+three-bar gate~
+three-bar gate~
+131 -1 60506 10 10 5
+-1
+S
+
+#60510
+The Farmyard~
+The farmyard runs north and south from here, passing between the
+
+farmhouse and a low wall of stone.  Beyond the wall, a field of hops
+
+stretches off to the east.  The farmhouse wall has been whitewashed and a
+
+small window set into it.  Inside it is too gloomy to see without looking
+
+carefully.  Some way to the north you see a fenced paddock.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 60513 10 10 5
+D2
+~
+~
+0 -1 60505 10 10 5
+2359 9 1509949540 3 0
+-1
+S
+
+#60511
+The Farmhouse~
+This low room has a window set in the eastern wall, looking out over the
+
+farmyard and a doorway to the south that leads into the farm's kitchen. 
+
+There is a dresser underneath the window with a chair set before it.  On
+
+the dresser are a number of bowls, each filled with a selection of dried
+
+herbs, filling the air with the small of lavender and jasmin.  The only
+
+other item in this room is a low, wide bed, neatly made and set against
+
+the western wall.
+
+~
+~
+-235405312 2 9 0
+D2
+~
+~
+0 -1 60504 10 10 5
+-1
+S
+
+#60512
+The Garden~
+Planted neatly here are row after row of vegtables.  You notice carrots
+
+in one row, with pea plants growing up a frame behind them.  Elsewhere
+
+you notice potatoes and onions.  In one corner, and emitting a gentle
+
+hum, stands a beehive on a low table.  The way north is blocked by what
+
+appears to be the side of a stable and south stands the farmhouse.  To
+
+the west, over a low wall you can see the main road into town and another
+
+farm beyond it.  The only way you can go is east.
+
+~
+~
+-235405312 2 9 0
+D1
+~
+~
+0 -1 60513 10 10 5
+E
+bees beehive hive~
+Set on a low table the hive is a simple box, each side about as long as a
+
+halfling's arm.  There is a constant low-pitched buzzing coming from it
+
+and, every once in a while, a @ybee@n crawls out from a hole in the front
+
+and flies of in search of nectar.
+
+~
+A
+move touch search push pull~
+bees hive beehive~
+act_tochar( "You examine the beehive.", ch );
+
+act_notchar( "$n approaches the beehive.", ch );
+
+wait( 1 );
+
+send_to_room( "@YSuddenly a swarm of bees erupts from the hive!", room );
+
+mload( 2373, room );
+
+interpret( mob, "attack", ch );
+
+~
+!
+0 0 0
+-1
+S
+
+#60513
+The Farmyard~
+The farmyard ends here at a gate.  Beyond that, to the north you can see
+
+a small paddock.  To the east, beyond a low wall, spreads a field of hops. 
+
+West of you is a small garden.  Looking that way you can see rows of
+
+vegtables of many kinds along with a small bee hive in one corner. 
+
+South, the farmyard continues past the farmhouse.
+
+~
+~
+-235405312 2 9 0
+D0
+three-bar gate~
+three-bar gate~
+131 -1 60518 10 10 5
+D2
+~
+~
+0 -1 60510 10 10 5
+D3
+~
+~
+0 -1 60512 10 10 5
+-1
+S
+
+#60514
+A Field of Hops~
+Looking over the low, western wall you see a small garden planted between
+
+the farmhouse and a stable.  In all other directions there stretches a
+
+field of hops.  Directly to the south of you, and almost hidden by the
+
+plants, there is a low gate leading back into the farmyard.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 60517 10 10 5
+D1
+~
+~
+0 -1 60515 10 10 5
+D2
+~
+~
+0 -1 60509 10 10 5
+-1
+S
+
+#60515
+A Field of Hops~
+Any path to the east is blocked by a high wall, but the field opens up in
+
+all directions.  Beyond the hops to the north you see low hills filling
+
+the horizon.  To the south is the side of a barn.  Next to it you can
+
+barely make out a low gate leading back to the farmyard.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 60516 10 10 5
+D2
+~
+~
+0 -1 60508 10 10 5
+D3
+~
+~
+0 -1 60514 10 10 5
+-1
+S
+
+#60516
+A Field of Hops~
+To the north and east walls mark the end of the field.  South and west of
+
+you stretch row after row of hops.  The wind coming from the north blows
+
+strongly here causing the plants to sway constantly adding a gentle
+
+rustling sound to the other noises of farm life.
+
+~
+~
+-235405312 2 9 0
+D2
+~
+~
+0 -1 60515 10 10 5
+D3
+~
+~
+0 -1 60517 10 10 5
+-1
+S
+
+#60517
+A Field of Hops~
+Passage is blocked by walls to the north and west.  Beyond the northern
+
+wall the ground rapidly becomes uneven and hilly.  Looking over the
+
+western wall you see a small stable and paddock.  In all other directions
+
+stretches a field of hops.  This corner doesn't appear to be as well
+
+developed as the rest of the field and some of the plants give evidence
+
+of being chewed.
+
+~
+~
+-235405312 2 9 0
+D1
+~
+~
+0 -1 60516 10 10 5
+D2
+~
+~
+0 -1 60514 10 10 5
+A
+~
+~
+if( mob_in_room( 2297, find_room( 60518 ) ) )
+
+  send_to_room( #message, room );
+
+~
+E
+message~
+@RSuddenly a horse's head appears over the western wall. Taking a
+
+@Rquick mouthful of hops, the head dissappears.@n
+
+~
+!
+2 100 0
+-1
+S
+
+#60518
+Outside the Stall~
+Low walls surround this small paddock to the east and north.  To the west
+
+there is a small horse stall.  The ground consists of dried mud and straw. 
+
+From the west comes a strong smell of horse.
+
+~
+~
+-235405312 2 9 0
+D2
+three-bar gate~
+three-bar gate~
+131 -1 60513 10 10 5
+D3
+stall door~
+stall door~
+1 -1 60519 10 10 5
+2297 9 1509949540 3 0
+-1
+S
+
+#60519
+The Pony Stall~
+The only light in this small building comes through the doorway to the
+
+east.  Scattered about between the wooden walls are piles of straw,
+
+liberally sprinkled with horse manure.  Along one wall, about the right
+
+height for a small pony, is a feeding tray, half filled with hay.
+
+~
+~
+-235405312 2 9 0
+D1
+stall door~
+stall door~
+1 -1 60518 10 10 5
+-1
+S
+
+#0
+

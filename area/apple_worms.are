@@ -1,0 +1,1800 @@
+#AREA
+apple worms~
+Ylena~
+~
+
+0 0
+0
+#ROOMS
+
+#8500
+The Apple Grove - The Dying Tree~
+Sickly fruit litters the ground here and clings to the branches of this
+
+dying tree.  Leaves that should be a verdant green are shriveling up and
+
+turning brown, a sure sign that something is wrong and that they are no
+
+longer getting the water they need.  Insect activity is greater than
+
+normal, as if they are taking advantage of this poor tree's slow death.
+
+~
+[Srad'Ion] when you do "look insect", the return line "burrowing" is misspelled.
+
+~
+-235405303 3 9 0
+D0
+~
+~
+0 -1 42769 10 10 5
+D1
+~
+~
+0 -1 42767 10 10 5
+D2
+~
+~
+0 -1 42763 10 10 5
+D3
+~
+~
+0 -1 42765 10 10 5
+D5
+~
+~
+235 -1 8502 10 10 5
+E
+l ground floor~
+At the base of the tree and around its roots, the ground looks disturbed,
+
+as if something is tunnelling underneath it.  The tunnelling has loosened
+
+the normally compact earth so much that the ground should be very easy to
+
+dig up.
+
+~
+E
+tree~
+This apple tree looks like it was once a stately tree, providing much
+
+fruit.  However, it now looks a pathetic invalid that should be put out
+
+of its misery.  Its leaves are curled up and dying, its fruit looks like
+
+it would make great sling shot ammunition, but you would definitely not
+
+want to eat it.
+
+~
+E
+insects~
+A myriad of insects buzz around this tree, attracted by its slow death. 
+
+There are signs of insects borrowing within the trees bark and all sorts
+
+of creepy crawlies seem to have made their home in the shriveled fruit
+
+lying on the ground and still on the branches.
+
+~
+A
+dig~
+ground earth~
+if( is_open( room, down ) )
+
+  act_tochar( #open, ch );
+
+else
+
+  act_tochar( #dig, ch );
+
+act_notchar( #rdig, ch );
+
+open( room, down );
+
+~
+E
+open~
+The earth at the base of the tree has already been dug up.
+
+~
+E
+dig~
+Kneeling down, you begin digging at the earth around at the base of the
+
+tree.  After a few minutes you have cleared a way down.
+
+~
+E
+rdig~
+$n kneels down, and begins digging at the earth around at the base of the
+
+tree.  After a few minutes $n has cleared a way down.
+
+~
+!
+0 0 0
+A
+get pick~
+fruit apple~
+act_tochar( #apple, ch );
+
+act_notchar( #rapple, ch );
+
+~
+E
+apple~
+As you disturb the apple a swarm of fruit flies rises up, momentarily
+
+obscuring your vision before they disappear in search of a new home.
+
+~
+E
+rapple~
+As $n disturbs the apple, a swarm of fruit flies rises up, momentarily
+
+obscuring $s vision before they disappear in search of a new home.
+
+~
+!
+0 0 0
+-1
+S
+
+#8502
+Under the Dying Apple Tree~
+The only remains of the dying apple trees roots are chewed stubs poking
+
+out from the ceiling, and wood fibres littering the ground.  The floor of
+
+this fairly compact tunnel, like the walls and ceiling, are rough,
+
+uneven, and look as if only recently made.  The poorly constructed tunnel
+
+continues to both the east and north.
+
+~
+~
+-235274240 11 5 0
+D0
+~
+~
+0 -1 8504 10 10 5
+D1
+~
+~
+0 -1 8503 10 10 5
+D4
+~
+~
+235 -1 8500 10 10 5
+E
+roots ceiling~
+All of the poor trees roots have been eaten away to mere stubs, not even
+
+the larger roots have escaped this fate.
+
+~
+A
+dig~
+ceiling roof~
+if( is_open( room, up ) )
+
+  act_tochar( #open, ch );
+
+else
+
+  act_tochar( #dig, ch );
+
+act_notchar( #rdig, ch );
+
+open( room, up );
+
+~
+E
+open~
+The way up has already been cleared.
+
+~
+E
+dig~
+You dig at the roof of the tunnel, showering dirt upon yourself.  After a
+
+few minutes, you clear a way up.
+
+~
+E
+rdig~
+You are showered in dirt, as $n starts digging a way up through the roof
+
+of the tunnel.  After a few minutes, $n finally clears a way up.
+
+~
+!
+0 0 0
+A
+search~
+fibers~
+act_tochar( #look, ch );
+
+act_notchar( #rlook, ch );
+
+~
+E
+look~
+You search through the root fibres, but find nothing of any real interest.
+
+~
+E
+rlook~
+$n searches through the root fibres, but finds nothing of any real
+
+interest.
+
+~
+!
+0 0 0
+-1
+S
+
+#8503
+Amongst Tangled Roots~
+Partially consumed roots of a huge tree reach from the ceiling down
+
+through the floor, and make any further movement to the east impossible. 
+
+Most of the soil has been cleared away from these nibbled roots, allowing
+
+better access to them for whoever, or whatever, is making them their main
+
+meal.
+
+~
+[Janua] a search roots here would be nice
+
+~
+-235274240 11 5 0
+D3
+~
+~
+0 -1 8502 10 10 5
+A
+search~
+roots~
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  act_tochar( #pebble, ch );
+
+  act_notchar( #rpebble, ch );
+
+  obj_to_char( oload( 78 ), ch );
+
+  }
+
+else
+
+  act_tochar( #nothing, ch );
+
+~
+E
+pebble~
+As you search the roots you dislodge a pebble!
+
+~
+E
+rpebble~
+As $n searches the roots $s dislodges a pebble!
+
+~
+E
+nothing~
+You search the roots and find nothing of interest.
+
+~
+!
+0 0 0
+2281 9 1509949540 3 0
+-1
+S
+
+#8504
+An Oddly Shaped Tunnel~
+This tunnel is an odd circular shape with no real starting points for
+
+walls, floor or ceiling.  Loose dirt falling occasionally from the walls
+
+and ceiling indicate that this tunnel has only recently been dug out. 
+
+The tunnel continues north and south with it slanting upwards towards the
+
+south.
+
+~
+[Orb] line three: indicates (loose dirt is singular so the verb form of 'indicate' should be as well.)
+
+[Orb] possibly an acode for the dirt falling down on me occasionally?
+
+~
+-235274240 11 5 0
+D0
+~
+~
+0 -1 8505 10 10 5
+D2
+~
+~
+0 -1 8502 10 10 5
+A
+~
+~
+send_to_room( #dirt, room );
+
+~
+E
+dirt~
+Dirt comes showering down upon you from the ceiling.
+
+~
+!
+2 100 5
+78 17 1509949490 -2 0
+-1
+S
+
+#8505
+A Tunnel Intersection~
+The smooth, compacted walls, floor and ceiling bear testimony to this
+
+tunnel's frequent use.  To the west the tunnel drops steeply but still
+
+should be easy to follow.  The southern branch of this intersection looks
+
+new, with pieces of ceiling and walls occasionally breaking free and
+
+dropping to the floor.
+
+~
+[Orb] line two: tunnel's frequent use.
+
+[Orb] extras: south, walls
+
+[Janua] line 3: look should be looks
+
+~
+-235274240 11 5 0
+D1
+~
+~
+0 -1 8507 10 10 5
+D2
+~
+~
+0 -1 8504 10 10 5
+D5
+~
+~
+0 -1 8506 10 10 5
+E
+south walls~
+The circular entrance to the southern tunnel looks ragged around its
+
+crumbly, dirt edges.
+
+~
+2281 9 1509949540 3 0
+-1
+S
+
+#8506
+An Oddly Shaped Tunnel - A Steep Incline~
+The circular tunnel's steep incline and almost perfectly smooth floor
+
+makes movement hard, but not impossible.  The soil composition of the
+
+tunnel starts to change from tightly packed dirt near the top of this
+
+section of tunnel, to a mixture of clay and soil toward the bottom of
+
+the incline.
+
+~
+[Janua] I would change towards to toward
+
+~
+-235274240 11 5 0
+D4
+~
+~
+0 -1 8505 10 10 5
+D5
+~
+~
+0 -1 8524 10 10 5
+A
+~
+~
+if( find_stat( ch, dex ) < random( 1, 13 ) ) {
+
+  act_tochar( #tumble, ch );
+
+  act_notchar( #rtumble, ch );
+
+  transfer( ch, find_room( 8524 ) );
+
+  act_tochar( #arrive, ch );
+
+  act_notchar( #rarrive, ch );
+
+  i = 1d6;
+
+  dam_message( ch, i, "the tumble" );
+
+  inflict( ch, mob, i, "tumble" );
+
+  }
+
+~
+E
+tumble~
+You loose your footing and go tumbling down the slope!
+
+~
+E
+rtumble~
+$n loose's $s footing and goes tumbling down the slope!
+
+~
+E
+arrive~
+Rolling, and sliding down the slope, you eventually arrive at the bottom
+
+in a crumpled heap!
+
+~
+E
+rarrive~
+Rolling, and sliding down the slope, $n arrives at the bottom in a
+
+crumpled heap!
+
+~
+!
+1 0 16
+-1
+S
+
+#8507
+A Turn in an Oddly Shaped Tunnel~
+The walls, floor and ceiling of this circular tunnel are composed of
+
+smoothed, compacted dirt.  The ground is surprisingly clear of the debris
+
+that would normally be found in an underground tunnel, it is almost like
+
+something has swept the floors clean.  The tunnel continues to the north
+
+and west.
+
+~
+~
+-235274240 11 5 0
+D0
+~
+~
+0 -1 8508 10 10 5
+D3
+~
+~
+0 -1 8505 10 10 5
+-1
+S
+
+#8508
+An Oddly Shaped Tunnel~
+Running in a north-south direction, this circular tunnel is made up of
+
+smooth, well compacted soil which tells of its frequent use.  Near the base
+
+of the east wall, a small niche is the only flaw that this earthen tunnel
+
+seems to possess.  The way north dips down into the darkness below.
+
+~
+~
+-235274240 11 5 0
+D2
+~
+~
+0 -1 8507 10 10 5
+D5
+~
+~
+0 -1 8509 10 10 5
+E
+niche~
+The niche is small, barely big enough to accommodate a hand.  There seems
+
+to be something within.
+
+~
+A
+search~
+niche~
+act_tochar( #ouch, ch );
+
+act_notchar( #rouch, ch );
+
+dam_message( ch, 1d2+2, "a set of fangs" );
+
+inflict( ch, mob, 1d2+2, "bites" );
+
+wait( 1 );
+
+send_to_room( #rude, room );
+
+~
+E
+ouch~
+After a few seconds of searching, your hand brushes against something
+
+furry.  Suddenly fangs bury themselves in your hand!!
+
+~
+E
+rouch~
+Muttering a muffled exclamation, $n quickly withdraws their hand from the
+
+niche.
+
+~
+E
+rude~
+Much indignant squeaking and hissing arises from the niche.
+
+~
+!
+0 0 0
+2281 9 1509949540 3 0
+-1
+S
+
+#8509
+The Start of a Clay Tunnel~
+This tunnel is made up mostly of clay, with just a little soil near the
+
+ceiling.  Roughly circular in shape and smooth, the tunnel looks like it
+
+gets frequent use.  The tunnel continues to the east, and to the south it
+
+rises upwards.
+
+~
+~
+-235274240 11 5 0
+D1
+~
+~
+0 -1 8510 10 10 5
+D4
+~
+~
+0 -1 8508 10 10 5
+-1
+S
+
+#8510
+A Bend in a Clay Tunnel~
+This north-west bend in the clay tunnel shows signs of constant use as
+
+its walls, floors and even ceiling are perfectly smooth.  The circular
+
+shaped tunnel has a sheen of moisture which causes the red clay to
+
+sparkle in the light.
+
+~
+~
+-235274240 11 5 0
+D0
+~
+~
+0 -1 8511 10 10 5
+D3
+~
+~
+0 -1 8509 10 10 5
+-1
+S
+
+#8511
+A Damp Clay Tunnel~
+The smooth perfection of the red clay tunnel is marred by mud lying
+
+everywhere.  The source of the mud is what looks to be the recent
+
+addition of a new tunnel that slopes upwards to the east.  Occasionally a
+
+clod of earth falls from above which then, combining with the moisture in
+
+the tunnel, adds to the mud. 
+
+~
+~
+-235274240 11 5 0
+D0
+~
+~
+0 -1 8512 10 10 5
+D2
+~
+~
+0 -1 8510 10 10 5
+D4
+~
+~
+0 -1 8513 10 10 5
+E
+mud floor~
+Soil tumbles to the ground from the tunnel above and then quickly
+
+combines with the excess moisture on the floor, turning into a lumpy,
+
+black, muddy mass.
+
+~
+A
+search~
+floor mud~
+act_tochar( #mud, ch );
+
+act_notchar( #rmud, ch );
+
+~
+E
+mud~
+You search the mud and come up dirty-handed!
+
+~
+E
+rmud~
+$n searches the mud and comes up dirty-handed!
+
+~
+!
+0 0 0
+2282 9 1509949540 3 0
+-1
+S
+
+#8512
+A Damp Clay Tunnel~
+The floor of the slick, red clay tunnel is covered in black mud.  The
+
+source of the mud is from soil falling down from a newly started tunnel
+
+that rises upwards to the east.  The circular tunnel heads west and
+
+south, as well as giving access to the new tunnel.
+
+~
+~
+-235274240 11 5 0
+D2
+~
+~
+0 -1 8511 10 10 5
+D3
+~
+~
+0 -1 8515 10 10 5
+D4
+~
+~
+0 -1 8514 10 10 5
+E
+mud ground~
+Soil on the ground quickly combines with the excess moisture in the
+
+tunnel and forms into a black, lumpy, muddy mass.
+
+~
+A
+search~
+mud~
+i = random( 1, 3 );
+
+if( rflag( reset0, room ) ) {
+
+  if( random( 1, 10 ) >= 7 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #find, ch );
+
+    act_notchar( #rfind, ch );
+
+    if( i == 1 )
+
+      obj_to_char( oload( 2758 ), ch );
+
+    if( i == 2 )
+
+      obj_to_char( oload( 78 ), ch );
+
+    if( i == 3 )
+
+      obj_to_char( oload( 14 ), ch );
+
+    }
+
+  else {
+
+    act_tochar( #nothing, ch );
+
+    act_notchar( #rnothing, ch );
+
+    }
+
+  }
+
+else
+
+act_tochar( #done, ch );
+
+~
+E
+find~
+You manage to find something in the mud!
+
+~
+E
+rfind~
+$n manages to find something in the mud!
+
+~
+E
+nothing~
+Your search of the mud leaves you dirty-handed!
+
+~
+E
+rnothing~
+$n search of the mud leaves them dirty-handed!
+
+~
+E
+done~
+The mud looks like it has already been sifted through.
+
+~
+!
+0 0 0
+-1
+S
+
+#8513
+A Crumbling Tunnel~
+A huge boulder blocks any further progress to the south in this badly
+
+formed tunnel.  A highly uneven floor, walls with many protrusions, and a
+
+ceiling that dips down and rises at odd points, all show that this
+
+section of the tunnel is yet to be completed.  Nibbled roots protruding
+
+from the ceiling add further to the confused mess of this tunnel.  The
+
+badly formed tunnel continues to the north, as well as allowing access to
+
+what looks like a relatively well made tunnel down a westward slope.
+
+~
+[Janua] well-made :)
+
+~
+-235274240 11 5 0
+D0
+~
+~
+0 -1 8514 10 10 5
+D5
+~
+~
+0 -1 8511 10 10 5
+E
+boulder south~
+Still mostly buried, what has been revealed indicates that this boulder
+
+is gigantic.
+
+~
+2281 9 1509949540 3 0
+-1
+S
+
+#8514
+A Crumbling Tunnel~
+This poorly formed tunnel looks like it has only recently been dug out. 
+
+Lumpy walls jut out in odd places, the ceiling is highly irregular, and
+
+the floor is almost dangerously uneven with dips and rises occurring
+
+haphazardly.  Largish roots protrude from the ceiling, and bear evidence
+
+of being used for something's meal.  From here the tunnel continues
+
+downward to the west or to the south into another section of badly
+
+formed tunnels.
+
+~
+[Janua] downwards -> downward
+
+~
+-235274240 11 5 0
+D2
+~
+~
+0 -1 8513 10 10 5
+D5
+~
+~
+0 -1 8512 10 10 5
+78 17 1509949540 -2 0
+-1
+S
+
+#8515
+A Damp Clay Tunnel~
+Slick with enough moisture that small rivulets have formed, the red clay
+
+tunnel gleams in the light.  The tiny streams flow towards the west,
+
+following an almost imperceptible downward slope.  From here the circular
+
+shaped tunnel continues to the east and west.
+
+~
+~
+-235274240 11 5 0
+D1
+~
+~
+0 -1 8512 10 10 5
+D3
+~
+~
+0 -1 8516 10 10 5
+2282 9 1509949540 3 0
+-1
+S
+
+#8516
+An Intersection in the Damp Clay Tunnel.~
+The clay tunnels walls, floor and ceiling are slick with moisture that is
+
+slowly seeping down from somewhere above.  Little rivulets are everywhere
+
+and trickle towards a large pool to the north.  From here the tunnel
+
+heads east, south as well as to the north.
+
+~
+[Srad'Ion] The room title has a period
+
+~
+-235274240 11 5 0
+D0
+~
+~
+0 -1 8517 10 10 5
+D1
+~
+~
+0 -1 8515 10 10 5
+D2
+~
+~
+0 -1 8518 10 10 5
+A
+~
+~
+if( find_stat( ch, dex ) < random( 1, 13 ) ) {
+
+  act_tochar( #slip, ch );
+
+  act_notchar( #rslip, ch );
+
+  interpret( ch, "sit" );
+
+  }
+
+else
+
+  continue;
+
+~
+E
+slip~
+@RYou slip on the wet clay, landing on your butt with a loud WHUMP!!@n 
+
+~
+E
+rslip~
+@R$n slips on the wet clay, landing on $s butt with a loud WHUMP!!@n 
+
+~
+!
+1 0 2
+-1
+S
+
+#8517
+A Shallow Pool~
+Rivulets trickle down from the walls and along the floor feeding the
+
+large pool that takes up most of this small cave.  The water looks
+
+shallow at the edge but closer to the back it is hard to really judge its
+
+depth.  Smells of mould, rotting vegetation and dead things intermingle
+
+with each other to produce a very unwelcoming smell.
+
+~
+[Orb] line two: large pool
+
+[Orb] something special and nasty come out of this pool if you disturb it? ;)
+
+[Ylena] yeppers, am thinking of having a nice friendly eel pop on out when you search the carcass
+
+[Janua] might want either a message when you try to drink or something
+
+nasty, like disease, for the stupid ones who try it 
+
+~
+-235274240 11 5 0
+D2
+~
+~
+0 -1 8516 10 10 5
+E
+pool water~
+The water of the dank pool looks uninviting and ominous.  Unidentifiable
+
+detritus floats near the surface, immediately dispelling any thought of
+
+drinking from it.  Half submerged in the pool is a carcass of a rotting,
+
+large worm-type creature.
+
+~
+A
+search move~
+carcass worm pool~
+if( rflag( reset1, room ) ) {
+
+  remove_rflag( reset1, room );
+
+  if( !mob_in_room( 2284, room ) ) {
+
+    send_to_room( #eel, room );
+
+    mload( 2284, room );
+
+    }
+
+  else
+
+    act_tochar( #noeel, ch );
+
+  }
+
+else
+
+  act_tochar( #noeel, ch );
+
+~
+E
+eel~
+A @Cpale eel@n erupts from the depths of the murky pool!!
+
+~
+E
+nothing~
+A search of the murky pool and worm-like carcass reveals nothing.
+
+~
+E
+noeel~
+A search of the murky pool and worm-like carcass reveals nothing.
+
+~
+!
+0 0 0
+A
+drink~
+pool water~
+act_tochar( #drink, ch );
+
+poison( ch );
+
+act_notchar( #rdrink, ch );
+
+~
+E
+drink~
+Bending over you take a sip of the dank water.  As the water travels
+
+towards your stomach you start to feel nauseous.
+
+~
+E
+rdrink~
+Bending over, $n takes a sip of the dank water.  Almost immediately their
+
+skin turns an unhealty color.
+
+~
+!
+0 0 0
+-1
+S
+
+#8518
+A Sparkling Damp Clay Tunnel~
+The slick, circular tunnel sparkles from the combination of the moisture
+
+and something shiny embedded within the red clay.  The footing here is
+
+starting to become a bit treacherous with care being needed to traverse
+
+to the north or down the westward slope.
+
+~
+~
+-235274240 11 5 0
+D0
+~
+~
+0 -1 8516 10 10 5
+D5
+~
+~
+0 -1 8519 10 10 5
+E
+shiny clay~
+On closer inspection of the red clay making up the tunnel, you can see
+
+many small, sparkling fragments of a purplish substance.
+
+~
+2282 9 1509949540 3 0
+-1
+S
+
+#8519
+Sticky Red Clay Tunnel~
+The circular tunnel is so damp that the red clay has become a sloppy,
+
+sticky consistency, making movement slightly awkward.  To the east the
+
+tunnel slopes upward, while to the west the red clay tunnel continues
+
+through the sticky mess.
+
+~
+[Orb] line two: consistency is probably the wrong word here.  The
+
+sentences should say: "..has become a sloppy, sticky mess," Or instead
+
+say, "..has taken on a sloppy, sticky consistency." 
+
+[Janua] I would write "upward" instead of "upwards" here, too.  You
+
+usually use "upwards" as "upwards of" to mean more than.  I -think-
+
+that's the only proper usage, but could be wrong 
+
+~
+-235274240 11 5 0
+D3
+~
+~
+0 -1 8520 10 10 5
+D4
+~
+~
+0 -1 8518 10 10 5
+2281 9 1509949540 3 0
+-1
+S
+
+#8520
+A T-Section in a Sticky Red Clay Tunnel~
+Sticky red clay makes movement here hard, as it seems to grasp and hold
+
+onto whatever gets depressed into it.  The messy circular tunnel
+
+continues both east and west, with a tunnel from the south sloping down
+
+to join with this one.
+
+~
+[Janua] last sentence: last part needs "to" after "sloping down", or something :)
+
+~
+-235274240 11 5 0
+D1
+~
+~
+0 -1 8519 10 10 5
+D3
+~
+~
+0 -1 8521 10 10 5
+D4
+~
+~
+0 -1 8522 10 10 5
+-1
+S
+
+#8521
+A Bend in the Sticky Red Tunnel~
+Clingy, wet clay makes life unpleasant as it seems to grasp at anything
+
+that stands in it , brushes against it, or moves through it.  More of
+
+this horrid red clay looks to lie to both the north and west of this
+
+circular tunnel.  The walls, though made of this same clay, have many
+
+small purple streaks through it, giving it an almost mottled appearance.
+
+~
+[Orb] Extras: wall, clay
+
+~
+-235274240 11 5 0
+D0
+~
+~
+0 -1 8528 10 10 5
+D1
+~
+~
+0 -1 8520 10 10 5
+A
+~
+~
+if( can_fly( ch ) )
+
+  continue;
+
+if( is_affected( ch, 44 ) )
+
+  continue;
+
+if( find_stat( ch, dex ) < random( 1, 18 ) ) {
+
+  act_tochar( #slip, ch );
+
+  act_notchar( #rslip, ch );
+
+  interpret( ch, "sit" );
+
+  }
+
+else
+
+  continue;
+
+~
+E
+slip~
+@YYou loose your footing on the slick clay and fall to the ground in an
+
+undignified heap!@n 
+
+~
+E
+rslip~
+@Y$n looses $s footing on the slick clay and falls to the ground in an
+
+undignified heap!@n 
+
+~
+!
+3 0 3
+2282 9 1509949540 3 0
+-1
+S
+
+#8522
+A Dirt and Clay Tunnel~
+As the tunnel heads further north the moisture in the red clay increases,
+
+adding a touch of slipperiness to the smooth floor of this circular
+
+tunnel.  The tunnel slopes down to join up with another tunnel to the
+
+north, as well as continuing to the south.
+
+~
+~
+-235274240 11 5 0
+D2
+~
+~
+0 -1 8523 10 10 5
+D5
+~
+~
+0 -1 8520 10 10 5
+A
+~
+~
+if( !is_affected( ch, 44 ) ) {
+
+  if( find_stat( ch, dex ) < random( 1, 16 ) ) {
+
+    act_tochar( #slip, ch );
+
+    act_notchar( #rslip, ch );
+
+    interpret( ch, "sit" );
+
+    }
+
+  else
+
+    continue;
+
+  }
+
+~
+E
+slip~
+@YYou slip on the slick clay and come to work out that the floor is not a
+
+comfortable resting spot!@n 
+
+~
+E
+rslip~
+@Y$n slips on the slick clay and falls into an uncomfortable looking
+
+heap!@n 
+
+~
+!
+1 0 36
+2282 9 1509949540 3 0
+-1
+S
+
+#8523
+A Dirt and Clay Tunnel - An Intersection~
+The tunnel takes a north-south route with another tunnel slanting down
+
+from above to join up with this one.  Moisture on the smooth, clay floor
+
+makes the ground to be slightly slippery, and a bit extra care is needed
+
+to traverse through here.
+
+~
+[Janua] would change "is causing" to "causes" or just "makes"
+
+~
+-235274240 11 5 0
+D0
+~
+~
+0 -1 8522 10 10 5
+D2
+~
+~
+0 -1 8524 10 10 5
+D4
+~
+~
+0 -1 8525 10 10 5
+-1
+S
+
+#8524
+A Dirt and Clay Tunnel~
+Tightly packed soil and clay make up the stratum of this part of the
+
+tunnel, with upper layers of soil, moving down to a mix of soil and clay,
+
+and finally the floor and lower sections consisting solely of clay.  The
+
+clay has a reddish tinge to it, and occasionally the light picks up
+
+something shiny embedded within it.  Towards the north the tunnel
+
+continues at roughly the same level but upwards is a steep incline.
+
+~
+[Janua] dig routine for something shiny here?
+
+~
+-235274240 11 5 0
+D0
+~
+~
+0 -1 8523 10 10 5
+D4
+~
+~
+0 -1 8506 10 10 5
+A
+dig~
+clay wall~
+i = random( 1, 2 );
+
+if( rflag( reset0, room ) ) {
+
+  act_tochar( #dig, ch );
+
+  act_notchar( #rdig, ch );
+
+  if( random( 1, 10 ) >= 2) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #gem, ch );
+
+    act_notchar( #rgem, ch );
+
+    if( i == 1 )
+
+      obj_to_char( oload( 2669 ), ch );
+
+    if( i == 2 )
+
+      obj_to_char( oload( 2669 ), ch );
+
+    }
+
+  else
+
+    remove_rflag( reset0, room );
+
+  act_tochar( #nothing, ch );
+
+  act_notchar( #rnothing, ch );
+
+  }
+
+else
+
+  act_tochar( #empty, ch );
+
+~
+E
+nothing~
+After a few minutes of futile work you give up, unable to make a dent in
+
+the clay walls.
+
+~
+E
+rnothing~
+After a few minutes of futile work $n gives up, unable to make a dent in
+
+the clay walls.
+
+~
+E
+dig~
+You attempt to dig some of the shiny crystals out of the hard clay wall.
+
+~
+E
+rdig~
+$n attempts to dig some of the shiny crystals out of the hard clay wall.
+
+~
+E
+gem~
+After a few minutes of hard work, you manage to to free a gem from the
+
+clay wall!
+
+~
+E
+rgem~
+After a few minutes of hard work, $n manages to to free a gem from the
+
+clay wall!
+
+~
+E
+empty~
+The wall looks like someone has already attempted to dig out the gems.
+
+~
+!
+0 0 0
+2281 9 1509949540 3 0
+-1
+S
+
+#8525
+A Rough Cut Tunnel~
+Dipping down slightly to join up with a tunnel to the east, this crudely
+
+excavated tunnel also continues to the west.  Claw marks decorate the
+
+floor and walls in random patterns, and many tangled roots add an earthy
+
+feel to the ceiling.
+
+~
+[Janua] the first sentence is hard for me to picuture. Not quite sure what you're after
+
+[Janua] extra for claw marks -- how big/deep/wide, etc.
+
+~
+-235274240 11 5 0
+D3
+~
+~
+0 -1 8526 10 10 5
+D5
+~
+~
+0 -1 8523 10 10 5
+E
+claw marks~
+Numerous claw marks are scattered everywhere, ranging from just slight
+
+disturbances in the soil of the floor to worrying long, deep gouges in
+
+the walls.
+
+~
+78 17 1509949540 -2 0
+-1
+S
+
+#8526
+A Rough Cut Tunnel~
+Roughly dug out walls support a ceiling of dirt and roots.  The ground is
+
+very uneven and a small puddle has formed in the middle of the floor. 
+
+Many scratch marks are visible on the walls and floor.  The tunnel makes
+
+a north-east turn here.
+
+~
+[Janua] dug-out (they modify walls together, can't separate them)
+
+[Janua] I would separate the second sentence into two sentences, and
+
+elaborate, since the puddle and the claw marks don't go together.  Unless
+
+they do...  ;) 
+
+[Janua] extras for puddle and claw marks, too
+
+~
+-235274240 11 5 0
+D0
+~
+~
+0 -1 8527 10 10 5
+D1
+~
+~
+0 -1 8525 10 10 5
+E
+puddle~
+The small puddle is full of muddy water.  A few claw marks around the
+
+puddle seem to indicate that something uses this as its drinking supply.
+
+~
+E
+claw scratch marks~
+The sratch marks bound everywhere in the tunnel with no rhyme or reason. 
+
+Only the upper sections of the walls and the ceiling are free from marks. 
+
+They varying in depth and degree from faint, barely noticable scraps, to
+
+worringly deep gouges.
+
+~
+A
+search~
+puddle~
+act_tochar( #puddle, ch );
+
+act_notchar( #rpuddle, ch );
+
+~
+E
+puddle~
+After a brief search of the cold, muddy water of the puddle, you find
+
+nothing.
+
+~
+E
+rpuddle~
+After a brief search of the cold, muddy water of the puddle, $n finds
+
+nothing.
+
+~
+!
+0 0 0
+-1
+S
+
+#8527
+The Lair~
+The crudely dug-out walls of the lair are irregular and rough, while its
+
+floor is well compacted and the ceiling is decorated with many protruding
+
+roots.  Small bones, scraps of dried skins and light-colored fur decorate
+
+the lair, giving it a well-used look.  South is the only exit out of this
+
+cosy lair.
+
+~
+[Janua] line 4: the periods are invading! (got a couple loose, here)
+
+[Janua] line 4: well-used
+
+[Janua] line 1: there's an extra space after lair
+
+[Janua] line 1: I would add a "while" after the comma
+
+[Janua] Hm, actually, this room seems a little odd to me.  How can we
+
+tell it's a lair, besides the name?  Maybe mobs would make a difference? 
+
+Just an observation.
+
+[Ylena] have intended for a giant shrew to be positioned here permanently
+
+~
+-235274240 11 5 0
+D2
+~
+~
+0 -1 8526 10 10 5
+2285 9 1509949540 3 0
+-1
+S
+
+#8528
+A Sticky Red Clay Tunnel~
+Red, sticky clay makes up the walls, floor and ceiling of this circular
+
+north-south tunnel, and causes movement through here to be difficult. 
+
+Throughout the red clay are small streaks of a purplish material that
+
+glitters in the light.
+
+~
+~
+-235274240 11 5 0
+D0
+~
+~
+0 -1 8529 10 10 5
+D2
+~
+~
+0 -1 8521 10 10 5
+-1
+S
+
+#8529
+A Bend in the Sticky Red Clay Tunnel~
+The walls, floors and ceiling are all made up of a sticky red clay that
+
+clings to anything that it can, making movement difficult.  Purple
+
+streaks run through the red walls and glitter in the light giving the
+
+tunnel a garish, surreal feel.  From here the sticky tunnel heads south
+
+and east.
+
+~
+no.mob here to prevent worms getting stuck in the mud to the east
+
+~
+-235274232 11 5 0
+D1
+~
+~
+0 -1 8530 10 10 5
+D2
+~
+~
+0 -1 8528 10 10 5
+-1
+S
+
+#8530
+At a Dead End~
+The floor at the tunnels end is a morass of red, knee-deep, sticky clay
+
+and makes any movement extremely difficult.  Large veins of a glittering
+
+purple substance run through the red walls, lending them a garishly
+
+marbled appearance.  The only way out of this sticky mess is to the west.
+
+~
+~
+-235274240 11 5 0
+D3
+~
+~
+0 -1 8529 10 10 5
+E
+wall purple vein~
+On closer inspection the vein seems to be made up of a tubular
+
+gemstone-like substance arranged in striated columns.  Maybe some of it
+
+could be chipped away from the walls.
+
+~
+A
+~
+~
+if( find_stat( ch, str )  < random( 3, 15 ) ) {
+
+  act_tochar( #stuck, ch );
+
+  act_notchar( #rstuck, ch );
+
+  interpret( ch, "sit" );
+
+  }
+
+else
+
+  continue;
+
+~
+E
+stuck~
+@RAs you try to leave the room, you find yourself suddenly sinking
+
+further into the clay.  Between your momentum and the clay's sudden
+
+grasp, you find yourself sitting in the mucky mess!!@n 
+
+~
+E
+rstuck~
+@RAs $n tries to leave the room, they suddenly sink further into the clay. 
+
+Between $n's momentum and the clay's sudden grasp, $n finds themselves
+
+sitting in the mucky mess!!@n 
+
+~
+!
+3 0 8
+A
+chip~
+wall vein substance gemstone~
+i = random( 1, 2 );
+
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  act_tochar( #chip, ch );
+
+  act_notchar( #rchip, ch );
+
+  if( i == 1 ) {
+
+    act_tochar( #nothing, ch );
+
+    act_notchar( #rnothing, ch );
+
+    }
+
+  if( i == 2 ) {
+
+    j = random( 0, 99 );
+
+    act_tochar( #gem, ch );
+
+    act_notchar( #rgem, ch );
+
+    if( j <= 5 )
+
+      obj_to_char( oload( 2663 ), ch );
+
+    if( j >= 6 )
+
+      obj_to_char( oload( 2669 ), ch );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #empty, ch );
+
+~
+E
+chip~
+You begin to carefully chip away at the gemstone vein.
+
+~
+E
+rchip~
+$n begins to carefully chip away at the gemstone vein.
+
+~
+E
+nothing~
+After much effort you almost work free a piece of gem from the wall when
+
+it shatters into a worthless pile of shards!
+
+~
+E
+rnothing~
+After much effort $n almost works free a piece of gem from the wall when
+
+it shatters into a worthless pile of shards!
+
+~
+E
+gem~
+After much effort you manage to free a piece of gem from the wall!!
+
+~
+E
+rgem~
+After much effort $n manages to free a piece of gem from the wall!!
+
+~
+E
+empty~
+Someone has already tried to chip at the gemstone substance in the wall.
+
+~
+E
+empty~
+You go to chip away at the wall, only to notice that someone else has
+
+beaten you to it.
+
+~
+!
+0 0 0
+2283 9 1509949540 3 0
+-1
+S
+
+#0
+

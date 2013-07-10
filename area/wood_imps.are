@@ -1,0 +1,2022 @@
+#AREA
+Wood Imp Lair~
+Orb~
+wood imp lair~
+
+15 0
+0
+#ROOMS
+
+#38000
+A Hole Beneath a Fallen Log~
+This somewhat cramped circular hole is too symmetrical to be a natural
+
+formation; the dirt sides are tightly packed, and small, rose-colored
+
+stones are set into the walls at regular intervals.  A few tree roots
+
+poke stubbornly out from the hard-packed dirt, though most of the wayward
+
+tendrils have been snapped off or pulled partly out of the wall. 
+
+Although an ogre could probably squeeze into this hole, it looks most
+
+suited for someone gnome-sized or perhaps smaller.  The air is thick with
+
+dust, and the scent of damp, rotting leaves is almost overpowering.
+
+~
+~
+-235274228 11 5 0
+D4
+hidden entrance~
+hidden entrance~
+2275 -1 36533 10 10 5
+D5
+~
+~
+0 -1 38001 10 10 5
+E
+stones~
+Flat rocks of a pinkish stone flecked with black sparkles line the tunnel
+
+on two sides.  Although they were obviously deliberately set into the
+
+tunnel wall, the spacing between them is so brief that anyone but a gnome
+
+or halfling would probably find using them a bit awkward.
+
+~
+E
+roots~
+The thin, gnarly roots that poke out from the wall have been ruthlessly
+
+pruned and sheared to keep the tunnel clear.  Though some look snapped
+
+off by hand, the white ends of most of the roots seem to have been cut
+
+cleanly off.
+
+~
+A
+climb~
+d do down~
+if( find_skill( ch, climb ) >= random( 1, 3 ) ) {
+
+  act_tochar( #down, ch );
+
+  act_notchar( #rdown, ch );
+
+  transfer( ch, find_room( 38001 ) );
+
+  act_notchar( #arrive, ch );
+
+  }
+
+else {
+
+  act_tochar( #splat, ch );
+
+  act_notchar( #rsplat, ch );
+
+  transfer( ch, find_room( 38003 ) );
+
+  act_tochar( #fall, ch );
+
+  act_notchar( #rarrive, ch );
+
+  }
+
+~
+E
+down~
+Using the stone hand-holds, you climb down deeper into the hole.
+
+~
+E
+splat~
+You lose your grip on the pink stones and fall!
+
+~
+E
+rsplat~
+$n loses $s grip on the pink stones and falls down into the hole!
+
+~
+E
+rdown~
+Holding onto the stone hand-holds, $n climbs down deeper into the hole.
+
+~
+E
+rarrive~
+$n comes falling in from above and lands with a thump in to the pile of sawdust.
+
+~
+E
+arrive~
+$n comes climbing down the hand-holds from above.
+
+~
+E
+fall~
+Luckily, your fall is broken by a mounded pile of white sawdust.
+
+~
+!
+3 0 0
+A
+~
+~
+act_tochar( #nowayman, ch );
+
+end;
+
+~
+E
+nowayman~
+It's a steep descent, you'd better try to climb down.
+
+~
+!
+3 0 32
+A
+push shove move~
+log up entrance hidden~
+if( !is_open( room, up ) ) {
+
+  act_tochar( #shove, ch );
+
+  act_notchar( #rshove, ch );
+
+  open( room, up );
+
+  }
+
+else
+
+  act_tochar( #done, ch );
+
+~
+E
+shove~
+You shove the pine log that covers the whole aside, revealing the exit.
+
+~
+E
+rshove~
+$n shoves the pine log that covers the hole aside, revealing the exit.
+
+~
+E
+done~
+The log is already moved away from the hole.
+
+~
+!
+0 0 0
+A
+open~
+up log pine~
+act_tochar( #nope, ch );
+
+~
+E
+nope~
+You can't open the log, perhaps you should try pushing or shoving it.
+
+~
+!
+0 0 0
+-1
+S
+
+#38001
+A Narrow Hole~
+Handholds of flat, pink stone line the sides of the tunnel, set into the
+
+hard-packed dirt.  Bits of white fleck the dark brown dirt walls, and a
+
+few scraggly tree roots reach out toward the center of the tunnel.  A
+
+small scattering of narrow holes have been bored into the tunnel wall on
+
+the right side of the vertical corridor.  The faint smell of pine
+
+permeates the air, accompanied by the damp scent of decaying leaves.
+
+~
+Fall down go splat code
+
+~
+-235274236 11 5 0
+D4
+~
+~
+0 -1 38000 10 10 5
+D5
+~
+~
+0 -1 38003 10 10 5
+A
+~
+~
+ch = rand_char( room );
+
+if( random( 1, 10 ) > 6 ) {
+
+  if( size( ch ) > 3 ) {
+
+    if( !is_affected( ch, 44 ) ) {
+
+      act_tochar( #slip, ch );
+
+      act_notchar( #rslip, ch );
+
+      transfer( ch, find_room( 38003 ) );
+
+      act_tochar( #poof, ch );
+
+      act_notchar( #rpoof, ch );
+
+      }
+
+    else {
+
+      act_tochar( #float, ch );
+
+      act_notchar( #rfloat, ch );
+
+      transfer( ch, find_room( 38003 ) );
+
+      act_tochar( #arrive, ch );
+
+      act_notchar( #rarrive, ch );
+
+      }
+
+    }
+
+  else {
+
+    act_tochar( #tremble, ch );
+
+    act_notchar( #rtremble, ch );
+
+    }
+
+  }
+
+~
+E
+slip~
+@eYou feel your grip on the stones getting more and more precarious.  You
+
+flail wildly as you lose your grip entirely and plummet downward!@n 
+
+~
+E
+rslip~
+@e$n scrabbles for purchase on the small pink stones, then flails wildly
+
+as e loses $s grip entirely and plummets down into the darkness!@n 
+
+~
+E
+poof~
+@eYou land on a soft, white pile of sawdust that billows up in a flurry
+
+of white as you strike it.@n
+
+~
+E
+rpoof~
+@e$n falls out of the hole in the ceiling to land with a flurry of white
+
+in the soft pile of sawdust in the center of the room.@n 
+
+~
+E
+tremble~
+@eYour grip on the stones trembles, but you quickly steady yourself.@n
+
+~
+E
+rtremble~
+@e$n's grip on the handholds trembles, but $e quickly steadies $mself.@n
+
+~
+E
+arrive~
+@eYou float gently down to the ground beside a pile of white sawdust.@n
+
+~
+E
+rarrive~
+@e$n floats gently down through the hole in the ceiling to hover slightly
+
+above the tunnel floor near the pile of sawdust.@n 
+
+~
+E
+float~
+@eYou lose your grip on the pink stones and sink slowly down through the
+
+hole into the darkness below.@n 
+
+~
+E
+rfloat~
+@e$n loses $s grip on the pink stones and floats slowly down through the
+
+hole into the darkness below.@n 
+
+~
+!
+2 200 48
+A
+climb~
+d do down~
+if( find_skill( ch, climb ) >= random( 1, 3 ) ) {
+
+  act_tochar( #down, ch );
+
+  act_notchar( #rdown, ch );
+
+  transfer( ch, find_room( 38003 ) );
+
+  act_notchar( #arrive, ch );
+
+  }
+
+else {
+
+  act_tochar( #splat, ch );
+
+  act_notchar( #rsplat, ch );
+
+  transfer( ch, find_room( 38003 ) );
+
+act_tochar( #fall, ch );
+
+  act_notchar( #rarrive, ch );
+
+  }
+
+~
+E
+down~
+Using the stone hand-holds, you climb down deeper into the hole.
+
+~
+E
+rdown~
+Using the stone hand-holds, $n climbs down deeper into the hole.
+
+~
+E
+arrive~
+$n comes climbing down the hand-holds from above.
+
+~
+E
+splat~
+You lose your grip on the pink stones and fall!
+
+~
+E
+rsplat~
+$n loses $s grip on the pink stones and falls down into the hole!
+
+~
+E
+rarrive~
+No description.
+
+~
+E
+fall~
+Luckily, your fall is broken by a mounded pile of white sawdust.
+
+~
+!
+0 0 0
+A
+~
+~
+act_tochar( #nope, ch );
+
+~
+E
+nope~
+It's a steep descent, you'd better try to climb down.
+
+~
+!
+3 0 32
+A
+~
+~
+act_tochar( #nope, ch );
+
+~
+E
+nope~
+It's a steep ascent, you'd better climb up.
+
+~
+!
+3 0 16
+A
+climb~
+u up~
+if( find_skill( ch, climb ) >= random( 1, 3 ) ) {
+
+  act_tochar( #up, ch );
+
+  act_notchar( #rup, ch );
+
+  transfer( ch, find_room( 38000 ) );
+
+  act_notchar( #arrive, ch );
+
+  }
+
+else {
+
+  act_tochar( #splat, ch );
+
+  act_notchar( #rsplat, ch );
+
+  transfer( ch, find_room( 38003 ) );
+
+act_tochar( #fall, ch );
+
+  act_notchar( #rarrive, ch );
+
+  }
+
+~
+E
+up~
+Using the stone hand-holds, you climb upward.
+
+~
+E
+rup~
+$n climbs upward, using the stone hand-holds.
+
+~
+E
+arrive~
+$n comes climbing up the hand-holds from below.
+
+~
+E
+splat~
+You lose your grip on the pink stones and fall!
+
+~
+E
+rsplat~
+$n loses $s grip on the pink stones and falls down into the hole!
+
+~
+E
+rarrive~
+$n falls in from above and lands with a thump in the middle of the pile of sawdust.
+
+~
+E
+fall~
+Luckily, your fall is broken by a mounded pile of white sawdust.
+
+~
+!
+0 0 0
+-1
+S
+
+#38002
+Removing this room~
+Under Construction.
+
+~
+[Orb] more hole
+
+~
+-235274236 11 5 0
+-1
+S
+
+#38003
+A Narrow Tunnel~
+This tunnel is almost perfectly circular in shape, as it runs on eastward
+
+though a solid wall stands to the west.  A deep pile of nearly white
+
+sawdust is neatly mounded in the middle of the room, directly beneath a
+
+symmetrical circular hole in the low ceiling.  Thick beams of nearly
+
+white wood support the tunnel's ceiling at regular intervals, and here
+
+and there a plank of the same wood shores up one of the curved walls. 
+
+Several flat rocks of pinkish stone are piled up against the southern
+
+wall of the tunnel.
+
+~
+[Orb] fall down from above into the sawdust
+
+[Orb] This climbing up code, and the ones in the subsequent upward rooms
+
+do not loop followers.  This is intentional.
+
+~
+-235274236 11 5 0
+D1
+~
+~
+0 -1 38005 10 10 5
+D4
+~
+~
+0 -1 38001 10 10 5
+E
+sawdust~
+This mound of sawdust has been piled neatly into a heap in the middle of
+
+the room.  The flakes of wood are nearly white and give off the pungent
+
+aroma of pine.
+
+~
+E
+hole up~
+A perfectly circular hole of the same width as the tunnel you're
+
+currently in is set into the ceiling.  Flat rocks of some pinkish stone
+
+are set into the sides of the hole, seemingly to serve as handholds for
+
+climbing up into the tunnel above.
+
+~
+E
+stones rocks~
+These few stones have been stacked along the tunnel's southern wall. 
+
+They are all relatively flat and roughly the same size.
+
+~
+E
+beams wood supports~
+Polished wood beams that are nearly as thick as a troll's leg stand to
+
+either side of the tunnel at regular intervals, bearing the great weight
+
+of the tunnel's ceiling.  Lovingly polished to a dull gleam, the beams
+
+are beautiful works of fine craftsmanship as well as structural supports.
+
+~
+A
+climb~
+up u hole~
+if( find_skill( ch, climb ) >= random( 1, 3 ) ) {
+
+  act_tochar( #up, ch );
+
+  act_notchar( #rup, ch );
+
+  transfer( ch, find_room( 38001 ) );
+
+  }
+
+else {
+
+  act_tochar( #splat, ch );
+
+  act_notchar( #rsplat, ch );
+
+  end;
+
+  }
+
+~
+E
+up~
+You grab hold of the pinkish stones embedded in the wall and begin to climb up.
+
+~
+E
+rup~
+$n grabs hold of the pinkish stones embedded in the wall and begins to climb up.
+
+~
+E
+splat~
+You grab hold of the pinkish stones and try to climb up but slip back
+
+down to land in the sawdust.
+
+~
+E
+rsplat~
+$n grabs hold of the pinkish stones and tries to climb up but $e slips
+
+back down to land in the sawdust.
+
+~
+!
+0 0 16
+A
+~
+~
+act_tochar( #nope, ch );
+
+~
+E
+nope~
+The hole goes straight up, perhaps you should climb?
+
+~
+!
+3 0 16
+-1
+S
+
+#38004
+Nothing~
+Under Construction.
+
+~
+~
+-235274236 11 5 0
+-1
+S
+
+#38005
+A Curve in the Narrow Tunnel~
+Thick beams of polished wood bolster the earthen walls of this close
+
+corridor.  The floor is littered with wood shavings, sawdust, and bits of
+
+twigs, and even a few small chunks of half-carved wood lie amidst the
+
+debris.  The tunnel curves lazily northeast, forming a vaguely
+
+hook-shaped room.  The smell of pine mingled with the aroma of rich soil
+
+fills the air.
+
+~
+[Orb] search floor
+
+[Ylena] acode missing its code
+
+[Orb] Fixed.
+
+~
+-235274236 11 5 0
+D0
+~
+~
+0 -1 38006 10 10 5
+D3
+~
+~
+0 -1 38003 10 10 5
+E
+floor~
+Most of the wood that litters the floor is of the same pale color as the
+
+beams that support the tunnel.  A few of the larger chunks are carved
+
+into the start of a shape or pattern, then appear to have been tossed
+
+aside.
+
+~
+A
+search~
+floor woodchips~
+act_tochar( #search, ch );
+
+act_notchar( #rsearch, ch );
+
+~
+E
+search~
+You search through the piles of woodchips but find nothing useful.
+
+~
+E
+rsearch~
+$n searches through the piles of woodchips but finds nothing useful.
+
+~
+!
+0 0 0
+-1
+S
+
+#38006
+A Curve in the Narrow Tunnel~
+The walls of this circular tunnel are comprised of hard-packed dirt. 
+
+Standing like silent, white sentries, beautifully polished wood supports,
+
+set at regular intervals, bear the weight of the tunnel's walls.  A light
+
+dusting of dry soil drifts down from the tunnel's ceiling, where a bit of
+
+the tunnel is starting to crumble.  A rickety set of twigs and sticks
+
+pounded together in a haphazard way form a scaffold in the middle of the
+
+room directly under the most damaged area of the cracking ceiling.
+
+~
+[Orb] climb scaffold
+
+[Orb] If you're a small dude, you can climb up but it dumps you on your
+
+ass.  If you're big, you dont.
+
+~
+-235274236 11 5 0
+D1
+~
+~
+0 -1 38007 10 10 5
+D2
+~
+~
+0 -1 38005 10 10 5
+E
+scaffold~
+This scaffold was obviously created in haste.  Twigs and branches have
+
+been thrown together in a slipshod manner to create a serviceable, if
+
+messy, structure that reaches to the tunnel's ceiling.  The small
+
+scaffold does not look like it would bear the weight of anyone larger
+
+than a small gnome.
+
+~
+E
+look ceiling cracks up~
+The ceiling of the tunnel is webbed with cracks and lines from which a
+
+haze of light brown dust sifts down to settle on the floor of the tunnel. 
+
+A few of the cracks have been shored up with an unidentifiable white
+
+substance, creating a series of jagged streaks of white in the otherwise
+
+brown ceiling.
+
+~
+A
+climb~
+scaffold~
+if( size( ch ) > 3 ) {
+
+  act_tochar( #big, ch );
+
+  act_notchar( #rbig, ch );
+
+  }
+
+else {
+
+  act_tochar( #small, ch );
+
+  act_notchar( #rsmall, ch );
+
+  set_pos( ch, 6 );
+
+  }
+
+~
+E
+big~
+You inspect the rickety scaffold and start to climb it.  The haphazard
+
+structure shakes alarmingly and you quickly climb back down.
+
+~
+E
+rbig~
+$n inspects the rickety scaffold and starts to climb it.  The haphazard
+
+structure shakes alarmingly and $n quickly climbs back down.
+
+~
+E
+small~
+You inspect the rickety scaffold and start to climb it.  You clamber up
+
+onto its unsteady platform and study the cracks in the ceiling.  The
+
+scaffold wobbles suddenly and dumps you unceremoniously onto the ground.
+
+~
+E
+rsmall~
+$n inspects the rickety scaffold and starts to climb it.  $n clambers
+
+onto the scaffold's unsteady platform and studies the cracks in the
+
+ceiling.  The scaffold wobbles suddenly and $n flails wildly before
+
+tumbling off the haphazard collection of sticks.
+
+~
+!
+0 0 0
+1142 9 1509949540 3 0
+-1
+S
+
+#38007
+A Narrow Tunnel - Near a Gaping Hole~
+Cracks run deep through the walls of the tunnel, a jagged web of lines
+
+radiates outward from a gaping hole in the east wall and courses through
+
+the circular corridor.  The wooden beams that stand along the sides of
+
+the tunnel still bear their load, but a constant haze of dust hangs in
+
+the air as the tunnel crumbles slowly.  One of the thick wooden supports
+
+lies in two pieces near the hole.
+
+~
+~
+-235274236 11 5 0
+D1
+~
+~
+0 -1 38019 10 10 5
+D2
+~
+~
+0 -1 38008 10 10 5
+D3
+~
+~
+0 -1 38006 10 10 5
+E
+cracks walls hole east~
+The cracks in the ceiling radiate out from this huge hole in the tunnel. 
+
+It looks almost like an unfinished branch of the underground passage
+
+until you see the jagged edges and odd scrapes around the sides of the
+
+hole.  One of the wooden support beams lies in pieces at the bottom of
+
+the hole; deep gashes have been raked into the white wood, marring its
+
+polished perfection.
+
+~
+A
+~
+~
+act_tochar( #east, ch );
+
+continue;
+
+~
+E
+east~
+You step over the debris and continue into the gaping hole.
+
+~
+!
+3 0 2
+1066 9 1509949540 3 0
+-1
+S
+
+#38008
+A Narrow Tunnel~
+The curving walls of the tunnel are streaked with cracks and lines that
+
+course out through the hard-packed dirt.  A soft, powdery layer of brown
+
+soil covers the floor and clings to the beams of nearly white wood that
+
+line the tunnel, muting their alabaster beauty.  Two thick planks of wood
+
+shore up the sides of the tunnel, curving to fit the rounded walls.
+
+~
+~
+-235274236 11 5 0
+D0
+~
+~
+0 -1 38007 10 10 5
+D2
+~
+~
+0 -1 38009 10 10 5
+E
+cracks walls~
+Deep cracks run along the eastern tunnel wall then course out over the
+
+ceiling to the western wall of the tunnel.  A plank of oddly curved wood
+
+has been placed on each wall of the tunnel to add additional support.
+
+~
+E
+planks wood~
+These planks of wood curve in a way not found in nature to fit the sides
+
+of the tunnel.  They have been polished to a dull gleam, and carved with
+
+looping chains of runes that interlace so intricately that it is
+
+impossible to tell where one design ends and another begins.
+
+~
+E
+runes~
+Runes of an unknown language decorate these planks of dully gleaming wood.
+
+~
+-1
+S
+
+#38009
+A Narrow Tunnel - A North-West curve~
+The rounded walls of this subterranean corridor are streaked with a few
+
+thin cracks that gradually fade back into the whole near the center of
+
+the room.  A fine, powdery layer of soil blankets the floor of the
+
+tunnel, stirring slightly as a faint breeze passes through the tunnel.  A
+
+neatly stacked pile of wood blocks lies in the curve of the wall as it
+
+bends gently to run westward.
+
+~
+[Orb] get blocks
+
+~
+-235274236 11 5 0
+D0
+~
+~
+0 -1 38008 10 10 5
+D3
+~
+~
+0 -1 38010 10 10 5
+E
+blocks stack wood~
+A stack of neatly carved rectangular blocks of wood lies against the
+
+curve of the wall.  The wood is nearly white in color and the scent of
+
+pine lingers around it.  The stack is bound tightly with a long leather
+
+cord.
+
+~
+A
+get take search grab~
+wood block~
+act_tochar( #nope, ch );
+
+act_notchar( #rnope, ch );
+
+~
+E
+nope~
+You try to take a block of wood from the pile but it is securely fastened
+
+by a leather cord.
+
+~
+E
+rnope~
+$n tries to take a block of wood from the pile but can't work it out from
+
+the tightly bound cord.
+
+~
+!
+0 0 0
+1066 9 1509949540 3 0
+-1
+S
+
+#38010
+A Narrow Tunnel - Near a Wooden Arch~
+A gentle breath of air caresses this stretch of the tunnel, blowing the
+
+scent of pine and rich loam through the area on its way through.  Long
+
+brown roots hang down from the ceiling to brush the floor of the tunnel,
+
+though many are shorn off a few feet from the ground.  A wooden ladder is
+
+propped up against the northern wall of the tunnel between two white
+
+support beams, and a small bucket sits on the ground beside it.  A
+
+weight-bearing arch of curving wood stands at the west end of the room.
+
+~
+[Ylena] no damage in the bucket acode
+
+[Orb] Fixed.
+
+~
+-235274236 11 5 0
+D1
+~
+~
+0 -1 38009 10 10 5
+D3
+~
+~
+0 -1 38012 10 10 5
+E
+ladder~
+This small ladder is made of what appears to be a single piece of
+
+beautifully polished wood.  No joinings or breaks in the wood can be seen. 
+
+Decorative chains of interlacing runes spiral down the legs of the
+
+ladder, though the steps are bare, white wood.  There is a small bucket
+
+to the left of the ladder.
+
+~
+E
+bucket~
+This small wooden bucket is filled with a greenish substance that fizzes
+
+and bubbles.  Spiraling designs cover the bucket and flare with a burst
+
+of green light every few moments.
+
+~
+A
+get take grab touch drink~
+bucket acid~
+act_tochar( #fizz, ch );
+
+act_notchar( #rfizz, ch );
+
+i = 2d10;
+
+dam_element( ch, i, "The touch of the roiling green acid", 3 );
+
+inflict_acid( ch, mob, i, "a bucket of acid" );
+
+~
+E
+fizz~
+@GYou reach out to touch the bucket but the fizzing acid burns you!@n
+
+~
+E
+rfizz~
+@G$n reaches out to touch the bucket but the fizzing acid burns $m!@n
+
+~
+!
+0 0 0
+1066 9 1509949465 3 0
+1142 9 1509949540 3 0
+-1
+S
+
+#38011
+A Simply Furnished Chamber~
+This small, half-sphere of a chamber has been excavated with great care. 
+
+The ceiling and walls are perfectly rounded and are covered with a hard,
+
+shiny substance.  A ball of silvery blue light hovers in the curve of the
+
+ceiling, bathing the dark walls in a soft glow.  A low table of lovingly
+
+polished white wood sits at the back of the chamber, bearing the weight
+
+of a chest of the same wood.  A small pallet lies in the curve of the
+
+left wall.
+
+~
+[Orb] Aint she cute?
+
+[Orb] key opens the chest and also the door to the gnome
+
+~
+-235274235 11 5 0
+D0
+~
+~
+0 -1 38012 10 10 5
+E
+ball~
+This small globe of light pulses softly.  Snail trails of silver light
+
+crawl slowly over the pale blue sphere.
+
+~
+E
+table~
+Too small to suit even a gnome, this table holds a small chest of the
+
+same beautifully crafted white wood.  Spiraling decorations sprawl across
+
+the table's top and down its legs.
+
+~
+E
+pallet~
+This tiny bed is simple - a feather mattress is supported by a frame of white pine.
+
+~
+A
+get take~
+light ball silvery blue~
+act_tochar( #nope, ch );
+
+act_notchar( #rnope, ch );
+
+~
+E
+nope~
+@CYou stretch up to take the ball of blue light but a flash of lightning
+
+lashes out, numbing your hand but not injuring you.
+
+~
+E
+rnope~
+@C$n stretches up to take the ball of silvery light but a flash of
+
+lightning lashes out, numbing $s hand.
+
+~
+!
+0 0 0
+1340 9 1509949540 3 0
+3472 49 1509949540 -2 0
+3474 81 1509949445 -2 0
+3404 81 1509949443 -2 0
+1008 81 1509949490 -2 0
+1029 80 1509949465 -2 0
+1009 80 1509949460 -2 0
+1008 80 1509949445 -2 0
+-1
+S
+
+#38012
+A Junction in the Underground Tunnel~
+Curving sheets of expertly polished wood line the tunnel here, seamlessly
+
+covering all trace of the hard-packed dirt form which the tunnel is
+
+formed.  Exotic designs of interlocking lines and circles looped around
+
+chains of runes sprawl across the whole of the beautifully worked wooden
+
+paneling.  A curving arch stands at each end of the paneling, supporting
+
+the entire structure with their stolid strength coached in elegant beauty. 
+
+In the center of the southern wall is another delicately curved arch that
+
+opens into a well-lit chamber.
+
+~
+[Orb] hehe, this room is pretentious
+
+[Ylena] hehe.. I agree, very pretentious
+
+[Orb] Awwww, but its purty.
+
+[Ylena] yes, it is very pretty, but still pretentious ;)
+
+~
+-235274236 11 5 0
+D1
+~
+~
+0 -1 38010 10 10 5
+D2
+~
+~
+0 -1 38011 10 10 5
+D3
+~
+~
+0 -1 38013 10 10 5
+E
+panel walls wood~
+Wide sheets of wood curve to fit perfectly the circular walls of the
+
+tunnel.  The thin lines where the panels meet and join are all but
+
+invisible, covered in the aesthetic designs that flow across the tunnel. 
+
+Trying to follow the course of the intertwining spiral of lines defeats
+
+the eye, bringing on a slight feeling of disorientation.
+
+~
+E
+arches~
+Thick and round at the bottom, the tops of the arches are thin and
+
+delicately carved.  Exquisitely fine lines are etched into the wood in a
+
+spiraling decorative pattern that encircles the entire arch, winding
+
+around and down to the ground.
+
+~
+E
+s so south~
+The delicately curving arch stands at the entrance to a small chamber.
+
+~
+-1
+S
+
+#38013
+A Narrow Tunnel - Near a Wooden Arch~
+Wood shavings and a coat of light, powdery brown soil cover the
+
+hard-packed floor of the tunnel, while a few gnarled roots poke down from
+
+the ceiling.  A delicately curving arch of polished white wood stands at
+
+the eastern end of the room, bearing the weight of the ceiling with its
+
+muted beauty.  Soft chimes echo through the room as a whisper of warm air
+
+breezes through the area.
+
+~
+~
+-235274236 11 5 0
+D1
+~
+~
+0 -1 38012 10 10 5
+D3
+~
+~
+0 -1 38014 10 10 5
+E
+arch~
+Thick and round at the bottom, the tops of the arches are thin and
+
+delicately carved.  Exquisitely fine lines are etched into the wood in a
+
+spiraling decorative pattern that encircles the entire arch, winding
+
+around and down to the ground.
+
+~
+1066 9 1509949465 3 0
+1142 9 1509949540 3 0
+-1
+S
+
+#38014
+A Narrow Tunnel - A Myriad of Windchimes~
+The slender tunnel bends smoothly here to run east and north.  A myriad
+
+of silvery chimes hangs from the hard-packed soil of the tunnel's
+
+ceiling, sending a light tintinnabulation of sounds whispering through
+
+the area as a warm, gentle breeze from the north flows steadily through
+
+the area.  A small pile of powdery, dry dust has accumulated in the
+
+corner of the room.
+
+~
+[Orb] pull down a chime
+
+~
+-235274236 11 5 0
+D0
+~
+~
+0 -1 38015 10 10 5
+D1
+~
+~
+0 -1 38013 10 10 5
+E
+chimes ceiling~
+Crafted of a lovely silvery metal, these tiny chimes dangle from the
+
+ceiling in small clutches.  Tinkling music drifts down as the small
+
+silver charms rub lightly against one another, swaying slightly in the
+
+ever-present breeze that washes in from the north.
+
+~
+A
+get take untangle grab~
+bells chimes silvery~
+if( rflag( reset0, room ) ) {
+
+  if( random( 1, 50 ) >= 48 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #get, ch );
+
+    act_notchar( #rget, ch );
+
+    obj_to_char( oload( 3778 ), ch );
+
+    }
+
+  else {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #nope, ch );
+
+    act_notchar( #rnope, ch );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #nope, ch );
+
+  act_notchar( #rnope, ch );
+
+  }
+
+~
+E
+get~
+You carefully disentangle one of the many chimes and pull it down from the ceiling.
+
+~
+E
+rget~
+$n carefully disentangles one of the many chimes and pulls it down from the ceiling.
+
+~
+E
+nope~
+You try to untangle one of the beautiful chimes but they are hopelessly entwined.
+
+~
+E
+rnope~
+$n tries to untangle one of the beautiful chimes but they are hopelessly entwined.
+
+~
+!
+0 0 0
+1066 9 1509949540 3 0
+-1
+S
+
+#38015
+A Narrow Tunnel - Near a Silver Fan~
+Set into the wall in the dead center of the room is a ring of silvery
+
+metal.  Suspended in the center of the metal hoop, the blades of a fan
+
+which extend to obstruct the entire tunnel, comprised of the same silver
+
+alloy, whirl lazily blowing a light breeze of slightly warm air through
+
+the tunnel.  Every few moments the blades halt with abrupt suddenness
+
+then lazily begin to spin in their slow, deliberate rotation.
+
+~
+[Orb] hmm, I suppose I need a code for this
+
+[Orb] put the tiny blue stone into the slot to stop the fan and get past it
+
+~
+-235274236 11 5 0
+D0
+fan blades~
+~
+2251 -1 38016 10 10 5
+D2
+~
+~
+0 -1 38014 10 10 5
+E
+hoop metal ring~
+This band of glittering silver metal is about the width of a gnome's
+
+handspan wide, though it is uncertain how thick the metal is since it is
+
+set into the wall so that only the thinnest surface shows.  At each
+
+ordinal point, a tiny blue stone has been set into the metal.  The north
+
+point, however, has only a shallow impression where a stone is missing. 
+
+A small rectangular plaque has been set into the bottom of the ring.
+
+~
+E
+plaque~
+Engraved into the metal in a looping script are the words:
+
+
+@I@I@I@I@eRely on the north wind to see you home.@n
+
+~
+A
+3 insert place~
+stone~
+if( has_obj( 3779, ch ) ) {
+
+  if( rflag( reset0, room ) ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #swing, ch );
+
+    act_notchar( #rswing, ch );
+
+    obj = has_obj( 3779, ch );
+
+    junk_obj( obj, 1 );
+
+    open( room, north );
+
+    }
+
+  else
+
+    act_tochar( #done, ch );
+
+  }
+
+else
+
+  act_tochar( #nostone, ch );
+
+~
+E
+swing~
+You carefully insert the tiny blue stone into the depression in the
+
+silver metal.  The silver fan stops its turning and twists on its unseen
+
+axis to allow you to pass by.
+
+~
+E
+rswing~
+$n carefully inserts the tiny blue stone into the depression in the
+
+silver metal hoop.  The silver fan stops its turning and twists on its
+
+unseen axis to allow you to pass by.
+
+~
+E
+nostone~
+You do not have the proper stone.
+
+~
+E
+done~
+You try to set the spherical blue stone into the metal hoop but the
+
+depression has already been filled.
+
+~
+!
+0 0 0
+A
+l lo look~
+n no north fan blades~
+act_tochar( #fan, ch );
+
+~
+E
+fan~
+The silvery blades of the fan hang vertically with the flat parts of the blades facing you.
+
+~
+!
+0 0 0
+A
+~
+~
+act_tochar( #bye, ch );
+
+act_notchar( #rbye, ch );
+
+close( room, north );
+
+send_to_room( #swing, find_room( 38016 ) );
+
+~
+E
+bye~
+You step clear of the fan and it silently swings back into its original
+
+position.
+
+~
+E
+rbye~
+$n steps clear of the fan and it silently swings back to its original
+
+position.
+
+~
+E
+swing~
+The fan twists on its axis, silently resuming its customary position.
+
+~
+!
+1 0 1
+-1
+S
+
+#38016
+A Storage Chamber~
+This smoothly rounded half-sphere of a chamber is filled with chests of
+
+all shapes and sizes.  Some are stacked haphazardly upon one another,
+
+others lie on their sides as though thrown carelessly away.  A wooden
+
+door in the east wall is covered by a shimmering curtain of beaded
+
+strings, and a vertically suspended silver fan blocks the southern exit. 
+
+A tiny blue button is set into the western wall.
+
+~
+[Orb] nothing pops in this chest yet
+
+[Ylena] looks like a line is missing between lines 2 and 3
+
+[Ylena] when the fan is spinning again, how do you get out from this side?
+
+[Orb] fixed and fixed. ;)
+
+~
+-235274236 11 5 0
+D1
+wooden door~
+curtain~
+407 2513 38017 10 10 5
+D2
+fan blades~
+~
+2251 -1 38015 10 10 5
+E
+chests~
+The random assortment of wooden chests appear to be locked in general,
+
+though one that sits against the back wall bears no lock of any kind.
+
+~
+E
+curtain east beads~
+A curtain comprised of long beaded strings hangs suspended from the
+
+ceiling by a silver bar.  The beads of each string are subtly different
+
+shades of color that come together to span the spectrum, creating a
+
+rainbow-like wave of primary colors that shimmers with each breath of air. 
+
+A faint clattering sound fills the air as the curtain sways gently.
+
+~
+E
+button~
+This little blue button looks like it was carved out of some sort of
+
+indigo gemstone.  It has been set into a thin panel of silver metal which
+
+hangs from the hard-packed wall of the chamber.
+
+~
+A
+push~
+button~
+if( !is_open( room, south ) ) {
+
+  act_tochar( #push, ch );
+
+  act_notchar( #rpush, ch );
+
+  open( room, south );
+
+  send_to_room( #swing, find_room( 38015 ));
+
+  }
+
+else
+
+  act_tochar( #already, ch );
+
+~
+E
+push~
+You push on the small lever and the fan spins on its axis to allow
+
+passage to the south.
+
+~
+E
+rpush~
+$n pushes the small button and the fan spins on its axis, allowing
+
+passage to the south.
+
+~
+E
+swing~
+The silvery fan momentarily stops its lazy motion, then turns to the
+
+side, allowing passage to the north.
+
+~
+E
+already~
+You push the button but the fan is already moved aside.
+
+~
+!
+0 0 0
+1066 9 1509949540 3 0
+2703 17 1509949540 -2 0
+-1
+S
+
+#38017
+A Chamber Littered with Gizmos~
+A random assortment of gadgets and gizmos litter the floor of this small
+
+chamber.  Gear wheels, unidentifiable tools, and the occasional piece of
+
+twisted metal jumble together in heaps.  A small, threadbare carpet
+
+graces the middle of the chamber, upon which lie a low table and a chair,
+
+both of beautifully crafted workmanship.  A pile of rumpled blankets sits
+
+in a bundle in one corner of the room.
+
+~
+[Orb] search floor for gadgets and gizmos
+
+[Orb] I havent addedin all his fortunes and the like, its going to take
+
+me a bit of writing on them.
+
+[Ylena] to me, lie been used a wee bit too often at one point here.
+
+[Orb] Agreed, I fixed it.
+
+~
+-235274236 11 5 0
+D3
+wooden door~
+wooden door~
+407 2513 38016 10 10 5
+E
+table~
+This sturdy table is made of a white wood that has been polished to a
+
+muted gleam.  Nicks and marks have been cut into the table top, though
+
+the small imperfections do not mar the whole.  A black octagon of stone
+
+sits in the middle of the table.
+
+~
+E
+board stone~
+This wide, flat octagon is made of smooth, polished black stone.  Four
+
+silver lines intersect in the middle of the stone, branching out to
+
+divide the octagon into eight equal sections.  Small disks made of
+
+various gemstones sit in each section.  In the middle where the lines
+
+intersect, an indentation in the board is filled with a white powder.
+
+~
+A
+search~
+floor piles gizmos gadgets~
+if( mob_in_room( 2459, room ) ) {
+
+  act_tochar( #slap, ch );
+
+  act_notchar( #rslap, ch );
+
+  mob = mob_in_room( 2459, room );
+
+  tell( mob, ch, #mine );
+
+  }
+
+else {
+
+  act_tochar( #gizmo, ch );
+
+  act_notchar( #rgizmo, ch );
+
+  }
+
+~
+E
+slap~
+The gnome reaches out and slaps your hand.
+
+~
+E
+rslap~
+The gnome slaps $n's hand sharply.
+
+~
+E
+mine~
+Those gizmos are mine!  You leave them alone, see?
+
+~
+E
+gizmo~
+You search through a pile of half-finished gizmos and gadgets but find nothing useful.
+
+~
+E
+rgizmo~
+$n searches through a pile of half-finished gizmos and gadgets but finds nothing useful.
+
+~
+!
+0 0 0
+2459 9 1509949540 3 0
+-1
+S
+
+#38018
+Nothing~
+Under Construction.
+
+~
+~
+-235274236 11 5 0
+-1
+S
+
+#38019
+A Rough Hole~
+This area resembles a cave or a hole instead of a tunnel, as though
+
+something gouged or scraped it out.  Roots bristle out from the walls
+
+though most have been torn away, creating a path through the middle of
+
+the hole.  The ragged ends of roots, pieces of wood, clods of dirt and
+
+other debris litter the floor.  To the east, a tangle of long roots
+
+covers a dark recess.
+
+~
+[Orb] search floor/debris
+
+[Orb] get a bone or a random trinket
+
+[Orb] I think this will be part of a quest someday
+
+[Orb] this silver bauble
+
+~
+-235274236 11 5 0
+D1
+~
+~
+0 -1 38021 10 10 5
+D3
+~
+~
+0 -1 38007 10 10 5
+E
+debris floor~
+A mixed up mess of detritus covers the floor.  It is almost impossible to
+
+discern what most of the items are or were, covered in dirt and decayed
+
+as they are.  A closer look reveals that some of the longer root ends are
+
+actually small bones.
+
+~
+E
+recess e ea east~
+It is impossible to see through the tangled mass of roots.
+
+~
+A
+~
+~
+act_tochar( #east, ch );
+
+continue;
+
+~
+E
+east~
+You shove the tangled mass of roots aside and head into the darkness to the east.
+
+~
+!
+3 0 2
+A
+search~
+floor debris~
+if( rflag( reset0, room ) ) {
+
+  if( random( 1, 50 ) <= 4 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #yep, ch );
+
+    act_notchar( #ryep, ch );
+
+    obj_to_char( oload( 3777 ), ch );
+
+    }
+
+  else {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #nothing, ch );
+
+    act_notchar( #rnothing, ch );
+
+    }
+
+  }
+
+else {
+
+  remove_rflag( reset0, room );
+
+  act_tochar( #nothing, ch );
+
+  act_notchar( #rnothing, ch );
+
+}
+
+~
+E
+yep~
+You rummage through the detritus that covers the floor and find a tarnished silver crest!
+
+~
+E
+ryep~
+$n rummages through the debris on the floor and finds a tarnished silver crest!
+
+~
+E
+nothing~
+You rummage through the debris on the floor and come up with only useless filth.
+
+~
+E
+rnothing~
+$n rummages through the debris on the floor but finds nothing but filth.
+
+~
+!
+0 0 0
+-1
+S
+
+#38020
+Nothing~
+Under Construction.
+
+~
+~
+-235274236 11 5 0
+-1
+S
+
+#38021
+A Shadowy Recess~
+This curved recess has been roughly scraped out of the hard-packed brown
+
+soil.  The air is thick and musty with the scent of old blood and the
+
+stench of decay.  A pile of bones, scraps of clothing, and other detritus
+
+has been neatly piled up against the curving eastern wall of the hole. 
+
+Any offending roots have been roughly snapped off and sheared down to
+
+nothing but little stumps, except near the entrance where a long tangle
+
+of thin roots obscures what lies beyond.
+
+~
+~
+-235274236 11 5 0
+D3
+~
+~
+0 -1 38019 10 10 5
+E
+pile bones~
+Small bones, scraps of green cloth, and various other unsavory articles
+
+lie piled nearly against the eastern wall.
+
+~
+E
+west~
+It is impossible to see through the tangled mass of roots.
+
+~
+A
+l lo look~
+w we west~
+act_tochar( #west, ch );
+
+~
+E
+west~
+The tangled mass of roots obscures your view.
+
+~
+!
+0 0 0
+A
+search~
+floor piles scraps detritus~
+act_tochar( #nope, ch );
+
+act_notchar( #rnope, ch );
+
+~
+E
+nope~
+You search through the piles of bones and scraps but find nothing of value.
+
+~
+E
+rnope~
+$n searches the piles of bones and scraps but finds nothing of value.
+
+~
+!
+0 0 0
+1144 137 1509949540 3 0
+-1
+S
+
+#0
+

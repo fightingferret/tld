@@ -1,0 +1,933 @@
+#AREA
+Cliff Face~
+Ylena~
+~
+
+0 0
+0
+#ROOMS
+
+#78250
+Cliff Face~
+This almost sheer cliff face has only the barest bump or niche to allow
+
+only the most experienced of climbers to scale its heights.  The grey
+
+cliff face continues in all directions, up, down, east and west, but it
+
+seems that the only navigable directions are up or down.
+
+~
+~
+-235405311 5 9 0
+E
+shackles~
+They're shackles!
+
+~
+E
+nails~
+The nails are rusted and bent, but could still pose a hazard.
+
+~
+A
+climb~
+1 down~
+if( find_skill( ch, climb ) >= random( 7, 10 ) ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #rclimb, ch );
+
+  transfer( ch, find_room( 26571 ) );
+
+  act_notchar( #aclimb, ch );
+
+  }
+
+else {
+
+  act_tochar( #noclimb, ch );
+
+  act_notchar( #rnoclimb, ch );
+
+  }
+
+~
+E
+climb~
+With great caution you slowly climb down the cliff face.
+
+~
+E
+rclimb~
+Taking is slowly, $n climbs down the cliff face.
+
+~
+E
+aclimb~
+With great care, $n comes climbing down from above.
+
+~
+E
+noclimb~
+You hesitate continuing your climb as you are hit with a bout of
+
+unsureness.
+
+~
+E
+rnoclimb~
+$n freezes in his climbing attempt with a look of fear and indecision
+
+upon $s face.
+
+~
+!
+0 0 0
+A
+climb~
+1 up~
+if( find_skill( ch, climb ) >= random( 7, 10 ) ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #rclimb, ch );
+
+  transfer( ch, find_room( 78251 ) );
+
+  act_notchar( #aclimb, ch );
+
+  }
+
+else {
+
+  act_tochar( #noclimb, ch );
+
+  act_notchar( #rnoclimb, ch );
+
+  }
+
+~
+E
+climb~
+With great caution you slowly climb up the cliff face.
+
+~
+E
+rclimb~
+Taking is slowly, $n climbs up the cliff face.
+
+~
+E
+aclimb~
+With great care, $n comes climbing up from below.
+
+~
+E
+noclimb~
+You hesitate continuing your climb as you are hit with a bout of
+
+unsureness.
+
+~
+E
+rnoclimb~
+$n freezes in his climbing attempt with a look of fear and indecision
+
+upon $s face.
+
+~
+!
+0 0 0
+A
+2 sleep~
+~
+acode( find_room( 78255), 4 );
+
+~
+!
+0 0 0
+-1
+S
+
+#78251
+Cliff Face - Amongst the Clouds~
+Visibility is obscured here by passing clouds.  Although lending an
+
+almost magical touch with their fluffy textures that seem to be one shape
+
+one minute and a completely different shape the next, the moisture left
+
+behind by the clouds upon the cliff face just increases the difficulty of
+
+the climb up or down.
+
+~
+~
+-235405311 5 9 0
+A
+climb~
+1 down~
+if( find_skill( ch, climb ) >= random( 7, 10 ) ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #rclimb, ch );
+
+  transfer( ch, find_room( 78250 ) );
+
+  act_notchar( #aclimb, ch );
+
+  }
+
+else {
+
+  act_tochar( #noclimb, ch );
+
+  act_notchar( #rnoclimb, ch );
+
+  }
+
+~
+E
+climb~
+With great caution you slowly climb down the cliff face.
+
+~
+E
+rclimb~
+Taking is slowly, $n climbs down the cliff face.
+
+~
+E
+aclimb~
+With great care, $n comes climbing down from above.
+
+~
+E
+noclimb~
+You hesitate continuing your climb as you are hit with a bout of
+
+unsureness.
+
+~
+E
+rnoclimb~
+$n freezes in his climbing attempt with a look of fear and indecision
+
+upon $s face.
+
+~
+!
+0 0 0
+A
+climb~
+1 up~
+if( find_skill( ch, climb ) >= random( 7, 10 ) ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #rclimb, ch );
+
+  transfer( ch, find_room( 78252 ) );
+
+  act_notchar( #aclimb, ch );
+
+  }
+
+else {
+
+  act_tochar( #noclimb, ch );
+
+  act_notchar( #rnoclime, ch );
+
+  }
+
+~
+E
+climb~
+With great caution you slowly climb up the cliff face.
+
+~
+E
+rclimb~
+Taking is slowly, $n climbs up the cliff face.
+
+~
+E
+aclimb~
+With great care, $n comes climbing up from below.
+
+~
+E
+noclimb~
+You hesitate continuing your climb as you are hit with a bout of
+
+unsureness.
+
+~
+E
+rnoclime~
+$n freezes in his climbing attempt with a look of fear and indecision
+
+upon $s face.
+
+~
+!
+0 0 0
+A
+2 sleep~
+~
+acode( find_room( 78255), 4 );
+
+~
+!
+0 0 0
+-1
+S
+
+#78252
+Cliff Face - Above the Clouds~
+The grey, almost sheer cliff face offers very few handholds to allow an
+
+easy passage either up to what looks like a ledge of some sort, or down
+
+into a bank of fluffy clouds that seem to be ever present.  Here, above
+
+the clouds, the sky is remarkably crisp and clear even if the air itself
+
+seems to be thinner than normal.
+
+~
+~
+-201850879 5 9 0
+E
+clothing~
+The tattered pile of clothing has a faint odor of unwashed flesh.  Small
+
+holes have been gnawed into the fabric, evidence that vermin have made
+
+their homes here.
+
+~
+E
+pots~
+Pieces of the heavy clay pots lie strewn about the area.
+
+~
+A
+climb~
+1 down~
+if( find_skill( ch, climb ) >= random( 7, 10 ) ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #rclimb, ch );
+
+  transfer( ch, find_room( 78251 ) );
+
+  act_notchar( #aclimb, ch );
+
+  }
+
+else {
+
+  act_tochar( #noclimb, ch );
+
+  act_notchar( #rnoclimb, ch );
+
+  }
+
+~
+E
+climb~
+With great caution you slowly climb down the cliff face.
+
+~
+E
+rclimb~
+Taking is slowly, $n climbs down the cliff face.
+
+~
+E
+aclimb~
+With great care, $n comes climbing down from above.
+
+~
+E
+noclimb~
+You hesitate continuing your climb as you are hit with a bout of
+
+unsureness.
+
+~
+E
+rnoclimb~
+$n freezes in his climbing attempt with a look of fear and indecision
+
+upon $s face.
+
+~
+!
+0 0 0
+A
+climb~
+1 up~
+if( find_skill( ch, climb ) >= random( 7, 10 ) ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #rclimb, ch );
+
+  transfer( ch, find_room( 78253 ) );
+
+  act_notchar( #aclimb, ch );
+
+  }
+
+else {
+
+  act_tochar( #noclimb, ch );
+
+  act_notchar( #rnoclimb, ch );
+
+  }
+
+~
+E
+climb~
+With great caution you slowly climb up the cliff face.
+
+~
+E
+rclimb~
+Taking is slowly, $n climbs up the cliff face.
+
+~
+E
+aclimb~
+With great care, $n comes climbing down from above.
+
+~
+E
+noclimb~
+You hesitate continuing your climb as you are hit with a bout of
+
+unsureness.
+
+~
+E
+rnoclimb~
+$n freezes in his climbing attempt with a look of fear and indecision
+
+upon $s face.
+
+~
+!
+0 0 0
+A
+2 sleep~
+~
+acode( find_room( 78255), 4 );
+
+~
+!
+0 0 0
+-1
+S
+
+#78253
+Cliff Ledge~
+This ledge is barely three feet across and is surrounded by sheer,
+
+unclimbable cliffs to the west and north.  To the south the ledge drops
+
+away and looks like it would be climbable by those of sufficient ability,
+
+while toward the east the ledge continues its narrow path.
+
+~
+~
+-235405311 5 9 0
+D1
+~
+~
+0 -1 78254 10 10 5
+A
+climb~
+1 down~
+if( find_skill( ch, climb ) >= random( 7, 10 ) ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #rclimb, ch );
+
+  transfer( ch, find_room( 78252 ) );
+
+  act_notchar( #aclimb, ch );
+
+  }
+
+else {
+
+  act_tochar( #noclimb, ch );
+
+  act_notchar( #rnoclimb, ch );
+
+  }
+
+~
+E
+climb~
+Taking a deep breath, you swing yourself over the ledge and start to
+
+climb down the almost sheer cliff face.
+
+~
+E
+rclimb~
+$n carefully swings themselves over the ledge and starts to climb down
+
+the cliff face.
+
+~
+E
+aclimb~
+With great care, $n comes climbing down from above.
+
+~
+E
+noclimb~
+You foolishly took a quick peek over the edge of the cliff and now feel
+
+the need to still your beating heart before you attempt to climb down the
+
+cliff face.
+
+~
+E
+rnoclimb~
+$n took a quick peek over the edge of the cliff and then turned an
+
+interesting green color.
+
+~
+!
+0 0 0
+-1
+S
+
+#78254
+Cliff Ledge~
+Ranging in width from three feet to the west and then tapering off to
+
+just a few inches at its eastern most point, this cliff ledge offers very
+
+little hospitality to a weary mountaineer.  A sharp drop prevents any
+
+access down off this ledge, however the sheer surface of the rising cliff
+
+to the east does look like it could be climbed, but with some difficulty.
+
+~
+~
+-235405311 5 9 0
+D3
+~
+~
+0 -1 78253 10 10 5
+A
+climb~
+1 up~
+if( find_skill( ch, climb ) >= random( 7, 10 ) ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #rclimb, ch );
+
+  transfer( ch, find_room( 78255 ) );
+
+  act_notchar( #aclimb, ch );
+
+  }
+
+else {
+
+  act_tochar( #noclimb, ch );
+
+  act_notchar( #rnoclimb, ch );
+
+  }
+
+~
+E
+climb~
+With great caution you slowly climb up the cliff face.
+
+~
+E
+rclimb~
+Taking is slowly, $n climbs up the cliff face.
+
+~
+E
+aclimb~
+With great care, $n comes climbing up from above.
+
+~
+E
+noclimb~
+You hesitate continuing your climb as you are hit with a bout of
+
+unsureness.
+
+~
+E
+rnoclimb~
+$n freezes in his climbing attempt with a look of fear and indecision
+
+upon $s face.
+
+~
+!
+0 0 0
+-1
+S
+
+#78255
+Cliff Face~
+This almost vertical, grey stoned, cliff face offers very little in help
+
+for those wanting to scale its surface, and instead challenges the
+
+climber's ability, stamina, strength and sheer willpower.  Above and
+
+below this spot are some ledges, with the one above looking to have some
+
+sort of dried vegetation on it.
+
+~
+~
+-235405311 5 9 0
+A
+climb~
+1 down~
+if( find_skill( ch, climb ) >= random( 7, 10 ) ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #rclimb, ch );
+
+  transfer( ch, find_room( 78254 ) );
+
+  act_notchar( #aclimb, ch );
+
+  }
+
+else {
+
+  act_tochar( #noclimb, ch );
+
+  act_notchar( #rnoclimb, ch );
+
+  }
+
+~
+E
+climb~
+With great caution you slowly climb down the cliff face.
+
+~
+E
+rclimb~
+Taking is slowly, $n climbs down the cliff face.
+
+~
+E
+aclimb~
+With great care, $n comes climbing down from above.
+
+~
+E
+noclimb~
+You hesitate continuing your climb as you are hit with a bout of
+
+unsureness.
+
+~
+E
+rnoclimb~
+$n freezes in his climbing attempt with a look of fear and indecision
+
+upon $s face.
+
+~
+!
+0 0 0
+A
+climb~
+1 up~
+if( find_skill( ch, climb ) >= random( 7, 10 ) ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #rclimb, ch );
+
+  transfer( ch, find_room( 78256 ) );
+
+  act_notchar( #aclimb, ch );
+
+  }
+
+else {
+
+  act_tochar( #noclimb, ch );
+
+  act_notchar( #rnoclimb, ch );
+
+  }
+
+~
+E
+climb~
+With great caution you slowly climb up the cliff face.
+
+~
+E
+rclimb~
+Taking is slowly, $n climbs up the cliff face.
+
+~
+E
+aclimb~
+With great care, $n comes climbing up from below.
+
+~
+E
+noclimb~
+You hesitate continuing your climb as you are hit with a bout of
+
+unsureness.
+
+~
+E
+rnoclimb~
+$n freezes in his climbing attempt with a look of fear and indecision
+
+upon $s face.
+
+~
+!
+0 0 0
+A
+~
+~
+send_to_room( #bird, room );
+
+loop( all_in_room ) {
+
+  ch = rch;
+
+  if( find_stat( ch, str ) >= random( 10, 16 ) )
+
+    act_tochar( #cling, ch );
+
+  else {
+
+    act_tochar( #fall, ch );
+
+    act_notchar( #rfall, ch );
+
+    transfer( ch, find_room( 78254 ) );
+
+    act_notchar( #afall, ch );
+
+    i = 4d10;
+
+    dam_message( ch, i, "the fall" );
+
+    inflict( ch, mob, i, "a fall" );
+
+    interpret( ch, "sit" );
+
+    }
+
+  }
+
+~
+E
+bird~
+@CFrom nowhere an extremely large eagle suddenly flies past you,
+
+buffetting the area with strong winds from its flapping wings!!@n 
+
+~
+E
+cling~
+Somehow you managed to cling to the cliff's side till the winds abated.
+
+~
+E
+fall~
+Between the buffeting winds and lack of decent handholds you end up
+
+falling to the ledge below.
+
+~
+E
+rfall~
+$n looses $s grip upon the cliff and falls to the ledge below!
+
+~
+E
+afall~
+$n falls from above, landing in a crumpled heap at your feet.
+
+~
+!
+2 600 48
+A
+2 sleep~
+~
+act_tochar( #no, ch );
+
+~
+E
+no~
+Sleeping on an almost vertical cliff face is not the safest activity in
+
+the world.
+
+~
+!
+0 0 0
+-1
+S
+
+#78256
+Cliff Ledge - At a Huge Nest~
+Sheltered on two sides by sheer cliffs and to the west by a cave
+
+entrance, this ledge is occupied by a huge nest of twigs.  The nest takes
+
+up the majority of the ledge leaving very little room to manoeuvre safely. 
+
+The only way off this ledge seems to be down.
+
+~
+~
+-235405311 5 9 0
+D3
+~
+~
+0 -1 78257 10 10 5
+E
+nest~
+Made from branches and twigs and lined with feathers, bits of fur, and
+
+the odd piece of cloth, this nest looks like it has been here for ages. 
+
+Many bones litter the surrounding area and it is hard to tell how many
+
+different creatures have been used to satisfy the needs of the inhabitant
+
+of the nest.
+
+~
+A
+climb~
+1 down~
+if( find_skill( ch, climb ) >= random( 7, 10 ) ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #climb, ch );
+
+  transfer( ch, find_room( 78255 ) );
+
+  act_notchar( #aclimb, ch );
+
+  }
+
+else {
+
+  act_tochar( #noclimb, ch );
+
+  act_notchar( #rnoclimb, ch );
+
+  }
+
+~
+E
+climb~
+With a touch of caution you start the long climb down.
+
+~
+E
+rclimb~
+$n slowly begins the descent down the cliff face.
+
+~
+E
+aclimb~
+$n climbs down from above.
+
+~
+E
+noclimb~
+Having made the silly mistake of glancing over the cliff ledge, you are
+
+momentarily paralyzed by fear as you realise just how high up you really
+
+are.
+
+~
+E
+rnoclimb~
+$n glances over the cliff ledge then proceeds to do a fine impersonation
+
+of a terrified loon.
+
+~
+!
+0 0 0
+2381 9 1509949540 3 0
+-1
+S
+
+#78257
+A Cave~
+This small cave is remarkably clear of the debris that is normally
+
+associated with such a location.  In place of the rocks, dirt and other
+
+odds and ends that inevitably find themselves inhabiting such locations
+
+is a neat bed roll against the back wall, a small campfire encircled by
+
+stones with a small cooking pot nearby, and small mat near the entrance
+
+of the cave.
+
+~
+~
+-235405307 11 5 0
+D1
+~
+~
+0 -1 78256 10 10 5
+E
+mat~
+Made from heavy calico, this mat has been stuffed with about one inch of
+
+padding and is just large enough for one individual to sit upon.
+
+~
+2689 17 1509949540 -2 0
+2382 9 1509949540 3 0
+-1
+S
+
+#0
+

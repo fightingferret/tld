@@ -1,0 +1,1704 @@
+#AREA
+Grimble's Place~
+Ylena~
+~
+
+0 0
+0
+#ROOMS
+
+#41500
+Farm Entrance - At a Junk Heap~
+Many piles of assorted metal lie around here in various states of erosion. 
+
+The piles vary in height, some are only a couple of feet high, others get
+
+to four or five feet, with one pile managing to reach a staggering eight
+
+feet tall.  Trails run through the metal mounds allowing access to some
+
+sort of garden to the east, north were piles of wood can be seen, out of
+
+a set of gates to the south, and to an unusual looking contraption to the
+
+west.
+
+~
+[Belgar] were -> where
+
+[Belgar] were -. where
+
+~
+-235405303 2 5 0
+D0
+~
+~
+0 -1 41511 10 10 5
+D1
+~
+~
+0 -1 41501 10 10 5
+D2
+~
+~
+0 -1 77051 10 10 5
+D3
+~
+~
+0 -1 41502 10 10 5
+E
+piles metal~
+The piles of metal dont seem to have any organization to them and consist
+
+of all forms of metal, from new blocks to old scrap pieces, being lumped
+
+together in various piles.  The exposure to the elements has left their
+
+mark with most of the metal being rusty.  One especially tall pile
+
+catches your eye, and as you examine it more you realise that it isnt a
+
+mere random collection of metal, but rather a humanoid looking creature
+
+that has rusted into a foetal position.
+
+~
+A
+~
+~
+if( random( 1, 5 ) == 1 ) {
+
+  act_tochar( #snag, ch );
+
+  act_notchar( #rsnag, ch );
+
+  i = 1d4+1;
+
+  dam_message( ch, i, "piece of metal" );
+
+  inflict( ch, mob, i, "chunk of metal" );
+
+  continue;
+
+  }
+
+else
+
+  continue;
+
+~
+E
+snag~
+You get snagged on a piece of metal!
+
+~
+E
+rsnag~
+$n gets snagged on a piece of metal.
+
+~
+!
+3 0 15
+A
+search~
+piles metal~
+if( rflag( reset0, room ) ) {
+
+  i = random( 1, 3 );
+
+  if( i == 1 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #ouch, ch );
+
+    act_notchar( #rouch, ch );
+
+    j = 2d3;
+
+    dam_message( ch, j, "the jagged piece of metal" );
+
+    inflict( ch, mob, j, "fatal scratch" );
+
+    }
+
+  if( i == 2 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #nothing, ch );
+
+    }
+
+  if( i == 3 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #find, ch );
+
+    act_notchar( #rfind, ch );
+
+    j = random( 1, 3 );
+
+    if( j == 1 )
+
+      obj_to_char( oload( 638 ), ch );
+
+    if( j == 2 )
+
+      obj_to_char( oload( 639 ), ch );
+
+    if( j == 3 )
+
+      obj_to_char( oload( 640 ), ch );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #nothing, ch );
+
+~
+E
+find~
+You find an ingot in the piles of metal.
+
+~
+E
+rfind~
+$n finds an ingot in the piles of metal.
+
+~
+E
+nothing~
+You find nothing of interest in the metal piles.
+
+~
+E
+ouch~
+You scratch yourself on a piece of jagged metal while searching the piles.
+
+~
+E
+rouch~
+$n gets scratched by a piece of jagged metal while searching the piles.
+
+~
+!
+0 0 0
+872 17 1509949520 -2 0
+873 17 1509949460 -2 0
+872 17 1509949450 -2 0
+-1
+S
+
+#41501
+An Overgrown Garden~
+Weeds have overtaken what was once a vegetable garden, although a few
+
+brave vegetables have managed to survive the weeds takeover.  Also being
+
+overtaken by the weeds is a strange metallic being that is propped up in
+
+the middle of the garden patch.  The only way out of here is to the west.
+
+~
+~
+-235405311 2 9 0
+D3
+~
+~
+0 -1 41500 10 10 5
+E
+vegetables~
+A few carrots have managed to hold their ground against the weeds
+
+approach, although they do look a bit on the scraggly side.
+
+~
+A
+~
+~
+if( !is_follower( ch ) )
+
+  send_to_room( #alive, room );
+
+~
+E
+alive~
+@GAs you enter a strange metallic being seems to come to life, flailing
+
+its arms around barely missing you, while its eyes flash on and off as
+
+its head spins.@n 
+
+~
+!
+1 0 8
+A
+pick~
+carrot vegetables~
+if( rflag( reset0, room ) ) {
+
+  if( random( 1, 5 ) < 3 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #last, ch );
+
+    act_notchar( #rlast, ch );
+
+    obj_to_char( oload( 1299 ), ch );
+
+    }
+
+  else {
+
+    act_tochar( #pick, ch );
+
+    act_notchar( #rpick, ch );
+
+    obj_to_char( oload( 1299 ), ch );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #nopick, ch );
+
+~
+E
+pick~
+You pull a carrot from out of the ground.
+
+~
+E
+rpick~
+$n pulls a carrot from the ground.
+
+~
+E
+nopick~
+There are no more carrots left.
+
+~
+E
+last~
+You pull the last carrot from the ground.
+
+~
+E
+rlast~
+$n pulls the last carrot from the ground.
+
+~
+!
+0 0 0
+3513 17 1509949540 -2 0
+755 9 1509949540 3 0
+-1
+S
+
+#41502
+At a Strange-Looking Contraption~
+Sitting here is a strange-looking contraption that almost resembles a
+
+large gazebo.  In the center of the 'gazebo' is a thick octagonal column
+
+which features a full-length mirror on each of its sides.  Arranged around
+
+this column in two concentric circles are poles that run from the roof to
+
+the floor of the 'gazebo'.  Each pole then has attached to it some sort of
+
+stylized creature serving as a chair.  Sitting just before the 'gazebo' is
+
+a small pole with a box sitting on top.  Surrounding the 'gazebo' is a dirt
+
+yard to the north, to the west are some apple trees, eastward are several
+
+piles of metal, while to the south is a slight hill.
+
+~
+[Janua] .
+
+[Dalthas] pole/box extra needs a period at the end
+
+[Ingra] look pole - sentence is not finished (missing dot)
+
+~
+-235405303 2 9 0
+D0
+~
+~
+0 -1 41510 10 10 5
+D1
+~
+~
+0 -1 41500 10 10 5
+D2
+~
+~
+0 -1 41507 10 10 5
+D3
+~
+~
+0 -1 41503 10 10 5
+E
+creatures chair~
+Some of these creatures include a brightly painted unicorn with yellow
+
+saddle, a griffin raised up ready to strike at some unseen foe, a warty
+
+troll who looks ready to give someone a piggy back ride, and a rainbow
+
+dragon with a gilded harness upon its back.
+
+~
+E
+box pole~
+Painted a bright yellow color, the box sits upon a short pole.  The box
+
+has two buttons, a red one, and green one 
+
+~
+A
+push~
+green~
+if( mob_in_room( 2343, room ) ) {
+
+  act_tochar( #stop, ch );
+
+  act_notchar( #rstop, ch );
+
+  end;
+
+  }
+
+if( rflag( reset0, room ) ) {
+
+  act_tochar( #green, ch );
+
+  act_notchar( #rgreen, ch );
+
+  send_to_room( #start, room );
+
+  wait( 1 );
+
+  send_to_room( #oops, room );
+
+  remove_rflag( reset0, room );
+
+  if( mob_in_room( 2339, find_room( 41514 ) ) ) {
+
+    mob = mob_in_room( 2339, find_room( 41514 ) );
+
+    if( !is_fighting( mob ) ) {
+
+      send_to_room( #leave, find_room( 41514 ) );
+
+      junk_mob( mob );
+
+      send_to_room( #arrive, room );
+
+      mload( 2343, room );
+
+      wait( random( 1, 3 ) );
+
+      acode( find_room( 41502 ), 2 );
+
+      }
+
+    }
+
+  }
+
+else
+
+  act_tochar( #nothing, ch );
+
+~
+E
+leave~
+@CA whirring noise starts up from somewhere to the south, which is then
+
+followed by a clunk!  Grimble looks up from his works, curses, then
+
+leaves to investigate mumbling something about those that should leave
+
+things alone.@n 
+
+~
+E
+arrive~
+@CArriving from the north comes Grimble cursing and shouting at you to
+
+leave his invention alone!@n 
+
+~
+E
+green~
+@GYou push the green button.@n 
+
+~
+E
+rgreen~
+@G$n pushes the green button.@n 
+
+~
+E
+start~
+@YMusic starts to play and seems to be coming from the center of the
+
+'gazebo', the music then starts to get louder and speed up in tempo, when
+
+this happens the 'gazebo' starts to slowly turn, with the seats attached
+
+to the poles going up and down at the same time.@n 
+
+~
+E
+oops~
+@MThen, just as the 'gazebo' starts to get faster a loud whirring sound
+
+starts up, smoke begins to pour out from the 'gazebo's' center and the
+
+'gazebo's' motion stops with a loud CLANK!@n 
+
+~
+E
+nothing~
+@GYou push the green button but nothing happens.@n
+
+~
+E
+stop~
+@CAs you go to push the green button Grimble glares at you.  You then
+
+decide that maybe you should leave the button alone.@n 
+
+~
+E
+rstop~
+@CAs $n goes to push the green button Grimble glares at them.  $n then
+
+moves his hand away from the button@n 
+
+~
+!
+0 0 0
+A
+~
+~
+if( mob_in_room( 2343, room ) ) {
+
+  send_to_room( #leave, room );
+
+  junk_mob( mob_in_room( 2343, room ) );
+
+  }
+
+~
+E
+leave~
+@CGrimble trudges back to his workshop, muttering something about needing
+
+to get a tool.@n 
+
+~
+!
+0 400 15
+A
+push~
+red~
+act_tochar( #red, ch );
+
+act_notchar( #rred, ch );
+
+~
+E
+red~
+@RYou push the red button, but nothing happens.@n
+
+~
+E
+rred~
+@R$n pushes the red button, but nothing happens.@n
+
+~
+!
+0 0 0
+-1
+S
+
+#41503
+An Overgrown Apple Orchard~
+Tracks that look like they have been made by some sort of wheeled device
+
+run through the long grasses that grow unchecked under the apple tree
+
+that resides here.  The tracks run to both the west and north where more
+
+apple trees can be found.  To the east is a strange looking construct,
+
+while the ground dips down on a slight angle to the south.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 41509 10 10 5
+D1
+~
+~
+0 -1 41502 10 10 5
+D2
+~
+~
+0 -1 41506 10 10 5
+D3
+~
+~
+0 -1 41504 10 10 5
+-1
+S
+
+#41504
+An Overgrown Apple Orchard~
+A fairly steep, thickly forested hill to the west is blocked off by a
+
+small stone fence that runs along the western border of this apple
+
+orchard, while to the south the grounds slopes down at a gentle angle. 
+
+Tracks that seemed to be made from some sort of wheeled device run
+
+through the tall grasses that covers the ground under the apple tree that
+
+grows.  These tracks continue to both the north and east, where more
+
+apple trees can be seen.
+
+~
+[Dalthas] extra for tracks?
+
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 41508 10 10 5
+D1
+~
+~
+0 -1 41503 10 10 5
+D2
+~
+~
+0 -1 41505 10 10 5
+2338 9 1509949540 3 0
+-1
+S
+
+#41505
+On a Riverbank~
+A small stone fence blocks access to thick forest to the west, that like
+
+this small hill, comes down to greet the lake that lies just to the south. 
+
+Sitting on top of the hill, just to the north, is an apple tree, while to
+
+the east, the gently sloping riverbank continues.
+
+~
+~
+-235405303 2 9 0
+D0
+~
+~
+0 -1 41504 10 10 5
+D1
+~
+~
+0 -1 41506 10 10 5
+D2
+~
+~
+0 -1 77073 10 10 5
+-1
+S
+
+#41506
+On a Riverbank~
+A slight hill blends into the lapping waters of the lake that lies just
+
+to the south and whose waters sparkle occasionally in the light.  This
+
+gently sloping riverbank continues to both the east and west, while
+
+sitting on the peak of the hill to the north is an apple tree.
+
+~
+~
+-235405303 2 9 0
+D0
+~
+~
+0 -1 41503 10 10 5
+D1
+~
+~
+0 -1 41507 10 10 5
+D2
+~
+~
+0 -1 77072 10 10 5
+D3
+~
+~
+0 -1 41505 10 10 5
+78 17 1509949540 -2 0
+-1
+S
+
+#41507
+On a Riverbank~
+A gently sloping hill melds with the lapping waters of a lake just to the
+
+south while on top of this hill to the north in a most unusual looking
+
+structure.  A small stone fence blocks any passage to the east, but
+
+toward the west the sloping riverbank continues.
+
+~
+[Janua] .
+
+~
+-235405303 2 9 0
+D0
+~
+~
+0 -1 41502 10 10 5
+D2
+~
+~
+0 -1 77067 10 10 5
+D3
+~
+~
+0 -1 41506 10 10 5
+78 17 1509949540 -2 0
+-1
+S
+
+#41508
+An Overgrown Apple Orchard~
+A small stone fence holds at bay the thick forest that covers a steep
+
+hill to the west, and prevents the forest from enveloping the apple tree
+
+that grows here.  Tall grasses grow beneath the apple tree and are marred
+
+by tracks that run north, south and east toward some other apple trees. 
+
+The tracks look like they were made by some sort of wheeled device.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 41517 10 10 5
+D1
+~
+~
+0 -1 41509 10 10 5
+D2
+~
+~
+0 -1 41504 10 10 5
+-1
+S
+
+#41509
+An Overgrown Apple Orchard~
+Tracks run through the long grass that grows beneath the apple tree here. 
+
+These tracks run to the north, south and west of here and look as though
+
+they were made by some sort of wheeled device.  To the east is a yard of
+
+some sort, while in all other directions more apple trees grow.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 41516 10 10 5
+D1
+~
+~
+0 -1 41510 10 10 5
+D2
+~
+~
+0 -1 41503 10 10 5
+D3
+~
+~
+0 -1 41508 10 10 5
+2504 9 1509949540 3 0
+2338 9 1509949540 3 0
+-1
+S
+
+#41510
+A Dirt Yard~
+Weed-spotted dirt makes up the majority of this part of the yard.  Drag
+
+marks in the dirt are present and run from the set of double doors to the
+
+north and head towards an unusual contraption to the south.  An apple
+
+orchard lies just to the west while to the east are many piles of wood.
+
+~
+~
+-235405303 2 9 0
+D0
+door~
+door 1 north~
+407 -1 41515 10 10 5
+D1
+~
+~
+0 -1 41511 10 10 5
+D2
+~
+~
+0 -1 41502 10 10 5
+D3
+~
+~
+0 -1 41509 10 10 5
+E
+double door~
+These doors look like your typical set of double, wooden doors, except
+
+for the strange arrangement of hinges, pulleys, counterweights and other
+
+various things attached to them.  Just off to the side of the door is a
+
+button.
+
+~
+A
+open~
+door 1 north~
+if( is_open( room, north ) ) {
+
+  act_tochar( #open, ch );
+
+  end;
+
+  }
+
+else {
+
+  act_tochar( #push, ch );
+
+  act_notchar( #rpush, ch );
+
+  }
+
+~
+E
+push~
+No matter how hard you push or pull on the doors, they just won't open.
+
+~
+E
+rpush~
+No matter how hard $n pushes or pulls on the doors, they just won't open.
+
+~
+E
+open~
+The door is already open.
+
+~
+!
+0 0 0
+A
+push~
+3 button~
+if( is_open( room, north ) ) {
+
+  act_tochar( #close, ch );
+
+  act_notchar( #rclose, ch );
+
+  close( room, north );
+
+  end;
+
+  }
+
+if( !is_open( room, north ) ) {
+
+  act_tochar( #open, ch );
+
+  act_notchar( #ropen, ch );
+
+  open( room, north );
+
+  }
+
+~
+E
+open~
+You push the button and the doors swing open silently.
+
+~
+E
+ropen~
+$n pushes the button and the doors swing open silently.
+
+~
+E
+ropen~
+No description.
+
+~
+E
+close~
+You push the button and the doors swing shut silently.
+
+~
+E
+rclose~
+$n pushes the button and the doors swing shut silently.
+
+~
+!
+0 0 0
+-1
+S
+
+#41511
+A Wood Pile~
+Wood of all varieties and cuts lay about the place here.  Some of it is
+
+stacked neatly, but mostly the wood is in dishevelled heaps, with a few
+
+long planks leaning against a house.  The entrance to the house lies to
+
+the east and has a pile of wood on either side of the door.  A path of
+
+sorts runs through the wood piles heading south into a scrap yard of
+
+metal, as well as heading west into a clear section of yard.
+
+~
+~
+-235405311 2 9 0
+D1
+green wooden door~
+green wooden door 1 east~
+407 -1 41512 10 10 5
+D2
+~
+~
+0 -1 41500 10 10 5
+D3
+~
+~
+0 -1 41510 10 10 5
+E
+house~
+This single story house has been made by lying logs on top of each other
+
+and then using tar to plug up any gaps.  A gabled roof helps keeps the
+
+elements at bay, while on one side of a wooden door is a four paned
+
+window.
+
+~
+E
+door~
+The wooden door has been painted a nice green color and features a carved
+
+flower design down its middle.  Unlike normal doors, this one doesn't
+
+have any hinges or even a handle, however a thick cord hangs beside the
+
+door.
+
+~
+A
+search get~
+wood pile heap~
+if( rflag( reset0, room ) ) {
+
+  act_tochar( #search, ch );
+
+  act_notchar( #rsearch, ch );
+
+  i = random( 1, 7 );
+
+  if( i <= 3 ) {
+
+    remove_rflag( reset0, room );
+
+    mload( 16, room );
+
+    }
+
+  if( i == 4 ) {
+
+    remove_rflag( reset0, room );
+
+    obj_to_char( oload( 135 ), ch );
+
+    }
+
+  if( i == 5 ) {
+
+    remove_rflag( reset0, room );
+
+    obj_to_char( oload( 137 ), ch );
+
+    }
+
+  if( i == 6 ) {
+
+    remove_rflag( reset0, room );
+
+    obj_to_char( oload( 136 ), ch );
+
+    }
+
+  if( i == 7 ) {
+
+    obj_to_char( oload( 134 ), ch );
+
+    remove_rflag( reset0, room );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #nothing, ch );
+
+  act_notchar( #rnothing, ch );
+
+  }
+
+~
+E
+search~
+You begin to search through the piles of wood and manage to find
+
+something.
+
+~
+E
+rsearch~
+$n begins to search through the piles of wood and manages to find
+
+something.
+
+~
+E
+nothing~
+You search the wood piles, but find nothing of interest.
+
+~
+E
+rnothing~
+$n searches the wood piles, but comes up empty handed.
+
+~
+!
+0 0 0
+A
+open~
+green wooden door 1 east~
+if( is_open( room, east ) ) {
+
+  act_tochar( #open, ch );
+
+  end;
+
+  }
+
+else
+
+  act_tochar( #nope, ch );
+
+~
+E
+open~
+The door is already open.
+
+~
+E
+nope~
+There is no door handle for you to open the door with.
+
+~
+!
+0 0 0
+A
+pull~
+cord~
+if( !is_open( room, east ) ) {
+
+  act_tochar( #open, ch );
+
+  act_notchar( #ropen, ch );
+
+  open( room, east );
+
+  end;
+
+  }
+
+if( is_open( room, east ) ) {
+
+  act_tochar( #close, ch );
+
+  act_notchar( #rclose, ch );
+
+  close( room, east );
+
+  end;
+
+  }
+
+~
+E
+open~
+@GYou pull the cord and the green door slides open.@n
+
+~
+E
+ropen~
+@G$n pulls the cord and the green door slides open.@n
+
+~
+E
+close~
+@GYou pull the cord and the door slides shut.@n
+
+~
+E
+rclose~
+@G$n pulls a cord and the door slides shut.@n
+
+~
+!
+0 0 0
+-1
+S
+
+#41512
+A Cluttered Living Area~
+A small, unmade bed lies against the east wall, while to the south a
+
+fireplace serves to both heat this room and cook food.  A padded chair
+
+with matching footstool sits before the fire, and the only other
+
+furniture in this part of the house is a cluttered table, that sits in
+
+the middle of the room, and a cupboard that stands next to the fireplace. 
+
+From here a door leads out of house toward the west, while northward is a
+
+work area of some sort.
+
+~
+[Belgar] plural of assistant is bad
+
+~
+-235405307 0 5 0
+D0
+~
+~
+0 -1 41513 10 10 5
+D3
+green wooden door~
+green wooden door 1 west~
+407 -1 41511 10 10 5
+E
+cupboard~
+The door to this plain wooden cupboard is slightly ajar and you can see
+
+that it is used to hold all manner of things, from clothes to foodstuffs.
+
+~
+E
+table~
+This sturdy table is made from a mis-mash of assorted woods and metals. 
+
+The table top is made up of alternate pieces of wood and metal, while
+
+three of the legs are wooden, with the fourth made of a shiny metal.  The
+
+top of the table is covered in empty bowls, a cutting board and knife,
+
+all sorts of odd trinkets, and the odd rag.
+
+~
+E
+fireplace~
+Sitting in the middle of the southern wall, this fireplace is well
+
+positioned to provide heating for the whole room.  A hook is suspended
+
+above the fire pit which has a medium sized cauldron hanging from it.
+
+~
+E
+cauldron~
+Inside the cauldron is a stew of some kind.
+
+~
+E
+door~
+The wooden door is covered in plans for various things, ranging from toys
+
+to mechanical constructs to things you can only guess at.  Unusual in
+
+design, this door doesnt have any hinges or handle, just a thick cord
+
+hanging next to it.
+
+~
+A
+search~
+bed cupboard table~
+act_tochar( #nothing, ch );
+
+~
+E
+nothing~
+You find nothing of interest.
+
+~
+!
+0 0 0
+A
+get~
+stew~
+act_tochar( #none, ch );
+
+~
+E
+none~
+Without a ladel or something similar, the stew is too hot to take from
+
+the cauldron.
+
+~
+!
+0 0 0
+A
+open~
+green wooden door 1 west~
+if( is_open( room, west ) ) {
+
+  act_tochar( #open, ch );
+
+  end;
+
+  }
+
+else
+
+  act_tochar( #umm, ch );
+
+~
+E
+umm~
+You see no handle with which to open the door.
+
+~
+E
+open~
+The door is already open.
+
+~
+!
+0 0 0
+A
+pull~
+cord~
+if( is_open( room, west ) ) {
+
+  act_tochar( #close, ch );
+
+  act_notchar( #rclose, ch );
+
+  close( room, west );
+
+  end;
+
+  }
+
+else {
+
+  act_tochar( #open, ch );
+
+  act_notchar( #ropen, ch );
+
+  open( room, west );
+
+  end;
+
+  }
+
+~
+E
+open~
+@GYou pull the cord and the door slides open.@n
+
+~
+E
+ropen~
+@G$n pulls the cord and the door slides open.@n
+
+~
+E
+close~
+@GYou pull the cord and the door slides closed.@n
+
+~
+E
+rclose~
+@G$n pulls the cord and the door slides closed.@n
+
+~
+!
+0 0 0
+3514 17 1509949540 -2 0
+-1
+S
+
+#41513
+A Workshop - Finishing Area~
+Along the northern wall is a sturdy bench that is set low enough for a
+
+halfling or gnome sized person to work at.  On top of the bench are
+
+scraps of material, spools of different colored cotton, pins and needles,
+
+scissors, balls of wool, paint pots, brushes and pots of glue.  A padded
+
+stool is placed before the bench and the seat of it is covered in a
+
+thread bare fabric that looks like it once had an intricate pattern woven
+
+through it.  Around the room are boxes filled with finished toys, most
+
+have been sealed up ready to be sent to wherever they are destined for,
+
+while a few of them are waiting to be filled.  The bench continues to the
+
+west while to the south a fireplace sends out its warm glow into a
+
+cluttered living area.
+
+~
+~
+-235405307 0 5 0
+D2
+~
+~
+0 -1 41512 10 10 5
+D3
+~
+~
+0 -1 41514 10 10 5
+A
+search~
+table fabric cotton needles~
+if( rflag( reset0, room ) ) {
+
+  i = random( 1, 20 );
+
+  if( i <= 17 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #nothing, ch );
+
+    act_notchar( #rnothing, ch );
+
+    }
+
+  if( i == 18 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #something, ch );
+
+    act_notchar( #rsomething, ch );
+
+    obj_to_char( oload( 3337 ), ch );
+
+    }
+
+  if( i == 19 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #something, ch );
+
+    act_notchar( #rsomething, ch );
+
+    obj_to_char( oload( 700 ), ch );
+
+    }
+
+  if( i == 20 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #something, ch );
+
+    act_notchar( #rsomething, ch );
+
+    obj_to_char( oload( 699 ), ch );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #nothing, ch );
+
+  act_notchar( #rnothing, ch );
+
+  }
+
+~
+E
+nothing~
+You search the table top but find nothing of interest.
+
+~
+E
+rnothing~
+$n searches the table top but finds nothing of interest.
+
+~
+E
+something~
+You search the table top and find something!
+
+~
+E
+rsomething~
+$n searches the table top and finds something!
+
+~
+!
+0 0 0
+-1
+S
+
+#41514
+A Workshop - Woodwork Area~
+The bench along the northern wall is covered in wood shavings that have
+
+spread to the floor, also on the bench are boxes of nails and screws and
+
+various constructs in various stages of completion.  Along the southern
+
+wall hang various woodworking tools, while under them is a combination
+
+lathe-planer contraption.  To the west is a small forge, while to the
+
+east the bench continues.
+
+~
+[Ghent] [Here] : an elderly gnome, two mechanical assistant (shouldn't it be assistants?)
+
+~
+-235405307 0 5 0
+D1
+~
+~
+0 -1 41513 10 10 5
+D3
+~
+~
+0 -1 41515 10 10 5
+E
+woodworking tools~
+Hand drills, hammers, chisels, wood files, saws, a small shelf that holds
+
+sandpaper of varying grades, are situated on the wall.
+
+~
+2339 9 1509949540 3 0
+2340 9 1509949540 3 0
+-1
+S
+
+#41515
+A Workshop - Metal Working Area~
+A small forge sits along the western wall and looks like it is constantly
+
+in use.  An anvil sits beside it, as well as a rack of tools that is in
+
+easy reach, and a small barrel of oily looking water.  The edge of a long
+
+bench that runs along the north wall has a vice attached to it, as well
+
+as being adorned by a couple of metal rasps and a rivet gun.  A set of
+
+double doors is set in the southern wall, while to the east is a wood
+
+working area.
+
+~
+[Dalthas] Extras for anvil, tools, barrel, vice, bench
+
+~
+-235405307 0 5 0
+D1
+~
+~
+0 -1 41514 10 10 5
+D2
+door~
+door 1 south~
+407 -1 41510 10 10 5
+E
+forge~
+The forge is full of hot coals and has a large bellow attached to the
+
+side of it.
+
+~
+E
+double doors~
+These doors look like your typical set of double, wooden doors, except
+
+for the strange arrangement of hinges, pulleys, counterweights and other
+
+various things attached to them.  Just off to the side of the door is a
+
+button.
+
+~
+A
+get~
+coal~
+act_tochar( #coal, ch );
+
+act_notchar( #rcoal, ch );
+
+i = 2d6;
+
+dam_element( ch, i, "the red hot coal", 1 );
+
+inflict_fire( ch, mob, i, "burning coal" );
+
+~
+E
+rcoal~
+$n grabs one of the @Rred hot coals@n and very quickly decides to let it
+
+go!
+
+~
+E
+coal~
+You grab one of the @Rred hot coals@n and very quickly decide to let it
+
+go!
+
+~
+!
+0 0 0
+A
+open~
+double 1 door 1 south~
+if( !is_open( room, south ) ) {
+
+  act_tochar( #push, ch );
+
+  act_notchar( #rpush, ch );
+
+  end;
+
+  }
+
+else
+
+  act_tochar( #open, ch );
+
+~
+E
+push~
+No matter how hard you push or pull on the doors, they just won't open.
+
+~
+E
+rpush~
+No matter how hard $n pushes or pulls on the doors, they just won't open.
+
+~
+E
+open~
+The door is already open.
+
+~
+!
+0 0 0
+A
+push~
+button~
+if( is_open( room, south ) ) {
+
+  act_tochar( #open, ch );
+
+  act_notchar( #ropen, ch );
+
+  close( room, south );
+
+  end;
+
+  }
+
+if( !is_open( room, south ) ) {
+
+  act_tochar( #push, ch );
+
+  act_notchar( #rpush, ch );
+
+  open( room, south );
+
+  end;
+
+  }
+
+~
+E
+push~
+You push the button and the doors swing open silently.
+
+~
+E
+rpush~
+$n pushes a button and the doors swing open silently.
+
+~
+E
+open~
+You push the button and the doors swing shut silently.
+
+~
+E
+ropen~
+$n pushes a button and the doors swing shut silently.
+
+~
+!
+0 0 0
+872 17 1509949540 -2 0
+79 17 1509949473 -2 0
+2340 9 1509949540 3 0
+-1
+S
+
+#41516
+An Overgrown Apple Orchard~
+The corner of the apple orchard is nestled by a wall of a house to the
+
+east and a stone fence that prevents a thick forest from intruding, while
+
+to the west and south the apple orchard continues.  Tall grasses grow
+
+here, and are only marred by tracks, leading to both the south and west,
+
+that look to be made by some sort of wheeled gadget.
+
+~
+~
+-235405311 3 9 0
+D2
+~
+~
+0 -1 41509 10 10 5
+D3
+~
+~
+0 -1 41517 10 10 5
+-1
+S
+
+#41517
+An Overgrown Apple Orchard~
+A stone fence wraps around the north and west borders of this apple
+
+orchard here, keeping at bay a thickly-forested, steep hill.  Tall
+
+grasses and tracks can be found in profusion under the apple tree, as
+
+well as the wheel tracks leading up to a huge pile of apples that has
+
+been made in the corner where the fences meet.
+
+~
+[Dalthas] Fence extra?
+
+[Dalthas] pile of apples can't look at?
+
+~
+-235405311 3 9 0
+D1
+~
+~
+0 -1 41516 10 10 5
+D2
+~
+~
+0 -1 41508 10 10 5
+E
+pile mound~
+The pile of apples looks like it has been here for quite a while, with
+
+the apples near the base of the almost rotted through.  As you look up
+
+the pile the apples are in various stages of decay, with the apples on
+
+top free, so far, from any sign of decay.  Many wheel marks in the ground
+
+can be seen around the pile of apples.
+
+~
+2338 9 1509949540 3 0
+-1
+S
+
+#0
+

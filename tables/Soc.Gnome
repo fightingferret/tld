@@ -1,0 +1,749 @@
+#TABLE
+
+31
+
+attention~
+6
+0
+1
+1
+You jump up and down trying to get everyone to look at you.~
+$n jumps up and down trying to get everyone's attention.~
+ou tug at $N's leg in an attempt to get $S attention.~
+$n tugs at $N's leg and tries to get $M to look at $m.~
+$n tugs at your leg, desperate for your attention.~
+You feel someone tugging at your leg!~
+You were ignoring yourself?~
+~
+You wave $1 about, trying to get everyone's attention.~
+$n starts jumping up and down and waving $2 about, trying to get everyone's attention.~
+~
+~
+You @Gpoke@n $N with $p in an attempt to make $M look at you.~
+$n @Gpokes@n you with $p in a desperate attempt to make you pay attention!~
+$n @Gpokes@n $N with $p in an attempt to make $M pay attention.~
+You feel something poking you!~
+~
+~
+
+battle~
+8
+0
+1
+1
+You throw back your head and let forth a huge gnomish battle @Yy@Go@Bd@Re@Cl@n!~
+$n throws back $s head and lets forth a huge battle @Yy@Go@Bd@Re@Cl@n!~
+You @Yy@Go@Bd@Re@Cl@n a gnomish battle cry at $N.~
+$n @Yy@Go@Bd@Re@Cl@Ms@n a gnomish battle cry at $N.~
+$n @Yy@Go@Bd@Re@Cl@Ms@n a gnomish battle cry at you!~
+~
+You are at war with yourself?~
+$n inexplicably screams a gnomish battle cry at $mself and begins beating $s own head.~
+You wave $1 in the air and let loose a gnomish battle cry.~
+$n waves $2 in the air and lets loose a gnomish battle cry.~
+~
+~
+~
+~
+~
+~
+~
+~
+
+blush~
+0
+0
+0
+0
+Your cheeks are burning!~
+$n's cheeks turn bright @Rred@n!~
+You duck your head and blush at the sight of $N.~
+$n ducks $s head and turns bright @Rred@n when $e looks at $N!~
+$n ducks $s head and turns bright @Rred@n when $e looks at you!~
+~
+You turn bright @Rred@n with embarrasment over what you did!~
+$n turns bright @Rred@n with embarrasment over what $e did!~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+boo~
+6
+0
+0
+0
+You start booing.~
+$n boos.~
+You boo at $N.~
+$n boos at $N, what did $e do?~
+You notice that $n is booing at you, what did you do?~
+~
+You boo lustily at your own inadequacies.~
+$n boos lustily at $s own inadequacies.~
+You boo lustily at $1 for no apparent reason.~
+$n looks at $2 and begins to boo.~
+~
+~
+~
+~
+~
+~
+~
+~
+
+boogie~
+8
+1
+0
+1
+You love the night life, you love to boogie.~
+$n boogies until $e just can't boogie no more.~
+You grab $N and boogie down.~
+$n grabs $N boogies down.~
+$n grabs you and starts to boogie down.~
+You hear the faint throb of a disco beat.~
+You love the night life, you love to boogie.  You boogie until you just can't boogie no more.~
+$n boogies until $e just can't boogie no more.~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+cheer~
+0
+0
+1
+1
+You jump around the room cheering loudly!~
+$n jumps around the room cheering loudly!~
+You dance around $N cheering loudly for $M!~
+$n dances around $N cheering loudly!~
+$n starts dancing around you, cheering loudly!~
+~
+You bounce around, cheering madly for yourself!~
+$m bounces around cheering wildly for $mself!~
+You run around in circles, cheering wildly and waving $1 in the air!~
+$n starts running about cheering wildly and waving $2 in the air!~
+You look $t and cheer madly.~
+$n looks $t and starts cheering madly!~
+You cheer loudly, waving $p at $N.~
+$n starts cheering loudly and waving $p at you!~
+$n starts cheering loudly and waving $p at $N!~
+~
+You bounce about, cheering wildly for yourself and waving $p in the air.~
+$n starts bouncing and cheering wildly for $mself while waving $p in the air.~
+
+cower~
+6
+0
+0
+0
+You @Ycower@n to the ground.~
+$n @Ycowers@n to the ground.~
+You grab on to $N's leg and @Ycower@n behind it.~
+$n grabs onto $N's leg and @Ycowers@n behind it.~
+$n @Ycowers@n behind your leg.~
+~
+You can not cower behind yourself.~
+~
+You @Ycower@n behind $1.~
+$n @Ycowers@n behind $2.~
+You look $t and @Ycower.@n~
+$n looks $t and @Ycowers.@n~
+~
+~
+~
+~
+~
+~
+
+dive~
+8
+0
+0
+0
+@CYou dive for cover.@n~
+@C$n dives for cover.@n~
+@CYou dive for cover behind $N.@n~
+@C$n dives for cover behind $N.@n~
+@CYou see $n dive for cover behind you.@n~
+~
+How can you dive for cover behind yourself?~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+ear~
+8
+0
+0
+0
+You bite at thin @Bair.@n~
+$n bites at thin @Bair.@n~
+You jump up and bite @R$N@n on the ear.~
+$n jumps up and bites @R$N@n on the ear.~
+Your ear was just bit by @R$n.@n~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+jog~
+0
+0
+1
+1
+You start jogging on the spot.~
+$n starts jogging on the spot.~
+You jog along, trying to keep up with $N.~
+$n starts jogging along, trying to keep up with $N.~
+$n starts to jog in an attempt to keep up with you!~
+~
+Go to a doctor. Do not pass go. Do not collect 200cp.~
+~
+You jog around the room waving $1 in the air.~
+$n jogs around the room waving $2 in the air!~
+~
+~
+~
+~
+~
+~
+~
+~
+
+jump~
+8
+0
+0
+0
+You jump about excitedly.~
+$n jumps about on $s little gnomish legs.~
+You jump about excitedly, landing on the toes of $N.~
+$n jumps about excitedly, and lands on the toes of $N.~
+$n jumps about in excitement, and lands on your toes.~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+kbite~
+0
+0
+1
+0
+You peer around the room looking for an exposed knee.~
+$n looks a little to closely at your knees for comfort.~
+You @Rbite@n $N's knee! Is that a welt?~
+$n @Rbites@n $N on the knee! Thats gonna leave a mark!~
+$n @Rbites@n your knee! You can see welts!~
+You feel something @Rbite@n your knee! OW!~
+You try to bite your knee but give up after several attempts.~
+$n comicly attempts to bite @s own knee.~
+~
+~
+~
+~
+You @Rbite@n $N on the knee when you catch $S trying to grab $p.~
+$n @Rbites@n you on the knee when you get to close to $p. Ouch!~
+$n @Rbites@n $N on the knee to keep $N away from $p!~
+~
+~
+~
+
+kpat~
+6
+0
+0
+0
+Pat whom??~
+~
+You reach up and pat $M on the knee.~
+$n reaches up and pats $N on the knee.~
+$n reaches up and pats you on the knee.~
+~
+You lovingly pat your own knee.~
+$n lovingly pats $s knee.~
+You lovingly pat $1.~
+$n lovingly pats $2.~
+~
+~
+~
+~
+~
+~
+~
+~
+
+kpunch~
+7
+0
+1
+1
+You look around for someone's knee to punch.~
+$n looks around for someone's knee to punch.~
+You walk up to $N and punch $M in the knee!~
+$n walks up to $N and @Gpunches@n them in the knee!~
+$n walks up to you and @Gpunches@n you in the knee!~
+You feel a sudden pain in your knee!~
+@GWon't that hurt?@n~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+latch~
+8
+0
+0
+0
+Whom do you want to latch onto?~
+~
+You @Blatch@n onto $N's leg.~
+$n seems to @Blatch@n onto $N's leg and will not let go.~
+$n seems to @Blatch@n onto your leg and will not let go.~
+~
+You try to grab your own leg.~
+$n trys to grab $s leg but @Rtrips@n and @Yfalls@n.~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+laugh~
+6
+0
+1
+1
+You fall on your back, laughing merrily.~
+$n falls on $s back, laughing merrily.~
+You look at $N, grin, then fall on your back laughing!~
+$n looks at $N, grins at $M, then falls on $s back laughing!~
+$n looks at you, grins, then falls on $s back laughing!~
+~
+You fall over helpless with laughing at yourself.~
+$n falls over laughing uncontrolably at what $e did!~
+You look at $1 then fall about laughing!~
+$n looks at $2 then falls about laughing.~
+~
+~
+~
+~
+~
+~
+~
+~
+
+leap~
+8
+1
+0
+1
+You leap into the air uselessly. ~
+$n leaps into the air, and lands in a heap.~
+You leap into $N's arms.~
+$n surprises $N by leaping into $S arms.~
+$n leaps into your arms.~
+You feel someone land on top of you!~
+You try to leap into your own arms, but get tangled up and crash to the ground.~
+$n tries to leap into his own arms, and crashes to the ground.~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+leapd~
+6
+0
+0
+0
+Holding yourself again?~
+~
+You leap out of $N's arms.~
+$n leaps out of $N's arms and back to the ground.~
+$n leaps out of your arms and back to the ground.~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+lick~
+6
+0
+0
+0
+You lick your @Rlips@n.~
+$n licks $s @Rlips@n.~
+You jump up and @Glick@n $N on the face.~
+$n jumps up and @Glicks@n $N on the face.~
+$n jumps up and @GLICKS@n you on the face.~
+~
+You give yourself a tongue bath.~
+$n gives $mself a tongue bath.~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+nose~
+6
+0
+0
+0
+Rub whom?~
+~
+You grab $N by the cheeks and give $M a gnomish nose rub.~
+$n grabs $N by the cheeks and gives $M a gnomish nose rub.~
+$n grabs your cheeks and gives you a gnomish nose rub.~
+~
+You rub your nose.~
+$n rubs $s nose.~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+pace~
+8
+0
+0
+0
+You pace around impatiently.~
+$n paces around the room.~
+You pace circles around $N.~
+$n paces circles around $N.~
+You look down and see $n pacing around you.~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+peer~
+6
+0
+0
+0
+You frown and peer about the room.~
+$n frowns and peers about the room.~
+You screw up your bushy eyebrows and @gpeer@n at $N.~
+$n screws up $s bushy eyebrows and @gpeers@n at $N.~
+$n screws up $s bushy eyebrows and @gpeers@n at you.~
+The hair on the back of your neck prickles.~
+You go crosseyed trying to peer at yourself.~
+$n's eyes cross as $e tries to peer at $mself.~
+You peer at $1 intently.~
+$n screws up $s eyes and peers at $2.~
+You screw up your eyes and peer $t.~
+$n screws up $s eyes and peers $t.~
+~
+~
+~
+~
+~
+~
+
+piggy~
+8
+0
+0
+0
+You look for some one to give you a piggy back ride.~
+$n looks for some one to give $m a piggy back ride.~
+@GYou get a piggy back ride from $N.@n~
+@G$n gets a piggy back ride from $N.@n~
+@G$n climbs on your back and asks for a piggy back ride.@n~
+~
+You can not give yourself a piggy back ride.~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+seduce~
+6
+0
+1
+1
+You practice the art of seduction on yourself.~
+$n seems to be falling in love with $mself.~
+You attempt to seduce $N with your gnomish charms.~
+$n attempts to seduce $N with $s gnomish charms.~
+$n attempts to seduce you with $s gnomish charms.~
+~
+You practice the art of seduction on yourself.~
+$n is successfully seducing $mself.~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+sing~
+6
+0
+0
+0
+You sing an old @Cgnomish@n folk song.~
+$n sings an old @Cgnomish@n folk song.~
+@CYou sing a gnomish @Rlove@C song to $N.@n~
+@C$n sings a gnomish @Rlove@C song to $N.@n~
+@C$n sings a gnomish @Rlove@C song to you.@n~
+~
+@CYou sing a gnomish @Rlove@C song to yourself.@n~
+@C$n is singing a gnomish @Rlove@c song to $mself.@n~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+stomp~
+6
+0
+0
+0
+You @Rstomp@n around the room in a rage.~
+$n @Rstomps@n around the room in a rage.~
+You run up and @Rstomp@n $N on the foot.~
+$n runs up and @Rstomps@n $N on the foot.~
+$n runs up and @RSTOMPS@n you on the foot.~
+~
+You @RSTOMP@n yourself on the foot. Boy did that hurt.~
+$n @Rstomps@n $mself on the foot.~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+tease~
+6
+0
+1
+1
+Teasing is no fun without a suitable victim!~
+~
+You dance around $N, pointing at $M and laughing!~
+$n dances around $N, pointing at $M and laughing loudly!~
+$n dances around pointing at you and laughing loudly!~
+The hair on the back of your neck prickles as if someone is talking about you!~
+You into self-abuse huh?~
+~
+Why laugh at $1? What did it do to you?~
+~
+~
+~
+You dance around $N, laughing loudly and waving $p at them!~
+$n starts dancing around you, waving $p at you and laughing!~
+$n dances around $N waving $p and laughing at $M!~
+~
+~
+~
+
+thumb~
+6
+0
+1
+0
+You give everyone in the vicinity an enthusiastic "thumb's up".~
+$n gives everyone an enthusiastic "thumb's up".~
+You give an approving "thumb's up" to $N.~
+$n gives an approving "thumb's up" to $N.~
+$n gives you an approving "thumb's up" sign.~
+Your dreams are haunted by the sounds of someone making motions near your sleeping body.~
+You ridiculously give a "thumb's up" to yourself.~
+$n gives $mself a big "thumb's up" for no apparent reason.~
+You hold up $1, and give an approving "thumb's up" sign.~
+$n holds up $2, and gives an approving "thumb's up" sign.~
+You point your thumb $tward.~
+$n points $s thumb $tward.~
+~
+~
+~
+~
+~
+~
+
+tinker~
+6
+0
+1
+0
+You tinker with a tiny gadget.~
+$n tinkers around with a tiny gadget.~
+You try to interest $N with your silly little gadget.~
+$n tries to interest $N in $s silly little gadget.~
+$n tries to interest you with a silly little gadget.~
+~
+You engross yourself tinkering with a small gadget.~
+$n seems to have engrossed himself in tinkering with a small gadget.~
+You tinker with $1, trying to divine its inner workings.~
+$n tinkers with $2, trying to divine its inner workings.~
+~
+~
+You try to interest $N in tinkering with $p.~
+$n tries to interest you in tinkering with $p.~
+$n tries to interest $N in tinkering with $p.~
+~
+~
+~
+
+tstand~
+8
+0
+0
+0
+You stand on your toes, trying to look taller.~
+$n stands on $s toes trying to look taller.~
+You stand on $N's toes, trying to look $M in the eye.~
+$n stands on $N's toes trying to look $M in the eye.~
+$n stands on your toes, trying to look you in the eye.~
+You feel a crushing pain in your toes!~
+You stand on your toes, trying to look taller.~
+$n stands on $s toes trying to look taller.~
+You stand on $1 hoping that people can see you then.~
+$n stands on $2 and tries to look taller.~
+You stand on your toes and look $t.~
+$n stands on $s toes and looks $t.~
+You stand on $p and try to get $N's attention.~
+$n stands on $p and tries to get your attention!~
+$n stands on $p and tries to get $N's attention.~
+~
+You stand on $p hoping that people can see you then.~
+$n stands on $s toes trying to look taller.~
+
+whee~
+8
+1
+1
+1
+You run around screaming:  wheeeeeeeeeee!~
+$n runs around screaming:  wheeeeeeeeeee!~
+You run around $N screaming:  wheeeeeeeeeee!~
+$n runs around $N screaming:  wheeeeeeeeeee!~
+$n runs around you screaming:  wheeeeeeeeeee!~
+~
+You run around screaming:  wheeeeeeeeeee!~
+$n runs around screaming:  wheeeeeeeeeee!~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+

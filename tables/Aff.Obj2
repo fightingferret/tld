@@ -1,0 +1,40 @@
+#TABLE
+
+7
+
+Burning~
+$p bursts into flames.~
+$p flickers out of existence.~
+27
+
+flaming~
+A burning aura errupts around $2.~
+The flames around $2 flicker and die.~
+0
+
+poison poison~
+You coat $2 with poison.~
+The last of the poison on $2 has worn off.~
+0
+
+poison low~
+You coat $2 with poison.~
+The last of the poison on $2 has worn off.~
+0
+
+poison mid~
+You coat $2 with poison.~
+The last of the poison on $2 has worn off.~
+0
+
+poison high~
+You coat $2 with poison.~
+The last of the poison on $2 has worn off.~
+0
+
+poison stun~
+You coat $2 with poison.~
+The last of the poison on $2 has worn off.~
+0
+
+

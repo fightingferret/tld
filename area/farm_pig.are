@@ -1,0 +1,1681 @@
+#AREA
+Pig Farm~
+Janua Necros~
+~
+
+0 0
+3
+#ROOMS
+
+#52750
+A Rosebush-Lined Path~
+Small rose bushes line a low stone wall on the north, leading from the
+
+farm gate on the west to the front door of the cottage on the east. 
+
+Their sweet, clean fragrance fills the air, but the occasional smell of
+
+pigs comes in on the slight breeze.  The western gate leads out to the
+
+road and a gravel path leads south around the house.
+
+~
+~
+-235405304 2 5 0
+D1
+farmhouse door~
+~
+131 -1 52751 10 10 5
+D2
+~
+~
+0 -1 52757 10 10 5
+D3
+gate~
+~
+131 -1 77050 10 10 5
+E
+roses bushes~
+The short bushes bloom with a profusion of small roses ranging in color
+
+from deep red to bright yellow.  Their petals are ruffled, unlike the
+
+smooth petals of their larger cousins, but their fragrance could compete
+
+with the largest rose bushes.
+
+~
+A
+pick~
+roses~
+if( rflag( reset0, room ) ) {
+
+  if( random( 1, 6 ) == 1 ) {
+
+    act_tochar( #none, ch );
+
+    act_notchar( #rnone, ch );
+
+    dam_message( ch, 1d1, "the thorn" );
+
+    inflict( ch, mob, 1d1, "a thorn prick" );
+
+    remove_rflag( reset0, room );
+
+    }
+
+  else {
+
+    act_tochar( #msg, ch );
+
+    act_notchar( #rmsg, ch );
+
+    obj_to_char( oload( 3447 ), ch );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #none, ch );
+
+  act_notchar( #rnone, ch );
+
+  dam_message( ch, 1d1, "the thorn" );
+
+  inflict( ch, mob, 1d1, "a thorn prick" );
+
+  }
+
+~
+E
+msg~
+You pick a small rose from one of the bushes.
+
+~
+E
+rmsg~
+$n picks a small rose from one of the bushes.
+
+~
+E
+none~
+You try to pick a small rose but a thorn pricks your finger.
+
+~
+E
+rnone~
+$n reaches to pick a rose but pricks $s finger on a thorn.
+
+~
+!
+0 0 0
+-1
+S
+
+#52751
+A Farmhouse~
+You are in a small house filled from wall to wall with furnishings.  A
+
+long wooden table runs nearly the length of the eastern wall, surrounded
+
+by at least a dozen chairs.  The western half of the room is set up as a
+
+sitting area with a small davenport and several chairs surrounding a
+
+thick woven rug.  A short doorway leads south and another doorway opens
+
+to the north.  A small ladder is attached to the floor and leads up
+
+through the ceiling.  A trapdoor is set into the floor near the south
+
+wall.  An open archway leads to the north, from whence wafts the smells
+
+of food being cooked.
+
+~
+~
+-235405312 0 4 0
+D0
+~
+~
+0 -1 52752 10 10 5
+D1
+back door~
+~
+131 -1 52754 10 10 5
+D3
+front door~
+~
+131 -1 52750 10 10 5
+D4
+~
+~
+0 -1 52772 10 10 5
+D5
+trapdoor~
+1 down trapdoor~
+131 -1 52773 10 10 3
+A
+1 up~
+~
+if( is_player( ch ) ) {
+
+  act_tochar( #climb, ch );
+
+  end;
+
+  }
+
+else
+
+  continue;
+
+~
+E
+climb~
+You might try using the ladder.
+
+~
+!
+0 0 0
+A
+climb~
+1 up ladder~
+if( is_fighting( ch ) ) {
+
+  act_tochar( #use_flee, ch );
+
+  end;
+
+  }
+
+if( find_skill( ch, climb ) > 0 ) {
+
+if( random( 1, 4 ) > 0 ) {
+
+    act_tochar( #climb, ch );
+
+    act_notchar( #rclimb, ch );
+
+    transfer( ch, find_room( 52772 ) );
+
+    act_notchar( #climbs_up, ch );
+
+    }
+
+  else {
+
+    act_tochar( #slip, ch );
+
+    act_notchar( #rslip, ch );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #cant, ch );
+
+  act_notchar( #rslip, ch );
+
+  }
+
+~
+E
+climb~
+You climb the ladder up into the loft.
+
+~
+E
+rclimb~
+$n climbs the ladder up into the loft.
+
+~
+E
+slip~
+You start to climb up the ladder, but your foot slips and you fall back
+
+to the ground.
+
+~
+E
+rslip~
+$n starts to climb up the ladder, but quickly slips and falls.
+
+~
+E
+cant~
+You start to climb the ladder, but quickly realise you lack the
+
+competence for even such a simple climb and hop back to the floor before
+
+you hurt yourself.
+
+~
+E
+climbs_up~
+$n comes climbing up the ladder.
+
+~
+E
+use_flee~
+Use flee to leave a room while fighting.
+
+~
+!
+0 0 0
+A
+~
+~
+continue;
+
+~
+E
+to_char~
+You stoop inside the small doorway and head down a steep staircase.
+
+~
+E
+to_room~
+$n stoops inside the small doorway and heads down a steep staircase.
+
+~
+!
+3 0 4
+-1
+S
+
+#52752
+A Farmhouse Kitchen~
+A large cast-iron woodburning stove against the west wall dominates this
+
+room.  Along the east side of the room is a long counter, with cabinets
+
+above and below it.  There is a window on the east wall, providing a
+
+pleasant view of the rose garden outside.
+
+~
+~
+-235405312 0 4 0
+D0
+~
+~
+0 -1 52776 10 10 5
+D2
+~
+~
+0 -1 52751 10 10 5
+E
+window rose~
+Miniature roses grow here in a prolific display of greenery and blossoms. 
+
+A path paved with flat, smooth river rocks winds its way around the small
+
+bushes and a small wooden bench sits in the middle of the garden.  A low
+
+stone wall runs around the garden on the north and east and the lush
+
+bushes grow up against the house on the west.
+
+~
+2409 9 1509949540 3 0
+-1
+S
+
+#52753
+A Miniature Rose Garden~
+Miniature roses grow here in a prolific display of greenery and blossoms. 
+
+A path paved with flat, smooth river rocks winds its way around the small
+
+bushes and a small wooden bench sits in the middle of the garden.  A low
+
+stone wall runs around the garden on the north and east and the lush
+
+bushes grow up against the house on the west.
+
+~
+~
+-235405312 2 8 0
+D2
+~
+~
+0 -1 52754 10 10 5
+-1
+S
+
+#52754
+A Yard Behind a Farmhouse~
+This large yard sits comfortably behind a two-story farmhouse on the west
+
+and a barn on the south.  The grass is a nice shade of green but worn
+
+sparse in a path from the back door of the house to the side door of the
+
+barn and in the shady spots where children must enjoy playing.  A large
+
+tree grows tall in the middle of the yard with a battered swing dangling
+
+from its branches.  The yard is bordered on the east by a low stone wall
+
+and a garden lies north.
+
+~
+~
+-235405312 2 8 0
+D0
+~
+~
+0 -1 52753 10 10 5
+D2
+small door~
+barn small~
+131 -1 52755 10 10 5
+D3
+back door~
+~
+131 -1 52751 10 10 5
+-1
+S
+
+#52755
+A Barn~
+This is a spacious barn, crammed full of farming implements.  A variety
+
+of tools are hung and stacked against the north wall, on either side of
+
+the small door leading out in that direction.  The eastern half of the
+
+barn is filled with full sacks and a large stack of hay bails.  The
+
+southern wall has a small, grimy window that allows no clear view
+
+outside, and a pile of empty bags lies on the floor below the dirty
+
+aperature.  A small plow sits on the floor in the middle of the room
+
+flanked by several broken wheelbarrows.  Large, double doors make up the
+
+western wall and open into the barnyard beyond.
+
+~
+~
+-235405312 2 9 0
+D0
+small door~
+~
+131 -1 52754 10 10 5
+D3
+barn doors~
+~
+513 -1 52756 10 10 5
+E
+wheelbarrows~
+Several old wheelbarrows lay about here, in various states of (dis)repair.
+
+~
+A
+search~
+wheelbarrows~
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  if( random( 0, 99 ) > 14 ) {
+
+    act_tochar( #char_something, ch );
+
+    act_notchar( #room_something, ch );
+
+    obj_to_char( oload( 3515 ), ch );
+
+    }
+
+  else {
+
+    act_tochar( #char_nothing, ch );
+
+    act_notchar( #room_nothing, ch );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #char_nothing, ch );
+
+  act_notchar( #room_nothing, ch );
+
+  }
+
+~
+E
+char_something~
+You rummage through the old wheelbarrows and find a can of oil.
+
+~
+E
+room_something~
+$n rummages through the wheelbarrows - it looks like $e found something!
+
+~
+E
+char_nothing~
+You rummage through the old wheelbarrows but find nothing of interest.
+
+~
+E
+room_nothing~
+$n rummages through the old wheelbarrows for a moment, but doesn't seem
+
+to have found anything.
+
+~
+!
+0 0 0
+-1
+S
+
+#52756
+Barnyard~
+You are on the western side of a medium sized barn.  The ground here is
+
+mostly hard-packed dirt and partially covered in loose gravel.  Stray
+
+bits of grass grow in closely cropped bunches here and there among the
+
+pebbles.  To the south you can see a large pigpen and the side of a
+
+farmhouse blocks your way north.  A more defined path begins to the east
+
+and turns north around the side of the farmhouse.
+
+~
+~
+-235405312 2 9 0
+D1
+barn doors~
+~
+513 -1 52755 10 10 5
+D2
+~
+~
+0 -1 52764 10 10 5
+D3
+~
+~
+0 -1 52757 10 10 5
+-1
+S
+
+#52757
+Path Through a Barnyard~
+A path covered in loose rock comes in from the north and leads to a barn
+
+a little way off to the east.  Green grass cropped short lines either
+
+side of the path and a garden grows on the other side of a white fence on
+
+the east.  If the fence is meant to keep livestock out of the garden, the
+
+many goat hoofprints on both sides of the fence show its ineffectiveness.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 52750 10 10 5
+D1
+~
+~
+0 -1 52756 10 10 5
+D2
+~
+~
+0 -1 52763 10 10 5
+D3
+~
+~
+0 -1 52758 10 10 5
+A
+~
+~
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+continue;
+
+~
+E
+msg~
+You easily climb over the short fence.
+
+~
+E
+rmsg~
+$n easily climbs over the short fence.
+
+~
+!
+3 0 8
+A
+~
+~
+if( !is_player( ch ) )
+
+  if( !is_follower( ch ) )
+
+  end;
+
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+continue;
+
+~
+E
+msg~
+You easily climb over the short fence.
+
+~
+E
+rmsg~
+No description.
+
+~
+!
+3 0 4
+2313 9 1509949540 3 0
+2313 9 1509949540 3 0
+-1
+S
+
+#52758
+A Large Vegetable Garden~
+A variety of vegetables grow in this large garden, in rows running north
+
+and south.  Leafy green lettuce and green beans grow in this section, and
+
+you can see tall stalks of corn growing off to the west.  A short wooden
+
+fence, bearing a fresh coat of white paint, stands between the garden and
+
+a path on the east.
+
+~
+~
+-235405312 2 9 0
+D1
+~
+~
+0 -1 52757 10 10 5
+D2
+~
+~
+0 -1 52761 10 10 5
+D3
+~
+~
+0 -1 52759 10 10 5
+A
+~
+~
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+continue;
+
+~
+E
+msg~
+You easily climb over the short fence.
+
+~
+E
+rmsg~
+$n easily climbs over the short fence.
+
+~
+!
+3 0 2
+-1
+S
+
+#52759
+A Large Vegetable Garden~
+Tall stalks of corn grow here, laden with large ears of corn and some of
+
+them look ready to pick.  The tall plants grow to about three feet in
+
+height with long green leaves that fan out at the top.  Through the
+
+stalks you can see a low stone wall on the north and west, and open space
+
+on the east.  Looking south you can see between the long rows of corn
+
+stretching off in that direction.
+
+~
+~
+-235405312 2 9 0
+D1
+~
+~
+0 -1 52758 10 10 5
+D2
+~
+~
+0 -1 52760 10 10 5
+A
+pick~
+corn ears~
+if( rflag( reset0, room ) ) {
+
+  if( random( 1, 4 ) == 1 ) {
+
+    act_tochar( #none, ch );
+
+    remove_rflag( reset0, room );
+
+    }
+
+  else {
+
+    act_tochar( #msg, ch );
+
+    act_notchar( #rmsg, ch );
+
+    obj_to_char( oload( 1597 ), ch );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #none, ch );
+
+~
+E
+msg~
+You pick an ear of corn from one of the tall stalks.
+
+~
+E
+rmsg~
+$n picks an ear of corn from one of the tall stalks.
+
+~
+E
+none~
+You can't find any ears of corn that look ripe enough to pick.
+
+~
+!
+0 0 0
+-1
+S
+
+#52760
+A Large Vegetable Garden~
+Under Construction.
+
+garden
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 52759 10 10 5
+D1
+~
+~
+0 -1 52761 10 10 5
+-1
+S
+
+#52761
+A Large Vegetable Garden~
+Under Construction.
+
+garden
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 52758 10 10 5
+D1
+~
+~
+0 -1 52763 10 10 5
+D3
+~
+~
+0 -1 52760 10 10 5
+A
+~
+~
+if( !is_player( ch ) )
+
+  if( !is_follower( ch ) )
+
+  end;
+
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+continue;
+
+~
+E
+msg~
+You easily climb over the short fence.
+
+~
+E
+rmsg~
+$n easily climbs over the short fence.
+
+~
+!
+3 0 2
+-1
+S
+
+#52762
+Farm 6~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+-1
+S
+
+#52763
+A Pig Pen~
+Mud and filth cover the ground and you sink into the soft surface every
+
+time you move.  The smell of manure and other strong smells of something
+
+unknown and rotten hangs heavy in the air.  To the north and west a
+
+sturdy but short fence confines the pig pen and the mud continues south
+
+and east.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 52757 10 10 5
+D1
+~
+~
+0 -1 52764 10 10 5
+D2
+~
+~
+0 -1 52768 10 10 5
+D3
+~
+~
+0 -1 52761 10 10 5
+A
+~
+~
+if( !is_player( ch ) )
+
+  if( !is_follower( ch ) )
+
+  end;
+
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+continue;
+
+~
+E
+msg~
+You easily climb over the short fence.
+
+~
+E
+rmsg~
+$n easily climbs over the short fence.
+
+~
+!
+3 0 9
+A
+wallow~
+~
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+~
+E
+msg~
+@yYou flop down on the ground and roll around, coating yourself in mud
+
+and who knows what other kinds of filth.@n 
+
+~
+E
+rmsg~
+@y$n flops down on the ground and rolls around in the muck, obviously
+
+enjoying $mself.@n 
+
+~
+!
+0 0 0
+2371 9 1509949480 3 0
+2396 9 1509949500 3 0
+-1
+S
+
+#52764
+A Pig Pen~
+The ground is covered with mud and manure thick enough to impede your
+
+movements.  A stench fills the air and seems to hang in an almost visible
+
+cloud over the area.  A short wooden fence pens in the pig sty on the
+
+north and the muck surrounds you on all other sides.  A wooden trough
+
+stained with the muck that serves as feed runs the length of the fence.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 52756 10 10 5
+D1
+~
+~
+0 -1 52765 10 10 5
+D2
+~
+~
+0 -1 52767 10 10 5
+D3
+~
+~
+0 -1 52763 10 10 5
+A
+wallow~
+~
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+~
+E
+msg~
+@yYou flop down on the ground and roll around, coating yourself in mud
+
+and who knows what other kinds of filth.@n 
+
+~
+E
+rmsg~
+@y$n flops down on the ground and rolls around in the muck, obviously
+
+enjoying $mself.@n 
+
+~
+!
+0 0 0
+A
+~
+~
+if( !is_player( ch ) )
+
+   if( !is_follower( ch ) )
+
+   end;
+
+ act_tochar( #msg, ch );
+
+ act_notchar( #rmsg, ch );
+
+ continue;
+
+~
+E
+msg~
+You easily climb over the short fence.
+
+~
+E
+rmsg~
+$n easily climbs over the short fence.
+
+~
+!
+3 0 1
+2371 9 1509949480 3 0
+-1
+S
+
+#52765
+A Pig Pen~
+You are in ankle-deep muck and mud and every move you make causes a
+
+sucking sound in the filth.  The smell is worse than the mess; odors from
+
+manure and unidentifiable rotten smells fill the air.  A short wooden
+
+fence surrounds the pen on the north and east, and the muddy ground
+
+continues south and west.
+
+~
+~
+-235405312 2 9 0
+D2
+~
+~
+0 -1 52766 10 10 5
+D3
+~
+~
+0 -1 52764 10 10 5
+A
+wallow~
+~
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+~
+E
+msg~
+@yYou flop down on the ground and roll around, coating yourself in mud
+
+and who knows what other kinds of filth.@n 
+
+~
+E
+rmsg~
+@y@n flops down on the ground and rolls around in the muck, obviously
+
+enjoying $mself.@n 
+
+~
+!
+0 0 0
+2371 9 1509949480 3 0
+2396 9 1509949500 3 0
+-1
+S
+
+#52766
+A Pig Pen~
+You are in what can only be a pen for pigs.  The ground is covered with
+
+thick mud and the air is filled with a putrid stench.  A low fence runs
+
+along the pen to the east and a riverbank lies beyond its stout wooden
+
+poles.  Mud and muck lie in all other directions.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 52765 10 10 5
+D2
+~
+~
+0 -1 52771 10 10 5
+D3
+~
+~
+0 -1 52767 10 10 5
+A
+wallow~
+~
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+~
+E
+msg~
+@yYou flop down on the ground and roll around, coating yourself in mud
+
+and who knows what other kinds of filth.@n 
+
+~
+E
+rmsg~
+@y@n flops down on the ground and rolls around in the muck, obviously
+
+enjoying $mself.@n 
+
+~
+!
+0 0 0
+2371 9 1509949480 3 0
+-1
+S
+
+#52767
+A Pig Pen~
+On all sides, and underfoot, there is a putrid mixture of mud, offal and
+
+rotting vegetables.
+
+(unfinished)
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 52764 10 10 5
+D1
+~
+~
+0 -1 52766 10 10 5
+D2
+~
+~
+0 -1 52770 10 10 5
+D3
+~
+~
+0 -1 52768 10 10 5
+A
+wallow~
+~
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+~
+E
+msg~
+@yYou flop down on the ground and roll around, coating yourself in mud
+
+and who knows what other kinds of filth.@n 
+
+~
+E
+rmsg~
+@y@n flops down on the ground and rolls around in the muck, obviously
+
+enjoying $mself.@n 
+
+~
+!
+0 0 0
+2371 9 1509949480 3 0
+-1
+S
+
+#52768
+A Pig Pen~
+Under Construction
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 52763 10 10 5
+D1
+~
+~
+0 -1 52767 10 10 5
+D2
+~
+~
+0 -1 52769 10 10 5
+A
+wallow~
+~
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+~
+E
+msg~
+@yYou flop down on the ground and roll around, coating yourself in mud
+
+and who knows what other kinds of filth.@n 
+
+~
+E
+rmsg~
+@y@n flops down on the ground and rolls around in the muck, obviously
+
+enjoying $mself.@n 
+
+~
+!
+0 0 0
+2371 9 1509949480 3 0
+-1
+S
+
+#52769
+A Pig Pen~
+Under Construction.
+
+pig sty
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 52768 10 10 5
+D1
+~
+~
+0 -1 52770 10 10 5
+A
+wallow~
+~
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+~
+E
+msg~
+@yYou flop down on the ground and roll around, coating yourself in mud
+
+and who knows what other kinds of filth.@n 
+
+~
+E
+rmsg~
+@y@n flops down on the ground and rolls around in the muck, obviously
+
+enjoying $mself.@n 
+
+~
+!
+0 0 0
+2371 9 1509949480 3 0
+2396 9 1509949500 3 0
+-1
+S
+
+#52770
+A Pig Pen~
+The field of muck and slop finally comes to an end here, as it meets a
+
+low fence to the south.  Beyond the fence is the bank of a great river.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 52767 10 10 5
+D1
+~
+~
+0 -1 52771 10 10 5
+D3
+~
+~
+0 -1 52769 10 10 5
+A
+wallow~
+~
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+~
+E
+msg~
+@yYou flop down on the ground and roll around, coating yourself in mud
+
+and who knows what other kinds of filth.@n 
+
+~
+E
+rmsg~
+@y@n flops down on the ground and rolls around in the muck, obviously
+
+enjoying $mself.@n 
+
+~
+!
+0 0 0
+2371 9 1509949480 3 0
+-1
+S
+
+#52771
+A Pig Pen~
+Here in the far corner of the pigpen the muck covering the ground is
+
+thicker, and richer as well, in a pigs eyes at least.  The fence comes to
+
+a sharp corner here, blocking off the riverbank to the east and south.
+
+(change first sentence)
+
+~
+[Necros] test
+
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 52766 10 10 5
+D3
+~
+~
+0 -1 52770 10 10 5
+A
+wallow~
+~
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+~
+E
+msg~
+@yYou flop down on the ground and roll around, coating yourself in mud
+
+and who knows what other kinds of filth.@n 
+
+~
+E
+rmsg~
+@y$n flops down on the ground and rolls around in the muck, obviously
+
+enjoying $mself.@n 
+
+~
+!
+0 0 0
+2026 17 1509949470 -2 0
+2371 9 1509949480 3 0
+2396 9 1509949500 3 0
+2400 9 1509949540 3 0
+-1
+S
+
+#52772
+A Loft~
+This small loft apparently serves as sleeping quarters for the children
+
+of the house.  There is a bedroll on either side of the room, a small set
+
+of drawers against the north wall, and a checkerboard near the centre.
+
+~
+[Necros] test
+
+~
+-235405312 0 3 0
+D5
+~
+~
+0 -1 52751 10 10 5
+E
+checkerboard~
+A square about a foot per side has been carved into the floor here, and
+
+inset with wooden squares of alternating colours.  This sort of board is
+
+usually used for playing a game, but there are no game pieces here.
+
+~
+A
+1 down~
+~
+if( is_player( ch ) ) {
+
+  act_tochar( #climb, ch );
+
+  end;
+
+  }
+
+else
+
+  continue;
+
+~
+E
+climb~
+You might try using the ladder.
+
+~
+!
+0 0 0
+A
+climb~
+1 down~
+if( is_fighting( ch ) ) {
+
+  act_tochar( #use_flee, ch );
+
+  end;
+
+  }
+
+act_tochar( #climb, ch );
+
+act_notchar( #rclimb, ch );
+
+transfer( ch, find_room( 52751 ) );
+
+act_notchar( #climbs_down, ch );
+
+~
+E
+climb~
+You climb down the ladder.
+
+~
+E
+use_flee~
+You must use flee to leave a room while fighting.
+
+~
+E
+rclimb~
+$n climbs down the ladder.
+
+~
+E
+climbs_down~
+$n comes climbing down the ladder from above.
+
+~
+!
+0 0 0
+2423 9 1509949540 3 0
+2424 9 1509949540 3 0
+-1
+S
+
+#52773
+A Farmhouse Cellar~
+This small, dark room has unfinished walls and the smell of soil is
+
+strong in the still air.  The bare floor beams of the room above serve as
+
+the ceiling and leave only a small space for this cellar.  Bits of cobweb
+
+cling to the ceiling and corners, and the dust on the shelves that line
+
+the walls is disturbed in many places.  This room is obviously well-used
+
+but rarely cleaned.
+
+
+An unfinished wooden stairway leads up to a trapdoor in the ceiling.
+
+~
+~
+-235405312 2 6 0
+D4
+trapdoor~
+1 up trapdoor~
+131 -1 52751 10 10 3
+E
+shelves walls jars~
+Shelves line three walls of the cellar, roughly made but functional. 
+
+Scattered about them are all manner of canned foods - vegetables, meats
+
+and jellies being predominant.  The single wall that has no shelves, the
+
+south wall, seems damp.  Perhaps that is why no shelves have been built
+
+there.
+
+~
+E
+south~
+The dirt wall here is damp, and the contents of the room have been
+
+carefully stacked to avoid contact with it.  As you turn away, you could
+
+have sworn you saw the glint of something shiny out of the corner of your
+
+eye.
+
+~
+A
+~
+~
+if( !is_open( find_room( 52751 ), south ) == 1 )
+
+  open( find_room( 52751 ), south );
+
+act_tochar( #climb, ch );
+
+act_notchar( #rclimb, ch );
+
+continue;
+
+~
+E
+climb~
+You head up the stairway.
+
+~
+E
+rclimb~
+$n heads up the stairway.
+
+~
+!
+3 0 16
+A
+dig search~
+1 south glint~
+if( !rflag( reset0, room ) ) {
+
+  act_tochar( #char_nothing, ch );
+
+  act_notchar( #room_nothing, ch );
+
+  end;
+
+  }
+
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  if( random( 0, 99 ) == 0 ) {
+
+    act_tochar( #char_something, ch );
+
+    act_notchar( #room_something, ch );
+
+    obj_to_char( oload( 3615 ), ch );
+
+    }
+
+  else {
+
+    act_tochar( #char_nothing, ch );
+
+    act_notchar( #room_nothing, ch );
+
+    }
+
+  }
+
+~
+E
+char_nothing~
+You dirty your fingers in the damp earth wall for a moment, but find
+
+nothing.
+
+~
+E
+room_nothing~
+$n digs at the south wall for a moment, but succeeds only in getting $s
+
+fingers dirty.
+
+~
+E
+char_something~
+Digging through the damp earth with your fingers, you find an old
+
+tarnished ring.
+
+~
+E
+room_something~
+$n digs at the south wall for a moment before smiling triumphantly and
+
+pocketing some small object.
+
+~
+!
+0 0 0
+A
+get take~
+jar~
+act_tochar( #ch_jar_not, ch );
+
+act_notchar( #r_jar_not, ch );
+
+~
+E
+ch_jar_not~
+You rummage through the jars for a moment but can't decide which one you
+
+want to take.
+
+~
+E
+r_jar_not~
+$n rummages through the jars for a moment then looks away, frustrated.
+
+~
+!
+0 0 0
+A
+move open push~
+1 up trapdoor~
+if( is_open( room, up ) ) {
+
+  send_to_char( #already, ch );
+
+  end;
+
+  }
+
+send_to_char( #open, ch );
+
+act_notchar( #ropen, ch );
+
+open( room, up );
+
+~
+E
+already~
+The trapdoor above you is already open.
+
+~
+E
+open~
+With some effort, you manage to open the trapdoor above you.
+
+~
+E
+ropen~
+With some effort, $n manages to open the trapdoor above you.
+
+~
+!
+0 0 0
+A
+get take~
+vegetables~
+~
+!
+0 0 0
+-1
+S
+
+#52774
+Riverside~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+-1
+S
+
+#52775
+A Farmhouse~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+-1
+S
+
+#52776
+A Farmhouse Bedroom~
+Under Construction.
+
+~
+~
+-235405312 0 4 0
+D2
+~
+~
+0 -1 52752 10 10 5
+-1
+S
+
+#0
+

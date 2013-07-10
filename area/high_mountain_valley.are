@@ -1,0 +1,6174 @@
+#AREA
+High Mountain Valley~
+Janua~
+high mountain valley~
+
+5 0
+0
+#ROOMS
+
+#36500
+Great North Road - In a Narrow Canyon~
+The road travels north through a jagged cut in the mountain, and to the
+
+south it heads back out into the open.  The walls and the road are made
+
+of the same hard rock, a dark pink granite dotted with clear quartz and
+
+black speckles.  The scrapes and marks on the vertical walls of this
+
+canyon make it obvious it was not created by natural forces.  The hard
+
+stone walls rise far above the road, leaving it in perpetual shadow.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36501 10 10 5
+D2
+~
+~
+0 -1 28132 10 10 5
+E
+granite wall stone marks scrapes~
+The smooth-cut walls have obviously been worked by unnatural means. 
+
+Scrapes and mars on the wall look like the marks left by picks and other
+
+quarrying tools.
+
+~
+E
+road~
+The entire canyon, if it can be called that, has obviously been cut out
+
+of the mountain.  The surface of the road is made of the same hard
+
+granite which forms the vertical walls on either side.  Shallow wheel
+
+ruts have been worn into its surface where metal-clad wagon wheels have
+
+ground along in their journeys.
+
+~
+-1
+S
+
+#36501
+Great North Road - In a Narrow Canyon~
+Hard, cold granite rises at least twenty feet straight up above your
+
+head, and the straight-cut walls running north and south are obviously
+
+not a natural formation.  The road's surface is made of the same granite
+
+and is mildly rutted from the passage of wagon wheels and horses. 
+
+Shallow pools of water have collected in the ruts and the water runs
+
+lazily along the subtle southern slope of the road.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36502 10 10 5
+D2
+~
+~
+0 -1 36500 10 10 5
+E
+granite wall stone marks scrapes~
+The smooth-cut walls have obviously been worked by unnatural means. 
+
+Scrapes and mars on the wall look like the marks left by picks and other
+
+quarrying tools.
+
+~
+E
+road~
+The entire canyon, if it can be called that, has obviously been cut out
+
+of the mountain.  The surface of the road is made of the same hard
+
+granite which forms the vertical walls on either side.  Shallow wheel
+
+ruts have been worn into its surface where metal-clad wagon wheels have
+
+ground along in their journeys.
+
+~
+205 9 1509949540 3 0
+-1
+S
+
+#36502
+Great North Road - In a Narrow Canyon~
+The road travels through a canyon with walls that are almost perfectly
+
+vertical, cut into the solid granite of the mountain.  The road is also
+
+made of granite and shows shallow ruts where metal-rimmed wagon wheels
+
+have traveled along on their northern and southern journeys.  The high
+
+walls cast the road into permanent shadow and the chilly breeze does
+
+nothing to warm the air.
+
+~
+~
+-235405304 12 9 0
+D0
+~
+~
+0 -1 36503 10 10 5
+D2
+~
+~
+0 -1 36501 10 10 5
+E
+road~
+The entire canyon, if it can be called that, has obviously been cut out
+
+of the mountain.  The surface of the road is made of the same hard
+
+granite which forms the vertical walls on either side.  Shallow wheel
+
+ruts have been worn into its surface where metal-clad wagon wheels have
+
+ground along in their journeys.
+
+~
+E
+granite walls marks scrapes~
+The smooth-cut walls have obviously been worked by unnatural means. 
+
+Scrapes and mars on the wall look like the marks left by picks and other
+
+quarrying tools.
+
+~
+-1
+S
+
+#36503
+Great North Road~
+The road heads south into a straight-walled canyon and north across a
+
+wide valley.  Tall, green pine trees grow on the east and west, and dry
+
+pine needles clutter the edges of the road.  The steep slopes of the
+
+Dragonspires rise up on all sides, dwarfing this wide valley with their
+
+immense size.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36504 10 10 5
+D1
+~
+~
+0 -1 36543 10 10 5
+D2
+~
+~
+0 -1 36502 10 10 5
+D3
+~
+~
+0 -1 36585 10 10 5
+E
+canyon 1 south~
+The canyon appears unnatural, cut by force into the mountain with its
+
+straight walls rising at 90 degree angles.
+
+~
+E
+valley~
+The valley is filled with tall, straight pine trees and runs at an angle
+
+from the southeast to northwest.
+
+~
+E
+mountains slopes Dragonspires~
+The legendary Dragonspire mountains surround this valley.  The high,
+
+steep peaks rise into the sky, dwarfing everything below with their
+
+grandeur.
+
+~
+E
+road~
+The road is unpaved and uncobbled, formed of hard-packed soil that is
+
+nearly as hard as rock.  Wheel ruts have been etched into its surface,
+
+but haven't progressed far enough to hinder travel.
+
+~
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+-1
+S
+
+#36504
+Great North Road~
+The road turns west to avoid a fast moving river on the north and heads
+
+south into a narrow canyon.  The Dragonspire Mountains rise sharply on
+
+all sides, cradling this lush, forested valley within the rugged
+
+countryside.  Tall, dark pine trees grow across the river and throughout
+
+the valley, and their musky scent fills the air.  From this vantage point
+
+the surrounding mountains are unobstructed by trees; their steep slopes
+
+cradle the valley within the rugged countryside.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36513 10 10 5
+D1
+~
+~
+0 -1 36530 10 10 5
+D2
+~
+~
+0 -1 36503 10 10 5
+D3
+~
+~
+0 -1 36505 10 10 5
+E
+road~
+The road is unpaved and uncobbled, formed of hard-packed soil that is
+
+nearly as hard as rock.  Wheel ruts have been etched into its surface,
+
+but haven't progressed far enough to hinder travel.
+
+~
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep or wide, but the water moves swifly along its
+
+rock-strewn course.
+
+~
+344 17 1509949540 -2 0
+-1
+S
+
+#36505
+Great North Road~
+The road curves, heading north and east around a bend in the river on the
+
+eastern edge of the road.  The valley that surrounds you is lushly
+
+forested with deep, dark pine trees and the roadside is blanketed with
+
+their fallen needles.  Looking to the north you can see a bridge spanning
+
+the river, leading to a short ledge where the road continues.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36506 10 10 5
+D1
+~
+~
+0 -1 36504 10 10 5
+D2
+~
+~
+0 -1 36585 10 10 5
+D3
+~
+~
+0 -1 36545 10 10 5
+E
+road~
+The road is unpaved and uncobbled, formed of hard-packed soil that is
+
+nearly as hard as rock.  Wheel ruts have been etched into its surface,
+
+but haven't progressed far enough to hinder travel.
+
+~
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep or wide, but the water moves swifly along its
+
+rock-strewn course.
+
+~
+-1
+S
+
+#36506
+Great North Road~
+The Dakari River flows by on the east and rugged grass grows along the
+
+sides of the wide, well-worn road that runs north and south.  The road is
+
+bordered by a forest of pines on the west that forms a dark green wall
+
+of foliage on that side fo the road.  The forest sounds and rushing water
+
+compete to create a cacophony of sound in the valley.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36507 10 10 5
+D1
+~
+~
+0 -1 36513 10 10 5
+D2
+~
+~
+0 -1 36505 10 10 5
+D3
+~
+~
+0 -1 36546 10 10 5
+E
+road~
+The road is unpaved and uncobbled, formed of hard-packed soil that is
+
+nearly as hard as rock.  Wheel ruts have been etched into its surface,
+
+but haven't progressed far enough to hinder travel.
+
+~
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep or wide, but the water moves swifly along its
+
+rock-strewn course.
+
+~
+344 17 1509949540 -2 0
+-1
+S
+
+#36507
+Great North Road~
+The road crosses a wide bridge to the north and heads south across the
+
+valley.  The heady, musky scent of pine fills the air, mingling with the
+
+smells of the wildflowers, animals and the river on the east.  Hoof
+
+tracks cross the road and disappear into the forest on the west and
+
+large, pellet-like droppings are scattered on the road.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36508 10 10 5
+D1
+~
+~
+0 -1 36514 10 10 5
+D2
+~
+~
+0 -1 36506 10 10 5
+D3
+~
+~
+0 -1 36547 10 10 5
+E
+road~
+The road is unpaved and uncobbled, formed of hard-packed soil that is
+
+nearly as hard as rock.  Wheel ruts have been etched into its surface,
+
+but haven't progressed far enough to hinder travel.
+
+~
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep or wide, but the water moves swifly along its
+
+rock-strewn course.
+
+~
+E
+droppings pellet-like~
+The pellet-shaped droppings are about three inches in diameter and lay
+
+scattered across the road.  They have been trampled some by traffic and
+
+obviously kicked about, so it is difficult to tell what left them here.
+
+~
+344 17 1509949540 -2 0
+-1
+S
+
+#36508
+Great North Road - Bridge Over the Dakari River~
+The road travels across a sturdy wooden bridge which spans the
+
+rock-filled Dakari river below.  The bridge is constructed of large
+
+planks placed side by side across its width and it angles upward from the
+
+south to a rock ledge on the north.  The sound of your travel across the
+
+planks rings out through the valley.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36509 10 10 5
+D2
+~
+~
+0 -1 36507 10 10 5
+E
+road bridge~
+The wide, wooden-planked bridge spans the river, supported by thick rock
+
+pilons in the center of the stream.
+
+~
+E
+river~
+The river is not deep or wide, but the water moves swifly under the
+
+bridge along its rock-strewn course.
+
+~
+-1
+S
+
+#36509
+Great North Road - On a Rock Ledge~
+The road travels east across a wide rock ledge and south across a sturdy
+
+bridge.  From this vantage point you can see the entire tree-filled
+
+valley running at a diagonal from the southeast to the northwest.  A
+
+small but fast-moving river follows the valley's path, cutting its way
+
+through the tall, green pine trees.
+
+~
+~
+-235405312 12 9 0
+D1
+~
+~
+0 -1 36510 10 10 5
+D2
+~
+~
+0 -1 36508 10 10 5
+E
+road~
+The road is unpaved and uncobbled, formed of hard-packed soil that is
+
+nearly as hard as rock.  Wheel ruts have been etched into its surface,
+
+but haven't progressed far enough to hinder travel.
+
+~
+E
+ledge rock~
+The ledge is made of light grey stone, rising about a dozen feet above
+
+the forest below.
+
+~
+E
+river~
+The small river flows through the forest below, making a way from the
+
+southeast and flowing along the contour of the valley towards the
+
+northwest.
+
+~
+2 9 1509949540 3 0
+-1
+S
+
+#36510
+Great North Road - On a Rock Ledge~
+The road inclines upward to the east as it skirts around a wide, rock
+
+ledge that runs east and west.  This point on the ledge offers you an
+
+unimpeded view of the valley.  You can look out across the treetops and
+
+see the river running from southeast to northwest and the high
+
+Dragonspire Mountains surrounding the area.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36511 10 10 5
+D3
+~
+~
+0 -1 36509 10 10 5
+E
+road~
+The road is unpaved and uncobbled, formed of hard-packed soil that is
+
+nearly as hard as rock.  Wheel ruts have been etched into its surface,
+
+but haven't progressed far enough to hinder travel.
+
+~
+E
+ledge rock~
+The ledge is made of light grey stone, rising about a dozen feet above
+
+the forest below.
+
+~
+E
+river~
+The river follows the valley, flowing from the southeast to the northwest
+
+between the forest of pines.
+
+~
+2279 9 1509949490 3 0
+-1
+S
+
+#36511
+Great North Road - In a Ravine~
+The road enters a ravine here, heading north and south between the high
+
+walls.  The road is smooth but worn by the passage of travellers and
+
+erosion by the elements.  Every movement you make echos between the stone
+
+walls, even the softest sound is amplified much louder by the close space.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36512 10 10 5
+D2
+~
+~
+0 -1 36510 10 10 5
+E
+road~
+The road is unpaved and uncobbled, formed of hard-packed soil that is
+
+nearly as hard as rock.  Wheel ruts have been etched into its surface,
+
+but haven't progressed far enough to hinder travel.
+
+~
+E
+walls ravine stone~
+The high stone walls are made of a light grey rock and rise about thirty
+
+feet above the road.
+
+~
+205 9 1509949540 3 0
+-1
+S
+
+#36512
+Great North Road - Dead-end In a Ravine~
+A narrow ravine ends here with high vertical walls on all sides except
+
+the south.  A rough ladder is chiseled out of the wall to the north,
+
+offering passage up and the road follows the ravine south.  A large hoist
+
+is mounted on huge timbers that span the top of the chasm.  The
+
+contraption looks like it is used to raise and lower carts and beasts of
+
+burden up and down from the ravine.  A large @ecrank@n is mounted on the west
+
+wall, which is used to operate the hoist.
+
+~
+~
+-235405312 12 9 0
+D2
+~
+~
+0 -1 36511 10 10 5
+E
+hoist~
+The hoist is mounted on a large wooden arm which extends over the ravine
+
+and swings back and forth to raise and lower its cargo in and out of the
+
+chasm.  Heavy chains are mounted to a wooden base which holds the load,
+
+and looks like it could carry a medium-sized wagon.
+
+~
+E
+ladder 1 north wall~
+The ladder has been chiseled out of the grainte wall to the north.  It
+
+looks like a fairly easy climb up.
+
+~
+E
+crank~
+A large crank made of wood is mounted on the wall.  It is used to operate
+
+the hoist.
+
+~
+E
+road~
+The road is unpaved and uncobbled, formed of hard-packed soil that is
+
+nearly as hard as rock.  Wheel ruts have been etched into its surface,
+
+but haven't progressed far enough to hinder travel.
+
+~
+A
+turn~
+crank~
+act_tochar( #msg, ch );
+
+~
+E
+msg~
+You turn the crank and it spins freely.  It is obviously not attached to
+
+the hoist you see hanging above your head.
+
+~
+!
+0 0 0
+A
+climb~
+ladder 1 up cliff~
+if( is_mounted( ch ) ) {
+
+  act_tochar( #dismount, ch );
+
+  end;
+
+  }
+
+if( !is_resting( ch )) {
+
+  act_tochar( #char, ch );
+
+  act_notchar( #leave, ch );
+
+  transfer( ch, find_room( 36750 ) );
+
+  act_notchar( #arrive, ch );
+
+  }
+
+else {
+
+  act_tochar( #no, ch );
+
+  continue;
+
+  }
+
+~
+E
+dismount~
+You must dismount before you can climb up.
+
+~
+E
+char~
+You grab ahold of the ladder and climb up the cliffside.
+
+~
+E
+leave~
+$n grabs ahold of the rock ladder and climbs up the cliffside.
+
+~
+E
+arrive~
+$n comes climbing up from below.
+
+~
+E
+no~
+You must be standing to climb up.
+
+~
+!
+0 0 0
+-1
+S
+
+#36513
+Dakari River~
+The shallow river makes a gentle turn heading north and east.  Its cold
+
+water rushes by on a northwesterly journey, pushing against your legs as
+
+if urging you to head downstream.  The road lies on the south and west
+
+banks of the river and curves to follow its meandering course.
+
+~
+~
+-235405312 13 9 0
+D0
+~
+~
+0 -1 36514 10 10 5
+D1
+~
+~
+0 -1 36529 10 10 5
+D2
+~
+~
+0 -1 36504 10 10 5
+D3
+~
+~
+0 -1 36506 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep, but its cold water rushes downstream between the
+
+scattered, rounded rocks that fill the riverbed.
+
+~
+78 17 1509949540 -2 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36514
+Dakari River~
+The river rushes from south to north and the current is strong enough to
+
+make crossing difficult.  Tall pine trees grow on the east bank of the
+
+river and a road passes by on the west.  You can see a low, rocky cliff
+
+to the north, where the river is forced to change its course heading west.
+
+~
+~
+-235405312 13 9 0
+D0
+~
+~
+0 -1 36515 10 10 5
+D1
+~
+~
+0 -1 36540 10 10 5
+D2
+~
+~
+0 -1 36513 10 10 5
+D3
+~
+~
+0 -1 36507 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep, but its cold water rushes downstream between the
+
+scattered, rounded rocks that fill the riverbed.
+
+~
+344 17 1509949540 -2 0
+-1
+S
+
+#36515
+Dakari River~
+The river flows in from the south and meets a rocky ledge which forces it
+
+to change its course to head west.  The ledge isn't high, but is made of
+
+solid-looking granite colored a dark rose and speckled with bits of
+
+quartz and tiny black spots.  A bridge spans the river on the west,
+
+allowing travellers on the road to pass between the valley floor and the
+
+ledge.
+
+~
+~
+-235405312 13 9 0
+D1
+~
+~
+0 -1 36541 10 10 5
+D2
+~
+~
+0 -1 36514 10 10 5
+D3
+~
+~
+0 -1 36516 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep, but its cold water rushes downstream between the
+
+scattered, rounded rocks that fill the riverbed.
+
+~
+198 9 1509949520 3 0
+78 17 1509949540 -2 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36516
+Dakari River - Under a Bridge~
+A wide bridge spans across the river and over your head, connecting the
+
+southern bank to a ledge on the north.  The bridge supports are made of
+
+indigenous rock and match the many rounded, small boulders which line the
+
+streambed.  A perpetual breeze flows through this space, following the
+
+river's east-west course, and adds a chill to the air.
+
+~
+~
+-235405312 13 9 0
+D1
+~
+~
+0 -1 36515 10 10 5
+D3
+~
+~
+0 -1 36517 10 10 5
+E
+river~
+The river is not deep, but its cold water rushes downstream between the
+
+scattered, rounded rocks that fill the riverbed.
+
+~
+198 9 1509949540 3 0
+78 17 1509949540 -2 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36517
+Dakari River~
+Rounded rocks line the bottom of the shallow river which makes a turn
+
+from east to north.  The tall pine trees of the forest grow right up to
+
+the river's edge on the west and cast their shadows upon the water. 
+
+Upstream, to the east, a wide bridge crosses over the river and connects
+
+the southern banks to a high rock ledge that contains the northwestern
+
+edge of the river.
+
+~
+~
+-235405312 13 9 0
+D0
+~
+~
+0 -1 36518 10 10 5
+D1
+~
+~
+0 -1 36516 10 10 5
+D2
+~
+~
+0 -1 36547 10 10 5
+D3
+~
+~
+0 -1 36550 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep, but its cold water rushes downstream between the
+
+scattered, rounded rocks that fill the riverbed.
+
+~
+198 9 1509949540 3 0
+198 9 1509949530 3 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36518
+Dakari River~
+The river flows alongside a high ledge which cuts into the valley on the
+
+east.  Small, rounded boulders fill the river and make it tumble along as
+
+it heads downstream to the north.  Through the sounds of the water
+
+flowing you can hear the myriad sounds of the forest emanating from the
+
+trees which line the western bank.
+
+~
+~
+-235405312 13 9 0
+D0
+~
+~
+0 -1 36519 10 10 5
+D2
+~
+~
+0 -1 36517 10 10 5
+D3
+~
+~
+0 -1 36551 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep, but its cold water rushes downstream between the
+
+scattered, rounded rocks that fill the riverbed.
+
+~
+A
+1 east~
+~
+act_tochar( #char, ch );
+
+~
+E
+char~
+You cannot scale the high ledge on the east.
+
+~
+!
+0 0 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36519
+Dakari River~
+The river is wider here than it is upstream to the south and the water is
+
+lukewarm.  Rivulets of water flow in from the east, adding to the
+
+stream's volume.  The course of the river makes several sweeping curves
+
+as it heads downstream to the west.  Forest pines encroach on the river's
+
+edge on the north and several withered roots are exposed where the banks
+
+have broken loose.
+
+~
+~
+-235405312 13 9 0
+D0
+~
+~
+0 -1 36581 10 10 5
+D1
+~
+~
+0 -1 36584 10 10 5
+D2
+~
+~
+0 -1 36518 10 10 5
+D3
+~
+~
+0 -1 36520 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep, but its cold water rushes downstream between the
+
+scattered, rounded rocks that fill the riverbed.
+
+~
+198 9 1509949540 3 0
+78 17 1509949540 -2 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36520
+Dakari River~
+The river moves lazily in from the east and gains momentum as it heads
+
+around this curve and travels north.  The water tumbles over and around
+
+large rocks, some of them rounded by their apparent years in the stream
+
+and some of them jagged and fresh-looking.  Trees grow up against the
+
+southern and western banks, and a tall growth of mountain columbines
+
+grows right on the southern bank.
+
+~
+~
+-235405312 13 9 0
+D0
+~
+~
+0 -1 36521 10 10 5
+D1
+~
+~
+0 -1 36519 10 10 5
+D2
+~
+~
+0 -1 36551 10 10 5
+D3
+~
+~
+0 -1 36556 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep, but its cold water rushes downstream between the
+
+scattered, rounded rocks that fill the riverbed.
+
+~
+E
+columbines~
+The delicate flowers grow on long stems with soft violet petals
+
+surrounding inner petals of snowy white.
+
+~
+A
+pick~
+flower columbine~
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+~
+E
+msg~
+You grab a columbine flower's stem and sharp spines covering its surface
+
+dig into your hand.
+
+~
+E
+rmsg~
+$n grabs a columbine stem but stands up quickly, rubbing $s palm.
+
+~
+!
+0 0 0
+78 17 1509949540 -2 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36521
+Dakari River - Rapids~
+The river splashes and churns through the many boulders that fill the
+
+riverbed, and footing is difficult in the swiftly moving water. 
+
+Downstream to the north looks at least as difficult, but the river
+
+appears calmer to the south.  The banks on the east and west are lined
+
+with tall, evergreen pines and their limbs stretch out toward each other
+
+over the river.
+
+~
+~
+-235405312 13 9 0
+D0
+~
+~
+0 -1 36522 10 10 5
+D1
+~
+~
+0 -1 36581 10 10 5
+D2
+~
+~
+0 -1 36520 10 10 5
+D3
+~
+~
+0 -1 36557 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep, but its cold water rushes downstream between the
+
+scattered, rounded rocks that fill the riverbed.
+
+~
+A
+~
+~
+if( is_mounted( ch ))
+
+  end;
+
+if( find_stat( ch, dex ) < random( 1, 15 ) ) {
+
+  act_tochar( #slip, ch );
+
+  act_notchar( #rslip, ch );
+
+  interpret( ch, "sit" );
+
+  i = 1d6;
+
+  dam_message( ch, i, "the fall" );
+
+  inflict( ch, mob,  i, "falling in the river" );
+
+  }
+
+else
+
+  continue;
+
+~
+E
+slip~
+You slip on the rocks and land in the river with a splash.
+
+~
+E
+rslip~
+$n slips on the rocks and lands in the river with a splash.
+
+~
+!
+3 0 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36522
+Dakari River - Rapids~
+The river makes a sweeping curve, flowing in from the south and heading
+
+downstream to the west.  Its course is made rough by the rocks that fill
+
+the riverbed and the water churns as it rushes between them.  Dry, easier
+
+footing lies on the north and east, where the pine forest grows against
+
+the edge of the river.
+
+~
+~
+-235405312 13 9 0
+D0
+~
+~
+0 -1 36577 10 10 5
+D1
+~
+~
+0 -1 36580 10 10 5
+D2
+~
+~
+0 -1 36521 10 10 5
+D3
+~
+~
+0 -1 36523 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep, but its cold water rushes downstream between the
+
+scattered, rounded rocks that fill the riverbed.
+
+~
+198 9 1509949540 3 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36523
+Dakari River - Rapids~
+Large, grey rocks in the riverbed cause the water to dance and churn as
+
+it makes its way downstream, flowing from east to west.  Water flows over
+
+one particularly large, flat rock that you can see under the crystal
+
+clear water.  The forest borders the river, offering an easier, drier
+
+path on the north and south.
+
+~
+~
+-235405312 13 9 0
+D0
+~
+~
+0 -1 36573 10 10 5
+D1
+~
+~
+0 -1 36522 10 10 5
+D2
+~
+~
+0 -1 36557 10 10 5
+D3
+~
+~
+0 -1 36524 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep, but its cold water rushes downstream between the
+
+scattered, rounded rocks that fill the riverbed.
+
+~
+E
+rock~
+The large, submerged rock is roughly round in shape, with a flat surface
+
+that the river water flows over.
+
+~
+344 17 1509949540 -2 0
+-1
+S
+
+#36524
+Dakari River - Rapids~
+The river angles north and east, frothing and churning around the many
+
+large rocks in the riverbed.  The rapids look much tamer downstream,
+
+where fewer rocks obstruct the path of the water as it flows north. 
+
+Easier footing lies on the south and west where dark green pine trees
+
+form a dense forest in the valley.
+
+~
+~
+-235405312 13 9 0
+D0
+~
+~
+0 -1 36525 10 10 5
+D1
+~
+~
+0 -1 36523 10 10 5
+D2
+~
+~
+0 -1 36563 10 10 5
+D3
+~
+~
+0 -1 36568 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep, but its cold water rushes downstream between the
+
+scattered, rounded rocks that fill the riverbed.
+
+~
+344 17 1509949540 -2 0
+-1
+S
+
+#36525
+Dakari River~
+The river is relatively calm here, but you can see a section of rapids
+
+upstream to the south.  The water is flowing quickly, skirting the few
+
+rocks that protrude from the riverbed as it makes a direct path
+
+downstream to the north.  A forest lies on the east and west banks, where
+
+you can see small birds and squirrels busily moving between the tree
+
+branches.
+
+~
+~
+-235405312 13 9 0
+D0
+~
+~
+0 -1 36526 10 10 5
+D1
+~
+~
+0 -1 36573 10 10 5
+D2
+~
+~
+0 -1 36524 10 10 5
+D3
+~
+~
+0 -1 36569 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep, but its cold water rushes downstream between the
+
+scattered, rounded rocks that fill the riverbed.
+
+~
+344 17 1509949540 -2 0
+-1
+S
+
+#36526
+Dakari River~
+The river rushes in from the south and tumbles down a steep, rock-strewn
+
+incline to the north.  The surface of the water is calm, but you can feel
+
+the strong current pushing you northward.  Short pine trees line the
+
+banks of the river on the east and west, and the forest thickens as you
+
+look toward the south.
+
+~
+~
+-235405312 13 9 0
+D0
+~
+~
+0 -1 36527 10 10 5
+D1
+~
+~
+0 -1 36574 10 10 5
+D2
+~
+~
+0 -1 36525 10 10 5
+D3
+~
+~
+0 -1 36570 10 10 5
+E
+river~
+The river is not deep, but its cold water rushes downstream between the
+
+scattered, rounded rocks that fill the riverbed.
+
+~
+E
+trees evergreens pines~
+The tall, straight pine trees are lush with dark green needles and retain
+
+their color year-round.  Few grow in this section of the valley, but they
+
+become denser in the south.
+
+~
+198 9 1509949540 3 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36527
+Dakari River - Waterfall~
+Whitewater churns around you, splashing on the slippery rocks and
+
+throwing up a mist that fills the air.  A grey cliff of cracked rock on
+
+the north provides an effective barrier to the water and sends it west to
+
+fall a short distance into a narrow gulley.  Despite the strong current
+
+and slippery rocks, you can move upstream to the south or downstream to
+
+the west and brave the waterfall, but moving east would probably be too
+
+difficult.
+
+~
+~
+-235405312 13 9 0
+D2
+~
+~
+0 -1 36526 10 10 5
+D3
+~
+~
+0 -1 36528 10 10 5
+E
+river~
+The lively river courses down the rocks and turns west, dropping several
+
+feet to the bottom of the chasm.
+
+~
+A
+~
+~
+wait( 1 );
+
+if( is_mounted( ch ))
+
+  end;
+
+if( find_skill( ch, float ) < 0 )
+
+  if( find_stat( ch, dex ) < random( 1, 15 ) ) {
+
+  act_tochar( #slip, ch );
+
+  act_notchar( #rslip, ch );
+
+  transfer( ch, find_room( 36528 ) );
+
+  i = 1d15+0;
+
+  dam_message( ch, i, "the fall" );
+
+  inflict( ch, mob,  i, "falling down a waterfall" );
+
+  interpret( ch, "sit" );
+
+  }
+
+else
+
+  continue;
+
+else
+
+  continue;
+
+~
+E
+slip~
+You take a tumble on the slippery rocks and find yourself below the waterfall!
+
+~
+E
+rslip~
+$n takes a tumble on the slippery rocks and disappears down the waterfall!
+
+~
+!
+1 0 0
+A
+1 north~
+~
+act_tochar( #msg, ch );
+
+~
+E
+msg~
+You cannot possibly climb the high cliff.
+
+~
+!
+0 0 0
+A
+1 east~
+~
+act_tochar( #msg, ch );
+
+~
+E
+msg~
+You attempt to climb the sharp, wet rocks but find them too slippery.
+
+~
+!
+0 0 0
+A
+1 west~
+~
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+i = 1d10;
+
+transfer( ch, find_room( 36528 ) );
+
+act_tochar( #arrive, ch );
+
+act_notchar( #rarrive, ch );
+
+dam_message( ch, i, "the landing" );
+
+inflict( ch, mob,  i, "falling over a waterfall" );
+
+~
+E
+msg~
+You slide down the waterfall and tumble to the rocks below.
+
+~
+E
+rmsg~
+$n slides over the edge of the waterfall on the west and disappears from
+
+view.
+
+~
+E
+arrive~
+You land with a big splash!
+
+~
+E
+rarrive~
+$n comes sliding down the waterfall from the east and lands in the water
+
+with a big splash!
+
+~
+!
+0 0 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36528
+Dakari River - Below a Waterfall~
+The air is filled with mist that rises from the water falling around you. 
+
+To the west, the river drops down a short distance into the gulley you
+
+are in.  Large, rounded rocks lie at the base of the waterfall and cause
+
+the water to splash and froth as it makes it's noisy entrance into the
+
+area.  The river fills the gulley from rocky wall to wall as it makes its
+
+westward journey.  Looking up you can see treetops peeking over the
+
+southern ridge.
+
+~
+[Belgar] west should be east in second line.
+
+~
+-235405312 13 9 0
+D1
+~
+~
+0 -1 36527 10 10 5
+E
+river~
+The river falls down several feet from the east, splashing in the bottom
+
+of the gulley you are in and continuing on its downstream course to the
+
+west.
+
+~
+A
+1 east~
+~
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+transfer( ch, find_room( 36527 ) );
+
+act_notchar( #rarrive, ch );
+
+~
+E
+msg~
+You pick your way carefully up the steep incline, moving against the
+
+downward current of the waterfall.
+
+~
+E
+rmsg~
+$n picks $s way carefully up the steep incline, struggling against the
+
+downward current of the waterfall.
+
+~
+E
+rarrive~
+$n climbs up over the edge of the waterfall.
+
+~
+!
+0 0 0
+A
+1 north~
+~
+act_tochar( #msg, ch );
+
+~
+E
+msg~
+You cannot possibly scale the high, vertical cliff.
+
+~
+!
+0 0 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36529
+Dakari River~
+Icy cold water tumbles across the rocky riverbed and makes the footing
+
+treacherous in this small mountain river.  Despite the shallow depth, the
+
+current is brisk and threatens to knock you off balance as you make your
+
+way across the slippery, wet stones.  Dry footing lies on the forested
+
+riverbanks on the north and east, and the river turns from south to west.
+
+~
+~
+-235405312 13 9 0
+D0
+~
+~
+0 -1 36540 10 10 5
+D1
+~
+~
+0 -1 36533 10 10 5
+D2
+~
+~
+0 -1 36530 10 10 5
+D3
+~
+~
+0 -1 36513 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep, but its cold water rushes downstream between the
+
+scattered, rounded rocks that fill the riverbed.
+
+~
+A
+~
+~
+if( is_affected( ch, 44 ) )
+
+  end;
+
+if( !is_player( ch ) )
+
+  end;
+
+if( is_mounted( ch ))
+
+  end;
+
+if( find_stat( ch, dex ) < random( 1, 15 ) ) {
+
+  act_tochar( #slip, ch );
+
+  act_notchar( #r_slip, ch );
+
+  interpret( ch, "sit" );
+
+  }
+
+else
+
+  continue;
+
+~
+E
+slip~
+You slip on the rocks and land in the icy water.
+
+~
+E
+r_slip~
+$n slips on the rocks and lands in the water.
+
+~
+!
+1 0 15
+198 9 1509949490 3 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36530
+Dakari River~
+The river makes a gentle curve, its icy cold water rushing in from the
+
+east and pushing along on its northward journey.  Tall pine trees grow
+
+right up the the south bank of the river, where dry footing awaits.  A
+
+wide road passes by on the west, backed by the tall trees of the forest
+
+beyond.
+
+~
+~
+-235405312 13 9 0
+D0
+~
+~
+0 -1 36529 10 10 5
+D1
+~
+~
+0 -1 36531 10 10 5
+D2
+~
+~
+0 -1 36543 10 10 5
+D3
+~
+~
+0 -1 36504 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep, but its cold water rushes downstream between the
+
+scattered, rounded rocks that fill the riverbed.
+
+~
+344 17 1509949540 -2 0
+-1
+S
+
+#36531
+Dakari River~
+The briskly moving, cold water of the river rushes fron east to west
+
+across the rock-strewn riverbed.  A series of large, flat rocks provide
+
+stepping stones to cross the river from the forested banks on the north
+
+and south.  The high, steep slopes of the Dragonspire Mountains rise up
+
+around you, and an occasional gust of frigid air blows down from their
+
+snow-capped peaks.
+
+~
+~
+-235405312 13 9 0
+D0
+~
+~
+0 -1 36533 10 10 5
+D1
+~
+~
+0 -1 36532 10 10 5
+D2
+~
+~
+0 -1 36544 10 10 5
+D3
+~
+~
+0 -1 36530 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep, but its cold water rushes downstream between the
+
+scattered, rounded rocks that fill the riverbed.
+
+~
+A
+1 north~
+~
+send_to_char( #char, ch );
+
+act_notchar( #rchar, ch );
+
+continue;
+
+~
+E
+char~
+You step from stone to stone across the river, heading north.
+
+~
+E
+rchar~
+$n steps from stone to stone across the river, heading north.
+
+~
+E
+follows~
+$n arrives from the south.
+
+~
+E
+arrives~
+$n arrives from the south, stepping from stone to stone to cross the river.
+
+~
+!
+0 0 0
+A
+1 south~
+~
+send_to_char( #char, ch );
+
+act_notchar( #rchar, ch );
+
+continue;
+
+~
+E
+char~
+You step from stone to stone across the river, heading south.
+
+~
+E
+rchar~
+$n steps from stone to stone across the river, heading south.
+
+~
+!
+0 0 0
+78 17 1509949540 -2 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36532
+Dakari River~
+The river tumbles down the steep mountainside from the east and rushes
+
+across the rocky riverbed to the west.  Pine trees, bluebells and short
+
+grasses grow among the small boulders on the northern bank.  The steep
+
+mountainside on the south is covered with boulders ranging in size from
+
+small stones to large rocks as tall as a human.
+
+~
+~
+-235405312 13 9 0
+D0
+~
+~
+0 -1 36587 10 10 5
+D3
+~
+~
+0 -1 36531 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep, but its cold water rushes downstream between the
+
+scattered, rounded rocks that fill the riverbed.
+
+~
+A
+climb~
+boulders 1 south 1 east~
+act_tochar( #char, ch );
+
+act_notchar( #others, ch );
+
+i = 1d6+0;
+
+dam_message( ch, i, "the fall" );
+
+inflict( ch, mob,  i, "falling" );
+
+~
+E
+char~
+You begin to pick your way up the boulder-strewn slope and the rocks
+
+shift, sending you and several rocks sliding back down to the streambed
+
+below.
+
+~
+E
+others~
+$n begins to pick $s way up the boulder-strewn slope and the rocks shift,
+
+sending $m sliding back down to the streambed.
+
+~
+!
+0 0 0
+78 17 1509949540 -2 0
+78 17 1509949490 -2 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36533
+High Mountain Valley~
+Tall pine trees rise up around you and a small river follows a meandering
+
+course on the south and west.  A large fallen pine tree lies on the
+
+forest floor, with moss growing on the shaded side of its trunk.  The
+
+tree shows no signs of decay, but the moss and other plants growing on
+
+and around it indicate that it has probably been here for some time.
+
+~
+[Sinary] pets don't follow you from the south
+
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36534 10 10 5
+D1
+~
+~
+0 -1 36587 10 10 5
+D2
+~
+~
+0 -1 36531 10 10 5
+D3
+~
+~
+0 -1 36529 10 10 5
+D5
+pine log~
+pine log~
+2275 -1 38000 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep or wide, but the water moves swifly along its
+
+rock-strewn course.
+
+~
+E
+fallen log~
+A large, fallen pine tree lies on the ground.  Its branches have been
+
+stripped and broken, but it shows little sign of decay.  A large patch of
+
+moss is growing on its shaded side and small plants have taken root on
+
+and around it.
+
+~
+A
+move push pull shove~
+log pine fallen~
+if( !is_open( room, down ) ) {
+
+  act_tochar( #shove, ch );
+
+  act_notchar( #rshove, ch );
+
+  open( room, down );
+
+  }
+
+else {
+
+  act_tochar( #push, ch );
+
+  act_notchar( #rpush, ch );
+
+  close( room, down );
+
+  }
+
+~
+E
+shove~
+You put your shoulder up against the fallen pine and give it a shove,
+
+revealing a dark opening.
+
+~
+E
+rshove~
+$n puts $s shoulder up against the fallen pine and gives it a shove,
+
+revealing a dark opening.
+
+~
+E
+push~
+You push the log back into place over the dark hole.
+
+~
+E
+rpush~
+$n pushes the log back into place over the dark hole.
+
+~
+!
+0 0 0
+A
+open~
+down pine log~
+act_tochar( #nope, ch );
+
+~
+E
+nope~
+You can't open the log, perhaps you should try pushing or shoving it.
+
+~
+!
+0 0 0
+2509 9 1509949540 3 0
+2508 9 1509949520 3 0
+934 9 1509949540 3 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36534
+High Mountain Valley~
+The trees grow tall and straight in this forest, sheltered by the tall
+
+peaks which surround the valley.  Birds dart between the treetops and
+
+squirrels hop from limb to limb.  The covering of pine needles on the
+
+forest floor gives shelter to a multitude of insects and you catch
+
+glimpses of them as they scurry in and out of their burrows.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36539 10 10 5
+D1
+~
+~
+0 -1 36535 10 10 5
+D2
+~
+~
+0 -1 36533 10 10 5
+D3
+~
+~
+0 -1 36540 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+79 17 1509949540 -2 0
+-1
+S
+
+#36535
+High Mountain Valley~
+The steep slope of the Dragonspire Mountains creates an impossible
+
+barrier to the east and forms the boundary on this side of the valley. 
+
+Pine trees grow sparsely in the rocky ground, but become more dense to
+
+the west.  A particularly large boulder rests on the ground, obviously
+
+fallen from the heights.  Lichen covers most of its surface and colors it
+
+yellow, green, brown and black.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36536 10 10 5
+D2
+~
+~
+0 -1 36587 10 10 5
+D3
+~
+~
+0 -1 36534 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+boulder~
+The massive rock is about a dozen feet in diameter and dominates the area. 
+
+Lichen grows on most of its surface, giving it a mottled appearance.  The
+
+boulder has settled into the ground, so it has probably been here a while.
+
+~
+A
+1 east~
+~
+act_tochar( #char, ch );
+
+~
+E
+char~
+You try to climb up the slope on the east, but slip on the loose rocks
+
+and come tumbling back down.
+
+~
+!
+0 0 0
+932 9 1509949540 3 0
+-1
+S
+
+#36536
+High Mountain Valley~
+A steep slope rises to the east, creating the eastern boundary of the
+
+valley.  Assorted stones lay on the ground and more occasionally tumble
+
+off the mountainside.  The trees and brush are sparse, giving you a view
+
+of the valley which slopes gently to the west.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36537 10 10 5
+D2
+~
+~
+0 -1 36535 10 10 5
+D3
+~
+~
+0 -1 36539 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+rocks pile stones~
+Most of the stones are small, but a few larger rocks are mixed in the
+
+pile.  They are as varied in their coloring as in their size, and you spy
+
+some clear rocks in the pile.
+
+~
+A
+search~
+stones rocks pile~
+i = random( 1, 100 );
+
+if( rflag( reset0, room ) ) {
+
+  if( i <= 80 ) {
+
+    act_tochar( #pebble, ch );
+
+    act_notchar( #rpebble, ch );
+
+    obj_to_char( oload( 78 ), ch );
+
+    }
+
+  else if( i <= 90 ) {
+
+    act_tochar( #granite, ch );
+
+    act_notchar( #rgranite, ch );
+
+    obj_to_char( oload( 2145 ), ch );
+
+    }
+
+  else if( i <= 94 ) {
+
+    act_tochar( #white, ch );
+
+    act_notchar( #rwhite, ch );
+
+    obj_to_char( oload( 2146 ), ch );
+
+    }
+
+  else if( i <= 96 ) {
+
+    act_tochar( #rose, ch );
+
+    act_notchar( #rrose, ch );
+
+    obj_to_char( oload( 2148 ), ch );
+
+    }
+
+  else if( i <= 99 ) {
+
+    act_tochar( #clear, ch );
+
+    act_notchar( #rclear, ch );
+
+    obj_to_char( oload( 2149 ), ch );
+
+    }
+
+  remove_rflag( reset0, room );
+
+  }
+
+else {
+
+  act_tochar( #no, ch );
+
+  act_notchar( #rno, ch );
+
+  }
+
+~
+E
+no~
+You search through the rocks and don't find anything interesting.
+
+~
+E
+rno~
+$n searches through the rocks for a time but gives up.
+
+~
+E
+granite~
+You search through the rocks and find a small, pinkish stone!
+
+~
+E
+rgranite~
+$n searches through the rocks and finds a small, pinkish stone!
+
+~
+E
+white~
+You search through the rocks and find a small, milky crystal!
+
+~
+E
+rwhite~
+$n searches through the rocks and finds a small, milky crystal!
+
+~
+E
+rose~
+You search through the rocks and find a pink crystal!
+
+~
+E
+rrose~
+$n searches through the rocks and finds a pink crystal!
+
+~
+E
+clear~
+You search through the rocks and find a clear crystal!
+
+~
+E
+rclear~
+$n searches through the rocks and finds a clear crystal!
+
+~
+E
+pebble~
+You search through the rocks and find a nice-looking pebble.
+
+~
+E
+rpebble~
+$n searches through the rocks and finds a nice-looking pebble.
+
+~
+!
+0 0 0
+755 17 1509949520 -2 0
+-1
+S
+
+#36537
+High Mountain Valley~
+A cliff wall rises up to the north and the slope to the east is almost as
+
+steep.  Little foliage grows in this spot, where the ground is covered
+
+with broken bits of rock.  An occasional spray of rock fragments slides
+
+down the cliff and rains bits of sharp stone on you.  The trees thicken
+
+towards the southwest, where the valley is more open.
+
+~
+~
+-235405312 3 9 0
+D2
+~
+~
+0 -1 36536 10 10 5
+D3
+~
+~
+0 -1 36538 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+-1
+S
+
+#36538
+High Mountain Valley~
+The valley floor gives way to a sheer cliff which marks the northern edge
+
+of the Maira Valley.  Stones litter the ground, choking out much of the
+
+foliage in this spot.  The break in the trees shows the valley spread out
+
+before you, gently sloping away to the south.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 36537 10 10 5
+D2
+~
+~
+0 -1 36539 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+-1
+S
+
+#36539
+High Mountain Valley~
+The trees and undergrowth are thin and you can see a rocky wall through
+
+the trees to the north.  Bits of rock lie on the ground, mingling with
+
+the pine cones and needles from the tall trees.  The high, jagged peaks
+
+of the mighty Dragonspire Moutains rise around you, inspiring awe by
+
+their sheer height.  An occasional icy breeze washes through the area as
+
+if it came directly from the snowcapped peaks.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36538 10 10 5
+D1
+~
+~
+0 -1 36536 10 10 5
+D2
+~
+~
+0 -1 36534 10 10 5
+D3
+~
+~
+0 -1 36541 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+2 9 1509949540 3 0
+934 9 1509949540 3 0
+-1
+S
+
+#36540
+High Mountain Valley~
+The pines of the forest grow right up to the riverbank, which sweeps
+
+around from south to west.  Large, lichen-covered rocks line the river's
+
+edge, adding their light green and yellow hues to the dark green of the
+
+forest.  The forest spreads before you on the north and south, contained
+
+by the steeply rising slopes that mark the boundaries of the valley.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36541 10 10 5
+D1
+~
+~
+0 -1 36534 10 10 5
+D2
+~
+~
+0 -1 36529 10 10 5
+D3
+~
+~
+0 -1 36514 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+203 9 1509949540 3 0
+415 17 1509949540 -2 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36541
+High Mountain Valley~
+A low ledge of exposed granite defines the northern edge of the valley. 
+
+It is too high and smooth to scale, but short in comparison with the high
+
+peaks of the Dragonspires which surround the valley.  The arched mouth of
+
+a cave enters the rocky wall, and the covering of pine needles and other
+
+forest debris is disturbed to show someone or something has been moving
+
+in and out of the cave recently.  Dark pine trees and low, rugged grasses
+
+grow in abundance, interrupted only by the sheer wall and a riverbank
+
+on the west.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36542 10 10 5
+D1
+~
+~
+0 -1 36539 10 10 5
+D2
+~
+~
+0 -1 36540 10 10 5
+D3
+~
+~
+0 -1 36515 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep or wide, but the water moves swifly along its
+
+rock-strewn course.
+
+~
+2279 9 1509949540 3 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36542
+A Shallow, Darkened Cave~
+The jagged rock walls that define this space arch overhead and barely
+
+give you enough room to stand.  The mouth of the cave is as wide as the
+
+cave itself, allowing fresh air to flow in freely from the outside. 
+
+Brown pine needles, dried grass and other forest debris lies scattered
+
+about on the ground and has been piled up in a back corner of the cave. 
+
+Despite the fresh air, the strong smell of an animal hovers in the air.
+
+~
+~
+-235405312 3 9 0
+D2
+~
+~
+0 -1 36541 10 10 5
+2500 9 1509949540 3 0
+122 9 1509949470 3 0
+-1
+S
+
+#36543
+High Mountain Valley~
+Dark green pine trees crowd the area, growing right up to the river bank
+
+on the north and the roadside on the west.  The nearly vertical slope to
+
+the south is rocky and barren, and looks impossible to scale.  Trees
+
+continue to the east, growing straight and tall in the freedom of the
+
+valley.  Short, hardy grasses and multi-colored wildflowers grow under
+
+the trees and add their scents to the musky pine.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36530 10 10 5
+D1
+~
+~
+0 -1 36544 10 10 5
+D3
+~
+~
+0 -1 36503 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep or wide, but the water moves swifly along its
+
+rock-strewn course.
+
+~
+E
+wildflowers multi-colored flowers~
+A variety of flowers grow low to the ground, with blooms in violet,
+
+white, brilliant pink and bright blue.
+
+~
+A
+1 south~
+~
+act_tochar( #char, ch );
+
+~
+E
+char~
+The slope is far too steep and unstable for you to climb.
+
+~
+!
+0 0 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36544
+High Mountain Valley~
+This corner of the valley is walled-in by nearly vertical slopes on the
+
+south and east.  A briskly flowing, shallow river peeks through the dense
+
+pine trees on the north.  The trees grow tall and straight and their
+
+fallen needles cover the forest floor in a thick brown carpet which
+
+muffles your movements.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36531 10 10 5
+D3
+~
+~
+0 -1 36543 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep or wide, but the water moves swifly along its
+
+rock-strewn course.
+
+~
+A
+1 east 1 south~
+~
+act_tochar( #char, ch );
+
+~
+E
+char~
+You attempt to scale the slope but come sliding back down, bringing a
+
+shower of rocks with you.
+
+~
+!
+0 0 0
+28 9 1509949490 3 0
+2 9 1509949540 3 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36545
+High Mountain Valley~
+You are on the edge of a forest of tall pine trees.  One tree has most of
+
+the bark stripped off of its lower section and remnants lay on the ground
+
+below it.  The valley floor is carpeted with pine needles, and a thick
+
+patch of tall, hearty grass grows here.  The trail passes by on the east
+
+and the steep mountainside prevents you from moving west.
+
+~
+[Dalthas] look patch, grass
+
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36546 10 10 5
+D1
+~
+~
+0 -1 36505 10 10 5
+D2
+~
+~
+0 -1 36586 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.  One of the stately trees has been virtually
+
+shredded with most of its bark stripped off of the lower section.
+
+~
+E
+shredded stripped~
+The tall tree looks healthy, except that it has almost no bark covering
+
+its lower section.  The white wood is exposed and sap runs down its
+
+length, with insects and other trapped matter adhered to the sticky
+
+coating.  Whatever did this damage was thorough, leaving only a few
+
+shreds that would probably be easy to peel off.
+
+~
+A
+1 west~
+~
+act_tochar( #char, ch );
+
+~
+E
+char~
+You begin to climb the mountainside and realize it is far too steep and
+
+unstable for you to scale.
+
+~
+!
+0 0 0
+A
+peel strip~
+bark~
+if( rflag( reset0, room ) ) {
+
+  if( random( 1, 10 ) == 1 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #success, ch );
+
+    act_notchar( #rsuccess, ch );
+
+    obj_to_char( oload( 2313 ), ch );
+
+    }
+
+  else {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #no, ch );
+
+    act_notchar( #rno, ch );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #no, ch );
+
+  act_notchar( #rno, ch );
+
+  }
+
+~
+E
+no~
+All the loose strips of bark have been peeled off the tree.
+
+~
+E
+success~
+You carefully peel a short strip of thick bark off the tree.
+
+~
+E
+rsuccess~
+$n peels a short strip of thick bark off one of the trees.
+
+~
+E
+rno~
+$n searches the tree for loose bark but comes up emptyhanded.
+
+~
+!
+0 0 0
+2313 17 1509949445 -2 0
+79 17 1509949540 -2 0
+-1
+S
+
+#36546
+High Mountain Valley~
+Tall pine trees dominate the area, growing right up to the edge of the
+
+trail on the east and the rocky slopes on the southwest.  The trees
+
+continue in the north and west, forming a dark forest within the valley.
+
+Small, pellet-like droppings litter the ground which is covered with
+
+dried pine needles.  The smells of pine, animals and dust and the
+
+unceasing forest noises fill the air.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36547 10 10 5
+D1
+~
+~
+0 -1 36506 10 10 5
+D2
+~
+~
+0 -1 36545 10 10 5
+D3
+~
+~
+0 -1 36548 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+droppings pellet-like litter~
+The droppings are small, about the size of the end of one of your fingers. 
+
+They litter the ground underneath one particularly tall tree.
+
+~
+2 9 1509949540 3 0
+203 9 1509949540 3 0
+2509 9 1509949540 3 0
+78 17 1509949540 -2 0
+-1
+S
+
+#36547
+High Mountain Valley~
+The forest is very thin next to the road on the east and the ground shows
+
+frequent travel.  Animal and boot prints mingle together on the dusty
+
+ground and dry pine needles are scattered about.  A fast-moving river
+
+flows by on the north, its musical sound filling the air, and tall
+
+pine trees grow in the south and west.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36517 10 10 5
+D1
+~
+~
+0 -1 36507 10 10 5
+D2
+~
+~
+0 -1 36546 10 10 5
+D3
+~
+~
+0 -1 36549 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep or wide, but the water moves swifly along its
+
+rock-strewn course.
+
+~
+344 17 1509949540 -2 0
+-1
+S
+
+#36548
+High Mountain Valley~
+A steep, rock-strewn mountainside angles abruptly down until it reaches
+
+the floor of the valley, conceding to the smooth, flat land filled with
+
+pine trees.  The soil is rocky but the trees manage to find purchase in
+
+the rich mountain soil between the rocks.  A variety of short grasses and
+
+mountain wildflowers have also found a home here and the rich smell of a
+
+particularly hearty white-flowered bush fills the air.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36549 10 10 5
+D1
+~
+~
+0 -1 36546 10 10 5
+D3
+~
+~
+0 -1 36552 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+flowers wildflowers white bush~
+The flowers are short, with blooms ranging from white to deep, crimson
+
+red.  One taller bush-like flower bearing white petals fills the area
+
+with its heady perfume.
+
+~
+A
+1 south~
+~
+act_tochar( #char, ch );
+
+~
+E
+char~
+You try to climb up the southern slope, but the rocks are too difficult
+
+to climb.
+
+~
+!
+0 0 0
+A
+pick~
+flower white~
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+obj_to_room( oload( 2506 ), room );
+
+~
+E
+msg~
+You try to pick one of the tiny, white flowers but it falls apart in your
+
+hands.
+
+~
+E
+rmsg~
+$n tries to pick one of the tiny, white flowers off of a nearby bush but
+
+it falls apart in $s hands.
+
+~
+!
+0 0 0
+-1
+S
+
+#36549
+High Mountain Valley~
+A small aspen tree grows here, a straggler from the grove you can see to
+
+the west.  It is dwarfed by the tall evergreen pines growing in most of
+
+the valley.  The squirrels and birds high in the pine trees dart back and
+
+forth, busy collecting bits of food and nesting materials.  A large slab
+
+of rock covers much of the ground in this area.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36550 10 10 5
+D1
+~
+~
+0 -1 36547 10 10 5
+D2
+~
+~
+0 -1 36548 10 10 5
+D3
+~
+~
+0 -1 36553 10 10 5
+E
+slab rock~
+The slab of rock is smooth and whole, without cracks marring its surface. 
+
+It is made of fine-grained reddish rock, and is nearly a perfect circle. 
+
+It appears to be a recent addition to the forest because the edges are
+
+exposed and not buried.
+
+~
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain their color year-round.
+
+~
+A
+move push~
+slab rock~
+act_tochar( #char, ch );
+
+act_notchar( #others, ch );
+
+~
+E
+char~
+You attempt to move the slab, but find that it is firmly anchored to the
+
+ground.
+
+~
+E
+others~
+$n gives the slab of rock a mighty heave but it doesn't budge.
+
+~
+!
+0 0 0
+2509 9 1509949540 3 0
+368 9 1509949520 3 0
+-1
+S
+
+#36550
+High Mountain Valley~
+Great pine trees grow all around you, dropping their needles and cones to
+
+cover the valley floor below them.  A stand of white-barked aspen trees
+
+peeks through the evergreen trees on the west.  Short grasses, flowers
+
+and bushes grow in patches on the ground.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36551 10 10 5
+D1
+~
+~
+0 -1 36517 10 10 5
+D2
+~
+~
+0 -1 36549 10 10 5
+D3
+~
+~
+0 -1 36554 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep or wide, but the water moves swifly along its
+
+rock-strewn course.
+
+~
+368 9 1509949540 3 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36551
+High Mountain Valley~
+The trees grow right up the the edge of the river that flows by, curving
+
+from west to north.  A tall wildflower graces this area, its long green
+
+stem growing up at the base of one small tree.  Its delicate pink flower
+
+buds brighten this section of the forest with their soft color and crisp
+
+aroma.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36520 10 10 5
+D1
+~
+~
+0 -1 36518 10 10 5
+D2
+~
+~
+0 -1 36550 10 10 5
+D3
+~
+~
+0 -1 36555 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep or wide, but the water moves swifly along its
+
+rock-strewn course.
+
+~
+A
+pick~
+flower pink~
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+~
+E
+msg~
+You lean over to pick a flower and bonk your head on a tree.  Ouch!
+
+~
+E
+rmsg~
+$n leans over to pick a pink flower and bonks his head on a tree.  Ouch,
+
+what a clutz!
+
+~
+!
+0 0 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36552
+High Mountain Valley~
+The tall pines of the forest grow around you, giving way to a steep
+
+upward slope on the south.  A grove of white trees peeks through the
+
+branches of the pine trees toward the north.  Pine cones and needles from
+
+the trees blanket the ground and provide a home for the insects you see
+
+occasionally scurrying back and forth.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36553 10 10 5
+D1
+~
+~
+0 -1 36548 10 10 5
+D3
+~
+~
+0 -1 36558 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+A
+1 south~
+~
+act_tochar( #char, ch );
+
+~
+E
+char~
+You make it a few steps up the steep slope and come sliding back down.
+
+~
+!
+0 0 0
+203 9 1509949540 3 0
+932 9 1509949540 3 0
+415 17 1509949540 -2 0
+-1
+S
+
+#36553
+High Mountain Valley - An Aspen Grove~
+Small, white-barked aspen trees create a light and airy oasis in the
+
+forest of dark green pines.  A large bush with bright orange leaves calls
+
+this spot home, brightening the forest with its foliage.  Small birds
+
+dart between the trees and insects scurry back and forth across the
+
+forest floor.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36554 10 10 5
+D1
+~
+~
+0 -1 36549 10 10 5
+D2
+~
+~
+0 -1 36552 10 10 5
+D3
+~
+~
+0 -1 36559 10 10 5
+E
+aspens~
+The delicate, white-barked trees grow in a small grove among the dark
+
+pines of the forest.  Their rounded leaves dance in the breeze and appear
+
+to sparkle as their dark green tops and white undersides flutter back and
+
+forth.
+
+~
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+A
+~
+~
+send_to_room( #breeze, room );
+
+~
+E
+breeze~
+A crisp, cold breeze washes through the area, gently stirring the leaves
+
+of the aspen trees.
+
+~
+!
+2 250 0
+-1
+S
+
+#36554
+High Mountain Valley - An Aspen Grove~
+Small aspen trees with smooth white bark grow here.  Their leaves dance
+
+in the slightest breeze, appearing to sparkle as their white undersides
+
+and green tops flutter back and forth in your view.  Tall, straight pine
+
+trees border this grove on the north and east, and stand in sharp
+
+contrast to the more delicate aspens.  Small, pellet-shaped animal
+
+droppings lie in a pile at the base of one of the trees.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36555 10 10 5
+D1
+~
+~
+0 -1 36550 10 10 5
+D2
+~
+~
+0 -1 36553 10 10 5
+D3
+~
+~
+0 -1 36560 10 10 5
+E
+aspens~
+The delicate, white-barked trees grow in a small grove among the dark
+
+pines of the forest.  Their rounded leaves dance in the breeze and appear
+
+to sparkle as their dark green tops and white undersides flutter back and
+
+forth.
+
+~
+E
+evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+droppings pellet-shaped~
+The droppings are about as big around as the tip of your little finger,
+
+and lie in a scattered pile under one of the trees.
+
+~
+2509 9 1509949540 3 0
+415 17 1509949540 -2 0
+-1
+S
+
+#36555
+High Mountain Valley~
+A grove of white aspen trees stands on the south and the tall, green pine
+
+trees grow around you.  The forest is alive with the sounds of the breeze
+
+in the treetops, animals scurrying around and the rushing sound of a
+
+river coming from the northeast.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36556 10 10 5
+D1
+~
+~
+0 -1 36551 10 10 5
+D2
+~
+~
+0 -1 36554 10 10 5
+D3
+~
+~
+0 -1 36561 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+aspens white~
+The delicate, white-barked trees grow in a small grove among the dark
+
+pines of the forest.  Their rounded leaves dance in the breeze and appear
+
+to sparkle as their dark green tops and white undersides flutter back and
+
+forth.
+
+~
+932 9 1509949540 3 0
+-1
+S
+
+#36556
+High Mountain Valley~
+The trees are thin here, their growth impeded by the rocky riverbank. 
+
+The water rushes by on the east, tumbling across the stones strewn across
+
+its path.  Looking up you can see the tops of the mountains which
+
+surround this valley, rising high above the treetops.  Short, hardy
+
+grasses and mountain wildflowers grow among the rocks, seemingly happy
+
+for the sunshine provided in this spot by the lack of trees.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36557 10 10 5
+D1
+~
+~
+0 -1 36520 10 10 5
+D2
+~
+~
+0 -1 36555 10 10 5
+D3
+~
+~
+0 -1 36562 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep or wide, but the water moves swifly along its
+
+rock-strewn course.
+
+~
+368 9 1509949540 3 0
+934 9 1509949540 3 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36557
+High Mountain Valley~
+The river flows by, coming in from the east and curving around to the
+
+north as it makes its wandering journey across the wide valley.  Tall
+
+evergreens grow on both sides of the riverbank, giving it a tunnel-like
+
+feeling.  The high, snowy peaks of the mountains which surround this
+
+valley rise high above the treetops and make you feel very small.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36523 10 10 5
+D1
+~
+~
+0 -1 36521 10 10 5
+D2
+~
+~
+0 -1 36556 10 10 5
+D3
+~
+~
+0 -1 36563 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep or wide, but the water moves swifly along its
+
+rock-strewn course.
+
+~
+203 9 1509949540 3 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36558
+High Mountain Valley~
+A rockslide mars the side of the slope that wraps around you on the south
+
+and west, and cascades down onto the valley floor, pushing up against the
+
+pine forest.  Smaller plants have begun to fill in between the rocks and
+
+small pine trees are taking root.  The slopes on the south and west are
+
+too steep and unstable to climb, but you can travel north or east into
+
+the forest.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36559 10 10 5
+D1
+~
+~
+0 -1 36552 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+A
+1 south 1 west~
+~
+act_tochar( #char, ch );
+
+act_notchar( #others, ch );
+
+~
+E
+char~
+You make it up a few paces but the unstable slope dislodges a small
+
+rockslide, carrying you back down to the valley floor.
+
+~
+E
+others~
+$n heads up the mountainside, but the unstable slope dislodges a small
+
+rockslide, carrying $m back down.
+
+~
+!
+0 0 0
+2 9 1509949540 3 0
+2279 9 1509949540 3 0
+78 17 1509949540 -2 0
+-1
+S
+
+#36559
+High Mountain Valley - An Aspen Grove~
+White-barked aspen trees have taken over this small section of the forest. 
+
+They are shorter than the pine trees and allow more of the sky to peek
+
+between their rounded leaves.  The tall, dark pines resume their
+
+dominance on the west and south, and the more delicate aspens spread out
+
+on the east and north.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36560 10 10 5
+D1
+~
+~
+0 -1 36553 10 10 5
+D2
+~
+~
+0 -1 36558 10 10 5
+D3
+~
+~
+0 -1 36564 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+aspens~
+The delicate, white-barked trees grow in a small grove among the dark
+
+pines of the forest.  Their rounded leaves dance in the breeze and appear
+
+to sparkle as their dark green tops and white undersides flutter back and
+
+forth.
+
+~
+28 9 1509949540 3 0
+-1
+S
+
+#36560
+High Mountain Valley - An Aspen Grove~
+The tall pine trees give way to a stand of white-barked aspen trees,
+
+their light coloring contrasting with the dark pines.  The leaves of the
+
+aspen trees flutter in the slightest breeze, filling the air with their
+
+soft, sibilant music.  The grove lies south and east of here, with dark
+
+pine trees bordering it on the north and west.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36561 10 10 5
+D1
+~
+~
+0 -1 36554 10 10 5
+D2
+~
+~
+0 -1 36559 10 10 5
+D3
+~
+~
+0 -1 36565 10 10 5
+E
+evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+aspens~
+The delicate, white-barked trees grow in a small grove among the dark
+
+pines of the forest.  Their rounded leaves dance in the breeze and appear
+
+to sparkle as their dark green tops and white undersides flutter back and
+
+forth.
+
+~
+-1
+S
+
+#36561
+High Mountain Valley~
+The mountain to the west slopes gently down to the valley floor and looks
+
+like an easy climb from here.  The pine needles and other debris which
+
+cover the ground have been disturbed recently by what looks like the
+
+shuffling of a large animal.  Large tracks head south, but don't look
+
+recent because they are muddied and distorted.  Pine trees surround you
+
+and a small grove of white aspen trees stands to the south.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36562 10 10 5
+D1
+~
+~
+0 -1 36555 10 10 5
+D2
+~
+~
+0 -1 36560 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+aspens white~
+The delicate, white-barked trees grow in a small grove among the dark
+
+pines of the forest.  Their rounded leaves dance in the breeze and appear
+
+to sparkle as their dark green tops and white undersides flutter back and
+
+forth.
+
+~
+E
+tracks~
+Large, indistinct tracks have been left in the soft ground, but you can't
+
+tell what may have passed through here.
+
+~
+2 9 1509949540 3 0
+-1
+S
+
+#36562
+High Mountain Valley~
+The slope of the western mountain meets the valley floor here and
+
+provides an effective barrier to westward movement.  The trees, however,
+
+are unhindered by the steep grade and manage to cling to the slopes in
+
+determination.  Bits of charred wood lie on the ground and the forest
+
+floor shows signs of a recent camp in this area.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36563 10 10 5
+D1
+~
+~
+0 -1 36556 10 10 5
+D2
+~
+~
+0 -1 36561 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+246 17 1509949490 -2 0
+-1
+S
+
+#36563
+High Mountain Valley~
+Great pine trees grow around you and the noises of forest wildlife fill
+
+the air.  A small but brisk river flows by on the north, making a
+
+meandering path through the valley.  The sound of the water mingles with
+
+the sounds of the forest and creates a symphony of nature entering your
+
+ears.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36524 10 10 5
+D1
+~
+~
+0 -1 36557 10 10 5
+D2
+~
+~
+0 -1 36562 10 10 5
+D3
+~
+~
+0 -1 36567 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep or wide, but the water moves swifly along its
+
+rock-strewn course.
+
+~
+E
+river~
+The river is not deep or wide, but the water moves swifly along its
+
+rock-strewn course.
+
+~
+2 9 1509949540 3 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36564
+High Mountain Valley~
+You are at the western edge of the valley and the trees are thin.  The
+
+steep slope to the west is covered in loose rock and doesn't offer much
+
+hope of climbing at this spot.  A large patch of mountain bluebells grows
+
+here, making this area bright with their shades of blue.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36565 10 10 5
+D1
+~
+~
+0 -1 36559 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+bluebells flowers~
+The flowers have long, thin stems supporting the cup-like blue blossoms
+
+that grace each of their tips.
+
+~
+A
+1 west 1 south~
+~
+act_tochar( #char, ch );
+
+~
+E
+char~
+You look up the slope and realize it is far too steep for you to climb.
+
+~
+!
+0 0 0
+A
+pick~
+flower bluebell~
+if( random( 1, 5 ) == 1 )
+
+  if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  act_tochar( #msg, ch );
+
+  act_notchar( #rmsg, ch );
+
+  obj_to_char( oload( 2493 ), ch );
+
+  }
+
+else {
+
+  remove_rflag( reset0, room );
+
+  act_tochar( #no, ch );
+
+  act_notchar( #rno, ch );
+
+  }
+
+else {
+
+  act_tochar( #no, ch );
+
+  act_notchar( #rno, ch );
+
+  }
+
+~
+E
+msg~
+You pick a bluebell flower from the plant.
+
+~
+E
+rmsg~
+$n picks a bluebell flower from the plant.
+
+~
+E
+no~
+You lean over to pick a bluebell flower, but a bee buzzes into your face
+
+and you change your mind.
+
+~
+E
+rno~
+$n leans down towards a bluebell flower, but a feisty bee buzzes into $s
+
+face and $e abruptly backs off.
+
+~
+!
+0 0 0
+79 17 1509949515 -2 0
+-1
+S
+
+#36565
+High Mountain Valley~
+The trees grow thin as the valley floor gives way to the mountainside on
+
+the west.  The slope is rocky and steep but the valley floor is open all
+
+around you, and teeming with life.  The mouth of a dark cave lies to the
+
+north and the ground shows recent movement into or out of the cave by
+
+something large.  Aspen trees grow in a grove on the east and the pine
+
+forest continues south.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36566 10 10 5
+D1
+~
+~
+0 -1 36560 10 10 5
+D2
+~
+~
+0 -1 36564 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+cave~
+The mouth of the cave is about three feet high and spans about the same
+
+width.  The rocks surrounding the entrance are stained dark as if someone
+
+or something has passed through here many times.
+
+~
+A
+1 west~
+~
+act_tochar( #char, ch );
+
+~
+E
+char~
+The mountain is far too steep for you to climb.
+
+~
+!
+0 0 0
+2 9 1509949540 3 0
+2279 9 1509949540 3 0
+78 17 1509949540 -2 0
+-1
+S
+
+#36566
+A Cramped, Dark Cave~
+The narrow mouth of the cave allows little light to enter this dim
+
+chamber and the air is somewhat stale.  A strong animal smell makes the
+
+stuffy air seem even worse.  Pine needles, branches and wilted plant
+
+matter have been pushed into a pile on one side of the cave and appear to
+
+serve as a bed for something large.
+
+~
+[Barada] this cave is cramped, but the room size is dino.  this is so trivial I'd be embarrassed to put it on the bugs board
+
+~
+-235405312 3 9 0
+D2
+~
+~
+0 -1 36565 10 10 5
+2500 9 1509949540 3 0
+122 9 1509949490 3 0
+122 9 1509949480 3 0
+-1
+S
+
+#36567
+High Mountain Valley~
+The valley floor gives way to the steep upward slope of the southern
+
+mountain.  The slope is forested and looks like an easy climb for the
+
+experienced.  The trees are thin enough that you can see up to the peaks
+
+which contain this side of the valley.  Their snow-capped tops rise high
+
+into the sky, making the valley seem small in comparison.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36568 10 10 5
+D1
+~
+~
+0 -1 36563 10 10 5
+D3
+~
+~
+0 -1 36588 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+-1
+S
+
+#36568
+High Mountain Valley~
+Tall, lush pine trees grow all around you, extending to the river's bank
+
+on the east.  You can see a break in the trees to the north, but the
+
+green sentinels stand their seemingly eternal watch on all other sides. 
+
+A small cluster of bright wildflowers grows under the shade of a tall,
+
+ancient tree.  Blooms in white, lavendar and brilliant pink add
+
+brightness and fragrance to this spot.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36569 10 10 5
+D1
+~
+~
+0 -1 36524 10 10 5
+D2
+~
+~
+0 -1 36567 10 10 5
+D3
+~
+~
+0 -1 36572 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep or wide, but the water moves swifly along its
+
+rock-strewn course.
+
+~
+344 17 1509949540 -2 0
+-1
+S
+
+#36569
+High Mountain Valley - A Small Clearing~
+Rocks rise up out of the ground, preventing the trees from taking root in
+
+this small area.  A variety of wildflowers grow instead, finding their
+
+home in the cracks and crevices and the open air of this place.  The pine
+
+trees grow on the north and south, and the clearing extends to the west. 
+
+The swiftly flowing water of a river rushes by on the east and the south
+
+is filled with trees.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36570 10 10 5
+D1
+~
+~
+0 -1 36525 10 10 5
+D2
+~
+~
+0 -1 36568 10 10 5
+D3
+~
+~
+0 -1 36571 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep or wide, but the water moves swifly along its
+
+rock-strewn course.
+
+~
+344 17 1509949540 -2 0
+-1
+S
+
+#36570
+High Mountain Valley~
+The trees are small and thin and the edge of the valley floor drops off
+
+to the north, where the river splashes down a small waterfall.  You can
+
+hear the noise of tumbling water echoing through the gulley on the
+
+northwest, which is filled from edge to edge with the rushing water. 
+
+Silent, tall trees stand to the south and the forest is thin where the
+
+ledge continues west.  Across the waterfall you can see a light-colored
+
+cliff rising far above the valley floor.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 36526 10 10 5
+D2
+~
+~
+0 -1 36569 10 10 5
+D3
+~
+~
+0 -1 36592 10 10 5
+E
+river~
+The river is not deep or wide, but the water moves swifly along its
+
+rock-strewn course.
+
+~
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+344 17 1509949540 -2 0
+-1
+S
+
+#36571
+High Mountain Valley - A Small Clearing~
+The ground is rough and rocky, creating a clearing in the trees. 
+
+Mountain wildflowers have taken root and flourish in the open area,
+
+providing color and fragrance in the forest of dark pines.  Looking up
+
+you can see the high peaks which stand sentinel to this valley, their
+
+white-capped tops rising high above the treetops.  The trees grow thickly
+
+around you except where this rocky clearing opens to the east.
+
+~
+[Belgar] mountian -> mountain
+
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36592 10 10 5
+D1
+~
+~
+0 -1 36569 10 10 5
+D2
+~
+~
+0 -1 36572 10 10 5
+D3
+~
+~
+0 -1 36590 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+2509 9 1509949540 3 0
+2508 9 1509949540 3 0
+79 17 1509949540 -2 0
+-1
+S
+
+#36572
+High Mountain Valley~
+Glimpses of a clearing can be seen to the east, between the tall pine
+
+trees which surround you.  The ground is covered with their needles and
+
+pine cones and wildflowers grow in scattered clumps.  Bees move in and
+
+out of a knothole in one large tree that appears to be their home.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36571 10 10 5
+D1
+~
+~
+0 -1 36568 10 10 5
+D2
+~
+~
+0 -1 36588 10 10 5
+D3
+~
+~
+0 -1 36589 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.  One tree has a large knothole and busy
+
+bumblebees occasionally fly in and out of the hole.
+
+~
+E
+knothole~
+One of the tall trees has a large knothole on the side.  Yellow and black
+
+bumblebees occasionally meander in or out of the hole, which seems to be
+
+their home.  You should probably leave the hive alone because you
+
+wouldn't want to anger the busy little forest workers.
+
+~
+A
+touch search~
+knothole hole hive bees~
+i = random( 1, 2 );
+
+if( rflag( reset0, room ) ) {
+
+  if( i == 1 ) {
+
+    act_tochar( #one, ch );
+
+    act_notchar( #rone, ch );
+
+    mload( 934, room );
+
+    }
+
+  if( i == 2 ) {
+
+    j = random( 1, 4 );
+
+    act_tochar( #swarm, ch );
+
+    act_notchar( #rswarm, ch );
+
+    if( j >= 1 ) {
+
+      mload( 2280, room );
+
+      mload( 2280, room );
+
+      mload( 2280, room );
+
+      }
+
+    if( j >= 2)
+
+      mload( 2280, room );
+
+    if( j == 3 )
+
+      mload( 2280, room );
+
+    mob = mob_in_room( 2280, room );
+
+    attack( mob, ch, 2d2, "sting" );
+
+    }
+
+  remove_rflag( reset0, room );
+
+  }
+
+else {
+
+  act_tochar( #no, ch );
+
+  act_notchar( #rno, ch ) ;
+
+  }
+
+~
+E
+one~
+A bumblebee flies out of the knothole, buzzing loudly at you.  Perhaps
+
+the lone bee is a warning that you should not mess with the hive.
+
+~
+E
+rone~
+$n messes with a tree and disturbs a bee hive.  One bold bee comes
+
+buzzing out of the hive and seems to be warning $m to stay away.
+
+~
+E
+swarm~
+A swarm of bees comes out of the tree and attacks you!
+
+~
+E
+rswarm~
+A swarm of bees comes out of a nearby tree and attacks $n!
+
+~
+E
+no~
+A low buzzing sound emanates from the tree, but the bees appear to be
+
+indifferent to your presence.
+
+~
+E
+rno~
+$n pokes around one of the trees, but finds nothing.
+
+~
+!
+0 0 0
+2 9 1509949540 3 0
+934 9 1509949540 3 0
+-1
+S
+
+#36573
+High Mountain Valley~
+You are positioned amid tall pine trees, and a rushing river curves
+
+around you on the south and west.  The noises of small animals and
+
+insects combine with the gentle whistling of the wind through the trees
+
+to create a low thrumming noise, typical of a mountain forest.  You
+
+occasionally catch a glimpse of a small bird moving among the tree limbs.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36574 10 10 5
+D1
+~
+~
+0 -1 36577 10 10 5
+D2
+~
+~
+0 -1 36523 10 10 5
+D3
+~
+~
+0 -1 36525 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep or wide, but the water moves swifly along its
+
+rock-strewn course.
+
+~
+932 9 1509949540 3 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36574
+High Mountain Valley~
+The forest is sparse, but a high cliff rises on the northwest and
+
+dominates the scene with its height.  Bits of fragmented rock litter the
+
+ground, where small plants thrive in the relatively treeless areas. 
+
+Blooms in creamy yellow, lavender, brilliant blue and deep red brighten
+
+up the area and grow in proliferation along the riverbank on the west.
+
+~
+[Dalthas] on the west -> to the west
+
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36575 10 10 5
+D1
+~
+~
+0 -1 36576 10 10 5
+D2
+~
+~
+0 -1 36573 10 10 5
+D3
+~
+~
+0 -1 36526 10 10 5
+E
+river~
+The river is not deep or wide, but the water moves swifly along its
+
+rock-strewn course.
+
+~
+E
+trees pines evergreens~
+The tall, straight pine trees are lush with dark green needles and retain
+
+their color year-round.  Few grow in this section of the valley, but they
+
+become denser in the south.
+
+~
+E
+cliff rock~
+The cliffside rises at least thirty feet above your head and is made of a
+
+greyish rock covered with a network of cracks and fissures.
+
+~
+A
+climb~
+cliff~
+act_tochar( #char, ch );
+
+~
+E
+char~
+There is no way you could climb the cliff without intense training.
+
+~
+!
+0 0 0
+934 9 1509949540 3 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36575
+High Mountain Valley - Overlooking a Waterfall~
+The high cliff on the north and east continues west, where you can see a
+
+gulley that has been cut into the ground by the erosive forces of the
+
+river which flows through it.  A few trees grow in this scenic spot, but
+
+the air is filled with mist arising from a waterfall to the west and has
+
+provided a pleasant environment for several ferns which dominate the area. 
+
+The scattered rocks are completely covered with brown, yellow and light
+
+green lichen and bits of rock litter the ground.
+
+~
+[Dalthas] arising -> rising
+
+[Dalthas] fern extra
+
+~
+-235405312 3 9 0
+D2
+~
+~
+0 -1 36574 10 10 5
+E
+trees evergreens pines~
+The tall, straight pine trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+cliff rock~
+The cliffside rises at least thirty feet above your head and is made of a
+
+greyish rock covered with a network of cracks and fissures.
+
+~
+A
+climb~
+cliff 1 north 1 east~
+act_tochar( #char, ch );
+
+~
+E
+char~
+There is no way you could climb the cliff without intense training.
+
+~
+!
+0 0 0
+A
+1 east 1 north~
+~
+act_tochar( #msg, ch );
+
+~
+E
+msg~
+You cannot possibly scale the high cliff.
+
+~
+!
+0 0 0
+A
+1 west~
+~
+act_tochar( #msg, ch );
+
+~
+E
+msg~
+You peer over the edge of the gully and think twice when you see the
+
+sharp, slippery rocks several feet below.
+
+~
+!
+0 0 0
+368 9 1509949530 3 0
+-1
+S
+
+#36576
+High Mountain Valley~
+Tall, green pine trees brush against the sheer cliff face which blocks
+
+your movement and defines the northern boundary of this wide valley.  A
+
+small aspen sapling has managed to find a home among the evergreens, its
+
+white bark standing out against the dark trees around it.  The forest is
+
+thin here, but it grows thicker in the south.  The distant sound of
+
+running water reverbrates off the cliff, giving you a disoriented feeling.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 36578 10 10 5
+D2
+~
+~
+0 -1 36577 10 10 5
+D3
+~
+~
+0 -1 36574 10 10 5
+E
+aspen white sapling~
+The small tree has smooth white bark and light green rounded leaves.  It
+
+is much more delicate-looking than the surrounding pine trees, but its
+
+existence here in the rocky soil among the pines shows a hearty
+
+constitution.
+
+~
+E
+evergreens pines trees~
+The tall, straight pine trees that dominate the area are lush with dark
+
+green needles and retain their color year-round.  A small, white-barked
+
+aspen tree, however, has managed to find a place to grow here.
+
+~
+E
+cliff rock~
+The cliffside rises at least thirty feet above your head and is made of a
+
+greyish rock covered with a network of cracks and fissures.
+
+~
+A
+climb~
+cliff 1 north~
+act_tochar( #char, ch );
+
+~
+E
+char~
+There is no way you could climb the cliff without intense training.
+
+~
+!
+0 0 0
+A
+~
+~
+send_to_room( #msg, room );
+
+~
+E
+msg~
+A shower of small rock fragments rains down on your head from above.
+
+~
+!
+2 150 0
+2 9 1509949540 3 0
+2 9 1509949540 3 0
+79 17 1509949540 -2 0
+-1
+S
+
+#36577
+High Mountain Valley~
+A rushing, turbulent river flows by on the south, filling your ears with
+
+the sound of the water cascading around the rocks.  Tall pine trees
+
+surround you, and a small one is completely yellowed and its needles are
+
+covered in brown speckles.  The trees immediately surrounding the hapless
+
+sapling show signs of the same affliction.  Most of the stately pines
+
+that grow around you on the north, east and west appear healthier than
+
+the little yellowed tree.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36576 10 10 5
+D1
+~
+~
+0 -1 36579 10 10 5
+D2
+~
+~
+0 -1 36522 10 10 5
+D3
+~
+~
+0 -1 36573 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep or wide, but the water moves swifly along its
+
+rock-strewn course.
+
+~
+344 17 1509949540 -2 0
+-1
+S
+
+#36578
+High Mountain Valley~
+You are in a corner formed by cliff walls rising far above your head on
+
+the north and east.  The forest is thin here in the shade of the northern
+
+cliff and the rocky soil caused by fragments falling off the stone wall. 
+
+Trees thicken to the south, but the growth is sparse on the east where
+
+the forest runs along the cliffside.
+
+~
+~
+-235405312 3 9 0
+D2
+~
+~
+0 -1 36579 10 10 5
+D3
+~
+~
+0 -1 36576 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+cliff rock~
+The cliffside rises at least thirty feet above your head and is made of a
+
+greyish rock covered with a network of cracks and fissures.
+
+~
+A
+climb~
+cliff 1 north 1 east~
+act_tochar( #char, ch );
+
+~
+E
+char~
+There is no way you could climb the cliff without intense training.
+
+~
+!
+0 0 0
+368 9 1509949540 3 0
+932 9 1509949515 3 0
+-1
+S
+
+#36579
+High Mountain Valley~
+The whole northern side of this valley is hemmed in by a sheer cliff wall
+
+that runs from southeast to northwest.  The rock is light grey and some
+
+odd, deeply scratched markings have been made on its surface here.  Pine
+
+trees grow tall here, as if challenging the height of the cliff which
+
+rises at least thirty feet above your head.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36578 10 10 5
+D2
+~
+~
+0 -1 36580 10 10 5
+D3
+~
+~
+0 -1 36577 10 10 5
+E
+oddly scratched markings~
+The markings have been scrached deeply into the stone.  In the center, an
+
+octagonal spiral is surrounded by a square.  An upside-down arch has been
+
+engraved below the square, and a curving line wanders across the bottom
+
+of the picture.
+
+~
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+cliff rock~
+The cliffside rises at least thirty feet above your head and is made of a
+
+greyish rock covered with a network of cracks and fissures.  Someone has
+
+engraved some odd markings on the stone face of the cliff.
+
+~
+A
+climb~
+cliff 1 east~
+act_tochar( #char, ch );
+
+~
+E
+char~
+There is no way you could climb the cliff without intense training.
+
+~
+!
+0 0 0
+2509 9 1509949490 3 0
+203 9 1509949540 3 0
+2508 9 1509949480 3 0
+-1
+S
+
+#36580
+High Mountain Valley~
+The forest of tall, straight pine trees is thick, growing right up
+
+against the corner of a sheer mountain face on the northeast.  A river
+
+passes by on the west and its rocky streambed looks like it would provide
+
+poor footing.  The forest continues on the north, south and east, and you
+
+can see more trees across the river.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36579 10 10 5
+D1
+~
+~
+0 -1 36582 10 10 5
+D2
+~
+~
+0 -1 36581 10 10 5
+D3
+~
+~
+0 -1 36522 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep or wide, but the water moves swifly along its
+
+rock-strewn course.
+
+~
+E
+cliff rock mountainside~
+The cliffside rises at least thirty feet above your head and is made of a
+
+greyish rock covered with a network of cracks and fissures.
+
+~
+A
+climb~
+cliff~
+act_tochar( #char, ch );
+
+~
+E
+char~
+There is no way you could climb the cliff without intense training.
+
+~
+!
+0 0 0
+2500 9 1509949540 3 0
+2 9 1509949540 3 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36581
+High Mountain Valley~
+The tall pine trees grow dense, bordered on the south and west by a
+
+rapidly flowing river.  A large tree has fallen in the southwest corner
+
+of the area and would provide a nice place to rest and watch the water
+
+flow by.  Musky pine scent fills the air and the sounds of birds, insects
+
+and water blend to form a steady hum.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36580 10 10 5
+D1
+~
+~
+0 -1 36583 10 10 5
+D2
+~
+~
+0 -1 36519 10 10 5
+D3
+~
+~
+0 -1 36521 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep or wide, but the water moves swifly along its
+
+rock-strewn course.
+
+~
+344 17 1509949540 -2 0
+-1
+S
+
+#36582
+High Mountain Valley~
+You are in what seems like a corner, with cliff walls rising far above
+
+your head on the north and east.  The trees are somewhat thin here
+
+because of the perpetual shade of the northern mountain and the
+
+unhospitable, rock-strewn ground.  A series of dark grey rocks, darker
+
+than the rest of the rock fragments which litter the ground, forms an
+
+almost perfect half-circle against the western cliff.
+
+~
+[Belgar] sixth line, should be eastern cliff.
+
+~
+-235405312 3 9 0
+D2
+~
+~
+0 -1 36583 10 10 5
+D3
+~
+~
+0 -1 36580 10 10 5
+E
+dark grey rocks half-circle~
+The ground is littered with jagged fragments of rock which have obviously
+
+falled from the cliffsides.  Twelve darker, smooth rocks have been
+
+arranged in a half-circle that begins and ends at the edge of the eastern
+
+cliff face.
+
+~
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+cliff~
+The cliffside rises at least thirty feet above your head and is made of a
+
+greyish rock covered with a network of cracks and fissures.
+
+~
+A
+climb~
+cliff 1 west 1 north~
+act_tochar( #char, ch );
+
+~
+E
+char~
+There is no way you could climb the cliff without intense training.
+
+~
+!
+0 0 0
+79 17 1509949540 -2 0
+-1
+S
+
+#36583
+High Mountain Valley~
+A high cliff walls-in the eastern side of the valley and provides an
+
+effective barrier to movement in that direction.  The trees grow right up
+
+to the cliffside, brushing against its rock surface with their lush,
+
+green needles.  Several flat rocks lie on the forest floor, nearly
+
+covered with yellow, green and brown lichen.  You can see a river through
+
+the trees in the southwest and the sound of running water fills the air.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36582 10 10 5
+D2
+~
+~
+0 -1 36584 10 10 5
+D3
+~
+~
+0 -1 36581 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep or wide, but the water moves swifly along its
+
+rock-strewn course.
+
+~
+E
+cliff rock~
+The cliffside rises at least thirty feet above your head and is made of a
+
+greyish rock covered with a network of cracks and fissures.
+
+~
+A
+climb~
+cliff 1 east~
+act_tochar( #char, ch );
+
+~
+E
+char~
+There is no way you could climb the cliff without intense training.
+
+~
+!
+0 0 0
+2279 9 1509949540 3 0
+-1
+S
+
+#36584
+High Mountain Valley~
+This narrow strip of forested land is hedged in by a sheer cliff wall on
+
+the east and a river on the west.  Toward the south you can look up and
+
+see a road crossing a rocky ledge which extends into the valley.  An
+
+artesian spring bubbles among a cluster of rocks and the water flows down
+
+the slight slope and westward into the river.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36583 10 10 5
+D3
+~
+~
+0 -1 36519 10 10 5
+E
+river~
+The river is not deep or wide, but the water moves swifly along its
+
+rock-strewn course.
+
+~
+E
+cliff rock~
+The cliffside rises at least thirty feet above your head and is made of a
+
+greyish rock covered with a network of cracks and fissures.
+
+~
+A
+climb~
+cliff 1 west 1 south~
+act_tochar( #char, ch );
+
+~
+E
+char~
+There is no way you could climb the cliff without intense training.
+
+~
+!
+0 0 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36585
+High Mountain Valley~
+You are at the southern edge of a large valley filled with tall pine
+
+trees.  An outcropping of rock protrudes from the steep slope of the 
+
+mountain to the south.  The ground is littered with small rocks, pine
+
+cones, and pine needles, and a scattered pile of animal droppings lies on
+
+the ground.  A wide road passes by on the east, heading north across the
+
+valley and south into a narrow canyon.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36505 10 10 5
+D1
+~
+~
+0 -1 36503 10 10 5
+D3
+~
+~
+0 -1 36586 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+2 9 1509949500 3 0
+-1
+S
+
+#36586
+High Mountain Valley~
+This part of the valley is cornered between two nearly vertical slopes on
+
+the west and south.  The trees of the forest are thin, where rocky, hard
+
+soil prevents all but the strongest from taking root.  Pebbles and bits
+
+of rock that litter the ground have obviously come down from the slopes.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36545 10 10 5
+D1
+~
+~
+0 -1 36585 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+A
+1 west 1 south~
+~
+act_tochar( #char, ch );
+
+~
+E
+char~
+You attempt to scale the steep slope but come sliding back down in a
+
+shower of small rocks.
+
+~
+!
+0 0 0
+78 17 1509949540 -2 0
+-1
+S
+
+#36587
+High Mountain Valley~
+Small boulders litter the ground along the river which flows quickly by
+
+on the south.  Bright blue flowers and hardy grasses grow among the
+
+boulders, and the pine trees scattered throughout the area begin to grow
+
+more dense in the northwest.  The scent of pine, grasses and flowers
+
+creates a heady combination and you can hear the musical sound of the
+
+river from the south.  The boulder-strewn slope of the mountain to the
+
+east is steep and appears unstable.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36535 10 10 5
+D2
+~
+~
+0 -1 36532 10 10 5
+D3
+~
+~
+0 -1 36533 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+E
+river~
+The river is not deep or wide, but the water moves swifly along its
+
+rock-strewn course.
+
+~
+A
+1 east~
+~
+act_tochar( #char, ch );
+
+~
+E
+char~
+You attempt to scale the eastern slope but come sliding back down.
+
+~
+!
+0 0 0
+2279 9 1509949540 3 0
+344 17 1509949540 -2 0
+-1
+S
+
+#36588
+High Mountain Valley~
+Great pine trees rise up all around, giving you only small glimpses of
+
+the sky.  The ground is covered with pine needles and pinecones, and an
+
+occasional herb or wildflower.  A tall columbine flower grows here,
+
+brightening the forest with its white and purple display.  The mountain
+
+slopes on the west and south are steep, but appear easy enough to climb
+
+for someone with the skill.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36572 10 10 5
+D1
+~
+~
+0 -1 36567 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+2279 9 1509949540 3 0
+415 17 1509949520 -2 0
+-1
+S
+
+#36589
+High Mountain Valley~
+The pine trees grow strong and proud all around you, blocking most of
+
+your view of the sky.  Dry pine needles that have fallen from the trees
+
+cover the ground in a lush, brown carpet which dampens the noise of your
+
+passing.  Mountain slopes meet here, sloping down to the valley floor
+
+from the south and west.  If you have the skill you can probably scale
+
+the mountainsides with ease.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36590 10 10 5
+D1
+~
+~
+0 -1 36572 10 10 5
+D4
+~
+~
+0 -1 62002 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+-1
+S
+
+#36590
+High Mountain Valley~
+The dark pine forest grows between a clearing on the east and a high,
+
+steep slope on the west.  The slope is sleep, but appears stable enough
+
+to climb.  You can hear the sound of a river mingling with the sounds of
+
+the forest life all around you.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36591 10 10 5
+D1
+~
+~
+0 -1 36571 10 10 5
+D2
+~
+~
+0 -1 36589 10 10 5
+D4
+~
+~
+0 -1 62001 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+28 9 1509949540 3 0
+-1
+S
+
+#36591
+High Mountain Valley~
+The ground drops off to the north where a gulley cuts across from east to
+
+west and contains the swiftly moving river.  You can see it turn to the
+
+north and wind its way between the mountains.  Trees are sparse, but grow
+
+thicker towards the south and up the slope of the mountain on the west.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 36592 10 10 5
+D2
+~
+~
+0 -1 36590 10 10 5
+D4
+~
+~
+0 -1 62000 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+2 9 1509949540 3 0
+2279 9 1509949540 3 0
+-1
+S
+
+#36592
+High Mountain Valley~
+The trees are thinner here and the plants on the ground are more
+
+plentiful.  Rugged grasses, columbines, bluebells and blackberries
+
+flourish.  You can see a clearing through the trees to the south and the
+
+slope of the mountains to the west.  The forest floor drops off to the
+
+north, where a river flows through a narrow gulley.  A high, sheer cliff
+
+lies on the other side of the river, rising to an impressive height.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 36570 10 10 5
+D2
+~
+~
+0 -1 36571 10 10 5
+D3
+~
+~
+0 -1 36591 10 10 5
+E
+trees evergreens pines~
+The tall, straight trees are lush with dark green needles and retain
+
+their color year-round.
+
+~
+2500 9 1509949525 3 0
+2144 17 1509949540 -2 0
+2144 17 1509949540 -2 0
+934 9 1509949540 3 0
+-1
+S
+
+#36593
+High Mountain Valley - On a Slope~
+Under Construction.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 36594 10 10 5
+D3
+~
+~
+0 -1 36595 10 10 5
+-1
+S
+
+#36594
+High Mountain Valley - On a Slope~
+Under Construction.
+
+~
+~
+-235405312 3 9 0
+D3
+~
+~
+0 -1 36593 10 10 5
+-1
+S
+
+#36595
+High Mountain Valley - On a Slope~
+Under Construction.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36596 10 10 5
+D1
+~
+~
+0 -1 36593 10 10 5
+D3
+~
+~
+0 -1 36606 10 10 5
+-1
+S
+
+#36596
+High Mountain Valley - On a Slope~
+Under Construction.
+
+~
+~
+-235405312 3 9 0
+D2
+~
+~
+0 -1 36595 10 10 5
+D3
+~
+~
+0 -1 36597 10 10 5
+-1
+S
+
+#36597
+High Mountain Valley - On a Slope~
+Under Construction.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36598 10 10 5
+D1
+~
+~
+0 -1 36596 10 10 5
+D2
+~
+~
+0 -1 36606 10 10 5
+D3
+~
+~
+0 -1 36604 10 10 5
+-1
+S
+
+#36598
+High Mountain Valley - On a Slope~
+Under Construction.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36599 10 10 5
+D2
+~
+~
+0 -1 36597 10 10 5
+D3
+~
+~
+0 -1 36603 10 10 5
+-1
+S
+
+#36599
+High Mountain Valley - On a Slope~
+Under Construction.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36600 10 10 5
+D2
+~
+~
+0 -1 36598 10 10 5
+D3
+~
+~
+0 -1 36602 10 10 5
+-1
+S
+
+#36600
+High Mountain Valley - On a Slope~
+Under Construction.
+
+~
+~
+-235405312 3 9 0
+D2
+~
+~
+0 -1 36599 10 10 5
+D3
+~
+~
+0 -1 36601 10 10 5
+A
+climb~
+down~
+~
+!
+0 0 0
+-1
+S
+
+#36601
+High Mountain Valley - On a Slope~
+Under Construction.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 36600 10 10 5
+D2
+~
+~
+0 -1 36602 10 10 5
+-1
+S
+
+#36602
+High Mountain Valley - On a Slope~
+Under Construction.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36601 10 10 5
+D1
+~
+~
+0 -1 36599 10 10 5
+D2
+~
+~
+0 -1 36603 10 10 5
+D3
+~
+~
+0 -1 36609 10 10 5
+-1
+S
+
+#36603
+High Mountain Valley - On a Slope~
+Under Construction.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36602 10 10 5
+D1
+~
+~
+0 -1 36598 10 10 5
+D2
+~
+~
+0 -1 36604 10 10 5
+D3
+~
+~
+0 -1 36608 10 10 5
+-1
+S
+
+#36604
+High Mountain Valley - On a Slope~
+Under Construction.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36603 10 10 5
+D1
+~
+~
+0 -1 36597 10 10 5
+D2
+~
+~
+0 -1 36605 10 10 5
+D3
+~
+~
+0 -1 36607 10 10 5
+-1
+S
+
+#36605
+High Mountain Valley - On a Slope~
+Under Construction.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36604 10 10 5
+D1
+~
+~
+0 -1 36606 10 10 5
+-1
+S
+
+#36606
+High Mountain Valley - On a Slope~
+Under Construction.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36597 10 10 5
+D1
+~
+~
+0 -1 36595 10 10 5
+D3
+~
+~
+0 -1 36605 10 10 5
+-1
+S
+
+#36607
+High Mountain Valley - On a Slope~
+Under Construction.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36608 10 10 5
+D1
+~
+~
+0 -1 36604 10 10 5
+-1
+S
+
+#36608
+High Mountain Valley - On a Slope~
+Under Construction.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 36609 10 10 5
+D1
+~
+~
+0 -1 36603 10 10 5
+D2
+~
+~
+0 -1 36607 10 10 5
+-1
+S
+
+#36609
+High Mountain Valley - On a Slope~
+Under Construction.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 36602 10 10 5
+D2
+~
+~
+0 -1 36608 10 10 5
+-1
+S
+
+#0
+

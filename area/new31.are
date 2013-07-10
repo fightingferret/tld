@@ -1,0 +1,1802 @@
+#AREA
+Tunnels of the Twisted~
+Morkaleb~
+Tunnels of the Twisted~
+
+10 0
+0
+#ROOMS
+
+#80500
+Behind a Large Slab~
+The opening here leads further back into a wide corridor leading to the
+
+south.  Here and there along the walls and ceiling are scattered patches
+
+of a strange glowing moss, but it is not enough to light the area. 
+
+Occasional scrape marks can be seen on the walls, but fade further to the
+
+south.  To the north is a large pile of stones and thick slabs of granite.
+
+~
+~
+-235274236 11 5 0
+D0
+slab~
+~
+2283 -1 37611 10 10 5
+D2
+~
+~
+0 -1 80502 10 10 5
+E
+strange glowing moss~
+The moss glows a faint blue color.  It only appears here in patches a
+
+handspan in width or smaller.  It's short finger-length strands are thick
+
+and curly and it smells slightly of moist earth.
+
+~
+E
+scrape marks~
+The scrape marks on the walls in this room are all of an even width. 
+
+They appear to have been made by a tool of some kind.  Some are cut so
+
+deeply into the rock as to make them more a hole in the wall than a
+
+scrape mark.
+
+~
+E
+stones rocks slabs granite~
+The pile of stones on the north wall are very low along the wall.  Large
+
+slabs of light-grey granite lie against the wall as if they were stacked
+
+there.  A slight flow of air can be felt coming from behind them
+
+occasionally.
+
+~
+A
+move lift~
+slabs rocks stones granite~
+if( is_open( room, north ) )
+
+  send_to_char( #already, ch );
+
+else {
+
+  send_to_char( #open, ch );
+
+  act_notchar( #openr, ch );
+
+  open( room, north );
+
+  }
+
+~
+E
+already~
+The large granite slabs have already been moved aside.
+
+~
+E
+open~
+You move aside the large granite slabs, revealing an opening to the north.
+
+~
+E
+openr~
+$n moves aside the large granite slabs, revealing an opening to the north.
+
+~
+!
+0 0 0
+2469 9 1509949540 3 0
+2469 9 1509949540 3 0
+-1
+S
+
+#80501
+A Small Passage Through the Stone~
+Under Construction.
+
+~
+~
+-235405307 11 9 0
+-1
+S
+
+#80502
+A Sharp Bend in the Tunnel~
+The tunnel narrows here before turning off sharply to the east.  The
+
+floor is strewn with tiny evenly shaped bits of stone that appear to have
+
+been chipped away by some tool.  An occasional tool mark can be seen on
+
+the floor.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 80500 10 10 5
+D1
+~
+~
+0 -1 80503 10 10 5
+E
+floor marks~
+The tool marks here on the floor are shallow and run lengthwise down the
+
+passage.
+
+~
+E
+bits~
+The bits of stone scattered about on the tunnel floor appear to have been
+
+the result of the tool work that left the scrape marks.
+
+~
+-1
+S
+
+#80503
+A Rockfall~
+A large pile of rubble and boulders lies along the north wall of the area
+
+scattering out over half the width of the tunnel.  The top of the pile of
+
+rubble almost reaches to the ceiling here.  The smell of the fresh earth
+
+uncovered is strong in the air.  Small stones make the footing
+
+treacherous here.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 80504 10 10 5
+D3
+~
+~
+0 -1 80502 10 10 5
+E
+rubble~
+The pile of rubble here is stacked almost to the ceiling.  Rocks range in
+
+size from small pebbles to huge ones near the bottom of the pile that
+
+would be too large to move without help.  Many of them are covered with a
+
+layer of mud and slime.
+
+~
+A
+clear move~
+rubble rock~
+act_tochar( #nomove, ch );
+
+act_notchar( #nomover, ch );
+
+~
+E
+nomove~
+@yYou attempt to move the rocks but fail.
+
+~
+E
+nomover~
+@y$n attempts to move the rocks but fails.
+
+~
+!
+0 0 0
+2469 9 1509949540 3 0
+78 17 1509949540 -2 0
+-1
+S
+
+#80504
+A Basalt Pillar~
+The tunnel here widens out and at the center of it is a floor to ceiling
+
+pillar of dark, smooth basalt rock.  There is a bit of dust collecting
+
+around the base of the pillar but other than that it appears to be quite
+
+solid.  The walls are scattered with some sort of fungus that glows with
+
+a purplish light.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 80505 10 10 5
+D3
+~
+~
+0 -1 80503 10 10 5
+E
+pillar~
+The pillar is of a lighter color of stone than the surrounding area and
+
+appears to be the meeting of a stalagmite and a stalagtite.
+
+~
+E
+walls fungus~
+The fungus growing on the walls here is short and whitish in color.  It closely
+
+resembles some type of lichen.
+
+~
+2469 9 1509949540 3 0
+-1
+S
+
+#80505
+A Split in the Tunnel~
+The tunnel here splits north and south, on the east wall there are
+
+scratch marks and splashes of blood and hair.  A few bone chips lie
+
+scattered about on the floor beneath the spattered wall.  The dust on the
+
+floor appears to have been disturbed recently there as well as to the
+
+north and south.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 80506 10 10 5
+D1
+wall~
+wall secret door~
+2463 -1 80525 10 10 5
+D2
+~
+~
+0 -1 80507 10 10 5
+D3
+~
+~
+0 -1 80504 10 10 5
+E
+wall blood patch hair~
+The large patch of blood, hair and scratch marks on the wall looks as if
+
+it is covering up some sort of engraving that used to be carved into
+
+the stone here.  It appears as if it used to be a large circle with runes
+
+of some sort scattered about the edges.  Deep heavy lines seem to make
+
+out almost a square in the middle of the circle but much of the rest has
+
+been rendered unidentifiable by what appears to be intentional
+
+destruction of the symbols.
+
+~
+78 17 1509949540 -2 0
+-1
+S
+
+#80506
+A Dark Tunnel~
+The tunnel here leads north and south.  In the distance you can hear the
+
+sound of water dripping and occasional scuttling noises.  The ground is
+
+littered with bones and fur from some kind of animal and there are
+
+scratch marks on the east and west wall.  A few spider webs hang near the
+
+ceiling.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 80517 10 10 5
+D2
+~
+~
+0 -1 80505 10 10 5
+E
+fur bones ground~
+The bones and fur littering the ground here look as if some small animal
+
+was killed and eaten some time ago.
+
+~
+2469 9 1509949540 3 0
+2475 9 1509949540 3 0
+-1
+S
+
+#80507
+A Hollowed-out Corner~
+The southwest corner of the tunnel here looks like something very large
+
+has somehow cleaved out chunks of rock and made residence here.  Near the
+
+back of the hollow is a large pile of beetle feces and many bones are
+
+scattered about the area.  The smell of musk and moist earth is strong in
+
+the air, but you see no newly turned dirt.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 80505 10 10 5
+D1
+~
+~
+0 -1 80508 10 10 5
+E
+bones~
+The bones scattered about the area here look as if they may not all be
+
+from animals.  Many of them are cracked or broken, sharp jagged points
+
+attest to the violence that most likely ended the lives of their previous
+
+owners.
+
+~
+A
+move search~
+feces~
+i = random( 1, 3 );
+
+if( i == 1 ) {
+
+  if( rflag( reset1, room ) ) {
+
+    if( is_player( ch ) ) {
+
+      if( random( 1, 5 ) > 3 ) {
+
+        send_to_char( #true_char, ch );
+
+        act_notchar( #true_room, ch );
+
+        obj_to_char( oload( 2 ), ch );
+
+        remove_rflag( reset1, room );
+
+        end;
+
+        }
+
+      if( random( 1, 5) < 3 ) {
+
+        send_to_char( #true_char2, ch );
+
+        act_notchar( #true_room, ch );
+
+        obj_to_char( oload( 575 ), ch );
+
+        remove_rflag( reset1, room );
+
+        end;
+
+        }
+
+      }
+
+    }
+
+  }
+
+send_to_char( #false_char, ch );
+
+act_notchar( #false_room, ch );
+
+~
+E
+true_char~
+You root around in the beetle feces, and find a gold coin that reeks of dung...
+
+~
+E
+true_room~
+You see $n root around in beetle feces, then stand up looking quite pleased with $self.
+
+~
+E
+true_char2~
+You root around in the beetle feces, and find an onyx gemstone that reeks of dung...
+
+~
+E
+false_char~
+You root around in the beetle feces, and wind up covered in stinking dung.
+
+~
+E
+false_room~
+You see $n root around in the beetle feces, and wind up covered in stinking dung.
+
+~
+!
+9 0 0
+2470 9 1509949540 3 0
+78 17 1509949540 -2 0
+-1
+S
+
+#80508
+A Faint Path~
+The beginning of a faint path in the tunnel can be seen here leading off
+
+to the east.  The smell of musky air wafts in on a draft from the west
+
+smelling something of dirt and dust.  Large patches of moss line the cave
+
+wall to the south here, while to the north is a sheet of solid, bare
+
+granite.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 80509 10 10 5
+D3
+~
+~
+0 -1 80507 10 10 5
+E
+moss~
+The moss here is of a deep-purple hue.  Small strands of it curl about
+
+many of the available niches and irregularities along the wall.  A few
+
+patches glow with a pale light.
+
+~
+-1
+S
+
+#80509
+A Collapsed Boulder~
+A huge boulder has fallen from the ceiling here and almost completely
+
+blocked the passage to the east.  The faint path on the tunnel floor
+
+leads under the boulder and out the other side to continue east.  The
+
+north wall is noticeably warmer than the surrounding stone, while to the
+
+south the wall is completely covered with a thick layer of long, hanging
+
+strands of moss.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 80510 10 10 5
+D2
+moss~
+moss~
+2187 -1 80511 10 10 5
+D3
+~
+~
+0 -1 80508 10 10 5
+E
+moss~
+The moss hanging on the south wall is very thick.  It's dark greenish
+
+strands wave a bit in the breeze of your passing as if there is an
+
+opening behind it.
+
+~
+A
+~
+~
+act_tochar( #squeeze, ch );
+
+act_notchar( #squeezer, ch );
+
+continue;
+
+~
+E
+squeeze~
+You squeeze past the large boulder and continue east.
+
+~
+E
+squeezer~
+$n squeezes past a large boulder and continues east.
+
+~
+!
+3 0 2
+2475 9 1509949540 3 0
+-1
+S
+
+#80510
+A Warm Passage~
+The tunnel is much warmer here than to the west, the north wall is
+
+practically radiating heat.  The faint path on the floor can still be
+
+seen and it continues to the east and west.  Long strands of moss hang
+
+from the ceiling obscuring your view of it.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 80514 10 10 5
+D3
+~
+~
+0 -1 80509 10 10 5
+E
+moss~
+The moss here hanging from the ceiling glows a deep red color.  The
+
+strands of it must be very long, as you can't see the ceiling of the
+
+tunnel past them.
+
+~
+2475 9 1509949540 3 0
+-1
+S
+
+#80511
+A Hidden Cavern~
+A pile of rocks and rubble here lie strewn about on the floor as if the
+
+fall of the boulder to the north caused the wall to collapse here.  Much
+
+of the rockfall looks to have been cleared and moved nearer the west and
+
+south wall, in the south-west corner is a large pile of rubble.  The
+
+passage continues further to the east, while to the north the wall is
+
+hung with long strands of dark-green moss.
+
+~
+~
+-235274236 11 9 0
+D0
+moss~
+moss~
+2187 -1 80509 10 10 5
+D1
+~
+~
+0 -1 80512 10 10 5
+E
+moss~
+The moss on the north wall hangs in long, deep-green strands.  The breeze
+
+of your passing causes it to sway a bit hinting that there may be an
+
+opening behind it.
+
+~
+78 17 1509949540 -2 0
+-1
+S
+
+#80512
+A Darkened Passage~
+The passage here is littered with small bones and piles of dirt that
+
+appear to have been made by hand.  The ceiling looks to have had some
+
+work done to it as well, as there are no jagged edges or loose stones. 
+
+The walls to the north and south have scattered patches of glowing-red
+
+moss on them that provide insufficient lighting to see.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 80513 10 10 5
+D3
+~
+~
+0 -1 80511 10 10 5
+E
+moss~
+The moss here glows slightly with a deep reddish color.  The roots take
+
+hold in the small cracks and crevices that run along the walls.
+
+~
+E
+piles dirt~
+The piles of small bones and dirt that are scattered about the room look
+
+as if they were piled up intentionally by someone or something.  They all
+
+look as if they are of equal height and are meticulously seperated by
+
+size.
+
+~
+-1
+S
+
+#80513
+A Dead End~
+The tunnel here ends suddenly in a light-brown stone wall, pitted deeply
+
+with holes.  The floor is littered with small stone chips and there is a
+
+pile of dried out moss in the north east corner.  The area here has signs
+
+of recent habitation, as there is a small fire pit in the south east
+
+corner.
+
+~
+~
+-235274236 11 9 0
+D3
+~
+~
+0 -1 80512 10 10 5
+A
+unlock pick~
+large wooden chest closed~
+if( !mob_in_room( 2479, room ) )
+
+  continue;
+
+else {
+
+act_tochar( #block, ch );
+
+act_notchar( #blockr, ch );
+
+  }
+
+~
+E
+block~
+@bYour way is blocked by a bedraggled old gnome.
+
+~
+E
+blockr~
+@b$n's way is blocked by a bedraggled old gnome.
+
+~
+!
+0 0 0
+1049 49 1509949540 -2 0
+2 81 1509949510 -2 0
+16 81 1509949445 -2 0
+2 81 1509949510 -2 0
+2 81 1509949510 -2 0
+2 81 1509949510 -2 0
+2 81 1509949510 -2 0
+14 81 1509949515 -2 0
+14 81 1509949515 -2 0
+14 81 1509949515 -2 0
+14 81 1509949515 -2 0
+14 81 1509949515 -2 0
+14 81 1509949515 -2 0
+3442 81 1509949540 -2 0
+2796 81 1509949445 -2 0
+2479 9 1509949540 3 0
+-1
+S
+
+#80514
+A Twisted Passage~
+The tunnel here is stiflingly hot, the air is thick with moisture that
+
+covers the walls and ceiling with a thin layer of wetness.  The shape of
+
+the tunnel has changed here and now is round and twisted, with what look
+
+much like waves frozen in the solid stone.  A faint path can be seen
+
+leading north and west here.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 80515 10 10 5
+D3
+~
+~
+0 -1 80510 10 10 5
+-1
+S
+
+#80515
+A Scalding Tunnel~
+The circular walls of the tunnel here are so hot they have begun to glow
+
+a dull red in color.  The moisture here, despite the heat, is collecting
+
+on the walls and running to the floor making small puddles of stagnant
+
+muddy froth that almost boil.  In places a faint path can be seen leading
+
+north and south.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 80516 10 10 5
+D2
+~
+~
+0 -1 80514 10 10 5
+E
+walls~
+The walls here are deeply pitted as if they have been somewhat eaten away
+
+by the intense heat.  In spots the stone appears to have softened and
+
+begun to sag.
+
+~
+A
+touch search~
+walls~
+act_tochar( #burn, ch );
+
+act_notchar( #burnr, ch );
+
+i = random( 10, 20 );
+
+dam_element( ch, i, "The searing wall", 1);
+
+inflict_fire( ch, mob, i, "The searing wall" );
+
+~
+E
+burn~
+@rYou touch the red-hot wall.
+
+~
+E
+burnr~
+@r$n touches the red-hot wall.
+
+~
+!
+0 0 0
+-1
+S
+
+#80516
+A Dead End in a Scalding Tunnel~
+The tunnel here ends suddenly in a small pool of lava, the hissing of the
+
+moisture in the air condensing on the walls and dripping into it is
+
+constant.  A faint haze of mist hangs in the air from water evaporating
+
+as soon as it hits the lava.  The faint path on the tunnel floor ends
+
+suddenly before the pool and there is a small pile of bones and chipped
+
+stones before the pool.
+
+~
+~
+-235274236 11 9 0
+D2
+~
+~
+0 -1 80515 10 10 5
+E
+bones~
+The small pile of bones and chips of stone here look to have been
+
+scattered about quite randomly.  Many of the chips of stone look like
+
+small shoddy arrow heads that probably would never hold up.  One of the
+
+larger pieces of stone looks almost buried in the west wall.
+
+~
+A
+move pull push~
+stone~
+act_tochar( #push, ch );
+
+act_notchar( #pushr, ch );
+
+unlock( find_room( 80505 ), east );
+
+open( find_room( 80505 ), east );
+
+~
+E
+push~
+@bAs you move the small piece of stone you hear the far away sound of grinding!
+
+~
+E
+pushr~
+@bAs $n moves the small piece of stone you hear teh far away sound of grinding!
+
+~
+!
+0 0 0
+A
+~
+~
+i = 2d5+5;
+
+if( is_player( ch ) ) {
+
+  act_tochar( #heat, ch );
+
+  dam_element( ch, i, "The searing heat", 1 );
+
+  inflict_fire( ch, mob, i, "The searing heat" );
+
+  }
+
+~
+E
+heat~
+@RA searing heat wafts up from the pool of lava!
+
+~
+!
+1 0 4
+A
+~
+~
+i = 2d5+5;
+
+loop( all_in_room ) {
+
+  if( is_player( rch ) ) {
+
+    act_tochar( #heat, rch );
+
+    dam_element( rch, i, "The searing heat", 1 );
+
+    inflict_fire( ch, mob, i, "The searing heat" );
+
+    }
+
+  }
+
+~
+E
+heat~
+@RA searing heat wafts up from the pool of lava!
+
+~
+!
+2 400 0
+2478 9 1509949540 3 0
+-1
+S
+
+#80517
+A Dark Tunnel~
+The area here is littered with chewed looking bones and large piles of
+
+mud near the west wall.  Water is slowly seeping in from the wall making
+
+the floor a sticky mess.  Cobwebs hang from the ceiling on the east side
+
+of the tunnel and appear to get thicker to the north.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 80518 10 10 5
+D2
+~
+~
+0 -1 80506 10 10 5
+E
+extra bones piles mud~
+The few bones scattered about are quite chewed upon and look very old. 
+
+The piles of mud look as if something has been digging near the walls.
+
+~
+A
+search move dig~
+piles mud~
+act_tochar( #mud, ch );
+
+act_notchar( #mudr, ch );
+
+if( rflag( reset0, room ) ) {
+
+  if( random( 1, 10 ) < 3 ) {
+
+    obj_to_char( oload( 3823 ), ch );
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #find, ch );
+
+    act_notchar( #findr, ch );
+
+    }
+
+  }
+
+~
+E
+mud~
+You search through the sticky mud, your hands getting covered with it.
+
+~
+E
+mudr~
+$n searches through the sticky mud, $s hands getting covered with it.
+
+~
+E
+find~
+You find a mud encrusted rock!
+
+~
+E
+findr~
+$n stands up looking at something they dug from the mud!
+
+~
+!
+0 0 0
+2469 9 1509949540 3 0
+-1
+S
+
+#80518
+A Bend in the Tunnel~
+The tunnel turns off to the east here and more water seeps through
+
+the west wall than further to the south.  A small pool has formed in the
+
+north-west corner and is covered with slime and muck.  The mud here is
+
+deeper and near the ceiling is a thick layer of spider webbing.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 80519 10 10 5
+D2
+~
+~
+0 -1 80517 10 10 5
+E
+pool~
+The pool of water here in the north-west corner of this room is covered
+
+with a thick layer of oily sludge.  A few small bugs of some kind skitter
+
+away to the walls leaving the surface undisturbed.
+
+~
+A
+~
+~
+send_to_room( #drip, room );
+
+~
+E
+drip~
+Water drips into the pool in the corner and echos through the hallway.
+
+~
+!
+2 400 0
+A
+search~
+pool~
+if( random( 1, 3 ) == 1 ) {
+
+  if( rflag( reset1, room ) ) {
+
+    if( is_player( ch ) ) {
+
+      i = random( 1, 5 );
+
+      if( i > 3 ) {
+
+        send_to_char( #true_char, ch );
+
+        act_notchar(#true_room, ch );
+
+        obj_to_char( oload( 2 ), ch );
+
+        remove_rflag( reset1, room );
+
+        end;
+
+        }
+
+      if( i < 3 ) {
+
+        if( random( 1, 5 ) < 3 ) {
+
+          send_to_char( #true_char2, ch );
+
+          act_notchar( #true_room, ch );
+
+          obj_to_char( oload( 803 ), ch );
+
+          remove_rflag( reset1, room );
+
+          end;
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+send_to_char( #false_char, ch );
+
+act_notchar( #false_room, ch );
+
+~
+E
+true_char~
+You root around in the slime and muck, and find a gold coin covered in slime...
+
+~
+E
+true_room~
+You see $n stoop down and feel around in the pool, then stand up and smile to $self.
+
+~
+E
+false_char~
+You feel around in the pool, and end up with slime and muck all over your hands.
+
+~
+E
+false_room~
+You see $n root around in the pool, and end up with slime covered hands.
+
+~
+E
+true_char2~
+You root around in the pool, and find a slime covered silk ribbon.
+
+~
+!
+0 0 0
+-1
+S
+
+#80519
+A Web Filled Passage~
+The cobwebs are very thick here and many come loose from the walls and
+
+ceiling and stick to you.  Tiny spiders can be seen high up in the webs
+
+and beyond that a few sparse patches of bluish-glowing moss.  The floor
+
+is covered with a thin layer of mud that peters out to the east.  A few
+
+small rocks are scattered about the area.
+
+~
+~
+-235274228 11 9 0
+D1
+~
+~
+0 -1 80520 10 10 5
+D3
+~
+~
+0 -1 80518 10 10 5
+E
+cobwebs~
+The cobwebs are thin and wispy, thickening to the east.  Small bits of
+
+dust and dirt are caught in many of them.
+
+~
+81 17 1509949540 -2 0
+-1
+S
+
+#80520
+A Giant Spiders Nest~
+The webs in this area are thick and heavy, almost as big around as an
+
+ogre's finger.  The webs smell musty and although they are large the
+
+slight breeze of your passing causes some of the webs to begin to sway
+
+back and forth.  Dust has collected in them nearer the floor and tiny
+
+spiders can occasionally be seen skittering about the webwork.  The
+
+webwork continues heavily to the east and south.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 80521 10 10 5
+D2
+~
+~
+0 -1 80522 10 10 5
+D3
+~
+~
+0 -1 80519 10 10 5
+A
+~
+~
+if( is_player( ch ) ) {
+
+  if( !mob_in_room( 2477, room ) ) {
+
+    i = random( 1, 10 );
+
+    if( find_stat( ch, dex ) <= random( 10, 14 ) ) {
+
+      if( i < 6 ) {
+
+        act_tochar( #move, ch );
+
+        act_notchar( #move_web, ch );
+
+send_to_room( #spi, room );
+
+        mload( 2477, room );
+
+        }
+
+      }
+
+    }
+
+  }
+
+~
+E
+move~
+@BYour foot slips and hits a strand of web causing a strong tug on the entire weaving!
+
+~
+E
+move_web~
+@B$n's foot slips and hits a strand of web causing a strong tug on the entire weaving!
+
+~
+E
+spi~
+@WA small misshapen spider drops from the webbing on a strand of silk!
+
+~
+!
+1 0 14
+-1
+S
+
+#80521
+A Giant Spiders Nest - North-east Corner~
+The sounds of water dripping heard further west begin to fade as the
+
+webbing here muffles them almost to silence.  Piles of bones and
+
+dessicated remains lie strewn about haphazardly as if something large has
+
+been feeding in the area recently.  Propped up in the northwest corner is
+
+the fresh remains of what appears to have once been an ogre.  The webs
+
+continue to the south and west.
+
+~
+~
+-235274236 11 9 0
+D2
+~
+~
+0 -1 80523 10 10 5
+D3
+~
+~
+0 -1 80520 10 10 5
+E
+ogre remains~
+The corpse lying here is not well preserved.  It's slack skin leeched
+
+tight to it's bones is a dark-grey in color.  It appears to have been
+
+quite dessicated.
+
+~
+E
+extra piles bones~
+The piles of bones here look as if they have been stacked in the corner of
+
+this small cavern.  None of them appear to have any significant damage done
+
+to them but they do all appear to be from large creatures of some kind.
+
+~
+A
+~
+~
+if( is_player( ch ) ) {
+
+  if( !mob_in_room( 2477, room ) ) {
+
+    i = random( 1, 10 );
+
+    if( find_stat( ch, dex ) <= random( 10, 14 ) ) {
+
+      if( i < 6 ) {
+
+        act_tochar( #move, ch );
+
+        act_notchar( #move_web, ch );
+
+send_to_room( #spi, room );
+
+        mload( 2477, room );
+
+        }
+
+      }
+
+    }
+
+  }
+
+~
+E
+move~
+@BYour foot slips and hits a strand of web causing a strong tug on the entire weaving!
+
+~
+E
+move_web~
+@B$n's foot slips and hits a strand of web causing a strong tug on the entire weaving!
+
+~
+E
+spi~
+@WA small misshapen spider drops from the webbing on a strand of silk!
+
+~
+!
+1 0 12
+A
+search~
+corpse remains~
+act_tochar( #search, ch );
+
+act_notchar( #searchr, ch );
+
+if( rflag( reset1, room ) ) {
+
+if( random( 1, 10 ) < 2 ) {
+
+obj_to_char( oload( 3028 ), ch );
+
+act_tochar( #find, ch );
+
+act_notchar( #findr, ch );
+
+remove_rflag( reset1, room );
+
+end;
+
+}
+
+}
+
+~
+E
+search~
+You search through the dessicated remains of the ogre.
+
+~
+E
+searchr~
+$n searches through the dessicated remains of an ogre.
+
+~
+E
+find~
+@bYou pry a bronze dagger from the corpses hand!
+
+~
+E
+findr~
+$n prys a bronze dagger from the corpses hand!
+
+~
+!
+0 0 0
+81 17 1509949540 -2 0
+-1
+S
+
+#80522
+A Giant Spiders Nest~
+The webs here completely cover the the area, a few larger rocks here have
+
+the tips uncovered.  The smell of something rotting is strong and seems
+
+to come from the north-east the strongest.  It is very quiet here due to
+
+the heavy webbing absorbing much of the sounds, but an occasional
+
+chittering can be heard coming from the south-east.  A torn, empty egg
+
+sack lies in the corner of the room.
+
+~
+[Srad'Ion] When I type "look egg" ..."halfling" is misspelled
+
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 80520 10 10 5
+D1
+~
+~
+0 -1 80523 10 10 5
+E
+webs~
+The webs here are of a pure-white color that looks very newly made.  Some
+
+of them on the floor even have no dust clinging to them yet.
+
+~
+E
+egg sack~
+The egg sack is almost large enough for a small halfing to climb into. 
+
+It's outer covering is made of a very thick webbing much different than
+
+that filling the tunnel around you.
+
+~
+A
+~
+~
+if( is_player( ch ) ) {
+
+  if( !mob_in_room( 2477, room ) ) {
+
+    i = random( 1, 10 );
+
+    if( find_stat( ch, dex ) <= random( 10, 14 ) ) {
+
+      if( i < 6 ) {
+
+        act_tochar( #move, ch );
+
+        act_notchar( #move_web, ch );
+
+send_to_room( #spi, room );
+
+        mload( 2477, room );
+
+        }
+
+      }
+
+    }
+
+  }
+
+~
+E
+move~
+@BYour foot slips and hits a strand of web causing a strong tug on the entire weaving!
+
+~
+E
+move_web~
+@B$n's foot slips and hits a strand of web causing a strong tug on the entire weaving!
+
+~
+E
+spi~
+@WA small misshapen spider drops out of the webbing on a strand of silk!
+
+~
+!
+1 0 3
+-1
+S
+
+#80523
+A Giant Spiders Nest~
+You are engulfed in total silence other than your own noises and the
+
+occasional random chittering from directly south.  The webbing here is
+
+very thick and sticks to everything in sight.  The smells of something
+
+rotting waft about but seem stronger to the north.  A large stalagtite
+
+hangs from the ceiling and is the only thing here not completly covered
+
+by webs.  The web-work continues to the north and west, but is thicker to
+
+the south.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 80521 10 10 5
+D2
+~
+~
+0 -1 80524 10 10 5
+D3
+~
+~
+0 -1 80522 10 10 5
+A
+~
+~
+if( is_player( ch ) ) {
+
+  if( !mob_in_room( 2477, room ) ) {
+
+    i = random( 1, 10 );
+
+    if( find_stat( ch, dex ) <= random( 10, 14 ) ) {
+
+      if( i < 6 ) {
+
+        act_tochar( #move, ch );
+
+        act_notchar( #move_web, ch );
+
+        send_to_room( #spi, room );
+
+        mload( 2477, room );
+
+        }
+
+      }
+
+    }
+
+  }
+
+~
+E
+move_web~
+@B$n's foot slips and hits a strand of web causing a strong tug on the
+
+entire weaving!
+
+~
+E
+move~
+@BYour foot slips and hits a strand of web causing a strong tug on the
+
+entire weaving!
+
+~
+E
+spi~
+@WA small misshapen spider drops out of the webbing on a strand of silk!
+
+~
+!
+1 0 13
+81 17 1509949540 -2 0
+-1
+S
+
+#80524
+A Large Egg Sack~
+Many bones cover the area and tiny spiderlings can be seen scurrying all
+
+about the walls, ceiling and floor.  Webbing here is of a pure white as
+
+if it is newer than that to the north.  A huge web-enshrouded egg sack
+
+lies on the floor near the south wall.
+
+~
+[Srad'Ion] The spider sentence doesn't have a period.
+
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 80523 10 10 5
+E
+egg sack~
+The web sack lying on the floor near the south wall is huge.  It's
+
+bulging sides are covered in a pure-white shroud of sticky silk.
+
+~
+E
+webbing~
+The webwork here is of very thick pure-white strands as thick as your
+
+wrist in places.  Many small bones and pieces of rock are caught in them
+
+near the floor.
+
+~
+E
+bones~
+The bones here are all quite large and appear to come from quite a few
+
+different types of creatures.  Some are still held together with tendons
+
+still intact, while others are scattered about haphazardly.
+
+~
+A
+~
+~
+if( mob_in_room( 2472, find_room( 80530 ) ) )
+
+set_pos( ch, 7 );
+
+~
+!
+0 0 0
+81 17 1509949540 -2 0
+2472 9 1509949540 3 0
+-1
+S
+
+#80525
+A Small Passage Through the Stone~
+A small passage here leads off to the east.  The walls of the tunnel look
+
+to have been melted away somehow.  The stink of decay wafts in on a
+
+breeze coming in from the east.  The tunnel is clear of all debris and
+
+rubble and the sounds of something grinding can be heard in the distance.
+
+~
+~
+-235405299 11 9 0
+D1
+~
+~
+0 -1 80526 10 10 5
+D3
+wall~
+wall door~
+135 -1 80505 10 10 5
+-1
+S
+
+#80526
+Bend in a Small Tunnel~
+The tunnel here turns off sharply to the north, it's walls gleam with a
+
+slightly glossy effect.  The slight breeze from the north carries with it
+
+a strong smell of rot and decay.  The stone here is smoother than that to
+
+the west.
+
+~
+~
+-235405307 11 9 0
+D0
+~
+~
+0 -1 80527 10 10 5
+D3
+~
+~
+0 -1 80525 10 10 5
+-1
+S
+
+#80527
+Bend in a Small Tunnel~
+The tunnel here turns sharply to the west and the scent of something
+
+rotting is very strong.  The grinding sound seems to come from the west
+
+and now makes the stone vibrate slightly.  The dark-gray stone now seems
+
+to be very smooth and slightly rippled.
+
+~
+~
+-235405307 11 9 0
+D2
+~
+~
+0 -1 80526 10 10 5
+D3
+~
+~
+0 -1 80528 10 10 5
+-1
+S
+
+#80528
+Bend in a Small Tunnel~
+The soft stone here cracks and crumbles easily and looks to be fading in
+
+color from dark-gray to an almost pure white further to the north . Small
+
+chunks of stone fall from the ceiling at times as if a cave-in could
+
+occur at any moment.  The reek of death and rot hangs thickly in the air
+
+here.
+
+~
+~
+-235405307 11 9 0
+D0
+~
+~
+0 -1 80529 10 10 5
+D1
+~
+~
+0 -1 80527 10 10 5
+-1
+S
+
+#80529
+Dead End in a Small Tunnel~
+The stone here is purest white and as soft as wet clay.  There is a
+
+puddle of dark-green bile-like ooze near the north wall here that steams
+
+and bubbles.  The scent of rotting flesh hangs thickly in the air and the
+
+walls are warm to the touch.  A large dark hole can be seen in middle of
+
+the north wall.
+
+~
+~
+-235405307 11 9 0
+D2
+~
+~
+0 -1 80528 10 10 5
+E
+hole~
+The large hole in the north wall is filled with dark-black slime that
+
+stinks of rotting flesh.  Almost as wide as the wall, it is only about
+
+two handspans in depth.  The back wall of the hole is pitted deeply and
+
+looks to have been eaten away somehow.
+
+~
+2480 9 1509949540 3 0
+-1
+S
+
+#80530
+Transport room for the phase spider~
+The phase spider phases in battle and appears here.
+
+~
+~
+-235274236 11 9 0
+2477 9 1509949540 3 0
+2477 9 1509949540 3 0
+2477 9 1509949540 3 0
+2477 9 1509949540 3 0
+2477 9 1509949540 3 0
+2477 9 1509949540 3 0
+2477 9 1509949540 3 0
+2477 9 1509949540 3 0
+2477 9 1509949540 3 0
+2477 9 1509949540 3 0
+2477 9 1509949540 3 0
+2477 9 1509949540 3 0
+-1
+S
+
+#80531
+A Small Padded Room~
+The walls of this ten foot by ten foot room are covered in deep, thick,
+
+white padding.  The ceiling ten feet above the floor is even covered with
+
+it.  A small drain hole is set in the center of the padded floor.
+
+~
+[Morkaleb] Don't piss in the drain Valgo!
+
+~
+-235274236 11 9 0
+-1
+S
+
+#0
+

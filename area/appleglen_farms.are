@@ -1,0 +1,1064 @@
+#AREA
+Appleglen Farm~
+Rhen Cyron~
+~
+
+0 0
+0
+#ROOMS
+
+#52500
+Foot Trail Between Two Trees~
+Two appletrees straddle a foot trail which meanders further east and
+
+connects with the road to your west.  A fence of stacked stones begins at
+
+each tree, defining the boundaries of the farm.  One fence starts at the
+
+tree to your north and leads north till it adjoins the city wall, just
+
+visible in the distance.  The other wall begins at the southern tree and
+
+heads east, defining the southern boundary of the farm.  Fertile, green
+
+fields rise northward toward the edge of Appleglen.
+
+~
+[Rhen] i might want to put a small gate here also
+
+[Rhen] changed my mind about the gate
+
+[Rhen] ok not sure if it should be foot trail or foottrail or foot-trail
+
+[Rhen] rhen
+
+~
+-235405312 2 5 0
+D0
+~
+~
+0 -1 52501 10 10 5
+D1
+~
+~
+0 -1 52505 10 10 5
+D3
+~
+~
+0 -1 77052 10 10 5
+A
+~
+~
+if( obj_in_room( 702, room ) || obj_in_room( 3595, room ) )
+
+  end;
+
+send_to_room( #apple_drops, room );
+
+if( random( 1, 10 ) == 10 )
+
+  obj_to_room( oload( 702 ), room );
+
+else
+
+  obj_to_room( oload( 3595 ), room );
+
+~
+E
+apple_drops~
+An apple drops from the tree, hitting the ground with a thump.
+
+~
+!
+4 300 0
+-1
+S
+
+#52501
+Fertile Field~
+Lush, green grass kept low by grazing, covers the hillside clear to the
+
+edge of the city wall just north.  A fence of stacked stones boundaries the
+
+field along its western edge and grass continues to cover the hillside to
+
+you east, 
+
+~
+[Ingra] The last sentence isn't finished?
+
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 52502 10 10 5
+D1
+~
+~
+0 -1 52504 10 10 5
+D2
+~
+~
+0 -1 52500 10 10 5
+932 9 1509949540 3 0
+-1
+S
+
+#52502
+At the City Wall~
+The land flattens at the base of the city wall along the northen edge of
+
+the field.  Thick vines grow along the walls edge, climbing ever closer
+
+to its top.  A fence of piled stones stands between the field and the
+
+road that runs along its western boundary.
+
+~
+[Rhen] hmm load an animal of some sort here.
+
+~
+-235405312 2 9 0
+D1
+~
+~
+0 -1 52503 10 10 5
+D2
+~
+~
+0 -1 52501 10 10 5
+E
+wall city~
+The city wall stands about two feet tall and is constructed of stones
+
+carefully quarried.
+
+~
+2297 9 1509949540 3 0
+-1
+S
+
+#52503
+At the City Wall~
+The hill flattens as it approaches the city wall and offers a panoramic
+
+view of the lush, green field below.  Large vines cling to the wall and
+
+permeate the cracks between the stones.  A foot trail can be seen running
+
+along a fence to your south and a farmhouse sits near a garden to the
+
+southeast.
+
+~
+~
+-235405312 2 9 0
+D1
+~
+~
+0 -1 52508 10 10 5
+D2
+~
+~
+0 -1 52504 10 10 5
+D3
+~
+~
+0 -1 52502 10 10 5
+E
+wall city~
+The wall stands about two feet tall and is constructed of quarried stones.
+
+~
+-1
+S
+
+#52504
+Fertile Field~
+Grazed grass blankets the hillside in fertive clumps with an occasional
+
+wild flower rising above the carpet of green.  The field rises to meet
+
+the city wall to your north and continues to skirt the hill to your east
+
+and west.  A small foot trail runs along the fence to your south.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 52503 10 10 5
+D1
+~
+~
+0 -1 52507 10 10 5
+D2
+~
+~
+0 -1 52505 10 10 5
+D3
+~
+~
+0 -1 52501 10 10 5
+-1
+S
+
+#52505
+Foot Trail Beside a Fence~
+Worn from use, the foot trail continues its path east and west, following
+
+the fence of stacked stones to the south.  Clumps of grass grow along the
+
+base of the fence with long, flowering sprouts hanging over the trail. 
+
+The field north grades slightly higher as it begins its approach to the
+
+city wall.
+
+~
+[Rhen] 4 rooms a day is my limit
+
+[Rhen] love to ramble on so, yes i do
+
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 52504 10 10 5
+D1
+~
+~
+0 -1 52506 10 10 5
+D3
+~
+~
+0 -1 52500 10 10 5
+-1
+S
+
+#52506
+Foot Trail Beside a Fence~
+The foot trail you walk upon, parallels the fence of stacked stones to your
+
+south.  Just to the east, the fence curves southward, skirting a growth of
+
+elms.  Clumps of grass, which fray the edges of the path, are kept at bay
+
+from constant use of the trail.  A field of lush, green grass blankets
+
+the hillside to your north.
+
+~
+[Rhen] mut change the path thngy
+
+[Rhen] path thingy changed
+
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 52507 10 10 5
+D1
+~
+~
+0 -1 52513 10 10 5
+D3
+~
+~
+0 -1 52505 10 10 5
+905 9 1509949540 3 0
+-1
+S
+
+#52507
+Fertile Field~
+The field is carpeted with a thick, green grass which barely grows above
+
+your ankles.  It ends at a trail to your south and climbs a small hill to
+
+your north.  A small farmhouse sits shaded by a large tree to your east.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 52508 10 10 5
+D1
+~
+~
+0 -1 52512 10 10 5
+D2
+~
+~
+0 -1 52506 10 10 5
+D3
+~
+~
+0 -1 52504 10 10 5
+932 9 1509949540 3 0
+2297 9 1509949540 3 0
+-1
+S
+
+#52508
+Overlook~
+You stand outside the southeast corner of the city wall which is only
+
+stands about two feet tall.  The flattened top of the hill offers a view
+
+of the field and farm below as well as a nice spot to rest and wile away
+
+some time.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 52509 10 10 5
+D1
+~
+~
+0 -1 52511 10 10 5
+D2
+~
+~
+0 -1 52507 10 10 5
+D3
+~
+~
+0 -1 52503 10 10 5
+E
+city wall~
+The city wall corners, heading west and north.
+
+~
+-1
+S
+
+#52509
+Corner Field~
+A fence of stacked stones meets the city wall in the northwest corner of
+
+the field.  Wild daisies grow in abundance scattered about in clumped
+
+groups.  The grass of the field grows sparsely in clumps among the tracks
+
+leading to a block of salt which sits on the ground.  The hill begins its
+
+slight descent to the fertile field to your east.
+
+~
+[Rhen] hehe when i have a better name for this room it will be changed
+
+~
+-235405312 2 9 0
+D1
+~
+~
+0 -1 52510 10 10 5
+D2
+~
+~
+0 -1 52508 10 10 5
+E
+city wall~
+The city wall is constructed of quarried stone and stands about two feet
+
+tall.
+
+~
+E
+fence piled stones~
+The short fence is comprised of gathered stones which have been neatly
+
+stacked to form a fence.
+
+~
+905 9 1509949540 3 0
+-1
+S
+
+#52510
+Hill Beside a Fence~
+The hill ascends toward the city to your west and decends as you look
+
+east.  A fence of stacked stones runs along the northern boundary of the
+
+farm, seperating the farm to the north with this farm.  The lush grass of
+
+the field offers good grazing for the animals of the farm.
+
+~
+~
+-235405312 2 9 0
+D1
+~
+~
+0 -1 52519 10 10 5
+D2
+~
+~
+0 -1 52511 10 10 5
+D3
+~
+~
+0 -1 52509 10 10 5
+-1
+S
+
+#52511
+Hillside~
+The hillside flattens to you east and south but ascends gradually to a
+
+summit to your west.  Lush grass blankets the area with an occasional
+
+wildflower listing gently in the breeze.  A small farmhouse sits beneath
+
+a large tree to the southeast.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 52510 10 10 5
+D1
+~
+~
+0 -1 52518 10 10 5
+D2
+~
+~
+0 -1 52512 10 10 5
+D3
+~
+~
+0 -1 52508 10 10 5
+2297 9 1509949540 3 0
+-1
+S
+
+#52512
+Before a Small Farmhouse~
+The foot trail ends at the front door of a small farm house which lies to
+
+your east.  A large white oak tree grows along the northern side of the
+
+trail, offering a nice shade for the house and any who wish to rest at
+
+its base.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 52511 10 10 5
+D1
+door~
+door~
+131 -1 52517 10 10 5
+D2
+~
+~
+0 -1 52513 10 10 5
+D3
+~
+~
+0 -1 52507 10 10 5
+E
+farm house~
+The small farm house, seemingly two stories tall, has a small stone step
+
+that gains access to the small round door.  Well-pruned bushes grow
+
+against the sides of the house but do not grow above the wee windows.
+
+The house is made of smooth round river stones.
+
+~
+2322 9 1509949540 3 0
+-1
+S
+
+#52513
+Bend in the Foot Trail~
+The foot trail turns northward just as the fence of stacked stones curves
+
+southward, skirting a growth of elms to your south.  The grass which
+
+blankets each side of the trail, is kept low, seemingly from grazing.  A
+
+small house is just visible in the distance slightly north and east from
+
+here.  A small garden, rowed neatly, grows to your east.
+
+~
+[Rhen] load an animal here
+
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 52512 10 10 5
+D1
+~
+~
+0 -1 52516 10 10 5
+D2
+~
+~
+0 -1 52514 10 10 5
+D3
+~
+~
+0 -1 52506 10 10 5
+E
+south~
+The branches of the elms grow low to the ground, almost touching it.
+
+~
+E
+elms~
+The branches of the elms grow low tot he ground, almost touching it.
+
+~
+-1
+S
+
+#52514
+Thicket of Elms~
+The branches of the elms grow low to the ground, almost touching it. 
+
+Some of the trees are rather large with ample boughs and branches upon
+
+which to climb.  The smooth bark of the trees are covered with a variety
+
+of lichen's which vary in colors of green and brown.
+
+~
+Currently, only players can do this.. not mobs. Eventually would
+
+like to have appropriate mobs be able to (humanoids, etc).
+
+~
+-201850880 2 9 0
+D0
+~
+~
+0 -1 52513 10 10 5
+D1
+~
+~
+0 -1 52515 10 10 5
+A
+climb~
+tree~
+if( !is_player( ch ) )
+
+  end;
+
+if( find_skill( ch, climb ) < 3 ) {
+
+  act_tochar( #fail, ch );
+
+  act_notchar( #rfail, ch );
+
+  end;
+
+  }
+
+else {
+
+  act_tochar( #succeed, ch );
+
+  act_notchar( #rsucceed, ch );
+
+  transfer( ch, find_room( 52523 ) );
+
+  act_notchar( #asucceed, ch );
+
+  }
+
+~
+E
+fail~
+Try as you may, attaining the first branch seems too difficult.
+
+~
+E
+rfail~
+$n attempts to climb the tree but is unable to navigate the branches.
+
+~
+E
+succeed~
+After studying the branches, you discern a path and gain purchase.
+
+~
+E
+rsucceed~
+$n wends his way through the tangle of branches, reaching a higher bough.
+
+~
+E
+asucceed~
+$n arrives from below, having navigated the tangle of branches.
+
+~
+E
+not_capable~
+$n is not capable of climbing up the tree.
+
+~
+!
+0 0 0
+-1
+S
+
+#52515
+Thicket of Elms~
+The branches of the elms sweep the ground, leaving it bare of growth,
+
+save for the saplings trying to gain purchase.  Lichens of varied colors
+
+of brown and green, grow in abundance on the smooth trunks of the trees. 
+
+Ample branches on some of the larger trees offer access to their heights. 
+
+A bubbly @Bspring@n empties into a small creek which flows further north.
+
+~
+~
+-201850880 2 9 0
+D0
+~
+~
+0 -1 52516 10 10 5
+D3
+~
+~
+0 -1 52514 10 10 5
+696 17 1509949540 -2 0
+-1
+S
+
+#52516
+Well Tended Garden~
+Symetric rows of various vegetables thrive in the fertile ground at the
+
+base of a hill.  A few rows of wild daisies have been planted along each
+
+side of the lush garden, and attract a myriad of insects.  A small path
+
+leads along the northern edge between the garden and a small house which
+
+lies to the north.  A small barn stands just east of here.
+
+~
+~
+-235405304 2 9 0
+D1
+~
+~
+0 -1 52521 10 10 5
+D2
+~
+~
+0 -1 52515 10 10 5
+D3
+~
+~
+0 -1 52513 10 10 5
+-1
+S
+
+#52517
+Small Farmhouse~
+Quaint pieces of furniture are scattered throughout this single room.  A
+
+stone hearth sits along the south wall and has been afixed with various
+
+cooking utensils.  A small portrait hangs on the north wall just beside
+
+the staircase leading upstairs.  Two round doors, one on the west wall
+
+and the other on the east, gain access to the outdoors.
+
+~
+[Rhen] farmhouse here
+
+[Rhen] and on the third day i created doors and found them to be good :)
+
+~
+-235405312 2 4 0
+D1
+backdoor~
+round backdoor~
+131 -1 52520 10 10 3
+D3
+frontdoor~
+round frontdoor~
+131 -1 52512 10 10 5
+D4
+~
+~
+0 -1 52526 10 10 5
+E
+furniture scattered~
+Among the small pieces of furniture are two chairs, a cupboard and a table.
+
+~
+E
+chairs table~
+Two ladderback chairs with seats of woven twine, sit a table finely
+
+crafted and painted yellow.
+
+~
+E
+cupboard~
+Painted the same yellow as the table, the cupboard also has some flowers
+
+painted along each side.  There are two doors above the counter and two
+
+larger doors below the counter of the cupboard.
+
+~
+E
+portrait~
+The portrait is of a Halfling male and female, both smile with gleeful
+
+grins.
+
+~
+E
+cooking utensils~
+Ladles and knives hang from nails driven into the wooden mantle above the
+
+stone hearth.  Large copper pots sit to the sides of the hearth while
+
+jars of spices and preserved fruits rest on top of the mantle.
+
+~
+-1
+S
+
+#52518
+Field of Wild Daisies~
+The field is covered with a blanket of wild daisies listing gently in the
+
+breeze.  A small house stands to your south while to your north a hill
+
+rises the a flattened summit.  A small watering hole can be seen to the
+
+north.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 52519 10 10 5
+D3
+~
+~
+0 -1 52511 10 10 5
+2297 9 1509949540 3 0
+-1
+S
+
+#52519
+Watering Hole~
+A fence of stacked stones defines the field to your north and east,
+
+seperating the farm to the north from this farm.  A small watering hole,
+
+filled with water and surrounded by the tracks of various animals, sits
+
+snug in the corner of the fence.
+
+~
+~
+-235405312 2 9 0
+D2
+~
+~
+0 -1 52518 10 10 5
+D3
+~
+~
+0 -1 52510 10 10 5
+E
+watering hole~
+The watering hole seems to be no more than a large puddle, perhaps a bit
+
+more than ankle deep.  The water is muddy and unsuitable to drink.
+
+~
+-1
+S
+
+#52520
+Backyard~
+A myriad flowers grow along the fence of piled stones which skirts the
+
+northern boundary of the back yard.  The fence curves south along the
+
+eastern boundary and connects with the northeastern corner of the barn
+
+which stands to your south.  A small swing hangs from the large
+
+cottonwood tree which shades the yard.
+
+~
+~
+-235405312 2 9 0
+D2
+door~
+door~
+131 -1 52521 10 10 5
+D3
+door~
+round door~
+131 -1 52517 10 10 3
+E
+myriad flowers~
+Daisies, merrigolds and gladiolas burst in a myriad colors and scents.
+
+~
+E
+barn~
+Rather tall but skinny, the barn is painted a deep crimson. An ancient
+
+rune has been painted in white above the two large doors which gain
+
+entrance.
+
+~
+E
+swing~
+The tiny swing hangs on two ropes from a large branch high in the tree.
+
+~
+-1
+S
+
+#52521
+Inside the Barn~
+The smell of manure and hay permeates throught the building.  Two stalls,
+
+kept fresh with new straw, stand along the south wall.  Farming tools
+
+hang on the east wall just above a large box filled to the top with salt. 
+
+A plow stands in the northwest corner of the barn.  A large pile of hay
+
+occupies the southeast corner.
+
+~
+[Rhen] barn here
+
+~
+-235405308 2 9 0
+D0
+door~
+door north~
+131 -1 52520 10 10 5
+D3
+~
+~
+0 -1 52516 10 10 5
+E
+farming tools~
+Spades, hoes and rakes are among the various tools which hang along the
+
+wall.
+
+~
+E
+plow~
+Long and narrow, the wooden plow has a yolk attached to the front and two
+
+handles at the opposite end.
+
+~
+84 9 1509949540 3 0
+-1
+S
+
+#52522
+Among the Tangle of Branches~
+Under Construction.
+
+The tangle of branches is alomsot too much to navigate.
+
+~
+~
+-201850880 2 5 0
+-1
+S
+
+#52523
+Among the Branches~
+The branches grow in a tangle almost too tight to navigate.  You have
+
+managed to find some room to manuver on a large branch midway up the tree. 
+
+There are a few nests nestled among the branches.
+
+~
+~
+-201850880 2 5 0
+A
+climb~
+1 down~
+if( find_skill( ch, climb ) < 3 ) {
+
+  act_tochar( #fall, ch );
+
+  act_notchar( #rfall, ch );
+
+  transfer( ch, find_room( 52514 ) );
+
+  i = 1d2+2;
+
+  dam_message( ch, i, "the fall" );
+
+  inflict( ch, mob, i, "a fall" );
+
+  act_tochar( #afall, ch );
+
+  end;
+
+  }
+
+else {
+
+  act_tochar( #succeed, ch );
+
+  act_notchar( #rsucceed, ch );
+
+  transfer( ch, find_room( 52514 ) );
+
+  act_notchar( #asucceed, ch );
+
+  }
+
+~
+E
+fall~
+You lose your footing and the ground races up toward you!
+
+~
+E
+rfall~
+$n wobbles on a branch trying to gain hold then plummets to the ground
+
+with a THUD!!" 
+
+~
+E
+afall~
+$n falls from above landing with a thud.
+
+~
+E
+succeed~
+Recalling your path, you find your way back to solid ground.
+
+~
+E
+rsucceed~
+$n adeptly navigates the branches below you safely to the ground.
+
+~
+E
+asucceed~
+$n skillfully wends $s way through the tangle of branches and reaches the
+
+ground safely" 
+
+~
+!
+0 0 0
+2341 9 1509949540 3 0
+-1
+S
+
+#52524
+Farm 5~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+-1
+S
+
+#52525
+Farm 5~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+-1
+S
+
+#52526
+Small Bedroom~
+Windows along the north, south and west walls, offer a view of the farm
+
+and its lush green fields.  A small bed sits against the west wall with a
+
+short, round table at its side.  An ornately painted armoire stands along
+
+the north wall, near the top of the staircase.
+
+~
+~
+-235405312 2 9 0
+D5
+~
+~
+0 -1 52517 10 10 5
+E
+windows~
+Each window is covered with dainty curtains which have been tied back to
+
+the window frame.
+
+~
+E
+small bed table small round~
+The small bed is covered with a finely crafted quilt and has a short,
+
+round table painted yellow, at its side.
+
+~
+E
+armoire~
+The armoire has been ornately painted with flowers and vines.  Two doors
+
+conceal its contents.
+
+~
+-1
+S
+
+#0
+

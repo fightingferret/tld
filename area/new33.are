@@ -1,0 +1,767 @@
+#AREA
+Creepy road~
+Bliks~
+~
+
+0 0
+0
+#ROOMS
+
+#81000
+A Long Disused Road~
+An old gate marks the beginning of a narrow road that branches off from
+
+the Great North Road to the north.  The road is overgrown, and doesn't
+
+appear as if it receives much traffic.  A small farm can be seen far to
+
+the west, but the road continues to the south.
+
+~
+[Belgar] close gate would be nice.
+
+~
+-235405311 12 6 0
+D0
+~
+~
+2283 -1 77062 10 10 5
+D2
+~
+~
+0 -1 81001 10 10 5
+E
+gate~
+The gate is barely standing and blocks access to the Great North Road.
+
+~
+A
+open move~
+gate~
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  act_tochar( #open, ch, );
+
+  act_notchar( #ropen, ch, );
+
+  open( room, north );
+
+  }
+
+else
+
+  act_tochar( #nope, ch, );
+
+~
+E
+open~
+You gingerly move the old gate, opening the way to the Great North Road.
+
+~
+E
+ropen~
+$n gingerly moves the old gate, opening the way to the Great North Road.
+
+~
+E
+nope~
+The gate is already open.
+
+~
+!
+0 0 0
+-1
+S
+
+#81001
+Road Through the Pasturelands~
+The road follows a general north-south course, crossing through land that
+
+once supported large fields.  As the way continues through the fallow
+
+pastures, the overgrown fields encroach upon the rarely used road.  In
+
+the not too distant south, a small copse of trees form a small grove
+
+along the roadway.
+
+~
+~
+-235405311 12 9 0
+D0
+~
+~
+0 -1 81000 10 10 5
+D2
+~
+~
+0 -1 81002 10 10 5
+130 9 1509949520 3 0
+-1
+S
+
+#81002
+A Grove of Fruit Trees~
+The trees in this grove would once have produced several bushels of
+
+assorted fruits.  Apple, cherry, and peach trees, in desperate need of
+
+pruning, still grow in the rows they were planted in many years ago.  The
+
+tree branches are heavy with ripe fruit, just waiting for someone to
+
+harvest it.
+
+~
+[Belgar] pick tree?
+
+~
+-235405311 12 9 0
+D0
+~
+~
+0 -1 81001 10 10 5
+D3
+~
+~
+0 -1 81003 10 10 5
+-1
+S
+
+#81003
+Center of a Neglected Grove~
+The trees in this section of the grove are older than the trees along the
+
+fringes.  These older trees appear to be struggling against each other
+
+for the sunlight, for their branches are angrily intertwined and their
+
+roots seem to be strangling one another.
+
+~
+~
+-235405311 12 9 0
+D1
+~
+~
+0 -1 81002 10 10 5
+D2
+~
+~
+0 -1 81004 10 10 5
+-1
+S
+
+#81004
+Edge of a Grove of Fruit Trees~
+Several seasons of fruit lie spoiling on the ground beneath the boughs of
+
+the neglected fruit trees.  The smell of rot and fermentation fills the
+
+air, attracting large quantities of large, black flies.  Several variety
+
+of black birds flit through the branches, partaking in the abundant fruit
+
+that will shortly fall and contribute to the compost.
+
+~
+~
+-235405311 12 9 0
+D0
+~
+~
+0 -1 81003 10 10 5
+D2
+~
+~
+0 -1 81005 10 10 5
+E
+fruit~
+The fruit is brown and withered, and the meat appears to be undergoing a
+
+natural fermentation process.
+
+~
+E
+tree~
+Ripe fruit hangs on the branches, a simple breeze or shaking of the
+
+branches would send some plummeting to the ground.
+
+~
+E
+black bird~
+A multitude of ravens, crows and grackles flutter through the branches. 
+
+Many appear to be unstable in their movements, perhaps because of eating
+
+the fermented fruit.
+
+~
+A
+shake~
+tree branch branches~
+act_tochar( #shake, ch );
+
+act_notchar( #rshake, ch );
+
+if( mob_in_room( 2530, room ) )
+
+  end;
+
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  wait(1);
+
+  act_room( #flutter, ch );
+
+  mob = mload( 2530, room );
+
+  obj_to_room( oload( 49 ), room );
+
+  }
+
+~
+E
+flutter~
+@WWith a loud @y"CROAK"@n @Wa large bird falls fluttering out of the tree!@n
+
+~
+E
+shake~
+You grasp the tree by the trunk and begin to shake it vigorously.
+
+~
+E
+rshake~
+$n grabs a fruit tree by the trunk and begins to shake it vigorously.
+
+~
+!
+0 0 0
+-1
+S
+
+#81005
+Road Through an Old Cattle Pasture~
+A dense thicket of fruit trees lies to the north, while an abandoned
+
+cattle pasture sprawls across the roadway.  The field is badly overgrown
+
+and dotted with gray, faded piles of dry cow dung.  An old crossbeam
+
+fence runs parallel to the roadway, with breaches every few yards where
+
+the old fence has collapsed.
+
+~
+~
+-235405311 12 9 0
+D0
+~
+~
+0 -1 81004 10 10 5
+D2
+~
+~
+0 -1 81006 10 10 5
+-1
+S
+
+#81006
+Edge of a Reed Filled Watering Hole~
+A large stagnant pond lies to the east of the old road.  The algae and
+
+moss-choked waters support a large number of slender water reeds.  The
+
+reeds form large thickets of swaying fronds that completely conceal the
+
+water beneath them.  The deep bass of croaking bullfrogs emanates from
+
+within the reeds.
+
+~
+~
+-235405311 12 9 0
+D0
+~
+~
+0 -1 81005 10 10 5
+D2
+~
+~
+0 -1 81007 10 10 5
+-1
+S
+
+#81007
+South of a Watering Hole~
+The smell of stagnant water wafts in from a cattle pond to the north.  To
+
+the west, several large mounds of straw cast their looming shadows across
+
+the road.  The road itself has become somewhat boggy, perhaps because of
+
+runoff from the pond.
+
+~
+~
+-235405311 12 9 0
+D0
+~
+~
+0 -1 81006 10 10 5
+D3
+~
+~
+0 -1 81008 10 10 5
+-1
+S
+
+#81008
+Road Between Looming Haystacks~
+Towering haystacks, resembling the shaggy backs of huge animals, crowd
+
+the edge of the roadway.  The hay is several seasons old and emits a wet,
+
+musty smell that seems to settle into clothing and stick to the skin. 
+
+Small holes dot the base of each stack, and little trails meander through
+
+the grass between the holes.  To the south, a jumbled pile of discarded
+
+wood is in the center of the road.
+
+~
+~
+-235405311 12 9 0
+D1
+~
+~
+0 -1 81007 10 10 5
+D2
+~
+~
+0 -1 81009 10 10 5
+E
+hole~
+The holes are about as large as a field mouse, which makes sense since
+
+that is what probably made them.
+
+~
+-1
+S
+
+#81009
+A Broken-Down Wagon~
+A pile of jumbled wood, barely discernible as a hay wagon, lies rotting
+
+in the center of the road.  The spokes in the wheels have fallen out,
+
+leaving only the rusted, metal rim, and the bed is nothing more than a
+
+few planks of termite-ridden wood.  The road continues on its way to the
+
+north and south.
+
+~
+~
+-235405311 12 9 0
+D0
+~
+~
+0 -1 81008 10 10 5
+D2
+~
+~
+0 -1 81010 10 10 5
+-1
+S
+
+#81010
+Continuing Through the Pasturelands~
+The road cuts a large cornfield in half.  The corn has been growing wild
+
+for some time.  Yellowing stalks and dried ears fill the rows between the
+
+current green crop.  On the west side, a large section of corn has been
+
+crushed, leaving the impression that a large animal has used it as a
+
+wallow.
+
+~
+~
+-235405311 12 9 0
+D0
+~
+~
+0 -1 81009 10 10 5
+D2
+~
+~
+0 -1 81011 10 10 5
+-1
+S
+
+#81011
+Muddy Section of Road~
+A large cornfield lies to the north of this muddy section of roadway. 
+
+The mud looks to be caused by a leaking dike that lines a small
+
+irrigation ditch to the south.  The dike hasn't been repaired in ages and
+
+a dark green water seeps from many small fissures.  The way to the west
+
+looks to be just as muddy as this area.
+
+~
+~
+-235405311 12 9 0
+D0
+~
+~
+0 -1 81010 10 10 5
+D3
+~
+~
+0 -1 81012 10 10 5
+-1
+S
+
+#81012
+North of a Dilapidated Bridge~
+To the south, a simple wooden bridge crosses the span of an old
+
+irrigation ditch.  The water in the ditch has been seeping into the area
+
+for quite awhile, creating a fairly boggy section of land.  Marsh grasses
+
+have begun growing and a few reeds have taken hold.
+
+~
+~
+-235405311 12 9 0
+D1
+~
+~
+0 -1 81011 10 10 5
+D2
+~
+~
+0 -1 81013 10 10 5
+A
+~
+~
+continue;
+
+~
+E
+to_char~
+The old bridge creaks as you cross onto it.
+
+~
+E
+to_room~
+The old bridge creaks as $n crosses onto it.
+
+~
+!
+3 0 4
+-1
+S
+
+#81013
+A Dilapidated Bridge~
+A simple bridge made of two oak beams and oak cross planks, crosses a
+
+small irrigation ditch.  The water in the ditch emits a foul smell and is
+
+full of moss and algae, but darting black shapes beneath the surface
+
+indicate that there are things living in it.
+
+~
+~
+-235405311 12 9 0
+D0
+~
+~
+0 -1 81012 10 10 5
+D2
+~
+~
+0 -1 81014 10 10 5
+D5
+bad plank~
+~
+243 -1 81020 10 10 5
+A
+~
+~
+if( rflag( reset0, room ) ) {
+
+  if( random( 1, 5 ) == 1 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #plank, ch, );
+
+    act_notchar( #rplank, ch, );
+
+    i = 2d4+2;
+
+    dam_message( ch, i, "the smacking board" );
+
+    inflict( ch, mob, i, "dangerous, loose board" );
+
+    transfer( ch, find_room( 81020 ) );
+
+    open( room, down );
+
+    }
+
+  }
+
+~
+E
+plank~
+@WAs you cross onto the bridge a loose plank flies up, smacks you in the
+
+face and knocks you into the ditch!@n 
+
+~
+E
+rplank~
+@WAs $n crosses onto the bridge a loose plank flies up, smacks $m in the
+
+face and knocks $m into the ditch!@n 
+
+~
+!
+1 0 5
+-1
+S
+
+#81014
+South of a Dilapidated Bridge~
+To the north, a simple wooden bridge crosses the span of an old
+
+irrigation ditch.  The terrain to the south is a bit different than the
+
+abandoned pastures to the north.  The neglected fields start to give way
+
+to tree-dotted meadows and the beginnings of dense woodlands.
+
+~
+~
+-235405311 12 9 0
+D0
+~
+~
+0 -1 81013 10 10 5
+D2
+~
+~
+0 -1 81015 10 10 5
+A
+~
+~
+continue;
+
+~
+E
+to_char~
+The old bridge creaks as you cross onto it.
+
+~
+E
+to_room~
+The old bridge creaks as $n crosses onto it.
+
+~
+!
+3 0 1
+-1
+S
+
+#81015
+Woodland Road~
+The lack of cultivation in this area has led to a proliferation of
+
+wide-leafed oaks and hearty scrub brush.  The ground is increasingly
+
+stony, perhaps the reason why the farmer's plows didn't conquer this land. 
+
+A fair way to the north, a bridge can be seen while to the west the road
+
+continues in a gradual uphill climb.
+
+~
+~
+-235405311 12 9 0
+D0
+~
+~
+0 -1 81014 10 10 5
+D3
+~
+~
+0 -1 81016 10 10 5
+-1
+S
+
+#81016
+Narrow Rocky Trail~
+The road narrows to a width that would only accommodate a single horse
+
+and rider.  The rocky ground making it hard for the construction of a
+
+wider fairway.  The trees and scrub become ever thicker as the way climbs
+
+in altitude.  The occasional rustle in the foliage indicates that
+
+wildlife most surely inhabits the darkening woodlands.
+
+~
+~
+-235405311 12 9 0
+D0
+~
+~
+0 -1 81017 10 10 5
+D1
+~
+~
+0 -1 81015 10 10 5
+-1
+S
+
+#81017
+Steps in a Granite Bluff~
+The trail leads to a small, but very steep bluff.  The small bluff is
+
+formed of almost solid granite.  Large steps have been carved into the
+
+face of the bluff, creating a gradual incline to the west.  To the south,
+
+the trail continues into the lush woodlands.
+
+~
+~
+-235405311 12 9 0
+D2
+~
+~
+0 -1 81016 10 10 5
+D3
+~
+~
+0 -1 81018 10 10 5
+-1
+S
+
+#81018
+At the Top of a Small Bluff~
+Carved steps cross the face of a granite bluff to the east, while a faint
+
+trail leads north into the forest.  From this vantage point above the
+
+bluff, vast pastures can be seen in the far distant northeast.  Past the
+
+sprawling fields, the very faint line of the Great North Road can be
+
+seen, snaking its way across the landscape.
+
+~
+~
+-235405311 12 9 0
+D0
+~
+~
+0 -1 81019 10 10 5
+D1
+~
+~
+0 -1 81017 10 10 5
+203 9 1509949540 3 0
+-1
+S
+
+#81019
+South of a Gated Wood~
+A large gate can be seen, shining though the gaps in the oak trees to the
+
+north.  Even from this distance, the gate looks to be massive in height
+
+and beautiful in workmanship.  To the south, the small trail travels into
+
+dark woodlands.
+
+~
+~
+-235405311 12 9 0
+D0
+~
+~
+0 -1 69500 10 10 5
+D2
+~
+~
+0 -1 81018 10 10 5
+-1
+S
+
+#81020
+Beneath the Dilapidated Bridge~
+A horrible smell wafts up from the rank water.  The water is only knee
+
+deep, but the shifting muddy bottom makes standing difficult.  Small dark
+
+fish, resembling eels or leeches dart through the murky water.  A plank
+
+that has fallen into the ditch would provide a method to crawl out of
+
+this repulsive area.
+
+~
+~
+-235405312 6 9 0
+D4
+~
+~
+243 -1 81013 10 10 5
+A
+crawl climb~
+plank board up~
+act_tochar( #out, ch, );
+
+act_notchar( #rout, ch, );
+
+transfer( ch, find_room( 81013 ) );
+
+~
+E
+out~
+You crawl up and out of the fetid ditch.
+
+~
+E
+rout~
+$n crawls up the plank to the bridge above.
+
+~
+!
+0 0 0
+2532 9 1509949540 3 0
+-1
+S
+
+#0
+

@@ -1,0 +1,2201 @@
+#AREA
+Huntsman's Wood~
+Bliks~
+huntsman's wood~
+
+15 0
+0
+#ROOMS
+
+#69500
+Gate to Huntsman's Wood~
+A towering gate stands between two marble pillars.  The gate is cast of
+
+bronze and was crafted to show a family crest surrounded by leaping deer. 
+
+The metalwork on the gate is verdigris tarnished, and soft, dark green
+
+moss covers the opalescent marble pillars.  Despite the obvious antiquity
+
+of the gate, the hinges are well oiled and the path to the gate is kept
+
+free of encroaching weeds.  The view of a lush oak forest beckons from
+
+behind the obstructing bars.  Just off the path a small @ysign@n is
+
+driven into the ground.
+
+~
+[Belgar] The the bronze gate to the north is closed.
+
+~
+-235405312 3 5 0
+D0
+the bronze gate~
+gate bronze~
+131 -1 69501 10 10 5
+D2
+~
+~
+0 -1 81019 10 10 5
+E
+sign~
+@y"By order of The Lord of these woods: Visitors are welcome to observe
+
+the wildlife and foliage.  Hunting is not allowed and poachers will be
+
+dealt with in a very harsh manner.  Also, because of the unsolicited
+
+hunting, no foreign animals are allowed as they are at risk.  You have
+
+been warned".@n 
+
+~
+E
+crest~
+@WThe crest, although aged and tarnished, appears to be the figures of a
+
+giant boar and a wyvern locked in combat.@n 
+
+~
+-1
+S
+
+#69501
+Just Inside the Gate~
+A narrow stone path leads north into the forest.  The granite stepping
+
+stones, each about the size of a small buckler, are placed almost two
+
+human strides apart.  A dark green clover covers the ground between the
+
+stones.  An oak crossbeam fence stretches off into the darkness of the
+
+forest to the east.  To the west, the forest floor is mottled in shadows
+
+as the light is filtered by the leafy canopy.
+
+~
+~
+-201850880 3 9 0
+D0
+~
+~
+0 -1 69514 10 10 5
+D2
+bronze gate~
+bronze gate~
+131 -1 69500 10 10 5
+D3
+~
+~
+0 -1 69503 10 10 5
+E
+stone~
+The stones are the same color grey with quartz like streaks through them. 
+
+They are very weathered, but a family crest can be seen carved into to
+
+top of each stone.
+
+~
+E
+crest~
+The crest, although aged and weatherworn, appears to be the figures of a
+
+giant boar and a wyvern locked in combat.
+
+~
+E
+fence~
+The fence is made of oak logs, each nearly the thickness of a human torso. 
+
+The logs are weathered and have a thin layer of moss growing on them,
+
+making them too slippery to climb.  A vertical cross post joins the logs. 
+
+A thick iron rod is driven through the center of each cross post,
+
+securing the horizontal logs.
+
+~
+E
+clover~
+The @gclover@n grows very close to the ground and releases a sweet smell
+
+when crushed underfoot.
+
+~
+A
+time~
+~
+send_to_room( #howling, room );
+
+~
+E
+howling~
+The sound of baying hounds can faintly be heard off in the distance.
+
+~
+!
+2 1000 0
+A
+pick get take~
+clover~
+act_tochar( #crush, ch );
+
+act_notchar( #rcrush, ch );
+
+wait(1);
+
+act_room( #smell, ch );
+
+~
+E
+crush~
+@gYou gingerly reach down to pluck a fragile clover leaf.  The leaf is so
+
+delicate that its velvety petals are crushed in your hands.@n 
+
+~
+E
+rcrush~
+@g$n reaches down and crushes a clover leaf in $s hands.@n
+
+~
+E
+smell~
+@gThe sweet smell of crushed clover wafts through the room on an unseen zephyr.@n
+
+~
+!
+0 0 0
+-1
+S
+
+#69502
+Darkening Forest~
+A towering crag to the east casts a dark shadow over this already dim
+
+wood.  The aspens' trunks are barely visible as black streaks in the
+
+swirling clouds of mist that drift in from the north.  The black streaks
+
+dwindle in number to the west as the forest thins into a dismal clearing.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 69531 10 10 5
+D1
+~
+~
+0 -1 69526 10 10 5
+D3
+~
+~
+0 -1 69532 10 10 5
+-1
+S
+
+#69503
+Light Filtered Forest~
+Light, filtered by the broad oak leaves, illuminates small areas of dark
+
+clover.  Borne along on a gentle breeze small specks of pollen glow
+
+brightly as they pass through the cascading beams.  A weathered oak fence
+
+borders the forest to the south and west, while a stone path is visible
+
+to the east.  The forest, although clear and open, is a bit darker to the
+
+north.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 69504 10 10 5
+D1
+~
+~
+0 -1 69501 10 10 5
+E
+pollen~
+@WThe specks of pollen glow like small sprites as they pass in and out of
+
+the bright beams of light.@n 
+
+~
+E
+fence~
+The fence is made of oak logs, each nearly the thickness of a human torso. 
+
+The logs are weathered and have a thin layer of moss growing on them,
+
+making them too slippery to climb.  A vertical cross post joins the logs. 
+
+A thick iron rod is driven through the center of each cross post,
+
+securing the horizontal logs.
+
+~
+2387 9 1509949540 3 0
+2442 9 1509949540 3 0
+-1
+S
+
+#69504
+Dim Section of Forest~
+An oak fence runs along the western section of the forest, preventing
+
+travel in that direction.  Overhead, the wide-leafed oak trees provide a
+
+decent amount of shade.  Despite the lack of direct sunlight, the amount
+
+of underbrush is beginning to increase.  Large sickle-thorn bushes and
+
+delicate creeper vines appear to be gaining a foothold here.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 69505 10 10 5
+D2
+~
+~
+0 -1 69503 10 10 5
+E
+fence~
+The fence is made of oak logs, each nearly the thickness of a human torso. 
+
+The logs are weathered and have a thin layer of moss growing on them,
+
+making them too slippery to climb.  A vertical cross post joins the logs. 
+
+A thick iron rod is driven through the center of each cross post,
+
+securing the horizontal logs.
+
+~
+E
+sickle thorn bush~
+Long thin branches with wide heart-shaped leaves and wickedly long curved
+
+thorns make up this well defended plant.
+
+~
+E
+creeper vine~
+Fragile in appearance, these delicate vines can smother the life out of
+
+even the oldest of oaks.  Their seemingly dainty stalks can climb almost
+
+any obstacle, and their feathery leaves block the life-giving sunlight. 
+
+Once established, their hungry little roots leech nutrients and water out
+
+of whatever they have climbed.
+
+~
+2390 9 1509949540 3 0
+-1
+S
+
+#69505
+Very Shady Woods~
+The oaks are gaining girth and height the as the distance from the path
+
+increases.  These larger trees block much more light, creating a very
+
+dimly lit area.  The underbrush seems to thrive in this low light
+
+condition with the sickle-thorns growing in very dense and dark bushes. 
+
+The parasitic creepers appear to be thriving as well.  They appear to
+
+enjoy the dusky conditions and look as though are limiting their assaults
+
+on the shade producing oaks, only climbing a third of the way up the
+
+trunks.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 69506 10 10 5
+D2
+~
+~
+0 -1 69504 10 10 5
+D3
+~
+~
+0 -1 69507 10 10 5
+2390 9 1509949540 3 0
+2387 9 1509949540 3 0
+-1
+S
+
+#69506
+Scene of a Struggle~
+Hoof and paw prints litter the area in what appears to have been a very
+
+violent struggle.  Large furrows have been torn into the dark earth,
+
+ripping up patches of clover and destroying many of the creeper vines. 
+
+Patches of coarse black hair lay scattered about, some soaking in
+
+coagulating pools of blood.  A blood spoor disappears into a very large
+
+vine covered sickle-thorn bush.  The smell of crushed clover and damp
+
+earth fills the air.
+
+~
+~
+-235405312 3 9 0
+D0
+bloody branch~
+~
+235 -1 69508 10 10 5
+D2
+~
+~
+0 -1 69505 10 10 5
+D3
+~
+~
+0 -1 69509 10 10 5
+E
+bush~
+A bloodstained branch seems to have been moved by the passing of the
+
+large animal.  The branch is bent back against a tree, blocking the path
+
+of the hoof prints.
+
+~
+A
+move~
+branch~
+if( is_open( room, north ) )
+
+  act_tochar( #open, ch );
+
+else
+
+  act_tochar( #move, ch );
+
+act_notchar( #rmove, ch );
+
+open( room, north );
+
+~
+E
+open~
+The branch has already been moved aside.
+
+~
+E
+move~
+@WCarefully avoiding the sharp thorns, you move the branch back into
+
+place.  With the branch moved, you can see that the hoof prints lead into
+
+a dark area behind the sickle-thorn bush.@n 
+
+~
+E
+rmove~
+$n carefully moves the sickle-thorn bush back into place.@n 
+
+~
+!
+0 0 0
+3636 17 1509949540 -2 0
+-1
+S
+
+#69507
+Edge of a Deadfall~
+To the west lies a vast expanse of twisted and shattered trees and
+
+upturned boulders, rendering the area non-passable.  Some of the
+
+destruction has spilled into this section of the woods.  Huge fragments
+
+of boulders and heavy sections of trees lay scattered, lying as if they
+
+had been dropped in from the sky.  Despite the destruction, the
+
+unaffected oak trees continue to grow tall and healthy and the underbrush
+
+continues to thicken.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 69509 10 10 5
+D1
+~
+~
+0 -1 69505 10 10 5
+E
+deadfall tree boulder~
+The trees appear to have imploded and the boulders look as if they were
+
+tossed about by giants.  A shattered section of a tree trunk partially
+
+conceals a small hole or den that appears to have been excavated from
+
+beneath a split boulder.
+
+~
+E
+den hole~
+A small foot can barely be seen shivering in the darkness of the den.
+
+~
+A
+get take~
+foot~
+if( mob_in_room( 2408, room ) ) {
+
+  act_tochar( #stop, ch );
+
+  end;
+
+  }
+
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  act_tochar( #foot, ch );
+
+  act_notchar( #rfoot, ch );
+
+  mload( 2408, room );
+
+  mob = mob_in_room( 2408, room );
+
+  wait( 1 );
+
+  loop( all_in_room ) {
+
+    if( is_player( rch ) ) {
+
+      if( class( rch ) == cleric ) {
+
+        act_tochar( #cleric, rch );
+
+        act_notchar( #rcleric, ch );
+
+        if( !is_resting( mob )) {
+
+          act_room( #weave, ch );
+
+          do_spell( sleep, mob, rch );
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #nope, ch );
+
+  act_notchar( #rnope, ch );
+
+  }
+
+~
+E
+foot~
+@WYou reach into the den and grab hold of the little foot, pulling a very
+
+surprised goblinoid out of its home.@n 
+
+~
+E
+rfoot~
+@W$n reaches into the hole and pulls out a very startled goblinoid!@n
+
+~
+E
+nope~
+You reach for the foot, but whatever it was attached to scuttles deeper
+
+into the hole, far out of your reach.
+
+~
+E
+rnope~
+$n reaches into the dark hole but doesn't seem to find anything.
+
+~
+E
+cleric~
+@yThe weeblin angrily hisses at you, "I hate clerics!"@n
+
+~
+E
+rcleric~
+@yThe weeblin angrily hisses at $n, "I hate clerics!"@n
+
+~
+E
+weave~
+The weeblin weaves its hands in a hypnotic motion while mumbling some strange phrases.
+
+~
+E
+stop~
+The weeblin steps in front of the hole, preventing any attempt at further
+
+investigation.
+
+~
+!
+0 0 0
+2426 9 1509949540 3 0
+-1
+S
+
+#69508
+Behind a Blood-Splattered Bush~
+A large animal has created a wallow in the soft black dirt behind the
+
+sickle-thorn bush.  From the size of the depression in the ground, the
+
+animal must be very large indeed.  Blood splatter drips from several of
+
+the thorny branches, and several patches of coarse dark hair are tangled
+
+amongst the thorns.  There is a heavy musk smell in the air, mixing with
+
+the green smell of damp earth and the coppery twang of blood.
+
+~
+~
+-235405312 3 9 0
+D2
+~
+~
+235 -1 69506 10 10 5
+A
+move~
+branch~
+if( is_open( room, south ) )
+
+  act_tochar( #open, ch );
+
+else
+
+  act_tochar( #move, ch );
+
+act_notchar( #rmove, ch );
+
+open( room, south );
+
+~
+E
+open~
+The banch is not blocking the path.
+
+~
+E
+move~
+@WYou carefully move the branch back into place, revealing a way out from
+
+behind this bush.@n 
+
+~
+E
+rmove~
+$nMoves the branch, revealing a way out from behind this bush.
+
+~
+!
+0 0 0
+2403 9 1509949540 3 0
+-1
+S
+
+#69509
+Beginning of Thick Underbrush~
+A wide-bladed shrub has joined the ranks of the other types of underbrush
+
+that are flourishing in these woods.  The ground is strewn with sharp
+
+fragments of shattered stone, perhaps caused by an exploding boulder in
+
+the mysterious deadfall to the southwest.  There are no animal prints,
+
+and it would seem that animals shun this area.  Through the brush to the
+
+north a game trail is visible.
+
+~
+~
+-235405304 3 9 0
+D0
+~
+~
+0 -1 69510 10 10 5
+D1
+~
+~
+0 -1 69506 10 10 5
+D2
+~
+~
+0 -1 69507 10 10 5
+2442 9 1509949540 3 0
+2447 9 1509949490 3 0
+-1
+S
+
+#69510
+Game trail in Thick Underbrush~
+The creeper vines and sickle-thorns come together to form a tunnel over a
+
+game trail that meanders northward.  The few oaks that are here are
+
+struggling to survive as the creeper vines have enveloped them and are
+
+slowly draining them of their life.  There are numerous prints in the
+
+muddy trail that show that the trail receives a fair amount of animal
+
+traffic.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 69511 10 10 5
+D2
+~
+~
+0 -1 69509 10 10 5
+2391 9 1509949540 3 0
+2426 9 1509949540 3 0
+-1
+S
+
+#69511
+Game Trail Between Two Oaks~
+The muddy trail passes between two giant oak trees.  Yellow wood gleams
+
+like old bones from a section of missing bark on both trees.  The bald
+
+patches are about chest high on the trunks and the rubbing shoulders and
+
+backs of passing animals have polished the wood so that it shines. 
+
+Coarse black hair trails from the rough bark that is still attached to
+
+the trees.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 69512 10 10 5
+D2
+~
+~
+0 -1 69510 10 10 5
+2391 9 1509949540 3 0
+-1
+S
+
+#69512
+Edge of a Ravine~
+Snaking out from beneath the burdensome underbrush to the south, the game
+
+trail runs along the edge of a very deep ravine.  Across from the ravine
+
+to the north, a dark section of forest can be seen with tendrils of thick
+
+fog slithering up from the misty depths of the ravine and appearing to
+
+coil around the dark barked trees.  The trail continues to skirt the
+
+ravine to the east.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 69513 10 10 5
+D3
+~
+~
+0 -1 69511 10 10 5
+2391 9 1509949540 3 0
+-1
+S
+
+#69513
+Trail along the Edge of a Ravine~
+Unnerving sounds can be heard rising up through the fog-covered depths of
+
+the ravine.  The sounds of laughter or shrieking float upward,
+
+dissipating in the thick air before the ear can identify them.  To the
+
+east, the mist-filled ravine comes to an abrupt end, and a large meadow
+
+begins.  The game trail continues its east-west run along the edge of the
+
+ravine.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 69524 10 10 5
+D3
+~
+~
+0 -1 69512 10 10 5
+2426 9 1509949540 3 0
+-1
+S
+
+#69514
+Along a Stone Path~
+The path is lined by very painful looking thorn bushes, cut a ways back
+
+from the path, but still only allowing travel to the north or south. 
+
+Overhead, the oaks intertwine their leaf-covered branches, dampening the
+
+affects of the sun.  The path to the north look as though it is a little
+
+less maintained.
+
+~
+~
+-201850880 3 9 0
+D0
+~
+~
+0 -1 69515 10 10 5
+D1
+~
+~
+0 -1 69516 10 10 5
+D2
+~
+~
+0 -1 69501 10 10 5
+-1
+S
+
+#69515
+A Stone Path Near Dense Underbrush~
+The caretaker has grown lax in his upkeep of this section of the path. 
+
+The sickle-thorns have abandoned their forced restraint and have begun to
+
+advance toward the walkway.  An especially robust bush is within an
+
+arms-length of the stones, a small mound of dirt piled under its
+
+encroaching roots.  Long strands of moss hang from the overhead branches,
+
+and the feathery creeper vines have scaled the trunks of all the nearby
+
+trees.
+
+~
+~
+-201850880 3 9 0
+D0
+~
+~
+0 -1 69520 10 10 5
+D2
+~
+~
+0 -1 69514 10 10 5
+E
+mound dirt pile~
+The mound of dirt surrounds the opening to a burrow that was previously
+
+unseen.  In the mouth of the burrow a small furry tail, much like a
+
+fox's, can be seen.
+
+~
+A
+get take~
+fox tail~
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  act_tochar( #snake, ch );
+
+  act_notchar( #rsnake, ch );
+
+  mload( 2427, room );
+
+  mob = mob_in_room( 2427, room );
+
+  attack( mob, ch, 2d4+5, "fangs" );
+
+  }
+
+else {
+
+  act_tochar( #nope, ch );
+
+  act_notchar( #rnope, ch );
+
+  }
+
+~
+E
+snake~
+@WAs you pull on the fox tail, you hear a sharp *CLICK*.  Suddenly, a lid
+
+flips up from out of the hole and a large snake springs to attack you!!@n
+
+~
+E
+rsnake~
+@WAs $n pulls on the fox tail, you hear a sharp *CLICK*.  Suddenly, a lid
+
+flips up from out of the hole and a large snake springs to attack $n!!@n
+
+~
+E
+nope~
+You pull on the fox tail, but the trap has already been sprung.
+
+~
+E
+rnope~
+$n pulls on the fox tail, but the trap has already been sprung.
+
+~
+!
+0 0 0
+-1
+S
+
+#69516
+Off the Path and in the Clover~
+A field of clover spreads out to the north and west, while the path is
+
+easily visible to the east.  The clover is brilliant green and very
+
+fragrant.  The dark soil in these woods must be very fertile, as the
+
+clover grows so thick that it forcefully springs back after being
+
+compressed.
+
+~
+~
+-201850880 3 9 0
+D0
+~
+~
+0 -1 69517 10 10 5
+D1
+~
+~
+0 -1 69518 10 10 5
+D3
+~
+~
+0 -1 69514 10 10 5
+A
+get pick take~
+clover~
+act_tochar( #crush, ch );
+
+act_notchar( #rcrush, ch );
+
+wait(1);
+
+act_room( #smell, ch );
+
+~
+E
+crush~
+@gYou gingerly reach down to pluck a fragile clover leaf.  The leaf is so
+
+delicate that its velvety petals are crushed in your hands.@n
+
+~
+E
+rcrush~
+@g$n reaches down and crushes a clover leaf in $s hands.@n
+
+~
+E
+smell~
+@gThe sweet smell of crushed clover wafts through the room on an unseen zephyr.@n
+
+~
+!
+0 0 0
+2442 9 1509949540 3 0
+-1
+S
+
+#69517
+In a Field of Clover~
+Except for the odd oak or two, the field is almost entirely covered in
+
+clover.  The vibrant green leaves reflect the sunlight and cause
+
+everything to be covered in a soft, greenish hue.  The soft, springy
+
+clover would make an ideal place to relax and enjoy a nap beneath the
+
+skies.
+
+~
+~
+-201850880 3 9 0
+D1
+~
+~
+0 -1 69519 10 10 5
+D2
+~
+~
+0 -1 69516 10 10 5
+-1
+S
+
+#69518
+Along a Weatherworn Fence~
+The clover, flowing like a green sea, continues its green coverage to the
+
+south and east for as far as the eye can see.  Unfortunately, a large
+
+weatherworn fence blocks travel to the south and east.  A multitude of
+
+thumb-sized bees fly through air and crawl upon the fence.
+
+~
+[JakJak] hundreds of jobees. in hole redit.
+
+[JakJak] check damage on jobee sting and sting adata
+
+~
+-201850880 3 9 0
+D0
+~
+~
+0 -1 69519 10 10 5
+D3
+~
+~
+0 -1 69516 10 10 5
+E
+fence~
+The fence is made of oak logs, each nearly the thickness of a human torso. 
+
+The logs are weathered and have a thin layer of moss growing on them,
+
+making them too slippery to climb.  A vertical cross post joins the logs. 
+
+A thick iron rod is driven through the center of each cross post,
+
+securing the horizontal logs.
+
+~
+E
+bees~
+The bees are beautiful specimens with deep @mpurple thoraxes@n and
+
+@ygolden abdomens@n.  They are known as jobees, or royal bees and are
+
+rumored to have a restorative sting.  The bees live in underground hives,
+
+and several bees dart in and out of a large hole in the ground near the
+
+fence.
+
+~
+E
+hole~
+Inside the hole are hundreds jobees.  The masses of crawling, wriggling
+
+bees form a roaming colony, with the queen and larvae tucked safely away
+
+inside the living formation.
+
+~
+A
+get touch kill k~
+bee bees jobee~
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  act_tochar( #bee, ch );
+
+  act_notchar( #rbee, ch );
+
+  wait(2);
+
+  act_tochar( #sting, ch );
+
+  modify_mana( ch, 65 );
+
+  i = 5d4;
+
+  dam_message( ch, i, "The jobee warrior's stinging attack" );
+
+  inflict( ch, mob,  i, "being stung to death" );
+
+  act_notchar( #rsting, ch );
+
+  }
+
+else {
+
+  act_tochar( #nope, ch );
+
+  act_notchar( #rnope, ch );
+
+  }
+
+~
+E
+bee~
+@mThe jobees become agitated by your clumsy movements, sending out a few
+
+warrior bees to deal with the situation.@n 
+
+~
+E
+rbee~
+@mThe jobees become agitated by $n 's clumsy movements, sending out a few
+
+warrior bees to deal with the situation.@n 
+
+~
+E
+sting~
+@yThe jobee warriors deliver a handful of extremely painful stings.  The
+
+pain is intense, but you feel strangely energized by their poison.@n 
+
+~
+E
+rsting~
+@y$n winces as the warrior jobees sting $m, as the bees attempt to
+
+protect the hive.@n 
+
+~
+E
+nope~
+The jobees have moved their underground colony away from the hole,
+
+leaving only a few apprehensive scouts behind, safely located out of
+
+reach.
+
+~
+E
+rnope~
+$n reaches into the hole, but nothing happens.
+
+~
+!
+0 0 0
+2447 9 1509949540 3 0
+-1
+S
+
+#69519
+Field of Clover Near an Ancient Tree~
+A single tree mars what would otherwise have been a flawless sea of
+
+clover.  The tree is ancient and towering.  Several of its branches have
+
+grown out so far from the trunk that they can no longer support their
+
+tremendous bulk.  These crooked branches have grown downward until they
+
+met the clover-covered ground.
+
+~
+~
+-201850880 3 9 0
+D2
+~
+~
+0 -1 69518 10 10 5
+D3
+~
+~
+0 -1 69517 10 10 5
+2426 9 1509949540 3 0
+2442 9 1509949540 3 0
+-1
+S
+
+#69520
+Bend in the Path~
+An ancient oak blocks the path from traveling to the north or to the west. 
+
+Truly a giant, the tree towers above all others in the wood.  Hundreds of
+
+acorns, and half-eaten acorns, litter the area.  From up in the tree, the
+
+chittering of angry squirrels can be heard, the animals themselves hidden
+
+in the leafy boughs.
+
+~
+~
+-201850880 3 9 0
+D1
+~
+~
+0 -1 69521 10 10 5
+D2
+~
+~
+0 -1 69515 10 10 5
+E
+tree~
+The tree is huge and the many knobby protrusions would make it very easy
+
+to climb, however there is a giant wasp nest halfway up the tree.  The
+
+nest wraps completely around the trunk of the giant tree forming a
+
+honeycombed collar.
+
+~
+E
+nest wasp~
+Wasps the size of small birds dart in and out of the nest while larger
+
+sentinel wasps fly about, making sure that the nest is protected.
+
+~
+A
+climb~
+tree~
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #rclimb, ch );
+
+  wait( 1 );
+
+  act_tochar( #climb2, ch );
+
+  act_notchar( #rclimb2, ch );
+
+  mload( 2434, room );
+
+  }
+
+else {
+
+  act_tochar( #nope, ch );
+
+  act_notchar( #rnope, ch );
+
+  }
+
+~
+E
+climb~
+@WYou using the knobby protrusions you begin to climb the tree.@n
+
+~
+E
+rclimb~
+@WYou watch as $n begins the climb up the giant tree.@n
+
+~
+E
+climb2~
+@WAs you reach up for a handhold, you feel your fingers crush a section
+
+of the wasp nest!  Feeling threatened by your clumsiness, the sentinels
+
+fly to attack you!!@n
+
+~
+E
+rclimb2~
+@WYou see $n tear off a large section of wasp nest, provoking a
+
+retaliation by the wasp sentinels!!@n 
+
+~
+E
+nope~
+You look up and see that the wasps are out in the thousands.  Perhaps it
+
+would be better if you didn't climb the tree.
+
+~
+E
+rnope~
+You see $n start to climb the tree, but the seething multitude of
+
+angry wasps seems to have changed $n's mind.
+
+~
+!
+0 0 0
+-1
+S
+
+#69521
+A Junction of Stone Paths~
+Two paths converge at the base of a towering oak.  One path turns to the
+
+north while the second path continues to the east.  The northern turn is
+
+deteriorated compared to the eastern path.  The stones to the east are
+
+well polished and evenly spaced, the fragrant clover is well maintained,
+
+and the underbrush is cut far back from the path.  To the north it looks
+
+as if the path has suffered some damage.
+
+~
+~
+-201850880 3 9 0
+D0
+~
+~
+0 -1 69523 10 10 5
+D1
+~
+~
+0 -1 69522 10 10 5
+D3
+~
+~
+0 -1 69520 10 10 5
+-1
+S
+
+#69522
+A Newer Path~
+The stones that make up this section of the path shine in the light as if
+
+they had been recently polished.  They are a bit more raised than the
+
+stones in the path to the west, having not quite completed settling into
+
+the soft ground.  The clover is newly planted and exceptionally green. 
+
+To the east a shining gate can be seen.
+
+~
+~
+-201850880 3 9 0
+D1
+~
+~
+0 -1 69525 10 10 5
+D3
+~
+~
+0 -1 69521 10 10 5
+-1
+S
+
+#69523
+A Partially Destroyed Path~
+Gaping dark holes in the ground show where the granite stepping-stones
+
+have been removed, and the soft clover has been torn from the ground,
+
+leaving only a few scraggly patches of the plant.  The creepers and thorn
+
+bushes, normally cleared from the path, are beginning to invade the
+
+remains of the walkway.  A fairly large oak tree has been planted in the
+
+center of what would have been the path.  Through the trees to the north
+
+a pituresque meadow is visible, while the intact pathway can be seen to
+
+the south.
+
+~
+~
+-201850880 3 9 0
+D0
+~
+~
+0 -1 69524 10 10 5
+D2
+~
+~
+0 -1 69521 10 10 5
+-1
+S
+
+#69524
+Peaceful Meadow~
+The meadow is covered in soft clover and velvety, waist high field grass. 
+
+The dark green grass ripple in the gentle breeze, undulating like a
+
+pebble caused wave in a verdant pond.  The clover is springy and sweet
+
+smelling and cool to the touch.  The breeze is warm and caressing and
+
+bears glimmering dandelion petals in its vapor.  A small stream, flowing
+
+in from a grove of black aspen to the north, gurgles sluggishly as it
+
+meanders through the clearing.
+
+~
+~
+-235405304 3 9 0
+D0
+~
+~
+0 -1 69526 10 10 5
+D2
+~
+~
+0 -1 69523 10 10 5
+D3
+~
+~
+0 -1 69513 10 10 5
+E
+stream~
+The water is crystal clear, although the black gravel streambed makes it
+
+hard to determine how deep it is.  There are no fish in the waterway and
+
+there are no aquatic plants growing in the slow flowing waters.
+
+~
+A
+sip drink~
+stream~
+do_spell( sleep, ch, ch );
+
+act_tochar( #drink, ch );
+
+act_notchar( #rdrink, ch );
+
+poison( ch );
+
+~
+E
+drink~
+@mYou kneel and lower your parched lips to the cool waters.  As you
+
+swallow the cold sweet-tasting water a darkness envelops your mind.  Your
+
+limbs become overly heavy, and you feel as if you are falling off a
+
+waterfall into a dark abyss.@n 
+
+~
+E
+rdrink~
+@m$n lets our a soft sigh and collapses, almost falling into the cold
+
+little stream.@n 
+
+~
+!
+0 0 0
+-1
+S
+
+#69525
+Before a Huge Shining Gate~
+A tremendous gate blocks any passage to the east.  Unlike the bronze gate
+
+at the entrance of the wood, this gate is made of steel and the
+
+construction is much newer.  The path leading to the gate is well taken
+
+care of, but no path exists on the other side.
+
+~
+~
+-201850880 3 9 0
+D3
+~
+~
+0 -1 69522 10 10 5
+2518 9 1509949540 3 0
+-1
+S
+
+#69526
+Beginning of a Black Aspen Grove~
+Ebony skinned aspens dominate this area as the oak forest stops abruptly
+
+at the meadow to the south.  Unlike the typical white-barked aspens,
+
+these trees have a dark black and shiny bark.  They are slender and grow
+
+to a tremendous height.  Their almond-shaped, green and mocha colored
+
+leaves flutter in the breeze.  A large granite crag rises up from the
+
+leaf-covered ground, blocking all movement to the north.  The aspen grove
+
+continues to the east and west, but not much can be seen as everything is
+
+obscured in shadows.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 69527 10 10 5
+D2
+~
+~
+0 -1 69524 10 10 5
+D3
+~
+~
+0 -1 69502 10 10 5
+D4
+~
+~
+98 -1 69535 10 10 5
+E
+shadows~
+@mThe shadows are surreally dark and appear to move about on their own!@n
+
+~
+E
+boulder granite crag~
+The face of the granite crag is scored with deep gouges.  The gouges are
+
+as wide as two human fingers, and appear to continue to the top of the
+
+crag.
+
+~
+A
+search get touch~
+shadows~
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  act_tochar( #clever, ch, obj, mob );
+
+  wait(1);
+
+  act_room( #howl, ch, obj, mob );
+
+  wait(1);
+
+  act_room( #howl2, ch, obj, mob );
+
+  wait(1);
+
+  act_room( #howl3, ch, obj, mob );
+
+  mload( 2461, room );
+
+  wait(1);
+
+  mob = mob_in_room( 2461, room );
+
+  interpret( mob, "say Begone ye fools!  This accursed wood will be the death of you!" );
+
+  wait(3);
+
+  if( !is_fighting( mob ) ) {
+
+    act_room( #gone, ch, obj, mob );
+
+    junk_mob( mob );
+
+    }
+
+  }
+
+act_tochar( #nope, ch, obj, mob );
+
+~
+E
+howl~
+@WA freezing fog drifts through the room.  Half-words mixed with howling
+
+can be heard off in the distance.@n 
+
+~
+E
+howl2~
+@WThe howling increases in volume, almost to the point of being
+
+unbearable!@n 
+
+~
+E
+howl3~
+@WJust as it seems as if the howling is going to destroy all sanity, a
+
+human-headed canine appears, leaping through the fog!@n 
+
+~
+E
+gone~
+@WWith its warning delivered, the beast's body dissolves.  Its form
+
+dissipates and drifts off through the fog.@n 
+
+~
+E
+clever~
+@mAs you reach for the shadows, the words "My aren't we a clever one?"
+
+form in your mind!@n 
+
+~
+E
+nope~
+It appears as if the shadows were only shadows after all.
+
+~
+!
+0 0 0
+A
+climb~
+boulder crag granite~
+if( rflag( reset1, room ) ) {
+
+  remove_rflag( reset1, room );
+
+  act_tochar( #yeschar, ch );
+
+  act_notchar( #yesroom, ch );
+
+  wait(1);
+
+  transfer( ch, find_room( 69535 ) );
+
+  }
+
+else
+
+  act_tochar( #nochar, ch );
+
+~
+E
+yeschar~
+Using the many cracks and grooves in the granite, you begin to climb the
+
+face of the crag.  Suddenly, a section of the crag crumbles and you look
+
+down to see a large slab of granite fall to the ground!
+
+~
+E
+yesroom~
+$n begins to scale the face of the crag.  As $e climbs up, $s foot knocks
+
+loose a large chunk of granite making further attempts at ascension
+
+impossible.
+
+~
+E
+nochar~
+A large section of granite has collapsed, making any further attempts at
+
+climbing this rock impossible.
+
+~
+!
+0 0 0
+A
+~
+~
+act_room( #blood_puddle, ch );
+
+obj_to_room( oload( 3716 ), room );
+
+~
+E
+blood_puddle~
+@rThick, slow-flowing rivulets of blood start to flow down from the
+
+crag,forming a glistening red puddle on the leaf-covered ground!@n 
+
+~
+!
+0 0 0
+-1
+S
+
+#69527
+Black Aspens~
+The aspens have grown fairly close together in this section of the forest
+
+causing any travelers to weave their way through the small spaces between
+
+each tree.  Patches of blue-grey granite are occasionally visible, poking
+
+up from beneath the fallen aspen leaves that cover the ground.  To the
+
+west a large granite crag can be seen in the continuing forest, while the
+
+aspen copse extends to the north and east.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 69528 10 10 5
+D1
+~
+~
+0 -1 69530 10 10 5
+D3
+~
+~
+0 -1 69526 10 10 5
+-1
+S
+
+#69528
+Near a Granite Precipice~
+Rising up from the ground two huge, granite precipices join to form an
+
+abutment, preventing any movement to the north or west.  Over the years,
+
+falling rocks and boulders have smitten the aspens growing closest to the
+
+cliffs.  This mass of shattered boulders and smashed trunks makes any
+
+form of travel very precarious.  In sharp contrast to the slender aspens,
+
+a very large oak tree can be seen to the east, while the forest to the
+
+south offers a less dangerous place to walk.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 69529 10 10 5
+D2
+~
+~
+0 -1 69527 10 10 5
+2464 9 1509949540 3 0
+-1
+S
+
+#69529
+Giant Dead Oak~
+This towering dead oak must have started life centuries before the
+
+younger aspens began to form a forest.  Now dead, this monstrous tree
+
+shows no sign of rot or disease.  It's as if the tree's will still lives
+
+on in its lifeless shell.  The aspens look as though they respect the
+
+dead giant, as none grow within several feet of the ancient oak.
+
+~
+[Narri] Why cant you look at this tree after all the buildup?
+
+~
+-235405312 3 9 0
+D2
+~
+~
+0 -1 69530 10 10 5
+D3
+~
+~
+0 -1 69528 10 10 5
+-1
+S
+
+#69530
+Black Aspens and Dark Ferns~
+A full-bodied, dark-leafed variety of fern grows in this section of the
+
+aspen forest.  Competition for sustenance must be somewhat fierce between
+
+the aspens and the ferns as there are only a few hardy aspens growing in
+
+this area.  The ferns have formed a community that blocks access to the
+
+east and south.  To the north a huge dead oak can be seen, while to the
+
+west the aspen forest lacks the presence of the dark fern.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 69529 10 10 5
+D3
+~
+~
+0 -1 69527 10 10 5
+E
+fern~
+The ferns are unusual in that they have a solid "body" from which long
+
+spidery tendrils grow.  The solid section is quite large, about the size
+
+of a dog, and the fronds are almost as long as a human is tall.  Unlike
+
+the soft leaves on other ferns, the oval shaped leaves on the edge of the
+
+fronds have a very sharp edge.
+
+~
+2464 9 1509949540 3 0
+-1
+S
+
+#69531
+Mist Filled Aspens~
+Voluminous clouds of mist flows into this area on a chill current of air
+
+from the west.  The roiling clouds obscure the trees and ground creating
+
+invisible obstacles that make progress extremely slow.  There is much
+
+less mist in the trees to the south.
+
+~
+~
+-235405312 3 9 0
+D2
+~
+~
+0 -1 69502 10 10 5
+D3
+~
+~
+0 -1 69533 10 10 5
+-1
+S
+
+#69532
+Dismal Clearing Amongst the Black Aspens~
+Nothing grows in this forsaken clearing.  The mist that is so prevalent
+
+in other sections of the aspen wood seems to avoid drifting over the
+
+blackened and blasted ground.  Nothing but mist can be seen to the north,
+
+but trees can be seen to the east.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 69533 10 10 5
+D1
+~
+~
+0 -1 69502 10 10 5
+2464 9 1509949540 3 0
+-1
+S
+
+#69533
+Surrounded by Fog~
+Thick clouds of swirling fog obscure everything in the area.  Trees fade
+
+in and out of vision and the ground is treacherous to travel upon as the
+
+fog hides its unevenness.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 69531 10 10 5
+D2
+~
+~
+0 -1 69532 10 10 5
+D3
+~
+~
+0 -1 69534 10 10 5
+-1
+S
+
+#69534
+East of a Wall of Fog~
+The thick fog hides everything, if there is anything other than the fog. 
+
+Cold currents of air blow through the area, leaving swirling roils in
+
+their path.  The frigid mist has solidified into a non-passable barrier
+
+to the west.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 69533 10 10 5
+-1
+S
+
+#69535
+Halfway Up a Granite Crag~
+A small alcove, barely wide enough to allow a troll to sit, offers a
+
+place to rest without fear of falling.  The view is partially obstructed
+
+by the walls of the alcove, showing only the fog-covered forest to the
+
+west.  The rock is covered in a maroon, lichen-like substance that flakes
+
+away easily when touched.  There are enough natural handholds that a
+
+person could either climb up or down.
+
+~
+~
+-235405312 3 9 0
+D4
+~
+~
+0 -1 69537 10 10 5
+D5
+~
+~
+98 -1 69526 10 10 5
+A
+clim climb~
+down crag~
+act_tochar( #climb, ch );
+
+act_notchar( #rclimb, ch );
+
+wait(1);
+
+transfer( ch, find_room( 69526 ) );
+
+act_notchar( #arrive, ch, obj, mob );
+
+~
+E
+climb~
+Using the many cracks and grooves in the granite, you begin to climb down
+
+the rocky crag.
+
+~
+E
+rclimb~
+$n begins to climb down the face of the crag.
+
+~
+E
+arrive~
+$n climbs down from the rocky crag.
+
+~
+!
+0 0 0
+-1
+S
+
+#69536
+Lair Atop a Granite Crag~
+Shattered bones and patches of fur are littered across the top of the
+
+crag.  Some of the bones are quite large, indicating that animals the
+
+size of cows were somehow carried to this area to be devoured by some
+
+beast.  To one side of the crag, two large boulders come together to form
+
+a natural shelter from the elements.  Something has collected large
+
+amounts of grasses and ferns and placed them beneath the boulders,
+
+obviously in an attempt to create a nest or sleeping place.  Despite the
+
+chilling implications of this area, the view is quite wondrous.  The only
+
+apparent exit is to carefully climb back down the crag.
+
+~
+~
+-235405312 3 9 0
+D5
+~
+~
+0 -1 69537 10 10 5
+E
+view~
+To the east the ebony aspens can be seen, regally growing amongst the
+
+blue-grey granite boulders.  To the south the dark oak forest and
+
+sunlight meadow are visible, while to the west the tops of the black
+
+aspens jut above a silky fog.  For a split second the fog to the west
+
+thins and a gleaming black manor can be seen.
+
+~
+E
+nest~
+The nest is several feet across and would provide an extremely large
+
+animal a resting-place.
+
+~
+A
+search~
+nest~
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  i = random( 1, 20 );
+
+  if( i == 20 ) {
+
+    act_tochar( #coin, ch, );
+
+    obj_to_char( oload( 16 ), ch );
+
+    }
+
+  else {
+
+    wait(1);
+
+    act_tochar( #nope, ch, );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #nope, ch, );
+
+~
+E
+coin~
+Searching the nest, you find a filth-covered coin.
+
+~
+E
+nope~
+You don't find anything in the nest.
+
+~
+!
+0 0 0
+A
+~
+~
+if( mob_in_room( 2525, room ) ) {
+
+  act_tochar( #rock, ch, );
+
+  mob = mob_in_room( 2525, room );
+
+  room = find_room( 69526 );
+
+  send_to_room( #dive_attack, room );
+
+  transfer( mob, room );
+
+  act_tochar( #spook, ch, );
+
+  act_notchar( #rspook, ch, );
+
+  wait(1);
+
+  act_room( #gone, ch );
+
+  }
+
+~
+E
+rock~
+As you pull yourself up onto the top of the crag, you kick several rocks
+
+loose.  The falling rocks clatter down the face of the crag.
+
+~
+E
+spook~
+@mThe wyvern, spooked by the sound of the rocks and your sudden
+
+appearance takes to the air!@n 
+
+~
+E
+rspook~
+@mThe wyvern, spooked by the sound of the rocks and $n's sudden
+
+appearance takes to the air!@n 
+
+~
+E
+gone~
+@mScreaming in rage, the wyvern dives down the face of the crag,
+
+disappearing from sight!@n 
+
+~
+E
+dive_attack~
+An enraged wyvern comes screaming down the face of the crag!
+
+~
+!
+1 0 32
+2525 9 1509949540 3 0
+1558 17 1509949540 -2 0
+-1
+S
+
+#69537
+Almost Atop the Crag~
+The rocks near the top of the crag have deep scorings in them.  The
+
+scorings are fairly deep and about as wide as a dagger blade.  The same
+
+maroon colored, lichen-like substance that was on the rocks below is
+
+covering these rocks as well.  The top of the crag is just a short climb
+
+up.
+
+~
+~
+-235405304 3 9 0
+D4
+~
+~
+0 -1 69536 10 10 5
+D5
+~
+~
+0 -1 69535 10 10 5
+A
+~
+~
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  wait(1);
+
+  act_room( #rblood, ch );
+
+  room = find_room( 69526 );
+
+  send_to_room( #blood_puddle, find_room( 69526 ) );
+
+  obj_to_room( oload( 3716 ), room );
+
+  }
+
+~
+E
+blood_puddle~
+Thick, slow-flowing rivulets of blood start to flow down from the
+
+crag,forming a glistening red puddle on the leaf-covered ground!
+
+~
+E
+rblood~
+@rThe sound of bones snapping and something large eating fills the air as
+
+thick, slow-flowing rivulets of blood flow down from the top of the
+
+crag.@n 
+
+~
+!
+1 0 32
+-1
+S
+
+#0
+

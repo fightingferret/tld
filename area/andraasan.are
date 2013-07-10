@@ -1,0 +1,7162 @@
+#AREA
+Andraasan~
+Gyrael Maelthar~
+Andraasan~
+
+70 0
+0
+#ROOMS
+
+#43000
+Hidden Trail~
+The path takes a sharp turn here, bending around to the east and south. 
+
+The drab grey of the surrounding area mirrors the dull gravel of the
+
+path, creating a lackluster, dismal landscape.  Looking northward, you
+
+see only a barren field of grey stone.  To the south, trees loom at ever
+
+closer intervals, split by a small path which winds its way deep into the
+
+stone forest.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D1
+~
+~
+0 -1 43001 10 10 5
+D2
+~
+~
+0 -1 43010 10 10 5
+E
+1 north~
+The field has been petrified like everything else in the area.  Passing
+
+through the razor sharp blades of grass and weeds would be too perilous
+
+to attempt.
+
+~
+A
+1 north~
+~
+act_tochar( #sharp, ch );
+
+act_notchar( #sharps, ch );
+
+i = 2d10+7;
+
+inflict( ch, ch, i, "walking on razor-sharp stones" );
+
+dam_message( ch, i, "walking on razor-sharp stones" );
+
+~
+E
+sharp~
+You try to make your way across the stony field to the north, but the
+
+sharp waist-high grass is too dangerous to traverse.
+
+~
+E
+sharps~
+$n tries to make $s way onto the stony field to the north, but the sharp
+
+waist-high grass forces $m to turn back.
+
+~
+!
+0 0 0
+-1
+S
+
+#43001
+A Winding Trail~
+The somber, grey trail runs through the colorless area surrounding it. 
+
+The vegetation which borders the trail has sickened and died, leaving
+
+only brown leaves and blackened stems behind.  Standing at irregular
+
+intervals, a few tall, slender trees dot the area to the south of the
+
+path.  The trees are a drab, grey color, right down to the leaves.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D1
+~
+~
+0 -1 43002 10 10 5
+D3
+~
+~
+0 -1 43000 10 10 5
+E
+trees~
+Closer examination of the slender trees reveals that they have been
+
+turned to stone.  The delicate stone leaves have broken off in places,
+
+leaving razor-sharp shards of broken stone behind.  Littering the ground
+
+near the trunks of the trees is a myriad of broken stone in the shapes of
+
+twigs, leaves, and even the occasional branch.
+
+~
+-1
+S
+
+#43002
+A Hidden Trail - Near a Stone Sapling~
+In the middle of the trail upon which you stand, a small stone tree
+
+stands.  The sapling's trunk is only as thick as a man's forearm,
+
+indicating its scant age.  Grey vines of ivy wind their way around the
+
+oak sapling, giving the semblance of leaf-bearing limbs.  The rocky
+
+ground around the tree supports only dead and dying vegetation.  A few
+
+scraggly young trees try to grow in the poor soil around the trail,
+
+though their leaves are scant and brown.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D1
+~
+~
+0 -1 43003 10 10 5
+D3
+~
+~
+0 -1 43001 10 10 5
+E
+leaves plants vegatation~
+The leaves are curled up at the tips and slightly brown along the edges
+
+as though the plants have gone too long without water.
+
+~
+E
+tree sapling stone~
+This tall, thin sapling was once a thriving, vibrant young oak.  Its
+
+lifespan was cut short and it has been preserved forever in its summer
+
+glory by its metamorphosis into grey stone.  Greyish-green ivy winds
+
+itself around the stone tree, giving a semblance of life to the petrified
+
+sapling.
+
+~
+E
+trees scraggly~
+These young saplings are twisted and in poor health.  The few leaves
+
+boasted by the twisted branches are mostly brown and dead.
+
+~
+-1
+S
+
+#43003
+On Path to Woods~
+Dying, scraggly trees hang their bare limbs down over the path, as if
+
+reaching for what little life is still left near the forest floor.  The
+
+few green plants left among the brownish dead brush struggle to reach the
+
+sun.  Greying ivy strangles the last bits of life out of the dwarfed
+
+trees, even as the vines themselves perish.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43006 10 10 5
+D3
+~
+~
+0 -1 43002 10 10 5
+E
+ivy vines~
+Even the vines look unhealthy, as they slowly climb their crippled hosts. 
+
+Some of the leaves on the vines are a grey color not usually found in
+
+nature.
+
+~
+E
+brownish dead brush~
+The browned, dead vegetation clutters the forest floor.  Some of the
+
+plants seem tinged with a strange, greyish color.  Nothing moves in the
+
+dead brush, and even the wind seems wary of disturbing it.
+
+~
+E
+trees scraggly limbs~
+The pitiful, stunted trees are thin here, and the ones that live are
+
+choked with ivy vines.  None of the trees bear any healthy leaves, all
+
+are brown or spotted with grey.
+
+~
+-1
+S
+
+#43004
+A Narrow Path Through the Stone Forest~
+A gentle breeze blows through the silent forest, passing over you in a
+
+gentle caress.  The stone leaves of the tall oak trees stir not at all,
+
+immobilized forever.  Petrified bushes border the trail through the
+
+forest, pruned and trimmed into patterns nature never intended.  A few
+
+stone birds perch on the limbs of the petrified oaks, are frozen for all
+
+time.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D1
+~
+~
+0 -1 43005 10 10 5
+D2
+~
+~
+0 -1 43011 10 10 5
+E
+birds~
+Frozen on their perches for all eternity, a few birds of unidentifiable
+
+species sit in the stony boughs of the young oaks.
+
+~
+E
+petrified bushes~
+The stone bushes line the path on either side like a grey barrier.
+
+Petrified berries can be made out through the grey foliage, their once
+
+bright berries hard and cold.
+
+~
+A
+~
+~
+if( !is_exhausted( ch ) ) {
+
+  if( find_stat( ch, level ) < 50 )
+
+    act_tochar( #evil, ch );
+
+  else
+
+    act_tochar( #sadness, ch );
+
+  }
+
+continue;
+
+~
+E
+evil~
+@eA foreboding feeling fills your soul, and you suddenly feel that to go
+
+onward, towards the heart of this forest, would cause your demise very
+
+soon.@n
+
+~
+E
+sadness~
+@eA great sadness fills your soul, as if the life of this forest has
+
+become as dead and grey as the cold stone that surrounds you.@n
+
+~
+!
+3 0 4
+-1
+S
+
+#43005
+A Narrow Path Through the Stone Forest~
+Bushes of solid rock line the trail along this portion of it, while
+
+beyond the bushes stand a wealth of tall, slender oaks.  Well trimmed and
+
+pruned, the bushes were in full bloom when their metamorphosis was
+
+effected.  Delicate stone flowers peek out from between the flinty leaves
+
+of the shrubbery.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+[Gyrael] add animate fox code
+
+~
+-235405312 10 9 0
+D1
+~
+~
+0 -1 43009 10 10 5
+D3
+~
+~
+0 -1 43004 10 10 5
+E
+bushes flowers shrubs~
+A row of unfamiliar flowering bushes lines each side of the trail. 
+
+Obviously trimmed to display the blossoms for maximum effect, the
+
+decoratively pruned stone flora will forever show the expert, loving 
+
+care with which it was shaped.
+
+~
+A
+get take grab~
+fox stone~
+act_tochar( #heavy, ch );
+
+~
+E
+heavy~
+The stone fox's feet are still attached to the stony ground.
+
+~
+!
+0 0 0
+A
+recite~
+scroll tattered reanimation~
+if( has_obj( 3807, ch ) ) {
+
+  if( obj_in_room( 3673, room ) ) {
+
+    act_tochar( #read, ch );
+
+    act_notchar( #reads, ch );
+
+    wait( 1 );
+
+    send_to_room( #wake, room );
+
+    junk_obj( has_obj( 3807, ch ) );
+
+    junk_obj( obj_in_room( 3673, room ) );
+
+    mload( 2304, room );
+
+    wait( 1 );
+
+    mob = mob_in_room( 2304, room );
+
+    interpret( mob, #fall );
+
+    set_pos( mob, 6 );
+
+    }
+
+  else
+
+    continue;
+
+  }
+
+else
+
+  continue;
+
+~
+E
+read~
+You read the tattered scroll.
+
+~
+E
+reads~
+$n recites a tattered scroll.
+
+~
+E
+wake~
+The fox slowly fills in with color, the grey stone fading away.
+
+~
+E
+fall~
+emote , unused to being flesh instead of stone, stumbles in midstep and falls to the ground.
+
+~
+!
+0 0 0
+3673 17 1509949540 -2 0
+-1
+S
+
+#43006
+Hidden Trail~
+The silent, somber trail is bordered here by drab, ashen vegetation.  The
+
+plants cling to their precarious existence, the hard, rocky ground
+
+allowing no room for water to flow to their roots.  Dwarfed, twisted
+
+trees grow in small patches to the south, their leaves long since fallen. 
+
+Fist-sized rocks are scattered around this section of the forest,
+
+cluttering the trail.  The absence of vivid color is profound; the faint
+
+green of the dying plants the only hue other than the dismal grey.
+
+~
+[Gyrael] search rocks - hide something here eventually
+
+the 5th line don't make much sense to begin with
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43007 10 10 5
+D2
+~
+~
+0 -1 43003 10 10 5
+E
+rocks~
+Rocks of all shapes and sizes lie in the area.  Upon closer inspection,
+
+you think you see the lines of deliberate carving upon the weathered
+
+stones.  Time has eroded the shapes beyond recognition, however.  Still,
+
+the feeling of definitive shapes remains.
+
+~
+E
+vegetation plants~
+The few stunted trees that are still living here look as if even this
+
+miserable existance will soon end.  Even the weeds here are stunted and
+
+dying, and their stalks litter the ground between the small trees.
+
+~
+-1
+S
+
+#43007
+Hidden Trail~
+The drab landscape around you is limned in shades of grey.  The light grey
+
+of the dry, ash-like dirt which covers the ground on and around the trail
+
+blends with gravel of a darker grey.  The few struggling plants which grow
+
+in the harsh, rocky soil are limp and wilting, all the green draining out
+
+of them to be slowly replaced by a greyish-brown color.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43008 10 10 5
+D2
+~
+~
+0 -1 43006 10 10 5
+E
+plants~
+Only a very few small plants have braved the rocky ground, here.  Slowly
+
+dying, the plants' drop their leaves as they are give in to the lack of
+
+water and nutrients.
+
+~
+78 17 1509949540 -2 0
+-1
+S
+
+#43008
+Hidden Trail~
+An opaque, swirling mist creeps along the ground.  A faint breeze blows in
+
+from the north, tattering the veil of mist aside in places to reveal
+
+rocky, uneven ground.  Patches of gravel and grey, lifeless dirt are
+
+visible for a moment before the mist closes back in.  The smell of death
+
+and decay wafts past your nostrils, carried in from the north by the light
+
+breeze.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D2
+~
+~
+0 -1 43007 10 10 5
+E
+mist opaque swirling~
+The thick, chill mist clings to the ground obscuring the ground.  What
+
+you can make out of the ground shows a gravel trail damp from the thick
+
+fog.
+
+~
+A
+climb clamber scale~
+boulders 1 east~
+act_tochar( #climb, ch );
+
+act_notchar( #climbs, ch );
+
+transfer( ch, find_room( 23117 ) );
+
+act_notchar( #drops, ch );
+
+~
+E
+climb~
+You clamber over the boulders to the east and drop down onto another
+
+trail.
+
+~
+E
+climbs~
+$n clambers over the boulders to the east and drops down out of sight.
+
+~
+E
+drops~
+$n drops down from the boulders to the west, landing near you.
+
+~
+!
+0 0 0
+-1
+S
+
+#43009
+A Narrow Path Through the Stone Forest~
+The trail winds its way through the crowded stone trees of the petrified
+
+forest.  Preserved in their summer glory for all eternity, the stone oaks
+
+hang their flinty limbs over the small trail.  Looking up into the boughs
+
+of the trees, you see a stone robin seated among the stone leaves, his
+
+once red breast turned a somber grey.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D1
+~
+~
+0 -1 43010 10 10 5
+D3
+~
+~
+0 -1 43005 10 10 5
+E
+robin up~
+Perched on a thin branch, the stone robin's chest is puffed out proudly. 
+
+His thrown back head and open beak give the impression of a bird about to
+
+burst into song.
+
+~
+A
+take get grab~
+robin bird~
+act_tochar( #robin, ch );
+
+~
+E
+robin~
+The robin is too high to reach and the stone bark of the tree too slick
+
+to climb.
+
+~
+!
+0 0 0
+-1
+S
+
+#43010
+A Narrow Path Through the Stone Forest~
+Tall, slender pillars of stone jut out of the grey earth, the remnants of
+
+these once magnificent young oaks.  Branching out from the stone trunks
+
+are thin, fragile limbs covered with delicate stone leaves.  A few of the
+
+flinty leaves have fallen to the ground to shatter into a myriad of
+
+jagged shards.  The path which runs north and south through the desolate
+
+forest has fallen into disrepair and you must pick your way carefully
+
+through the broken fragments of stone.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43000 10 10 5
+D3
+~
+~
+0 -1 43009 10 10 5
+E
+fragments path~
+The sharp fragments of stone which litter the path seem to have fallen
+
+from the stone trees which border the path.  In a few razor-sharp shards
+
+you can see the delicate tracery of the veins of an oak leaf.  In others
+
+piece, the slightly gnarled lengths were perhaps small limbs of the young
+
+trees.
+
+~
+E
+trees~
+Tall and straight, these young oak trees must have been truly beautiful
+
+in their living splendor.  Now they stand as silent sentinels, hanging
+
+their slender stone limbs eternally over the narrow path until the
+
+weather grinds them to dust.
+
+~
+-1
+S
+
+#43011
+A Narrow Path Through the Stone Forest~
+The narrow path winds its way through the tall, relatively slender stone
+
+oaks of the forest's outskirts.  The stone flora bordering the path is all
+
+decoratively trimmed and shaped, giving the impression of painstaking
+
+care.  To the south, the path narrows even more, and the trees grow more
+
+densely, their trunks thicker than those to the north.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43004 10 10 5
+D2
+~
+~
+0 -1 43013 10 10 5
+E
+south~
+The trees to the south grow close together, all but eliminating the
+
+narrow trail.  The trees are older, their trunks thick and their boughs
+
+intertwined with those of neighboring trees.
+
+~
+E
+stone flora~
+Tree limbs and bushes have been carefully cut back from the path and to
+
+the east and west the edges of the path are perfectly straight.  Whoever
+
+tended the path was very careful, you can't make out any marks on the
+
+stone plants to show where they were cut.
+
+~
+-1
+S
+
+#43012
+Rotting Woods~
+This area is under construction.
+
+~
+~
+-235405312 10 9 0
+-1
+S
+
+#43013
+A Narrow Path through the Stone Forest - Path's End~
+The trees crowd in closely around you, the path all but obscured by the
+
+moderately slender oaks.  Stone bushes and shrubs border the path, ending
+
+abruptly with a wide trellis on each side.  The stone vines which cling to
+
+the trellises bear large, delicately shaped flowers.  To the south, the
+
+narrow path fades away, absorbed by the dense stands of trees.
+
+~
+No.mob
+
+pick flower
+
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405304 10 9 0
+D0
+~
+~
+0 -1 43011 10 10 5
+D2
+~
+~
+0 -1 43020 10 10 5
+E
+trellises~
+These lovely grey structures are fan-shaped and provide excellent support
+
+for the flowering stone vines which cling to them.  Closer inspection
+
+reveals that the trellises are stalks of the bordering bushes which have
+
+been trained to brace the climbing vines.
+
+~
+E
+flowers blooms~
+The petals of these large flowers are shaped like tear drops.  The
+
+original color of these stone blooms is impossible to determine, as they
+
+are now a uniform shade of grey.
+
+~
+A
+pick get~
+flower bloom blossom petal~
+if( random( 1, 20 ) <= 3 ) {
+
+  if( rflag( reset0, room ) ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #pick, ch );
+
+    act_notchar( #rpick, ch );
+
+    obj_to_char( oload( 2712 ), ch );
+
+    }
+
+  else {
+
+    act_tochar( #nope, ch );
+
+    act_notchar( #rnope, ch );
+
+    i = 10d2+10;
+
+    dam_message( ch, i, "The shards of the shattered flower" );
+
+    inflict( ch, mob, i, "the shards of a shattered stone flower" );
+
+    }
+
+  }
+
+else {
+
+  remove_rflag( reset0, room );
+
+  i = 10d2+10;
+
+  act_tochar( #nope, ch );
+
+  act_notchar( #rnope, ch );
+
+  dam_message( ch, i, "The shards of the shattered flower" );
+
+  inflict( ch, mob, i, "the shards of a shattered stone flower" );
+
+  }
+
+~
+E
+pick~
+You attempt to pick one of the stone flowers, but only manage to break
+
+away a single petal.
+
+~
+E
+rpick~
+$n attempts to pick one of the stone flowers, but only manages to break
+
+away a single petal.
+
+~
+E
+nope~
+You try to pick one of the stone flowers, but it shatters in your hand.
+
+~
+E
+rnope~
+$n tries to pick one of the stone flowers but it shatters in $s hand.
+
+~
+!
+0 0 0
+78 17 1509949540 -2 0
+-1
+S
+
+#43014
+Corner of the Stone Forest~
+A corner in the forest is made by a stone hedge to the north and a thick
+
+wall of trees to the west.  One of the great oaks has splintered in half,
+
+yet remains upright, supported by its grey neighbors.  The forest floor
+
+is thick with rubble, almost thick enough to be gravel.  The oaks must
+
+have been tranquil in life, but now their jagged, broken branches and
+
+unmoving leaves give them a sinister aspect.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D1
+~
+~
+0 -1 43015 10 10 5
+D2
+~
+~
+0 -1 43021 10 10 5
+E
+floor rubble~
+Jagged bits of stone, fallen branches, and leaves shattered in their fall
+
+cover the ground here.  It is impossible to walk without stepping on
+
+something.
+
+~
+E
+hedge 1 north~
+Thick and full, the hedge is still intact even after being turned to
+
+stone.  A few stone flowers dot the face of the hedge, open for bees that
+
+will never arrive.  No trees grow close to the hedge, and no branches
+
+hang over it from either side.
+
+~
+E
+wall 1 west~
+Tightly grouped together, the trees to the west grow far too close
+
+together to be passable.  The ground here is thick with rubble, but to
+
+the west the problem is much worse.
+
+~
+2011 137 1509949540 3 0
+-1
+S
+
+#43015
+Edge of Woods~
+The trees here are well spaced and look healthy, save for their petrified
+
+state.  One of the towering oaks is cracked and has taken a decided tilt
+
+northward.  The stone hedge to the north is in danger of being smashed
+
+should the tree fall.  You can make out twin oak trees to the south
+
+leaning against each other.  The forest continues to the east and west
+
+much the same.
+
+~
+[Gyrael] secret entrance to sacred grove north
+
+[Maelthar] push tree, 18 str check, opens north
+
+[Maelthar] entrance hidden?
+
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+163 -1 43068 10 10 5
+D1
+~
+~
+0 -1 43016 10 10 5
+D2
+~
+~
+0 -1 43037 10 10 5
+D3
+~
+~
+0 -1 43014 10 10 5
+E
+twin~
+You can barely make out the twin oaks the canopy of grey limbs and
+
+branches.  They lean against each other helping each other to bear the
+
+strain of thier tremendous weight.
+
+~
+E
+hedge 1 north~
+The delicate hedge is made of flowering bushes that have grown together. 
+
+At one time, perhaps, the hedge would have been passable.  Now it acts as
+
+a stone wall.
+
+~
+A
+push shove~
+tree oak~
+if( obj_in_room( 3674, room ) ) {
+
+  if( !is_open( room, north ) ) {
+
+    if( find_stat( ch, str ) > 18 ) {
+
+      act_tochar( #shove, ch );
+
+      act_notchar( #shoves, ch );
+
+      wait( 1 );
+
+      send_to_room( #crash, room );
+
+      open( room, north );
+
+      send_to_room( #hedge, find_room( 43068 ) );
+
+      junk_obj( obj_in_room( 3674, room ) );
+
+      }
+
+    else {
+
+      act_tochar( #weak, ch );
+
+      act_notchar( #hesweak, ch );
+
+      }
+
+    }
+
+  else {
+
+    act_tochar( #weak, ch );
+
+    act_notchar( #hesweak, ch );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #sheeit, ch );
+
+~
+E
+shove~
+You strain with all your might, shoving on the leaning tree.
+
+~
+E
+shoves~
+$n strains with all $s might, shoving against the leaning tree.
+
+~
+E
+crash~
+The giant tree crashes to the ground, smashing through the petrified
+
+hedge wall to the north.
+
+~
+E
+weak~
+You strain with all your might against the tree to the north, but are too
+
+weak to budge it.
+
+~
+E
+hesweak~
+$n strains with all $s might against the tree to the north, but $e is too
+
+weak to budge it.
+
+~
+E
+sheeit~
+You don't see any trees around that appear weak enough to budge.
+
+~
+E
+hedge~
+A giant stone oak tree crashes across the hedge wall to the south,
+
+shattering into pieces of grey stone.
+
+~
+!
+0 0 0
+3674 17 1509949540 -2 0
+-1
+S
+
+#43016
+Edge of Woods~
+The stone trees stand silent and still.  Broken limbs and leaves lie here
+
+like tumbled masonry.  Few of the trees are in good condition, all are
+
+missing limbs and leaves.  A stone hedge runs along the forest to the
+
+north.  No branches lean over this barrier, as if it were more than just
+
+a physical presence.  The forest of stone continues in every other
+
+direction.
+
+~
+[Maelthar] done
+
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D1
+~
+~
+0 -1 43017 10 10 5
+D2
+~
+~
+0 -1 43042 10 10 5
+D3
+~
+~
+0 -1 43015 10 10 5
+E
+hedge 1 north~
+The stone hedge, still blooming with flowers, makes a barrier to the
+
+north.  The trees in the area seem to recognize the hedge as some kind of
+
+wall and do not grow too near it, or send branches over it.
+
+~
+E
+trees~
+Broken, and for the most part limbless, the stone trees reach for the sky
+
+like skeletal fingers.  The wind fails to sway the few branches that
+
+cling to the stone trunks.
+
+~
+1937 9 1509949540 3 0
+-1
+S
+
+#43017
+Edge of Woods~
+One of the mighty oaks here had fallen long before the forest was turned
+
+to stone.  Smaller oaks, less than twenty feet, have grown up and filled
+
+in the space it once occupied.  The forest is lighter here partly because
+
+of the fallen tree.  The fallen trunk is covered with crescent shaped
+
+stone mushrooms.  The forest to the north is impassable because of dense
+
+undergrowth.  The rest of the forest seems easily traversable, save for
+
+the broken limbs and pieces of stone that are a constant nuisance.
+
+~
+[Gyrael] Room is ready for review.
+
+[Ylena] maybe a get mushroom acode would be nice.
+
+[Gyrael] fixed
+
+~
+-235405312 10 9 0
+D1
+~
+~
+0 -1 43018 10 10 5
+D2
+~
+~
+0 -1 43047 10 10 5
+D3
+~
+~
+0 -1 43016 10 10 5
+E
+trunk~
+Felled long before the forest was petrified, the trunk has nevertheless
+
+been turned to stone.  Large, crescent shaped mushrooms cling to its
+
+sides, each a perfect statue of what it was in life.
+
+~
+E
+mushrooms~
+These large, crescent shaped mushrooms are typical of rotting wood, but
+
+unlike the typical mushroom these are made of solid stone.  They still
+
+cling to their host, a fallen oak tree.
+
+~
+E
+oaks trees~
+Many of the trees in this area are small oaks that have grown quickly to
+
+take the place of the large oak that fell.  The other trees are quite
+
+large, many with trunks as thick as two men.  Most of the trees are
+
+missing their leaves and limbs, hardly recognizable as what they were
+
+save for the patterns of their bark and the few branches that yet cling
+
+to them.
+
+~
+1937 9 1509949540 3 0
+3821 17 1509949540 -2 0
+-1
+S
+
+#43018
+Stone Forest~
+The towering oaks shade the grey forest with their stony leaves.  A
+
+family of deer stand together, grazing on the stone leaves together for
+
+eternity.  Nothing moves, and even the wind fails to stir the leaves. 
+
+Broken pieces of stone lay where they have fallen, some with a bird or a
+
+squirrel still attached.
+
+~
+[Maelthar] done
+
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D1
+~
+~
+0 -1 43019 10 10 5
+D2
+~
+~
+0 -1 43052 10 10 5
+D3
+~
+~
+0 -1 43017 10 10 5
+E
+deer~
+Four deer, two does and two smaller deer, stand together.  One of the
+
+does stands alert, head raised for signs of danger.  One of the fawns has
+
+its mouth open to grasp a stone leaf from a nearby bush.
+
+~
+E
+oaks trees~
+The mighty trees stand with thier limbs spread to gather the light of the
+
+sun.  Their mighty roots, once used to gather nutrients, are now cold
+
+stone like the rest of the tree.
+
+~
+3815 17 1509949540 -2 0
+-1
+S
+
+#43019
+Stone Forest~
+Standing silent and lonely, the stone trees of the forest seem to radiate
+
+an almost tangible sadness.  Boughs broken by the force of their own great
+
+weight litter the ground in chunks and shards of grey stone.  Shattered
+
+slivers of unreconizable stone lie scattered about the area, razor-sharp
+
+and gleaming with pointed edges.
+
+~
+[Maelthar] possible damage from broken stone (like the stone in the black hills)
+
+[Maelthar] done
+
+[Gyrael] add damage action here
+
+*
+
+~
+-235405312 10 9 0
+D1
+~
+~
+0 -1 43020 10 10 5
+D2
+~
+~
+0 -1 43057 10 10 5
+D3
+~
+~
+0 -1 43018 10 10 5
+E
+stone jagged razor-sharp shard bough chunk~
+The broken branches and shattered leaves cover the ground with a
+
+dangerous layer of rubble.  Some of the fallen leaves are still
+
+recognizable as oak leaves, the fine veins and lobes carved better than
+
+any sculpter could manage.
+
+~
+E
+tree~
+The gigantic oaks tower over the area, some with great, jagged holes
+
+where their branches have broken away.
+
+~
+-1
+S
+
+#43020
+Stone Forest - Within the Borders of the Forest~
+The forest stands silent and desolate in its monotonous greyness.  The
+
+tree trunks are close together, their stony boughs hopelessly intertwined
+
+into a flinty canopy overhead.  Precious little light could filter through
+
+the tangled mass above.  The ground is littered with broken shards of
+
+stone leaves that have fallen in a rather sad parody of autumn.  It is
+
+possible to make your way through the trees on three sides, but to the
+
+east the trees form an impenetrable barrier of stone trunks.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43013 10 10 5
+D2
+~
+~
+0 -1 43062 10 10 5
+D3
+~
+~
+0 -1 43019 10 10 5
+E
+canopy up boughs~
+The crowded oaks have stood together so long that their boughs have
+
+become irreversibly tangled.  The current petrified state of the forest
+
+ensures that the mass of limbs and leaves will never be untangled.
+
+~
+E
+broken shards stone leaves~
+The fragments of stone leaves litter the ground, some with jagged edges. 
+
+You can clearly make out the growth rings on one fallen limb, another
+
+reminder that this place was once a thriving forest.
+
+~
+E
+1 east~
+The dense forest of stone oaks thickens to the east.  The ground is
+
+littered with stone debris and shattered stone, making passage in that
+
+direction impossible.
+
+~
+2011 137 1509949540 3 0
+-1
+S
+
+#43021
+The Stone Forest - A Wall of Oaks~
+Crowded oaks end your westward progress at this desolate edge of the
+
+forest, and the jutting pillars of the greater oaks can be seen in an
+
+almost panoramic view to the east.  A shattered pile of stone lies on the
+
+ground, with a few delicate grey feathers littering the area around it. 
+
+To the west, the oak trees crowd in, forming a flinty wall of grey stone
+
+trunks.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43014 10 10 5
+D1
+~
+~
+0 -1 43037 10 10 5
+D2
+~
+~
+0 -1 43022 10 10 5
+E
+pile stone ground feathers area~
+It seems that not every inhabitant of the forest was able to leave its
+
+confines before the transformation claimed them.  Tiny fragments of stone
+
+are all that remain of this unfortunate bird.
+
+~
+E
+1 west wall~
+The wall of oaks looks menacing with its broken branches and cracked
+
+trees.  Passing through the woods would not only be extremely difficult,
+
+the occasional crash of falling stone indicates it would be dangerous as
+
+well.
+
+~
+E
+view greater~
+The trees to the east stand almost half again as tall as the trees to the
+
+west.  Their stone trunks are as thick as two or three, or, in some cases
+
+four, men.  Though their boughs are broken and litter the ground, the
+
+trees still seem majestic.
+
+~
+A
+~
+nest feather~
+if( random( 1, 10 ) >= 9 ) {
+
+  if( rflag( reset0, room ) ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #get, ch );
+
+    act_notchar( #rget, ch );
+
+obj_to_char( oload( 2034 ), ch );
+
+    }
+
+  else {
+
+    act_tochar( #search, ch );
+
+    act_notchar( #rsearch, ch );
+
+    }
+
+  }
+
+else {
+
+  remove_rflag( reset0, room );
+
+  act_tochar( #search, ch );
+
+  act_notchar( #rsearch, ch );
+
+  }
+
+~
+E
+search~
+You search through the nest, but find nothing.
+
+~
+E
+rsearch~
+$n searches through the nest, but finds nothing.
+
+~
+E
+get~
+You search through the nest and find a long, silver feather!
+
+~
+E
+rget~
+$n searches through the nest and finds a long, silver feather.
+
+~
+!
+9 0 0
+-1
+S
+
+#43022
+Edge of the Stone Forest~
+Grey stone stretches in every direction as far as the eye can see.  The
+
+oaks stand crippled and broken, their stone branches and leaves litter
+
+the ground.  Shards of broken stone crunch under foot, the only sound in
+
+this bleak landscape.  Thick, petrified brush blocks passage to the west. 
+
+The forest of stone is thinner in the other directions, however;  only
+
+avoiding sharp fragments of stone present a challenge.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43021 10 10 5
+D1
+~
+~
+0 -1 43036 10 10 5
+D2
+~
+~
+0 -1 43023 10 10 5
+E
+oaks trees~
+Most of the trees are topless and for the most part barren of leaves. 
+
+The damage seems worse to the east, many of the trees on the west side
+
+have retained some of their stony foliage.
+
+~
+E
+shards broken stone fragments~
+Pieces of bark, fallen branches, and delicate stone leaves have fallen
+
+here, creating a layer of sharp stone debris.
+
+~
+E
+1 west brush~
+Vines and low bushes now turned into stone hamper progress to the east. 
+
+Even if you were to venture in that direction it would take hours to gain
+
+even a few yards.
+
+~
+-1
+S
+
+#43023
+Edge of the Stone Forest~
+An entire stand of oaks has fallen here, the shattered trunks and
+
+branches forming a large pile.  The sky can be seen through a gaping hole
+
+in the canopy of the forest, a change from the dismal grey of the forest. 
+
+To the west the forest is thick and overgrown, probably unpassable even
+
+before its transformation.  In other directions the forest continues as
+
+far as the eye can see, grey, stone trees standing like pillars.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43022 10 10 5
+D1
+~
+~
+0 -1 43035 10 10 5
+D2
+~
+~
+0 -1 43024 10 10 5
+E
+stand trunks branches pile~
+It appears that gravity is the culprit in the destruction of the forest
+
+here and that several of the trees were felled by the impact of other
+
+trunks.  The pile is made up of at least six trees, it is impossible to
+
+tell for sure because they are so damaged from falling.
+
+~
+E
+1 west~
+Brambles and vines form a thick screen of stone.  Traveling in that
+
+direction wouldn't be feasible without being able to fly.
+
+~
+E
+trees forest~
+The trees are still recognizable, but parts have fallen or been sheared
+
+away by their own weight.  This forest is completely silent and still,
+
+only the crunch of your own boots on the stone fragments makes a sound.
+
+~
+2011 137 1509949540 3 0
+3815 17 1509949540 -2 0
+-1
+S
+
+#43024
+Clearing - Stone Grass~
+Grass here once grew taller than an average dwarf stands, but it is now
+
+frozen in stone forever.  A horrible smell wafts from the south along
+
+with a terrible crowing noise.  Trees line the edges of the clearing on
+
+the north and east, some cracked and missing branches.  The clearing
+
+continues to the south and east, although the razor sharp grass is too
+
+high to tell what exactly lies in those directions.
+
+~
+[Gyrael] no mob, keep them crows back there
+
+[Gyrael] evil clearing sw
+
+[Maelthar] done
+
+[Ylena] the clearing extra has no description.
+
+[Maelthar] does now
+
+~
+-235405304 10 9 0
+D0
+~
+~
+0 -1 43023 10 10 5
+D1
+~
+~
+0 -1 43034 10 10 5
+D2
+~
+~
+0 -1 43025 10 10 5
+D3
+~
+~
+0 -1 43072 10 10 5
+E
+grass~
+The petrified stone grass is bent as if by a wind yet it is unmoving. 
+
+Points of sharp grass look as if they could pierce steel or leather.
+
+~
+E
+trees~
+Ancient stone oaks border the clearing to the north and east.  Their
+
+branches reach out over the invisible line that separates the two yet no
+
+trees grow in the clearing.
+
+~
+E
+clearing~
+Only high grass grows in this corner.  Instead of a peaceful field it is
+
+now a dangerous maze of jagged stone.
+
+~
+A
+~
+~
+acode( find_room( 43025 ), 1 );
+
+continue;
+
+~
+!
+1 0 15
+A
+~
+~
+acode( find_room( 43025 ), 1 );
+
+continue;
+
+~
+!
+3 0 15
+-1
+S
+
+#43025
+Clearing - Stone Grass~
+What was once a beautiful meadow has become a bleak, empty clearing in a
+
+silent forest.  Razor-sharp, waist-high grass covers the empty meadow
+
+here; growing shorter in every direction but the east.  A fine, powdery
+
+dust covers the stony ground here, perhaps from grass that has been
+
+crushed to dust.  The tall trees of the somber grey forest can be seen in
+
+the distance in all directions.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43024 10 10 5
+D1
+~
+~
+0 -1 43033 10 10 5
+D2
+~
+~
+0 -1 43026 10 10 5
+D3
+~
+~
+0 -1 43071 10 10 5
+E
+razor-sharp waist-high grass~
+This grass will never again sway gently with the breeze, frozen in stone
+
+for eternity.  The grass is very sharp and makes travel through the
+
+flinty clearing difficult.
+
+~
+A
+~
+~
+if( !can_fly( ch ) ) {
+
+if( !is_affected( ch, 25 ) ) {
+
+    act_tochar( #grass, ch );
+
+    i = 2d35+35;
+
+    inflict( ch, ch, i, "walking through razor-sharp stone grass" );
+
+    dam_message( ch, i, "The razor-sharp grass" );
+
+    }
+
+  else
+
+    act_tochar( #invuln, ch );
+
+  }
+
+continue;
+
+~
+E
+grass~
+The razor-sharp edges of the waist-high grass shred your flesh!
+
+~
+E
+invuln~
+Invulnerability protects you from the razor-sharp grass.
+
+~
+!
+3 0 15
+A
+~
+~
+acode( room, 1 );
+
+continue;
+
+~
+!
+1 0 15
+A
+~
+~
+send_to_room( #caw, room );
+
+~
+E
+caw~
+A loud, raucous cawing echoes through the stone forest.
+
+~
+!
+2 375 0
+2439 41 1509949540 3 0
+2439 73 1509949540 3 0
+2439 73 1509949540 3 0
+-1
+S
+
+#43026
+Clearing - Near a Large Boulder~
+The clearing here is dominated by something lost in the rest of this
+
+somber grey forest -- color.  Bright, white droppings stain a gigantic
+
+boulder that seems to have served as a perch or nest of some sort very
+
+recently.  What little stone debris surrounding the boulder here is also
+
+stained in droppings and covered in a layer of grey dust and tiny black
+
+feathers.  A thicket of stony underbrush prevents any further travel
+
+through the forest to the south, while the clearing continues in all
+
+other directions.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43025 10 10 5
+D1
+~
+~
+0 -1 43027 10 10 5
+D3
+~
+~
+0 -1 43085 10 10 5
+E
+droppings~
+The droppings cover the boulder, debris, and the dusty ground beneath the
+
+debris.
+
+~
+E
+debris~
+The debris here is sparse, a few stony branches and leaves fallen from
+
+the overhanging boughs to the south.  Droppings and tiny black feathers
+
+litter the debris.
+
+~
+E
+1 south underbrush~
+The underbrush to the south is thick and makes travel impossible for
+
+those without the ability to fly.
+
+~
+E
+feathers tiny black~
+The feathers are quite small and black.  They are ratty and in bad
+
+condition and would all be quite worthless.
+
+~
+2439 137 1509949540 2 0
+2439 137 1509949540 3 0
+3808 17 1509949540 -2 0
+-1
+S
+
+#43027
+Clearing - Near a Wall of Stone Oaks~
+The forest seems to have been starting to overtake this clearing at the
+
+time of petrification, as several tiny saplings were growing along the
+
+edge of the forest to the east.  Short, petrified grass grows taller and
+
+more densely as the clearing extends off to the west.  An impervious wall
+
+of underbrush and oak trunks prevent both movement and sight any further
+
+to the south.
+
+~
+[Gyrael] no.mob to keep crows penned in the corner
+
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405304 10 9 0
+D0
+~
+~
+0 -1 43033 10 10 5
+D1
+~
+~
+0 -1 43028 10 10 5
+D3
+~
+~
+0 -1 43026 10 10 5
+E
+saplings~
+A few oak saplings, no taller than a dwarf, once grew on the edge of this
+
+forest clearing but have since been frozen in stony silence for eternity.
+
+~
+E
+grass~
+The grass here is short and grew sparsely at the time of petrification.
+
+~
+A
+~
+~
+acode( find_room( 43025 ), 3 );
+
+~
+!
+2 350 0
+-1
+S
+
+#43028
+Stone Forest - Near a Clearing~
+The pale trees that surround you on three sides are absent to the west. 
+
+Trees grow too close to be bypassed to the south, but to the north and
+
+east the trees are well spaced.  Walking through the woods is difficult
+
+because of fallen branches and leaves, many sharp enough to cause serious
+
+harm.  To the north a single tree can be seen that is much taller than
+
+its neighbors.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43038 10 10 5
+D1
+~
+~
+0 -1 43029 10 10 5
+D3
+~
+~
+0 -1 43027 10 10 5
+E
+trees~
+The trees are the same bland gray as everything in this silent forest. 
+
+Much of their foliage has broken off by either the wind or gravity.
+
+~
+E
+branches leaves~
+Fallen from the stone boughs, the branches and leaves are in various
+
+conditions.  Some are nearly intact but others have fragmented into
+
+razor-edged pieces.
+
+~
+E
+clearing~
+Short grass grows in the clearing as the trees shaded the area too well
+
+from the sunlight.
+
+~
+-1
+S
+
+#43029
+Stone Forest - Southern Edge~
+A silent wall of trees lie to the south.  The ground rises slightly to
+
+the north to form a small hill.  Branches have fallen off and lie on the
+
+hard ground.  Instead of rotting to form new soil these branches have
+
+just formed debris, they will never help new things grow.  The forest is
+
+dark here as the branches overhead have retained most of their leaves.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+[Gyrael] log here
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43043 10 10 5
+D1
+~
+~
+0 -1 43030 10 10 5
+D3
+~
+~
+0 -1 43028 10 10 5
+E
+wall 1 south~
+The stone wall of trees looks dark and gloomy.  Huge stone trunks grow
+
+too close together to allow the passage of any animal much bigger than an
+
+squirrel.
+
+~
+E
+1 north hill~
+The small hill is covered with petrified debris.  It only rises to
+
+slightly more than a goblin's height, making a climb easy.
+
+~
+E
+branches~
+The curving, shapely limbs look much the same as they did on the day they
+
+were petrified.  Instead of rotting they have been broken and cracked,
+
+slowly ground into dust.
+
+~
+-1
+S
+
+#43030
+Stone Forest - Southern Edge~
+A bear stands frozen in stone here, mouth extended towards a raspberry
+
+bush.  The forest stands exactly the same as it was that day, frozen in
+
+stone for eternity.  Sharp thorns on the raspberry bush make a venture to
+
+the south unappealing.  Instead of seeming to be outside the forest here
+
+feels almost as if it were formed inside a cavern.  Even the most direct
+
+sunlight barely filters through the stone leaves here.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43048 10 10 5
+D1
+~
+~
+0 -1 43031 10 10 5
+D3
+~
+~
+0 -1 43029 10 10 5
+E
+bear~
+This large, powerful-looking bear is frozen, mouth slightly ajar.  Its
+
+eyes are only half open, obviously confident that nothing in the forest
+
+was a threat to it.
+
+~
+E
+raspberry thorn 1 south~
+The ripe, red berries are now hard and unedible.  Only a petrified bear
+
+seems interested in the stony fruit.  The raspberry bush to the south is
+
+quite large and its vines would prevent passage in that direction.
+
+~
+E
+trees leaves~
+All oaks, the trees are thick and full.  Their near perfect branches keep
+
+out almost all of the heavens' light.
+
+~
+-1
+S
+
+#43031
+Stone Forest - Near a Tiny Stream~
+A thin trickle of water runs through the center of this area of the
+
+forest.  Dancing over the rocks and stones of the small streambed, the
+
+tiny brook burbles along cheerfully.  A few drooping plants have taken
+
+root near the stream, trying desperately to leech life out of the sterile
+
+layer of dust.  The stone trees stand in a forbidding wall to the south,
+
+blocking any attempt at passage.
+
+~
+[Gyrael] Naiad pops out here
+
+[Gyrael] If you have a regular decanter in your inventory when the naiad
+
+dies it'll become a endless water one 
+
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405311 10 9 0
+D0
+~
+~
+0 -1 43053 10 10 5
+D1
+~
+~
+0 -1 43032 10 10 5
+D3
+~
+~
+0 -1 43030 10 10 5
+E
+stream brook water~
+The tiny stream is a mere three feet wide and perhaps a foot deep. 
+
+Clear, clean water flows into the densely packed stands of trees to the
+
+south.
+
+~
+E
+plants drooping~
+Desperately clinging to life, the few tiny plants whose seeds were
+
+unlucky enough to take root here are slowly dying in the deficient soil.
+
+~
+A
+look~
+stream spring water~
+if( rflag( reset0, room ) ) {
+
+  if( !mob_in_room( 437, room ) ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #look, ch );
+
+    act_notchar( #rlook, ch );
+
+    wait( 1 );
+
+    act_tochar( #naiad, ch );
+
+    act_notchar( #rnaiad, ch );
+
+    wait( 1 );
+
+    act_tochar( #attack, ch );
+
+    act_notchar( #rattack, ch );
+
+    mload( 437, room );
+
+    mob = mob_in_room( 437, room );
+
+    attack( mob, ch, 10d10+100, "grasping hand" );
+
+    attack( mob, ch, 10d10+100, "grasping hand" );
+
+    }
+
+  else {
+
+    act_tochar( #look, ch );
+
+    act_notchar( #rlook, ch );
+
+    wait( 1 );
+
+    act_tochar( #reflection, ch );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #look, ch );
+
+  act_notchar( #rlook, ch );
+
+  wait( 1 );
+
+  act_tochar( #reflection, ch );
+
+  }
+
+~
+E
+look~
+You bend down to look into the crystal clear water.
+
+~
+E
+rlook~
+$n bends down to look into the crystal clear water of the spring.
+
+~
+E
+reflection~
+You see your face reflected in the clear water.
+
+~
+E
+naiad~
+To your astonishment, you see not your reflection, but that of a lovely,
+
+blue-skinned woman.
+
+~
+E
+rnaiad~
+$n gasps in astonishment at something $e sees in the spring.
+
+~
+E
+attack~
+@eThe lovely girl reaches out a very solid hand and grabs for you.  As you
+
+stumble back from the water's edge, the naiad rises out of the spring and
+
+leaps at you!
+
+~
+E
+rattack~
+@eA slender blue arm reaches out of the spring, grabbing for $n.  As $e
+
+stumbles back from the water's edge, a naiad rises from the spring and
+
+leaps at $n!
+
+~
+!
+0 0 0
+398 17 1509949540 -2 0
+-1
+S
+
+#43032
+Stone Forest - A Silent Corner of the Woods~
+This corner of the forest is silent and grim.  The lovely stone trees
+
+stand as silent sentinels, watching over the forest eternally.  A few
+
+blades of grass struggle to grow in the lifeless grey soil, which is
+
+little more than the dust of ground stone.  Stone limbs lie scattered
+
+around on the forest floor, shattered by the drop to the hard ground.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43058 10 10 5
+D3
+~
+~
+0 -1 43031 10 10 5
+E
+grass blades~
+Tiny and unhealthy, these are the first new signs of life in the stone
+
+forest.  Thin patches of grass have started growing in cracks in the
+
+stony ground.  It will be many years before enough plants can grow here
+
+to support life.
+
+~
+E
+lifeless grey soil~
+The soil is mostly made of bits of stone dust from the broken trees.  The
+
+wind has brought its own dust here as well but the results are a thin
+
+layer that rests in cracks and holes in the stone.
+
+~
+E
+limbs shards stone~
+The forest floor is covered with leaves and branches like any normal
+
+woods.  The only difference is that here they are solid stone and will
+
+never rot to add to the nutrients of the soil.
+
+~
+2011 137 1509949540 3 0
+-1
+S
+
+#43033
+Clearing - Stone Grass~
+The flinty grass here would be almost to the chest of the average human,
+
+at least if it were still intact.  Large trails have been smashed through
+
+the clearing here by some immense creature, reducing the grass in its
+
+wake to a powdery stony dust.  Curiously, the damage seems to be
+
+localized to this section of the clearing.  A lone tree towers over the
+
+forest just east of here.
+
+~
+[Gyrael] no mob
+
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405304 10 9 0
+D0
+~
+~
+0 -1 43034 10 10 5
+D1
+~
+~
+0 -1 43038 10 10 5
+D2
+~
+~
+0 -1 43027 10 10 5
+D3
+~
+~
+0 -1 43025 10 10 5
+E
+flinty grass~
+The grass is approximately chest-high where it has not been trampled to
+
+dust.  Strangely, there is no further damage in the clearing to the south
+
+and west, almost as if the creature responsible for the damage decided to
+
+turn back.
+
+~
+E
+trails~
+Trails have been ripped through the tall stone grass by someone or
+
+something, apparently quite immense.  For some reason the trails don't
+
+head further into the clearing.
+
+~
+A
+~
+~
+acode( find_room( 43025 ), 3 );
+
+~
+!
+2 350 0
+-1
+S
+
+#43034
+Stone Forest - By a Clearing~
+The forest comes to an abrupt end here before a clearing filled with tall
+
+grass.  Massive oaks are in many stages of existance, some bear almost
+
+all of their leaves, others have lost almost all of their branches and
+
+look like strange monuments.  From the south-west a rank smell wafts
+
+through the air, perhaps a sign of life in this bleak place.  The forest
+
+thickens to the east and north, while long grass grows to the south and
+
+west.
+
+~
+[Gyrael] woods n e
+
+[Maelthar] done
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43035 10 10 5
+D1
+~
+~
+0 -1 43039 10 10 5
+D2
+~
+~
+0 -1 43033 10 10 5
+D3
+~
+~
+0 -1 43024 10 10 5
+E
+grass tall~
+Most of the grass is bent in some direction, unable to support its own
+
+weight vertically.  The blades are broken but the edges appear
+
+dangerously sharp.
+
+~
+E
+massive oaks trees~
+Bits of stone bark and large branches have fallen off the trees as they
+
+cracked and settled under their new weight.  Though leaves litter the
+
+ground like fall, it appears that less than half have fallen from the
+
+trees' boughs.
+
+~
+-1
+S
+
+#43035
+Stone Forest~
+The forest was once thick and filled with life here.  Now pieces of cold
+
+stone are all that remain.  Trees still stand, but their lifeless, grey
+
+limbs no longer blow in the breeze.  To the east the forest has been
+
+blasted and many of the trees here bear scars from whatever caused the
+
+damage.  A stand of trees has fallen to the west, forming a pile of stone.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43036 10 10 5
+D1
+~
+~
+0 -1 43040 10 10 5
+D2
+~
+~
+0 -1 43034 10 10 5
+D3
+~
+~
+0 -1 43023 10 10 5
+E
+cold grey stone~
+Everything is made of the same grey stone.  No other colors are present
+
+save for the black of char on some of the blasted trees.
+
+~
+E
+trees limbs~
+For the most part the trees trunks are intact, but many of the leaves and
+
+smaller branches have fallen and cover the forest floor.  The limbs
+
+overhead form strange shapes and seem to reach like claws.
+
+~
+E
+stand 1 west~
+Something has caused several trees to fall and form a pile of broken
+
+stone.  It is impossible to tell what caused the destruction from this
+
+distance.
+
+~
+-1
+S
+
+#43036
+Stone Forest~
+A few of the stone trees here are still standing, unlike the totally
+
+blasted area to the east.  Still, a large portion of them are missing
+
+their branches and leaves, as if some mighty force ripped them asunder. 
+
+The ground is covered in fragments of trees and a fine, powdered stone
+
+rests on top of them.  Branches that still cling to their trees make it
+
+seem as though skeletal arms were reaching long arms towards you.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43037 10 10 5
+D1
+~
+~
+0 -1 43041 10 10 5
+D2
+~
+~
+0 -1 43035 10 10 5
+D3
+~
+~
+0 -1 43022 10 10 5
+E
+branches leaves fragments dust powder~
+A few of the fallen tree limbs are blackened as if from a fire.  Most are
+
+simply broken from whatever force tore them away from their trees and
+
+their collision with the stone of the ground.  A very fine layer of dust
+
+covers everything here, another indication of the violence of the
+
+cataclysm.
+
+~
+E
+trees~
+Grand oaks in their previous state, they are now broken.  Only the
+
+texture of the bark and a few leaves that stubbornly cling indicate that
+
+they were oak trees.
+
+~
+-1
+S
+
+#43037
+The Stone Forest - Twin Oaks~
+Twinned oak trees stand silently in the desolate remains of the forest. 
+
+The texture of the two trunks reveal that they had grown together from
+
+time long past, and had not merely toppled against each other after being
+
+unable to support their new weight.  The elegant arching of the two trees
+
+creates a long patch of twilight grey against the slate-colored ground of
+
+the forest.  The silent stone forest continues in every direction, each
+
+way the same, drab grey.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43015 10 10 5
+D1
+~
+~
+0 -1 43042 10 10 5
+D2
+~
+~
+0 -1 43036 10 10 5
+D3
+~
+~
+0 -1 43021 10 10 5
+E
+twin oaks arch~
+The two trees support each other and would probably have long since
+
+toppled if either had fallen in the blast.  Now they stand together
+
+forming a nearly perfect arch.
+
+~
+-1
+S
+
+#43038
+Stone Forest - Near a Clearing~
+The trees are thinner here near the edge of a clearing filled with sharp
+
+stone grass.  Most of the trees are shorter than those to the north and
+
+east.  One of them, however, towers over the area.  All of its branches
+
+and leaves are intact as if something were holding the tree together for
+
+a purpose.  The other trees in the area have grown away from this tree,
+
+seemingly out of respect.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43039 10 10 5
+D1
+~
+~
+0 -1 43043 10 10 5
+D2
+~
+~
+0 -1 43028 10 10 5
+D3
+~
+~
+0 -1 43033 10 10 5
+E
+tree~
+The undamaged tree stands taller than the others in the area.  Not a
+
+single leaf has fallen from the oak and it stands the same as the day it
+
+fell.  Though the tree is beautiful, you sense that it is dangerous in
+
+some way.
+
+~
+E
+grass clearing~
+Tall grass to the west has been broken to form trails.  The wicked edges
+
+of the grass look like they could easily cut through even the sturdiest
+
+of boots.  A horrid smell wafts from the west, past the field of stone
+
+grass.
+
+~
+A
+~
+acorn tree oak stone~
+acode( find_room( 43046 ), 1 );
+
+~
+!
+9 0 0
+2683 17 1509949540 -2 0
+1862 137 1509949540 3 0
+-1
+S
+
+#43039
+A Devestated Area in the Stone Forest~
+A powerful blast from the north-east has ripped the trees in this area to
+
+flinders.  Rows of blackened stumps and small pieces of stone are all
+
+that remains of the trees here.  Light dust blows in even the smallest of
+
+breezes.  Everything here is coated by a blanket of it.  To the south and
+
+west the forest is more intact, though damage from the blast is easily
+
+visible.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43040 10 10 5
+D1
+~
+~
+0 -1 43044 10 10 5
+D2
+~
+~
+0 -1 43038 10 10 5
+D3
+~
+~
+0 -1 43034 10 10 5
+E
+stumps blackened~
+The thick stone stumps are blackened and broken.  None of them stands
+
+more than a few feet in height, having been utterly destroyed by the
+
+explosion.
+
+~
+E
+pieces~
+Jagged fragments of stone, most charred, barely resemble the trees that
+
+they were once a part of.  Only the occasional growth ring or vein shows
+
+the true origin of the stones.
+
+~
+E
+dust~
+A thin layer of fine dust covers everything here.  The dust was formed
+
+when fragments of stone were vaporized by the intense heat of the
+
+explosion.
+
+~
+-1
+S
+
+#43040
+A Devastated Area in the Stone Forest~
+A small gust of wind blows through the area, briefly stirring the dust
+
+and a few of the smaller shards of stone which cover the ground.  Stone
+
+tendrils of ivy wind their way up the splintered trees stumps that jut up
+
+from the charred ground.  The sober grey of the area coupled with the
+
+devastated trees creates a barren, lackluster landscape.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43041 10 10 5
+D1
+~
+~
+0 -1 43045 10 10 5
+D2
+~
+~
+0 -1 43039 10 10 5
+D3
+~
+~
+0 -1 43035 10 10 5
+E
+ivy stumps~
+A few stone tendrils of ivy still cling tenaciously to the stumps of the
+
+trees which ones supported them in life.  The delicate stone leaves of
+
+the ivy vines are the only beauty that remains in this blasted area.
+
+~
+E
+stone shards~
+Fragments of blackened stone and a layer of dust are the result of some
+
+powerful force that layed waste to the forest here.  Bits of stone crunch
+
+underfoot as you walk through the area.
+
+~
+A
+pick get~
+ivy leaf stone~
+if( random( 1, 20 ) >= 18 ) {
+
+  if( rflag( reset0, room ) ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #pick, ch );
+
+    act_notchar( #rpick, ch );
+
+    obj_to_char( oload( 2701 ), ch );
+
+    }
+
+  else {
+
+    act_tochar( #nope, ch );
+
+    act_notchar( #rnope, ch );
+
+    }
+
+  }
+
+else {
+
+remove_rflag( reset0, room );
+
+  act_tochar( #nope, ch );
+
+  act_notchar( #rnope, ch );
+
+  }
+
+~
+E
+pick~
+You snap off one of the delicate stone leaves of ivy.
+
+~
+E
+rpick~
+$n carefully picks one of the ivy leaves from its stone vine.
+
+~
+E
+nope~
+You try to pick an ivy leaf but you clumsily shatter the delicate leaf.
+
+~
+E
+rnope~
+$n tries to pick an ivy leaf but $s clumsily shatters the delicate leaf.
+
+~
+!
+0 0 0
+-1
+S
+
+#43041
+A Devastated Area of the Stone Forest~
+A light, powdery film of grey dust blankets the area, presumably all that
+
+remains of trees vaporized in the explosion which laid waste to this area. 
+
+Still other stone trees were shattered like glass, the jagged remnants of
+
+the riven trees litter the area.  Charred trunks of stone trees dot the
+
+area, looking like rows of sharpened stakes.  A tiny stone mouse stands
+
+caught in the poise of running, its little tail close to the ground.
+
+~
+[Gyrael] Room is ready for review.
+
+[Ylena] ooh, cute mouse :) would be really cool if I could take it home
+
+as a pet ;) 
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43042 10 10 5
+D1
+~
+~
+0 -1 43046 10 10 5
+D2
+~
+~
+0 -1 43040 10 10 5
+D3
+~
+~
+0 -1 43036 10 10 5
+E
+mouse~
+The little mouse was obviously running some mousely errand of its own
+
+when the transformation to stone ended its foray.  Amazingly untouched by
+
+the devastation, the tiny mouse is frozen to the spot.
+
+~
+E
+charred trunks~
+Few of the trunks are taller than a foot and they stick up from the
+
+ground like jagged, uneven teeth.  Most of the stumps have been blackened
+
+from heat on their south-east side, perhaps the origin of this
+
+destruction.
+
+~
+E
+remnants dust~
+Once living wood, small pebbles and a coating of dust are all that has
+
+survived some terrible force.  What dust hasn't blown away covers
+
+everything in the area.  Even your clothes take on a layer of dust just
+
+from walking through it.
+
+~
+-1
+S
+
+#43042
+The Stone Forest - Near an Abandoned Den~
+A large, angular stone provides a roof for a den that was created by
+
+hollowing out the ground under the jutting eastern edge.  Tracks
+
+cris-cross the small clearing, heading in every direction.  Small, flinty
+
+pieces of stone, some vaguely in the shapes of leaves, create piles at the
+
+base of some of the larger trees.  You can see that the forest to the
+
+south is blasted and destroyed, no trees stand in that direction.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43016 10 10 5
+D1
+~
+~
+0 -1 43047 10 10 5
+D2
+~
+~
+0 -1 43041 10 10 5
+D3
+~
+~
+0 -1 43037 10 10 5
+E
+den rock stone~
+Looking closer into the animal den, one can see fossilized tufts of fur
+
+and tiny wolf tracks interspersed with larger paw prints from the cubs'
+
+mother.
+
+~
+E
+track~
+The tracks, laid in soft mud, have been preserved for eternity.  The
+
+tracks look like they were made by a dog, a large dog.
+
+~
+E
+flinty piles~
+The piles of broken, shattered leaves surround the trunks of the larger
+
+trees.  Instead of blowing around as in a normal autumn, the leaves have
+
+fallen straight down.
+
+~
+A
+~
+den~
+if( rflag( reset0, room ) ) {
+
+  if( random( 0, 25 ) == 4 ) {
+
+    act_tochar( #den, ch );
+
+    act_notchar( #heden, ch );
+
+    obj_to_char( oload( 3805 ) );
+
+    }
+
+  else {
+
+    act_tochar( #smash, ch );
+
+    act_notchar( #smashes, ch );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #smash, ch );
+
+  act_notchar( #smashes, ch );
+
+  }
+
+~
+E
+den~
+You reach down into the den and pull out an odd-looking ring of stone.
+
+~
+E
+heden~
+$n reaches down into the den and pulls out an odd-looking ring of stone.
+
+~
+E
+smash~
+You reach into the den and search through the stone on the ground, but
+
+find nothing of interest.
+
+~
+E
+smashes~
+$n reaches into the den and searches through the stone on the ground, but
+
+find nothing of interest.
+
+~
+!
+9 0 0
+A
+~
+leaves pile stone~
+acode( find_room( 43059 ), 2 );
+
+~
+!
+9 0 0
+-1
+S
+
+#43043
+Stone Forest~
+Pieces of rubble have formed a pile at the base of a small hill here. 
+
+The trees in the area show signs of damage; broken branches and scorch
+
+marks are easily noticed.  Though only the northernmost trees bear
+
+extensive damage many of the trees are missing a majority of their leaves. 
+
+The forest continues in every direction, but to the north blackened
+
+stumps are all that remain of trees.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43044 10 10 5
+D1
+~
+~
+0 -1 43048 10 10 5
+D2
+~
+~
+0 -1 43029 10 10 5
+D3
+~
+~
+0 -1 43038 10 10 5
+E
+rubble~
+Pieces of stone that rolled down the gentle slope have formed a pile at
+
+its base.  The pile consists mostly of leaves but also contains several
+
+branches, some quite large.
+
+~
+E
+hill~
+Barely large enough to be considered a hill, this small rise has caused
+
+piles of stone to form.
+
+~
+E
+trees~
+The trees are grey stone instead of their natural browns and greens. 
+
+Jagged stumps where limbs once sprouted are a common sight, especially
+
+towards the north.  The immobile stone limbs cast menacing shadows on the
+
+ground, even in moonlight.
+
+~
+-1
+S
+
+#43044
+A Devestated Area in the Stone Forest~
+The ground is completely barren save for shattered pieces of stone, a
+
+layer of dust, and some charred, broken stumps.  Some powerful force
+
+ripped the trees asunder and was hot enough to vaporize the stone.  The
+
+stumps grow taller farther to the south, away from the origin of the
+
+blast.  Only from the trees to the south can you guess that these were
+
+once oak trees.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43045 10 10 5
+D1
+~
+~
+0 -1 43049 10 10 5
+D2
+~
+~
+0 -1 43043 10 10 5
+D3
+~
+~
+0 -1 43039 10 10 5
+E
+stumps charred~
+Charred and broken beyond recognition, the stumps resemble worn down
+
+teeth jutting from unhealthy gums.  Most of the stumps are under two
+
+feet, the rest of their height having been sheared away by the incredible
+
+power of the explosion.
+
+~
+E
+ground shattered pieces stone dust~
+A layer of stone shards and dust covers the blackened forest floor.  The
+
+remnants of once massive oaks make dull crunching noises as you walk.
+
+~
+-1
+S
+
+#43045
+A Low Hill in the Stone Forest - Before a Holy Shrine~
+The trees have all been cleared away from this low hill.  Set on the
+
+summit of the small mound, a circle of smoothly polished stone rings the
+
+crown of the hill.  Only six inches high and perhaps three inches wide,
+
+the stone ring is nearly fifteen feet in diameter.  In the middle of the
+
+ring stands the charred and blasted remains of what must once have been a
+
+tall, majestic, stone oak.
+
+~
+[Gyrael] enter ring, read runes
+
+[Gyrael] mobs 597, 1043
+
+[Gyrael] This room's no pray, holy shrine sorta thing
+
+[Gyrael] Room is ready for review.
+
+*
+
+[Ylena] I really like this room.  The actions and everything are so cool.
+
+~
+-235372544 10 9 0
+D0
+~
+~
+0 -1 43046 10 10 5
+D1
+~
+~
+0 -1 43050 10 10 5
+D2
+~
+~
+0 -1 43044 10 10 5
+D3
+~
+~
+0 -1 43040 10 10 5
+E
+tree oak~
+The wide, splintered stone trunk is all that remains of this once
+
+majestic tree.  Nearly five feet in diameter, the tree trunk ends
+
+abruptly in a charred, splintered mass of broken stone.
+
+~
+E
+stone ring~
+Made of the finest alabaster, the stone ring which encircles the crown of
+
+the hill is enscribed with an unbroken chain of silvery sigils.  The thin
+
+ring of stone sits like a fragile tiara on the summit of the small hill.
+
+~
+E
+runes sigils symbols~
+The runes are an indecipherable scrawl of interlocking symbols and lines. 
+
+The thin, graceful sigils were etched into the stone, then an iridescent
+
+silver powder was set into the graven lines.  A faint argent glow
+
+radiates out from the runes, casting an ethereal light on the alabaster
+
+stone ring.
+
+~
+A
+enter step climb~
+ring summit~
+if( !is_player( ch ) )
+
+  end;
+
+if( rflag( reset4, room ) ) {
+
+  remove_rflag( reset4, room );
+
+  act_tochar( #ring, ch );
+
+  act_notchar( #hering, ch );
+
+  }
+
+else
+
+  act_tochar( #already, ch );
+
+~
+E
+ring~
+@eYou step over the edge of the ring and approach the stone oak.@n
+
+~
+E
+hering~
+@e$n steps over the edge of the ring and approaches the stone oak.@n
+
+~
+E
+already~
+Someone is already standing in the ring.
+
+~
+!
+0 0 0
+A
+read recite chant~
+sigils symbols runes~
+if( !is_player( ch ) )
+
+  end;
+
+act_tochar( #readme, ch );
+
+act_notchar( #hereadme, ch );
+
+if( !rflag( reset4, room ) ) {
+
+  if( rflag( reset5, room ) ) {
+
+    if( find_skill( ch, elvish ) > 6 ) {
+
+      remove_rflag( reset5, room );
+
+      wait( 1 );
+
+      act_tochar( #recite, ch );
+
+      act_notchar( #recite, ch );
+
+      wait( 1 );
+
+      if( !mob_in_room( 2448, room ) ) {
+
+        send_to_room( #swirl, room );
+
+        mload( 2448, room );
+
+        }
+
+      }
+
+    else {
+
+      wait( 1 );
+
+      act_tochar( #wuss, ch );
+
+      act_notchar( #wussy, ch );
+
+      }
+
+    }
+
+  else {
+
+    wait( 1 );
+
+    act_tochar( #nada, ch );
+
+    }
+
+  }
+
+else {
+
+  wait( 1 );
+
+  act_tochar( #nada, ch );
+
+  }
+
+~
+E
+recite~
+@eThe runes around the ring flare with a steady silver light!
+
+~
+E
+readme~
+@eYou begin to read the runes enscribed into the alabaster ring.@n
+
+~
+E
+hereadme~
+@e$n begins to read the runes enscribed into the alabaster ring.@n 
+
+~
+E
+wuss~
+@eRather than fluent speech, you utter a series of garbled phrases.@n
+
+~
+E
+wussy~
+@eRather than fluent speech, $n merely utters a series of garbled
+
+phrases.@n 
+
+~
+E
+nada~
+@eThe glow weakly for a moment, then fade again.@n
+
+~
+E
+henada~
+@eThe runes glow weakly for a moment, then fade again.@n
+
+~
+E
+swirl~
+In a swirl of color and light, an elvish spectre slowly fades into
+
+existance at the base of the tree.
+
+~
+!
+0 0 0
+1937 9 1509949540 3 0
+3678 17 1509949455 -2 0
+-1
+S
+
+#43046
+A Devastated Area of the Forest - Near a Lone Oak~
+In the midst of this decimated, shattered area of the forest, one lone
+
+oak stands untouched by the devastation.  The area all around it is
+
+covered with glistening shards of razor-sharp stone.  The splintered
+
+trunks of other trees not so lucky are testimony to the fact that some
+
+force intervened to preserve the lone oak.
+
+~
+[Gyrael] Room is ready for review.
+
+[Ylena] there is a double up on how the tree stands untouched here.
+
+[Gyrael] fixed
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43047 10 10 5
+D1
+~
+~
+0 -1 43051 10 10 5
+D2
+~
+~
+0 -1 43045 10 10 5
+D3
+~
+~
+0 -1 43041 10 10 5
+E
+tree oak lone~
+Somehow this tree has survived the blast intact.  Not even a scratch mars
+
+the surface of this beautiful oak tree.  Every leaf, and even a line of
+
+tiny ants climbing up the trunk has been preserved perfectly in stone.
+
+~
+E
+splintered trunk~
+These trees have been reduced to blackened, stone stumps and jut from the
+
+ground obscenely.  The stumps are more and more intact farther to the
+
+north, to the south it is rare for more than a foot of trunk to be left
+
+intact.
+
+~
+E
+fragments shards ground~
+Ranging in size from tiny pebbles to large chunks of stone, these
+
+fragments cover the ground like sand in the desert.  Occasionally a gust
+
+of wind will cover the area in a fine dust of stone.
+
+~
+A
+~
+tree~
+if( random( 1, 30 ) >= 27 ) {
+
+  if( rflag( reset0, room ) ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #find, ch );
+
+    act_notchar( #rfind, ch );
+
+    obj_to_char( oload( 2702 ), ch );
+
+    }
+
+  else {
+
+    act_tochar( #fail, ch );
+
+    act_notchar( #rfail, ch );
+
+    }
+
+  }
+
+else {
+
+  remove_rflag( reset0, room );
+
+  act_tochar( #fail, ch );
+
+  act_notchar( #rfail, ch );
+
+  }
+
+~
+E
+find~
+You find a tiny stone acorn hanging from a low bough.
+
+~
+E
+rfind~
+$n carefully examines the stone oak before plucking a tiny acorn from its
+
+branches.
+
+~
+E
+fail~
+You search the tree thoroughly but find nothing but stone leaves and
+
+branches.
+
+~
+E
+rfail~
+$n searches the tree thorougly but finds only stone leaves and branches.
+
+~
+!
+9 0 0
+2683 17 1509949540 -2 0
+1862 137 1509949540 3 0
+-1
+S
+
+#43047
+The Stone Forest - Near a Fallen Oak~
+A massive trunk of stone lies on the ground here, covered in rubble from
+
+fallen leaves.  The solid floor of the forest melds with the monolith
+
+structure of the fallen oak, hinting that this tree was downed and
+
+rotting since before it was changed to this flinty grey stone.  The oaks
+
+that remain standing are bare of all but the smallest leaves and the
+
+strongest limbs, and create angular shadows across the ashen plain.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43017 10 10 5
+D1
+~
+~
+0 -1 43052 10 10 5
+D2
+~
+~
+0 -1 43046 10 10 5
+D3
+~
+~
+0 -1 43042 10 10 5
+E
+trunk~
+The trunk lies on the ground, its trunk pointing almost due north.  Its
+
+base has been joined with the stone of the forest floor in a seemless
+
+weld.  Covered in moss and fungus, this tree was mostly rotted when it
+
+was transformed into stone.
+
+~
+E
+floor~
+Patterned with fallen leaves and textured with branches, the solid stone
+
+floor is covered with broken stone.
+
+~
+E
+shadows~
+The shadows that creep across the ground are abnormal and unsettling. 
+
+Instead of normal leafy branches, the few limbs that remain cast shadows
+
+like twisted claws.
+
+~
+E
+limbs trees~
+The few limbs that remain are bare of leaves for the most part, and cast
+
+their shadows on the forest floor.  Jagged outcroppings mark where
+
+branches once held onto the trees they came from.
+
+~
+-1
+S
+
+#43048
+Stone Forest~
+The sound of moving water somewhere to the east is the first thing you
+
+notice about this section of the stone forest.  Some of the ancient trees
+
+to the north were cut down before the petrification, leaving their stumps. 
+
+The forest to the south has been untouched by such things however, and
+
+the mighty oaks are for the most part intact.  One of the great trees has
+
+split down its center but its great trunk is still too strong to fall.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43049 10 10 5
+D1
+~
+~
+0 -1 43053 10 10 5
+D2
+~
+~
+0 -1 43030 10 10 5
+D3
+~
+~
+0 -1 43043 10 10 5
+E
+split great~
+A long crack runs up the entire trunk of this oak, revealing its stone
+
+center.  By counting the rings you estimate that the tree is more than
+
+one hundred and fifty years old.
+
+~
+E
+trees~
+Towering columns of stone, the trees spread their branches out as if to
+
+hide their shame from the sky.  Branches and leaves have fallen off, yet
+
+most remain intact in this corner of the forest.
+
+~
+E
+stumps~
+Someone cut down some of the oaks before the petrification.  What
+
+happened to them is a mystery.
+
+~
+-1
+S
+
+#43049
+Stone Forest - Stone Stumps~
+Grey moss and ivy encircle the stone stumps of several trees here. 
+
+Beside each stump grows a tiny sapling, perhaps only a few weeks old. 
+
+The tiny leaves on the fledgeling trees are petite versions of the leaves
+
+borne by elder oaks.  Some of the saplings have been blown over by the
+
+powerful explosion to the northwest.  The absence of the overwhelmingly
+
+massive oaks in this area makes the forest seem oddly barren.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43050 10 10 5
+D1
+~
+~
+0 -1 43054 10 10 5
+D2
+~
+~
+0 -1 43048 10 10 5
+D3
+~
+~
+0 -1 43044 10 10 5
+E
+stumps~
+The huge, round stumps are all that is left of the massive oaks which
+
+once stood here.  Probably now furniture in some mage's laboratory, the
+
+cut down trees were replaced by tiny seedlings planted next to the stumps.
+
+~
+E
+seedling sapling~
+These small, slender oak seedlings stand only two or three feet tall. 
+
+They each have a couple of twiggy stone branches covered sparsely with
+
+tiny grey leaves.
+
+~
+E
+moss~
+Once thick and soft, this moss is now hard and ungiving.  Tiny spores can
+
+be seen on the top of the moss, extended by small hair-like growths.
+
+~
+E
+ivy~
+Though it clings to most of the tree stumps in the area, it doesn't
+
+complicate passage as very little of the plants are above ground.
+
+~
+-1
+S
+
+#43050
+A Devastated Area of the Forest~
+The stone trees in the area have all been blasted to grey shards by some
+
+unimaginable explosion.  Only a few stumps which end in blackened, jagged
+
+masses of broken stone are left of the mature stone oaks which once stood
+
+here.  The floor of the forest is a charred mass of broken stone, various
+
+old bones and other unidentifiable debris.
+
+~
+[Gyrael] search bones action
+
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43051 10 10 5
+D1
+~
+~
+0 -1 43055 10 10 5
+D2
+~
+~
+0 -1 43049 10 10 5
+D3
+~
+~
+0 -1 43045 10 10 5
+E
+stumps trees~
+None of the stumps stand more than four feet tall, and all have had their
+
+tops shorn away by what must have been a cataclysmic blast.
+
+~
+E
+ground debris stones~
+Jagged shards of razor sharp stone litter the ground, a myriad of deadly
+
+stone slivers.  A few bones of a vaguely humanoid shape are mixed in with
+
+the shattered stone.
+
+~
+E
+bones~
+The bones are so charred as to be unrecognizable.  The only information
+
+that can be gleaned from the fragments is that they belonged to a
+
+humanoid.
+
+~
+A
+~
+bones pile~
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  if( random( 1, 3 ) == 2 ) {
+
+    act_tochar( #ho, ch );
+
+    act_notchar( #urgay, ch );
+
+    obj_to_char( oload( 2059 ), ch );
+
+    }
+
+  else {
+
+    act_tochar( #no, ch );
+
+    act_notchar( #nohe, ch );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #no, ch );
+
+  act_notchar( #nohe, ch );
+
+  }
+
+~
+E
+ho~
+You search through the pile of broken stone and bone fragments, finding a
+
+bone.
+
+~
+E
+urgay~
+$n searches through the pile of broken stone and bone fragments, finding
+
+something!
+
+~
+E
+no~
+You search through the bones but find nothing of value.
+
+~
+E
+nohe~
+$n searches through the bones but finds nothing of value.
+
+~
+!
+9 0 0
+-1
+S
+
+#43051
+A Devastated Area of the Forest~
+Blasted and barren, this area of the forest consists of little more than
+
+piles of razor-sharp stone and shattered stone trunks.  Whatever laid
+
+waste to this section of stone oaks destroyed many of the trees utterly,
+
+leaving behind nothing more than powdery grey dust.  The shattered trunks
+
+rise ever taller the farther they are from the center of the devastating
+
+blast.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43052 10 10 5
+D1
+~
+~
+0 -1 43056 10 10 5
+D2
+~
+~
+0 -1 43050 10 10 5
+D3
+~
+~
+0 -1 43046 10 10 5
+E
+piles shattered stone trunks~
+Sharp pieces of stone lie all over the ground here, making each step
+
+perilous.  They lay where they have fallen, some pieces smaller than a
+
+coin, others as large as an ogre's head.
+
+~
+E
+powdery grey dust~
+A thin layer of grey dust blankets the area, almost like a snow.  The
+
+dust blows in the wind the amount dependant on the strength of the gust.
+
+~
+-1
+S
+
+#43052
+The Stone Forest - Amidst the Stone Oaks~
+The ground is littered with fragments of dull grey stone, leaves and
+
+limbs of the once-living oak trees that could no longer be held aloft
+
+after the petrification.  The large trunks of the trees jut into the sky,
+
+forlorn and forgotten sentinels of a time much different.  The flinty
+
+grey of the landscape almost makes the eye wander about the area,
+
+valiantly searching for color.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43018 10 10 5
+D1
+~
+~
+0 -1 43057 10 10 5
+D2
+~
+~
+0 -1 43051 10 10 5
+D3
+~
+~
+0 -1 43047 10 10 5
+E
+trunks~
+Most of the trunks stand barren and without the branches that adorned
+
+them in life.  The forest has a sense of menace, yet the trunks still
+
+seem magnificent despite the damage that has been done to them.
+
+~
+E
+fragments stone dull~
+These pieces of the oaks are everywhere, scattered on the forest floor in
+
+the places they fell.  No fungus will grow on their surface, no ants will
+
+nest inside them.  These branches are less than they would have been,
+
+even in death.
+
+~
+-1
+S
+
+#43053
+Stone Forest - A Great Crevace~
+A great crack mars the relatively smooth floor of the forest.  Yellowish
+
+blades of grass grow in a little patch around a tiny spring which wells
+
+up from the southern edge of the crack.  A massive stone oak stands
+
+precariously at the northern edge of the ten foot crevice, seemingly
+
+ready to topple in at any moment.  A patch of sky can be made out through
+
+a hole in the trees where the crack is, a break in the monotonous grey
+
+foliage.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43054 10 10 5
+D1
+~
+~
+0 -1 43058 10 10 5
+D2
+~
+~
+0 -1 43031 10 10 5
+D3
+~
+~
+0 -1 43048 10 10 5
+E
+crack crevice floor~
+This jagged crevice looks as though the tortured earth heaved and broke
+
+open, possibly in protest to the leeching of the lifeforce from it.  A
+
+trickle of crystal clear water rises up from the dark depths of the crack.
+
+~
+E
+tree~
+The trunk of this massive old oak is nearly five feet thick through the
+
+middle.  It tilts to one side, half its roots losing their purchase to
+
+dangle over the crevase at its base.
+
+~
+E
+yellowish blades grass~
+The sickly grass grows around the edges of the stream but lacks the soil
+
+to thrive.
+
+~
+E
+sky hole~
+Light from the heavens pierces the stone canopy here where the crack has
+
+caused the trees to tilt away.  Even the light of the stars is a welcome
+
+change from the monotonous grey stone.
+
+~
+696 17 1509949540 -2 0
+-1
+S
+
+#43054
+Stone Forest~
+The grim, grey silence of the stone forest is disrupted by the soft
+
+sounds of running water to the south.  The massive stone oaks stand at
+
+intervals, locked in the semblance of summer for eternity.  A myriad of
+
+stone leaves have fallen to the forest floor, creating a blanket of sharp
+
+shards of stone.  A stone snake coils near the base of one of the trees,
+
+caught forever in readiness to strike at some unknown prey.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43055 10 10 5
+D1
+~
+~
+0 -1 43059 10 10 5
+D2
+~
+~
+0 -1 43053 10 10 5
+D3
+~
+~
+0 -1 43049 10 10 5
+E
+snake~
+This snake is of a variety unknown to you.  Its half-inch long fangs
+
+appear extremely sharp, and it was obviously much provoked by its
+
+long-gone prey.
+
+~
+E
+blanket leaves~
+The leaves lay wherever they fell, no wind capable of moving their weight. 
+
+For the most part the leaves are clustered around the base of whatever
+
+tree they fell from.  One of the few things they have in common with
+
+mundane leaves is the way they crunch when stepped upon.
+
+~
+E
+trees oaks~
+Standing much like they did in life, the stone trees shade the forest
+
+floor with their leafy branches.  Though many of the leaves have fallen
+
+they block light as well as ever because they are opaque.
+
+~
+A
+get take touch grab~
+snake~
+act_tochar( #get, ch );
+
+act_notchar( #rget, ch );
+
+~
+E
+get~
+You try to grab the snake but it is held fast to the forest floor.
+
+~
+E
+rget~
+$n tries to take the stone snake but it is held fast to the forest floor.
+
+~
+!
+0 0 0
+-1
+S
+
+#43055
+Stone Forest~
+Like the forest to the west, the forest here has been devastated.  The
+
+explosion that destroyed the forest to the west has decimated the trees
+
+here, causing them to lose most of their branches and leaves.  Most of
+
+the trees towards the west have been shattered into splinters, leaving
+
+only their trunks.  Something else has caused further destruction here,
+
+jagged tooth marks are gouged into several of the trees, and others have
+
+simply been knocked down.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43056 10 10 5
+D1
+~
+~
+0 -1 43060 10 10 5
+D2
+~
+~
+0 -1 43054 10 10 5
+D3
+~
+~
+0 -1 43050 10 10 5
+E
+tooth mark~
+Some of the tooth marks are several inches deep, indicating that whatever
+
+did this was quite large.  The mysterious damage seems to be more severe
+
+to the east.
+
+~
+E
+trees~
+The solid stone oaks are damaged from the terrible blast.  Towards the
+
+west not even the stumps stand more than a few feet.  Branches have been
+
+sheared off from the rest, giving them a strange, twisted appearance.
+
+~
+E
+branches leaves fragments stone~
+Fallen branches are strewn about the forest floor like branches after a
+
+powerful storm.  Shattered fragments of stone cover the ground ranging in
+
+size from the thin layer of dust that coats the area to nearly intact
+
+branches almost a foot in diamater.
+
+~
+E
+1 west destruction~
+A powerful explosion has leveled the forest to the west, not sparing even
+
+a single tree.  Many of the trees in the area are blackened and charred
+
+from the explosion, indicating just how powerful the blast was.
+
+~
+-1
+S
+
+#43056
+Stone Forest~
+The greyish trees in this area of the forest are all torn and broken.
+
+However, the damage appears to have been done long before the trees'
+
+transformation to stone.  One great behemoth of an oak tree lies on the
+
+ground here, its trunk cut neatly away.  The tree lies here on its side,
+
+surrounded by the limbs and leaves of other trees that were torn away as
+
+the massive oak fell.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43057 10 10 5
+D1
+~
+~
+0 -1 43061 10 10 5
+D2
+~
+~
+0 -1 43055 10 10 5
+D3
+~
+~
+0 -1 43051 10 10 5
+E
+oak behemoth~
+This massive old oak appears to have been felled just as the
+
+petrification swept over this part of the forest.  The freshly cut tree
+
+transformed to stone, as well, though parts of it seem to have rotted 
+
+away as dead wood.
+
+~
+E
+trees~
+Hardly a leaf remains intact on the stone trees in this area.  Most have
+
+been knocked off by some terrible force, but some of the trees bear scars
+
+from before the petrification.
+
+~
+E
+damage~
+Many of the trees bear damage that dates back before the petrification. 
+
+What looks like tooth marks were slashed into several of the tree trunks
+
+prior to being turned to stone.
+
+~
+-1
+S
+
+#43057
+Stone Forest~
+Broken and lifeless trees tower over the pale ground.  Nothing stirs in
+
+their branches, nothing stirs on the ground.  A few trees to the south
+
+have toppled from some force other than their immense weight.  One of the
+
+fallen trees is held standing at an angle by the trunk of another tree. 
+
+The forest continues in every direction, fuller and more intact to the
+
+north, blasted and devestated to the south.
+
+~
+[Gyrael] Room is ready for review.
+
+[Ylena] how about an acode to push the tree over with the result of
+
+either shattering and causing harm, or the find of a trinket, or both?
+
+[Gyrael] mael suggested that too.. I don't like it much though
+
+[Gyrael] *snicker*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43019 10 10 5
+D1
+~
+~
+0 -1 43062 10 10 5
+D2
+~
+~
+0 -1 43056 10 10 5
+D3
+~
+~
+0 -1 43052 10 10 5
+E
+1 south~
+To the south, and more so to the south-west, the trees have been blown
+
+over by some unknown force.
+
+~
+E
+fallen tree~
+The fallen tree leans against its gray-colored companion.  It looks like
+
+the slightest push might cause the tree to topple.
+
+~
+-1
+S
+
+#43058
+Stone Forest - Near an Old Campsite~
+A gentle breeze flows through the area from the west, carrying with it
+
+the gentle sound of running water.  The stone flora is thick, the stone
+
+leaves of many plants tangle together creating a barrier to the east.  A
+
+ring of small rocks has been piled together to create a makeshift hearth
+
+for a fire.  Travel is hampered by small plants and bushes though there
+
+is enough space to traverse between them.
+
+~
+[Ylena] the last line would sound better if it read something like: is
+
+enough space to traverse between them.
+
+[Gyrael] I agree, fixed.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43059 10 10 5
+D2
+~
+~
+0 -1 43032 10 10 5
+D3
+~
+~
+0 -1 43053 10 10 5
+E
+fire campfire ring hearth~
+Two sticks jut up from the ground, supporting a spit from which hangs a
+
+small animal, possibly a rabbit.  The ashes, sticks, and spit, like the
+
+trees around, are made of dead, cold stone.  The lack of stone figures
+
+near the campsite leads you to believe that whoever constructed it
+
+managed to escape before the forest was turned to stone.
+
+~
+E
+flora leaves~
+Small shrub-like plants and young oak trees once battled for sunlight. 
+
+Now they form stone obstacles that can be brittle or strangely ungiving.
+
+~
+-1
+S
+
+#43059
+Stone Forest~
+A canopy of tangled stone branches shelters the area from the sky.  A
+
+myriad of stone leaves in various states of condition lie scattered all
+
+along the forest floor.  Moss and ivy that cling to the stone trees have
+
+turned to flinty grey stone.  Lustrous grey stone trees surround you on
+
+all sides, though to the north, west, and south you could probably
+
+squeeze through the oak trunks.  To the east, an impregnable barrier of
+
+intertwined trees prevents passage.
+
+~
+[Gyrael] search leaves - dummy action don't move order of acodes
+
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43060 10 10 5
+D2
+~
+~
+0 -1 43058 10 10 5
+D3
+~
+~
+0 -1 43054 10 10 5
+E
+moss ivy~
+Spongy-looking moss clings to the trunks, yet its grey color indicates
+
+that it probably isn't soft to the touch.  Clinging vines are now
+
+petrified like the trees that they once climbed.
+
+~
+E
+leaves stone~
+The leaves cover the forest floor like in any normal forest, their
+
+decomposition into dust reminiscent of the rotting of leaves in a healthy
+
+wood.
+
+~
+E
+1 east barrier~
+Low branches and fallen limbs would force you to wriggle under them; not
+
+a good idea for the ground is littered with jagged pieces of sharp stone.
+
+~
+A
+~
+~
+if( !is_exhausted( ch ) )
+
+  act_tochar( #squeeze, ch );
+
+continue;
+
+~
+E
+squeeze~
+You squeeze between the tightly spaced trees and continue into the forest.
+
+~
+!
+3 0 13
+A
+~
+ground leaves stone pile~
+act_tochar( #search, ch );
+
+act_notchar( #searches, ch );
+
+~
+E
+search~
+You search through the pile of stone but find nothing of interest.
+
+~
+E
+searches~
+$n searches through the pile of stone but finds nothing of interest.
+
+~
+!
+9 0 0
+-1
+S
+
+#43060
+Stone Forest - Before a Shattered Gap in the Trees~
+The trees come to an abrupt end here, closing in so thickly that nothing
+
+could slip through the impenetrable stone wall of oaks.  However, blown
+
+right through the middle of the seemingly impervious bastion is a gaping
+
+hole.  About ten feet in diameter, the hole is almost perfectly circular. 
+
+The bottoms of the devastated trees are still mostly intact, while the
+
+intertwined tangle of stone boughs holds the tops in their original
+
+places, defying gravity.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43061 10 10 5
+D1
+~
+~
+0 -1 43064 10 10 5
+D2
+~
+~
+0 -1 43059 10 10 5
+D3
+~
+~
+0 -1 43055 10 10 5
+E
+hole~
+Even the fragments from the damage have been fused together.  The hole
+
+leads into a thicket of trees that, save for the hole, appear invincible. 
+
+Some of the trees bear tooth marks and slashes as if something took a
+
+bite out of them.
+
+~
+E
+trees~
+Most of the trees are ancient and tall, standing more than fifty feet
+
+tall.  They could be mistaken for living if it weren't for a giant hole
+
+bored directly through the trunks of several of the trees.  They remain
+
+standing despite the damage to their trunks, the stone too ungiving to
+
+break.
+
+~
+2011 137 1509949540 3 0
+-1
+S
+
+#43061
+Stone Forest - Near a Stone Druid~
+A tall, majestically beautiful stone oak stands here, proudly hanging its
+
+grey boughs out over the area.  Strangely enough, the oak stands in
+
+seeming dominance over the other trees.  At the base of the petrified oak
+
+a man kneels, though he, too, is as petrified as every other creature in
+
+this sad forest.  One stone hand is placed on the tree trunk, the other
+
+raised to the heavens clasping a strange symbol.  Passage to the east is
+
+blocked by a barrier of close oaks.
+
+~
+Acode pending a cflag for Cynnis' religion, then will load the symbol for
+
+followers.
+
+[Gyrael] revise this rdesc
+
+[Gyrael] more extras needed
+
+[Maelthar] done
+
+[Ylena] *
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43062 10 10 5
+D2
+~
+~
+0 -1 43060 10 10 5
+D3
+~
+~
+0 -1 43056 10 10 5
+E
+man druid base~
+The stone man kneels at the base of the lovely oak, his head bowed and
+
+his posture that of a supplicant.  One hand rests lovingly on the stone
+
+bark of the oak before him, and the other is raised high.  He clasps a
+
+strange symbol in his upraised hand.
+
+~
+E
+symbol~
+The symbol depicts a wolf under a blanket of snow-covered trees, howling
+
+at a quarter moon with a naked female llewyrr stretching to complete its
+
+diameter.  The symbol is made of an untarnished silvery metal, possibly
+
+mithril or silver alloy.
+
+~
+E
+tree oak beautiful~
+The tree stands taller than any of its neighbors, easily seventy feet in
+
+height.  It has been preserved almost perfectly, only a few of its
+
+branches lie in pieces on the ground.
+
+~
+E
+1 east barrier~
+Even a team of dwarven miners would have difficulty clearing a path
+
+through the ancient, stone forest.  Fallen branches and broken trunks
+
+haven't helped the condition of the forest floor either.
+
+~
+A
+get pry~
+symbol~
+act_tochar( #get, ch );
+
+act_notchar( #rget, ch );
+
+~
+E
+get~
+You try to pry the symbol from the stone man's hand but it is held fast.
+
+~
+E
+rget~
+$n tries to pry the symbol from the stone man's hand but it is held fast.
+
+~
+!
+0 0 0
+1937 9 1509949540 3 0
+-1
+S
+
+#43062
+Stone Forest - Near a Crimson Blossom~
+Overshadowed by a forbidding wall of densely packed trees to the east, the
+
+forest is grim and grey.  Stone ivy vines rest lightly on the petrified
+
+trunks of adult oak trees.  A few petrified plants resting around the
+
+bases of the oak trees bear delicate stone blossoms, brittle to the touch.
+
+One flowering plant retains a single red flower, a splash of crimson
+
+which breaks the desolate monotony of the grey landscape.
+
+~
+[Gyrael] make flower do something neat
+
+[Maelthar] done
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43020 10 10 5
+D2
+~
+~
+0 -1 43061 10 10 5
+D3
+~
+~
+0 -1 43057 10 10 5
+E
+flower blossom red rose crimson~
+This small, crimson flower looks to be some variety of wild rose.  The
+
+stone stalk from which it grew is covered with sharp thorns.  The rose
+
+itself retains its vibrant red color, though its petals long ago turned
+
+to stone.
+
+~
+E
+stone ivy vines~
+The stone vines have been fused to the trees by thier petrification, and
+
+now seem almost like a growth of the tree itself.  Several of the vines
+
+have broken in places where they hung independant of the trees support.
+
+~
+E
+oak tree~
+The mammoth oaks shade the area from light, almost making this area
+
+appear as a cavern.  Even the soft moss that covered their trunks has
+
+been petrified.
+
+~
+E
+wall 1 east~
+The trees grow thick and impassable to the east.  The stony leaves block
+
+out most of the light from above, be it sunlight or moonbeam.
+
+~
+A
+get pick~
+rose~
+act_tochar( #pick, ch );
+
+act_notchar( #rpick, ch );
+
+dam_message( ch, i, "The razor-sharp stone thorns" );
+
+inflict( ch, mob, i, "the razor sharp thorns of a stone rose bush" );
+
+~
+E
+pick~
+The thorns of the stone rose bush prick your hand as you reach for the
+
+flower.
+
+~
+E
+rpick~
+The thorns of the stone rose bush prick $n's hand as $e reaches for the
+
+flower.
+
+~
+!
+0 0 0
+-1
+S
+
+#43063
+Edge of Woods~
+Under Construction.
+
+~
+~
+-235405312 10 9 0
+-1
+S
+
+#43064
+A Shattered Path Through the Crowded Trees~
+The trees here have been shattered to create this tunnel-like path
+
+through the closely crowded copse.  The stone trees have been melted away
+
+in places, though mostly it looks like something crashed through by sheer
+
+force alone.  There are a few tooth marks and slashes on the still
+
+standing remains of several shattered stone oaks.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43065 10 10 5
+D3
+~
+~
+0 -1 43060 10 10 5
+E
+trees~
+Smashed aside by the might of some obviously powerful force,
+
+stone trees lay in a myriad of shards and chunks all over the ground.  The
+
+marks of giant teeth mar the surrounding trees.  The remaining oaks close
+
+in around their fallen comrades, making the path constrictingly close.
+
+~
+E
+toothmarks slashes~
+Deep and jagged tooth marks line the surface of several of the oaks. 
+
+Whatever creature made these did so after the trees were stone.
+
+~
+-1
+S
+
+#43065
+A Shattered Path Through the Crowded Trees~
+The narrow confines of this enclosed path seem to bear down on you.  The
+
+air is heavy and still, tinged slightly with a faint odor of decay. 
+
+Shards of stone that have been melted together lie in heaps along the
+
+ground.  Splintered tree trunks combine with the residual stone to make
+
+progress through the area slow and painful.  Ominous creaks filter down
+
+from above, where the stone boughs of the still-standing oaks support a
+
+canopy of torn tree tops.  To the east, the stench of decay grows
+
+stronger, accompanied by the moist scent of water.
+
+~
+[Gyrael] this one's no.mob - serpent be superevil
+
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405304 5 9 0
+D1
+~
+~
+0 -1 43066 10 10 5
+D2
+~
+~
+0 -1 43064 10 10 5
+E
+stone shards splintered tree trunks~
+The shards of stone have been fused together and lie scattered across the
+
+path.  Sometimes you can make out features of what they used to be, the
+
+fuzzy tail of a squirrel, a petrified mushroom.  That is the only
+
+evidence that piles of stone were once part of a living forest.
+
+~
+E
+oaks still-standing boughs~
+The unbroken trees stand tall, some more than fifty feet.  Something has
+
+shattered the majority of trees in the area with brute strength yet
+
+enough remain to keep this area in near twilight even at noon.
+
+~
+-1
+S
+
+#43066
+A Brackish Pond~
+This old pool is covered with moss and a greyish-green slime.  The
+
+brackish water beneath the viscous covering roils uneasily.  A few
+
+forlorn plants have taken root in the slimy foam around the edge of the
+
+pool, their stunted leaves and brown stems showing the sickly influence
+
+of the unhealthy liquid in the pond.
+
+~
+[Gyrael] Room is ready for review.
+
+[Ylena] maybe make a pond of acid to reset here so folk can nab some of
+
+~
+-235405311 10 9 0
+D3
+~
+~
+0 -1 43065 10 10 5
+E
+brackish water pool pond~
+An acrid stench rises from the roiling pond, burning your nostrils and
+
+the back of your throat.  The murky water roils and froths, as if stirred
+
+by a giant hand.
+
+~
+E
+stem plants brown~
+The few plants that still live are withered and dying.  Their leaves are
+
+coated with slime from the pond, and where it has touched the plants are
+
+brown.
+
+~
+A
+~
+~
+wait( random( 1, 3 ) );
+
+if( !mob_in_room( 1954, room ) ) {
+
+  if( rflag( reset0, room ) ) {
+
+    remove_rflag( reset0, room );
+
+    act_room( #monster, ch );
+
+    mload( 1954, room );
+
+    mob = mob_in_room( 1954, room );
+
+    ch = rand_player( room );
+
+    attack( mob, ch, 10d2+100, "lightning fast strike" );
+
+    attack( mob, ch, 10d2+100, "lightning fast strike" );
+
+    }
+
+  else
+
+    act_room( #nomonster, ch );
+
+  }
+
+else
+
+continue;
+
+~
+E
+monster~
+@eA sinuous body rises from the brackish pool!
+
+~
+E
+nomonster~
+The pool roils uneasily, the brackish water bubbling and hissing.
+
+~
+!
+1 0 8
+A
+~
+pool~
+act_tochar( #reach, ch );
+
+act_notchar( #ow, ch );
+
+i = 2d30+25;
+
+inflict_acid( ch, ch, i, "reaching into a pool of acid" );
+
+dam_element( ch, i, "the powerful acid", 3 );
+
+~
+E
+reach~
+You reach an arm into the pool, but quickly pull back in pain!
+
+~
+E
+ow~
+$n reaches an arm into the pool, but quickly pulls it back in pain!
+
+~
+!
+9 0 0
+A
+enter swim dive~
+pool pond water~
+if( !rflag( reset0, room ) ) {
+
+  if( !mob_in_room( 1954, room ) ) {
+
+    act_tochar( #udive, ch );
+
+    act_notchar( #hedives, ch );
+
+    i = 3d75+100;
+
+    dam_element( ch, i, "diving into an acidic pool", 3 );
+
+    inflict_acid( ch, ch, i, "being dissolved by acid" );
+
+    transfer( ch, find_room( 43086 ) );
+
+    }
+
+  else
+
+    act_tochar( #block, ch );
+
+  }
+
+else {
+
+  if( mob_in_room( 1954, room ) )
+
+    act_tochar( #block, ch );
+
+  else
+
+    act_tochar( #no, ch );
+
+  }
+
+~
+E
+udive~
+You take a deep breath, and dive into the brackish pond.
+
+~
+E
+hedives~
+$n takes a deep breath and dives into the brackish water, disappearing
+
+with a splash.
+
+~
+E
+no~
+The pool roils uneasily as you approach it.  Perhaps it would be best to
+
+not enter the pool right now.
+
+~
+E
+block~
+The serpent moves towards you quickly, blocking you from entering the
+
+pool!
+
+~
+!
+0 0 0
+2705 17 1509949445 -2 0
+3819 17 1509949540 -2 25
+-1
+S
+
+#43067
+A Dark Crevace Beneath the Stone Forest~
+Under Construction.
+
+~
+~
+-235405312 10 9 0
+-1
+S
+
+#43068
+Path Between Tall Stone Hedges~
+At one time this was a path between living hedges filled with blossoming
+
+flowers and small woodland animals.  Now the stone flowers give off no
+
+scent, their grey leaves blend with the stone shapes of insects and birds
+
+that are forever frozen in stone.  To the south you can make out the tops
+
+of somber grey oak trees.  To the north the path continues into a grove.
+
+~
+[Gyrael] Entrance is hidden
+
+[Gyrael] creaking added
+
+[Maelthar] done
+
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405304 10 9 0
+D0
+~
+~
+0 -1 43069 10 10 5
+D2
+~
+~
+163 -1 43015 10 10 5
+E
+hedge~
+The hedge was once filled with life, but now it stands silent.  The
+
+insects stand just as they did the moment they were petrified.  The air
+
+is still, but the leaves are stirred by a long gone breeze.  The hedge
+
+blocks the passage to the south but it looks thin where the path begins.
+
+~
+E
+1 north~
+You can barely make out a depression further to the north, maybe at one
+
+time a lake.  The trail continues in that direction through the petrified
+
+grove.
+
+~
+A
+smash bash~
+hedge 1 south~
+if( !is_open( room, south ) ) {
+
+  if( find_stat( ch, str ) > 18 ) {
+
+    act_tochar( #shove, ch );
+
+    act_notchar( #shoves, ch );
+
+    open( room, south );
+
+    send_to_room( #owie, find_room( 43037 ) );
+
+    i = 2d12+11;
+
+    dam_message( ch, i, "Crashing through a stone wall" );
+
+    inflict( ch, ch, i, "crashing through a stone wall" );
+
+    }
+
+  else {
+
+    act_tochar( #weak, ch );
+
+    act_notchar( #hesweak, ch );
+
+    i = 2d5+2;
+
+    dam_message( ch, i, "Smashing into a stone wall" );
+
+    inflict( ch, ch, i, "crashing into a stone wall" );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #no, ch );
+
+~
+E
+shove~
+You throw yourself against the stone hedge blocking the path, smashing
+
+through the stone hedge.
+
+~
+E
+shoves~
+$n throws $mself against the stone hedge blocking the path, smashing
+
+through it!
+
+~
+E
+weak~
+You throw yourself against the stone hedge blocking the path, but simply
+
+bounce off.
+
+~
+E
+hesweak~
+$n throws $mself against the stone hedge blocking the path, but simply
+
+bounces off.
+
+~
+E
+no~
+The hedge to the south has already been smashed open.
+
+~
+E
+owie~
+Abruptly, a section of the stone hedge just north of you crashes to the
+
+ground in a shower of stone shards!
+
+~
+!
+0 0 0
+A
+~
+~
+send_to_room( #creak, room );
+
+~
+E
+creak~
+An ominous creaking comes from the stone trees to the north shifting.
+
+~
+!
+2 350 0
+-1
+S
+
+#43069
+Stone Grove - A Great Stone Archway~
+A great archway made of vines and branches stands just to the south. 
+
+Some of the twining limbs have broken off under their great weight and
+
+litter the ground underneath.  The trees here look well tended and the
+
+ground is clear of clutter save what has fallen since the petrification. 
+
+The ground dips to the north, sloping down into a shallow depression.  A
+
+path runs around the pool to either side.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43077 10 10 5
+D1
+~
+~
+0 -1 43073 10 10 5
+D2
+~
+~
+0 -1 43068 10 10 5
+D3
+~
+~
+0 -1 43074 10 10 5
+E
+pond pool depression~
+The shallow pond stands empty.  Tall stone grass lines the edge, though
+
+not high enough to make passage difficult.
+
+~
+E
+trail path~
+Faint and narrow, the path meanders through the forest.  The path skirts
+
+the pond to the north in either direction and heads south through the
+
+stone archway.
+
+~
+E
+trees oaks~
+The trees stand here silent and empty of life.  Not even moss clings to
+
+their stone bark, no wind moves their grey branches.
+
+~
+E
+archway hedge~
+The arch to the south is made up of brittle stone hedges.  It spans a
+
+narrow tunnel that leads southward.  Flowering vines cling to stone
+
+branches overhead and add support to the thin arch.
+
+~
+-1
+S
+
+#43070
+Shopkeeper's room~
+Holding room for the shopkeeper.  Don't delete this room or reorder the
+
+resets.
+
+~
+~
+-235401216 10 9 0
+E
+hand-high grey grass~
+Despite the grass in this corner of the clearing showing no signs of
+
+tending, it is only a few inches tall.  Not tall enough to present any
+
+danger, it would nonetheless hurt to fall onto the sharp field of stony
+
+blades.
+
+~
+E
+lifeless dirt~
+No description.
+
+~
+E
+forest undergrowth 1 south 1 west~
+No description.
+
+~
+1820 9 1509949540 3 0
+2458 9 1509949540 3 0
+-1
+S
+
+#43071
+Clearing - Near a Wall of Stone Oaks~
+This clearing is littered with an incredible amount of stone debris. 
+
+Although at one time this area may have been covered in grass or
+
+underbrush of some sort, any traces of the original plant life in this
+
+area were obliterated when a mighty stone oak fell from the thicket to
+
+the west.  Large piles of bird droppings stain the stone debris and dusty
+
+ground where no shards litter it.  The clearing continues in all
+
+directions but west.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43072 10 10 5
+D1
+~
+~
+0 -1 43025 10 10 5
+D2
+~
+~
+0 -1 43085 10 10 5
+E
+droppings~
+The droppings stain the piles of stone debris as well as the stone oak
+
+which has fallen from the west.
+
+~
+E
+mighty stone oak~
+This great oak perhaps fell due to gravity, or a great gust of wind.  Its
+
+stone leaves and branches have shattered upon impact, littering the
+
+clearing with stone debris.
+
+~
+E
+stone debris~
+The stone debris is mostly shards and dust caused by the falling of the
+
+mighty stone oak.
+
+~
+A
+~
+~
+acode( find_room( 43025 ), 3 );
+
+~
+!
+2 350 0
+2439 9 1509949540 3 0
+-1
+S
+
+#43072
+Clearing - Borders of the Stone Forest~
+Petrified grass stands a handspan tall in this forest clearing, although
+
+much of the grass has been smashed or shattered by someone or something. 
+
+The ground is covered with crisscrossing tracks and a smattering of
+
+droppings of some creature.  A thicket of mighty oaks which stands
+
+northwest of here would have been difficult to traverse before the
+
+petrification, and now would be impossible to maneuver through.  This
+
+bleak clearing extends in the distance to the south and east.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D1
+~
+~
+0 -1 43024 10 10 5
+D2
+~
+~
+0 -1 43071 10 10 5
+E
+petrified grass~
+The grass stands perhaps five inches tall, but patches of it have been
+
+smashed to a stony dust.  Although the grass here is razor sharp, it is
+
+very short and brittle and shatters as you pass through the clearing.
+
+~
+E
+tracks~
+The tracks are those of a large bird, although they are too blurred to
+
+make out more details.
+
+~
+E
+droppings~
+The droppings are white and are strewn about the clearing.
+
+~
+A
+~
+~
+acode( find_room( 43025 ), 3 );
+
+~
+!
+2 350 0
+A
+~
+~
+act_tochar( #crunch, ch );
+
+if( !is_exhausted( ch ) )
+
+  continue;
+
+~
+E
+crunch~
+The stone grass crunches underfoot as you head through the clearing.
+
+~
+!
+3 0 6
+2439 41 1509949540 3 0
+2439 73 1509949540 3 0
+2439 73 1509949540 3 0
+2439 73 1509949540 3 0
+-1
+S
+
+#43073
+Stone Grove - Faint Path~
+A faint trail winds its way between the oak trees here and leads to the
+
+north and to the west.  The ground is completely clear of undergrowth,
+
+only large, ancient oaks grow in this grove.  The path leads west and
+
+north, to the east the forest becomes too dense to traverse.  A thick
+
+hedge blocks movement to the south.
+
+~
+[Gyrael] Room is ready for review.
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43076 10 10 5
+D3
+~
+~
+0 -1 43069 10 10 5
+E
+path trail~
+The trail slowly turns north, around a small dry pond to the north-west. 
+
+It zig-zags among the trees, never taking the most direct route.  The
+
+path is clear of debris, as if the trees above are held together by some
+
+force.
+
+~
+E
+1 east~
+The forest is snarled with undergrowth, completely impassable in its
+
+current state.
+
+~
+E
+1 south hedge~
+The stone hedge to the south is thick and full, though the individual
+
+branches look frail, as a whole it looks like it could withstand even the
+
+most direct of assaults.
+
+~
+-1
+S
+
+#43074
+Stone Grove - Faint Path~
+A faint trail runs from the east to the north, weaving between the mighty
+
+stone trunks.  A dry pond lies to the north-east lined with grasses and
+
+cattails.  To the south a stone hedge blocks the way, and thick trees
+
+block passage to the west.  The ground is clear of clutter save for
+
+fallen stone leaves and pieces of tree branch.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43075 10 10 5
+D1
+~
+~
+0 -1 43069 10 10 5
+E
+hedge 1 south~
+The thick hedge, now made of stone, is speckled with flowers.  It forms a
+
+solid barrier to the south that a dwarven mason would be proud of.
+
+~
+E
+1 west~
+The forest is too overgrown to the west to pass without great difficulty.
+
+~
+E
+pond pool~
+The dry pond is lined with short grasses and weeds.  The bottom is
+
+covered with stone leaves and broken branches.
+
+~
+E
+trail path~
+The path winds through the forest, around the pond to the north-east.  It
+
+never leads in one direction for long, making the trail much longer than
+
+it has to be.
+
+~
+-1
+S
+
+#43075
+Stone Grove - Faint Path~
+Half of a stone racoon stands intact, its hindquarters having been
+
+smashed by a fallen branch.  The path runs right by the petrified animal,
+
+near a dried-up pond.  Besides the pond to the east the only other
+
+possible routes are to follow the trail south or north; close branches
+
+make going west impossible.  You are struck by the silence of the dull
+
+grey forest and the complete lack of odor.
+
+~
+[Gyrael] Room is ready for review.
+
+[Ylena] *sniff*  poor racoon :(
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43078 10 10 5
+D1
+~
+~
+0 -1 43077 10 10 5
+D2
+~
+~
+0 -1 43074 10 10 5
+E
+racoon~
+The racoon is bent over the pond, mouth open to drink.  The animal's
+
+hindquarters have been smashed by a fallen branch, but the front half
+
+remains intact.  It has been kept standing by its front paws, which are
+
+fused to the stone ground.
+
+~
+E
+pool pond~
+The dry pond is bordered with a small wall of grass.  The grass is short
+
+enough that it can be stepped over however.
+
+~
+E
+branch 1 west~
+Low branches have made a wall to the west.  A rabbit or a racoon could
+
+find passage, but your size forces you to stay in the grove.
+
+~
+E
+path trail~
+The trail weaves around the trunks.  It meanders so much that it is
+
+difficult to decide which way the path is actually going.
+
+~
+A
+cast~
+web~
+acode( find_room( 43082 ), 1 );
+
+~
+!
+0 0 0
+A
+~
+~
+acode( find_room( 43076 ), 2 );
+
+~
+!
+2 500 0
+2440 137 1509949540 3 0
+-1
+S
+
+#43076
+Stone Grove - Faint Path~
+A winding path leads through the forest.  The path continues to the north
+
+and south, between the silent, stone trees.  A wall of sorts has been
+
+formed at the edge of the clearing by a bramble bush to the east.  Only
+
+the mightiest oak trees grow here, towering over the forest floor.  The
+
+ground is surprisingly clear of fallen debris, the trees have held up
+
+remarkably well.  Fallen stone leaves and rock branches cover the bottom
+
+of a dried up pond to the west.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43079 10 10 5
+D2
+~
+~
+0 -1 43073 10 10 5
+D3
+~
+~
+0 -1 43077 10 10 5
+E
+oaks trees~
+The trees here seem sad, if that can be said of a thing.  The stone
+
+branches sag under their unnatural weight, though they have held together
+
+for the most part.
+
+~
+E
+path trail~
+The path weaves through the lifeless grey trunks, some times even
+
+doubling back on itself.  The path is free of debris save for an
+
+occasional stone leaf or twig.
+
+~
+E
+1 east brambles~
+Sharp and prickly, the brambles are now solid stone.  Crashing into them
+
+looks like it could be painful.
+
+~
+E
+pond pool~
+Empty and covered with a thin layer of debris, the pond is little more
+
+than a dent in the ground now.  Marsh grass surrounds the pond, but gaps
+
+and holes allow easy access to the empty pool.
+
+~
+A
+cast~
+web~
+acode( find_room( 43082 ), 1 );
+
+~
+!
+0 0 0
+A
+~
+~
+mob = mob_in_room( 2440, room );
+
+i = 1d2;
+
+if( i == 1 )
+
+interpret( mob, "whimper" );
+
+if( i == 2 )
+
+interpret( mob, #sad );
+
+~
+E
+sad~
+emote weeps sadly, sap running in streaks down its once-noble face.
+
+~
+!
+2 500 0
+A
+1 east~
+~
+act_tochar( #nobram, ch );
+
+~
+E
+nobram~
+You cannot simply walk through the wall of stone brambles.
+
+~
+!
+0 0 0
+2440 137 1509949540 3 0
+-1
+S
+
+#43077
+Stone Grove - In a Dried-Up Pond~
+You stand in what used to be a small forest pond.  Bits of broken stone
+
+and pieces of rubble line the bottom of the pool now.  Scattered among
+
+the debris you can make out petrified fish and frogs, further proof that
+
+this used to be a pool.  The stone pool continues to the north, and the
+
+forest continues to the east and west.  To the south stands an archway,
+
+once made of green vegetation, now made of pale stone.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43080 10 10 5
+D1
+~
+~
+0 -1 43076 10 10 5
+D2
+~
+~
+0 -1 43069 10 10 5
+D3
+~
+~
+0 -1 43075 10 10 5
+E
+fish~
+Frozen in time, the fish are strewn on the ground, though not attatched
+
+to the ground like most of the other creatures.  Some have broken fins or
+
+tails from falling through the water, but most are surprisingly intact.
+
+~
+E
+frog~
+A few bullfrogs and several smaller ones can be seen amidst the clutter
+
+of the pond.  One bullfrog has its throat puffed out to croak, though it
+
+will never attract a mate.
+
+~
+-1
+S
+
+#43078
+Stone Grove - Faint Path~
+A stone branch has fallen across the path here and you have to walk
+
+around it.  With the exception of the log blocking the path and a few
+
+other pieces of stone the ground is clear of debris.  This grove is very
+
+peaceful despite being made of stone.  The path leads north and south,
+
+skirting a dried up pond to the east.  A stone wall of brush blocks any
+
+route through the woods to the west.  A stone butterfly sits alone with
+
+its delicate wings spread on the trunk of one great oak.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43082 10 10 5
+D1
+~
+~
+0 -1 43080 10 10 5
+D2
+~
+~
+0 -1 43075 10 10 5
+E
+butterfly~
+Its paper-thin wings spread wide, the butterfly stands as if about to
+
+take off.  It is impossible to tell what color the butterfly's wings
+
+might have been.
+
+~
+E
+oak tree~
+The tall stone trees shade the area with their leafy branches.  The
+
+opaque stone leaves allow almost no light through the canopy of branches,
+
+and the thick branches hold no life.
+
+~
+E
+branch limb~
+Four feet thick, the branch is as thick as the trunk of lesser trees. 
+
+Going around would be far easier than climbing the stone branch.
+
+~
+E
+pond~
+The pond to the east is little more than a depression in the ground now. 
+
+All of its water has long since evaporated.  The only evidence that there
+
+was a pond there at all is the high grass along its rim.
+
+~
+E
+brush 1 west~
+Brambles and other undergrowth, now made of rock, form a wall to the west. 
+
+It would take men with hammers several days to clear a path, going in
+
+that direction is not an option.
+
+~
+A
+~
+~
+if( !is_exhausted( ch ) )
+
+  act_tochar( #leaves, ch );
+
+continue;
+
+~
+E
+leaves~
+The stone leaves crunch underfoot as you detour the fallen limb.
+
+~
+!
+3 0 5
+-1
+S
+
+#43079
+Stone Grove - Faint Path~
+The drab grey trees tower over the faint trail here.  Passage between the
+
+trees is made easy by lack of petrified undergrowth.  Stone leaves make
+
+even the brightest of days seem dim and keep the grove in an almost
+
+perpetual night.  A faint trail weaves between the trunks here from the
+
+north and the south.  To the west lies a dried up pond, lined with stone
+
+cattails and grass.  Passage to the east is made impossible by a fallen
+
+stone oak.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43081 10 10 5
+D2
+~
+~
+0 -1 43076 10 10 5
+D3
+~
+~
+0 -1 43080 10 10 5
+E
+1 east oak~
+Once mighty, towering more than 50 feet into the air, the oak now lies on
+
+its side, broken in several places.  Most of its branches shattered in
+
+the fall, leaving sharp, glittering fragments around it.  The thick trunk
+
+is cracked, and the jagged edges make it far too dangerous to try to
+
+climb over.
+
+~
+E
+trail path~
+The north-south running trail wanders across the forest floor, never
+
+heading in any one direction for long.  The trail is empty, yet you get
+
+the feeling that something is watching you.
+
+~
+E
+pond pool~
+Coated with broken leaves and branches, the shallow pool to the west is
+
+lined with grass, though nothing that would have blocked access to the
+
+water's surface.
+
+~
+-1
+S
+
+#43080
+Stone Grove - In a Dried-Up Pond~
+The pond was shallow here, and the north end is lined with stone cattails. 
+
+A faint path through the grove lines the pond to either side.  A stone 
+
+snake slithers along the bottom toward a frog it will never reach.  Neck
+
+curved gracefully, a swan lies on its side in the position it landed the
+
+day it was petrified.  The bottom of the pond is scattered with fallen
+
+leaves and stone branches.  A patch of stone lillies stand in the shallow
+
+water here, but most have collapsed, their thin, stone stems unable to
+
+support them.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D1
+~
+~
+0 -1 43079 10 10 5
+D2
+~
+~
+0 -1 43077 10 10 5
+D3
+~
+~
+0 -1 43078 10 10 5
+E
+lilly~
+Most of the lillies have long since collapsed.  Pieces of the thin pads
+
+lie mixed with other stone fragments.  One lilly, however, stands intact. 
+
+A perfect, stone flower in perpetual bloom hangs in the air, supported by
+
+a long, thin stone stem.
+
+~
+E
+cattails~
+A thick bed of cattails stands to the north.  Some of the cattails were
+
+just starting to shed thier seeds when they were petrified.  The bed is
+
+far too thick to make passage through and presents far too many jagged
+
+edges.
+
+~
+E
+swan~
+Even in death the petrified bird is magnificent.  Its long, stone neck is
+
+curved in a graceful arch and its neatly preened wings are at rest by its
+
+sides.  It lies on its side against the stone bottom, undamaged from
+
+sinking through the water.
+
+~
+A
+1 north~
+~
+act_tochar( #no, ch );
+
+~
+E
+no~
+The wall of stone cattails prevent you from going in that direction.
+
+~
+!
+0 0 0
+A
+get take pick~
+lilly~
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  if( random( 1, 20 ) == 10 ) {
+
+    act_tochar( #trypick, ch );
+
+    act_notchar( #trypicks, ch );
+
+    obj_to_char( oload( 3818 ), ch );
+
+    }
+
+  else {
+
+    act_tochar( #nope, ch );
+
+    act_notchar( #nopes, ch );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #nope, ch );
+
+  act_notchar( #nopes, ch );
+
+  }
+
+~
+E
+trypick~
+You reach off and snap a lilly flower from its delicate stone stem.
+
+~
+E
+trypicks~
+$n reaches off and snaps a lilly flower from its delicate stone stem.
+
+~
+E
+nope~
+You try to take one of the delicate stone lillies, but it shatters in
+
+your grasp.
+
+~
+E
+nopes~
+$n tries to take one of the delicate stone lillies, but it shatters in
+
+$s grasp.
+
+~
+!
+0 0 0
+-1
+S
+
+#43081
+Stone Grove - Faint Path~
+The trail through the woods turns gently to the west and south around the
+
+dried up pond.  Trees to the north grow much too close together to travel
+
+through.  The top of a fallen stone oak blocks the way to the east. 
+
+Other than an occasional fallen branch or leaf the ground is clear of
+
+debris.  The towering oaks creak alarmingly under the weight of their
+
+stone limbs.  That they still stand at all is a testament to their
+
+strength.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D2
+~
+~
+0 -1 43079 10 10 5
+D3
+~
+~
+0 -1 43083 10 10 5
+E
+cattails~
+Stone, like everything else, the cattails line the trail to the south
+
+west.  Too tall to see over, they screen the view of whatever lies to the
+
+south-west.
+
+~
+E
+trail path~
+Here the trail curves slowly around a bed of catttails to the south-west. 
+
+The trail doesn't continue in a straight line.  Instead it wanders about
+
+the forest in a random path.
+
+~
+E
+oaks trees~
+The oaks here are massive, their trunks easily as wide as 5 humans.  It
+
+would take a great force to knock such a tree down, even the added weight
+
+of being petrified hasn't made them fall.
+
+~
+E
+1 east top~
+The top of a massive oak has fallen here.  Its surface is covered with
+
+cracks and jagged holes caused from its landing.  Most of its branches
+
+have been jarred loose by the impact and lie on the ground near the trunk. 
+
+Climbing over the jagged cracks and sharp branches would be far too
+
+hazardous.
+
+~
+E
+1 north~
+The trees seem to grow wide and close together, almost forming a wall. 
+
+Passing between them would have been difficult before they were
+
+petrified, now it is impossible.
+
+~
+A
+cast~
+web~
+acode( find_room( 43082 ), 1 );
+
+~
+!
+0 0 0
+A
+~
+~
+acode( find_room( 43076 ), 2 );
+
+~
+!
+2 500 0
+2440 137 1509949540 3 0
+-1
+S
+
+#43082
+Stone Grove - Faint Path~
+A winding trail leads through the forest here, passing around a dried up
+
+pond to the southeast.  The forest to the west is too thick and choked
+
+with undergrowth to be passable.  No undergrowth occupies the forest
+
+floor here, its only covering is fallen leaves which have long since been
+
+turned to stone.  You get the feeling that the silent, grey trees are
+
+watching you, though that is impossible.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D1
+~
+~
+0 -1 43083 10 10 5
+D2
+~
+~
+0 -1 43078 10 10 5
+E
+stone trees~
+Perfectly still, the trees are the dull grey of stone.  The trees of the
+
+grove seem relatively intact, though stone leaves and fallen branches
+
+show that this part of the forest too has taken its share of damage.
+
+~
+E
+path trail~
+The path is curved here, bypassing a dried-up pond to the south-west. 
+
+Though the path never travels in any one direction for long it slowly
+
+meanders to the south and east.
+
+~
+E
+pond~
+Empty of the life-giving water that once filled it, the pond is little
+
+more than a dent in the ground now.
+
+~
+E
+1 west~
+Unlike the grove, the forest floor to the west is covered with bushes and
+
+undergrowth.  Making a path would have been impossible even if the forest
+
+weren't made of stone.
+
+~
+E
+1 north~
+The trees to the north grow thick and close together.  They grow in
+
+almost a straight line, forming a barrier of trunks.
+
+~
+A
+cast~
+web~
+if( has_obj( 81, ch ) ) {
+
+  if( !is_silenced( ch ) ) {
+
+    act_tochar( #place, ch );
+
+    act_notchar( #places, ch );
+
+    wait( 1 );
+
+    act_tochar( #drain, ch );
+
+    }
+
+  else
+
+    act_tochar( #quietyou, ch );
+
+  }
+
+else
+
+  act_tochar( #needwebs, ch );
+
+~
+E
+place~
+You place a small piece of spider's web in your hand.
+
+~
+E
+places~
+$n places a small piece of spider's web in $s hand.
+
+~
+E
+drain~
+You feel a sinking, draining feeling from the stony grove around you.
+
+~
+E
+quietyou~
+You are silenced and unable to cast spells.
+
+~
+E
+needwebs~
+You need a small piece of spider's web to cast web.
+
+~
+!
+0 0 0
+A
+~
+~
+acode( find_room( 43076 ), 2 );
+
+~
+!
+2 500 0
+2440 137 1509949540 3 0
+-1
+S
+
+#43083
+Stone Grove - Before a Tunnel of Branches~
+A faint trail branches here in three directions.  To the east and west it
+
+goes around a petrified bed of cattails.  The northern fork leads into a
+
+tunnel of sorts through the trees.  The cattails to the south are much
+
+too thick to be passable.  Stone wildflowers cover the ground under the
+
+mighty canopy of oaks, having taken advantage of the lack of undergrowth. 
+
+Where once the buzz of bees might have filled the air now it is quiet
+
+save for the occasional crack of a stone branch snapping under its own
+
+weight.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405312 10 9 0
+D0
+~
+~
+0 -1 43084 10 10 5
+D1
+~
+~
+0 -1 43081 10 10 5
+D3
+~
+~
+0 -1 43082 10 10 5
+E
+cattails 1 south~
+Thick and tall, the cattails form a dense wall of stone.  The cattails
+
+are bowed slightly, as if stirred by a breeze.  No wind could stir their
+
+solid stalks now.
+
+~
+E
+wildflowers flowers~
+Small and delicate wildflowers dot the landscape here.  They are more
+
+concentrated to the north, virtually covering the ground in that
+
+direction.
+
+~
+E
+trail path~
+The narrow trail goes through a set of twin oaks to the east and around a
+
+boulder covered with stone moss to the west.  It leads north into a
+
+tunnel of tree branches.
+
+~
+A
+1 south~
+~
+act_tochar( #nowayman, ch );
+
+~
+E
+nowayman~
+A wall of stone cattails prevents travel in that direction.
+
+~
+!
+0 0 0
+-1
+S
+
+#43084
+Stone Grove - End of the Faint Path~
+A tunnel has been formed here by the branches of the oaks.  The oaks grow
+
+too close together to allow passage in any direction other than the one
+
+you came from.  A single hole in the branches overhead allows sunlight to
+
+stream down into the clearing during daylight and moonlight at night.  A
+
+slight breeze whistles through the the stone trees, but fails to stir any
+
+leaves or move any branches.  Surprisingly, no broken branches or fallen
+
+leaves litter the ground here.  Wildflowers petrified in bloom decorate
+
+this area with their pale beauty.
+
+~
+[Gyrael] remove reset for white lion
+
+[Gyrael] cflag 96 is for killing mr. lion
+
+[Gyrael] Room is ready for review.
+
+lion is sleepable atm
+
+[Ylena] I love the tame thingie on the lion.
+
+*
+
+[Dalthas] fix get all dummy object
+
+~
+-235405312 10 9 0
+D2
+~
+~
+0 -1 43083 10 10 5
+E
+wildflower flower~
+Frozen in bloom forever, these small wildflowers cover the ground here.
+
+Save for the path no place is clear of them.
+
+~
+E
+oaks trees~
+The stone oaks line this section of the grove in even rows.  Most are
+
+perfectly intact, almost no fallen leaves lie on the ground here.  Their
+
+branches have grown overhead in a protective arch, once shielding the
+
+grove from glaring sunlight.
+
+~
+E
+hole~
+The hole above illuminates the center of the clearing in natural light. 
+
+Despite the cold, lifeless stone all around, the light streaming in from
+
+above makes this section of the grove almost cheerful.
+
+~
+A
+cast~
+tame~
+mob = mob_in_room( 2443, room );
+
+if( mob ) {
+
+act_tochar( #good, ch );
+
+  if( !cflag( 96, ch ) ) {
+
+    if( find_skill( ch, tame ) >= 10 ) {
+
+      wait( 1 );
+
+      interpret( mob, #say1 );
+
+      do_spell( tame, ch, mob );
+
+      }
+
+    else {
+
+      if( find_skill( ch, tame ) >= 1 )
+
+        interpret( mob, #notyet );
+
+      }
+
+    }
+
+  else {
+
+    wait( 1 );
+
+    interpret( mob, #evil );
+
+    }
+
+  }
+
+~
+E
+good~
+You beckon to the white lion.
+
+~
+E
+notyet~
+say Seek me again when you are more experienced.
+
+~
+E
+say1~
+say I see you have not caused harm to my grove.
+
+~
+E
+evil~
+say I will never follow you; your hands are tainted with the blood of my
+
+kind.
+
+~
+!
+0 0 0
+A
+recite~
+tattered scroll reanimation~
+if( has_obj( 3807, ch ) ) {
+
+  obj = obj_in_room( 3677, room );
+
+  if( obj ) {
+
+    act_tochar( #melt, ch );
+
+    wait( 2 );
+
+    act_tochar( #melt2, ch );
+
+    wait( 2 );
+
+    act_tochar( #wakey, ch );
+
+    junk_obj( obj );
+
+    mload( 2443, room );
+
+    wait( 1 );
+
+    mob = mob_in_room( 2443, room );
+
+    interpret( mob, #rawr );
+
+    }
+
+  else
+
+    act_tochar( #already, ch );
+
+  }
+
+else
+
+  continue;
+
+~
+E
+already~
+The lion has already been reanimated.
+
+~
+E
+melt~
+A single drop of color appears on the flank of the white lion.
+
+~
+E
+melt2~
+The color slowly spreads across the flank and back towards the tail of
+
+this great beast.
+
+~
+E
+wakey~
+In a final rush, the grey vanishes entirely from the form of the mighty
+
+lion.
+
+~
+E
+rawr~
+emote stretches a moment, then arches his back and emits a deafening roar!
+
+~
+!
+0 0 0
+3677 17 1509949540 -2 0
+3678 17 1509949540 -2 0
+-1
+S
+
+#43085
+A Bleak Clearing - Edge of the Stone Forest~
+Hand-high, grey grass covers this southwestern corner of a clearing in
+
+the forest.  Silent stone boughs overhang the clearing from the darker
+
+forest that looms to the south and west, too intertwined with stony
+
+undergrowth to allow travel into the woods.  Although this area must have
+
+once been very peaceful, an oppressive silence now hangs over this forest
+
+clearing.  Not even the tiniest plant seems to have made a foothold in
+
+this lifeless, grey dirt.
+
+~
+[Gyrael] Room is ready for review.
+
+[Gyrael] can animate centaurs with tattered scroll, they wander away when
+
+someone leaves room 
+
+*
+
+~
+-235401216 10 9 0
+D0
+~
+~
+0 -1 43071 10 10 5
+D1
+~
+~
+0 -1 43026 10 10 5
+E
+hand-high grey grass~
+Despite the grass in this corner of the clearing showing no signs of
+
+tending, it is only a few inches tall.  Not tall enough to present any
+
+danger, it would nonetheless hurt to fall onto the sharp field of stony
+
+blades.
+
+~
+E
+lifeless dirt~
+Upon closer examination, you can make out a few very scuffed, birdlike
+
+footprints in the stony dust.
+
+~
+E
+forest undergrowth 1 south 1 west~
+The forest thickens to the south and west.  Thickening undergrowth now
+
+made of solid stone prevent any investigation further into the wood.
+
+~
+A
+recite~
+scroll tattered reanimation~
+if( has_obj( 3807, ch ) ) {
+
+  if( !mob_in_room( 1820, room ) ) {
+
+    junk_obj( has_obj( 3807, ch ), 1 );
+
+    act_tochar( #animate, ch );
+
+    act_notchar( #animatehe, ch );
+
+    wait( 1 );
+
+    send_to_room( #animate2, room );
+
+    wait( 1 );
+
+    send_to_room( #animate3, room );
+
+    transfer_all( find_room( 43070 ), room );
+
+    junk_obj( obj_in_room( 3723, room ) );
+
+    junk_obj( obj_in_room( 3724, room ) );
+
+    mob = mob_in_room( 1820, room );
+
+    interpret( mob, #flex );
+
+    mob = mob_in_room( 2458, room );
+
+    interpret( mob, #stretch );
+
+    }
+
+  }
+
+else
+
+  continue;
+
+~
+E
+animate~
+You recite the tattered scroll.
+
+~
+E
+animatehe~
+$n recites a tattered scroll.
+
+~
+E
+animate2~
+A drop of bright white suddenly appears on the flanks of the centaurs.
+
+~
+E
+animate3~
+The color spreads rapidly across the centaurs, and in a flash of light,
+
+they stand whole before you!
+
+~
+E
+flex~
+emote flexes his large arms in wonder.
+
+~
+E
+stretch~
+emote twists her torso around, stretching for the first time in ages.
+
+~
+!
+0 0 0
+A
+~
+~
+if( !is_player( ch ) )
+
+  continue;
+
+mob = mob_in_room( 1820, room );
+
+if( mob ) {
+
+  act_room( #wave, mob );
+
+  junk_mob( mob );
+
+  junk_mob( mob_in_room( 2458, room ) );
+
+  }
+
+continue;
+
+~
+E
+wave~
+The centaurs wave at you in gratitude, then vanish between the stony
+
+trees to the west.
+
+~
+!
+3 0 3
+3723 17 1509949540 -2 0
+3724 17 1509949540 -2 0
+2439 41 1509949540 3 0
+2439 73 1509949540 3 0
+2439 73 1509949540 3 0
+2439 73 1509949540 3 0
+2439 73 1509949540 3 0
+-1
+S
+
+#43086
+Somewhere Within a Roiling Pool~
+This pool of brackish, acidic water is dimly lit, although the acid
+
+stings your eyes and makes it difficult to see.  The water churns and
+
+roils all around you, as unidentified objects brush against your body. 
+
+The bottom of the pool is dimly visible below your feet.
+
+~
+[Gyrael] Room is ready for review.
+
+*
+
+~
+-235405311 10 9 0
+D4
+~
+~
+0 -1 43066 10 10 5
+E
+bottom~
+Barely visible through the murky water, the bottom is littered with
+
+debris.  Some can be made out as bones, though what the bones belonged to
+
+is impossible to tell.
+
+~
+A
+~
+~
+loop( all_in_room ) {
+
+  act_tochar( #acid, rch );
+
+  i = 2d220+50;
+
+  inflict_acid( rch, rch, i, "being dissolved in a pool of acid" );
+
+  dam_element( rch, i, "the powerful acidic pool", 3 );
+
+  if( random( 1, 2 ) == 1 )
+
+    do_spell( blind, mob, rch );
+
+  }
+
+~
+E
+acid~
+@GThe acid burns into your flesh, dissolving it away!@n
+
+~
+!
+2 1000 0
+3784 49 100 -2 0
+3668 81 2 -2 0
+3804 81 1509949445 -2 0
+-1
+S
+
+#0
+

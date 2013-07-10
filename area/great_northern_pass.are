@@ -1,0 +1,2713 @@
+#AREA
+Great Northern Pass~
+Janua~
+~
+
+0 0
+0
+#ROOMS
+
+#36750
+Great North Road - Above a Rock Ladder~
+A ladder carved into the side of the cliff goes down into a small ravine
+
+below and the trail heads north across a narrow ledge on the sheer
+
+mountainside.  You can see across the wide valley filled with pine trees
+
+to the south and west to the high peaks of the Cairn Mountains.  The road
+
+follows a narrow ledge along this side of the valley, snugged up against
+
+one of the steepest peaks of the Dragonspire range.
+
+~
+climb down to 36512
+
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36751 10 10 5
+A
+climb~
+1 down ladder cliff~
+if( is_mounted( ch ) ) {
+
+  act_tochar( #dismount, ch );
+
+  end;
+
+  }
+
+if( !is_resting( ch )) {
+
+  act_tochar( #char, ch );
+
+  act_notchar( #leave, ch );
+
+  transfer( ch, find_room( 36512 ) );
+
+  act_notchar( #arrive, ch );
+
+  }
+
+else {
+
+  act_tochar( #no, ch );
+
+  continue;
+
+  }
+
+~
+E
+char~
+You lower yourself over the edge of the cliff and climb down the rock
+
+ladder.
+
+~
+E
+leave~
+$n lowers $mself over the edge of the cliff and disappears into the
+
+ravine below.
+
+~
+E
+dismount~
+You must dismount before you can climb down.
+
+~
+E
+arrive~
+$n comes climbing down the ladder carved into the cliffside.
+
+~
+E
+no~
+You must be standing in order to climb down.
+
+~
+!
+0 0 0
+-1
+S
+
+#36751
+Great North Road - On a Narrow Ledge~
+The road angles upward to the north as it follows a narrow ledge on a
+
+sheer, rocky cliff on the side of a high mountain, curving to follow its
+
+contours.  As you peek over the edge of the ledge, the pine trees at
+
+least a dozen feet below look very small and you can see a small river
+
+winding its way through the forested valley.  You can see across the open
+
+area to the snow-capped peaks of the Cairn Mountains on the west.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36752 10 10 5
+D2
+~
+~
+0 -1 36750 10 10 5
+-1
+S
+
+#36752
+Great North Road - On a Narrow Ledge~
+The road clings to a shallow ledge on a high cliff which drops down many
+
+feet to a forested valley below, and the cliff's grey, stone surface
+
+rises high above the trail.  Small stones occasionally fall from above
+
+and the ledge is pocked and marred by larger impacts.  The ledge is just
+
+wide enough for the road to allow a wagon to pass, and looks like a
+
+natural formation on the cliffside.
+
+~
+acode here
+
+~
+-235405312 12 9 0
+D2
+~
+~
+0 -1 36751 10 10 5
+D3
+~
+~
+0 -1 36753 10 10 5
+A
+~
+~
+send_to_room( #msg, room );
+
+~
+E
+msg~
+@yA shower of small rocks falls from above and several skitter across the@n
+
+@yroad and tumble over the cliff's edge.@n
+
+~
+!
+2 500 0
+-1
+S
+
+#36753
+Great North Road - On a Narrow Ledge~
+The shallow ledge is just wide enough for the road as it makes its way
+
+across the rocky cliff.  The passage could probably accomodate a small
+
+wagon with enough room for another traveller on foot or horseback to
+
+squeeze past.  Small rock fragments litter the trail and make footing
+
+difficult on the precarious ledge.  As you move along the road you knock
+
+small stones over the edge and they go clattering down into the valley on
+
+the west to fall among the trees.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36754 10 10 5
+D1
+~
+~
+0 -1 36752 10 10 5
+-1
+S
+
+#36754
+Great North Road - On a Narrow Ledge~
+The road inches along a narrow ledge, perched on the side of a cliff face
+
+which rises high above the valley to the west.  Someone has scratched
+
+words on the rock face of the cliff in a scrawling script.  You can see
+
+the northern edge of a forested valley about a dozen feet below and a
+
+black bear moving through the trees that looks small from this height. 
+
+The high peaks of the northern Cairn Mountains across the valley provide
+
+a majestic backdrop to the scene.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36755 10 10 5
+D2
+~
+~
+0 -1 36753 10 10 5
+E
+words scratch rock cliff~
+The words, "In the name of Kerog!" have been scratched deeply into the
+
+grey rock of the cliff.  Considering the hardness of the rock, whoever
+
+made this marking must have been determined.
+
+~
+-1
+S
+
+#36755
+Great North Road - On a Narrow Ledge~
+The road follows a narrow ledge on the sheer, rocky side of a high
+
+mountain, curving to follow its contours.  You can see a forested valley
+
+below on the southwest and across the valley rise the high peaks of the
+
+Cairn Mountains.  The cliff that the ledge is cut from is made of a hard,
+
+grey rock with cracks and tiny fissures forming a webwork on its surface.
+
+~
+~
+-235405312 12 9 0
+D2
+~
+~
+0 -1 36754 10 10 5
+D3
+~
+~
+0 -1 36756 10 10 5
+-1
+S
+
+#36756
+Great North Road - On a Narrow Ledge~
+The road is contained by a narrow ledge that crosses a grey stone cliff,
+
+sloping downward as it goes from the east to the west.  The vertical
+
+mountainside rises high above your head and drops into a valley on the
+
+south.  The valley is filled with tall, dark green pine trees, and a
+
+small river makes its way through the forest.  The animals and plants
+
+below look small from this vantage point, and the high Cairn mountains
+
+tower over them across the valley to the south.
+
+~
+~
+-235405312 12 9 0
+D1
+~
+~
+0 -1 36755 10 10 5
+D3
+~
+~
+0 -1 36757 10 10 5
+-1
+S
+
+#36757
+Great North Road - On a Narrow Ledge~
+The road turns here, forced around a curve as it follows a rather narrow
+
+ledge clinging to the cliffside.  The road is just wide enough to allow
+
+wagons to pass, but the footing is good and the rock seems stable. 
+
+Looking up you can see the top of the cliff about sixty feet above your
+
+head, and down you see into a forested valley.  Across the expanse of the
+
+valley stand the stately peaks of the Cairn mountains.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36758 10 10 5
+D1
+~
+~
+0 -1 36756 10 10 5
+-1
+S
+
+#36758
+Great North Road - On a Narrow Ledge~
+The ledge that provides a stable passage for the road meanders across the
+
+curving face of a vertical mountainside cliff made of light grey stone. 
+
+The rock is very hard, but small fragments litter the road's surface.  As
+
+you move along, small pieces of stone tumble down into the valley some
+
+thirty feet below.
+
+~
+~
+-235405312 12 9 0
+D2
+~
+~
+0 -1 36757 10 10 5
+D3
+~
+~
+0 -1 36759 10 10 5
+-1
+S
+
+#36759
+Great North Road - On a Narrow Ledge~
+Small pieces of stone lie scattered on the road that is perched atop a
+
+narrow ledge cut out of the vertical cliff that rises up above your head. 
+
+The grey rock of the cliff is cracked with a webwork of tiny fissures,
+
+and you can see where bits of the hard stone have fallen loose.  Looking
+
+down to the south, a wide valley spreads before you, filled with pine
+
+trees and animals.
+
+~
+acode here
+
+~
+-235405312 12 9 0
+D1
+~
+~
+0 -1 36758 10 10 5
+D3
+~
+~
+0 -1 36760 10 10 5
+A
+~
+~
+act_tochar( #msg, ch );
+
+~
+E
+msg~
+As you move along you kick small fragments of stone that skitter across
+
+the road and fall over the edge into the valley far below on the south.
+
+~
+!
+1 0 2
+-1
+S
+
+#36760
+Great North Road - On a Narrow Ledge~
+The road is perched on a ledge carved from the light grey rock of a high
+
+cliff that makes up this side of the mountain you are on.  Below you lies
+
+the southern end of a wide valley that stretches south until it meets the
+
+Cairn mountains that form its southern boundary.  The pine trees below
+
+you look small from this height and the creatures roaming between them
+
+are difficult to make out.
+
+~
+~
+-235405312 12 9 0
+D1
+~
+~
+0 -1 36759 10 10 5
+D3
+~
+~
+0 -1 36761 10 10 5
+-1
+S
+
+#36761
+Great North Road - On a Narrow Ledge~
+You are on a rock ledge that provides passage for the road, situated
+
+about a third of the way up a vertical cliff face.  The stone wall is
+
+covered with cracks, and scattered fragments of the hard rock cover the
+
+surface of the road.  Looking up you can see the top of the cliff some
+
+sixty feet above and down you can see a forested valley about thirty feet
+
+below.
+
+~
+~
+-235405312 12 9 0
+D1
+~
+~
+0 -1 36760 10 10 5
+D3
+~
+~
+0 -1 36762 10 10 5
+-1
+S
+
+#36762
+Great North Road - On a Narrow Ledge~
+A ramp-like structure has been carved into the mountainside, angling
+
+steeply up into the mountain to the north.  The road also heads east
+
+across a narrow ledge, about a third of the way up a sheer, grey cliff
+
+that spans most of the southwestern section of a mountain.  Over the edge
+
+of the road you can look down into a narrow gulley, and out across a
+
+wide, forested valley.
+
+~
+~
+-235405312 12 9 0
+D1
+~
+~
+0 -1 36761 10 10 5
+D4
+~
+~
+0 -1 36763 10 10 5
+-1
+S
+
+#36763
+Great North Road - Midway Up a Switchback~
+Two steep ramps meet here, the one on the right heads down and the one on
+
+the left goes up.  Both go in a southward direction, and have been carved
+
+into the side of the mountain.  Pulleys are mounted along the walls of
+
+the cut, apparently to help pull wagons up and down the steep grade.  The
+
+rock is a light grey, and hard to the touch.  Whoever engineered this
+
+road was skilled at masonry.
+
+~
+~
+-235405312 12 9 0
+D4
+~
+~
+0 -1 36764 10 10 5
+D5
+~
+~
+0 -1 36762 10 10 5
+-1
+S
+
+#36764
+Great North Road - Top of a Cliff~
+You are at the top of a rocky cliff on the side of a great mountain.  A
+
+wide valley fills the view to the south and you can see the peaks which
+
+enclose it.  A smooth, steep ramp leads down and to the north, cut into
+
+the hard rock of the mountain, and the road heads east across the top of
+
+the cliff.
+
+~
+~
+-235405312 12 9 0
+D1
+~
+~
+0 -1 36765 10 10 5
+D5
+~
+~
+0 -1 36763 10 10 5
+-1
+S
+
+#36765
+Great North Road - Top of a Cliff~
+The road follows the top of a rocky cliff where it meets the steep slope
+
+of the mountain, forming a shallow ledge.  The dome-shaped peak of the
+
+mountain looms far above to the north, stretching across your view in
+
+that direction.  A wide valley lies beyond the edge of the road on the
+
+south, filled with trees and wildlife that look very small from this
+
+height.
+
+~
+~
+-235405312 12 9 0
+D1
+~
+~
+0 -1 36766 10 10 5
+D3
+~
+~
+0 -1 36764 10 10 5
+-1
+S
+
+#36766
+Great North Road - Top of a Cliff~
+The mountainside is steep, and drops vertically to the south.  On the
+
+north the rocky slope looks like a treacherous climb, but the road
+
+travels safely east and west along the top of the cliff.  Peering over
+
+the edge gives you a view of a valley far below, and the high Cairn
+
+mountains which stand at about eye-level to the southwest, across the
+
+open space the valley inhabits.  You can see the peaks of the Dragonspire
+
+range extend southeast from here, forming a parallel line with the Cairns.
+
+~
+~
+-235405312 12 9 0
+D1
+~
+~
+0 -1 36767 10 10 5
+D3
+~
+~
+0 -1 36765 10 10 5
+-1
+S
+
+#36767
+Great North Road - Top of a Cliff~
+The road travels on the naturally flat area along the edge of a cliff
+
+that drops off to the south.  About sixty feet below you a ledge runs the
+
+length of the cliff, and you can see the faint markings of wagon wheels
+
+where travellers have found passage.  Above the road on the north rises
+
+the final steep ascent of this great mountain and its domed peak stands
+
+mightily overhead.
+
+~
+~
+-235405312 12 9 0
+D1
+~
+~
+0 -1 36768 10 10 5
+D3
+~
+~
+0 -1 36766 10 10 5
+-1
+S
+
+#36768
+Great North Road - Top of a Cliff~
+The cliffside that serves as the roadbed curves, turning south and west. 
+
+A massive outcrop of rock lies north, blocking the view upslope, and the
+
+ground drops away on the south.  The cliff is very high, but at this
+
+dizzying height you can see a valley far below.
+
+~
+~
+-235405312 12 9 0
+D2
+~
+~
+0 -1 36769 10 10 5
+D3
+~
+~
+0 -1 36767 10 10 5
+-1
+S
+
+#36769
+Great North Road - Top of a Cliff~
+Curving to match the contours of the top of a cliff, the road makes a
+
+gentle arc going north and east.  Above you to the northeast, a huge
+
+granite outcropping rises above the road and prevents a view upslope. 
+
+Stones litter the ground and you can see gouges where falling rocks have
+
+impacted the otherwise smooth surface of the road.  Far below you lies a
+
+green, forested valley, too far down for you to make out any significant
+
+details except the small river cutting its way across from southeast to
+
+northwest.
+
+~
+[Janua] there's an acode here to make rocks randomly fall, and sometimes hurt
+
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36768 10 10 5
+D1
+~
+~
+0 -1 36775 10 10 5
+A
+~
+~
+victim = rand_char( room );
+
+if( random( 1, 5 ) < 3 )
+
+  send_to_room( #small, room );
+
+else {
+
+  act_tochar( #large, victim );
+
+  act_notchar( #rlarge, victim );
+
+  i = 1d6;
+
+  dam_message( victim, i, "the impact" );
+
+  inflict( victim, mob, i, "a falling rock" );
+
+  }
+
+~
+E
+small~
+A shower of small rocks rains down on your head from above.
+
+~
+E
+large~
+A large rock falls from above, glancing off your body before it tumbles
+
+over the cliffside.
+
+~
+E
+rlarge~
+A large rock falls from above, glancing off $n's body before it tumbles
+
+over the cliffside.
+
+~
+!
+2 500 0
+-1
+S
+
+#36770
+Great North Road - Top of a Cliff~
+Under Construction.
+
+~
+~
+-235405312 12 9 0
+D1
+~
+~
+0 -1 36771 10 10 5
+-1
+S
+
+#36771
+Great North Road - Top of a Cliff~
+Under Construction.
+
+~
+~
+-235405312 12 9 0
+D2
+~
+~
+0 -1 36772 10 10 5
+D3
+~
+~
+0 -1 36770 10 10 5
+-1
+S
+
+#36772
+Great North Road - Top of a Cliff~
+Under Construction.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36771 10 10 5
+D2
+~
+~
+0 -1 36773 10 10 5
+-1
+S
+
+#36773
+Great North Road - Top of a Cliff~
+Under Construction.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36772 10 10 5
+D1
+~
+~
+0 -1 36774 10 10 5
+-1
+S
+
+#36774
+Great North Road - Top of a Cliff~
+Under Construction.
+
+~
+~
+-235405312 12 9 0
+D3
+~
+~
+0 -1 36773 10 10 5
+-1
+S
+
+#36775
+Great North Road - Top of a Cliff~
+The road travels east and west across the top of a cliff.  Its surface is
+
+stable and smooth, made of hard rock that drops vertically to the south. 
+
+The domed top of the mountain rises on the north and its summit isn't far
+
+off.A steep slope strewn with large rocks lies between you and the top
+
+and only a few small trees grow on this side of the mountain.
+
+~
+~
+-235405312 12 9 0
+D1
+~
+~
+0 -1 36776 10 10 5
+D3
+~
+~
+0 -1 36769 10 10 5
+-1
+S
+
+#36776
+Great North Road - Top of a Cliff~
+You are at the eastern edge of a cliff that makes up almost the entire
+
+southern side of the mountain and the road stretches to the west across
+
+its top.  The rock of the clifftop drops off east of here and the
+
+gravel-covered slope beyond looks completely impassible.  The road takes
+
+a less than ideal path straight up the mountainside, going over loose
+
+gravel that has spilled down to cover this section of the road.  You can
+
+see that the road had no other course, but up doesn't look like an easy
+
+journey.
+
+~
+[Janua] acode
+
+~
+-235405312 12 9 0
+D3
+~
+~
+0 -1 36775 10 10 5
+D4
+~
+~
+0 -1 36777 10 10 5
+A
+1 up~
+~
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+continue;
+
+~
+E
+msg~
+You make your way carefully upslope.
+
+~
+E
+rmsg~
+$n makes $s way carefully upslope.
+
+~
+!
+0 0 0
+-1
+S
+
+#36777
+Great North Road - On a Slope~
+The road clings to the steep slope of a dome-shaped mountain that rises
+
+high above on the north.  You can travel up the mountainside northward
+
+and down to the edge of a cliff.  The ground is covered with fragments
+
+of rock that slip underfoot, threatening to slide and send you plummeting
+
+over the edge of the cliff below you and to the south.
+
+~
+[Janua] two acodes here
+
+[Ylena] fragments spelt wrong on line 3
+
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36778 10 10 5
+D5
+~
+~
+0 -1 36776 10 10 5
+A
+~
+~
+loop( all_in_room ) {
+
+  if( random( 1, 6 ) ) {
+
+    act_tochar( #msg, rch );
+
+    act_notchar( #rmsg, rch );
+
+    transfer( rch, find_room( 36776 ) );
+
+    act_tochar( #msg2, rch );
+
+    act_notchar( #rmsg2, rch );
+
+    i = 2d7;
+
+    dam_message( rch, i, "the slide down" );
+
+    inflict( rch, mob,  i, "slipping down a mountain slope" );
+
+    }
+
+  }
+
+~
+E
+msg~
+@eYou loose your footing in the gravel and begin to slide down the slope!@n
+
+~
+E
+msg2~
+@eYou manage to catch your foot in a crag and stop before plummeting over@n
+
+@ethe edge of the cliff.@n
+
+~
+E
+rmsg~
+@e$n looses $s footing and begins to slide down the slope!@n
+
+~
+E
+rmsg2~
+@e$n comes sliding down from above but manages to catch $mself before@n
+
+@eplummeting over the edge of the cliff.@n
+
+~
+!
+2 200 0
+A
+1 down~
+~
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+continue;
+
+~
+E
+msg~
+You scramble down the steep mountainside.
+
+~
+E
+rmsg~
+$n scrambles down the steep mountainside.
+
+~
+!
+0 0 0
+-1
+S
+
+#36778
+Great North Road - Before a Small Cave~
+The road heads into the wide mouth of a dark cave to the east and south
+
+down the southern slope of the mountain.  A muted sound like distant,
+
+rushing water comes from the cave, barely perceptible above the sound of
+
+the wind blowing across the barren mountainside.  As you look to the
+
+south you can see a ridge of snow-capped peaks in the distance across an
+
+open space.
+
+~
+[Janua] no.mob to keep bats in and goats out of cave
+
+[Janua] acode for dismount here
+
+~
+-235405304 12 9 0
+D1
+~
+~
+0 -1 36779 10 10 5
+D2
+~
+~
+0 -1 36777 10 10 5
+A
+1 east~
+~
+if( is_mounted( ch ) )
+
+  act_tochar( #nogo, ch );
+
+else {
+
+  act_tochar( #enter, ch );
+
+  continue;
+
+  }
+
+~
+E
+nogo~
+The ceiling of the cave is too low to enter while mounted.
+
+~
+E
+enter~
+You move into the darkened cave.
+
+~
+!
+0 0 0
+-1
+S
+
+#36779
+Great North Road - Mouth of a Wide Cave~
+The mouth of this wide, low cave leads into darkness to the north and out
+
+to the mountainside toward the west.  The rough walls of the cave are
+
+stained a dirty brownish black.  Moisture hangs in the air and the sound
+
+of running water comes from deep inside the cavern.  The air is chilled
+
+in the darkness and the steady rush of a cold breeze comes from within
+
+the cave.
+
+~
+~
+-235274236 12 9 0
+D0
+~
+~
+0 -1 36780 10 10 5
+D3
+~
+~
+0 -1 36778 10 10 5
+A
+mount~
+~
+~
+!
+0 0 0
+-1
+S
+
+#36780
+Great North Road - Passage Through a Cave~
+The road travels through a wide cave with rough, blackened walls that
+
+quickly absorb all light, allowing only a few feet of sight into the
+
+depths.  The sound of rushing water echoes between the walls.  It is
+
+impossible to pinpoint its source or how close it might be, except that
+
+it comes from the north.
+
+~
+~
+-235274236 12 9 0
+D0
+~
+~
+0 -1 36781 10 10 5
+D2
+~
+~
+0 -1 36779 10 10 5
+-1
+S
+
+#36781
+Great North Road - Passage Through a Cave~
+The cave turns sharply here, heading east and south.  Faint light
+
+emanates from the east and total darkness lies in the south.  The sound
+
+of rushing water is loud, drowning out almost any other noise.  The air
+
+is thick and heavy with moisture, and the road is slightly slippery.
+
+~
+~
+-235274236 12 9 0
+D1
+~
+~
+0 -1 36782 10 10 5
+D2
+~
+~
+0 -1 36780 10 10 5
+374 9 1509949540 3 0
+-1
+S
+
+#36782
+Great North Road - A Large Cavern~
+A large fissure cuts across the floor along the western wall of this
+
+cavern, spilling light out to illuminate the area.  A smaller gash in the
+
+roof allows fresh, cold air to filter in from outside.  The sound of
+
+rushing water is almost deafening and water streams into the cave through
+
+the opening in the ceiling and down the walls.  Small rivulets make their
+
+way across the floor and flow down into the crevice.  The road continues
+
+through wide passages that lead to the north and east, but it is too dark
+
+for you to see what lies in the depths.
+
+~
+[Janua] Jumping into the fissure may one day lead to a zone.
+
+~
+-235274236 12 9 0
+D0
+~
+~
+0 -1 36783 10 10 5
+D3
+~
+~
+0 -1 36781 10 10 5
+E
+fissure floor crevice opening gash~
+The huge crack in the floor is about a yard wide and ten feet long.  Over
+
+its edge you can see a wide underground river flowing about twenty feet
+
+below the edge of the crevice.  The space below is well-lit, but its
+
+source is unseen, spilling light into the cavern here through the fissure. 
+
+A smaller crack can be seen in the ceiling of the cavern, which is about
+
+twenty feet high.  A crisp breeze of fresh air enters from the outside,
+
+and water flows in the crack and down the walls to the fissure in the
+
+floor.
+
+~
+E
+ceiling~
+A crack in the ceiling allows cold air to flow into the cavern and water
+
+flows in its opening and streams down the walls into a larger crevice in
+
+the floor.  The crack above your head is roughly ten feet long and about
+
+a foot wide at its apex.
+
+~
+-1
+S
+
+#36783
+Great North Road - Passage Through a Cave~
+The road makes a turn heading east and south here to follow the curves of
+
+the cave that confines its path.  Faint light comes from the south, but
+
+the black walls absorb it quickly so it doesn't help you see any details. 
+
+The walls of the cavern are composed of a dark, jagged rock and they
+
+appear to be a natural formation.  The air is heavy and moist, and water
+
+trickles down the gentle southern slope.  The sound of running water
+
+echoes between the walls and is loudest in the south.
+
+~
+~
+-235274236 12 9 0
+D1
+~
+~
+0 -1 36796 10 10 5
+D2
+~
+~
+0 -1 36782 10 10 5
+-1
+S
+
+#36784
+Great North Road - Passage Through a Cave~
+The road is gently sloped toward the south, but begins to climb upward at
+
+a steeper grade to the north.  The darkness and the sound of water
+
+surrounds everything.  Dark, almost black rock makes up the walls of the
+
+cave, and its jagged surface absorbs light and allows only a view of the
+
+immediate area.  The sound of water coming from the south echoes between
+
+the walls along with the sounds of your movements, but no other noises
+
+can be heard.
+
+~
+~
+-235274236 12 9 0
+D0
+~
+~
+0 -1 36785 10 10 5
+D2
+~
+~
+0 -1 36796 10 10 5
+-1
+S
+
+#36785
+Great North Road - Passage Through a Cave~
+The floor of the cave slopes steeply upward to the north, and the
+
+gravel-covered floor makes travel along this section difficult.  The
+
+muted sound of running water filters up from the depths of the cave, and
+
+takes on an eerie sound as it echoes between the jagged walls.  The dark
+
+rock that makes up the wall is roughly hewn, probably formed by the
+
+elements rather than by someone's hands.
+
+~
+~
+-235274236 12 9 0
+D2
+~
+~
+0 -1 36784 10 10 5
+D4
+~
+~
+0 -1 36786 10 10 5
+374 9 1509949540 3 0
+-1
+S
+
+#36786
+Great North Road - In the Mouth of a Dark Cave~
+The road heads out into the open to the west and straight down into a
+
+dark cave in the mountain.  The light from outside is quickly absorbed by
+
+the dark stained walls of the cave, offering only a few feet of sight
+
+into the depths.  The air is very humid and water trickles down the
+
+jagged sides of the cave.  Loose gravel covers the road and small rocks
+
+occasionally tumble down into the cavern.
+
+~
+~
+-235274236 12 9 0
+D3
+~
+~
+0 -1 36787 10 10 5
+D5
+~
+~
+0 -1 36785 10 10 5
+-1
+S
+
+#36787
+Great North Road - Outside a Wide Cave~
+The entrance to a dark cave creates a large, rounded hole in the rocky
+
+slope on the east.  The road travels east, into the cave, and south
+
+toward a high, rocky outcropping on the slope.  The mountainside is
+
+virtually barren here, due to the high elevation and the rocky soil.  The
+
+domed summit of this mountain lies to the north, but the road follows the
+
+easiest course across and up its surface.  Small rocks cover the ground
+
+and, looking around, you can see many large stone formations that jut out
+
+of the mountain's upper reaches.
+
+~
+[Janua] no.mob to keep goats out of here and bats in cave
+
+[Janua] acode for dismount here
+
+~
+-235405304 12 9 0
+D1
+~
+~
+0 -1 36786 10 10 5
+D2
+~
+~
+0 -1 36788 10 10 5
+A
+1 east~
+~
+if( is_mounted( ch ) )
+
+  act_tochar( #nogo, ch );
+
+else {
+
+  act_tochar( #enter, ch );
+
+  continue;
+
+  }
+
+~
+E
+nogo~
+The ceiling of the cave is too low to enter while mounted.
+
+~
+E
+enter~
+You step into the darkened mouth of the cave.
+
+~
+!
+0 0 0
+-1
+S
+
+#36788
+Great North Road - On a Rocky Outcropping~
+The road crosses over an outcropping of rocks, giving you a clear view of
+
+the surrounding terrain.  The mountain slope is visible over the edge,
+
+falling sharply down to a valley far below.  Snow-capped peaks stand
+
+directly across the landscape and mark the southern edge of the valley. 
+
+The tips of their summits are at about the same elevation as the trail
+
+here.  Looking over the edge you can see the road cross the mountainside
+
+below you, making its way across the top of a cliff that must drop many
+
+feet before ends its vertical descent.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36787 10 10 5
+D3
+~
+~
+0 -1 36789 10 10 5
+205 9 1509949540 3 0
+205 9 1509949540 3 0
+-1
+S
+
+#36789
+Great North Road~
+The ground is slightly rocky and the road heads dowslope a bit to the
+
+east toward a rocky ledge.  To the west it crosses the nearly barren
+
+mountainside as it makes its way toward the summit.  Small,
+
+underdeveloped pine trees grow sparsely along the trail, their growth
+
+hindered by the unfertile soil and high elevation.  Between the trees,
+
+sage brush covers much of the ground.  The air is somewhat thin and you
+
+tire more quickly than you do in the low flatlands.
+
+~
+~
+-235405312 12 9 0
+D1
+~
+~
+0 -1 36788 10 10 5
+D3
+~
+~
+0 -1 36790 10 10 5
+-1
+S
+
+#36790
+Great North Road~
+The road stretches to the east and west across the high mountainside of a
+
+great peak, its dome-shaped summit rising north above you.  Ice and
+
+crusted snow mingle with the rocks on the road and give the ground a salt
+
+and pepper coloring.  The small trees growing along the trail bear
+
+testimony to the harsh conditions here.  Persistent snow lies in
+
+scattered patches on the ground, and is drifted on the shadowed sides of
+
+the many outcroppings of granite stone on the mountain.
+
+~
+~
+-235405312 12 9 0
+D1
+~
+~
+0 -1 36789 10 10 5
+D3
+~
+~
+0 -1 36791 10 10 5
+-1
+S
+
+#36791
+Great North Road~
+This section of the road passes through a bleak, desolate stretch of the
+
+mountainside.  The slope slants away sharply to the south, giving you a
+
+view of a lush, forested of the valley below.  The deep green of the
+
+valley's trees stands in sharp contrast to the yellowish color of the
+
+scraggly little trees that grow at this height.  The road stretches
+
+across the snow-patched mountainside, heading east and west.
+
+~
+~
+-235405312 12 9 0
+D1
+~
+~
+0 -1 36790 10 10 5
+D3
+~
+~
+0 -1 36792 10 10 5
+-1
+S
+
+#36792
+Great North Road~
+The top of the mountain is close, its dome-shaped peak rising just to the
+
+north.  The air is thin and cold and the meager plants and trees grow
+
+sparse between patches of crusted snow and ice.  The road heads east and
+
+west across the mountainside, and you can see it turn toward the summit
+
+further along to the west.
+
+~
+~
+-235405312 12 9 0
+D1
+~
+~
+0 -1 36791 10 10 5
+D3
+~
+~
+0 -1 36793 10 10 5
+205 9 1509949540 3 0
+-1
+S
+
+#36793
+Great North Road~
+The trail here is mild, flat and smooth, but the thin air and bitter cold
+
+make this section difficult to cross.  Sickly, thin pine trees grow on
+
+the sparse mountainside, attempting to create a forest on the desolate
+
+slope.  Patches of dirty, crusted snow lie in the shadowed areas,
+
+obviously here year-round.  The road heads north toward a snow-covered
+
+ridge and east through the meager forest.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36794 10 10 5
+D1
+~
+~
+0 -1 36792 10 10 5
+-1
+S
+
+#36794
+Great North Road~
+The trees growing here are small and sparse and the cold air is very thin. 
+
+Patches of snow cover the rocky ground in shaded spots.  Two of the peaks
+
+which form the Northern Ridge, where the Dragonspires meet with the Cairn
+
+Mountains, lie just above the trail, a dome-shaped summit on the east and
+
+a spiring pinnacle on the west.  The trail heads up over a snow crusted
+
+ridge and south into the frail forest.
+
+~
+[Janua] no.mob
+
+~
+-235405304 12 9 0
+D2
+~
+~
+0 -1 36793 10 10 5
+D4
+~
+~
+0 -1 36795 10 10 5
+-1
+S
+
+#36795
+Great North Road - Atop a Snowy Ridge~
+The road goes north over the snow-crusted ridge and disappears from view
+
+as it travels across the snowy landscape.  The hardened snow is
+
+relatively easy to get a good foot and hand hold in, but icy winds gust
+
+fiercly across the ridge, and your hold to the mountainside is threatened
+
+with each blast of frozen air.  You can see tracks where wagonmasters
+
+have managed to haul their load up through the snow, which doesn't look
+
+like an easy task.
+
+~
+[Janua] random acode here
+
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36797 10 10 5
+D5
+~
+~
+0 -1 36794 10 10 5
+A
+~
+~
+loop( all_in_room ) {
+
+  act_tochar( #msg, rch );
+
+  i = 2d5;
+
+  dam_element( rch, i, "the icy blast", 2 );
+
+  inflict_cold( rch, mob, i, "an arctic wind");
+
+  }
+
+~
+E
+msg~
+@WA fierce blast of arctic air hits you like a wall, threatening your@n
+
+@Wbalance as you climb over the ridge.@n
+
+~
+!
+2 300 0
+-1
+S
+
+#36796
+Great North Road - Passage Through a Cave~
+The dark walls of the cave are close here, affording travelers only
+
+enough room to pass.  A huge stalactite spans the opening from the
+
+ceiling down to the floor, leaving just enough room for a small wagon to
+
+sqeeze through on one side.  Light is absorbed by the dark rock and it is
+
+impossible to see what lies around the bend to the north or the west.
+
+~
+[Ylena] the way it reads to me, the stalactite should be a stalagmite
+
+[Ylena] oops.. read extra, tis a stalctite, but in room desc still sounds more like a stalagmite, also extra needs formatting.
+
+~
+-235274236 12 9 0
+D0
+~
+~
+0 -1 36784 10 10 5
+D3
+~
+~
+0 -1 36783 10 10 5
+E
+stalactite~
+The large rock formation resembles a black icicle with striations of
+
+other dark colors running its length.  Its base is wide, probably too
+
+wide for a large ogre to wrap its arms around, and looks securely
+
+attached to the ceiling.  It tapers down to the floor where it has grown
+
+into the bottom of the cave.
+
+~
+-1
+S
+
+#36797
+Great North Road - Southern End of a Desolate Pass~
+A large stone monument stands here, carved in the image of a dragon in
+
+flight.  The ever-present arctic wind howls between two great peaks that
+
+border the road on the east and west as it heads north and passes between
+
+them.  The bitter wind whistles through the giant stone wings of the
+
+statue and kicks up bits of snow and ice off the ground.  Markers line
+
+each side of the road as it heads north to mark out the path in the white
+
+landscape.  To the south you can see the trail head over the edge of a
+
+ridge.
+
+~
+[Finius] look monument: piced er pieced together?  how?
+
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36798 10 10 5
+D2
+~
+~
+0 -1 36795 10 10 5
+E
+stone monument dragon statue~
+The large monument is made of large, assorted stones, pieced together and
+
+carved to form a dragon in flight.
+
+~
+E
+markers~
+The markers are made of smoothed granite and stand about three feet tall. 
+
+They are spaced about every ten yards along either side of the road,
+
+obviously placed here to mark the road across the top of the pass.
+
+~
+-1
+S
+
+#36798
+Great North Road - A Desolate Pass~
+Stone markers that border the road on each side stretch off into the
+
+distance to the north, following the shallow valley created by two high
+
+peaks which rise up on the east and west.  The markers are spaced about a
+
+dozen feet apart on both sides of the road, obviously meant to show the
+
+way across this snowy wasteland.  Snow piles in drifts along the sides of
+
+the trail and the bitter wind blows in howling gusts.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36799 10 10 5
+D2
+~
+~
+0 -1 36797 10 10 5
+E
+markers~
+The markers are made of smoothed granite and stand about three feet tall. 
+
+They are spaced about every ten yards along either side of the road,
+
+obviously placed here to mark the road across the top of the pass.
+
+~
+1602 17 1509949540 -2 0
+-1
+S
+
+#36799
+Great North Road - A Desolate Pass~
+The road works its way north across the pass as it twists slightly to
+
+follow the shallow valley between two high peaks on the east and west. 
+
+The edge of the mountain begins its downward slope to the south, dropping
+
+down to warmer climates below.  The pale sky above and the white, crusted
+
+ground are harsh and unforgiving.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36800 10 10 5
+D2
+~
+~
+0 -1 36798 10 10 5
+E
+markers~
+The markers are made of smoothed granite and stand about three feet tall. 
+
+They are spaced about every ten yards along either side of the road,
+
+obviously placed here to mark the road across the top of the pass.
+
+~
+-1
+S
+
+#36800
+Great North Road - A Desolate Pass~
+The passage between two great peaks continues its trek both north and
+
+south, between stone markers on either side of the road.  A knotty little
+
+tree stands on the roadside, defying the altitude and struggling to
+
+survive in this hostile environment.  Scattered patches of tundra survive
+
+in the bitter cold, but the small tree is the tallest plant you can see
+
+across the white wasteland.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36801 10 10 5
+D2
+~
+~
+0 -1 36799 10 10 5
+E
+markers~
+The markers are made of smoothed granite and stand about three feet tall. 
+
+They are spaced about every ten yards along either side of the road,
+
+obviously placed here to mark the road across the top of the pass.
+
+~
+E
+tree pine knotty~
+The little pine tree has grown twisted and gnarled, evidence of how the
+
+battle to live and grow in this climate has been a struggle.
+
+~
+-1
+S
+
+#36801
+Great North Road - A Desolate Pass~
+The peaks of two massive mountains rise up on the east and west.  The
+
+mountain on the east is topped with a dome-shaped cap and the western
+
+peak rises into a steep-sloped spire.  From this point on the road, the
+
+massive scar of an avalanche can be seen on the side of the western peak. 
+
+The slide travels several hundred feet down the side of the mountain and
+
+ends just a few feet from the edge of the road.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36802 10 10 5
+D2
+~
+~
+0 -1 36800 10 10 5
+E
+markers~
+The markers are made of smoothed granite and stand about three feet tall. 
+
+They are spaced about every ten yards along either side of the road,
+
+obviously placed here to mark the road across the top of the pass.
+
+~
+-1
+S
+
+#36802
+Great North Road - A Desolate Pass~
+The trail carves its way between two grand peaks on the east and west. 
+
+Strong winds drift snow across the trail, forming ridges like ripples on
+
+a sea of white.  The scenery is rather bleak, despite its grandeur, with
+
+only a few scattered patches of tundra and rock to interrupt the white. 
+
+The tops of two mountains stand on either side of the pass, where the
+
+road stretches off north and south between them.  Everything is covered
+
+in snow, except where the wind has bared small portions of rock and
+
+barren land.
+
+~
+[Janua] random trigger to reduce str here
+
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36803 10 10 5
+D2
+~
+~
+0 -1 36801 10 10 5
+E
+markers~
+The markers are made of smoothed granite and stand about three feet tall. 
+
+They are spaced about every ten yards along either side of the road,
+
+obviously placed here to mark the road across the top of the pass.
+
+~
+A
+~
+~
+loop( all_in_room ) {
+
+  if( random( 1, 2 ) == 1 ) {
+
+    act_tochar( #msg, rch );
+
+    act_notchar( #rmsg, rch );
+
+    drain_stat( rch, str, 1, -1);
+
+    }
+
+  }
+
+~
+E
+msg~
+@GA wave of exhaustion washes over you and you find it difficult to breath.@n
+
+~
+E
+rmsg~
+@G$n takes on a pale look and appears to suffer from fatigue.@n
+
+~
+!
+1 0 5
+1602 17 1509949540 -2 0
+-1
+S
+
+#36803
+Great North Road - A Desolate Pass~
+Stone markers lead the way across this frozen wasteland, angling gently
+
+to the south and west as the road moves along the shallow valley created
+
+by the intersection of the peaks which tower over you on the east and
+
+west.  The wind gusts and howls as it passes between two peaks, drifting
+
+snow and flinging bits of ice into the air and seeping into even the
+
+heaviest clothing.
+
+~
+~
+-235405312 12 9 0
+D2
+~
+~
+0 -1 36802 10 10 5
+D3
+~
+~
+0 -1 36804 10 10 5
+E
+markers~
+The markers are made of smoothed granite and stand about three feet tall. 
+
+They are spaced about every ten yards along either side of the road,
+
+obviously placed here to mark the road across the top of the pass.
+
+~
+-1
+S
+
+#36804
+Great North Road - A Desolate Pass~
+The stark whiteness of the landscape, broken only by scattered stones on
+
+the trail, and the pale, barely blue sky is accompanied by the occasional
+
+whistle and blast of gusty winds.  Tall stone markers march between high
+
+peaks rising out of the mountain ridge on the east and west, marking the
+
+trail over this empty, cold stretch of the world.  A small wooden cross
+
+stands atop a pile of rocks between the stone markers on the side of the
+
+trail.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36805 10 10 5
+D1
+~
+~
+0 -1 36803 10 10 5
+E
+cross wooden~
+The pile of rocks is immediately distinguishable as the resting place of
+
+some unfortunate soul who perished in this wasteland.  A small wooden
+
+cross is wedged into the rocks and the words inscribed into its soft
+
+surface have been blurred by the elements, rendering them unreadable.
+
+~
+E
+words~
+You look closer to make out the words scratched into the small cross, but
+
+whatever was written has been erased by nature.
+
+~
+E
+markers~
+The markers are made of smoothed granite and stand about three feet tall. 
+
+They are spaced about every ten yards along either side of the road,
+
+obviously placed here to mark the road across the top of the pass.
+
+~
+-1
+S
+
+#36805
+Great North Road - A Desolate Pass~
+The cold, thin air of this high mountain pass is stirred constantly by
+
+the gusting, icy wind.  The ground is covered with hard-packed snow and
+
+ice, with occasional bare patches revealing rocky soil.  Stone markers,
+
+each about three feet tall, mark the road across the pass as it heads
+
+north and south.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36806 10 10 5
+D2
+~
+~
+0 -1 36804 10 10 5
+E
+markers~
+The markers are made of smoothed granite and stand about three feet tall. 
+
+They are spaced about every ten yards along either side of the road,
+
+obviously placed here to mark the road across the top of the pass.
+
+~
+1602 17 1509949540 -2 0
+-1
+S
+
+#36806
+Great North Road - A Desolate Pass~
+The road stretches across the snowy wasteland to the north and south. 
+
+Beyond the edges of the pass, glimpses of the land below peek up as if
+
+this stretch of unforgiving land lies at the top of the world.  In the
+
+distance to the north you can see a vague, green landscape, and to the
+
+south you see smaller peaks clustered in the distance.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36807 10 10 5
+D2
+~
+~
+0 -1 36805 10 10 5
+E
+markers~
+The markers are made of smoothed granite and stand about three feet tall. 
+
+They are spaced about every ten yards along either side of the road,
+
+obviously placed here to mark the road across the top of the pass.
+
+~
+-1
+S
+
+#36807
+Great North Road - A Desolate Pass~
+Stone markers form a double row across the barren landscape, turning to
+
+match the gentle curves of the shallow valley running generally north and
+
+south between two high peaks rising up on the east and west.  The road
+
+makes a sweeping turn here to avoid a large rock, moving south and west
+
+around the large boulder.
+
+~
+~
+-235405312 12 9 0
+D2
+~
+~
+0 -1 36806 10 10 5
+D3
+~
+~
+0 -1 36808 10 10 5
+E
+boulder rock~
+The large rock is rounded and smooth, made of a pinkish grey granite
+
+flecked with bits of clear quartz crystal and little dark spots.  It
+
+appears as if it has sat here for a very long time.  Snow and ice are
+
+built up on its shadowed east side.  It towers above your head, rising to
+
+at least twice the height of an average human.
+
+~
+E
+markers~
+The markers are made of smoothed granite and stand about three feet tall. 
+
+They are spaced about every ten yards along either side of the road,
+
+obviously placed here to mark the road across the top of the pass.
+
+~
+-1
+S
+
+#36808
+Great North Road - A Desolate Pass~
+Two great peaks rise up on the east and west and the road runs dead
+
+center between their high tops.  The graceful arch of the domed peak on
+
+the west stands in contrast to the sharp, pinnacled peak on the east. 
+
+The road travels at an angle here, turning east and north around a large
+
+boulder.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36809 10 10 5
+D1
+~
+~
+0 -1 36807 10 10 5
+E
+boulder~
+The large rock is rounded and smooth, made of a pinkish grey granite
+
+flecked with bits of clear quartz crystal and little dark spots.  It
+
+appears as if it has sat here for a very long time.  Snow and ice are
+
+built up on its shadowed east side.  It towers above your head, rising to
+
+at least twice the height of an average human.
+
+~
+E
+markers~
+The markers are made of smoothed granite and stand about three feet tall. 
+
+They are spaced about every ten yards along either side of the road,
+
+obviously placed here to mark the road across the top of the pass.
+
+~
+-1
+S
+
+#36809
+Great North Road - Northern End of a Desolate Pass~
+You are at the top of a snow-covered slope.  The road stretches south,
+
+heading across a shallow valley created by two massive peaks and heads
+
+down and across the mountainside.  Granite markers delimit the sides of
+
+the road, forming a double row that marches across the white of the pass. 
+
+A monument stands here, the image of a resting dragon captured in stone,
+
+standing at least fifteen feet tall.
+
+~
+[Janua] no.mob
+
+~
+-235405304 12 9 0
+D2
+~
+~
+0 -1 36808 10 10 5
+D5
+~
+~
+0 -1 36823 10 10 5
+E
+markers~
+The markers are made of smoothed granite and stand about three feet tall. 
+
+They are spaced about every ten yards along either side of the road,
+
+obviously placed here to mark the road across the top of the pass.
+
+~
+1602 17 1509949540 -2 0
+-1
+S
+
+#36810
+Great North Road~
+The road goes up the slope to the north and across the mountainside to
+
+the west.  The slope is gentle and covered in hard-packed snow, and few
+
+trees grow here.  Looking to the north, the gentle rolling hills of the
+
+northern plains are green and lush.
+
+~
+~
+-235405312 12 9 0
+D3
+~
+~
+0 -1 36811 10 10 5
+D4
+~
+~
+0 -1 36823 10 10 5
+205 9 1509949540 3 0
+-1
+S
+
+#36811
+Great North Road~
+The trail cuts east and west across the snowy mountainside, providing
+
+easy footing.  Short, sturdy pine trees grow about twenty feet below the
+
+trail on the mountain's northern slope.  Malhara peak rises tall and
+
+stately above you, a rocky, snow-covered spire challenging the sky with
+
+its height.
+
+~
+~
+-235405312 12 9 0
+D1
+~
+~
+0 -1 36810 10 10 5
+D3
+~
+~
+0 -1 36812 10 10 5
+-1
+S
+
+#36812
+Great North Road~
+The short, stout pine trees grow several yards below the trail, forming
+
+almost a perfectly straight border at the timberline.  The road heads
+
+west, moving slightly around a rocky outcropping and east across the
+
+mountain slope.  The ground is covered in hard-packed snow, but the road
+
+is clear and provides easy footing.
+
+~
+~
+-235405312 12 9 0
+D1
+~
+~
+0 -1 36811 10 10 5
+D3
+~
+~
+0 -1 36813 10 10 5
+-1
+S
+
+#36813
+Great North Road~
+The ground is littered with rock on this section of the trail, but the
+
+constant traffic of feet and wheels along the road has ground most of the
+
+rocks to small fragments.  A small rockslide area scars the mountain
+
+slope on the south and a mound of rocks lies on that side of the road. 
+
+The path veers down and disappears around a rock formation and goes west
+
+across the high mountain slope.
+
+~
+[Janua] The acode for searching the pile is expendable (and written that
+
+way), in case someone wants to put something there.
+
+~
+-235405312 12 9 0
+D1
+~
+~
+0 -1 36812 10 10 5
+D5
+~
+~
+0 -1 36814 10 10 5
+A
+search~
+pile rocks mound~
+if( rflag( reset0, room ) ) {
+
+  act_tochar( #ch, ch );
+
+  act_notchar( #rch, ch );
+
+  obj_to_char( oload( 79 ), ch );
+
+  remove_rflag( reset0, room );
+
+  }
+
+else {
+
+  act_tochar( #none, ch );
+
+  act_notchar( #rnone, ch );
+
+  }
+
+~
+E
+ch~
+You search through the mound of rocks and find a piece of flint.
+
+~
+E
+rch~
+$n searches through the mound of rocks and finds a piece of flint.
+
+~
+E
+none~
+You search through the mound of rocks but don't find anything interesting.
+
+~
+E
+rnone~
+$n searches through the mound of rocks but doesn't find anything
+
+interesting.
+
+~
+!
+0 0 0
+1974 17 1509949540 -2 0
+205 9 1509949540 3 0
+-1
+S
+
+#36814
+Great North Road~
+Here the road angles up, disappearing around the side of a large
+
+outcropping of rock on the south.  The trees are thin, and you can see
+
+clearly up to where the trees end and the snow dominates the ground.  The
+
+road also travels west along the side of the mountain among the small but
+
+hardy trees.
+
+~
+~
+-235405312 12 9 0
+D3
+~
+~
+0 -1 36815 10 10 5
+D4
+~
+~
+0 -1 36813 10 10 5
+-1
+S
+
+#36815
+Great North Road~
+The road follows the contours of the mountainside, angling sharply north
+
+and east.  Short trees border the road on both sides and as you look up
+
+you can see the line where the trees find conditions too harsh and the
+
+altitude too high for growth.  Despite the remote location, the road is
+
+in excellent condition and offers sure footing for travellers.  Looking
+
+downslope you can see the forest thicken and the rolling northern plains
+
+beyond.
+
+~
+~
+-235405312 12 9 0
+D0
+~
+~
+0 -1 36816 10 10 5
+D1
+~
+~
+0 -1 36814 10 10 5
+3589 17 1509949540 -2 0
+-1
+S
+
+#36816
+Great North Road~
+The mountain slope makes one of its many convolutions here, forcing the
+
+road along a south and west path as it cuts across the mountainside. 
+
+Fragments of rock litter the road and crunch underfoot as you move along. 
+
+To the north you can clearly see the northern plains, their green hills
+
+rising and falling gently for many miles.  Above you on the south rises
+
+Malhara Peak, its snow-encrusted pinnacle rising high into the sky.
+
+~
+~
+-235405312 12 9 0
+D2
+~
+~
+0 -1 36815 10 10 5
+D3
+~
+~
+0 -1 36817 10 10 5
+1974 17 1509949540 -2 0
+-1
+S
+
+#36817
+Great North Road~
+The road travels east and west along the mountainside, turning with the
+
+contours of the slope.  Small pine trees that are too small to provide
+
+any shade or block much of the view border the roadside.  They thin to
+
+nothing above you and the forest grows thicker down the slope.  An open
+
+cistern has been built on the side of the road and the beaten ground
+
+around the watering place shows its frequent use.
+
+~
+~
+-235405312 12 9 0
+D1
+~
+~
+0 -1 36816 10 10 5
+D3
+~
+~
+0 -1 36818 10 10 5
+2856 17 1509949540 -2 0
+205 9 1509949540 3 0
+-1
+S
+
+#36818
+Great North Road~
+The smooth, dirt road cuts a swath through the short forest, making a
+
+final descent down the mountainside and crossing the slope heading east
+
+and slightly up.  Despite its unpaved surface, the road is in good
+
+condition with few potholes to snag wagon wheels.  The small pine trees
+
+are fairly dense, growing on both sides of the road and becoming taller
+
+and thicker down the side of the mountain.
+
+~
+[Janua] no.mob, to keep the goats on the mountainside
+
+~
+-235405304 12 9 0
+D1
+~
+~
+0 -1 36817 10 10 5
+D5
+~
+~
+0 -1 36819 10 10 5
+-1
+S
+
+#36819
+Great North Road~
+Here the road begins its journey up the side of the high peak on the
+
+south and meanders through the hilly plains going west.  Looking up you
+
+can see it cut across the forested mountainside heading east.  To the
+
+west it travels between the hills and disappears out of sight as it makes
+
+a bend going north in the distance.  Pine trees grow dense on both sides
+
+of the road, and a few scattered elm trees mingle with the evergreens.
+
+~
+~
+-235405312 12 9 0
+D3
+~
+~
+0 -1 36820 10 10 5
+D4
+~
+~
+0 -1 36818 10 10 5
+-1
+S
+
+#36820
+Great North Road~
+The road travels between rounded, rolling hills on the north and the
+
+steep ascent of a high mountain range on the south.  The thick trees that
+
+line the edges of the road are mainly pine trees, dotted with an
+
+occasional stand of elms and birch trees.  Above the trees and to the
+
+south rises a high, pointed peak with a snow-capped top and you can see
+
+the road travel up and across its side to the east.  To the west the road
+
+goes down into the hills and away from the mountains, curving north a
+
+short distance from here.
+
+~
+~
+-235405312 12 9 0
+D1
+~
+~
+0 -1 36819 10 10 5
+D5
+~
+~
+0 -1 36821 10 10 5
+-1
+S
+
+#36821
+Great North Road~
+The road begins a steep but easy decent into the gently rolling hills and
+
+the trees grow thicker downslope.  A little stream has formed along one
+
+side of the road, flowing easily where the trees have been cut to make
+
+way for traffic.
+
+~
+~
+-235405312 12 9 0
+D4
+~
+~
+0 -1 36820 10 10 5
+D5
+~
+~
+0 -1 36822 10 10 5
+-1
+S
+
+#36822
+Great North Road~
+The road travels at a steep grade, going from the gently rolling hills
+
+into the steep mountains.  It is as if its builders either wanted to
+
+finish the road quickly and headed almost straight down, or made a bold
+
+start heading straight up.  A thick pine forest borders the road on the
+
+north and south, and a swiftly flowing stream tumbles along one edge of
+
+the hard-packed dirt.
+
+~
+~
+-235405312 12 9 0
+D3
+~
+~
+0 -1 77062 10 10 5
+D4
+~
+~
+0 -1 36821 10 10 5
+-1
+S
+
+#36823
+Great North Road - Steep Slope~
+The road travels up to the edge of the mountain to the south and down the
+
+side of the slope on the north.  The hard-packed dirt road offers a
+
+stable trip, but wagons probably find this section of the trail very
+
+difficult because of the grade.  You can see out across the rolling
+
+plains filled with trees and an occasional farm.
+
+~
+~
+-235405304 12 9 0
+D4
+~
+~
+0 -1 36809 10 10 5
+D5
+~
+~
+0 -1 36810 10 10 5
+-1
+S
+
+#0
+

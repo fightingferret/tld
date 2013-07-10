@@ -1,0 +1,1246 @@
+#AREA
+Valley - Western Slopes~
+Janua~
+~
+
+0 0
+0
+#ROOMS
+
+#62000
+High Mountain Valley - On a Slope~
+The convoluted mountain slope forms a sort of finger here, extending out
+
+from the bulk of the mountain.  Pine trees grow all around, unhindered by
+
+the steep grade.  To the north and west the slope drops straight down
+
+into a chasm where a briskly flowing river flows through.  You can travel
+
+south across the mountainside or down into a forest.
+
+~
+~
+-235405312 3 5 0
+D2
+~
+~
+0 -1 62001 10 10 5
+D5
+~
+~
+0 -1 36591 10 10 5
+79 17 1509949540 -2 0
+-1
+S
+
+#62001
+High Mountain Valley - On a Slope~
+The thickly forested slope is steep but not extremely difficult to climb. 
+
+Rocks protruding from the ground provide convenient footing for travel up
+
+or down, and the way north and south across the slope is easy.  Tall pine
+
+trees surround you, and their dense needles hamper any view but small
+
+glimpses of the surrounding terrain.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 62000 10 10 5
+D2
+~
+~
+0 -1 62002 10 10 5
+D4
+~
+~
+0 -1 62008 10 10 5
+D5
+~
+~
+0 -1 36590 10 10 5
+1246 17 1509949540 -2 0
+-1
+S
+
+#62002
+High Mountain Valley - On a Slope~
+The steep slope continues both up and down, but is fairly easy to
+
+navigate.  The ground is stable, and firmly anchored rocks assist you in
+
+your travel.  To the east the rocks are more prevalent, and the dense
+
+pine trees that grow here end at the edge of the escarpment.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 62001 10 10 5
+D1
+~
+~
+0 -1 62003 10 10 5
+D4
+~
+~
+0 -1 62009 10 10 5
+D5
+~
+~
+0 -1 36589 10 10 5
+E
+escarpment rocks~
+The large mass of rock sticks out of the mountainside.  It is a pinkish
+
+color with black flecks and tiny bits of clear crystal embedded in its
+
+surface.  Above, another rock ledge protrudes from the mountainside and
+
+its dark, horizontal layers stand in contrast to the granite below.
+
+~
+203 41 1509949540 3 0
+2508 73 1509949540 3 0
+2508 73 1509949490 3 0
+-1
+S
+
+#62003
+High Mountain Valley - A Rock Escarpment~
+You are on a large escarpment of granite running north and south that is
+
+cracked and weathered with age.  The stone seems fairly stable, despite
+
+the many fissures that run along its surface.  A shelf of rock protrudes
+
+overhead, forming a rough ceiling and leaving this place in perpetual
+
+shadow.  To the north and east the rocks drop straight down into a forest
+
+and look impossible to climb.
+
+~
+~
+-235405312 3 9 0
+D2
+~
+~
+0 -1 62004 10 10 5
+D3
+~
+~
+0 -1 62002 10 10 5
+E
+escarpment rock granite~
+The mass of rock looks like it was once a single massive stone, but time
+
+and weather have created many cracks in the monolith.  Despite its
+
+appearance, it seems to be strongly cemented together and offers secure
+
+footing.
+
+~
+2 9 1509949540 3 0
+79 17 1509949540 -2 0
+-1
+S
+
+#62004
+High Mountain Valley - A Rock Escarpment~
+Rock lies above and below, providing solid footing and a ceiling overhead. 
+
+The rock underfoot is cracked and worn, with large and small fissures
+
+cutting into its surface.  It seems stable, despite the weathering. 
+
+Below you on the east you can see across a valley filled with tall pine
+
+trees.  The treetops rise to just a few feet below the ledge.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 62003 10 10 5
+D1
+~
+~
+0 -1 62005 10 10 5
+E
+rock fissures crack ceiling 1 up~
+The rock underfoot is a large mass of granite with a pinkish hue.  It is
+
+cracked and worn with small fissures running across its smoothed surface. 
+
+The rock overhead is different, composed of layers that you can see as
+
+horizontal lines across its surface.
+
+~
+2509 9 1509949540 3 0
+2279 9 1509949540 3 0
+958 9 1509949540 3 0
+-1
+S
+
+#62005
+High Mountain Valley - A Rock Escarpment~
+The ground here is composed of rock that looks like it was, at one time,
+
+one large slab of granite.  Time and the elements have cracked it into
+
+many pieces, but they hold together firmly and provide stable footing. 
+
+The ledge continues east and west and a very steep slope rises on the
+
+south.  Over the edge of the rock on the north you can see the tops of a
+
+forest of pine trees.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 62006 10 10 5
+D3
+~
+~
+0 -1 62004 10 10 5
+-1
+S
+
+#62006
+High Mountain Valley - A Rock Escarpment~
+You are on a rock ledge that is cracked and worn by the elements and
+
+wraps around the mountainside heading south and west.  The rock is
+
+covered with brown, green and black lichen, and small plants grow in some
+
+of the larger cracks.  To the east and north you can see the tops of the
+
+pine trees that fill the valley below.
+
+~
+~
+-235405304 3 9 0
+D2
+~
+~
+0 -1 62007 10 10 5
+D3
+~
+~
+0 -1 62005 10 10 5
+E
+rock ledge~
+The rock is cracked and weathered, and small plants have taken root in
+
+the fissures.
+
+~
+2 9 1509949540 3 0
+-1
+S
+
+#62007
+High Mountain Valley - A Rock Escarpment~
+The rock ledge ends here, walled in by the mountainsides that rise almost
+
+straight up on the south and west.  A very large spider web has been
+
+built in this protected spot, anchored to the two vertical slopes. 
+
+Lichen covers the rock, giving it a mottled green, brown and black
+
+coloring.  The rocks continue to the north, and on the east you can look
+
+out across the tops of a forest that fills the valley below you.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 62006 10 10 5
+E
+rock ledge~
+The ledge is formed of what looks like a single, large piece of stone
+
+that has probably been exposed for many years.  Its surface is worn
+
+smooth and cracked apart into smaller sections that seem securely locked
+
+together like a very large puzzle.
+
+~
+16 9 1509949540 3 0
+79 17 1509949540 -2 0
+-1
+S
+
+#62008
+Eastern Cairn Mountains - A High Meadow~
+The slope flattens here to form a high meadow that stretches off to the
+
+west on the side of the mountain.  Trees are sparse because the ground is
+
+extremely rocky, but tall grass grows in abundance.  Downslope on the
+
+east you can see more trees, growing down into a heavily forested valley
+
+below.  On the north, the slope is nearly vertical, dropping straight
+
+down into a ravine that contains a small mountain river.
+
+~
+~
+-235405312 3 9 0
+D2
+~
+~
+0 -1 62009 10 10 5
+D3
+~
+~
+0 -1 62012 10 10 5
+D5
+~
+~
+0 -1 62001 10 10 5
+-1
+S
+
+#62009
+Eastern Cairn Mountains - A High Meadow~
+The contours of the mountain flatten here, creating a grass-filled meadow. 
+
+The tall grass blows gently in the breeze and you can see occasional
+
+disturbances to the west that look like an animal moving through the
+
+meadow.  Below you the slope is steep, with pine trees growing thicker as
+
+the incline drops to a valley below.  To the east a rock formation juts
+
+out of the mountainside and provides a sort of shelf that you could
+
+easily walk along.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 62008 10 10 5
+D1
+~
+~
+0 -1 62010 10 10 5
+D3
+~
+~
+0 -1 62013 10 10 5
+D5
+~
+~
+0 -1 62002 10 10 5
+E
+1 west~
+A wide, flat area on the west is filled with tall grass.  You can see
+
+something moving, causing the grass to shift unnaturally.
+
+~
+E
+rock formation~
+The rock sticks out of the mountainside at a nearly ninety degree angle,
+
+creating a sort of shelf that would be easy to walk along.
+
+~
+-1
+S
+
+#62010
+Eastern Cairn Mountains - A Rock Shelf~
+A large, smooth rock juts out of the mountainside and forms this ledge on
+
+the steep slope.  The rock extends to the south, and you can see west to
+
+a grass-filled meadow on the mountainside.  The edge of the rock lies
+
+east, where the treetops of a forest lie many meters below.
+
+~
+~
+-235405312 3 9 0
+D2
+~
+~
+0 -1 62011 10 10 5
+D3
+~
+~
+0 -1 62009 10 10 5
+E
+rock ledge~
+The large rock is a solid mass and you can see horizontal layers that
+
+were formed when this monolith was created from sediment.
+
+~
+2 9 1509949540 3 0
+205 9 1509949540 3 0
+205 9 1509949540 3 0
+-1
+S
+
+#62011
+Eastern Cairn Mountains - A Rock Shelf~
+A large, flat rock extends straight out of the mountainside to form this
+
+smooth shelf.  The slope on the west is very steep, nearly vertical, and
+
+looks impossible to climb without specialized training and equipment. 
+
+You can see down to a forest over the edges of the rock on the south and
+
+west.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 62010 10 10 5
+E
+rock shelf~
+The single mass of rock has a smooth surface and sticks straight out of
+
+the mountainside at a nearly ninety degree angle.
+
+~
+316 9 1509949500 3 0
+79 17 1509949540 -2 0
+-1
+S
+
+#62012
+Eastern Cairn Mountains - A High Meadow~
+The high meadow is perched on the side of the mountain where the slope
+
+flattens.  The ground is rocky and tall grasses grow between the
+
+scattered, jagged boulders.  The meadow stretches to the west, curving
+
+around the mountainside.  The ground drops off steeply to the north and
+
+looks like a treacherous climb down.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 62008 10 10 5
+D2
+~
+~
+0 -1 62013 10 10 5
+2315 9 1509949540 3 0
+2694 17 1509949540 -2 0
+-1
+S
+
+#62013
+Eastern Cairn Mountains - A High Meadow~
+You are surrounded by tall, wild grasses and mountain wildflowers.  A
+
+slender columbine flower grows here with delicate, pastel and white
+
+blooms at the end of each tall stalk.  Jagged, dark boulders lay
+
+scattered across the meadow, worn slightly from wind and rain.  The flat
+
+area wraps around the mountain heading west and steepens to the east.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 62012 10 10 5
+D1
+~
+~
+0 -1 62009 10 10 5
+D2
+~
+~
+0 -1 62014 10 10 5
+D3
+~
+~
+0 -1 62015 10 10 5
+E
+flowers columbines~
+The flowers are delicate, growing on tall stems that sprout out of
+
+bush-like plants.
+
+~
+A
+pick get~
+flowers columbines blooms~
+if( rflag( reset0, room ) ) {
+
+  act_tochar( #msg, ch );
+
+  act_notchar( #rmsg, ch );
+
+  obj_to_char( oload( 3456 ), ch );
+
+  remove_rflag( reset0, room );
+
+  }
+
+else
+
+  act_tochar( #none, ch );
+
+~
+E
+msg~
+You pick one of the flowers.
+
+~
+E
+rmsg~
+$n picks one of the flowers.
+
+~
+E
+none~
+There are no more flowers that look worth picking.
+
+~
+!
+0 0 0
+-1
+S
+
+#62014
+Eastern Cairn Mountains - A High Meadow~
+The slopes on the south and east slant sharply upward, creating a
+
+protected alcove here.  The air is still and warm, and filled with the
+
+sweet scent of the tall grasses growing all around.  A single pine tree
+
+grows on a patch of relatively soft soil.  The rest of the ground is
+
+littered with small rocks and large jagged boulders lie scattered around.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 62013 10 10 5
+D3
+~
+~
+0 -1 62016 10 10 5
+E
+pine tree~
+Few trees grow in this meadow.  This young pine looks as if it has
+
+strayed from the forest that covers the upward slope on the south.
+
+~
+2144 17 1509949540 -2 0
+2144 17 1509949540 -2 0
+2315 9 1509949540 3 0
+-1
+S
+
+#62015
+Eastern Cairn Mountains - A High Meadow~
+The meadow wraps around the mountainside to the east and west, dropping
+
+off to the north into a ravine that contains a small river.  Tall grass
+
+grows here, mingling with a few large rocks and an occasional pine tree. 
+
+Further up the slope on the south, the terrain begins a steep ascent to
+
+the heights of the Cairn mountains where you can see the snow-capped
+
+peaks.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 62013 10 10 5
+D2
+~
+~
+0 -1 62016 10 10 5
+-1
+S
+
+#62016
+Eastern Cairn Mountains - A High Meadow~
+The steep slope coming down from the south abruptly flattens to form this
+
+meadow area that stretches to the north before the ground drops off again. 
+
+Large rocks litter the area and tall, hardy grass grows in abundance. 
+
+The gentle terrain continues to the east and west, curving around the
+
+mountain and out of sight.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 62015 10 10 5
+D1
+~
+~
+0 -1 62014 10 10 5
+D3
+~
+~
+0 -1 62017 10 10 5
+2144 17 1509949540 -2 0
+2315 9 1509949540 3 0
+415 17 1509949540 -2 0
+-1
+S
+
+#62017
+Eastern Cairn Mountains - A High Meadow~
+You are on a flattened area on the side of a mountain on the eastern side
+
+of the Cairn range.  The mountainside drops sharply north and west,
+
+heading straight down into a gorge.  The flat meadow area contines east
+
+and south as it turns around the side of the mountain.  A high peak
+
+towers above, its tip touched with a bit of white snow.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 62016 10 10 5
+D2
+~
+~
+0 -1 62018 10 10 5
+-1
+S
+
+#62018
+Eastern Cairn Mountains - A High Meadow~
+Few trees grow on this high meadow, tall grass and jagged rocks
+
+proliferate instead.  The slopes are steep heading up on the east and
+
+down on the west, but the flat area continues north and south.  The
+
+breeze is gentle, protected from the predominant western winds by the
+
+mountain.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 62017 10 10 5
+D2
+~
+~
+0 -1 62019 10 10 5
+2315 9 1509949540 3 0
+840 17 1509949540 -2 0
+474 17 1509949540 -2 0
+-1
+S
+
+#62019
+Eastern Cairn Mountains - A High Meadow~
+The steep mountainside comes down from the east, flattens here, then
+
+drops down again on the west.  Pine trees crowd the upward slope but only
+
+a few grow on this meadow.  Grass, wildflowers and occasional bushes
+
+dominate the area instead.  One large pine tree grows in the immediate
+
+area, its wide branches crowding the narrow strip of meadow here.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 62018 10 10 5
+D2
+~
+~
+0 -1 62020 10 10 5
+E
+pine tree~
+The pine tree looks as if it has grown here for a long time.  Its
+
+knotted, twisting branches spread outward and crowd this narrow stretch
+
+of flat ground.
+
+~
+755 9 1509949540 3 0
+2501 9 1509949540 3 0
+-1
+S
+
+#62020
+Eastern Cairn Mountains - A High Meadow~
+You are on a flattened spot where two large mountains meet, protected
+
+from wind by their mass.  The air is fairly still and warm and the scent
+
+of grass and pine trees drifts on the gentle breeze.  Tall grass, bushes
+
+and flowers grow in profusion here, in contrast to the dark, thick
+
+evergreens down the slope on the west.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 62019 10 10 5
+D1
+~
+~
+0 -1 62021 10 10 5
+D2
+~
+~
+0 -1 62022 10 10 5
+-1
+S
+
+#62021
+Eastern Cairn Mountains - A High Meadow~
+A small rockslide mars the side of the slope on the northeast and rocks
+
+lie scattered about the area.  Little grows here except an occasional
+
+clump of grass among the stones.  The ground to the south and west is
+
+flat, filled with tall grass and an occasional pine tree.
+
+~
+~
+-235405312 3 9 0
+D2
+~
+~
+0 -1 62023 10 10 5
+D3
+~
+~
+0 -1 62020 10 10 5
+A
+search~
+rocks stones~
+i = random( 1, 100 );
+
+if( rflag( reset0, room ) ) {
+
+  if( i <= 50 ) {
+
+    act_tochar( #pebble, ch );
+
+    act_notchar( #rpebble, ch );
+
+    obj_to_char( oload( 474 ), ch );
+
+    }
+
+  else if( i <= 70 ) {
+
+    act_tochar( #granite, ch );
+
+    act_notchar( #rgranite, ch );
+
+    obj_to_char( oload( 2145 ), ch );
+
+    }
+
+  else if( i <= 80 ) {
+
+    act_tochar( #white, ch );
+
+    act_notchar( #rwhite, ch );
+
+    obj_to_char( oload( 2146 ), ch );
+
+    }
+
+  else if( i <= 90 ) {
+
+    act_tochar( #rose, ch );
+
+    act_notchar( #rrose, ch );
+
+    obj_to_char( oload( 2148 ), ch );
+
+    }
+
+  else if( i <= 100 ) {
+
+    act_tochar( #clear, ch );
+
+    act_notchar( #rclear, ch );
+
+    obj_to_char( oload( 2149 ), ch );
+
+    }
+
+  remove_rflag( reset0, room );
+
+  }
+
+else {
+
+  act_tochar( #no, ch );
+
+  act_notchar( #rno, ch );
+
+  }
+
+~
+E
+pebble~
+You search through the rocks and find a lode stone!
+
+~
+E
+rpebble~
+$n searches through the rocks and finds a lode stone!
+
+~
+E
+granite~
+You search through the rocks and find a small, pinkish stone!
+
+~
+E
+rgranite~
+$n searches through the rocks and finds a small, pinkish stone!
+
+~
+E
+white~
+You search through the rocks and find a small, milky crystal!
+
+~
+E
+rwhite~
+$n searches through the rocks and finds a small, milky crystal!
+
+~
+E
+rose~
+You search through the rocks and find a pink crystal!
+
+~
+E
+rrose~
+$n searches through the rocks and finds a pink crystal!
+
+~
+E
+clear~
+You search through the rocks and find a clear crystal!
+
+~
+E
+rclear~
+$n searches through the rocks and finds a clear crystal!
+
+~
+E
+no~
+You search through the rocks and don't find anything interesting.
+
+~
+E
+rno~
+$n searches through the rocks for a time but gives up.
+
+~
+!
+0 0 0
+2501 9 1509949540 3 0
+2148 17 1509949441 -2 0
+-1
+S
+
+#62022
+Eastern Cairn Mountains - A High Meadow~
+You are in the middle of a high, open meadow cradled between two
+
+mountains.  Tall grass grows here, and looks like a good place for small
+
+predators to stalk prey.  A small @Bstream@n runs through the grass,
+
+coming in from the southeast and dropping over the edge of the plateau on
+
+the northwest.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 62020 10 10 5
+D1
+~
+~
+0 -1 62023 10 10 5
+D2
+~
+~
+0 -1 62027 10 10 5
+D3
+~
+~
+0 -1 62028 10 10 5
+959 9 1509949540 3 0
+755 9 1509949540 3 0
+398 17 1509949540 -2 0
+-1
+S
+
+#62023
+Eastern Cairn Mountains - A High Meadow~
+The slope of the mountain is flat here, leaving an open space that has
+
+grown into a meadow.  Rocky soil prevents many trees from taking root so
+
+tall mountain grasses thrive instead.  A few assorted bushes and flowers
+
+also grow here, and the scent of it all, mingling with the pines growing
+
+up the slopes, gives the air a powerful fragrance.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 62021 10 10 5
+D1
+~
+~
+0 -1 62024 10 10 5
+D2
+~
+~
+0 -1 62025 10 10 5
+D3
+~
+~
+0 -1 62022 10 10 5
+-1
+S
+
+#62024
+Eastern Cairn Mountains - A High Meadow~
+The steep slope coming down from the east abruptly flattens to form a
+
+meadow area that stretches to the west before the ground drops off again. 
+
+Large rocks litter the area and tall, hardy grass grows in abundance. 
+
+The gentle terrain contines to the south and west, nestled between two
+
+stately mountains.
+
+~
+[Stile] ...terrain _contines_ to the south and west...
+
+~
+-235405312 3 9 0
+D2
+~
+~
+0 -1 62029 10 10 5
+D3
+~
+~
+0 -1 62023 10 10 5
+-1
+S
+
+#62025
+Eastern Cairn Mountains - A High Meadow~
+A very large boulder lies on the east with dark, jagged sides rising to a
+
+point about ten feet above your head.  On the south, the steep, forested
+
+mountainside comes down to meet the gentle slope of this high meadow.  A
+
+small @Bstream@n tumbles down the mountainside and crosses to the northwest.
+
+Tall, hardy grasses grow here with bushes, flowers and rocks scattered
+
+among them.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 62023 10 10 5
+D3
+~
+~
+0 -1 62027 10 10 5
+E
+boulder~
+The large rock is jagged and dark, but worn some by the wind and rain. 
+
+It stands about ten feet tall and its base is large enough to block
+
+eastward movement.
+
+~
+398 17 1509949540 -2 0
+3721 17 1509949540 -2 0
+-1
+S
+
+#62026
+Blank~
+Under Construction.
+
+~
+~
+-235405312 3 9 0
+-1
+S
+
+#62027
+Eastern Cairn Mountains - A High Meadow~
+A fairly flat, high meadow stretches before you on the north and east,
+
+cradled between the downward slopes of two mountains on the south and
+
+west.  The grass growing in the meadow is tall, providing ample cover for
+
+small predators.  A light breeze blows but the stronger winds are blocked
+
+by the mountains on the east.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 62022 10 10 5
+D1
+~
+~
+0 -1 62025 10 10 5
+-1
+S
+
+#62028
+Eastern Cairn Mountains - A High Meadow~
+You are on the western edge of a flat spot that wraps around the side of
+
+the mountain.  Tall, wild grass grows here, mingling with occasional tall
+
+wildflowers and scattered boulders.  The slope is steep on the south and
+
+west, and drops down on the north.  Trees grow along the steeper part of
+
+the slope; apparently the rocky soil of the meadow isn't hospitable to
+
+the pines.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 62022 10 10 5
+2315 9 1509949540 3 0
+415 17 1509949540 -2 0
+-1
+S
+
+#62029
+Eastern Cairn Mountains - A High Meadow~
+You are in an alcove of sorts, with a massive rock on the west and a
+
+steep slope on the south and east that confine this small area.  A number
+
+of animal bones lay scattered about; this is apparently a popular feeding
+
+spot for the predators who live nearby.  To the north, the grassy, flat
+
+area on the mountainside opens up.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 62024 10 10 5
+E
+animal bones~
+The bones are bleached white and picked clean of the flesh that was once
+
+attached to them.  They lay scattered about the area in various states of
+
+decay.
+
+~
+A
+~
+~
+mob = mob_in_room( 2315, room );
+
+if( mob ) {
+
+  if( get_pos( mob ) > 6 ) {
+
+    send_to_room( #msg, room );
+
+    wait( 3 );
+
+    if( char_in_room( ch, room ) ) {
+
+      if( is_player( ch ) )
+
+        attack( mob, ch, 2d6+4, "angry claw swipe" );
+
+      act_tochar( #hiss, ch );
+
+      act_notchar( #rhiss, ch );
+
+      }
+
+    }
+
+  }
+
+~
+E
+msg~
+@eThe bobcat looks up from its meal and growls in warning.@n
+
+~
+E
+hiss~
+@eThe bobcat steps between you and the carcass and makes a deep hissing noise.@n
+
+~
+E
+missmob~
+A large cat with a stubbed tail's attack misses $n.
+
+~
+E
+rhiss~
+@eThe bobcat steps between $n and the carcass and makes a deep hissing noise.@n
+
+~
+!
+1 0 1
+A
+get~
+partially eaten carcass deer~
+mob = mob_in_room( 2315, room );
+
+if( mob ) {
+
+  if( get_pos( mob ) > 6 ) {
+
+    attack( mob, ch, 2d6+4, "angry claw swipe" );
+
+    send_to_room( #msg, room );
+
+    }
+
+  else
+
+    continue;
+
+  }
+
+~
+E
+msg~
+@eThe bobcat crouches down and growls, readying itself for attack.@n
+
+~
+!
+0 0 0
+2315 137 1509949540 3 0
+3466 17 1509949540 -2 0
+79 17 1509949540 -2 0
+-1
+S
+
+#0
+

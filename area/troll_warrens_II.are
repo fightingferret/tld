@@ -1,0 +1,2878 @@
+#AREA
+Janua's Great Big Secret~
+Janua~
+~
+
+0 0
+3
+#ROOMS
+
+#67000
+main street~
+To be used for new areas 
+
+~
+~
+-235405300 1 5 0
+D0
+wooden door~
+~
+1 -1 67032 10 10 5
+D1
+~
+~
+0 -1 67001 10 10 5
+D2
+wooden door~
+~
+1 -1 67061 10 10 5
+D3
+~
+~
+0 -1 67031 10 10 5
+A
+~
+~
+~
+!
+0 0 0
+-1
+S
+
+#67001
+main street~
+To be used for new areas 
+
+~
+~
+-201719796 11 6 0
+D0
+wooden door~
+~
+1 -1 67033 10 10 5
+D1
+~
+~
+0 -1 67002 10 10 5
+D2
+wooden door~
+~
+1 -1 67062 10 10 5
+D3
+~
+~
+0 -1 67000 10 10 5
+E
+stalactite~
+The stalactites and stalagmites are all very old and dry.  Whatever water
+
+source originally created them has long since vanished.
+
+~
+E
+stalagmite~
+Looking at the many stalagmites, you notice one covered in fingerprints. 
+
+Maybe if you push it, it will move.
+
+~
+E
+1 west~
+Carefully examining the wall, you see a large slab of stone that is
+
+obviously a concealed door.  While it isn't well hidden, you can see no
+
+obvious way to open it.
+
+~
+E
+dust~
+Much of the floor is covered in dust and dirt and it is easy to see many
+
+large footprints in it going both east and west.
+
+~
+-1
+S
+
+#67002
+main street~
+To be used for new areas 
+
+~
+~
+-201850876 11 9 0
+D0
+wooden door~
+~
+1 -1 67034 10 10 5
+D1
+~
+~
+0 -1 67003 10 10 5
+D2
+wooden door~
+~
+131 -1 67063 10 10 5
+D3
+~
+~
+0 -1 67001 10 10 5
+E
+3 paintings~
+These paintings are very crudely drawn stick figures.  Big green stick
+
+figures alongside fat red stick figures are seen killing many white stick
+
+figures with big pointed ears.  A few places show the green and red
+
+figures eating white ones.  Some of the paint is fresh and still wet.
+
+~
+E
+slab~
+This is a poorly hidden door, but you see no obvious way to open or shut
+
+it, and it is much to large to force.
+
+~
+-1
+S
+
+#67003
+main street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67004 10 10 5
+D3
+~
+~
+0 -1 67002 10 10 5
+-1
+S
+
+#67004
+main street~
+Under Construction.
+
+~
+[Janua] north to western arena entrance
+
+~
+-235274235 11 9 0
+D1
+~
+~
+0 -1 67005 10 10 5
+D3
+~
+~
+0 -1 67003 10 10 5
+A
+~
+~
+act_tochar( #msg, ch );
+
+continue;
+
+~
+E
+msg~
+You ascend the broad marble steps.
+
+~
+!
+3 0 1
+-1
+S
+
+#67005
+main street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67006 10 10 5
+D2
+~
+~
+0 -1 67065 10 10 5
+D3
+~
+~
+0 -1 67004 10 10 5
+-1
+S
+
+#67006
+main street~
+Under Construction.
+
+~
+[Janua] north to eastern arena entrance
+
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67007 10 10 5
+D3
+~
+~
+0 -1 67005 10 10 5
+A
+~
+~
+act_tochar( #msg, ch );
+
+continue;
+
+~
+E
+msg~
+You ascend the broad marble steps.
+
+~
+!
+3 0 1
+-1
+S
+
+#67007
+main street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+1 -1 67036 10 10 5
+D1
+~
+~
+0 -1 67008 10 10 5
+D3
+~
+~
+0 -1 67006 10 10 5
+-1
+S
+
+#67008
+main street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+1 -1 67037 10 10 5
+D1
+~
+~
+0 -1 67009 10 10 5
+D3
+~
+~
+0 -1 67007 10 10 5
+-1
+S
+
+#67009
+main street - marketplace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67010 10 10 5
+D1
+~
+~
+0 -1 67092 10 10 5
+D2
+~
+~
+0 -1 67066 10 10 5
+D3
+~
+~
+0 -1 67008 10 10 5
+-1
+S
+
+#67010
+side street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67011 10 10 5
+D2
+~
+~
+0 -1 67009 10 10 5
+D3
+wooden door~
+~
+131 -1 67037 10 10 5
+-1
+S
+
+#67011
+side street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67012 10 10 5
+D1
+~
+~
+0 -1 67110 10 10 5
+D2
+~
+~
+0 -1 67010 10 10 5
+-1
+S
+
+#67012
+side street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67013 10 10 5
+D2
+~
+~
+0 -1 67011 10 10 5
+D3
+~
+~
+0 -1 67039 10 10 5
+-1
+S
+
+#67013
+side street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67014 10 10 5
+D1
+~
+~
+0 -1 67118 10 10 5
+D2
+~
+~
+0 -1 67012 10 10 5
+D3
+~
+~
+0 -1 67040 10 10 5
+-1
+S
+
+#67014
+side street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67015 10 10 5
+D2
+~
+~
+0 -1 67013 10 10 5
+D3
+~
+~
+0 -1 67041 10 10 5
+-1
+S
+
+#67015
+side street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D2
+~
+~
+0 -1 67014 10 10 5
+D3
+~
+~
+0 -1 67016 10 10 5
+-1
+S
+
+#67016
+back street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67015 10 10 5
+D3
+~
+~
+0 -1 67017 10 10 5
+-1
+S
+
+#67017
+back street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67016 10 10 5
+D3
+~
+~
+0 -1 67018 10 10 5
+-1
+S
+
+#67018
+back street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67017 10 10 5
+D3
+~
+~
+0 -1 67019 10 10 5
+-1
+S
+
+#67019
+back street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67018 10 10 5
+D3
+~
+~
+0 -1 67020 10 10 5
+-1
+S
+
+#67020
+back street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67019 10 10 5
+D3
+~
+~
+0 -1 67021 10 10 5
+-1
+S
+
+#67021
+back street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67020 10 10 5
+D3
+~
+~
+0 -1 67022 10 10 5
+-1
+S
+
+#67022
+back street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67021 10 10 5
+D2
+~
+~
+0 -1 67042 10 10 5
+D3
+~
+~
+0 -1 67023 10 10 5
+-1
+S
+
+#67023
+back street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67022 10 10 5
+D2
+~
+~
+0 -1 67043 10 10 5
+D3
+~
+~
+0 -1 67024 10 10 5
+-1
+S
+
+#67024
+back street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67023 10 10 5
+D2
+~
+~
+0 -1 67044 10 10 5
+D3
+~
+~
+0 -1 67025 10 10 5
+-1
+S
+
+#67025
+side street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67024 10 10 5
+D2
+~
+~
+0 -1 67026 10 10 5
+-1
+S
+
+#67026
+side street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67025 10 10 5
+D2
+~
+~
+0 -1 67027 10 10 5
+-1
+S
+
+#67027
+side street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67026 10 10 5
+D2
+~
+~
+0 -1 67028 10 10 5
+-1
+S
+
+#67028
+side street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67027 10 10 5
+D2
+~
+~
+0 -1 67029 10 10 5
+-1
+S
+
+#67029
+side street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67028 10 10 5
+D2
+~
+~
+0 -1 67030 10 10 5
+-1
+S
+
+#67030
+side street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67029 10 10 5
+D2
+~
+~
+0 -1 67031 10 10 5
+-1
+S
+
+#67031
+main street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67030 10 10 5
+D1
+~
+~
+0 -1 67000 10 10 5
+D2
+~
+~
+0 -1 67058 10 10 5
+-1
+S
+
+#67032
+shop or residence~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D2
+wooden door~
+~
+1 -1 67000 10 10 5
+-1
+S
+
+#67033
+shop or residence~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D2
+wooden door~
+~
+1 -1 67001 10 10 5
+-1
+S
+
+#67034
+shop or residence~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67035 10 10 5
+D2
+wooden door~
+~
+1 -1 67002 10 10 5
+-1
+S
+
+#67035
+shop or residence~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D3
+~
+~
+0 -1 67034 10 10 5
+-1
+S
+
+#67036
+barracks for city guards~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+wooden door~
+~
+131 -1 67037 10 10 5
+D2
+front door~
+front door wooden~
+1 -1 67007 10 10 5
+D4
+~
+~
+0 -1 67038 10 10 5
+-1
+S
+
+#67037
+city guard headquarters~
+Under Construction.
+
+~
+wooden doors east and west
+
+~
+-235274236 11 9 0
+D1
+side door~
+side door wooden~
+131 -1 67010 10 10 5
+D2
+front door~
+front door wooden~
+1 -1 67008 10 10 5
+D3
+wooden door~
+barracks door wooden~
+131 -1 67036 10 10 5
+-1
+S
+
+#67038
+barracks for city guards~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D5
+~
+~
+0 -1 67036 10 10 5
+-1
+S
+
+#67039
+residence~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67012 10 10 5
+-1
+S
+
+#67040
+residence~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67013 10 10 5
+-1
+S
+
+#67041
+residence~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67014 10 10 5
+-1
+S
+
+#67042
+Nothing~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67022 10 10 5
+-1
+S
+
+#67043
+Nothing~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67023 10 10 5
+-1
+S
+
+#67044
+Nothing~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67024 10 10 5
+-1
+S
+
+#67045
+marketplace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67066 10 10 5
+D1
+~
+~
+0 -1 67086 10 10 5
+D2
+~
+~
+0 -1 67046 10 10 5
+D3
+wooden door~
+~
+131 -1 67100 10 10 5
+-1
+S
+
+#67046
+marketplace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67045 10 10 5
+D1
+~
+~
+0 -1 67081 10 10 5
+D2
+~
+~
+0 -1 67047 10 10 5
+D3
+~
+~
+0 -1 67048 10 10 5
+-1
+S
+
+#67047
+side street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67046 10 10 5
+-1
+S
+
+#67048
+street to palace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67046 10 10 5
+D3
+~
+~
+0 -1 67049 10 10 5
+-1
+S
+
+#67049
+street to palace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+wooden door~
+~
+131 -1 67101 10 10 5
+D1
+~
+~
+0 -1 67048 10 10 5
+D3
+~
+~
+0 -1 67050 10 10 5
+-1
+S
+
+#67050
+street to palace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+wooden door~
+~
+391 -1 67102 10 10 5
+D1
+~
+~
+0 -1 67049 10 10 5
+D3
+~
+~
+0 -1 67051 10 10 5
+-1
+S
+
+#67051
+street to palace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67059 10 10 5
+D1
+~
+~
+0 -1 67050 10 10 5
+D3
+~
+~
+0 -1 67052 10 10 5
+-1
+S
+
+#67052
+street to palace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67051 10 10 5
+D3
+~
+~
+0 -1 67053 10 10 5
+-1
+S
+
+#67053
+street to palace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67052 10 10 5
+D3
+~
+~
+0 -1 67054 10 10 5
+-1
+S
+
+#67054
+street to palace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67053 10 10 5
+D3
+~
+~
+0 -1 67055 10 10 5
+-1
+S
+
+#67055
+street to palace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67054 10 10 5
+D3
+~
+~
+0 -1 67056 10 10 5
+-1
+S
+
+#67056
+street to palace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67055 10 10 5
+D3
+~
+~
+0 -1 67057 10 10 5
+-1
+S
+
+#67057
+street to palace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67064 10 10 5
+D1
+~
+~
+0 -1 67056 10 10 5
+D3
+~
+~
+0 -1 67060 10 10 5
+-1
+S
+
+#67058
+main street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67031 10 10 5
+D2
+~
+~
+0 -1 67064 10 10 5
+-1
+S
+
+#67059
+side street~
+Tall, wooden buildings border either side of this narrow road and the
+
+door to the west is the only one you can see that opens to the street.  A
+
+red-painted sign with the image of a woman in a flowing, white gown hangs
+
+prominently above the doorway.  Just to the south the small road ends
+
+where it meets with a larger street heading east and west.  The hum and
+
+hustle of the city is hushed here, making this place a rather quiet oasis
+
+in the busy city.
+
+~
+[Janua] The sign is painted with a red background and the image of a
+
+woman in a flowing, white gown is carved into its surface.  (will be some
+
+kind of local legend, probably with quests or hints to a zone or
+
+something) 
+
+[Janua] inn is known as The Crimson and White
+
+~
+-235274236 1 9 0
+D0
+~
+~
+0 -1 67065 10 10 5
+D2
+~
+~
+0 -1 67051 10 10 5
+D3
+heavy wooden door~
+~
+131 -1 67068 10 10 5
+E
+red-painted sign woman flowing white gown~
+The sign has a freshly painted red background and a carefully carved
+
+image of a woman wearing a white gown that seems to float around and
+
+behind her.  It hangs from a simply carved, wooden post mounted directly
+
+above the doorway.
+
+~
+-1
+S
+
+#67060
+entrance to palace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67057 10 10 5
+-1
+S
+
+#67061
+shop or residence~
+Under Construction.
+
+~
+~
+-235405300 1 9 0
+D0
+wooden door~
+~
+1 -1 67000 10 10 5
+-1
+S
+
+#67062
+shop or residence~
+Under Construction.
+
+~
+~
+-201719796 11 9 0
+D0
+wooden door~
+~
+1 -1 67001 10 10 5
+-1
+S
+
+#67063
+shop or residence~
+Under Construction.
+
+~
+~
+-201850876 11 9 0
+D0
+~
+~
+131 -1 67002 10 10 5
+-1
+S
+
+#67064
+main street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67058 10 10 5
+D2
+~
+~
+0 -1 67057 10 10 5
+-1
+S
+
+#67065
+side street~
+This narrow street is quiet and clean and the din of city noise is
+
+dampened by the tall buildings built on either side of the street.  A
+
+pair of large, wooden gates stand closed to the west and hint of hay and
+
+livestock drifts on the air.  The only doorway that opens to this section
+
+of the street lies a bit to the south and a red painted sign hangs over
+
+the threshold.  The small street ends just to the north where it
+
+intersects with a larger road.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67005 10 10 5
+D2
+~
+~
+0 -1 67059 10 10 5
+D3
+heavy, wooden gates~
+~
+391 -1 67067 10 10 5
+E
+red painted sign~
+The sign is painted with a red background and the image of a woman in a
+
+flowing, white gown is carved into its surface.
+
+~
+A
+open~
+heavy wooden gates 1 west~
+if( is_open( room, west ) )
+
+  act_tochar( #open, ch );
+
+else {
+
+  act_tochar( #cant, ch );
+
+  act_notchar( #rcant, ch );
+
+  }
+
+~
+E
+open~
+The heavy, wooden doors are already open.
+
+~
+E
+cant~
+You can't find a way to open the heavy, wooden gates.
+
+~
+E
+rcant~
+$n studies the pair of heavy, wooden gates to the west and gives up with
+
+a shrug.
+
+~
+!
+0 0 0
+A
+~
+~
+send_to_room( #close, room );
+
+send_to_room( #close_inside, find_room( 67067 ) );
+
+close( room, west );
+
+set_rflag( reset0, find_room( 67067 ) );
+
+~
+E
+close~
+The heavy, wooden gates to the west swing closed.
+
+~
+E
+close_inside~
+The heavy, wooden gates to the east swing closed.
+
+~
+!
+1 0 8
+-1
+S
+
+#67066
+marketplace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67009 10 10 5
+D1
+~
+~
+0 -1 67087 10 10 5
+D2
+~
+~
+0 -1 67045 10 10 5
+D3
+wooden door~
+~
+131 -1 67099 10 10 5
+-1
+S
+
+#67067
+Stables~
+Several small, covered stalls line the northern side of the yard,
+
+providing modest accomodation for horses and other mounts.  A two-story
+
+wooden building sits to the south with a doorway that opens into this
+
+stable area.  The pair of heavy, double gates leading east is secured by
+
+a latch.
+
+~
+~
+-235274236 11 9 0
+D1
+heavy, wooden gates~
+~
+391 -1 67065 10 10 5
+D2
+back door~
+~
+131 -1 67068 10 10 5
+A
+open~
+heavy double gates 1 east~
+if( !rflag( reset0, room ) ) {
+
+  if( !is_open( room, east ) ) {
+
+    act_tochar( #open, ch );
+
+    act_notchar( #ropen, ch );
+
+    open( room, east );
+
+    }
+
+  else
+
+    act_tochar( #already_open, ch );
+
+  }
+
+if( rflag( reset0, room ) )
+
+  act_tochar( #locked, ch );
+
+~
+E
+locked~
+The gate is latched.  Perhaps you should open the latch.
+
+~
+E
+open~
+You push the heavy, wooden gates open to the east.
+
+~
+E
+ropen~
+$n pushes the heavy, wooden gates open to the east.
+
+~
+E
+already_open~
+The gates are already open.
+
+~
+!
+0 0 0
+A
+open pull move~
+latch~
+if( !is_open( room, east ) ) {
+
+  if( rflag( reset0, room ) ) {
+
+    act_tochar( #open, ch );
+
+    act_notchar( #ropen, ch );
+
+    remove_rflag( reset0, room );
+
+    }
+
+  else
+
+    act_tochar( #not_latched, ch );
+
+  }
+
+else
+
+  act_tochar( #already_open, ch );
+
+~
+E
+open~
+You open the latch on the heavy, wooden gates to the east.
+
+~
+E
+ropen~
+$n opens the latch on the heavy, wooden gates to the east.
+
+~
+E
+not_latched~
+The latch is already open.  Perhaps you should try opening the gates.
+
+~
+E
+already_open~
+The heavy, wooden gates are already open.
+
+~
+!
+0 0 0
+A
+close secure~
+latch~
+if( !is_open( room, east ) ) {
+
+  if( !rflag( reset0, room ) ) {
+
+    act_tochar( #close, ch );
+
+    act_notchar( #rclose, ch );
+
+    set_rflag( reset0, room );
+
+    }
+
+  else
+
+    act_tochar( #already_latched, ch );
+
+  }
+
+else
+
+  act_tochar( #gate_open, ch );
+
+~
+E
+close~
+You close the latch, securing the heavy, wooden gates to the east.
+
+~
+E
+rclose~
+$b closes the latch, securing the heavy, wooden gates to the east.
+
+~
+E
+already_latched~
+The latch is already secured.
+
+~
+E
+gate_open~
+You cannot secure the latch because the gates are open.
+
+~
+!
+0 0 0
+A
+unlatch~
+heavy wooden gate 1 east~
+if( !is_open( room, east ) ) {
+
+  if( rflag( reset0, room ) ) {
+
+    act_tochar( #open, ch );
+
+    act_notchar( #ropen, ch );
+
+    remove_rflag( reset0, room );
+
+    }
+
+  else
+
+    act_tochar( #not_latched, ch );
+
+  }
+
+else
+
+  act_tochar( #already_open, ch );
+
+~
+E
+open~
+You open the latch on the heavy, wooden gates to the east.
+
+~
+E
+ropen~
+$n opens the latch on the heavy, wooden gates to the east.
+
+~
+E
+not_latched~
+The latch is already open.  Perhaps you should try opening the gates.
+
+~
+E
+already_open~
+The heavy, wooden gates are already open.
+
+~
+!
+0 0 0
+A
+~
+~
+send_to_room( #close, room );
+
+send_to_room( #close_outside, find_room( 67065 ) );
+
+close( room, east );
+
+set_rflag( reset0, room );
+
+~
+E
+close~
+The heavy, wooden gates to the east swing closed.
+
+~
+E
+close_outside~
+The heavy, wooden gates to the west swing closed.
+
+~
+!
+1 0 2
+-1
+S
+
+#67068
+Inn - Common Room~
+This large room is fairly well-lit with what must be expensive candles
+
+burning cleanly in small holders mounted on the walls around the room. 
+
+The air is fairly fresh and clean and the smell of food and drink drifts
+
+in from the west.  Several small tables surround the perimiter of the
+
+room and three long tables sit parallel to each other in the center.
+
+~
+~
+-235274236 11 9 0
+D0
+small door~
+~
+131 -1 67067 10 10 5
+D1
+front door~
+~
+131 -1 67059 10 10 5
+D3
+~
+~
+0 -1 67069 10 10 5
+A
+~
+~
+if( is_mob( ch, 4 ) )
+
+  act_tochar( #stop, ch );
+
+else
+
+  continue;
+
+~
+E
+stop~
+You are not allowed to leave, wench!  Get back to work!
+
+~
+!
+3 0 2
+4 9 1509949540 3 0
+-1
+S
+
+#67069
+Hallway~
+This short, wide hallway connects a large, open room to the east with a
+
+kitchen to the north and a room with a wooden door to the east.  The
+
+walls are whitewashed and clean, and well-lit by candles placed on
+
+holders along each wall.  The floor is wooden, make of evenly spaced
+
+slats of a dark hued wood fitted tightly together.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67070 10 10 5
+D1
+~
+~
+0 -1 67068 10 10 5
+D3
+~
+~
+0 -1 67071 10 10 5
+D4
+~
+~
+0 -1 67072 10 10 5
+-1
+S
+
+#67070
+kitchen~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D2
+~
+~
+0 -1 67069 10 10 5
+-1
+S
+
+#67071
+Inn - Sitting Room~
+This small room is filled by the four plush, leather chairs that sit
+
+around a small wooden table at the center of the room.  Bookcases line
+
+the northern and southern walls and a large window overlooks a garden to
+
+the west.  The open doorway leads out and you can see a large common room
+
+on the eastern end of the hallway to the east.
+
+~
+books here... eventually make them readable
+
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67069 10 10 5
+E
+bookcases 1 north 1 south~
+The shelves stretch the entire length of both walls and extend from the
+
+floor to the ceiling.  They are filled with a variety of books -- an
+
+amazing number of books for a private individual to own.
+
+~
+E
+1 west window~
+The large window spans almost the entire eastern wall, giving you a view
+
+of a garden planted just outside the building.
+
+~
+2556 17 1509949540 -2 0
+2556 17 1509949540 -2 0
+2556 17 1509949540 -2 0
+2556 17 1509949540 -2 0
+-1
+S
+
+#67072
+Hallway~
+The walls in this narrow passage are panelled in dark wood polished to a
+
+soft shine.  The flickering candles burning on holders mounted along the
+
+walls light the hallway in a soft, glowing light.  Doorways open to the
+
+north and south and the hallway continues east and west.
+
+~
+~
+-235274236 11 9 0
+D0
+wooden door~
+~
+131 -1 67078 10 10 5
+D1
+~
+~
+0 -1 67073 10 10 5
+D2
+wooden door~
+~
+131 -1 67077 10 10 5
+D3
+~
+~
+0 -1 67074 10 10 5
+D5
+~
+~
+0 -1 67069 10 10 5
+-1
+S
+
+#67073
+Hallway~
+The walls in this narrow passage are panelled in dark wood polished to a
+
+soft shine.  The flickering candles burning on holders mounted along the
+
+walls light the hallway in a soft, glowing light.  Doorways open to the
+
+north and south and the hallway continues west.
+
+~
+rewrite, is same as west
+
+~
+-235274236 11 9 0
+D0
+wooden door~
+~
+131 -1 67079 10 10 5
+D2
+wooden door~
+~
+131 -1 67080 10 10 5
+D3
+~
+~
+0 -1 67072 10 10 5
+-1
+S
+
+#67074
+Hallway~
+The walls in this narrow passage are panelled in dark wood polished to a
+
+soft shine.  The flickering candles burning on holders mounted along the
+
+walls light the hallway in a soft, glowing light.  Doorways open to the
+
+north and south and the hallway continues east.
+
+~
+rewrite, is same as east
+
+~
+-235274236 11 9 0
+D0
+~
+~
+131 -1 67075 10 10 5
+D1
+~
+~
+0 -1 67072 10 10 5
+D2
+wooden door~
+~
+131 -1 67076 10 10 5
+-1
+S
+
+#67075
+room~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D2
+wooden door~
+~
+131 -1 67074 10 10 5
+-1
+S
+
+#67076
+room~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+wooden door~
+~
+131 -1 67074 10 10 5
+-1
+S
+
+#67077
+room~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+wooden door~
+~
+131 -1 67072 10 10 5
+-1
+S
+
+#67078
+room~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D2
+wooden door~
+~
+131 -1 67072 10 10 5
+-1
+S
+
+#67079
+room~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D2
+wooden door~
+~
+131 -1 67073 10 10 5
+-1
+S
+
+#67080
+room~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+wooden door~
+~
+131 -1 67073 10 10 5
+-1
+S
+
+#67081
+marketplace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67086 10 10 5
+D1
+~
+~
+0 -1 67082 10 10 5
+D3
+~
+~
+0 -1 67046 10 10 5
+-1
+S
+
+#67082
+marketplace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67085 10 10 5
+D1
+~
+~
+0 -1 67083 10 10 5
+D3
+~
+~
+0 -1 67081 10 10 5
+-1
+S
+
+#67083
+marketplace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67084 10 10 5
+D3
+~
+~
+0 -1 67082 10 10 5
+-1
+S
+
+#67084
+marketplace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67089 10 10 5
+D2
+~
+~
+0 -1 67083 10 10 5
+D3
+~
+~
+0 -1 67085 10 10 5
+-1
+S
+
+#67085
+marketplace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67088 10 10 5
+D1
+~
+~
+0 -1 67084 10 10 5
+D2
+~
+~
+0 -1 67082 10 10 5
+D3
+~
+~
+0 -1 67086 10 10 5
+-1
+S
+
+#67086
+marketplace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67087 10 10 5
+D1
+~
+~
+0 -1 67085 10 10 5
+D2
+~
+~
+0 -1 67081 10 10 5
+D3
+~
+~
+0 -1 67045 10 10 5
+-1
+S
+
+#67087
+marketplace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67092 10 10 5
+D1
+~
+~
+0 -1 67088 10 10 5
+D2
+~
+~
+0 -1 67086 10 10 5
+D3
+~
+~
+0 -1 67066 10 10 5
+-1
+S
+
+#67088
+marketplace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67091 10 10 5
+D1
+~
+~
+0 -1 67089 10 10 5
+D2
+~
+~
+0 -1 67085 10 10 5
+D3
+~
+~
+0 -1 67087 10 10 5
+-1
+S
+
+#67089
+marketplace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67090 10 10 5
+D2
+~
+~
+0 -1 67084 10 10 5
+D3
+~
+~
+0 -1 67088 10 10 5
+-1
+S
+
+#67090
+main street - marketplace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67096 10 10 5
+D2
+~
+~
+0 -1 67089 10 10 5
+D3
+~
+~
+0 -1 67091 10 10 5
+-1
+S
+
+#67091
+main street - marketplace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67093 10 10 5
+D1
+~
+~
+0 -1 67090 10 10 5
+D2
+~
+~
+0 -1 67088 10 10 5
+D3
+~
+~
+0 -1 67092 10 10 5
+-1
+S
+
+#67092
+main street - marketplace~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67091 10 10 5
+D2
+~
+~
+0 -1 67087 10 10 5
+D3
+~
+~
+0 -1 67009 10 10 5
+-1
+S
+
+#67093
+weaponsmith~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+wooden door~
+~
+391 -1 67094 10 10 5
+D2
+~
+~
+0 -1 67091 10 10 5
+D3
+~
+~
+0 -1 67095 10 10 5
+-1
+S
+
+#67094
+weaponsmith's home~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D2
+wooden door~
+~
+391 -1 67093 10 10 5
+-1
+S
+
+#67095
+forge~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67110 10 10 5
+D1
+~
+~
+0 -1 67093 10 10 5
+D5
+~
+~
+0 -1 67111 10 10 5
+-1
+S
+
+#67096
+main street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67097 10 10 5
+D3
+~
+~
+0 -1 67090 10 10 5
+-1
+S
+
+#67097
+main street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67103 10 10 5
+D1
+~
+~
+0 -1 67098 10 10 5
+D3
+~
+~
+0 -1 67096 10 10 5
+-1
+S
+
+#67098
+main street~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D3
+~
+~
+0 -1 67097 10 10 5
+-1
+S
+
+#67099
+shop~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+wooden door~
+~
+131 -1 67066 10 10 5
+-1
+S
+
+#67100
+shop~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+wooden door~
+~
+131 -1 67045 10 10 5
+-1
+S
+
+#67101
+private residence~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D2
+wooden door~
+~
+131 -1 67049 10 10 5
+-1
+S
+
+#67102
+private residence~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D2
+wooden door~
+~
+391 -1 67050 10 10 5
+-1
+S
+
+#67103
+stables and livery shop~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67104 10 10 5
+D2
+~
+~
+0 -1 67097 10 10 5
+D3
+~
+~
+131 -1 67105 10 10 5
+-1
+S
+
+#67104
+livery shop~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D2
+~
+~
+0 -1 67103 10 10 5
+-1
+S
+
+#67105
+stables~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67109 10 10 5
+D1
+~
+~
+131 -1 67103 10 10 5
+D3
+~
+~
+0 -1 67107 10 10 5
+-1
+S
+
+#67106
+room to use for shop stuff for stables~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+-1
+S
+
+#67107
+stables~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67108 10 10 5
+D1
+~
+~
+0 -1 67105 10 10 5
+-1
+S
+
+#67108
+stables~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D2
+~
+~
+0 -1 67107 10 10 5
+-1
+S
+
+#67109
+stables~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D2
+~
+~
+0 -1 67105 10 10 5
+-1
+S
+
+#67110
+armorsmith~
+Under Construction.
+
+~
+basic armor ingredients
+
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67112 10 10 5
+D2
+~
+~
+0 -1 67095 10 10 5
+D3
+~
+~
+0 -1 67011 10 10 5
+-1
+S
+
+#67111
+forge~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67114 10 10 5
+D1
+~
+~
+0 -1 67113 10 10 5
+D4
+~
+~
+0 -1 67095 10 10 5
+-1
+S
+
+#67112
+armorsmith~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D2
+~
+~
+0 -1 67110 10 10 5
+-1
+S
+
+#67113
+forge~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67115 10 10 5
+D1
+~
+~
+0 -1 67116 10 10 5
+D3
+~
+~
+0 -1 67111 10 10 5
+-1
+S
+
+#67114
+forge~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67115 10 10 5
+D2
+~
+~
+0 -1 67111 10 10 5
+-1
+S
+
+#67115
+forge~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D1
+~
+~
+0 -1 67117 10 10 5
+D2
+~
+~
+0 -1 67113 10 10 5
+D3
+~
+~
+0 -1 67114 10 10 5
+-1
+S
+
+#67116
+forge~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67117 10 10 5
+D3
+~
+~
+0 -1 67113 10 10 5
+-1
+S
+
+#67117
+forge~
+Under Construction.
+
+~
+~
+-235274236 11 9 0
+D2
+~
+~
+0 -1 67116 10 10 5
+D3
+~
+~
+0 -1 67115 10 10 5
+-1
+S
+
+#67118
+leathersmith~
+Under Construction.
+
+~
+custom leather stuff, buys hides
+
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67122 10 10 5
+D1
+~
+~
+0 -1 67119 10 10 5
+D3
+~
+~
+0 -1 67013 10 10 5
+-1
+S
+
+#67119
+tannery~
+Under Construction.
+
+~
+more custom leather stuff
+
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67121 10 10 5
+D2
+~
+~
+0 -1 67120 10 10 5
+D3
+~
+~
+0 -1 67118 10 10 5
+-1
+S
+
+#67120
+tannery~
+Under Construction.
+
+~
+more custom leather stuff
+
+~
+-235274236 11 9 0
+D0
+~
+~
+0 -1 67119 10 10 5
+-1
+S
+
+#67121
+tannery~
+Under Construction.
+
+~
+more custom leather stuff
+
+~
+-235274236 11 9 0
+D2
+~
+~
+0 -1 67119 10 10 5
+-1
+S
+
+#67122
+leathersmith~
+Under Construction.
+
+~
+custom fur stuff, buys furs
+
+~
+-235274236 11 9 0
+D2
+~
+~
+0 -1 67118 10 10 5
+-1
+S
+
+#0
+

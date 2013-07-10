@@ -1,0 +1,2646 @@
+#AREA
+Deep Mountain Quarry~
+Valgo~
+~
+
+0 0
+3
+#ROOMS
+
+#80250
+A Smooth Stone Tunnel~
+This tunnel has been carved directly into the solid stone of the mountain
+
+above.  The walls here are quite smooth, witness to the considerable
+
+amount of work that must have been done.  Small stones and a fine layer
+
+of dust litter the floor along the walls where they have yet to be
+
+scattered by travel.  Fastened to the east wall, a torch provides light
+
+and hazy smoke.  A large steelbound gate can be seen far off to the south
+
+while the tunnel continues northward.
+
+~
+~
+-235274239 11 6 0
+D0
+~
+~
+0 -1 80251 10 10 5
+D2
+~
+~
+0 -1 30263 10 10 5
+E
+stone dust floor~
+The floor is littered with small stones and pebbles.  Except for a path
+
+cleaned by travel, the floor is covered in a fine layer of dust.
+
+~
+E
+torch~
+A simple wooden torch burns here, creating light and a small amount of
+
+smoke.  It is supported by a brass bracket mounted to the smooth stone of
+
+the wall.
+
+~
+E
+wall~
+The stone of the wall has been carved to be quite smooth.  Barely visible
+
+tooling marks are present upon closer inspection, but overall, the stone
+
+is blemish free.
+
+~
+E
+bracket~
+A piece of brass bent into a 'U' shape.  It holds a torch to the wall.
+
+~
+-1
+S
+
+#80251
+A Smooth Stone Tunnel~
+The walls, ceiling, and floor create a wide tunnel carved directly
+
+through the mountain surrounding you.  A torch burns on the smoothly
+
+carved stone on the east wall.  Dust and rocks collect along the floor
+
+near the walls.  The solid stone tunnel continues north and south, while
+
+to the west another tunnel opens.
+
+~
+~
+-235274239 11 6 0
+D0
+~
+~
+0 -1 80252 10 10 5
+D2
+~
+~
+0 -1 80250 10 10 5
+D3
+~
+~
+0 -1 80265 10 10 5
+E
+stones dust floor~
+The floor is littered with small stones and pebbles.  Except for a path
+
+cleaned by travel, the floor is covered in a fine layer of dust.
+
+~
+E
+torch~
+A simple wooden torch burns here, creating light and a small amount of
+
+smoke.  It is supported by a brass bracket mounted to the smooth stone of
+
+the wall.
+
+~
+E
+bracket~
+A piece of brass bent into a 'U' shape.  It holds a torch to the wall.
+
+~
+E
+wall~
+The stone of the wall has been carved to be quite smooth.  Barely visible
+
+tooling marks are present upon closer inspection, but overall, the stone
+
+is blemish free.
+
+~
+-1
+S
+
+#80252
+Turn in a Smooth Stone Tunnel~
+The tunnel turns toward the west and south here.  Small stones lie
+
+scattered about the area, more so along the smooth walls than toward the
+
+center of this tunnel.  A smoky torch smolders on the northern wall, the
+
+ceiling above stained by the sooty flame.
+
+~
+~
+-235274239 11 6 0
+D2
+~
+~
+0 -1 80251 10 10 5
+D3
+~
+~
+0 -1 80253 10 10 5
+E
+stones dust floor~
+The floor is littered with small stones and pebbles.  Except for a path
+
+cleaned by travel, the floor is covered in a fine layer of dust.
+
+~
+E
+torch~
+A simple wooden torch burns here, creating light and a small amount of
+
+smoke.  It is supported by a brass bracket mounted to the smooth stone of
+
+the wall.
+
+~
+E
+bracket~
+A piece of brass bent into a 'U' shape.  It holds a torch to the wall.
+
+~
+E
+wall~
+The stone of the wall has been carved to be quite smooth.  Barely visible
+
+tooling marks are present 
+
+~
+-1
+S
+
+#80253
+A Smooth Stone Tunnel~
+Solid stone has been carved smooth creating a tunnel under the mountain. 
+
+Small rocks and dirt clutter the floor here, scattered toward the walls
+
+from foot traffic.  Hanging on the southern wall is a torch, introducing
+
+a smoky haze to the still air.  Heading east and west, the tunnel
+
+continues.
+
+~
+~
+-235274239 11 6 0
+D1
+~
+~
+0 -1 80252 10 10 5
+D3
+~
+~
+0 -1 80254 10 10 5
+E
+stones dust floor~
+The floor is littered with small stones and pebbles.  Except for a path cleaned by travel, the floor is covered in a fine layer of dust.
+
+~
+E
+torch~
+A simple wooden torch burns here, creating light and a small amount of
+
+smoke.  It is supported by a brass bracket mounted to the smooth stone of
+
+the wall.
+
+~
+E
+bracket~
+A piece of brass bent into a 'U' shape.  It holds a torch to the wall.rf
+
+~
+E
+wall~
+The stone of the wall has been carved to be quite smooth.  Barely visible
+
+tooling marks are present upon closer inspection, but overall, the stone
+
+is blemish free.
+
+~
+-1
+S
+
+#80254
+Turn in a Smooth Stone Tunnel~
+Pushing into the mountain, the tunnel bends north and east here.  Piles
+
+of rock and rubble are heaped against the smooth stone of the solid walls. 
+
+A thick layer of dirt lies alongside the rocks but the central portion of
+
+the floor is otherwise clean.  Attached to the western wall a torch
+
+burns, thickening the air with its smoke.
+
+~
+'Search Piles' to be added. Will find a rock or gravel or something.
+
+~
+-235274239 11 6 0
+D0
+~
+~
+0 -1 80255 10 10 5
+D1
+~
+~
+0 -1 80253 10 10 5
+E
+stones dust floor~
+The floor is littered with small stones and pebbles.  Except for a path
+
+cleaned by travel, the floor is covered in a fine layer of dust.
+
+~
+E
+torch~
+A simple wooden torch burns here, creating light and a small amount of
+
+smoke.  It is supported by a brass bracket mounted to the smooth stone of
+
+the wall.
+
+~
+E
+bracket~
+A piece of brass bent into a 'U' shape.  It holds a torch to the wall.
+
+~
+E
+wall~
+The stone of the wall has been carved to be quite smooth.  Barely visible
+
+tooling marks are present upon closer inspection, but overall, the stone
+
+is blemish free.
+
+~
+-1
+S
+
+#80255
+A Smooth Stone Tunnel~
+Rocks, some near the size of a well-fed dwarf, are scattered haphazardly
+
+throughout this portion of the tunnel.  The smooth walls here are cracked
+
+in places and the ceiling also shows signs of stress.  A thick layer of
+
+dirt and dust covers the floor and most of the stones.  Hanging limply
+
+from its battered hardware, a torch sputters noisily.  Heading north and
+
+south, the tunnel continues.
+
+~
+~
+-235274239 11 6 0
+D0
+~
+~
+0 -1 80256 10 10 5
+D2
+~
+~
+0 -1 80254 10 10 5
+E
+wall crack stress~
+The smooth stone of the walls and ceiling have cracks in them, showing
+
+signs of severe stress in the rock.
+
+~
+E
+rocks~
+Large rocks are strewn about the floor here and there.  They are more
+
+abundant to the north, from which direction they appear to have tumbled.
+
+~
+E
+torch~
+This simple wooden torch hangs at an angle in its brass hanger.  The
+
+hardware of the hanger has been pummeled and is quite battered.
+
+~
+-1
+S
+
+#80256
+Cave In at A Smooth Stone Tunnel~
+The ceiling of the tunnel has collapsed, creating a wall of stone to the
+
+east.  Deep fissures stand out starkly in the heretofore smoothly carved
+
+stone of this underground passageway.  Large rocks lay strewn about,
+
+surely having tumbled to their current places when the cave in occurred. 
+
+A bracket used to hold a torch dangles from a single bolt, the missing
+
+hardware and torch are nowhere to be seen.  The only exit is south, away
+
+from the wreckage of stone.
+
+~
+'Dig Stone' to clear cave in. 18 str needed.
+
+~
+-235274239 11 6 0
+D1
+the cave in~
+~
+2283 -1 80257 10 10 5
+D2
+~
+~
+0 -1 80255 10 10 5
+E
+stone~
+A pile of stone, fallen from the ceiling above.  Digging out the stone
+
+would take some considerable amount of time, given the amount of rubble
+
+present.
+
+~
+E
+bracket~
+What used to hold a torch on the wall is now bent and buckled.  The
+
+fallen stone must have damaged this simple hanger.
+
+~
+A
+dig clear move~
+rocks rubble wall east stone~
+if( is_open( room, east ) )
+
+  act_tochar( #already, ch );
+
+else {
+
+  if( find_stat( ch, str ) < 18 ) {
+
+    act_tochar( #weak, ch );
+
+    act_notchar( #weakr, ch );
+
+    }
+
+  if( find_stat( ch, str ) > 17 ) {
+
+    act_tochar( #strong, ch );
+
+    act_notchar( #strongr, ch );
+
+    wait( 2 );
+
+    act_tochar( #strong2, ch );
+
+    act_notchar( #strongr2, ch );
+
+    wait( 2 );
+
+    act_tochar( #strong3, ch );
+
+    act_notchar( #strongr3, ch );
+
+    open( find_room( 80256 ), east );
+
+    }
+
+  }
+
+~
+E
+weak~
+@cYou are not strong enough to clear the cave in.
+
+~
+E
+weakr~
+@c$n attempts to clear the cave in, but is not strong enough to complete the task.
+
+~
+E
+strong~
+@cYou begin to clear the rubble from the cave in.
+
+~
+E
+strongr~
+@c$n begins to clear the rubble from the cave in.
+
+~
+E
+strong2~
+@cLarge rocks and stones fall from the ceiling above, adding to your task.
+
+~
+E
+strongr2~
+@cLarge rocks and stones fall from the ceiling above, adding to $s task.
+
+~
+E
+strong3~
+@cYou manage to clear enough of the rubble to open a passage through the cave in.@n
+
+~
+E
+strongr3~
+@c$n manages to clear enough of the rubble to open a passage through the cave in.@n
+
+~
+E
+already~
+@cA passage through the cave in has already been cleared.@n
+
+~
+!
+0 0 0
+-1
+S
+
+#80257
+Cave In at A Smooth Stone Tunnel~
+The ceiling of the tunnel has collapsed, creating a wall of stone to the
+
+west.  Deep fissures stand out starkly in the otherwise smooth stone of
+
+the walls.  Large rocks lay strewn about, having tumbled into their
+
+current places during the cave in.  A passageway can be seen above the
+
+rubble, easily reachable by climbing up the debris.  The outside world
+
+can be seen through the cave mouth of this tunnel, toward the north.
+
+~
+'Dig Stone' to clear cave in. 18 str needed.
+
+'Climb Rubble' to leave up.
+
+~
+-235274239 11 9 0
+D0
+~
+~
+0 -1 80258 10 10 5
+D3
+the cave in~
+~
+2283 -1 80256 10 10 5
+E
+stone rubble~
+A pile of large and small stones rising to the ceiling.  The ceiling has
+
+caved in here, creating a wall of stone.  With significant effort and
+
+time, this rubble could possibly be cleared away.
+
+~
+E
+fissures cracks~
+Deep cracks line the walls from floor to ceiling, whatever caused the
+
+cave in must have torn the rock here also.
+
+~
+A
+dig clear move~
+rocks rubble wall west stone~
+if( is_open( room, west ) )
+
+  act_tochar( #already, ch );
+
+else {
+
+  if( find_stat( ch, str ) < 18 ) {
+
+    act_tochar( #weak, ch );
+
+    act_notchar( #weakr, ch );
+
+    }
+
+  if( find_stat( ch, str ) > 17 ) {
+
+    act_tochar( #strong, ch );
+
+    act_notchar( #strongr, ch );
+
+    wait( 2 );
+
+    act_tochar( #strong2, ch );
+
+    act_notchar( #strongr2, ch );
+
+    wait( 2 );
+
+    act_tochar( #strong3, ch );
+
+    act_notchar( #strongr3, ch );
+
+    open( find_room( 80257 ), west );
+
+    }
+
+  }
+
+~
+E
+weak~
+@cYou are not strong enough to clear the cave in.
+
+~
+E
+weakr~
+@c$n is not strong enough to clear the cave in.
+
+~
+E
+strong~
+@cYou begin to clear the cave in.
+
+~
+E
+strongr~
+@c$n begins to clear the cave in.
+
+~
+E
+strong2~
+@cLarge rocks and stones fall from the ceiling above, adding to your task.
+
+~
+E
+strongr2~
+@cLarge rocks and stones fall from the ceiling above, adding to $s task.
+
+~
+E
+strong3~
+@cYou manage to clear enough of the rubble to open a passage through the cave in.@n
+
+~
+E
+strongr3~
+@c$n manages to clear enough of the rubble to open a passage through the cave in.@n
+
+~
+E
+already~
+@cA passage through the cave in has already been cleared.@n
+
+~
+!
+0 0 0
+A
+climb~
+rubble rocks stones up~
+if( find_skill( ch, climb ) <= random( 1, 5 ) ) {
+
+  act_tochar( #clutz, ch );
+
+  act_notchar( #clutzr, ch );
+
+  }
+
+else {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #climbr, ch );
+
+  transfer( ch, find_room( 80296 ) );
+
+  }
+
+~
+E
+clutz~
+@eYou try to climb up the rubble, but slip on a loose stone.@n
+
+~
+E
+clutzr~
+@e$n tries to climb up the rubble, but slips on a loose stone.@n
+
+~
+E
+climb~
+You climb up the rubble, into the passage above.
+
+~
+E
+climbr~
+$n climbs up the rubble, into the passage above.
+
+~
+!
+3 0 16
+-1
+S
+
+#80258
+Cave Mouth - Smooth Stone Tunnel~
+A tunnel burrows south into the mountain above.  The smooth stone walls
+
+attest to the amount of labor needed to carve the solid stone surrounding
+
+the tunnel.  Dirt has been tracked into the cave from the path entering
+
+from the west and continues deeper into the cavern towards the south.
+
+~
+~
+-235274239 11 9 0
+D2
+~
+~
+0 -1 80257 10 10 5
+D3
+~
+~
+0 -1 80259 10 10 5
+E
+wall~
+The stone of the wall has been carved to be quite smooth.  Barely visible
+
+tooling marks are present upon closer inspection, but overall, the stone
+
+is blemish free.
+
+~
+E
+dirt~
+A trail of dirt dragged into and out of the cave provides evidence of
+
+travel by someone or something.
+
+~
+-1
+S
+
+#80259
+Narrow Path - Near a Cave~
+The rocky walls surrounding you have left a narrow path of dirt and stone
+
+here on their expedient rise upwards.  Jumbles of large stone lay
+
+haphazardly about, nearly hiding a cave mouth that opens in the vertical
+
+eastern wall.  The path enters the cave as well as carrying on to the
+
+north.
+
+~
+~
+-235405311 12 9 0
+D0
+~
+~
+0 -1 80260 10 10 5
+D1
+~
+~
+0 -1 80258 10 10 5
+E
+stone~
+Large stones, or boulders, some nearing the height of an average ogre's
+
+waist, are scattered about in front of and around the cave.  They are in
+
+no significant order or place, they just rest here.  The way the some of
+
+the stones have sunken into the dirt gives proof that they have been here
+
+for some time.
+
+~
+E
+walls cliff~
+The walls surround you on three sides as they rise nearly straight up
+
+forming a cramped, mini-canyon here.  A cave mouth can be seen entering
+
+the east wall.
+
+~
+-1
+S
+
+#80260
+Narrow Path Along the Dakari River~
+A sheer cliff rises steeply on the east, scraggy trees cling to its face
+
+amongst bare rock and loose dirt.  Ascending, it becomes slightly less
+
+steep and the trees thicken, becoming near a forest at the cliff's summit. 
+
+The churning waters of the Dakari River can be seen rushing just slightly
+
+below and to the west.  The path runs north and south, separating the
+
+cliff from the rapids below.
+
+~
+~
+-235405311 12 9 0
+D0
+~
+~
+0 -1 80261 10 10 5
+D2
+~
+~
+0 -1 80259 10 10 5
+D3
+~
+~
+0 -1 80301 10 10 5
+E
+dakari river churning waters~
+As you look out at the river on your west, the water rushes by, frothing
+
+and foaming from the terrific speed its built up through the rapids.  The
+
+river takes a sharp bend to the west after slamming into a rocky wall to
+
+the south.
+
+~
+E
+cliff east~
+The cliff on the east rises at a near vertical most of the way along its
+
+length.  A few small scrawny trees grow in the loose dirt and rock that
+
+make up the cliff face.
+
+~
+E
+path~
+This narrow dirt path is really just a ledge above the rapidly flowing
+
+Dakari River.  The water below rushes by and the cliff towers above.
+
+~
+-1
+S
+
+#80261
+Narrow Path Along the Dakari River~
+This narrow dirt path is all that separates the waters of the Dakari
+
+River from the steep cliff on the east.  The river rushes by on your
+
+west, white water splashes over and around a few jutting boulders in its
+
+path.  The narrow dirt path dives into the river to the north,
+
+effectively halting dry travel in that direction.  Looking south, the
+
+dirt path continues.
+
+~
+~
+-235405311 12 9 0
+D0
+~
+~
+0 -1 80262 10 10 5
+D2
+~
+~
+0 -1 80260 10 10 5
+D3
+~
+~
+0 -1 80302 10 10 5
+E
+path~
+This narrow dirt path is really just a ledge above the rapidly flowing
+
+Dakari River.  The water below rushes by and the cliff towers above. 
+
+Heading north, the water has gained a foothold and risen above the level
+
+of the rock and dirt.
+
+~
+E
+cliff east~
+The cliff on the east rises at a near vertical most of the way along its
+
+length.  A few small scrawny trees grow in the loose dirt and rock that
+
+make up the cliff face.
+
+~
+-1
+S
+
+#80262
+Dakari River~
+The river flows east to west here between two grand cliffs along the
+
+north and south.  The northern cliff raises to impressive height, a sheer
+
+rock wall from top to bottom.  Outcrops of rock mixed with loose dirt and
+
+the occasional tree dot the tall, steep cliff to the south.  A narrow
+
+dirt path emerges from the water heading south.
+
+~
+~
+-235405311 13 9 0
+D1
+~
+~
+0 -1 80305 10 10 5
+D2
+~
+~
+0 -1 80261 10 10 5
+D3
+~
+~
+0 -1 80303 10 10 5
+-1
+S
+
+#80263
+Dakari River~
+Flowing east to west, the waters of the Dakari River travel slowly.  The
+
+north bank of the waterway rises as a steep cliff, reaching to incredible
+
+height.  Rocky outcroppings dot the southern cliff face, which contains
+
+the moving water in that direction.  Treetops can be seen on the heights
+
+of the southern wall.
+
+~
+~
+-235405311 13 9 0
+D1
+~
+~
+0 -1 80264 10 10 5
+D3
+~
+~
+0 -1 80306 10 10 5
+-1
+S
+
+#80264
+Dakari River~
+The water flows lazily from east to west here between the steep canyon
+
+walls along the north and south banks.  High above, atop the southern
+
+ridge, thick stands of trees can be seen.  The cliff to the north is a
+
+near vertical wall of craggy rock, reaching toward the sky.  The sounds
+
+of falling water can be heard off to the east.
+
+~
+~
+-235405311 13 9 0
+D3
+~
+~
+0 -1 80263 10 10 5
+-1
+S
+
+#80265
+A Rocky Tunnel~
+This rocky tunnel leads south and east.  Opening on the east, this tunnel
+
+enters a larger one of smoothly carved stone.  This tunnel is braced by
+
+heavy wooden timbers, which run up the walls and across the ceiling.  By
+
+the looks of the loose rock, if a support timber failed, you'd be buried
+
+by falling stone.
+
+~
+~
+-235274240 11 5 0
+D1
+~
+~
+0 -1 80251 10 10 5
+D2
+~
+~
+0 -1 80266 10 10 5
+E
+wooden timbers~
+Rough cut timbers, thick as an ogre's leg, brace the rock that has been
+
+hewn from the mountains core.  They are pegged to the walls by iron bolts
+
+driven into the rock.  The timber spanning the ceiling spans from wall to
+
+wall, resting atop the vertical wall timbers.
+
+~
+E
+rock~
+The loose rock of the ceiling is supported only by the heavy wooden
+
+timbers spanning its width.
+
+~
+-1
+S
+
+#80266
+Bend in a Rocky Tunnel~
+The tunnel takes a turn to the north and west here.  Loose stone litters
+
+the rough floor, possibly fallen from the walls and ceiling.  Thick
+
+wooden beams run above you head, mounted to likewise thick beams standing
+
+along the walls.
+
+~
+~
+-235274240 11 5 0
+D0
+~
+~
+0 -1 80265 10 10 5
+D3
+~
+~
+0 -1 80267 10 10 5
+E
+stone~
+So many small stones lie scattered about on the floor that it is near
+
+impossible to move without kicking them about.  The stones are the same
+
+as that of the mountain around you.
+
+~
+E
+wooden timbers~
+Rough cut timbers, thick as an ogre's leg, brace the rock that has been
+
+hewn from the mountains core.  They are pegged to the walls by iron bolts
+
+driven into the rock.  The timber spanning the ceiling spans from wall to
+
+wall, resting atop the vertical wall timbers.
+
+~
+E
+floor~
+The roughly hewn stone of the floor is uneven and rocky.  Small stones
+
+lie scattered about.
+
+~
+-1
+S
+
+#80267
+A Rocky Tunnel~
+The wooden beam supporting the ceiling here shows signs of stress, small
+
+cracks and splinters appear across its length.  The rough, rocky floor
+
+lies littered with stones and piles of dust.  A wooden sign has been
+
+tacked to a support timber on the south wall.  The tunnel runs both east
+
+and west.
+
+~
+~
+-235274240 11 5 0
+D1
+~
+~
+0 -1 80266 10 10 5
+D3
+~
+~
+0 -1 80268 10 10 5
+E
+wooden beam timber~
+The rough cut timber, thick as an ogre's leg, supporting the ceiling is
+
+bowing down under the immense weight of the rock above.  Thin cracks are
+
+visible along its length and long slender splinters are sticking out at
+
+the center of the bow.
+
+~
+E
+sign~
+The small wooden sign has been painted with a not so steady hand.  It
+
+reads: 
+
+
+@I            @rget out way when dey pushin big rock@n
+
+~
+-1
+S
+
+#80268
+Rocky Tunnel - Near a Large Stone Slab~
+A large stone slab blocks the tunnel to the west.  Timbers lay buckled
+
+and cracked here, having obviously failed to support the stone slab's
+
+great weight.  A narrow pathway extends toward the north and the main
+
+tunnel continues off to the east.
+
+~
+~
+-235274240 11 5 0
+D0
+~
+~
+0 -1 80269 10 10 5
+D1
+~
+~
+0 -1 80267 10 10 5
+E
+slab stone~
+A huge piece of stone has fallen from above, effectively blocking the
+
+tunnel's progress west.  Smashed timbers stick out from beneath the
+
+enormous stone slab.
+
+~
+E
+timbers~
+Cracked and broken, these timbers lie scattered about the floor in pieces. 
+
+Some of these cracked and broken timbers are sticking out from beneath
+
+the slab of stone.
+
+~
+-1
+S
+
+#80269
+Narrow Tunnel - Leaning Support Timbers~
+Heavy wooden timbers lean against the northern wall of this narrow tunnel. 
+
+The floor is quite rough, the rock hacked away to create a path around
+
+the stone slab to the southwest.  The ceiling is deeply cracked and in
+
+dire need of support.  This narrow tunnel extends to the west and
+
+reenters the main tunnel to the south.
+
+~
+~
+-235274240 11 5 0
+D2
+~
+~
+0 -1 80268 10 10 5
+D3
+~
+~
+0 -1 80270 10 10 5
+E
+timbers wooden~
+Fresh beams of thick wood stand against the wall ready to be put to use
+
+supporting the rocky wall and ceiling.
+
+~
+E
+crack ceiling~
+The ceiling above is riddles with deep cracks and fissures.  It looks
+
+quite unstable, almost as though its ready to fall at anytime.
+
+~
+E
+floor~
+The roughly hewn stone of the floor is uneven and rocky.  Small stones
+
+lie scattered about.
+
+~
+E
+slab~
+A huge slab of stone fills the tunnel to the south.  It reaches from
+
+floor to nearly the ceiling.  The top of it is covered in loose stone and
+
+jagged rock.
+
+~
+-1
+S
+
+#80270
+Narrow Tunnel - Broken Support Timbers~
+Smashed and shattered pieces of timber lay scattered about.  A large
+
+stone slab fills the tunnel to the south, its top buried in piles of
+
+fallen rock.  The ceiling is criss-crossed by cracks, looking rather
+
+unstable.  This rough, rocky tunnel runs east and south.
+
+~
+~
+-235274240 11 5 0
+D1
+~
+~
+0 -1 80269 10 10 5
+D2
+~
+~
+0 -1 80271 10 10 5
+E
+crack ceiling~
+The ceiling above is riddles with deep cracks and fissures.  It looks
+
+quite unstable, almost as though its ready to fall at anytime.
+
+~
+E
+slab~
+A huge slab of stone fills the tunnel to the south.  It reaches from
+
+floor to nearly the ceiling.  The top of it is covered in loose stone and
+
+jagged rock.
+
+~
+E
+timbers~
+Cracked and broken, these timbers lie scattered about the floor in pieces. 
+
+Some of these cracked and broken timbers are sticking out from beneath
+
+the slab of stone.
+
+~
+-1
+S
+
+#80271
+Rocky Tunnel - West of a Stone Slab~
+A large stone slab blocks the tunnel heading east.  The floor here is a
+
+jumble of loose stone, piled in places and scattered in others.  Heavy
+
+wooden support beams stand bent and buckled, just barely keeping the rock
+
+above you at bay.  The tunnel turns north into a narrow tunnel around the
+
+slab, and continues to the west.
+
+~
+~
+-235274240 11 5 0
+D0
+~
+~
+0 -1 80270 10 10 5
+D3
+~
+~
+0 -1 80272 10 10 5
+E
+slab~
+A huge slab of stone fills the tunnel to the east.  It reaches from floor
+
+to nearly the ceiling.  The top of it covered in loose stone and jagged
+
+rock.
+
+~
+E
+timber wooden support~
+These wooden supports are bent, twisted and buckled.  Wide cracks line
+
+the length of the ceiling beam and splinters are visible all along it.
+
+~
+E
+pile stone~
+Tall piles of stone line the walls and some are in the central portion of
+
+the tunnel.
+
+~
+-1
+S
+
+#80272
+Rocky Tunnel Junction~
+Heavy wooden timbers support the rocky tunnel here.  Jagged and crushed
+
+stone lie jumbled on the floor.  A larger tunnel enters from the north,
+
+itself filled with dusty air.  Heading east, this tunnel continues.
+
+~
+~
+-235274240 11 5 0
+D0
+~
+~
+0 -1 80273 10 10 5
+D1
+~
+~
+0 -1 80271 10 10 5
+E
+wooden timbers~
+Rough cut timbers, thick as an ogre's leg, brace the rock that has been
+
+hewn from the mountains core.  They are pegged to the walls by iron bolts
+
+driven into the rock.  The timber spanning the ceiling spans from wall to
+
+wall, resting atop the vertical wall timbers.
+
+~
+E
+jagged crushed stone~
+Jagged pieces of stone are scattered around the rough floor here and
+
+there.
+
+~
+-1
+S
+
+#80273
+Dusty Tunnel~
+Hanging dust fills the air here in this wide coarsely hewn rock tunnel. 
+
+Thick wooden beams span the ceiling, supporting the stone above.  A
+
+smaller, rockier tunnel enters to the south, while this wide dusty tunnel
+
+continues north.
+
+~
+~
+-235274239 11 6 0
+D0
+~
+~
+0 -1 80274 10 10 5
+D2
+~
+~
+0 -1 80272 10 10 5
+E
+wooden timbers~
+Rough cut timbers, thick as an ogre's leg, brace the rock that has been
+
+hewn from the mountains core.  They are pegged to the walls by iron bolts
+
+driven into the rock.  The timber spanning the ceiling spans from wall to
+
+wall, resting atop the vertical wall timbers.
+
+~
+E
+dust~
+The air here is billowing with a thick stone dust.  It surrounds you and
+
+covers you.
+
+~
+-1
+S
+
+#80274
+Dusty Tunnel Intersection~
+Thick dusty air fills this tunnel, coating your body and tickling your
+
+throat.  Wide wooden beams hold aloft the stone above.  This wide, dusty
+
+tunnel heads to both the north and south.  Entering the tunnel from the
+
+east and west are two smaller, roughly hewn tunnels.
+
+~
+~
+-235274239 11 6 0
+D0
+~
+~
+0 -1 80275 10 10 5
+D1
+~
+~
+0 -1 80280 10 10 5
+D2
+~
+~
+0 -1 80273 10 10 5
+D3
+~
+~
+0 -1 80286 10 10 5
+E
+dust~
+The air here is billowing with a thick stone dust.  It surrounds you and
+
+covers you.
+
+~
+E
+wooden beams~
+Rough cut wooden beams brace the stone walls and ceiling around the
+
+tunnels heading east and west.  Another runs the width of this dusty
+
+tunnel, bearing the weight of the mountain above.
+
+~
+-1
+S
+
+#80275
+Dusty Tunnel~
+Thick dust floats in the air here in this wide tunnel.  Wide wooden beams
+
+span the ceiling supporting the stone above.  A extensive pile of stones
+
+stands along the east wall, its height nearly reaches the ceiling.  This
+
+rocky tunnel through the mountain runs north and south 
+
+~
+~
+-235274239 11 6 0
+D0
+~
+~
+0 -1 80276 10 10 5
+D2
+~
+~
+0 -1 80274 10 10 5
+E
+pile stones~
+Midsized boulders stand in a tall pile along the east wall.  They are
+
+thickly covered in dust and await their eventual removal.
+
+~
+E
+dust~
+The air here is billowing with a thick stone dust.  It surrounds you and
+
+covers you.
+
+~
+E
+wooden timbers~
+Rough cut timbers, thick as an ogre's leg, brace the rock that has been
+
+hewn from the mountains core.  They are pegged to the walls by iron bolts
+
+driven into the rock.  The timber spanning the ceiling spans from wall to
+
+wall, resting atop the vertical wall timbers.
+
+~
+-1
+S
+
+#80276
+Dusty Tunnel~
+Wide wooden beams run the width of the ceiling, supporting the rock above. 
+
+This spacious, dusty tunnel is filled with dust, floating thickly in the
+
+air.  A narrow tunnel enters from the west and another from the east. 
+
+This tunnel continues north and south.
+
+~
+~
+-235274239 11 6 0
+D0
+~
+~
+0 -1 80277 10 10 5
+D1
+~
+~
+0 -1 80278 10 10 5
+D2
+~
+~
+0 -1 80275 10 10 5
+D3
+~
+~
+0 -1 80284 10 10 5
+E
+wooden beams~
+Rough cut wooden beams brace the stone walls and ceiling around the
+
+tunnels heading east and west.  Another runs the width of this dusty
+
+tunnel, bearing the weight of the mountain above.
+
+~
+E
+dust~
+The air here is billowing with a thick stone dust.  It surrounds you and
+
+covers you.
+
+~
+-1
+S
+
+#80277
+Dusty Tunnel - Base of a Ladder~
+A wide iron ladder is bolted to north wall of the tunnel here heading up
+
+into another cavern.  Thick dust hangs in the air, covering your body. 
+
+Thick wooden beams brace the walls and ceiling, supporting earth and rock. 
+
+The tunnel continues to the south.
+
+~
+~
+-235274239 11 6 0
+D2
+~
+~
+0 -1 80276 10 10 5
+D4
+~
+~
+0 -1 80289 10 10 5
+E
+ladder iron~
+A thick iron ladder is bolted to the wall with iron spikes driven into
+
+the tunnel wall.  It leads up along the wall into another cavern above.
+
+~
+E
+dust~
+The air here is billowing with a thick stone dust.  It surrounds you and covers you.
+
+~
+E
+wooden timbers~
+Rough cut timbers, thick as an ogre's leg, brace the rock that has been
+
+hewn from the mountains core.  They are pegged to the walls by iron bolts
+
+driven into the rock.  The timber spanning the ceiling spans from wall to
+
+wall, resting atop the vertical wall timbers.
+
+~
+-1
+S
+
+#80278
+Roughly Hewn Tunnel~
+The rock of this tunnel is very rough.  The floor and walls are a mess of
+
+protruding rock.  Heavy wooden timber runs the width of the ceiling,
+
+holding at bay the sure to fall rock.  Small stones lay in the recesses
+
+around the projecting rocks of the floor.  This tunnel continues south
+
+and enters a wide dusty tunnel to the west.
+
+~
+~
+-235274239 11 5 0
+D2
+~
+~
+0 -1 80279 10 10 5
+D3
+~
+~
+0 -1 80276 10 10 5
+E
+wooden timbers~
+Rough cut timbers, thick as an ogre's leg, brace the rock that has been
+
+hewn from the mountains core.  They are pegged to the walls by iron bolts
+
+driven into the rock.  The timber spanning the ceiling spans from wall to
+
+wall, resting atop the vertical wall timbers.
+
+~
+E
+rock stones~
+Jagged stone protrudes from the floor the length of this tunnel.  Smaller
+
+stones lie in the recesses between the jutting rock.
+
+~
+-1
+S
+
+#80279
+Roughly Hewn Tunnel~
+Protruding rock on the floor of this tunnel makes it difficult to walk
+
+safely.  The rock has been gouged deeply all around the tunnel here,
+
+ripped from the core of the mountain above.  Thick wooden timber holds
+
+the ceiling rock aloft.  The east wall shows signs of condensation
+
+forming between the jutting rock.  This rocky, rough tunnel continues
+
+north and south.
+
+~
+Secret door east.  'Push Wall' etc.
+
+~
+-235274239 11 5 0
+D0
+~
+~
+0 -1 80278 10 10 5
+D1
+the rock wall~
+~
+2283 -1 80281 10 10 5
+D2
+~
+~
+0 -1 80280 10 10 5
+E
+rock condensation jutting~
+The east wall has small drops of water running down its length.  The
+
+stone of this wall is looser than that of the rest of the tunnel.
+
+~
+E
+wooden timbers~
+Rough cut timbers, thick as an ogre's leg, brace the rock that has been
+
+hewn from the mountains core.  They are pegged to the walls by iron bolts
+
+driven into the rock.  The timber spanning the ceiling spans from wall to
+
+wall, resting atop the vertical wall timbers.
+
+~
+A
+push~
+east wall condensation jutting rock~
+if( is_open( room, east ) )
+
+  act_tochar( #already, ch );
+
+else {
+
+  if( rflag( reset1, room ) )
+
+    open( room, east );
+
+  act_tochar( #push, ch );
+
+  act_notchar( #pushr, ch );
+
+  remove_rflag( reset1, room );
+
+  }
+
+~
+E
+push~
+@yThe wall crumbles as you push against it, opening a passage to the east.@n
+
+~
+E
+pushr~
+@yThe wall crumbles as $n pushes against it, opening a passage to the east.@n
+
+~
+E
+already~
+@yThe east wall has already been pushed down.@n
+
+~
+!
+0 0 0
+-1
+S
+
+#80280
+Roughly Hewn Tunnel~
+Rugged rock bulges out from the floor and walls of this tunnel.  Heavy
+
+wooden timber runs across the ceiling, keeping the rock above in place. 
+
+This rough, rocky tunnel continues to the north.  To the west, it enters
+
+a wide dusty tunnel.
+
+~
+~
+-235274239 11 5 0
+D0
+~
+~
+0 -1 80279 10 10 5
+D3
+~
+~
+0 -1 80274 10 10 5
+E
+wooden timbers~
+Rough cut timbers, thick as an ogre's leg, brace the rock that has been
+
+hewn from the mountains core.  They are pegged to the walls by iron bolts
+
+driven into the rock.  The timber spanning the ceiling spans from wall to
+
+wall, resting atop the vertical wall timbers.
+
+~
+-1
+S
+
+#80281
+A Cool, Damp Cavern~
+Pools of muddy water collect here in this rock and earthen cavern.  The
+
+air is cool and damp, condensation drips from the rocky walls.  Streaked
+
+and smeared mud cover the floor and walls, as though something has
+
+dragged across them.  The rock of the west wall appears to be quite loose
+
+and crumbly.  The cavernous tunnel heads north.
+
+~
+Secret door west. 'Push Wall' etc.
+
+~
+-235274239 11 5 0
+D0
+~
+~
+0 -1 80282 10 10 5
+D3
+the rock wall~
+~
+2283 -1 80279 10 10 5
+E
+pool muddy water~
+Shallow pools of muddy water, more like puddles, lie on the floor here
+
+and there in this cavern.  As water slowly drips off the walls, it
+
+lightly splashes into the ever so slowly growing puddles.
+
+~
+E
+streaked smeared~
+Mud has been streaked along the floor and walls.  On the walls it only
+
+reaches about knee high to an ogre.  Bits of fur and bone can be seen
+
+scattered throughout it.
+
+~
+E
+fur bone~
+Small tufts of a light brown fur and slivers of bone are stuck in the
+
+mud, it looks like something has dragged it's prey roughly through here.
+
+~
+E
+walls rock~
+The rock of the west wall is loose and crumbly.  Condensation drips down
+
+its length.
+
+~
+A
+push~
+west wall loose crumbly~
+if( is_open( room, west ) )
+
+  act_tochar( #already, ch );
+
+else {
+
+  if( rflag( reset1, room ) )
+
+    open( room, west );
+
+  act_tochar( #push, ch );
+
+  act_notchar( #pushr, ch );
+
+  remove_rflag( reset1, room );
+
+  }
+
+~
+E
+push~
+@yThe wall crumbles as you push against it, opening a passage to the west.@n
+
+~
+E
+pushr~
+@yThe wall crumbles as $n pushes against it, opening a passage to the west.@n
+
+~
+E
+already~
+@yThe west wall has already been pushed down.@n
+
+~
+!
+0 0 0
+-1
+S
+
+#80282
+A Cool, Muddy Cavern~
+The air here is cool and damp.  Condensation collects upon the rocks
+
+sticking up from the floor and out from the walls.  Streaks of mud are
+
+smeared across the floor and up the walls.  The tunnel heads north and
+
+south.
+
+~
+~
+-235274239 11 5 0
+D0
+~
+~
+0 -1 80283 10 10 5
+D2
+~
+~
+0 -1 80281 10 10 5
+-1
+S
+
+#80283
+A Cold, Muddy Cavern~
+Cold, muddy water is seeping into this cavern from the earthen north
+
+wall.  Pools of water and mud collect amongst the rocks on the floor. 
+
+The continual sound of dripping water is muffled by the mud accumulated
+
+on the rocky walls.  The only exit is south, away from this wet, muddy
+
+cavern.
+
+~
+~
+-235274239 11 5 0
+D2
+~
+~
+0 -1 80282 10 10 5
+-1
+S
+
+#80284
+Quarry Tunnel~
+Chunks of rock lie stacked along the walls of this dug out tunnel.  The
+
+floor is completely covered in small fragments of stone, the walls a
+
+mixture of jutting stone and small crevices.  A stack of thick timber
+
+lies near the west wall, presumably in preparation to brace the ceiling
+
+above.  The tunnel continues to the south, and exits into a wide, dusty
+
+tunnel on the east.
+
+~
+~
+-235274239 11 9 0
+D1
+~
+~
+0 -1 80276 10 10 5
+D2
+~
+~
+0 -1 80285 10 10 5
+-1
+S
+
+#80285
+Quarry Tunnel - Dead End~
+The south wall of this tunnel stops the progression into the mountain's
+
+core.  Deep gouges line its face and smaller holes bore into it.  Piles
+
+of stone clutter the floor near the east and west walls.  The only exit
+
+is north, away from the tunnel's end.
+
+~
+~
+-235274239 11 9 0
+D0
+~
+~
+0 -1 80284 10 10 5
+-1
+S
+
+#80286
+Quarry Tunnel - Piled Stone~
+A massive pile of stone stands near the west wall, reaching nearly to the
+
+ceiling.  Loose stone lies scattered on the floor, kicked mostly to the
+
+sides of the tunnel.  Thick timbers bolster the ceiling and walls,
+
+keeping at bay the mountain surrounding you.  A wide, dusty tunnel can be
+
+seen to the east and this tunnel continues to the south.
+
+~
+~
+-235274240 11 5 0
+D1
+~
+~
+0 -1 80274 10 10 5
+D2
+~
+~
+0 -1 80287 10 10 5
+-1
+S
+
+#80287
+Quarry Tunnel - Cracking Walls~
+Great cracks scour the walls along the length of this passageway.  Tiny
+
+stones occasionally tumble from the ceiling and walls here, adding to the
+
+rock cluttered floor.  Large timbers rest against the east wall, in
+
+preparation to brace the rock surrounding you.  The tunnel goes on to the
+
+north and south.
+
+~
+~
+-235274240 11 5 0
+D0
+~
+~
+0 -1 80286 10 10 5
+D2
+~
+~
+0 -1 80288 10 10 5
+-1
+S
+
+#80288
+Quarry Tunnel - Under a Hanging Slab~
+An enormous slab of stone hangs from the ceiling here at the tunnels end. 
+
+The south wall shows signs of demolition, its face scarred and battered. 
+
+A brass ramrod sticks out from the west wall, bent sharply by a slab of
+
+ceiling stone.  The tunnel runs only to the north.
+
+~
+~
+-235274240 11 5 0
+D0
+~
+~
+0 -1 80287 10 10 5
+-1
+S
+
+#80289
+Quarry Tunnel - Above a Ladder~
+A wide iron ladder enters this rocky tunnel through a hole in the floor
+
+near the north wall.  Thick wood beams run the length of the ceiling,
+
+supporting the overhanging rock.  A tarnished and dented brass lantern
+
+hangs from a protruding rock on the west wall.  The tunnel begins to
+
+widen heading east.
+
+~
+~
+-235274239 11 5 0
+D1
+~
+~
+0 -1 80290 10 10 5
+D5
+~
+~
+0 -1 80277 10 10 5
+-1
+S
+
+#80290
+Quarry Tunnel~
+This wide, rocky tunnel has been hacked from the core of the mountain. 
+
+Stone lies piled along the walls and a fine layer of dust covers
+
+everything.  The central portion of the rough stone floor is clear of
+
+dust, having seen abundant travel.  This tunnel continues to both the
+
+west and south.
+
+~
+~
+-235274239 11 5 0
+D2
+~
+~
+0 -1 80291 10 10 5
+D3
+~
+~
+0 -1 80289 10 10 5
+-1
+S
+
+#80291
+Quarry Tunnel - Intersection~
+Huge slabs of stone are stacked in the center of this room.  The ceiling
+
+here is quite high, jagged rock can be seen lining its surface.  Deep
+
+grooves are present in the floor, entering this chamber from the west. 
+
+Four exits lead from this room, one in each cardinal direction.
+
+~
+~
+-235274239 11 7 0
+D0
+~
+~
+0 -1 80290 10 10 5
+D1
+~
+~
+0 -1 80294 10 10 5
+D2
+~
+~
+0 -1 80293 10 10 5
+D3
+~
+~
+0 -1 80292 10 10 5
+-1
+S
+
+#80292
+Quarry Tunnel~
+The stone surrounding you has been hewn from the mountain above.  Deep
+
+grooves marr the floor of this quarry tunnel heading to the east and
+
+south.  Small bits of stone fall from the ceiling occasionally, adding to
+
+the many littering the floor.
+
+~
+~
+-235274239 11 9 0
+D1
+~
+~
+0 -1 80291 10 10 5
+D2
+~
+~
+0 -1 80297 10 10 5
+-1
+S
+
+#80293
+Quarry - Stone Chamber~
+This small stone chamber has been gouged from the core of the mountain
+
+surrounding you.  A broad wooden table stands in the center of the room,
+
+papers strewn about its top.  A wooden rack is fastened to the west wall,
+
+numerous hooks along its length.  The only exit is north, into a larger
+
+portion of the quarry.
+
+~
+~
+-235274239 11 5 0
+D0
+~
+~
+0 -1 80291 10 10 5
+-1
+S
+
+#80294
+Smoky Quarry Tunnel~
+The stone of the ceiling here has been stained a sooty black.  An acrid
+
+smoke,entering from a narrow tunnel to the south, is gently pushed to the
+
+west by a soft breeze flowing through the tunnel.  The breeze carries the
+
+scent of the outside world into these underground caves.
+
+~
+~
+-235274239 11 9 0
+D1
+~
+~
+0 -1 80295 10 10 5
+D2
+~
+~
+0 -1 80300 10 10 5
+D3
+~
+~
+0 -1 80291 10 10 5
+-1
+S
+
+#80295
+Quarry Tunnel~
+A soft breeze, bearing scents of the outdoors, blows from east to west
+
+along this rocky quarry tunnel.  The rock forming the tunnel has been
+
+hacked from the core of the mountain around you.  This rock strewn tunnel
+
+continues to the east and west.
+
+~
+~
+-235274239 11 9 0
+D1
+~
+~
+0 -1 80296 10 10 5
+D3
+~
+~
+0 -1 80294 10 10 5
+-1
+S
+
+#80296
+Above a Cave In~
+The floor of this tunnel has collapsed into the room below.  The walls
+
+and ceiling here are deeply cracked and loose stone falls intermittently. 
+
+A gently breeze blows through the gaping hole in the floor, bringing the
+
+scents of the outdoors with it.  The rubble of the cave in below can be
+
+used to climb down into the room below.  The tunnel also continues to the
+
+west.
+
+~
+Dex <= 10 and you fall going down.
+
+~
+-235274239 11 9 0
+D3
+~
+~
+0 -1 80295 10 10 5
+D5
+~
+~
+0 -1 80257 10 10 5
+A
+~
+~
+if( find_stat( ch, dex ) <= 10 ) {
+
+  act_tochar( #nodex, ch );
+
+  act_notchar( #nodexr, ch );
+
+  transfer( ch, find_room( 80257 ) );
+
+  i = 3d3;
+
+  dam_message( ch, i, "falling down the rubble" );
+
+  inflict( ch, ch, i, "falling down the rubble" );
+
+  }
+
+else {
+
+  act_tochar( #down, ch );
+
+  act_notchar( #downr, ch );
+
+  transfer( ch, find_room( 80257 ) );
+
+  }
+
+~
+E
+nodex~
+@eYou carefully start your climb down the rubble, but a loose stone
+
+causes you to stumble.@n 
+
+~
+E
+nodexr~
+@e$n starts to climb down the rubble, but a loose stone causes $m to
+
+stumble.@n 
+
+~
+E
+down~
+You carefully climb down the rubble.
+
+~
+E
+downr~
+$n climbs down the rubble.
+
+~
+!
+3 0 32
+-1
+S
+
+#80297
+Quarry Tunnel~
+Deep grooves are present on the floor, heading north and south.  The
+
+walls and ceiling are of rough rock which has been hewn from the mountain
+
+surrounding you.  Loose stone and dust drop from the ceiling above,
+
+adding to the stone littered floor.
+
+~
+~
+-235274239 11 9 0
+D0
+~
+~
+0 -1 80292 10 10 5
+D2
+~
+~
+0 -1 80298 10 10 5
+-1
+S
+
+#80298
+Quarry Tunnel~
+Deep grooves are present on the floor, heading to the north and east. 
+
+The walls and ceiling are of rough rock which has been hewn from the
+
+mountain surrounding you.  Loose stone and dust drop from the ceiling
+
+above, adding to the stone littered floor.
+
+~
+~
+-235274239 11 9 0
+D0
+~
+~
+0 -1 80297 10 10 5
+D1
+~
+~
+0 -1 80299 10 10 5
+-1
+S
+
+#80299
+Quarry Tunnel's End~
+Deep grooves in the floor run underneath a sturdily built wooden cart. 
+
+The south wall of this rocky alcove has been quarried deeper than toward
+
+the east or north.  Small, jagged pieces of stone clutter the floor here,
+
+some piled deeply against the bottom of the southern wall.  The only exit
+
+is to the west, following the quarried tunnel.
+
+~
+~
+-235274239 11 9 0
+D3
+~
+~
+0 -1 80298 10 10 5
+-1
+S
+
+#80300
+Smokefilled Tunnel~
+This narrow stone tunnel is filled with a choking black smoke.  The
+
+overhanging rock is nearly impossible to make out through the acrid haze. 
+
+The smoke is billowing from the south, heading northward.  This smoky
+
+tunnel leads to both the north and south 
+
+~
+~
+-235274239 11 5 0
+D0
+~
+~
+0 -1 80294 10 10 5
+D2
+~
+~
+0 -1 80307 10 10 5
+-1
+S
+
+#80301
+Dakari River - Rapids~
+@WRapids !!@n Large boulders jut from the rushing water, forcing it to
+
+splash and spray.  The quickly flowing water crashes into a tall cliff to
+
+the south and turns west.  A narrow dirt path can be seen just above the
+
+waters edge to the east and beyond that a tall, rocky cliff raises high
+
+above you.
+
+~
+~
+-235405311 6 9 0
+D0
+~
+~
+0 -1 80308 10 10 5
+D1
+~
+~
+0 -1 80260 10 10 5
+D3
+~
+~
+0 -1 80304 10 10 5
+A
+~
+~
+if( find_stat( ch, dex ) < 16 ) {
+
+if( random( 1, 4 ) == 4 ) {
+
+    act_tochar( #push_west, ch );
+
+    act_notchar( #push_westr, ch );
+
+    i = 3d3;
+
+    dam_message( ch, i, "slamming into the rocks" );
+
+    inflict( ch, ch, i, "slamming into the rocks" );
+
+    transfer( ch, find_room( 80304 ) );
+
+    }
+
+  else {
+
+    act_tochar( #grab, ch );
+
+    act_notchar( #grabr, ch );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #grab, ch );
+
+  act_notchar( #grabr, ch );
+
+  }
+
+~
+E
+push_west~
+@CThe churning water slams you into the rocky southern wall and pushes
+
+you downriver.@n 
+
+~
+E
+push_westr~
+@cThe churning water slams $n into the rocky southern wall and pushes $m
+
+downriver.@n 
+
+~
+E
+grab~
+@BYou cling to a rocky outcropping as the water churns about.@n 
+
+~
+E
+grabr~
+@b$n clings to a rocky outcropping as the water churns about.@n 
+
+~
+E
+try~
+@BWater surges about as you attempt to cling to a rocky outcropping on
+
+the southern wall.@n 
+
+~
+!
+1 0 11
+A
+~
+~
+act_tochar( #north, ch );
+
+~
+E
+north~
+@CThe swiftly flowing water prevents travel in that direction.@n
+
+~
+!
+3 0 1
+-1
+S
+
+#80302
+Dakari River - Rapids~
+@WRapids !!@n The river rushes around you, tumbling and tossing you about
+
+as it charges south.  Large boulders impede its passage, forcing water to
+
+splash and spray.
+
+~
+Only exit is south due to the rapids forcing player south to 80301.
+
+~
+-235405311 6 9 0
+D2
+~
+~
+0 -1 80301 10 10 5
+A
+~
+~
+if( is_player( ch ) ) {
+
+  act_tochar( #force, ch );
+
+  act_notchar( #forcer, ch );
+
+  wait( 1 );
+
+  transfer( ch, find_room( 80301 ) );
+
+  acode( find_room( 80301 ), 1 );
+
+  }
+
+~
+E
+force~
+@BThe water churns around you, pushing you downriver in its powerful grasp.@n
+
+~
+E
+forcer~
+@bThe water churns around $n, pushing $m downriver.@n
+
+~
+!
+1 0 7
+-1
+S
+
+#80303
+Sharp Turn in the Dakari River~
+The Dakari River is forced on a southerly direction here as the northern
+
+wall containing it bends to the south.  Tall, steep cliffs raise to the
+
+north and west, while the river flows from east to south.  The water
+
+deepens heading south, and white water can be seen splashing off boulders
+
+sticking out through the surface.
+
+~
+~
+-235405311 8 9 0
+D1
+~
+~
+0 -1 80262 10 10 5
+D2
+~
+~
+0 -1 80302 10 10 5
+-1
+S
+
+#80304
+Dakari River - Beyond the Rapids~
+The Dakari River runs deep while turning north and east here.  A tall,
+
+sheer cliff can be seen jutting from the north to the south, forcing the
+
+river's course.  Rocky walls rise high above, containing the river to the
+
+west and south.  Frothing water, bounding off of boulders is seen upriver
+
+to the east.
+
+~
+~
+-235405311 6 9 0
+D1
+~
+~
+0 -1 80301 10 10 5
+-1
+S
+
+#80305
+Dakari River~
+Shallow water flows from east to west in this deep and narrow canyon. 
+
+Looking up, the great northern wall towers above you, standing tall and
+
+proud.  The rocky southern wall sprouts scraggy trees here and there as
+
+well as boulders protuding precariously along its height 
+
+~
+~
+-235405311 13 9 0
+D1
+~
+~
+0 -1 80306 10 10 5
+D3
+~
+~
+0 -1 80262 10 10 5
+-1
+S
+
+#80306
+Dakari River~
+Rocky walls contain the westerly flow of the Dakari River here along the
+
+north and south.  The water is rather shallow here, small stones can be
+
+seen rolling along the river bed, pushed along by the neverending water. 
+
+Atop the southern cliff, trees stand green and tall.
+
+~
+~
+-235405311 13 9 0
+D1
+~
+~
+0 -1 80263 10 10 5
+D3
+~
+~
+0 -1 80305 10 10 5
+-1
+S
+
+#80307
+Forging Chamber~
+A dense blackish smoke roils from a glowing forge near the center of this
+
+chamber.  Heavy metal chain lies coiled on the floor and in bins along
+
+the walls.  Blacksmithing tools are held on shelves and are strewn about
+
+a worktable near the forge.  The smoke rolls along the ceiling and into a
+
+tunnel to the north, which is the only exit from this room.
+
+~
+~
+-235274239 11 9 0
+D0
+~
+~
+0 -1 80300 10 10 5
+-1
+S
+
+#80308
+Dakari River - Rapids~
+Under Construction.
+
+~
+~
+-235405311 6 9 0
+D2
+~
+~
+0 -1 80301 10 10 5
+-1
+S
+
+#0
+

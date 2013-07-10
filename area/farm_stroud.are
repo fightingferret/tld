@@ -1,0 +1,1369 @@
+#AREA
+Stroud Farm~
+Janua Ylena~
+~
+
+0 0
+0
+#ROOMS
+
+#38750
+Farm Yard~
+You are just inside the gate of a small farm.  Small rocks that are
+
+beaten into the ground serve as a path from the gate on the east to the
+
+barn south of you.  A barley field planted north of the path waves gently
+
+with the breeze and the golden heads of the grain look ready for harvest. 
+
+A wooden farmhouse stands on the southwest and a small path leads across
+
+the grassy yard to the east to the front door.  A low stone wall
+
+surrounds the farm and the only apparent way out is through the gate to
+
+the east.
+
+~
+[Belgar] grassy yard to the east? that's the gate, right? isn't the yard to the west?
+
+~
+-235405311 2 5 0
+D0
+~
+~
+0 -1 38752 10 10 5
+D1
+small wooden gate~
+~
+131 -1 77038 10 10 5
+D2
+barn doors~
+~
+1 -1 38751 10 10 5
+D3
+~
+~
+128 -1 38756 10 10 5
+78 17 1509949540 -2 0
+-1
+S
+
+#38751
+A Small, Tidy Barn~
+This is a very small barn, with just enough room for one or two ponies to
+
+live here comfortably.  The wooden walls are in good repair and the hay
+
+scattered on the floor is clean.  Simple, pony-sized bits and harnesses
+
+hang neatly on a rack beside the large double doors.  Overhead, in the
+
+low loft, you can see several bales of hay and some closed burlap bags.
+
+~
+[Janua] the trough needs a fix like the cistern did
+
+~
+-235405311 2 9 0
+D0
+barn doors~
+~
+1 -1 38750 10 10 5
+E
+livery gear rack~
+A variety of pony-sized bits and harnesses hang neatly on the rack.
+
+~
+E
+loft~
+The loft is small, tucked in under the rafters of the barn.  It looks too
+
+small to hold a person, but provides a storage space for the bails of hay
+
+and sacks that are stored there.
+
+~
+A
+get~
+bit harness~
+act_tochar( #msg, ch );
+
+~
+E
+msg~
+You have no use for pony-sized livery.
+
+~
+!
+0 0 0
+2297 137 1509949540 3 0
+3431 17 1509949540 -2 0
+-1
+S
+
+#38752
+Barley Field~
+Tall barley grows here in neat rows running east and west.  The grain is
+
+golden and heavy on the stalks and sways gently in the breeze.  The field
+
+continues north and west, and is contained by a low stone wall on the
+
+east.  Over the wall you can see a road that runs north and south.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 38753 10 10 5
+D2
+~
+~
+0 -1 38750 10 10 5
+D3
+~
+~
+0 -1 38755 10 10 5
+E
+wall~
+The low stone wall is made of uncut stones fitted together with a brown
+
+mortar.  It is in good repair and looks easy to climb.
+
+~
+E
+barley~
+The tall stalks of barley have dense, bearded spikes of flowers, each
+
+made up of three single-seeded spikelets.
+
+~
+A
+climb~
+wall 1 east~
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+transfer( ch, find_room( 77044 ) );
+
+act_notchar( #arrive, ch );
+
+~
+E
+msg~
+You climb over the low stone wall.
+
+~
+E
+rmsg~
+$n climbs over the low stone wall, heading east.
+
+~
+E
+arrive~
+$n comes climbing over the low stone wall on the west.
+
+~
+!
+0 0 0
+2301 9 1509949490 3 0
+-1
+S
+
+#38753
+Barley Field~
+You are in the northeast corner of a field of barley that ripples gently
+
+in the wind.  A low stone wall defines the boundaries of the farm on the
+
+north and east.  Over the wall on the east you see a road, and a large
+
+building sits just over the northern wall.  To the west you look down the
+
+long, straight rows of barley and the field continues south.
+
+~
+~
+-235405311 2 9 0
+D2
+~
+~
+0 -1 38752 10 10 5
+D3
+~
+~
+0 -1 38754 10 10 5
+E
+barley grain~
+The tall stalks of barley have dense, bearded spikes of flowers, each
+
+made up of three single-seeded spikelets.
+
+~
+A
+climb~
+wall stone 1 east~
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+transfer( ch, find_room( 77010 ) );
+
+act_notchar( #arrive, ch );
+
+~
+E
+msg~
+You climb over the low stone wall heading east.
+
+~
+E
+rmsg~
+$n climbs over the low stone wall, heading east.
+
+~
+E
+arrive~
+$n comes climbing over the low stone wall on the west.
+
+~
+!
+0 0 0
+2301 9 1509949540 3 0
+2301 9 1509949520 3 0
+2302 9 1509949540 3 0
+-1
+S
+
+#38754
+Barley Field~
+Long rows of barley surround you, growing as far as the low stone wall on
+
+the north and continuing to the south.  A wooden building lies just over
+
+the wall on the north and the strong smell of ale drifts on the breeze.
+
+Across the field on the south you can see a small farmhouse and barn, and
+
+to the west you can see a grove of trees.
+
+~
+~
+-235405311 2 9 0
+D1
+~
+~
+0 -1 38753 10 10 5
+D2
+~
+~
+0 -1 38755 10 10 5
+D3
+~
+~
+0 -1 38763 10 10 5
+E
+barley grain~
+The tall stalks of barley have dense, bearded spikes of flowers, each
+
+made up of three single-seeded spikelets.
+
+~
+2301 9 1509949470 3 0
+2301 9 1509949540 3 0
+-1
+S
+
+#38755
+Barley Field~
+You are on the southern edge of a small barley field that grows north,
+
+east and west.  The heavily laden stalks of grain sway gently in the
+
+breeze and fill the air with their sweet smell.  To the south a small
+
+farmhouse stands on the other side of a well-tended lawn.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 38754 10 10 5
+D1
+~
+~
+0 -1 38752 10 10 5
+D2
+~
+~
+0 -1 38756 10 10 5
+D3
+~
+~
+0 -1 38762 10 10 5
+E
+barley grain~
+The tall stalks of barley have dense, bearded spikes of flowers, each
+
+made up of three single-seeded spikelets.
+
+~
+2301 9 1509949530 3 0
+-1
+S
+
+#38756
+Farm Yard~
+A little, rock-paved path curves through the green grass here, heading
+
+from the open area on the east to the front door of a small farmhouse
+
+directly south of you.  The grass is cut short and appears to be
+
+well-tended.  A barley field grows north of the yard and a small wooden
+
+structure lies off to the west.
+
+~
+[Belgar] prairie dogs shouldn't move and still be in their burrows.
+
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 38755 10 10 5
+D1
+~
+~
+128 -1 38750 10 10 5
+D2
+farmhouse door~
+~
+131 -1 38757 10 10 5
+D3
+~
+~
+0 -1 38761 10 10 5
+208 41 1509949540 3 0
+207 73 1509949540 3 0
+207 73 1509949540 3 0
+207 73 1509949540 3 0
+207 73 1509949540 3 0
+207 73 1509949480 3 0
+207 73 1509949470 3 0
+207 73 1509949460 3 0
+207 9 1509949450 3 0
+2322 9 1509949540 3 0
+-1
+S
+
+#38757
+A Small, Cozy Farmhouse~
+This small house is very sparse and immaculately clean.  Its light wooden
+
+floors gleam from a recent polishing and the whitewashed walls are clean
+
+and unadorned.  A wide fireplace spans most of the western wall and
+
+serves as a source of warmth as well as a cooking place.  Various pots
+
+and pans are hung from pegs around the hearth which is made of large,
+
+rounded river rocks fitted tightly together.  A steep staircase in the
+
+southeast corner of the room leads upstairs.
+
+~
+~
+-235405311 2 9 0
+D0
+front door~
+~
+131 -1 38756 10 10 5
+D2
+back door~
+~
+1 -1 38758 10 10 5
+D4
+~
+~
+0 -1 38769 10 10 5
+E
+fireplace hearth~
+The fireplace covers most of the western wall.  It is made of light
+
+colored, rounded river rocks cemented together with a light tan material. 
+
+Pots, pans and other various cooking tools hang from pegs set into a
+
+strip of polished wood that is mounted above the hearth.  The hearth is
+
+clean but stained with black from many fires.  A metal spit with two
+
+hooks for hanging pots above the fire sits inside the hearth.
+
+~
+E
+1 south back~
+The wooden door is painted white and its large window is covered with a
+
+simple yellow curtain.
+
+~
+E
+1 north front~
+The door is made of wood and has a large window that is covered with a
+
+light blue curtain.
+
+~
+3427 17 1509949540 -2 0
+3428 17 1509949540 -2 0
+3428 17 1509949540 -2 0
+3428 17 1509949540 -2 0
+2321 9 1509949540 3 0
+-1
+S
+
+#38758
+Flower Garden~
+Blooms of every imaginable color grow in profusion in this small garden. 
+
+The garden doesn't look planned, with flowers that seem to be planted at
+
+random along the small path that leads from the back door of the
+
+farmhouse on the north around to the yard on the west.  It looks like
+
+someone wanted to plant as many flowers as possible in this small space. 
+
+The flowers are so profuse that their sweet, heady scent is almost
+
+overpowering.
+
+~
+~
+-235405311 2 9 0
+D0
+back door~
+~
+1 -1 38757 10 10 5
+D3
+~
+~
+0 -1 38759 10 10 5
+E
+flowers blooms garden~
+A multitude of flowers is crowded into this small garden.  Their blooms
+
+range in color from bright @Rred@n to brilliant @Mcrimson@n to more subdued
+
+@Wwhite@n petals.
+
+~
+E
+path~
+The path is simply a packed dirt walkway where no flowers have been
+
+planted.
+
+~
+E
+house farmhouse 1 north~
+The small farmhouse is made of whitewashed wood with a steeply pointed
+
+roof.  What looks like the back door lies directly to the north.
+
+~
+A
+pick~
+flowers~
+i = 2d1;
+
+if( rflag( reset0, room ) ) {
+
+  i = random( 1, 4 );
+
+  if( i == 1 ) {
+
+    act_tochar( #none, ch );
+
+    act_notchar( #rnone, ch );
+
+    dam_message( ch, i, "the thorn" );
+
+    inflict( ch, mob, i, "a thorn prick" );
+
+    remove_rflag( reset0, room );
+
+    }
+
+  if( i == 2 ) {
+
+    act_tochar( #heather, ch );
+
+    act_notchar( #rheather, ch );
+
+    obj_to_char( oload( 1498 ), ch );
+
+    remove_rflag( reset0, room );
+
+    }
+
+  if( i == 3 ) {
+
+    act_tochar( #aster, ch );
+
+    act_notchar( #raster, ch );
+
+    obj_to_char( oload( 2768 ), ch );
+
+    remove_rflag( reset0, room );
+
+    }
+
+  if( i == 4 ) {
+
+    act_tochar( #pink, ch );
+
+    act_notchar( #rpink, ch );
+
+    obj_to_char( oload( 1997 ), ch );
+
+    remove_rflag( reset0, room );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #none, ch );
+
+  act_notchar( #rnone, ch );
+
+  dam_message( ch, i, "the thorn" );
+
+  inflict( ch, mob, i, "a thorn prick" );
+
+  }
+
+~
+E
+heather~
+You pick a delicate purple flower.
+
+~
+E
+rheather~
+$n picks a delicate purple flower.
+
+~
+E
+aster~
+You pick a beautiful, soft flower.
+
+~
+E
+raster~
+$n picks a beautiful, soft flower.
+
+~
+E
+pink~
+You pick a pink budding flower.
+
+~
+E
+rpink~
+$n picks a pink budding flower.
+
+~
+E
+none~
+You grasp a flower stem and pull, but a sharp thorn jabs into your hand.
+
+~
+E
+rnone~
+$n grabs the stem of a flower, but jumps up with a gasp.
+
+~
+!
+0 0 0
+-1
+S
+
+#38759
+Farm Yard~
+The low stone wall that surrounds the farm curves around here and creates
+
+a little grassy corner.  A wooden door has been built into the ground
+
+that looks like a typical covering for a storage cellar.  To the east you
+
+can see a small flower garden and north the lawn continues past a small
+
+farmhouse.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 38760 10 10 5
+D1
+~
+~
+0 -1 38758 10 10 5
+D5
+cellar door~
+~
+131 -1 38768 10 10 5
+E
+cellar door~
+The door is small and made from planks of wood fitted tightly together. 
+
+Its whitewashed surface is clean and free of dirt, and appears in very
+
+good condition.  It opens into the ground and probably leads to an
+
+underground storage cellar.
+
+~
+3436 49 1509949540 -2 0
+3443 81 1509949540 -2 0
+3443 81 1509949490 -2 0
+3443 81 1509949490 -2 0
+755 9 1509949540 3 0
+755 9 1509949540 3 0
+-1
+S
+
+#38760
+Farm Yard~
+A low, stone wall that surrounds the farm lies directly on the west and
+
+lush grass grows right up to the stones.  The yard spans the distance
+
+between the wall and a little whitewashed farmhouse on the east.  The
+
+wall of the farmhouse is dominated by the exterior masonry of a fireplace
+
+that nearly spans the entire width of the wall and tapers to a thin
+
+chimney above the roofline.  An elm tree with many branches grows here
+
+and provides a comfortable, shady spot to relax.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 38761 10 10 5
+D2
+~
+~
+0 -1 38759 10 10 5
+E
+elm tree~
+The tree is tall and looks like it has been growing for many years.  It
+
+stands near the little house on the east.  Its branches spread out
+
+overhead and shade most of this section of the yard.
+
+~
+755 9 1509949540 3 0
+1246 17 1509949540 -2 0
+-1
+S
+
+#38761
+Farm Yard~
+Thick, green grass covers the ground here except in front of the doorway
+
+on the small building to the west.  Looking at the building you can see
+
+that it is a chicken coop and you can hear the noises of hens come from
+
+inside its walls.  The grassy lawn continues south along the western side
+
+of a small farmhouse and a barley field grows north of here.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 38762 10 10 5
+D1
+~
+~
+0 -1 38756 10 10 5
+D2
+~
+~
+0 -1 38760 10 10 5
+D3
+coop door~
+~
+131 -1 38766 10 10 5
+755 9 1509949540 3 0
+78 17 1509949540 -2 0
+2309 9 1509949540 3 0
+2311 9 1509949500 3 0
+2310 9 1509949500 3 0
+-1
+S
+
+#38762
+Barley Field~
+This is the southeastern corner of a small barley field and the tall
+
+stalks of grain stretch out to the north and east.  You can see down the
+
+straight rows looking east, and looking west you see a small orchard. 
+
+The field shifts and ripples in the breeze, and the sweet scent of the
+
+grain fills the air.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 38763 10 10 5
+D1
+~
+~
+0 -1 38755 10 10 5
+D2
+~
+~
+0 -1 38761 10 10 5
+D3
+~
+~
+0 -1 38765 10 10 5
+E
+barley grain~
+The tall stalks of barley have dense, bearded spikes of flowers, each
+
+made up of three single-seeded spikelets.
+
+~
+2301 9 1509949540 3 0
+-1
+S
+
+#38763
+Barley Field~
+You are at the northwestern corner of a barley field.  A low stone wall
+
+runs across the northern edge of the farm here, defining that edge of the
+
+field.  A small orchard has been planted to the west and you can smell
+
+the ripe apples from here.
+
+~
+~
+-235405311 2 9 0
+D1
+~
+~
+0 -1 38754 10 10 5
+D2
+~
+~
+0 -1 38762 10 10 5
+D3
+~
+~
+0 -1 38764 10 10 5
+E
+barley field~
+The tall stalks of barley have dense, bearded spikes of flowers, each
+
+made up of three single-seeded spikelets.
+
+~
+-1
+S
+
+#38764
+Apple Orchard~
+Two neat rows with six apple trees in each row grow in this small orchard. 
+
+The trees are small but productive, as you can see a multitude of ripe or
+
+nearly ripe apples within their limbs.  A low stone wall marks the
+
+northwestern edge of the farm and blocks you from moving north or west. 
+
+A barley field begins east of here and the rows of trees continue to the
+
+south.
+
+~
+~
+-235405311 2 9 0
+D1
+~
+~
+0 -1 38763 10 10 5
+D2
+~
+~
+0 -1 38765 10 10 5
+A
+pick~
+apples fruit~
+if( rflag( reset0, room )) {
+
+  if( random( 1, 4 ) == 1 ) {
+
+    act_tochar( #none, ch );
+
+    remove_rflag( reset0, room );
+
+    }
+
+  else {
+
+    act_tochar( #msg, ch );
+
+    act_notchar( #rmsg, ch );
+
+    if( random( 1, 6 ) == 1 ) {
+
+      act_tochar( #unripe, ch );
+
+      obj_to_char( oload( 3440 ), ch );
+
+      }
+
+    if( random( 1, 10 ) == 1 ) {
+
+      act_tochar( #rotten, ch );
+
+      obj_to_char( oload( 702 ), ch );
+
+      }
+
+    else
+
+      obj_to_char( oload( 49 ), ch );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #none, ch );
+
+~
+E
+msg~
+You pick a small apple from one of the trees.
+
+~
+E
+rmsg~
+$n picks a small apple from one of the trees.
+
+~
+E
+none~
+There are no more apples within reach.
+
+~
+E
+unripe~
+As you take the apple you notice that it isn't quite ripe.
+
+~
+E
+rotten~
+As you take the apple you notice that one side is rather soft.
+
+~
+!
+0 0 0
+473 9 1509949490 3 0
+-1
+S
+
+#38765
+Apple Orchard~
+Small apple trees grow here in two orderly rows running from here to the
+
+north.  A few rotten apples lay on the ground, but the small orchard
+
+appears well-maintained.  A small wooden building sits on the south and
+
+you can hear the sounds of chickens clucking and scratching coming from
+
+inside.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 38764 10 10 5
+D1
+~
+~
+0 -1 38762 10 10 5
+A
+pick~
+apples fruit~
+if( rflag( reset0, room )) {
+
+  if( random( 1, 4 ) == 1 ) {
+
+    act_tochar( #none, ch );
+
+    remove_rflag( reset0, room );
+
+    }
+
+  else {
+
+    act_tochar( #msg, ch );
+
+    act_notchar( #rmsg, ch );
+
+    if( random( 1, 6 ) == 1 ) {
+
+      act_tochar( #unripe, ch );
+
+      obj_to_char( oload( 3440 ), ch );
+
+      }
+
+    if( random( 1, 10 ) == 1 ) {
+
+      act_tochar( #rotten, ch );
+
+      obj_to_char( oload( 702 ), ch );
+
+      }
+
+    else
+
+      obj_to_char( oload( 49 ), ch );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #none, ch );
+
+~
+E
+msg~
+You pick an apple from one of the trees.
+
+~
+E
+rmsg~
+$n picks an apple from one of the trees.
+
+~
+E
+none~
+There are no apples within reach.
+
+~
+E
+rotten~
+As you pull the apple from the tree you notice that one side is rather
+
+soft.
+
+~
+E
+unripe~
+As you take the apple from the tree you notice that it is not completely
+
+ripe.
+
+~
+!
+0 0 0
+473 9 1509949490 3 0
+-1
+S
+
+#38766
+Chicken Coop~
+This small structure is, quite obviously, a chicken coop.  Low wooden
+
+shelves line the northern and southern walls where hens have built their
+
+nests.  A miniature trough of water rests on the floor at the western
+
+edge of the room and the floor is scattered with fresh chicken droppings. 
+
+It is apparently cleaned quite often, however, because the natural mess
+
+has not accumulated much.
+
+~
+change vnum for item in acode 2 to key, it's an egg right now
+
+[Janua] key in acode 2 will open a wooden box hidden in the house
+
+[Belgar] Two black bantam chicken -> chickens
+
+~
+-235405311 2 9 0
+D1
+coop door~
+~
+131 -1 38761 10 10 5
+E
+shelf nests~
+Low, wooden shelves line the walls on the north and south and provide a
+
+place for chickens to nest in comfort.
+
+~
+E
+trough~
+The small trough is at chicken height and filled with water.
+
+~
+A
+drink~
+trough~
+act_tochar( #msg, ch );
+
+~
+E
+msg~
+You lean over to have a drink from the trough and see where chickens have
+
+made a mess in the water.  Perhaps this isn't the best place to quench
+
+your thirst.
+
+~
+!
+0 0 0
+A
+search~
+nest shelf~
+if( rflag( reset0, room ) ) {
+
+  if( random( 1, 6 ) == 1 ) {
+
+    act_tochar( #none, ch );
+
+    act_notchar( #rnone, ch );
+
+    remove_rflag( reset0, room );
+
+    }
+
+  else {
+
+    act_tochar( #egg, ch );
+
+    act_notchar( #regg, ch );
+
+    obj_to_char( oload( 3439 ), ch );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #none, ch );
+
+  act_notchar( #rnone, ch );
+
+  }
+
+~
+E
+none~
+You search through the nests and find nothing.
+
+~
+E
+rnone~
+$n searches through the nests and finds nothing.
+
+~
+E
+egg~
+You search through the nests and find a chicken egg.
+
+~
+E
+regg~
+$n searches through the nests and finds a chicken egg.
+
+~
+!
+0 0 0
+A
+search~
+trough~
+if( rflag( reset0, room ) ) {
+
+  if( random( 1, 20 ) == 1 ) {
+
+    act_tochar( #key, ch );
+
+    act_notchar( #rkey, ch );
+
+    obj_to_char( oload( 3439 ), ch );
+
+    remove_rflag( reset0, room );
+
+    }
+
+  else {
+
+    act_tochar( #none, ch );
+
+    act_notchar( #rnone, ch );
+
+    remove_rflag( reset0, room );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #none, ch );
+
+  act_notchar( #rnone, ch );
+
+  }
+
+~
+E
+none~
+You fish around in the murky water and only get a dirty hand.
+
+~
+E
+rnone~
+$n fishes around in the watering trough but doesn't find anything.
+
+~
+E
+key~
+You fish around in the murky water and find a small key!
+
+~
+E
+rkey~
+$n fishes around in the watering trough and finds a small key!
+
+~
+!
+0 0 0
+2310 9 1509949540 3 0
+2310 9 1509949530 3 0
+2310 9 1509949530 3 0
+2311 9 1509949540 3 0
+2311 9 1509949520 3 0
+-1
+S
+
+#38767
+Farm 1~
+Under Construction.
+
+~
+~
+-235405311 2 9 0
+-1
+S
+
+#38768
+A Small, Dark Cellar~
+This small, dark chamber has been dug into the ground and shored up with
+
+bricks.  Bags of grain sit neatly on the ground and a shelf containing
+
+fruits and vegetables canned in glass jars lines one wall.  A small torch
+
+holder sits empty on the eastern wall, beside a very steep wooden
+
+staircase that leads up to the cellar door.
+
+~
+[Janua] maybe reset a bag of grain here
+
+~
+-235274236 2 9 0
+D4
+cellar door~
+~
+131 -1 38759 10 10 5
+E
+shelf shelves~
+The shelves are filled with glass jars that contain a variety of fruits
+
+and vegetables.  Someone must clean this cellar regularly because not a
+
+speck of dust can be found on the shelves.
+
+~
+896 9 1509949540 3 0
+896 9 1509949490 3 0
+-1
+S
+
+#38769
+Upstairs in a Small Farmhouse~
+The gabled walls and large, open windows give this room a cozy look.  A
+
+light breeze ruffles the simple white curtains and brings the fresh smell
+
+of a barley field into the room.  The floor is made of unstained wood and
+
+is free of dust and lint.  Nothing adorns the whitewashed walls except a
+
+series of pegs along the eastern wall where assorted clothing hangs
+
+neatly.
+
+~
+[Janua] make the key for the box
+
+~
+-235405311 2 9 0
+D5
+~
+~
+0 -1 38757 10 10 5
+E
+pegs clothing clothes~
+The clothing is small and made of simple cloth for a rather short person. 
+
+It is clean and looks like it is in good repair, hung neatly on the pegs
+
+which line the eastern wall.
+
+~
+A
+~
+~
+if( has_obj( 3429, ch ) )
+
+  act_tochar( #msg, ch );
+
+else
+
+  continue;
+
+~
+E
+msg~
+You cannot make it down the stairs carrying a bed.
+
+~
+!
+3 0 32
+A
+move push~
+bed~
+if( rflag( reset0, room ) ) {
+
+  act_tochar( #msg, ch );
+
+  act_notchar( #rmsg, ch );
+
+  obj_to_room( oload( 3434 ), room );
+
+  remove_rflag( reset0, room );
+
+  }
+
+else {
+
+  act_tochar( #nothing, ch );
+
+  act_notchar( #rnothing, ch );
+
+  }
+
+~
+E
+msg~
+You push one of the small beds to the side of the room, revealing a small
+
+wooden box!
+
+~
+E
+rmsg~
+$n pushes one of the small beds to the side of the room, revealing a
+
+small wooden box!
+
+~
+E
+nothing~
+You move the beds all around the room. Now doesn't that look much better?
+
+~
+E
+rnothing~
+$n moves one of the beds, but nothing is under it.
+
+~
+!
+0 0 0
+A
+search~
+under bed~
+act_tochar( #msg, ch );
+
+~
+E
+msg~
+You search under one of the beds and your hand brushes against a small
+
+wooden box.
+
+~
+!
+0 0 0
+3429 17 1509949540 -2 0
+3429 17 1509949540 -2 0
+3429 17 1509949540 -2 0
+-1
+S
+
+#0
+

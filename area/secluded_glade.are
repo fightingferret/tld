@@ -1,0 +1,2616 @@
+#AREA
+Secluded Glade~
+Ylena~
+secluded glade~
+
+20 0
+0
+#ROOMS
+
+#62500
+At a Corner in the Secluded Glade~
+Thick growth of trees and bushes prevents any further movement to the
+
+east and south.  From just beyond the wall of foliage to the east can be
+
+heard the lapping of water, while strung amongst the leaves and branches
+
+to the south is a vine bearing brilliant orange flowers that almost look
+
+like lanterns.  The ground is carpeted with thick green grasses that has
+
+dotted through it yellow daisies.  This carpeting continues to the north
+
+and west.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 62501 10 10 5
+D3
+~
+~
+0 -1 62510 10 10 5
+A
+pick~
+daisy target~
+acode( find_room( 62504 ), 1 );
+
+~
+!
+0 0 0
+2286 9 1509949540 3 0
+-1
+S
+
+#62501
+A Secluded Glade - At a Foliage Wall~
+Thick green grasses and vibrant yellow daisies carpet the floor of this
+
+glade, while to the east a wall of compactly growing trees and bushes
+
+form an impenetrable barrier.  The sound of lapping water can be faintly
+
+made out past the foliage wall, while to the west the ground looks to be
+
+slightly rocky.  Both the wall and the luxuriant carpet continue to the
+
+south.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 62502 10 10 5
+D2
+~
+~
+0 -1 62500 10 10 5
+D3
+~
+~
+0 -1 62509 10 10 5
+A
+pick~
+daisy target~
+acode( find_room( 62504 ), 1 );
+
+~
+!
+0 0 0
+-1
+S
+
+#62502
+A Secluded Glade~
+This glade has been carpeted with a rug of thick green grasses that has
+
+been dotted through with bright yellow daisies.  The carpets expands to
+
+the north, west and south, while to the east are the lapping waters of a
+
+lake.  To the north and south can also be seen thick growths of trees and
+
+bushes that give the impression of forming walls.
+
+~
+[Calos] Bouquet
+
+~
+-235405303 2 9 0
+D0
+~
+~
+0 -1 62503 10 10 5
+D1
+~
+~
+0 -1 77092 10 10 5
+D2
+~
+~
+0 -1 62501 10 10 5
+D3
+~
+~
+0 -1 62508 10 10 5
+A
+pick~
+daisy target~
+acode( find_room( 62503 ), 1 );
+
+~
+!
+0 0 0
+-1
+S
+
+#62503
+A Secluded Glade - At a Wall of Foliage~
+A carpet of thick green grasses and bright yellow daisies leads up to a
+
+wall of trees and bushes that prevent any further movement to the east. 
+
+From just beyond this impenetrable wall the sound of lapping water can be
+
+heard.  The wondrous carpet that decorates this glade continues toward
+
+the west and south.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 62504 10 10 5
+D2
+~
+~
+0 -1 62502 10 10 5
+D3
+~
+~
+0 -1 62507 10 10 5
+A
+pick~
+daisy flower~
+act_tochar( #trampled, ch );
+
+~
+E
+trampled~
+The daisies are too trampled to be worth picking.
+
+~
+!
+0 0 0
+-1
+S
+
+#62504
+A Secluded Glade - A Corner in the Wall of Foliage~
+Vines with pale violet flowers are strung like garlands amongst the
+
+tightly compacted trees and bushes that make an impenetrable barrier to
+
+both the north and east.  The sound of water lapping can just be heard
+
+from the east.  Yellow daisies speckle the ground here and more of these
+
+bright flowers can be seen in the meadow to the west as wall as to the
+
+south.  The wall of vegetation also continues toward the south.
+
+~
+~
+-235405311 2 9 0
+D2
+~
+~
+0 -1 62503 10 10 5
+D3
+~
+~
+0 -1 62505 10 10 5
+A
+pick~
+daisy flower~
+if( rflag( reset0, room ) ) {
+
+  i = random( 1, 100 );
+
+  if( i <= 3 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #white, ch );
+
+    act_notchar( #rwhite, ch );
+
+    obj_to_char( oload( 3476 ), ch );
+
+    }
+
+  if( i >= 4 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #pick, ch );
+
+    act_notchar( #rpick, ch );
+
+    obj_to_char( oload( 3475 ), ch );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #trampled, ch );
+
+~
+E
+pick~
+You pick one of the bright yellow daisies.
+
+~
+E
+rpick~
+$n picks one of the bright yellow daisies.
+
+~
+E
+white~
+@WYou discover a white daisy!@n
+
+~
+E
+rwhite~
+@W$n discovers a white daisy!@n
+
+~
+E
+trampled~
+The daisies are too trampled to be worth picking.
+
+~
+!
+0 0 0
+2287 9 1509949540 3 0
+-1
+S
+
+#62505
+A Secluded Glade~
+Bright yellow daisies are dotted throughout the lush green grass that
+
+carpets the relatively flat meadow here.  Just to the west a small hill
+
+begins to rise, while more flat meadow continues to the east and north
+
+and south.  To the far-north and far-east a thick wall of trees and
+
+shrubs can be seen.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 62531 10 10 5
+D1
+~
+~
+0 -1 62504 10 10 5
+D2
+~
+~
+0 -1 62507 10 10 5
+D3
+~
+~
+0 -1 62506 10 10 5
+A
+pick~
+daisy target~
+acode( find_room( 62503 ), 1 );
+
+~
+!
+0 0 0
+-1
+S
+
+#62506
+A Secluded Glade - A Ring of Mushrooms~
+Growing here amongst the thick grasses and yellow daisies that carpets
+
+this glade is a ring of mushrooms.  The ground here, like the ground to
+
+the west and south, has begun to rise up to form a small hill to the
+
+south-west, while to the north and east the flowered meadow flattens out.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 62530 10 10 5
+D1
+~
+~
+0 -1 62505 10 10 5
+D2
+~
+~
+0 -1 62516 10 10 5
+D3
+~
+~
+0 -1 62518 10 10 5
+E
+ring mushroom~
+This ring of mushrooms is made of two varieties, a small red-capped type,
+
+and a brown mushroom.  The diameter of the circle is approximately three
+
+feet, and the grass within looks like it has been flattened down somehow. 
+
+Looking at the this ring of mushrooms a vague warning, or maybe
+
+recommendation, pops to mind, something about what happens to those that
+
+enter such a circle.
+
+~
+A
+enter stand~
+circle mushrooms ring~
+if( rflag( reset0, room ) ) {
+
+  act_tochar( #haze, ch );
+
+  act_notchar( #rhaze, ch );
+
+  i = random( 1, 100 );
+
+  if( i >= 95 ) {
+
+    act_tochar( #arrive, ch );
+
+    transfer( ch, find_room( 45022 ) );
+
+    act_notchar( #rarrive, ch );
+
+    end;
+
+    }
+
+  if( i == 94 ) {
+
+    if( rflag( reset5, room ) ) {
+
+      remove_rflag( reset5, room );
+
+      act_tochar( #arrive, ch );
+
+      transfer( ch, find_room( 62517 ) );
+
+      act_notchar( #rarrive, ch );
+
+      end;
+
+      }
+
+    else {
+
+      act_tochar( #arrive, ch );
+
+      transfer( ch, find_room( 62537 ) );
+
+      act_notchar( #rarrive, ch );
+
+      }
+
+    }
+
+  if( i >= 2 ) {
+
+    act_tochar( #arrive, ch );
+
+    transfer( ch, find_room( 62537 ) );
+
+    act_notchar( #rarrive, ch );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #gone, ch );
+
+  act_notchar( #rgone, ch );
+
+  }
+
+~
+E
+haze~
+@CWhen you initially enter the circle of mushrooms nothing seems to
+
+happen, then, a misty haze descends around you, obscuring all vision. 
+
+The haze starts to twirl around you, slowly at first, then faster and
+
+faster until you feel as though you have been lifted up of the ground.@n
+
+
+~
+E
+rhaze~
+@CAt first, when $n enters the circle of mushrooms nothing seems to
+
+happen, when suddenly from nowhere, a curtain of misty haze encircles
+
+them, almost obscuring them from sight.  The haze then starts to twirl
+
+around $n, getting faster and faster till he is no longer visible.  Just
+
+as suddenly as the misty haze arrived, it departs, leaving no sign of
+
+your friend to be seen.@n 
+
+~
+E
+arrive~
+@CThe swirly mist starts to slow down, and you feel as though you are
+
+being slowly lowered to the ground.  Then suddenly, the mists depart and
+
+you find that you have been transported to another place.@n 
+
+~
+E
+rarrive~
+@CA column of swirling mists appears, lowers to the ground, then
+
+dissipates, leaving behind $n.@n 
+
+~
+E
+gone~
+You step within the wilted mushroom ring, but nothing happens.
+
+~
+E
+rgone~
+$n steps within the wilted mushroom ring, but nothing happens.
+
+~
+!
+0 0 0
+A
+pick get~
+mushrooms~
+if( !rflag( reset2, room ) )
+
+  act_tochar( #wilted, ch );
+
+else {
+
+  if( !cflag( 93, ch ) ) {
+
+    set_cflag( 93, ch );
+
+    act_tochar( #gopick, ch );
+
+    act_notchar( #rgopick, ch );
+
+    send_to_room( #warn, room );
+
+    end;
+
+    }
+
+  if( rflag( reset1, room ) ) {
+
+    set_cflag( 94, ch );
+
+    act_tochar( #gopick, ch );
+
+    act_notchar( #rgopick, ch );
+
+    send_to_room( #warned, room );
+
+    send_to_room( #cloud, room );
+
+    mload( 2325, room );
+
+    mob = mob_in_room( 2325, room );
+
+    victim = ch;
+
+    attack( mob, victim, 3d5+10, "right fist" );
+
+    attack( mob, victim, 3d5+10, "left fist" );
+
+    remove_rflag( reset1, room );
+
+    end;
+
+    }
+
+  if( !rflag( reset1, room ) ) {
+
+    if( !mob_in_room( 2325, room ) ) {
+
+      remove_rflag( reset2, room );
+
+      remove_rflag( reset0, room );
+
+      act_tochar( #pick, ch );
+
+      act_notchar( #rpick, ch );
+
+      i = random( 1, 2 );
+
+      if( i == 1 )
+
+        obj_to_char( oload( 885 ), ch );
+
+      if( i == 2 )
+
+        obj_to_char( oload( 1113 ), ch );
+
+      }
+
+    if( mob_in_room( 2325, room ) ) {
+
+      act_tochar( #stops, ch );
+
+      act_notchar( #rstops, ch );
+
+      }
+
+    }
+
+  }
+
+~
+E
+warn~
+From out of nowhere, a booming voice sounds:
+
+
+@MI wouldn't do that if I were you!! @n
+
+~
+E
+warned~
+@MYou were warned!  Now prepare to pay the price for your inability to
+
+heed that warning!@n 
+
+~
+E
+cloud~
+@BOverhead a crack of lightning sounds off, the winds pick up suddenly
+
+buffetting anything in the area, and then, in a flash of brightly colored
+
+lights, a strange being appears!!@n
+
+~
+E
+pick~
+You manage to pick one of the mushrooms from the ring, and at that moment
+
+the rest of the mushroom ring whithers and dies almost instantly.
+
+~
+E
+gopick~
+You lean down to pick one of the mushrooms.
+
+~
+E
+rgopick~
+$n leans down to pick one of the mushrooms.
+
+~
+E
+rpick~
+$n manages to pick one of the mushrooms from the ring, and at that
+
+moment, the rest of the mushroom ring whithers and dies almost instantly.
+
+~
+E
+stops~
+Fylaenar blocks your attempts to pick one of the mushrooms.
+
+~
+E
+rstops~
+Fylaenar blocks $n's attempt to pick one of the mushrooms.
+
+~
+E
+wilted~
+All the mushrooms have wilted and died.
+
+~
+E
+sight~
+No description.
+
+wilted
+
+~
+!
+0 0 0
+A
+pick~
+nose~
+remove_cflag( 93, ch );
+
+send_to_room( #gross, room );
+
+remove_cflag( 94, ch );
+
+~
+E
+gross~
+That's gross!!
+
+~
+!
+0 0 0
+A
+~
+~
+if( !mob_in_room( 2325, room ) )
+
+  continue;
+
+if( mob_in_room( 2325, room ) ) {
+
+  if( !cflag( 94, ch ) ) {
+
+    act_tochar( #no, ch );
+
+    act_notchar( #rno, ch );
+
+    send_to_room( #leave, room );
+
+    junk_mob( mob_in_room( 2325, room ) );
+
+    end;
+
+    }
+
+  if( cflag( 94, ch ) ) {
+
+    act_tochar( #point, ch );
+
+    act_notchar( #rpoint, ch );
+
+    send_to_room( #defiler, room );
+
+    mob = mob_in_room( 2325, room );
+
+    attack( mob, ch, 3d5+10, "left fist" );
+
+    attack( mob, ch, 3d5+10, "right fist" );
+
+    }
+
+  }
+
+~
+E
+defiler~
+@MDon't think that I have forgotten your act of defilement here!@n
+
+~
+E
+point~
+Fylaenar looks at you. for a moment, then extends a finger at you.
+
+~
+E
+rpoint~
+Fylaenar looks at $n for a moment, then extends a finger at $m.
+
+~
+E
+no~
+Fylaenar looks at you for a moment, then a brief smile plays upon his
+
+lips.
+
+~
+E
+rno~
+Fylaenar looks at $n for a moment, then a brief smile plays upon his lips.
+
+~
+E
+leave~
+@MI have no quarrel to continue here, so I shall be off to my home.@n
+
+
+
+@CA fine mist descends suddenly around Fylaenar.  It quickly thickens to
+
+a point where you can no longer see into, or through it, then, just as
+
+suddenly as it arrived, it is gone, and so is Fylaenar.@n 
+
+~
+!
+1 0 15
+-1
+S
+
+#62507
+A Secluded Glade~
+This flat meadow is decorated with a carpet of thick green grasses and
+
+bright yellow daisies that also stretches to all points of the compass. 
+
+To the far east a thick bank of trees can be seen, while off in the
+
+distance to the west something seems to sit on top of a small hill.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 62505 10 10 5
+D1
+~
+~
+0 -1 62503 10 10 5
+D2
+~
+~
+0 -1 62508 10 10 5
+D3
+~
+~
+0 -1 62516 10 10 5
+A
+pick~
+daisy target~
+acode( find_room( 62504 ), 1 );
+
+~
+!
+0 0 0
+-1
+S
+
+#62508
+A Secluded Glade~
+A blanket of bright yellow daisies and thick green grasses lies upon the
+
+ground here, to the north, and east this blanket continues to spread,
+
+while to the west and south rocks seem to litter the ground.  A hint of
+
+purple can also been seen amongst the rocks.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 62507 10 10 5
+D1
+~
+~
+0 -1 62502 10 10 5
+D2
+~
+~
+0 -1 62509 10 10 5
+D3
+~
+~
+0 -1 62515 10 10 5
+A
+pick~
+daisy target~
+acode( find_room( 62503 ), 1 );
+
+~
+!
+0 0 0
+2288 9 1509949540 3 0
+-1
+S
+
+#62509
+A Secluded Glade - Rocky Ground~
+Surrounded by a blanket of green and yellow to the north, east and south,
+
+this patch of rocky ground would almost seem out of place if it werent
+
+for the purple heather growing amongst it.  The rocks themselves vary in
+
+size from fist sized stones up to ones that could easily provide a good
+
+seat.  All the rocks however are firmly embedded in the ground, almost as
+
+if they are growing from the soil.  To the north more rocks and heather
+
+can be seen.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 62508 10 10 5
+D1
+~
+~
+0 -1 62501 10 10 5
+D2
+~
+~
+0 -1 62510 10 10 5
+D3
+~
+~
+0 -1 62514 10 10 5
+A
+pick~
+heather sprig flower~
+if( rflag( reset0, room ) ) {
+
+  if( random( 1, 5 ) < 4 ) {
+
+    act_tochar( #nope, ch );
+
+    remove_rflag( reset0, room );
+
+    }
+
+  else {
+
+    act_tochar( #pick, ch );
+
+    act_notchar( #rpick, ch );
+
+    obj_to_char( oload( 3477 ), ch );
+
+    }
+
+  }
+
+~
+E
+nope~
+The rocks get in the way of your attempt to pick some of the pretty
+
+heather.
+
+~
+E
+pick~
+You manage to pick a sprig of heather.
+
+~
+E
+rpick~
+$n manages to pick a sprig of heather.
+
+~
+!
+0 0 0
+-1
+S
+
+#62510
+A Secluded Glade~
+Bright yellow daisies are strewn throughout the thick green grasses that
+
+cover the ground here.  A slight hill starts to rise to the west while to
+
+the north the ground looks to be a bit rocky.  More of these bright
+
+daisies can be seen in the meadow to the south.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 62509 10 10 5
+D1
+~
+~
+0 -1 62500 10 10 5
+D2
+~
+~
+0 -1 62511 10 10 5
+D3
+~
+~
+0 -1 62513 10 10 5
+A
+pick~
+daisy target~
+acode( find_room( 62503 ), 1 );
+
+~
+!
+0 0 0
+-1
+S
+
+#62511
+A South-east Corner in the Secluded Glade~
+The brilliant orange blooms of the vines that grow here decorated the
+
+thickly compacted trees and bushes that help form an impenetrable wall to
+
+the south and east.  Lower to the ground the vines flowers combine with
+
+the yellow daisies to give a dazzling eye catching display of color.  To
+
+the north more daisies can be seen in an open meadow, while to the west
+
+the wall continues.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 62510 10 10 5
+D3
+~
+~
+0 -1 62512 10 10 5
+A
+pick~
+daisy target~
+acode( find_room( 62504 ), 1 );
+
+~
+!
+0 0 0
+-1
+S
+
+#62512
+A South-west Corner of the Secluded Glade~
+Trees and bushes grow together so tightly that they prevent any movement
+
+to the south and west.  A vine which sports brilliant orange blooms that
+
+resemble lanterns add a nice spray of color to the wall of foliage.  A
+
+carpet of thick green grasses with yellow daisies scattered throughout it
+
+lines the ground.  This carpeting continues up a slight hill to the north
+
+as well as heading toward the east.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 62513 10 10 5
+D1
+~
+~
+0 -1 62511 10 10 5
+A
+pick~
+daisy target~
+acode( find_room( 62503 ), 1 );
+
+~
+!
+0 0 0
+2288 9 1509949540 3 0
+-1
+S
+
+#62513
+A Secluded Glade~
+The ground slants up slightly toward the north in this part of the glade,
+
+while managing to tilt down to the east.  Carpeting comprising of thick
+
+green grasses and bright yellow daisies lines the ground here and
+
+continues to the south, east and west, while to the north a rocky outcrop
+
+can be spied.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 62514 10 10 5
+D1
+~
+~
+0 -1 62510 10 10 5
+D2
+~
+~
+0 -1 62512 10 10 5
+D3
+~
+~
+0 -1 62522 10 10 5
+A
+pick~
+daisy target~
+acode( find_room( 62504 ), 1 );
+
+~
+!
+0 0 0
+-1
+S
+
+#62514
+A Secluded Glade - Rocky Ground~
+Rocks of various sizes are embedded into the ground here, while growing
+
+around them in any available soil purple heather gives a colorful boost
+
+to the greyness of the stones.  The ground that these stones are embedded
+
+in starts to rise up to form a slight hill here.  To the south and west a
+
+carpet of green and yellow can be seen, while more of this rocky ground
+
+lies to the north and east.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 62515 10 10 5
+D1
+~
+~
+0 -1 62509 10 10 5
+D2
+~
+~
+0 -1 62513 10 10 5
+D3
+~
+~
+0 -1 62521 10 10 5
+A
+pick~
+heather sprig flower~
+acode( find_room( 62509 ), 1 );
+
+~
+!
+0 0 0
+-1
+S
+
+#62515
+A Secluded Glade - Rocky Ground~
+The rocky ground rises up slightly to the west to help form a small hill. 
+
+Purple heather decorates the gaps between the many, half buried stones
+
+here.  The stones vary in size from tiny pebble to large enough to
+
+accommodate the most generous backside.  More of this rocky ground lies
+
+to the south, while to the west, north and east, a carpet of yellow and
+
+green can be seen.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 62516 10 10 5
+D1
+~
+~
+0 -1 62508 10 10 5
+D2
+~
+~
+0 -1 62514 10 10 5
+D3
+~
+~
+0 -1 62520 10 10 5
+A
+pick~
+heather sprig flower~
+acode( find_room( 62509 ), 1 );
+
+~
+!
+0 0 0
+2289 9 1509949540 3 0
+-1
+S
+
+#62516
+A Secluded Glade~
+The ground here begins to rise upward to the west, forming a small hill. 
+
+Thick green grasses and bright yellow daisies carpet the ground, and
+
+continues to spread to the north, to a flat meadow to the east, and
+
+further up the small hill to the west.  To the south a cropping of stones
+
+can be seen, as well as a hint of purple.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 62506 10 10 5
+D1
+~
+~
+0 -1 62507 10 10 5
+D2
+~
+~
+0 -1 62515 10 10 5
+D3
+~
+~
+0 -1 62519 10 10 5
+A
+pick~
+daisy target~
+acode( find_room( 62504 ), 1 );
+
+~
+!
+0 0 0
+2287 9 1509949540 3 0
+-1
+S
+
+#62517
+Inside a Multi-hued Tent~
+You seem to have arrived at some sort of tent like dwelling.  The walls
+
+of this place shimmer and irides as the light from the various burning
+
+braziers that are situated throughout the room flicker upon it.  It is
+
+hard to tell exactly what color the walls really are as one minute they
+
+look a bright blue, then as the light moves other colors such as fuschia,
+
+gold and purple can be seen.  A plush rug with the same color qualities
+
+of the walls lines the floor.  There seems to be no obvious exits out of
+
+this room.
+
+~
+~
+-235405275 0 5 0
+A
+quit~
+~
+act_tochar( #force, ch );
+
+~
+E
+force~
+An unseen force prevents you from quitting.
+
+~
+!
+0 0 0
+A
+1 north 1 east 1 south 1 west 1 up 1 down~
+~
+act_tochar( #no, ch );
+
+~
+E
+no~
+There seems to be no way out of here.
+
+~
+!
+0 0 0
+A
+~
+~
+send_to_room( #halt, room );
+
+wait( 1 );
+
+send_to_room( #consider, room );
+
+wait( 1 );
+
+transfer( ch, find_room( 62506 ) );
+
+interpret( ch, "sit" );
+
+act_tochar( #arrive, ch );
+
+act_notchar( #aarive, ch );
+
+~
+E
+halt~
+@GFylaenar gestures before you, causing you to freeze in your tracks!@n
+
+~
+E
+consider~
+@CFylaenar looks you over for a few mintues, then addresses you.@n
+
+
+How dare you come into my home and try to attack me, dont you realise I
+
+rule this realm and you are but a mere visitor!  Begone from my sight
+
+mortal, and if we ever meet again I but hope you remember to bring your
+
+manners.
+
+
+@CWith a flick of his wrist, Fylaenar dismisses you from his sight!@n
+
+~
+E
+arrive~
+@MYou arrive back at the ring of mushrooms in a crumpled heap, but no
+
+worse for wear.@n 
+
+~
+E
+aarive~
+@M$n appears from nowhere!@n
+
+~
+!
+7 0 0
+2325 9 1509949540 3 0
+-1
+S
+
+#62518
+A Secluded Glade~
+The way west is blocked by a thick wall of trees and bushes that have
+
+grown so closely together to have become impassable.  The start of a
+
+small hill to the south begins here, and the ground is blanketed in a
+
+carpet of thick green grasses and bright yellow daisies that spread to
+
+the north, east, and south.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 62529 10 10 5
+D1
+~
+~
+0 -1 62506 10 10 5
+D2
+~
+~
+0 -1 62519 10 10 5
+A
+pick~
+daisy target~
+acode( find_room( 62503 ), 1 );
+
+~
+!
+0 0 0
+-1
+S
+
+#62519
+A Secluded Glade~
+Daisy spotted, thick green grass blankets the ground and continues it
+
+cheery coverage to the north, east, south and west.  The ground here
+
+slopes gently upwards to the south-west where a giant mushroom is
+
+growing, while to the north, east and north-east the grounds declines
+
+gently.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 62518 10 10 5
+D1
+~
+~
+0 -1 62516 10 10 5
+D2
+~
+~
+0 -1 62520 10 10 5
+D3
+~
+~
+0 -1 62527 10 10 5
+A
+pick~
+daisy target~
+acode( find_room( 62503 ), 1 );
+
+~
+!
+0 0 0
+-1
+S
+
+#62520
+A Secluded Glade~
+A thick carpet of green grasses and yellow daisies lies upon the ground
+
+and then spreads to the north and south.  To the east looks to be some
+
+rocky ground which has a hint of purple, while to the west, the ground
+
+rises up to both form the crown of this small hill and a massive,
+
+red-capped mushroom.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 62519 10 10 5
+D1
+~
+~
+0 -1 62515 10 10 5
+D2
+~
+~
+0 -1 62521 10 10 5
+D3
+~
+~
+0 -1 62523 10 10 5
+A
+pick~
+daisy target~
+acode( find_room( 62503 ), 1 );
+
+~
+!
+0 0 0
+2286 9 1509949540 3 0
+-1
+S
+
+#62521
+A Secluded Glade~
+Nearing the peak of a slight hill, this part of the glade dips down
+
+slightly to the south, while rising up toward the north.  The ground is
+
+covered in thick green grasses and dotted throughout the grass are yellow
+
+daisies.  More daisies can be spied to the north, west and south, while
+
+to the east a rocky outcropping can be seen.  Something in the distance,
+
+to the north-west, catches your eye.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 62520 10 10 5
+D1
+~
+~
+0 -1 62514 10 10 5
+D2
+~
+~
+0 -1 62522 10 10 5
+D3
+~
+~
+0 -1 62525 10 10 5
+A
+pick~
+daisy target~
+acode( find_room( 62504 ), 1 );
+
+~
+!
+0 0 0
+-1
+S
+
+#62522
+A Corner in the Secluded Glade~
+A tangle of orange-bloomed vines just about eclipses the trees and bushes
+
+that grow so thickly here as to block any movement to the south and west. 
+
+The ground rises up to a slight hill to the north and is covered by a
+
+carpet of thick grasses which has bright yellow daisies speckled through
+
+it.  More of this carpet can be seen to the east as making its way up the
+
+hill to the north.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 62521 10 10 5
+D1
+~
+~
+0 -1 62513 10 10 5
+A
+pick~
+daisy target~
+acode( find_room( 62504 ), 1 );
+
+~
+!
+0 0 0
+-1
+S
+
+#62523
+At the Base of a Giant Mushroom~
+A huge mushroom takes up most of the top of the slight hill.  Its
+
+creamy-white stalk is so thick that it would take at least four ogres
+
+linking hands to encircle it.  The cap of the mushroom is red with
+
+several white spots that can be seen around the edges, and because of the
+
+mushrooms height, it is hard to see if the cap has any more of these
+
+spots.  The ground immediately under the mushroom cap is devoid of any
+
+vegetation, however a circle of grasses and daisies does manage to
+
+surround the mushroom.  The daisy spotted grass continues in all
+
+directions from the mushroom.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 62527 10 10 5
+D1
+~
+~
+0 -1 62520 10 10 5
+D2
+~
+~
+0 -1 62525 10 10 5
+D3
+~
+~
+0 -1 62526 10 10 5
+A
+climb~
+1 up mushroom~
+if( can_fly( ch ) ) {
+
+  act_tochar( #fly, ch );
+
+  act_notchar( #rfly, ch );
+
+  transfer( ch, find_room( 62524 ) );
+
+  act_notchar( #afly, ch );
+
+  }
+
+else {
+
+  if( find_skill( ch, climb ) < 4 ) {
+
+    act_tochar( #noclimb, ch );
+
+    act_notchar( #rnoclimb, ch );
+
+    interpret( ch, "sit" );
+
+    end;
+
+    }
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #rclimb, ch );
+
+  transfer( ch, find_room( 62524 ) );
+
+  act_notchar( #aclimb, ch );
+
+  }
+
+~
+E
+fly~
+You manage to easily fly to the top of the giant mushroom.
+
+~
+E
+rfly~
+$n flies up to the top of the giant mushroom, then disappears from sight.
+
+~
+E
+afly~
+$n flies up from below.
+
+~
+E
+climb~
+After much effort and awkard maneuvering, you finally manage to climb to
+
+the top of the mushroom.
+
+~
+E
+rclimb~
+After much effort and awkard maneuvering, $n finally manages to climb to
+
+the top of the mushroom, then disappears from sight.
+
+~
+E
+aclimb~
+$n scrambles up from below.
+
+~
+E
+noclimb~
+You scramble and twist trying to climb to the top of the mushroom, and
+
+just when you think you can get up there, you slip and fall onto the the
+
+soft grass below.
+
+~
+E
+rnoclimb~
+After much awkward effort, $n looks like $e will make it to the top, when
+
+suddenly $e falls to the ground.
+
+~
+!
+0 0 0
+2323 9 1509949540 3 0
+-1
+S
+
+#62524
+On Top of a Giant Mushroom~
+Though of a slightly spongy texture, the top of the red and white spotted
+
+mushroom feels strong enough to hold a reasonable amount of weight.  From
+
+this vantage point most of the glade below can be seen, and even parts of
+
+a nearby lake can just be made out over a thick bank of trees to the
+
+distant east.  In the center of the mushroom a curious pipe seems to
+
+almost be growing up from the mushroom itself.
+
+~
+~
+-235401215 2 9 0
+A
+climb slide~
+1 down~
+if( can_fly( ch ) ) {
+
+  act_tochar( #fly, ch );
+
+  act_notchar( #rfly, ch );
+
+  transfer( ch, find_room( 62523 ) );
+
+  act_notchar( #afly, ch );
+
+  }
+
+else {
+
+  if( find_stat( ch, dex ) < random( 5, 13 ) ) {
+
+    act_tochar( #oops, ch );
+
+    act_notchar( #roops, ch );
+
+    transfer( ch, find_room( 62523 ) );
+
+    i = 2d5;
+
+    dam_message( ch, i, "tumbling fall" );
+
+    inflict( mob, ch, i, "tumbling fall" );
+
+    interpret( ch, "sit" );
+
+    end;
+
+    }
+
+  act_tochar( #slide, ch );
+
+  act_notchar( #rslide, ch );
+
+  transfer( ch, find_room( 62523 ) );
+
+  act_notchar( #aslide, ch );
+
+  }
+
+~
+E
+fly~
+You easily fly down to the ground below.
+
+~
+E
+rfly~
+$n flies down to the ground below.
+
+~
+E
+afly~
+$n flies down from above.
+
+~
+E
+slide~
+You manage to slide off the mushroom to the ground below with much ease.
+
+~
+E
+rslide~
+$n manages to slide off the mushroom with much ease.
+
+~
+E
+aslide~
+$n slides off the top of the mushroom and lands next to you.
+
+~
+E
+oops~
+@GYou go tumbling off the mushroom, falling to the ground below with a
+
+loud THUMP!@n 
+
+~
+E
+roops~
+$n goes tumbling off the mushroom top.
+
+~
+E
+aoops~
+@RTHUMP!!@n $n tumbles down from above and lands in a tumbled heap upon
+
+the ground!
+
+~
+!
+0 0 0
+A
+1 north 1 east 1 south 1 west~
+~
+act_tochar( #oops, ch );
+
+act_notchar( #roops, ch );
+
+transfer( ch, find_room( 62523 ) );
+
+act_notchar( #aoops, ch );
+
+i = 2d7;
+
+dam_message( ch, i, "plummeting fall" );
+
+inflict( mob, ch, i, "plummeting fall" );
+
+interpret( ch, "sit" );
+
+~
+E
+oops~
+Just a little too late you realise walking off the mushroom was not a
+
+good idea.
+
+~
+E
+roops~
+You see $n plummet to the ground very soon after $e decided to walk off
+
+the mushroom.
+
+~
+E
+aoops~
+$n comes plummeting down from above, landing at your feet in a crumpled
+
+heap.
+
+~
+!
+0 0 0
+A
+smoke~
+pipe hooka~
+if( mob_in_room( 2326, room ) ) {
+
+  act_tochar( #no, ch );
+
+  end;
+
+  }
+
+if( rflag( reset0, room ) ) {
+
+  act_tochar( #inhale, ch );
+
+  act_notchar( #rinhale, ch );
+
+  i = random( 1, 4 );
+
+  if( i == 1 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #dazed, ch );
+
+    act_notchar( #rdazed, ch );
+
+    do_spell( hallucinate, ch, ch );
+
+    }
+
+  if( i == 2 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #int, ch );
+
+    act_notchar( #rint, ch );
+
+    drain_stat( ch, wis, 10, 1 );
+
+    }
+
+  if( i == 3 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #cough, ch );
+
+    act_notchar( #rcough, ch );
+
+    }
+
+  if( i == 4 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #con, ch );
+
+    act_notchar( #rcon, ch );
+
+    drain_stat( ch, con, 10, -1 );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #empty, ch );
+
+~
+E
+no~
+The hooka's only pipe is currently being used by Kosmo.
+
+~
+E
+inhale~
+You place the pipe's mouthpiece between your lips and inhale some of the
+
+hooka's smoke.
+
+~
+E
+dazed~
+The thick smoke causes your head to spin, leaving you in a dazed and
+
+slightly confused state.
+
+~
+E
+rinhale~
+$n places the pipe's mouthpiece between $s lips and inhales some of the
+
+hooka's smoke.
+
+~
+E
+rdazed~
+A dazed and confused look appears on $n's face.
+
+~
+E
+int~
+The unusual smoke seems to have opened up a part of your mind, giving you
+
+insights into new things.
+
+~
+E
+rint~
+A flash of what appears to be enlightnment, appears across $n's face.
+
+~
+E
+cough~
+You are overcome by the smoke's strong and usual qualities, which cause
+
+you to to embark on a coughing fit.
+
+~
+E
+rcough~
+@G$n turns an interesting shade of green then proceeds to have a coughing
+
+fit.@n 
+
+~
+E
+con~
+The thick smoke leaves you feeling rather ill and weak.
+
+~
+E
+rcon~
+$n looks rather sickly after inhaling some of the hooka's smoke.
+
+~
+E
+empty~
+No matter how hard you inhale, there seems to be nothing left in the
+
+hooka to smoke.
+
+~
+!
+0 0 0
+A
+1 flee~
+~
+mob = mob_in_room( 2324, room );
+
+if( mob ) {
+
+  if( is_fighting( mob ) )
+
+    continue;
+
+  else {
+
+    send_to_room( #wave, room );
+
+    junk_mob( mob );
+
+    }
+
+  }
+
+~
+E
+wave~
+With a wave of his hand, Kosmo banishes the black moth.
+
+~
+!
+2 400 0
+2326 9 1509949540 3 0
+3489 17 100 -2 0
+-1
+S
+
+#62525
+A Corner in the Secluded Glade~
+A slight breeze seems to be present here, and looks to be playing amongst
+
+the trees, bushes, and the vines which are covered in brilliant orange
+
+blooms.  This virtual wall of foliage bars passage to either the south or
+
+west.  Ground covering consisting of thick grasses and bright yellow
+
+daisies makes it way to the east, while directly north is what looks like
+
+a giant red-capped mushroom.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 62523 10 10 5
+D1
+~
+~
+0 -1 62521 10 10 5
+E
+e 62521~
+No description.
+
+~
+A
+pick~
+daisy target~
+acode( find_room( 62503 ), 1 );
+
+~
+!
+0 0 0
+-1
+S
+
+#62526
+A Western Corner in the Secluded Glade~
+With any further movement to the west and south blocked by thickly
+
+growing trees and bushes, and giant mushroom to the east, this section of
+
+the glade almost has a feel of seclusion about it.  A thick blanket of
+
+grasses which has bright yellow daisies sprinkled through it, lies on the
+
+ground and continues to spread to the north.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 62528 10 10 5
+D1
+~
+~
+0 -1 62523 10 10 5
+A
+pick~
+daisy target~
+acode( find_room( 62504 ), 1 );
+
+~
+!
+0 0 0
+2289 9 1509949540 3 0
+-1
+S
+
+#62527
+A Secluded Glade - North of a Giant Mushroom~
+A blanket of thick green grasses that is spotted through with bright
+
+yellow daisies covers the ground here and spreads to both the east and
+
+west.  An impenetrable barrier of trees and bushes bars any further
+
+movement north, while to the south, a giant, red-capped mushroom can be
+
+seen.
+
+~
+~
+-235405311 2 9 0
+D1
+~
+~
+0 -1 62519 10 10 5
+D2
+~
+~
+0 -1 62523 10 10 5
+D3
+~
+~
+0 -1 62528 10 10 5
+A
+pick~
+daisy target~
+acode( find_room( 62504 ), 1 );
+
+~
+!
+0 0 0
+-1
+S
+
+#62528
+A Western Corner in the Secluded Glade~
+Trees and bushes grow together here so tightly that they prevent further
+
+movement to the north and west.  A blanket of thick green grasses that
+
+have dotted through them bright yellow daisies decorates the ground. 
+
+This blanket spreads to both the south and east, while to the south-east,
+
+a giant mushroom can be seen.
+
+~
+~
+-235405311 2 9 0
+D1
+~
+~
+0 -1 62527 10 10 5
+D2
+~
+~
+0 -1 62526 10 10 5
+A
+pick~
+daisy target~
+acode( find_room( 62503 ), 1 );
+
+~
+!
+0 0 0
+-1
+S
+
+#62529
+A Secluded Glade - At a Wall of Foliage~
+Trees and bushes grow together so compactly along this northern edge of
+
+the glade that they form an impenetrable wall, stopping any attempts to
+
+explore further north.  A vine which is covered in pale violet flowers
+
+adds a decorative touch to this wall and complements the daisies that
+
+grow amongst the thick grasses on the ground.  To the west is what
+
+appears to be some sort of tunnel, while to the east the wall of trees
+
+continues, while a small, daisy covered hill rises to the south.
+
+~
+~
+-235405311 2 9 0
+D1
+~
+~
+0 -1 62530 10 10 5
+D2
+~
+~
+0 -1 62518 10 10 5
+D3
+~
+~
+0 -1 62532 10 10 5
+A
+pick~
+daisy target~
+acode( find_room( 62504 ), 1 );
+
+~
+!
+0 0 0
+2323 9 1509949540 3 0
+-1
+S
+
+#62530
+A Secluded Glade - At a Wall of Foliage~
+Preventing any further movement north is a series of trees and bushes
+
+that have grown together so tightly to have formed a vegetative wall. 
+
+The wall is decorated by pale violet flowers that grows upon a vine that
+
+is strung amongst the various leaves and branches that make up the wall. 
+
+Southward is a small, daisy covered hill begins, will to both east and
+
+west the wall continues.
+
+~
+~
+-235405311 2 9 0
+D1
+~
+~
+0 -1 62531 10 10 5
+D2
+~
+~
+0 -1 62506 10 10 5
+D3
+~
+~
+0 -1 62529 10 10 5
+A
+pick~
+daisy target~
+acode( find_room( 62504 ), 1 );
+
+~
+!
+0 0 0
+-1
+S
+
+#62531
+A Secluded Glade - A Corner in the Wall of Foliage~
+A wall of compactly growing trees and bushes makes an impenetrable
+
+barrier to both the north and east while stretching to the south is a
+
+daisy-covered meadow.  The wall is decorated by garlands of pale violet
+
+flowers that adds an almost mystical touch to this corner of the glade. 
+
+This wall continues in a westerly direction.
+
+~
+~
+-235405311 2 9 0
+D2
+~
+~
+0 -1 62505 10 10 5
+D3
+~
+~
+0 -1 62530 10 10 5
+A
+pick~
+daisy target~
+acode( find_room( 62503 ), 1 );
+
+~
+!
+0 0 0
+-1
+S
+
+#62532
+The Start of a Foliage Tunnel~
+Dense foliage to the north and south reaches up overhead and intertwines
+
+to form a rough tunnel.  The overhead vegetation prevents much light
+
+getting through and combined with the foliage that makes up the walls,
+
+mutes any sound that enters or arises within the tunnel.  To the west the
+
+tunnel continues, while eastward is an exit into a flowered meadow.
+
+~
+~
+-235405303 11 5 0
+D1
+~
+~
+0 -1 62529 10 10 5
+D3
+~
+~
+0 -1 62533 10 10 5
+-1
+S
+
+#62533
+A T-Section in the Foliage Tunnel~
+A wall of dense foliage prevents any movement to the south, however a
+
+break in the thick vegetation to the north allow passage in that
+
+direction.  The tunnel comprised of thick foliage also continues both
+
+east and west, with the way west looking to get darker, while to the far
+
+east it seems to get lighter.  Overhead the vegetation is seeming to
+
+attempt to meld together to form a barrier to prevent any light from
+
+reaching the leaf covered floor.
+
+~
+~
+-235405311 11 5 0
+D0
+~
+~
+0 -1 62535 10 10 5
+D1
+~
+~
+0 -1 62532 10 10 5
+D3
+~
+~
+0 -1 62534 10 10 5
+-1
+S
+
+#62534
+A Dead End in the Foliage Tunnel~
+The foliage here manages to successfully prevent any further movement
+
+north, south or west, but seems to generously allow passage out of this
+
+dark cul-de-sac to the east.  Any light from the heavens above has been
+
+precluded from this place by a thick ceiling of vegetation.  Noises seem
+
+to be muted here, as if the absence of bright light has managed to dull
+
+the essence of any sounds that enter here.
+
+~
+~
+-235405311 11 5 0
+D1
+~
+~
+0 -1 62533 10 10 5
+2324 9 1509949540 3 0
+-1
+S
+
+#62535
+Within A Foliaged Tunnel~
+Impenetrable vegetation blocks any further progress to the north and
+
+west, while movement to the south, and into a dark area to the east is
+
+possible.  Overhead the foliage intermingles to form an incomplete
+
+ceiling that doesnt completely block out the light from the celestial
+
+bodies overhead.
+
+~
+~
+-235405311 11 5 0
+D1
+~
+~
+0 -1 62536 10 10 5
+D2
+~
+~
+0 -1 62533 10 10 5
+-1
+S
+
+#62536
+A Dark Alcove~
+Surround by impenetrable vegetation on all sides bar north, this alcove
+
+is dark and somewhat ominous.  Even overhead the vegetation has managed
+
+to merge to prevent the sun, moon, or stars the ability to shed their
+
+light upon this patch of ground.  Noises here are muted, as if they too
+
+are intimidated by the lack of light.
+
+~
+[Barada] first word
+
+~
+-235405312 11 5 0
+D3
+~
+~
+0 -1 62535 10 10 5
+2324 9 1509949540 3 0
+-1
+S
+
+#62537
+On the Bank of a River~
+You find yourself on the banks of a fairly shallow, crystal clear river,
+
+and you can't but help notice the sparkle of the gold nuggets that seem
+
+to almost completely cover the bed of the river.  Even along the bank
+
+itself many nuggets can be seen.  A misty curtain seems to surround you
+
+on all sides here.
+
+~
+~
+-235405279 2 9 0
+A
+get take~
+gold nugget~
+if( random( 1,10 ) <= 2 ) {
+
+  act_tochar( #transport, ch );
+
+  act_notchar( #rtrans, ch );
+
+  transfer( ch, find_room( 62506 ) );
+
+  act_notchar( #atrans, ch );
+
+  }
+
+else {
+
+  act_tochar( #get, ch );
+
+  act_notchar( #rget, ch );
+
+  i = random( 1, 1000 );
+
+  if( i == 1 )
+
+    obj_to_char( oload( 455 ), ch );
+
+  if( i >= 2 )
+
+    obj_to_char( oload( 3471 ), ch );
+
+  }
+
+~
+E
+get~
+You get one of the many nuggets that can be found here.
+
+~
+E
+rget~
+$n gets one of the many nuggets that can be found here.
+
+~
+E
+transport~
+@CA fine mist descends around you, obscuring your sight.  When it clears
+
+away you find that you have been transported to a new location.@n 
+
+~
+E
+rtrans~
+@CA fine mist descends around $n, obscuring $s from sight.  When it
+
+clears they are no longer here.
+
+~
+E
+atrans~
+@CA fine mist arrives from no where.  When it clears $n is left standing
+
+here.
+
+~
+!
+0 0 0
+A
+1 north 1 east 1 west 1 south~
+~
+act_tochar( #wall, ch );
+
+~
+E
+wall~
+The misty curtain is more solid than it appears and prevents any passage
+
+through it.
+
+~
+!
+0 0 0
+A
+quit~
+~
+act_tochar( #force, ch );
+
+~
+E
+force~
+You feel an unseen force preventing you from quitting.
+
+~
+!
+0 0 0
+A
+~
+~
+send_to_room( #glint, room );
+
+~
+E
+glint~
+@YThe glint of gold catches your eye!@n
+
+~
+!
+2 150 0
+324 17 1509949540 -2 0
+-1
+S
+
+#62538
+At a Small Well~
+You seem to have arrived in the middle of a forest somewhere.  The thick
+
+forest surrounds you on all sides, while in the middle of the clearing
+
+you are standing in, a small well constructed by simply placing a barrier
+
+of stones around an existing pool of water.  All around you an
+
+invigorating energy seems to pulsate and imbue everything here from the
+
+tiniest blade of grass the mightiest trees that ring this clearing.
+
+~
+~
+-235405311 2 9 0
+-1
+S
+
+#62539
+On the Bank of the Lake~
+The trees and bushes have left enough room on the edge of the bank to
+
+make a comfortable resting spot, with the flattened grasses here bearing
+
+much testimony that this is what this secluded section on the lake's bank
+
+has been used for.  The forest surrounding this secluded spot is too
+
+thick to traverse through and a climb down into the lake seems to be the
+
+only way to leave here.
+
+~
+~
+-235405311 3 5 0
+A
+climb~
+bank down~
+if( find_skill( ch, climb ) < random( 1, 5 ) ) {
+
+  act_tochar( #slip, ch );
+
+  act_notchar( #rslip, ch );
+
+  transfer( ch, find_room( 77089 ) );
+
+  interpret( ch, "sit" );
+
+  act_notchar( #aslip, ch );
+
+  }
+
+else {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #rclimb, ch );
+
+  transfer( ch, find_room( 77089 ) );
+
+  act_notchar( #aclimb, ch );
+
+  }
+
+~
+E
+climb~
+You manage to climb down the lake's bank with ease.
+
+~
+E
+rclimb~
+$n manages to climb down the lake's bank with ease.
+
+~
+E
+aclimb~
+$n climbs down the lake's bank.
+
+~
+E
+slip~
+You slip, falling into the waters below with a huge SPLASH!!
+
+~
+E
+rslip~
+@C$n slips, falling into the waters below with a huge SPLASH!!@n
+
+~
+E
+aslip~
+@C$n falls into the water with a huge SPLASH!!@n
+
+~
+!
+0 0 0
+2334 9 1509949540 2 0
+-1
+S
+
+#0
+

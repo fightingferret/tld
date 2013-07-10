@@ -1,0 +1,2710 @@
+#AREA
+New Clan Strongholds~
+Janua~
+~
+
+0 0
+0
+#ROOMS
+
+#81500
+Courtyard of the Scions~
+The wide expanse around you is covered in a carpet of green grass. 
+
+Evergreen trees reach for the sky around you, and the pleasant smell of
+
+pine pitch tickles your nose.  Birds chirp gleefully in the distance,
+
+while off to the west a few deer graze around a forest stream.  Water
+
+cascades musically down an elaborate, six-tiered fountain set in the
+
+middle of the cobbled courtyard.  To the south, a hulking building of
+
+grey and black marble towers over you with its giant oaken doors standing
+
+open in invitation.  A small black obelisk stands to the north, inlaid
+
+with a square of white marble.
+
+~
+~
+-235405311 1 5 0
+D0
+~
+~
+171 -1 21019 10 10 5
+D2
+~
+~
+0 -1 81501 10 10 5
+A
+~
+~
+close( room, north );
+
+~
+!
+1 0 1
+A
+touch~
+black obelisk white marble~
+if( has_obj_worn( 3862, ch ) ) {
+
+  if( !is_open( room, north ) ) {
+
+    if( rflag( reset0, room ) ) {
+
+      remove_rflag( reset0, room );
+
+      act_tochar( #touch, ch );
+
+      act_notchar( #rtouch, ch );
+
+      wait( 1 );
+
+      send_to_room( #open, room );
+
+      open( room, north );
+
+      }
+
+    }
+
+  }
+
+else
+
+  act_tochar( #already, ch );
+
+set_rflag( reset0, room );
+
+~
+E
+touch~
+You press your palm against the square of white marble and it glows with
+
+a soft light.
+
+~
+E
+rtouch~
+$n presses $s palm against the square of white marble and it glows with a
+
+soft light.
+
+~
+E
+open~
+@WWith a flash of brilliant light, the obelisk coalesces into an open
+
+gateway, beyond which is the Northern Sea Trail. @n
+
+~
+E
+already~
+The obelisk has already been activated.
+
+~
+!
+0 0 0
+3658 17 1509949540 -2 0
+-1
+S
+
+#81501
+Hall of the Scions~
+Massive walls of grey and black marble surround you, inlaid into
+
+intricate patterns that frame scenes of glory and victory that surround
+
+the room.  The images represent each race of the land, carved in relief
+
+in pure, white marble.  The floor is made of the same marble, with a
+
+rampant, raging lion inlaid with deep red lava rock.  In the place of his
+
+eye burns a small fire, providing both light and warmth for the room.  To
+
+the east, double doors stand open to the clan meeting hall, their gilt
+
+sparkling in the light from the fire.  To the west is an open archway,
+
+leading to a vast storage area.  Through the immense archway to the south
+
+you can see a shrine, dedicated to the @RRed Khan@n himself and the open
+
+doors to the north lead outside to the courtyard.
+
+~
+~
+-235405307 0 9 0
+D0
+~
+~
+0 -1 81500 10 10 5
+D1
+~
+~
+0 -1 81502 10 10 5
+D2
+~
+~
+0 -1 81511 10 10 5
+D3
+~
+~
+0 -1 81503 10 10 5
+D5
+hatch~
+~
+171 -1 81504 10 10 5
+A
+pull~
+lever hatch~
+if( !is_open( room, down ) ) {
+
+  act_tochar( #msg, ch );
+
+  act_notchar( #rmsg, ch );
+
+  open( room, down );
+
+  }
+
+else
+
+  act_tochar( #open, ch );
+
+~
+E
+msg~
+You reach into a hidden panel and pull the lever.  A small hatch opens
+
+in the floor.
+
+~
+E
+rmsg~
+$n reaches into a hidden panel and pulls something.  A small hatch opens
+
+in the floor.
+
+~
+E
+open~
+The hatch is already open.
+
+~
+!
+0 0 0
+A
+close~
+hatch~
+if( is_open( room, down ) ) {
+
+  act_tochar( #msg, ch );
+
+  act_notchar( #rmsg, ch );
+
+  send_to_room( #outside, find_room( 81504 ) );
+
+  close( room, down );
+
+  }
+
+else
+
+  act_tochar( #closed, ch );
+
+~
+E
+msg~
+You close the hatch.
+
+~
+E
+outside~
+The hatch in the ceiling closes.
+
+~
+E
+closed~
+You do not see a hatch.
+
+~
+E
+rmsg~
+$n closes the hatch in the floor.
+
+~
+!
+0 0 0
+-1
+S
+
+#81502
+Storage Room~
+The floor is littered with open chests containing various treasures.  In
+
+one corner lies an open hearth with rings and ingots of various metals,
+
+while in another lies a honing stone.  In racks along the walls are
+
+weapons and tools of every kind, from forge hammers to mid-customed
+
+swords.  On one wall, inscribed in gold, are the words "May we bring
+
+glory to the @RRed Khan's@n name."
+
+~
+~
+-235337691 0 9 0
+D3
+~
+~
+0 -1 81501 10 10 5
+-1
+S
+
+#81503
+Meeting Hall~
+Conflicting with the rest of the structure around you, this room presents
+
+a comfortable aire.  Red carpet gives way softly beneath your feet.  A
+
+long wooden table runs the length of the room, surrounded by oaken chairs. 
+
+Set in the middle of the table in red gold is the @RRed Khan's@n ensign.
+
+In measured spaces along the wall are tapistries depicting the great
+
+battles the @RRed Khan@n himself commandeered.
+
+~
+~
+-235405307 0 9 0
+D1
+~
+~
+0 -1 81501 10 10 5
+-1
+S
+
+#81504
+Study~
+This room is suprisingly simple compared to the rest of the stronghold. 
+
+A plain oak desk and chair set is the rooms only furniture.  The only
+
+decoration in the room is a map of the surrounding lands tacked on one
+
+wall.  A small hatch in the ceiling leads up.
+
+~
+~
+-235405311 3 9 0
+D4
+hatch~
+~
+171 -1 81501 10 10 5
+A
+close~
+hatch~
+if( is_open( room, up ) ) {
+
+  act_tochar( #msg, ch );
+
+send_to_room( #outside, find_room( 81501 ) );
+
+  close( room, up );
+
+  }
+
+else
+
+  act_tochar( #closed, ch );
+
+~
+E
+msg~
+You close the hatch above you.
+
+~
+E
+closed~
+The hatch has already been closed.
+
+~
+E
+rmsg~
+$n closes the hatch in the ceiling.
+
+~
+E
+outside~
+A small hatch in the floor closes with a soft thump.
+
+~
+!
+0 0 0
+A
+open~
+hatch~
+if( !is_open( room, up ) ) {
+
+  act_tochar( #msg, ch );
+
+  act_notchar( #rmsg, ch );
+
+  send_to_room( #outside, find_room( 81501 ) );
+
+  open( room, up );
+
+  }
+
+else
+
+  act_tochar( #open, ch );
+
+~
+E
+msg~
+You open the hatch in the ceiling.
+
+~
+E
+rmsg~
+$n opens the hatch in the ceiling.
+
+~
+E
+open~
+The hatch is already open.
+
+~
+E
+outside~
+A small hatch opens in the floor.
+
+~
+!
+0 0 0
+A
+spank~
+monkey~
+obj_to_char( oload( 3862 ), ch );
+
+act_tochar( #msg, ch );
+
+~
+E
+msg~
+Creslin is one sick puppy.
+
+~
+!
+0 0 0
+-1
+S
+
+#81505
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D1
+~
+~
+0 -1 81506 10 10 5
+D2
+~
+~
+0 -1 81515 10 10 5
+-1
+S
+
+#81506
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D1
+~
+~
+0 -1 81507 10 10 5
+D2
+~
+~
+0 -1 81516 10 10 5
+D3
+~
+~
+0 -1 81505 10 10 5
+-1
+S
+
+#81507
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D1
+~
+~
+0 -1 81508 10 10 5
+D2
+~
+~
+0 -1 81517 10 10 5
+D3
+~
+~
+0 -1 81506 10 10 5
+-1
+S
+
+#81508
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D1
+~
+~
+0 -1 81509 10 10 5
+D2
+~
+~
+0 -1 81518 10 10 5
+D3
+~
+~
+0 -1 81507 10 10 5
+-1
+S
+
+#81509
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D2
+~
+~
+0 -1 81519 10 10 5
+D3
+~
+~
+0 -1 81508 10 10 5
+-1
+S
+
+#81510
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D2
+~
+~
+0 -1 81520 10 10 5
+-1
+S
+
+#81511
+Shrine to the Red Khan~
+This room is simple, save the shrine surrounded by gold placed in the
+
+center.  Standing on hind legs is a statue of a rampant lion, poised as
+
+if ready for battle.  A sword of obviously unparalleled craftsmanship is
+
+balanced on the outstretched forelegs of the lion, with a hilt adorned by
+
+a simple red ruby.
+
+~
+~
+-235405307 0 9 0
+D0
+~
+~
+0 -1 81501 10 10 5
+-1
+S
+
+#81512
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D1
+~
+~
+0 -1 81513 10 10 5
+D2
+~
+~
+0 -1 81522 10 10 5
+-1
+S
+
+#81513
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D1
+~
+~
+0 -1 81514 10 10 5
+D2
+~
+~
+0 -1 81523 10 10 5
+D3
+~
+~
+0 -1 81512 10 10 5
+-1
+S
+
+#81514
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D1
+~
+~
+0 -1 81515 10 10 5
+D2
+~
+~
+0 -1 81524 10 10 5
+D3
+~
+~
+0 -1 81513 10 10 5
+-1
+S
+
+#81515
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81505 10 10 5
+D1
+~
+~
+0 -1 81516 10 10 5
+D2
+~
+~
+0 -1 81525 10 10 5
+D3
+~
+~
+0 -1 81514 10 10 5
+-1
+S
+
+#81516
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81506 10 10 5
+D1
+~
+~
+0 -1 81517 10 10 5
+D2
+~
+~
+0 -1 81526 10 10 5
+D3
+~
+~
+0 -1 81515 10 10 5
+-1
+S
+
+#81517
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81507 10 10 5
+D1
+~
+~
+0 -1 81518 10 10 5
+D2
+~
+~
+0 -1 81527 10 10 5
+D3
+~
+~
+0 -1 81516 10 10 5
+-1
+S
+
+#81518
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81508 10 10 5
+D1
+~
+~
+0 -1 81519 10 10 5
+D2
+~
+~
+0 -1 81528 10 10 5
+D3
+~
+~
+0 -1 81517 10 10 5
+-1
+S
+
+#81519
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81509 10 10 5
+D2
+~
+~
+0 -1 81529 10 10 5
+D3
+~
+~
+0 -1 81518 10 10 5
+-1
+S
+
+#81520
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81510 10 10 5
+D1
+~
+~
+0 -1 81521 10 10 5
+D2
+~
+~
+0 -1 81530 10 10 5
+-1
+S
+
+#81521
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D1
+~
+~
+0 -1 81522 10 10 5
+D2
+~
+~
+0 -1 81531 10 10 5
+D3
+~
+~
+0 -1 81520 10 10 5
+-1
+S
+
+#81522
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81512 10 10 5
+D1
+~
+~
+0 -1 81523 10 10 5
+D2
+~
+~
+0 -1 81532 10 10 5
+D3
+~
+~
+0 -1 81521 10 10 5
+-1
+S
+
+#81523
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81513 10 10 5
+D1
+~
+~
+0 -1 81524 10 10 5
+D2
+~
+~
+0 -1 81533 10 10 5
+D3
+~
+~
+0 -1 81522 10 10 5
+-1
+S
+
+#81524
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81514 10 10 5
+D1
+~
+~
+0 -1 81525 10 10 5
+D2
+~
+~
+0 -1 81534 10 10 5
+D3
+~
+~
+0 -1 81523 10 10 5
+-1
+S
+
+#81525
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81515 10 10 5
+D1
+~
+~
+0 -1 81526 10 10 5
+D2
+~
+~
+0 -1 81535 10 10 5
+D3
+~
+~
+0 -1 81524 10 10 5
+-1
+S
+
+#81526
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81516 10 10 5
+D1
+~
+~
+0 -1 81527 10 10 5
+D2
+~
+~
+0 -1 81536 10 10 5
+D3
+~
+~
+0 -1 81525 10 10 5
+-1
+S
+
+#81527
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81517 10 10 5
+D1
+~
+~
+0 -1 81528 10 10 5
+D2
+~
+~
+0 -1 81537 10 10 5
+D3
+~
+~
+0 -1 81526 10 10 5
+-1
+S
+
+#81528
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81518 10 10 5
+D1
+~
+~
+0 -1 81529 10 10 5
+D2
+~
+~
+0 -1 81538 10 10 5
+D3
+~
+~
+0 -1 81527 10 10 5
+-1
+S
+
+#81529
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81519 10 10 5
+D2
+~
+~
+0 -1 81539 10 10 5
+D3
+~
+~
+0 -1 81528 10 10 5
+-1
+S
+
+#81530
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81520 10 10 5
+D1
+~
+~
+0 -1 81531 10 10 5
+D2
+~
+~
+0 -1 81540 10 10 5
+-1
+S
+
+#81531
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81521 10 10 5
+D1
+~
+~
+0 -1 81532 10 10 5
+D2
+~
+~
+0 -1 81541 10 10 5
+D3
+~
+~
+0 -1 81530 10 10 5
+-1
+S
+
+#81532
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81522 10 10 5
+D1
+~
+~
+0 -1 81533 10 10 5
+D2
+~
+~
+0 -1 81542 10 10 5
+D3
+~
+~
+0 -1 81531 10 10 5
+-1
+S
+
+#81533
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81523 10 10 5
+D1
+~
+~
+0 -1 81534 10 10 5
+D2
+~
+~
+0 -1 81543 10 10 5
+D3
+~
+~
+0 -1 81532 10 10 5
+-1
+S
+
+#81534
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81524 10 10 5
+D1
+~
+~
+0 -1 81535 10 10 5
+D2
+~
+~
+0 -1 81544 10 10 5
+D3
+~
+~
+0 -1 81533 10 10 5
+-1
+S
+
+#81535
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81525 10 10 5
+D1
+~
+~
+0 -1 81536 10 10 5
+D2
+~
+~
+0 -1 81545 10 10 5
+D3
+~
+~
+0 -1 81534 10 10 5
+-1
+S
+
+#81536
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81526 10 10 5
+D1
+~
+~
+0 -1 81537 10 10 5
+D2
+~
+~
+0 -1 81546 10 10 5
+D3
+~
+~
+0 -1 81535 10 10 5
+-1
+S
+
+#81537
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81527 10 10 5
+D1
+~
+~
+0 -1 81538 10 10 5
+D2
+~
+~
+0 -1 81547 10 10 5
+D3
+~
+~
+0 -1 81536 10 10 5
+-1
+S
+
+#81538
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81528 10 10 5
+D1
+~
+~
+0 -1 81539 10 10 5
+D2
+~
+~
+0 -1 81548 10 10 5
+D3
+~
+~
+0 -1 81537 10 10 5
+-1
+S
+
+#81539
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81529 10 10 5
+D2
+~
+~
+0 -1 81549 10 10 5
+D3
+~
+~
+0 -1 81538 10 10 5
+-1
+S
+
+#81540
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81530 10 10 5
+D1
+~
+~
+0 -1 81541 10 10 5
+D2
+~
+~
+0 -1 81550 10 10 5
+-1
+S
+
+#81541
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81531 10 10 5
+D1
+~
+~
+0 -1 81542 10 10 5
+D2
+~
+~
+0 -1 81551 10 10 5
+D3
+~
+~
+0 -1 81540 10 10 5
+-1
+S
+
+#81542
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81532 10 10 5
+D1
+~
+~
+0 -1 81543 10 10 5
+D2
+~
+~
+0 -1 81552 10 10 5
+D3
+~
+~
+0 -1 81541 10 10 5
+-1
+S
+
+#81543
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81533 10 10 5
+D1
+~
+~
+0 -1 81544 10 10 5
+D2
+~
+~
+0 -1 81553 10 10 5
+D3
+~
+~
+0 -1 81542 10 10 5
+-1
+S
+
+#81544
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81534 10 10 5
+D1
+~
+~
+0 -1 81545 10 10 5
+D2
+~
+~
+0 -1 81554 10 10 5
+D3
+~
+~
+0 -1 81543 10 10 5
+-1
+S
+
+#81545
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81535 10 10 5
+D1
+~
+~
+0 -1 81546 10 10 5
+D2
+~
+~
+0 -1 81555 10 10 5
+D3
+~
+~
+0 -1 81544 10 10 5
+-1
+S
+
+#81546
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81536 10 10 5
+D1
+~
+~
+0 -1 81547 10 10 5
+D2
+~
+~
+0 -1 81556 10 10 5
+D3
+~
+~
+0 -1 81545 10 10 5
+-1
+S
+
+#81547
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81537 10 10 5
+D1
+~
+~
+0 -1 81548 10 10 5
+D2
+~
+~
+0 -1 81557 10 10 5
+D3
+~
+~
+0 -1 81546 10 10 5
+-1
+S
+
+#81548
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81538 10 10 5
+D1
+~
+~
+0 -1 81549 10 10 5
+D2
+~
+~
+0 -1 81558 10 10 5
+D3
+~
+~
+0 -1 81547 10 10 5
+-1
+S
+
+#81549
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81539 10 10 5
+D2
+~
+~
+0 -1 81559 10 10 5
+D3
+~
+~
+0 -1 81548 10 10 5
+-1
+S
+
+#81550
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81540 10 10 5
+D1
+~
+~
+0 -1 81551 10 10 5
+D2
+~
+~
+0 -1 81560 10 10 5
+-1
+S
+
+#81551
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81541 10 10 5
+D1
+~
+~
+0 -1 81552 10 10 5
+D2
+~
+~
+0 -1 81561 10 10 5
+D3
+~
+~
+0 -1 81550 10 10 5
+-1
+S
+
+#81552
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81542 10 10 5
+D1
+~
+~
+0 -1 81553 10 10 5
+D2
+~
+~
+0 -1 81562 10 10 5
+D3
+~
+~
+0 -1 81551 10 10 5
+-1
+S
+
+#81553
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81543 10 10 5
+D1
+~
+~
+0 -1 81554 10 10 5
+D2
+~
+~
+0 -1 81563 10 10 5
+D3
+~
+~
+0 -1 81552 10 10 5
+-1
+S
+
+#81554
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81544 10 10 5
+D1
+~
+~
+0 -1 81555 10 10 5
+D2
+~
+~
+0 -1 81564 10 10 5
+D3
+~
+~
+0 -1 81553 10 10 5
+-1
+S
+
+#81555
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81545 10 10 5
+D1
+~
+~
+0 -1 81556 10 10 5
+D2
+~
+~
+0 -1 81565 10 10 5
+D3
+~
+~
+0 -1 81554 10 10 5
+-1
+S
+
+#81556
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81546 10 10 5
+D1
+~
+~
+0 -1 81557 10 10 5
+D2
+~
+~
+0 -1 81566 10 10 5
+D3
+~
+~
+0 -1 81555 10 10 5
+-1
+S
+
+#81557
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81547 10 10 5
+D1
+~
+~
+0 -1 81558 10 10 5
+D2
+~
+~
+0 -1 81567 10 10 5
+D3
+~
+~
+0 -1 81556 10 10 5
+-1
+S
+
+#81558
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81548 10 10 5
+D1
+~
+~
+0 -1 81559 10 10 5
+D2
+~
+~
+0 -1 81568 10 10 5
+D3
+~
+~
+0 -1 81557 10 10 5
+-1
+S
+
+#81559
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81549 10 10 5
+D2
+~
+~
+0 -1 81569 10 10 5
+D3
+~
+~
+0 -1 81558 10 10 5
+-1
+S
+
+#81560
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81550 10 10 5
+D1
+~
+~
+0 -1 81561 10 10 5
+D2
+~
+~
+0 -1 81570 10 10 5
+-1
+S
+
+#81561
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81551 10 10 5
+D1
+~
+~
+0 -1 81562 10 10 5
+D2
+~
+~
+0 -1 81571 10 10 5
+D3
+~
+~
+0 -1 81560 10 10 5
+-1
+S
+
+#81562
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81552 10 10 5
+D1
+~
+~
+0 -1 81563 10 10 5
+D2
+~
+~
+0 -1 81572 10 10 5
+D3
+~
+~
+0 -1 81561 10 10 5
+-1
+S
+
+#81563
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81553 10 10 5
+D1
+~
+~
+0 -1 81564 10 10 5
+D2
+~
+~
+0 -1 81573 10 10 5
+D3
+~
+~
+0 -1 81562 10 10 5
+-1
+S
+
+#81564
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81554 10 10 5
+D1
+~
+~
+0 -1 81565 10 10 5
+D2
+~
+~
+0 -1 81574 10 10 5
+D3
+~
+~
+0 -1 81563 10 10 5
+-1
+S
+
+#81565
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81555 10 10 5
+D1
+~
+~
+0 -1 81566 10 10 5
+D2
+~
+~
+0 -1 81575 10 10 5
+D3
+~
+~
+0 -1 81564 10 10 5
+-1
+S
+
+#81566
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81556 10 10 5
+D1
+~
+~
+0 -1 81567 10 10 5
+D2
+~
+~
+0 -1 81576 10 10 5
+D3
+~
+~
+0 -1 81565 10 10 5
+-1
+S
+
+#81567
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81557 10 10 5
+D1
+~
+~
+0 -1 81568 10 10 5
+D2
+~
+~
+0 -1 81577 10 10 5
+D3
+~
+~
+0 -1 81566 10 10 5
+-1
+S
+
+#81568
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81558 10 10 5
+D1
+~
+~
+0 -1 81569 10 10 5
+D2
+~
+~
+0 -1 81578 10 10 5
+D3
+~
+~
+0 -1 81567 10 10 5
+-1
+S
+
+#81569
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81559 10 10 5
+D2
+~
+~
+0 -1 81579 10 10 5
+D3
+~
+~
+0 -1 81568 10 10 5
+-1
+S
+
+#81570
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81560 10 10 5
+D1
+~
+~
+0 -1 81571 10 10 5
+D2
+~
+~
+0 -1 81580 10 10 5
+-1
+S
+
+#81571
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81561 10 10 5
+D1
+~
+~
+0 -1 81572 10 10 5
+D2
+~
+~
+0 -1 81581 10 10 5
+D3
+~
+~
+0 -1 81570 10 10 5
+-1
+S
+
+#81572
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81562 10 10 5
+D1
+~
+~
+0 -1 81573 10 10 5
+D2
+~
+~
+0 -1 81582 10 10 5
+D3
+~
+~
+0 -1 81571 10 10 5
+-1
+S
+
+#81573
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81563 10 10 5
+D1
+~
+~
+0 -1 81574 10 10 5
+D2
+~
+~
+0 -1 81583 10 10 5
+D3
+~
+~
+0 -1 81572 10 10 5
+-1
+S
+
+#81574
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81564 10 10 5
+D1
+~
+~
+0 -1 81575 10 10 5
+D2
+~
+~
+0 -1 81584 10 10 5
+D3
+~
+~
+0 -1 81573 10 10 5
+-1
+S
+
+#81575
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81565 10 10 5
+D1
+~
+~
+0 -1 81576 10 10 5
+D2
+~
+~
+0 -1 81585 10 10 5
+D3
+~
+~
+0 -1 81574 10 10 5
+-1
+S
+
+#81576
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81566 10 10 5
+D1
+~
+~
+0 -1 81577 10 10 5
+D2
+~
+~
+0 -1 81586 10 10 5
+D3
+~
+~
+0 -1 81575 10 10 5
+-1
+S
+
+#81577
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81567 10 10 5
+D1
+~
+~
+0 -1 81578 10 10 5
+D2
+~
+~
+0 -1 81587 10 10 5
+D3
+~
+~
+0 -1 81576 10 10 5
+-1
+S
+
+#81578
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81568 10 10 5
+D1
+~
+~
+0 -1 81579 10 10 5
+D2
+~
+~
+0 -1 81588 10 10 5
+D3
+~
+~
+0 -1 81577 10 10 5
+-1
+S
+
+#81579
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81569 10 10 5
+D2
+~
+~
+0 -1 81589 10 10 5
+D3
+~
+~
+0 -1 81578 10 10 5
+-1
+S
+
+#81580
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81570 10 10 5
+D1
+~
+~
+0 -1 81581 10 10 5
+D2
+~
+~
+0 -1 81590 10 10 5
+-1
+S
+
+#81581
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81571 10 10 5
+D1
+~
+~
+0 -1 81582 10 10 5
+D2
+~
+~
+0 -1 81591 10 10 5
+D3
+~
+~
+0 -1 81580 10 10 5
+-1
+S
+
+#81582
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81572 10 10 5
+D1
+~
+~
+0 -1 81583 10 10 5
+D2
+~
+~
+0 -1 81592 10 10 5
+D3
+~
+~
+0 -1 81581 10 10 5
+-1
+S
+
+#81583
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81573 10 10 5
+D1
+~
+~
+0 -1 81584 10 10 5
+D2
+~
+~
+0 -1 81593 10 10 5
+D3
+~
+~
+0 -1 81582 10 10 5
+-1
+S
+
+#81584
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81574 10 10 5
+D1
+~
+~
+0 -1 81585 10 10 5
+D2
+~
+~
+0 -1 81594 10 10 5
+D3
+~
+~
+0 -1 81583 10 10 5
+-1
+S
+
+#81585
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81575 10 10 5
+D1
+~
+~
+0 -1 81586 10 10 5
+D2
+~
+~
+0 -1 81595 10 10 5
+D3
+~
+~
+0 -1 81584 10 10 5
+-1
+S
+
+#81586
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81576 10 10 5
+D1
+~
+~
+0 -1 81587 10 10 5
+D2
+~
+~
+0 -1 81596 10 10 5
+D3
+~
+~
+0 -1 81585 10 10 5
+-1
+S
+
+#81587
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81577 10 10 5
+D1
+~
+~
+0 -1 81588 10 10 5
+D2
+~
+~
+0 -1 81597 10 10 5
+D3
+~
+~
+0 -1 81586 10 10 5
+-1
+S
+
+#81588
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81578 10 10 5
+D1
+~
+~
+0 -1 81589 10 10 5
+D2
+~
+~
+0 -1 81598 10 10 5
+D3
+~
+~
+0 -1 81587 10 10 5
+-1
+S
+
+#81589
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81579 10 10 5
+D2
+~
+~
+0 -1 81599 10 10 5
+D3
+~
+~
+0 -1 81588 10 10 5
+-1
+S
+
+#81590
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81580 10 10 5
+D1
+~
+~
+0 -1 81591 10 10 5
+-1
+S
+
+#81591
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81581 10 10 5
+D1
+~
+~
+0 -1 81592 10 10 5
+D3
+~
+~
+0 -1 81590 10 10 5
+-1
+S
+
+#81592
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81582 10 10 5
+D1
+~
+~
+0 -1 81593 10 10 5
+D3
+~
+~
+0 -1 81591 10 10 5
+-1
+S
+
+#81593
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81583 10 10 5
+D1
+~
+~
+0 -1 81594 10 10 5
+D3
+~
+~
+0 -1 81592 10 10 5
+-1
+S
+
+#81594
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81584 10 10 5
+D1
+~
+~
+0 -1 81595 10 10 5
+D3
+~
+~
+0 -1 81593 10 10 5
+-1
+S
+
+#81595
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81585 10 10 5
+D1
+~
+~
+0 -1 81596 10 10 5
+D3
+~
+~
+0 -1 81594 10 10 5
+-1
+S
+
+#81596
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81586 10 10 5
+D1
+~
+~
+0 -1 81597 10 10 5
+D3
+~
+~
+0 -1 81595 10 10 5
+-1
+S
+
+#81597
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81587 10 10 5
+D1
+~
+~
+0 -1 81598 10 10 5
+D3
+~
+~
+0 -1 81596 10 10 5
+-1
+S
+
+#81598
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81588 10 10 5
+D1
+~
+~
+0 -1 81599 10 10 5
+D3
+~
+~
+0 -1 81597 10 10 5
+-1
+S
+
+#81599
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 81589 10 10 5
+D3
+~
+~
+0 -1 81598 10 10 5
+-1
+S
+
+#0
+

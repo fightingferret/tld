@@ -1,0 +1,4161 @@
+#AREA
+Appleglen and Surrounds~
+Cassiopeia Wyld Deimos Ylena Bliks Phobos~
+~
+
+0 0
+0
+#ROOMS
+
+#77000
+Appleglen Town Square~
+Appleglen's main square is pebbled with multi-colored cobblestones and
+
+features a fountain in its center.  The fountain has been carved from an
+
+unusual blue stone and has for its centerpiece a carved bouquet of
+
+flowers.  From the center of each of the bouquet's individual flowers
+
+sprouts a fine stream of water that arcs in the air before falling into
+
+the pool of water below with an almost musical quality.
+
+~
+safe spot and recall spot
+
+~
+-235405309 1 9 0
+D0
+~
+~
+0 -1 77002 10 10 5
+D1
+~
+~
+0 -1 77003 10 10 5
+D2
+~
+~
+0 -1 77001 10 10 5
+D3
+~
+~
+0 -1 77012 10 10 5
+A
+~
+~
+send_to_room( #msg, room );
+
+~
+E
+msg~
+A light tinkling melody from the fountain carries on the breeze.
+
+~
+!
+2 100 0
+2362 9 1509949540 3 0
+2363 9 1509949540 3 0
+2361 9 1509949540 3 0
+1 17 1509949540 -2 0
+2368 9 1509949540 3 0
+2368 9 1509949540 3 0
+-1
+S
+
+#77001
+South Appleglen Square~
+This section of the town square is paved with rainbow-hued cobblestones. 
+
+The paving continues south past two small buildings, as wall as north,
+
+east and west.  A fountain can be seen to the north and the musical
+
+tinkling sound of its water can be occasionally heard.
+
+~
+[Meekla] smiling and laughing, smiling and laughing
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 77000 10 10 5
+D1
+~
+~
+0 -1 77004 10 10 5
+D2
+~
+~
+0 -1 77015 10 10 5
+D3
+~
+~
+0 -1 77007 10 10 5
+E
+apple trees~
+Small apple trees line the road here, creating gentle patches of shade on
+
+sunny days.  Bees buzz about the tiny white apple blossoms collecting the
+
+sweet nectar for their queen.
+
+~
+2368 9 1509949540 3 0
+-1
+S
+
+#77002
+North Appleglen Square~
+The north end of this large square is covered in brightly colored
+
+cobblestone that extend toward the south, east and west, while to the
+
+north they taper off into a quaint little path.  You can hear a faint
+
+musical tinkling coming from the south.
+
+~
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 77013 10 10 5
+D1
+~
+~
+0 -1 77005 10 10 5
+D2
+~
+~
+0 -1 77000 10 10 5
+D3
+~
+~
+0 -1 77011 10 10 5
+2368 9 1509949540 3 0
+-1
+S
+
+#77003
+East Square of Appleglen~
+The multicolored cobblestone path leads in all directions from this shady
+
+little rest spot, bordered by small manicured shrubs and young apple
+
+trees.  Small birds can be seen flitting about in the branches above,
+
+singing happily.  A musical tinkling can be heard coming from the west of
+
+here, lending a relaxing tone to the area.
+
+~
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 77005 10 10 5
+D1
+~
+~
+0 -1 77014 10 10 5
+D2
+~
+~
+0 -1 77004 10 10 5
+D3
+~
+~
+0 -1 77000 10 10 5
+2368 9 1509949540 3 0
+-1
+S
+
+#77004
+Southeast End of the Square~
+The cobblestone path winds its way through here from the north and west,
+
+with small paths extending from the main to a General Store to the south,
+
+and a Bank to the east.  Both places of commerce are proclaimed by
+
+neatly lettered signs on their fronts.  From the store can be heard the
+
+sounds of folk making transactions, while the bank is relatively quiet,
+
+except for the occasional jingling sound of coins.
+
+~
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 77003 10 10 5
+D1
+~
+~
+0 -1 77019 10 10 5
+D2
+~
+~
+0 -1 77020 10 10 5
+D3
+~
+~
+0 -1 77001 10 10 5
+2368 9 1509949540 3 0
+-1
+S
+
+#77005
+Northeast End of the Square~
+The cobbled path leads both south and west, going past the office of
+
+Appleglen's sheriff to the east, and the set of double, leadlight doors
+
+of the Red Swan Inn to the north.  The musical tinkling of water floats
+
+in from the southwest.
+
+~
+~
+-235405311 1 9 0
+D0
+leadlight doors~
+leadlight wooden door north~
+131 -1 77006 5 10 5
+D1
+~
+~
+0 -1 77018 10 10 5
+D2
+~
+~
+0 -1 77003 10 10 5
+D3
+~
+~
+0 -1 77002 10 10 5
+-1
+S
+
+#77006
+The Red Swan~
+The public room of this small inn is quiet, with few patrons about.  A
+
+thin haze of pipe smoke fills the air, and the smell of strong ale
+
+abounds.  There are many round oak tables surrounded by circular stools
+
+about the room, and a large fireplace on the north side of the room
+
+provides a comforting warmth.  A bar follows the south-east curve of the
+
+building and has before it some stools and on the wall behind it is
+
+mounted a long wine rack that is sparsely stocked with various bottles of
+
+wine.  In the middle of the southern wall is a set of wooden doors with
+
+leadlight glass windows, while along the western wall a staircase leads
+
+up.
+
+~
+~
+-201846769 0 5 0
+D2
+leadlight doors~
+leadlight wooden door south~
+131 -1 77005 5 10 5
+D4
+~
+~
+0 -1 77017 10 10 5
+E
+fireplace~
+Large comfy chairs are placed around this old fireplace, inviting the
+
+weary traveller to recline for a short rest.  A small poker and broom has
+
+been placed next to the fireplace to help keep things neat and tidy on
+
+those cold nights when a roaring fire would be built.
+
+~
+E
+wooden doors leadlight~
+These heavy, wooden doors have been made out of a dark wood then stained
+
+to a deep gloss.  Taking up the majority of the upper portion of each
+
+door is a leadlight glass panel that features an elegant red swan
+
+swimming in a like with reeds behind them.  The swans on the individual
+
+doors face each other.
+
+~
+E
+table stools~
+Most of the inn's tables and stools are only big enough to accommodate
+
+gnome-sized or smaller patrons, but there are a couple of larger tables
+
+and stools to accommodate the taller traveller that visits from time to
+
+time.
+
+~
+2352 9 1509949540 3 0
+24 17 1509949520 -1 1
+24 17 1509949520 -1 42
+3426 17 1509949460 -1 38
+114 17 1509949490 -1 2
+-1
+S
+
+#77007
+Southwest End of the Square~
+The corner of the cobblestoned square is bordered by shops to the south
+
+and west, while to the north and east the sea of multi-colored
+
+cobblestones continues.  Above a pair of open, stout, oaken doors to the
+
+south is the sign of the local blacksmith.  Another sign featuring a
+
+painted doll sits atop a pole next to the open door of the shop to the
+
+west.  The pole is planted among flowers in a wide wooden pot that rests
+
+on the cobbled street.
+
+~
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 77012 10 10 5
+D1
+~
+~
+0 -1 77001 10 10 5
+D2
+~
+~
+0 -1 77021 10 10 5
+D3
+~
+~
+0 -1 77022 10 10 5
+E
+shrubs~
+Croppped shrubs, that stand about two feet high, decorate the walkway
+
+here with a multitude of various shapes, each more elaborate then the
+
+next.
+
+~
+2363 9 1509949540 3 0
+-1
+S
+
+#77008
+Appleglen School Playground~
+This large playground is bounded on three sides by thick forest.  It is a
+
+large grassy meadow with swings, slides, see-saws, sandboxes, and even a
+
+large toy dragon the children can climb around in.  There is a giant tree
+
+in the middle of the playground with a large, well-built treehouse in its
+
+branches.  To the west is the schoolhouse which manages to give the
+
+impression that it is somehow watching over the area.
+
+~
+~
+-235405311 1 5 0
+D3
+~
+~
+0 -1 77040 10 10 5
+2367 9 1509949540 3 0
+2366 9 1509949540 3 0
+-1
+S
+
+#77009
+South Cranberry Road~
+The road is hedged in by two low stone walls on the east and west, and
+
+over each you can see simple farms.  The road itself is packed dirt,
+
+rutted by the passing of wagons.  To the north you can see a small town
+
+and to the south the road ends in an intersection.
+
+~
+~
+-235405303 3 9 0
+D0
+~
+~
+0 -1 77041 10 10 6
+D2
+~
+~
+0 -1 77052 10 10 5
+-1
+S
+
+#77010
+Outside the North Gate of Appleglen~
+You are standing outside the north gate of the small town to the south. 
+
+The road north is heavily damaged and cannot be travelled.  Perhaps you
+
+should climb back over the wall.
+
+~
+~
+-235405312 3 9 0
+D2
+wooden gate~
+wooden gate south~
+195 -1 77044 10 10 5
+A
+climb~
+wall stone 1 west~
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+transfer( ch, find_room( 38753 ) );
+
+act_notchar( #arrive, ch );
+
+~
+E
+msg~
+You climb over the low stone wall to the west.
+
+~
+E
+rmsg~
+$n climbs over the low stone wall, heading west.
+
+~
+E
+arrive~
+$n comes climbing over the low stone wall on the east.
+
+~
+!
+0 0 0
+-1
+S
+
+#77011
+A Shady Picnic Area~
+This plush grassy area is quite well-shaded thanks to the large apple
+
+trees growing all around it in a circle.  There are several gaps between
+
+the tree trunks heading in each of the four directions.  Small wooden
+
+benches are set out here on the bright green grass for weary travellers
+
+or merry picnickers.  The sweet smell of baked pies wafts in from the
+
+north on a light breeze.
+
+~
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 77024 10 10 5
+D1
+~
+~
+0 -1 77002 10 10 5
+D2
+~
+~
+0 -1 77012 10 10 5
+D3
+~
+~
+0 -1 77023 10 10 5
+A
+pick~
+apple fruit~
+if( rflag( reset0, room ) ) {
+
+  if( random(1, 4) == 4) {
+
+    send_to_char( #none, ch );
+
+    remove_rflag( reset0, room );
+
+    }
+
+  else {
+
+    act_tochar( #msg, ch );
+
+    act_notchar( #rmsg, ch );
+
+    obj_to_char( oload( 49 ), ch );
+
+    }
+
+  }
+
+else
+
+  send_to_char( #none, ch );
+
+~
+E
+msg~
+You pick a bright red apple from the tree.
+
+~
+E
+rmsg~
+$n plucks a bright red apple from a nearby tree.
+
+~
+E
+none~
+You don't see any ripe apples in reach.
+
+~
+!
+0 0 0
+215 9 1509949540 3 0
+215 9 1509949540 3 0
+2402 9 1509949540 3 0
+-1
+S
+
+#77012
+West Appleglen Square~
+The multi-colored cobblestones stretch out toward the south and west from
+
+this spot.  A shady picnic area can be seen to the north, and a musical
+
+tinkling drifts in from the east.  An ancient apple tree grows in the
+
+middle of the cobblestone sea, spreading its blossom-filled branches to
+
+shade all that pass by here.
+
+~
+[Phobos] I can't look at the tree, I feel robbed.
+
+~
+-235405311 1 9 0
+D0
+~
+~
+0 -1 77011 10 10 5
+D1
+~
+~
+0 -1 77000 10 10 5
+D2
+~
+~
+0 -1 77007 10 10 5
+D3
+~
+~
+0 -1 77016 10 10 5
+2368 9 1509949540 3 0
+-1
+S
+
+#77013
+North Cranberry Road~
+Cobblestones cover almost the entire roadway here and seem very well
+
+maintained for such a well traveled road.  Small, quaint buildings lie to
+
+the east and west of here while the brightly colored road leads off to
+
+the north and south.  Beautiful apple trees line the road at about four
+
+foot intervals adding a pleasant fragrance to the air.
+
+~
+~
+-235405311 1 6 0
+D0
+~
+~
+0 -1 77028 10 10 5
+D2
+~
+~
+0 -1 77002 10 10 5
+E
+cobblestones~
+The cobblestone roadway is breathtaking to look upon, its rainbow-colored
+
+stones have been quite well maintained.  Each smooth stone appears to
+
+have been left there yesterday, not a scuff to be found on them.
+
+~
+755 9 1509949540 3 0
+-1
+S
+
+#77014
+East Applewine Road~
+This rustic, cobblestone-paved road, has been obviously kept in good
+
+repair over time.  Rows of large apple trees line the north and south
+
+sides of this road, casting just enough shade during the day to make for
+
+a pleasant stroll.  To the west you can see the road taper down a bit as
+
+it opens into a nice-sized town square that is currently brimming with
+
+activity.  To the east of here, the well-tended road continues toward the
+
+east.
+
+~
+~
+-235405311 1 6 0
+D1
+~
+~
+0 -1 77026 10 10 5
+D3
+~
+~
+0 -1 77003 10 10 5
+2362 9 1509949540 3 0
+-1
+S
+
+#77015
+South Cranberry Road~
+This road is paved with colorful cobblestones with no weeds, loose or
+
+chipped stones to be seen.  Apple trees and bushes line both sides of the
+
+road, giving the traveller shade and beautiful scenery, while just beyond
+
+the row of trees are the ivy-covered walls of a couple of buildings.
+
+~
+~
+-235405311 1 6 0
+D0
+~
+~
+0 -1 77001 10 10 5
+D2
+~
+~
+0 -1 77027 10 10 5
+E
+ivy~
+A bright royal blue leaved ivy covers the walls near here with a dazzling
+
+display of color, its small red tendrils snaking out from underneath
+
+each leaf attaches it to new found crevices in the walls.
+
+~
+-1
+S
+
+#77016
+West Applewine Road~
+Applewine road is paved with cobblestones of various colors, heading east
+
+into the village square, and west to a residential area and is bordered
+
+by well-manicured apple trees.  Just behind the trees, both north and
+
+south, are ivy-covered walls of buildings.
+
+~
+~
+-235405311 1 6 0
+D1
+~
+~
+0 -1 77012 10 10 5
+D3
+~
+~
+0 -1 77025 10 10 5
+E
+ivy~
+A beautiful ivy plant with large, royal blue leaves climbs the west side
+
+of the walls on the building near here.  Bright red tendrils branch out
+
+from under each leaf, reaching for a new crevice to inhabit.
+
+~
+-1
+S
+
+#77017
+Upstairs Hallway~
+This hallway runs in a north-south direction, with a round, leadlight
+
+window at each end to help illuminate this area and a rug running its
+
+length.  A staircase leads down to the public room of the inn, while
+
+doors line both sides of the hall.
+
+~
+~
+-235405307 0 5 0
+D1
+wooden door~
+wooden door east~
+131 -1 77097 10 10 5
+D3
+wooden door~
+wooden door west~
+131 -1 77096 10 10 5
+D5
+~
+~
+0 -1 77006 10 10 5
+E
+leadlight window~
+The featured design in each of the windows is of an elegant red swan
+
+swimming in a reed-lined lake.  Whatever could be seen out of these
+
+windows is distorted by the dappled glass that makes up the design,
+
+however the light that shines through each window takes on the color
+
+properties of the glass and then plays on the nearby walls, floors and
+
+ceiling to give an enchanting performance.
+
+~
+-1
+S
+
+#77018
+Appleglen Sheriff's Office~
+This office is small and neat, not lending to the appearance of hustle
+
+and bustle.  A little desk sits in the middle of the room, with chairs
+
+here and there.  A few small windows light up the room reasonably well,
+
+casting enough light to be sure there is not one speck of dust
+
+malingering anywhere.  A few lamps hang on the walls, and a noteboard
+
+near the door has notices, mostly for lost items or animals.  In the rear
+
+of the room, a stout oaken trapdoor leads downwards.
+
+~
+~
+-201850867 0 5 0
+D3
+~
+~
+0 -1 77005 10 10 5
+D5
+oaken trapdoor~
+trapdoor oaken down~
+131 -1 77048 10 10 5
+2275 9 1509949540 3 0
+-1
+S
+
+#77019
+Appleglen Bank~
+This brightly-lit little office carries the lingering smell of sawdust
+
+and money.  Resting in the center of the room, a small wooden desk is
+
+covered in many neatly-arranged little stacks of papers.  A tiny, well
+
+worn chair rests next to the desk in little grooves on the floor.  There
+
+is an iron-banded door made of a very sturdy oak to the south.
+
+~
+[Dalthas] should be well-worn I think
+
+~
+-201848785 0 5 0
+D2
+iron-banded door~
+south iron-banded door oak~
+407 -1 77045 10 10 5
+D3
+~
+~
+0 -1 77004 10 10 5
+E
+desk small wooden~
+This tiny oak desk is covered in stacks of papers.  The spots of ink
+
+blotches covering the desk denotes that a lot of writing has been done
+
+here.
+
+~
+-1
+S
+
+#77020
+Appleglen General Store~
+This small dusty shop has a large assortment of shelves running along the
+
+east and west walls.  At the end of the shelves, against the south wall,
+
+is a small counter that stands about two feet high.  Trinkets of various
+
+shapes and sizes cover most of the shelves in neat little piles.
+
+~
+~
+-201846769 0 5 0
+D0
+~
+~
+0 -1 77004 10 10 5
+E
+trinkets~
+A myriad of trinkets lie on the shelves here, ranging from small toys to
+
+camping supplies.  All appear to be made with care, each displaying the
+
+kind of skilled craftmanship that the dexterous halflings have become
+
+famous for.
+
+~
+2365 9 1509949540 3 0
+6 17 1509949470 -1 0
+20 17 1509949465 -1 0
+948 17 1509949470 -1 0
+949 17 1509949460 -1 0
+26 17 1509949500 -1 0
+55 17 1509949490 -1 0
+3836 17 1509949470 -1 0
+-1
+S
+
+#77021
+Yan Mulefeet's Smithy~
+Large open windows give this store a bright atmosphere as the light
+
+glints from various and sundry arms and armor displayed on racks about
+
+the room.  The smell of oil wafts faintly about the room, but the open
+
+windows keep it from becoming stifling.  On the back wall can be seen a
+
+pair of large vats.  A small counter is set up near the west wall for
+
+sales.
+
+~
+~
+-201846769 0 5 0
+D0
+~
+~
+0 -1 77007 10 10 5
+E
+vats~
+Large vats of some odd-smelling oil are set here against the back wall,
+
+wafting their odor around the room.  Upon closer inspection you can see
+
+pieces of leather armor being cured for added toughness and durability.
+
+~
+2276 9 1509949540 3 0
+2042 17 1509949540 -1 0
+2022 17 1509949540 -1 0
+2002 17 1509949540 -1 0
+3028 17 335544420 -1 0
+2081 17 1509949490 -1 0
+2003 17 1509949500 -1 0
+1077 17 1509949500 -1 0
+186 17 1509949500 -1 0
+980 17 1509949465 -1 0
+33 17 1509949520 -1 0
+34 17 1509949460 -1 0
+3035 17 1509949520 -1 0
+3000 17 1509949520 -1 0
+3001 17 1509949460 -1 0
+2121 17 1509949540 -1 0
+2122 17 1509949540 -1 0
+2124 17 1509949460 -1 0
+-1
+S
+
+#77022
+The Appleglen Toy Shop~
+A highly-polished hardwood floor and many windows along the walls helps
+
+give this little store a bright and cheery atmosphere.  Many shelves line
+
+the walls and are filled with toys of many varieties.  At the far end of
+
+the shop, a counter runs the length of the back wall, behind which is a
+
+table with various tools and materials on it.
+
+~
+~
+-201846769 0 5 0
+D1
+~
+~
+0 -1 77007 10 10 5
+2358 9 1509949540 3 0
+3432 17 1509949442 -1 0
+3422 17 1509949442 -1 0
+3220 17 1509949442 -1 0
+3441 17 1509949470 -1 0
+3152 17 1509949470 -1 0
+3142 17 1509949442 -1 0
+3036 17 1509949442 -1 0
+2999 17 1509949442 -1 0
+2533 17 1509949442 -1 0
+2998 17 1509949442 -1 0
+2997 17 1509949442 -1 0
+3634 17 1509949442 -1 0
+3651 17 1509949442 -1 0
+-1
+S
+
+#77023
+Temple of Freylia~
+Small applewood benches are intermittently placed along the edges of
+
+bricked garden pathways.  The pathways, which meander between several
+
+small white rose bushes, lead to an open, three-walled rock building.  A
+
+low wrought-iron fence runs across the open wall, and the thatched roof
+
+has a large opening that sheds light onto a very large white aspen tree
+
+stump that rests in the middle of the building.  Small, flowering creeper
+
+vines encircle the stump, with a few feathery tendrils lying across the
+
+highly polished top.  A well-crafted shortsword has been driven into the
+
+tree and a golden goblet of wine is placed on the stump opposite the
+
+sword.
+
+~
+~
+-201850737 0 5 0
+D1
+~
+~
+0 -1 77011 10 10 5
+E
+alter stump oak ancient~
+This ancient oakenwood tree stump has been fashioned into an alter,
+
+dedicated to the halfling goddess Freylia.  Elaborate carvings of the
+
+goddess in action cover all it's sides, a job that must have taken many
+
+years of a skilled caftsmen.
+
+~
+2386 9 1509949540 3 0
+-1
+S
+
+#77024
+The Apple's Glory Bakery~
+This well-lit store billows waves of pleasant smells around the room. 
+
+The air is slightly warmer in here from the constant heat of the baking
+
+ovens.  The countertops here are lined with assorments of delicious
+
+smelling pastries and treats.  Freshly baked cakes and pies have been set
+
+on the window sill against the east wall, drifting their sweet odors out
+
+to the the road.
+
+~
+~
+-201846769 0 5 0
+D2
+~
+~
+0 -1 77011 10 10 5
+E
+pastries sweets~
+This huge assortment of treats consists of mainly apple dishes, among
+
+which, there are some golden apple pies and fresh baked apple strudels. 
+
+A row of sticky, candied apples shine from the light hitting their glaze.
+
+~
+2277 9 1509949540 3 0
+49 17 1509949540 -1 0
+2708 17 1509949540 -1 0
+3258 17 1509949540 -1 0
+3261 17 1509949540 -1 0
+3341 17 1509949540 -1 0
+3426 17 1509949540 -1 43
+-1
+S
+
+#77025
+West Applewine Road~
+Applewine road continues here, leading east and west and has small paths
+
+leading to homes to the north and south.  Small beds of brightly-colored
+
+flowers line both sides of the small paths.  The ivy-covered houses are
+
+well-kept and look to have been designed to blend in with their
+
+surroundings.  Apple trees line either side of the road, their leaves
+
+swaying in the breeze.
+
+~
+~
+-235405311 1 6 0
+D0
+~
+~
+0 -1 77031 10 10 5
+D1
+~
+~
+0 -1 77016 10 10 5
+D2
+~
+~
+0 -1 77032 10 10 5
+D3
+~
+~
+0 -1 77043 10 10 5
+-1
+S
+
+#77026
+East Applewine Road~
+The smell of home cooking wafts in from the small houses on either side
+
+of the cobblestoned road.  The house to the north has small, knee-high
+
+shrubbery, carved into the form of small animals, lining its walkway,
+
+while the southern house has a neat plot of grass before it.  The road
+
+continues both east and west.
+
+~
+~
+-235405311 1 6 0
+D0
+door~
+door north~
+131 -1 77029 10 10 5
+D1
+~
+~
+0 -1 77042 10 10 5
+D2
+door~
+door south~
+131 -1 77030 10 10 5
+D3
+~
+~
+0 -1 77014 10 10 5
+-1
+S
+
+#77027
+South Cranberry Road~
+The cobblestone road runs to both the north and south with small paths
+
+leading both east and west.  To the east the path leads to a schoolhouse,
+
+complete with a bell tower, which helps to provide the educational needs
+
+of the town's youngsters.  While off to the west, the local medicine shop
+
+stands within a small grove of trees.  Apple trees and manicured hedges
+
+line both sides of the path.
+
+~
+~
+-235405311 1 6 0
+D0
+~
+~
+0 -1 77015 10 10 5
+D1
+~
+~
+0 -1 77040 10 10 5
+D2
+~
+~
+0 -1 77041 10 10 5
+D3
+~
+~
+0 -1 77039 10 10 5
+-1
+S
+
+#77028
+North Cranberry Road~
+Cranberry road runs north and south here, leading into town to the south
+
+and out to the rural areas to the north.  Apple trees line both sides of
+
+the road, with hedges and flowers growing in abundance.  A low stone wall
+
+lies behind the trees and other plants, separating the road from the
+
+farms on either side.  A wooden gate opens to the east, leading to a
+
+white stone path that heads toward the farmhouse.  The muffled sounds of
+
+farm animals comes from a small barn on the other side of the low stone
+
+wall on the west.
+
+~
+~
+-235405311 1 6 0
+D0
+~
+~
+0 -1 77038 10 10 5
+D1
+small wooden gate~
+gate~
+131 -1 60500 10 10 5
+D2
+~
+~
+0 -1 77013 10 10 5
+2368 9 1509949540 3 0
+-1
+S
+
+#77029
+Small Cottage~
+This small airy cottage is well-lit by the various windows placed along
+
+the east and west walls, allowing both the morning and afternoon light to
+
+stream in.  A small table, set at about a foot off the floor, rests in
+
+the center of the room and is covered in freshly baked homestyle food. 
+
+Everything in this little home seems to be well cared for, not a speck of
+
+dust can be found by even the most serious searcher.
+
+~
+[Phobos] Well-lit.
+
+~
+-201850875 0 5 0
+D2
+door~
+door south~
+131 -1 77026 10 10 5
+-1
+S
+
+#77030
+A Small Cottage~
+This is a small, snug, round cottage made with stone walls supporting a
+
+wide, straw-thatched roof.  It has a small fireplace in the back, with a
+
+couple of short logs laid beside it.  A bed sits at a raised portion of
+
+the room, on the east side of the house, and there is a table with some
+
+chairs in the center of the building.  On the west side of the building
+
+is a low stone wall that separates a kitchen area that has a wide, cast
+
+iron stove.  The house is impeccably clean, and has been decorated with
+
+an assortment of brightly-colored carpets and a number of flower pots
+
+with a wide assortment of flowers in them.
+
+~
+~
+-235405311 3 9 0
+D0
+door~
+door north~
+131 -1 77026 10 10 5
+-1
+S
+
+#77031
+Halfling Home~
+This small abode is neat and well-kept.  The roof is low, but the room is
+
+wide and spacious.  It has all the amenities, some beds, couches, chairs,
+
+bookshelves, tables, and a kitchen.  Windows look out onto all sides, and
+
+a small lamp stands by the door for night-time use.  The floor is made
+
+from hardwood, and covered with plush rugs.
+
+~
+[Belgar] form -> from
+
+~
+-201850875 0 5 0
+D2
+~
+~
+0 -1 77025 10 10 5
+E
+lamp~
+This lamp stands about two feet tall and casts a soft pink light about
+
+the cottage, due to its rose-colored shade.  The base of the small lamp
+
+is made from the same apple wood that the rest of the town is decorated
+
+in.
+
+~
+E
+rugs plush floor~
+The thick, plush throw rugs that decorate the hardwood floor beneath your
+
+feet look to be made from some type of soft furred animal, possibly
+
+angora rabbit fur.  Each of the rugs has been stitched neatly along its
+
+edges and kept quite clean, very few spots of wear can be seen on them.
+
+~
+-1
+S
+
+#77032
+Small Abode~
+Spacious and airy, this halfling home is the picture of neatness and
+
+comfort.  Comfortable furniture is the rule, beds, couches, chairs, all
+
+look soft and inviting.  The tables are low but wide, and made from
+
+beautiful oak.  There is a large-grilled fireplace in the corner, with
+
+throw pillows all around for reclining.
+
+~
+~
+-201850875 0 5 0
+D0
+~
+~
+0 -1 77025 10 10 5
+E
+pillows throw~
+A multi-colored stack of pillows has been placed next to the fireplace
+
+here in a neat little pile, inviting you to rest your weary bones on them.
+
+~
+-1
+S
+
+#77033
+The Pony Hut~
+The floor here is strewn with hay.  Eight small stalls have been bunched
+
+together on the north wall from which quiet crunching sounds can be heard. 
+
+The south wall is covered in shelves that are loaded down with various
+
+tack items.  Beautiful saddles, that appear to be made for very small
+
+horses, are laid out on long tables at the west end of the room.
+
+~
+[Phobos] Stall rextra -- split the first sentence at the first comma.
+
+~
+-201842683 0 6 0
+E
+stall~
+Tidy, wooden stalls stand here against the northern wall, a small window
+
+opens out to the north from all eight of them, letting in a bit of sun. 
+
+Resting in these small stalls are many different types of adorable
+
+ponies, each looking awfully fat from good care and lots of loving.
+
+~
+-1
+S
+
+#77034
+Pasture~
+This grassy field appears to be where the local farm animals graze. 
+
+Dandelions and daffodils sway gently as a mild breeze sweeps this verdant
+
+pasture.  To the west, a road can be seen running north and south, and
+
+farther west stands a small barn.  Off to the north lies a small pond,
+
+while to the east a farmhouse sits tranquilly.
+
+~
+[Janua] this farm will be integrated with a larger farm
+
+~
+-235405311 2 6 0
+D0
+~
+~
+0 -1 77037 10 10 5
+D1
+door~
+door east~
+131 -1 77035 10 10 5
+-1
+S
+
+#77035
+Farmhouse~
+This large farmhouse is sturdily-built and well cared-for.  Within are
+
+many rooms filled with stout oaken furniture, all halfling sized.  Large
+
+windows make this well-lit during the day, and lamps in every room
+
+provide illumination at night.
+
+~
+[Cassiopeia] This is going to have to be redone or have more rooms added.
+
+[Phobos] Well cared for probably doesn't need a hyphen...
+
+~
+-201850875 0 5 0
+D3
+door~
+door west~
+131 -1 77034 10 10 5
+-1
+S
+
+#77036
+Weathered Barn~
+Nestled behind the farmhouse, this small barn look old and worn by the
+
+elements.  Within are various farming implements, set neatly on racks on
+
+the walls.  There is a ladder in the corner leading to a hayloft.  Dust
+
+motes dance in the shafts of sunlight streaming in through a large open
+
+door in the hayloft.
+
+~
+[Phobos] Highly-polished (in farming rextra).
+
+~
+-201850875 0 5 0
+D3
+~
+~
+0 -1 77037 10 10 5
+E
+farming implements~
+Large farming tools, set on worn oak racks, cover most of the walls in
+
+this little barn.  Several of the tools are layered in dust from apparent
+
+disuse while others are kept highly polished and maintained.
+
+~
+-1
+S
+
+#77037
+Tranquil Pond~
+A tranquil pond is nestled among the trees here, quiet and serene.  The
+
+water is so clear you can see all the way to the sandy bottom.  A small
+
+raft floats in the middle of the pond, and some discarded fishing poles
+
+are propped against one of the nearby trees.  A cool breeze floats
+
+through here occasionally, rustling the leaves on the trees and the grass
+
+that grows in abundance all about the area.  Small fish dart about in the
+
+shallows, while some larger ones lurk around the middle of the pond.
+
+~
+[Wyld] Make a command to catch fish
+
+[Cassiopeia] maybe people could search the area for a fishing hook or something that can be used for a custom in town.
+
+[Janua] I generally think of rooms as about 15-20' square.  Always seems
+
+too small for a pond, anyway.  There will be a lake west of town, so
+
+maybe just remove this and add it to the farm that'll go here 
+
+[Janua] Yeah.  Why don't you just unlink these four rooms from the road
+
+and just let this farm be in its own file completely (makes for good
+
+repops) 
+
+~
+-235405311 8 6 0
+D1
+~
+~
+0 -1 77036 10 10 5
+D2
+~
+~
+0 -1 77034 10 10 5
+E
+discarded fishing poles~
+Leaning against the old apple trees, a few worn fishing poles have been
+
+left behind by thier owners.  Some of the well-used poles still have
+
+their lines attached but most have been long since removed or broken.
+
+~
+E
+raft~
+A small raft floats here in this quaint little pond, apparently left
+
+behind for further use as it's still tethered to a nearby apple tree.  A
+
+cute little makeshift cloth pirate flag hanging from a stick placed in
+
+the center of the raft, flutters in the light breeze.
+
+~
+901 137 1509949515 3 0
+-1
+S
+
+#77038
+North Cranberry Road~
+The cobblestone road here leads north and south, and the gate to a small
+
+farm lies on the west.  Another farm flanks the road on the east and you
+
+can see its small gate south of here.  Neatly pruned apple trees and
+
+hedges line both sides of the road, and a low stone wall lies beyond the
+
+greenery.  Lamp posts have been set into the wall on either side of the
+
+farm gate and provide light to the area after sunset.
+
+~
+[Phobos] Ok, that first sentence is a little bad.
+
+~
+-235405303 1 6 0
+D0
+~
+~
+0 -1 77044 10 10 5
+D2
+~
+~
+0 -1 77028 10 10 5
+D3
+small wooden gate~
+~
+131 -1 38750 10 10 5
+-1
+S
+
+#77039
+The Medicine Shop~
+Nestled in a large grove of pine trees, this small cottage, despite its
+
+many small windows, is always dark as little light is able to penetrate
+
+the trees' foliage.  Shelves line the walls, full of bottles of strange
+
+liquids, powders, herbal materials, and other things too unusual to
+
+recognize.  The floor is packed dirt, covered in pine needles both new
+
+and old, while rustling, flapping sounds can often be heard among the
+
+rafters as if a large bird or birds are moving about.
+
+~
+[Ylena] *
+
+~
+-201846777 0 5 0
+D1
+~
+~
+0 -1 77027 10 10 5
+E
+bottles strange~
+Strange bottles of various sizes and shapes are displayed along the
+
+shelves here, each filled with a seemingly different substance from the
+
+last.  Some are labelled along the sides while others that have a more
+
+foreboding look are left with nothing to identify them.
+
+~
+E
+rafters~
+Thick beams of cris-crossing pine wood make up the rafters of this
+
+building.  Amongst the beams are a couple of nests that look to have been
+
+there for a long time, and as you watch for a little while you can see
+
+movement within the nests themselves.  An open window near the top of the
+
+roof provides the owners of the nests access to the great outdoors.
+
+~
+A
+~
+~
+send_to_room( #msg, room );
+
+~
+E
+msg~
+Arvin lets out a loud snore as his head rests on the tome he's reading.
+
+~
+!
+2 500 0
+A
+~
+~
+send_to_room( #bird, room );
+
+~
+E
+bird~
+A small bird swoops down into the room, does a lap, then disappears into
+
+the rafters.
+
+~
+!
+2 100 0
+2298 9 1509949540 3 0
+210 17 1509949540 -1 0
+79 17 1509949540 -1 0
+1269 17 1509949490 -1 0
+81 17 1509949540 -1 0
+1182 17 1509949540 -1 0
+474 17 1509949540 -1 0
+98 17 1509949490 -1 0
+872 17 1509949540 -1 0
+1194 17 1509949490 -1 0
+284 17 1509949540 -1 0
+78 17 1509949540 -1 0
+37 17 1509949540 -1 0
+977 17 1509949490 -1 0
+206 17 1509949465 -1 0
+59 17 1509949445 -1 32
+68 17 1509949500 -1 0
+9 17 1509949520 -1 0
+3229 17 1509949470 -1 0
+-1
+S
+
+#77040
+Appleglen Public School~
+This schoolhouse is just one large room separated into areas for
+
+different activities.  There are areas for math, reading and writing,
+
+science and games.  Large windows look out onto the playground where
+
+slides and swings can be seen.  A rope hangs in the corner which is
+
+suspended from a dark hole in the ceiling. 
+
+~
+[Cassiopeia] Would like to have a ring bell action here
+
+[Janua] schoolhouse is a nice touch
+
+[Ylena] *
+
+[Crilenthia] run-on sentence and flower should be flowers
+
+~
+-201850875 0 5 0
+D1
+~
+~
+0 -1 77008 10 10 5
+D3
+~
+~
+0 -1 77027 10 10 5
+A
+pull~
+rope~
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+act_area( #to_area, ch );
+
+~
+E
+msg~
+You tug on the rope, causing loud ringing peals from the bell at the top
+
+of the schoolhouse.
+
+~
+E
+rmsg~
+$n gives the rope a mighty heave, causing the schoolhouse bell to ring
+
+loudly.
+
+~
+E
+to_area~
+You hear a loud ringing in the distance.
+
+~
+!
+0 0 0
+2354 9 1509949540 3 0
+-1
+S
+
+#77041
+South Cranberry Road~
+A well-maintained road of multi-colored cobblestones begins here, runs
+
+past the doors of the Appleglen Stables, then leads north into the heart
+
+of town.  The road is bordered by manicured apple trees which cast their
+
+shade upon all who passes beneath them.  To the south, the road turns to
+
+dirt as it heads out of Appleglen and into nearby farmland.
+
+~
+~
+-235405311 1 6 0
+D0
+~
+~
+0 -1 77027 10 10 5
+D2
+~
+~
+0 -1 77009 10 10 6
+D3
+~
+~
+0 -1 77046 10 10 5
+E
+stable west~
+The smell of hay, horses and manure wafts out of the stable's open doors. 
+
+The stable itself is a large, wooden construction with a hitching post
+
+outside and a trough of drinking water placed at a convenient spot for
+
+hitched animals to drink from.
+
+~
+2368 9 1509949540 3 0
+-1
+S
+
+#77042
+East Applewine Road~
+The multi-colored cobblestone road is bordered by small stone fences to
+
+the north and south.  A house in the middle of being built can be seen
+
+over the northern fence, while a sea of yellow corn undulates in the
+
+breeze over the southern wall.  The road continues its journey to both
+
+the east and west of here.
+
+~
+~
+-235405311 1 6 0
+D1
+~
+~
+0 -1 77050 10 10 6
+D3
+~
+~
+0 -1 77026 10 10 5
+2368 9 1509949540 3 0
+-1
+S
+
+#77043
+West Applewine Road~
+At this point on West Applewine Road, the composition of the road changes. 
+
+Colorful cobblestones make up the section of road that heads east, but to
+
+the west are two hard-packed wheel tracks.  A plush meadow borders the
+
+road on its southern side, whereas a stone fence to the north blocks the
+
+way into a ratty-looking garden.
+
+~
+~
+-235405303 1 6 0
+D1
+~
+~
+0 -1 77025 10 10 5
+D2
+~
+~
+0 -1 77064 10 10 5
+D3
+wooden gate~
+wooden gate west~
+0 -1 77051 10 10 6
+2368 9 1509949540 3 0
+-1
+S
+
+#77044
+Before the North Gate~
+A multicolored cobblestone road leads south from here, bordered on both
+
+sides by well-groomed apple trees and hedges.  A simple wooden gate opens
+
+to the north.  The sounds of a town can be faintly heard, coming from a
+
+distance to the south, and birds sing from the branches of the heavily
+
+laden apple trees.  A @Bsign@n has been posted to the gate.
+
+~
+~
+-235405312 1 6 0
+D0
+wooden gate~
+wooden gate north~
+195 -1 77010 10 10 6
+D2
+~
+~
+0 -1 77038 10 10 5
+E
+sign gate~
+The sign reads:
+
+
+@I@eDue to damage during last spring's flooding, the
+
+@I@eroad north is closed until repairs can be made.
+
+
+@I@ePlease forgive the inconvenience,
+
+@I@BThe Mayor@n
+
+~
+A
+climb~
+wall stone 1 west~
+act_tochar( #msg, ch );
+
+act_notchar( #rmsg, ch );
+
+transfer( ch, find_room( 38752 ) );
+
+act_notchar( #arrive, ch );
+
+~
+E
+msg~
+You climb over the low stone wall to the west.
+
+~
+E
+rmsg~
+$n climbs over the low stone wall, heading west.
+
+~
+E
+arrive~
+$n comes climbing over the low stone wall on the east.
+
+~
+!
+0 0 0
+-1
+S
+
+#77045
+The Appleglen Bank Vault~
+This rather large room is scattered with a myrid of items and coins,
+
+making it difficult to navigate safely.  No windows or other decorations
+
+adorn the vaults walls with the exception of the iron bands running from
+
+along the door to the rest of the walls, placed there to keep the towns
+
+investments safe.  A small desk is set against the west wall of this
+
+cluttered room for various bookkeeping tasks, although it looks as if it
+
+hasn't seen alot of use lately.
+
+~
+[Phobos] The second sentence needs to be rewritten.
+
+[Phobos] A lot.
+
+~
+335087655 0 5 0
+D0
+iron-banded door~
+iron-banded door north~
+407 -1 77019 10 10 5
+-1
+S
+
+#77046
+Appleglen Stables~
+Piles of hay line both the northern and southern walls of this section of
+
+the stables, with loose hay covering the floor, only to be crushed
+
+underfoot to release its pleasant aroma to drift upon the breeze.  From
+
+the west, deeper into the stables, comes the braying of many animals, and
+
+the occasional yapping of dogs, while to the east is an exit onto South
+
+Cranberry Road.
+
+~
+[Ylena] *
+
+~
+-235397113 0 6 0
+D1
+~
+~
+0 -1 77041 10 10 5
+D3
+stall door~
+stall door~
+391 -1 77047 10 10 5
+E
+building~
+It appears to be a large tavern, nestled behind the buildings that face
+
+the main roads.
+
+~
+A
+search~
+hay~
+act_tochar( #search, ch );
+
+act_notchar( #rsearch, ch );
+
+~
+E
+search~
+You search through the piles of hay but find nothing of interest.
+
+~
+E
+rsearch~
+$n tosses hay about the room in a vain search for something.
+
+~
+!
+0 0 0
+2353 9 1509949540 3 0
+-1
+S
+
+#77047
+Barn Stalls~
+~
+~
+-201846779 0 6 0
+D1
+~
+~
+391 -1 77046 10 10 5
+E
+wine rack~
+~
+E
+fireplace~
+Large comfy chairs are placed around this old fireplace, inviting the
+
+weary traveler to recline for a short rest.  A small poker and broom has
+
+been placed here next to the fireplace to keep things neat and orderly on
+
+cold nights when a roaring fire would be built.
+
+~
+2307 9 1509949540 3 0
+2297 9 1509949540 3 0
+2305 9 1509949540 3 0
+2306 9 1509949540 3 0
+2348 9 1509949540 3 0
+-1
+S
+
+#77048
+Guard Room~
+This small room has a table and chairs set in one corner, and a few cots
+
+in the other.  The walls and floor are made of stone blocks, and the
+
+ceiling consists of wooden planks.  There is a lamp by the stairs for
+
+light, and another on the table.  The east end of the room has the
+
+prisoner's cell, enclosed by iron bars.
+
+~
+[Phobos] Remove 'set' and the comma from the first sentence.
+
+~
+-235405311 3 9 0
+D1
+iron barred cell door~
+iron barred cell door~
+407 -1 77049 10 10 5
+D4
+oaken trapdoor~
+oaken trapdoor up~
+131 -1 77018 10 10 5
+-1
+S
+
+#77049
+Jail Cell~
+This small cell has only the essentials, two small cots, and a bucket. 
+
+The walls, floor, and ceiling are all made of stone, granite by the looks
+
+of it.  The west wall has an iron barred door set into it, with no lock
+
+on this side.  A small slot under the door allows food and drink to be
+
+slid into the room, and the bucket to be slid out.
+
+~
+~
+-235405259 3 9 0
+D3
+iron barred cell door~
+iron barred cell door~
+407 -1 77048 10 10 5
+-1
+S
+
+#77050
+End of East Applewine Road~
+East Applewine road ends here.  To both the north and east, wooden gates
+
+block entry into the farms that border the Appleglen township.  A row of
+
+flowering rose bushes lay beyond the east gate while weeds and grass can
+
+be seen through the northern gate.  A small stone fence blocks access to
+
+a field of corn to the south.
+
+~
+[Janua] farms north and east from here, no outlet to larger road
+
+~
+-235405303 3 9 0
+D0
+simple, wooden gate~
+simple, wooden gate~
+131 -1 60000 10 10 5
+D1
+gate~
+~
+131 -1 52750 10 10 5
+D3
+wooden gate~
+wooden gate west~
+0 -1 77042 10 10 6
+-1
+S
+
+#77051
+West Applewine Road~
+Depending on your perspective West Applewine Road either begins or ends
+
+at this point.  To the south is a plush meadow which seems to merge with
+
+the lake that lies to the south-west, while a small stone fence sits to
+
+the left of the road ending.  An open gate is situated to the north and
+
+beyond its boundary is a metal junk heap.
+
+~
+~
+-235405303 3 9 0
+D0
+~
+~
+0 -1 41500 10 10 5
+D1
+wooden gate~
+wooden gate east~
+0 -1 77043 10 10 6
+D2
+~
+~
+0 -1 77063 10 10 5
+-1
+S
+
+#77052
+South Cranberry Road~
+The road, rutted with the tracks of wagons and carts, ascends further to
+
+the north and leads south to a rounded intersection.  Cresting the small
+
+rise to your north, the south wall of Appleglen encircles the hill.  Two
+
+apple trees serve as an entrance for the fenced farm to your east while
+
+straddling a foot trail which leads through a field.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 77009 10 10 5
+D1
+~
+~
+0 -1 52500 10 10 5
+D2
+~
+~
+0 -1 77053 10 10 5
+-1
+S
+
+#77053
+Great North Road - Intersection~
+This intersection winds a sharp change in the road running east to west. 
+
+Widening out to the east, the road is less gutted with dried mud and cart
+
+tracks, and simple stones line its presence.  The western road is more of
+
+a trail, less clearly marked as it winds the way down amongst the farms. 
+
+An old, rotting fence wobbles slightly to the north, and a break in it
+
+reveals a trail heading into a small village.
+
+
+A small sign sticks out of the mud in the middle of the intersection.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 77052 10 10 5
+D1
+~
+~
+0 -1 77056 10 10 5
+D3
+~
+~
+0 -1 77054 10 10 5
+E
+sign~
++=------------------------------------=+
+
+|                                      |
+
+|   North: Appleglen                   |
+
+|   (population:  164)                 |
+
+|                                      |
+
+|   East: Great North Road             |
+
+|                                      |
+
++=------------------------------------=+
+
+~
+-1
+S
+
+#77054
+A Narrow Dirt Road~
+The dirt track that serves as a road is narrow, with short tufts of grass
+
+growing between the two wagon-tracks that make up the path.  A gap in the
+
+stone wall to the south indicates an entrance, but weeds have grown thick
+
+in that direction.  You can see a well-tended vegetable garden over the
+
+low stone wall to the north.
+
+~
+~
+-235405303 3 9 0
+D1
+~
+~
+0 -1 77053 10 10 5
+D2
+~
+~
+0 -1 50750 10 10 5
+D3
+~
+~
+0 -1 77055 10 10 5
+-1
+S
+
+#77055
+A Narrow Dirt Road - Before a Small Farm~
+The road enters a small farm on the west and heads east to meet with
+
+another road to the west.  A low stone wall confines the road to the
+
+north and you can see an abundant vegetable garden over the wall.  The
+
+hills rise and fall around you and you can see nothing but the gently
+
+rolling landscape dotted by small farms for miles.
+
+~
+~
+-235405303 3 9 0
+D1
+~
+~
+0 -1 77054 10 10 5
+D3
+~
+~
+0 -1 42750 10 10 5
+-1
+S
+
+#77056
+Great North Road~
+Level terrain marks both sides of this east-west road.  A glance to the
+
+east reveals a rising slope and more difficult travel, while the west
+
+gently levels to a flatter incline.  Green meadows with sparsely
+
+scattered trees stretch out to the north.  A crumbling stone wall marks
+
+the edge of the road south of here, running its length only up to a dozen
+
+feet to the east and west.
+
+~
+~
+-235405311 3 9 0
+D1
+~
+~
+0 -1 77057 10 10 5
+D3
+~
+~
+0 -1 77053 10 10 5
+-1
+S
+
+#77057
+Great North Road~
+The natural slope of the hills runs beneath the road.  Rolling hills rise
+
+in the east, and the road can be seen to disappear into them.  The
+
+elevation lowers sharply to the west.  The forest that stretches off to
+
+the east seems to break up just north of here, leaving scattered trees at
+
+its fringe.  Tiny farmsteads can be spotted in the distance to the south,
+
+dotting the hillscape.
+
+~
+~
+-235405311 3 9 0
+D1
+~
+~
+0 -1 77058 10 10 5
+D3
+~
+~
+0 -1 77056 10 10 5
+-1
+S
+
+#77058
+Great North Road~
+The winding of the road, which appears to wrap around hills to the south
+
+and west, makes it difficult to see where you're going and where you've
+
+come from.  A forest blocks passage to the north and east, as tightly-
+
+packed green trees line up along the edge of the road.  A few hills rise
+
+out of the woods to the east, bald patches in the otherwise abundant
+
+woodlands.
+
+~
+~
+-235405311 3 9 0
+D2
+~
+~
+0 -1 77059 10 10 5
+D3
+~
+~
+0 -1 77057 10 10 5
+-1
+S
+
+#77059
+Great North Road~
+The road winds north and east here, forming a dip as it hugs the
+
+surrounding hills.  Plowed fields nestle in the hills just east of the
+
+road, peeking out from the thickening forest.  A markshift fence along
+
+the edge of the road teeters slightly whenever a beeze blows through. 
+
+Darker dirt marks the rutted dip along the curve of the road, where mud
+
+and carts appear to have caused some damage.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 77058 10 10 5
+D1
+~
+~
+0 -1 77060 10 10 5
+-1
+S
+
+#77060
+Great North Road~
+The road turns sharply west and south here, heading east between the low
+
+walls of two farms on the north and southwest.  The heavily forested
+
+hills lie directly on the east, blocking your view and any progress in
+
+that direction.
+
+~
+~
+-235405311 3 9 0
+D2
+~
+~
+0 -1 77061 10 10 5
+D3
+~
+~
+0 -1 77059 10 10 5
+-1
+S
+
+#77061
+Great North Road~
+The road moves along between a low stone wall on the west and a forest on
+
+the east.  Over the wall you can see a darkened farm that looks like it
+
+hasn't been taken care if for some time.  The trees are mostly pines,
+
+growing tall and straight, with an occasional stand of beach and elm
+
+growing among the dark evergreens.  You can hear the sounds of livestock
+
+mingling with what sounds like a river nearby, so there must be some
+
+operational farms nearby.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 77060 10 10 5
+D2
+~
+~
+0 -1 77062 10 10 5
+-1
+S
+
+#77062
+Great North Road~
+The road travels along east and north, curving around a small farm on the
+
+west.  The farm is overgrown and what you can see over the low stone wall
+
+looks like it hasn't been tended in some time.  A thick forest of tall,
+
+straight pine trees borders the road on the west and you can hear the
+
+rushing of a river flowing by somewhere in the distance.  An old rusty
+
+gate blocks access to the south.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 77061 10 10 5
+D1
+~
+~
+0 -1 36822 10 10 5
+D2
+~
+~
+2283 -1 81000 10 10 5
+E
+gate~
+The gate is barely standing and blocks what looks like a rarely used road.
+
+~
+A
+open move~
+gate~
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  act_tochar( #open, ch, );
+
+  act_notchar( #ropen, ch, );
+
+  open( room, south );
+
+  }
+
+else
+
+  act_tochar( #nope, ch, );
+
+~
+E
+open~
+You gingerly move the old gate, revealing a seldom used road.
+
+~
+E
+ropen~
+$n gingerly moves the old gate, revealing a seldom used road.
+
+~
+E
+nope~
+The gate is already opened.
+
+~
+!
+0 0 0
+-1
+S
+
+#77063
+Meadow~
+The lush green grass of the meadow melds together with the lake's reeds to
+
+make it hard to judge where exactly the lake begins.  This flower-spotted
+
+meadow is bordered by a paved road to the north, and continues to spread
+
+its colorful carpeting to the south and east.
+
+~
+[Janua] .
+
+~
+-235405303 3 9 0
+D0
+~
+~
+0 -1 77051 10 10 5
+D1
+~
+~
+0 -1 77064 10 10 5
+D2
+~
+~
+0 -1 77066 10 10 5
+D3
+~
+~
+0 -1 77067 10 10 5
+-1
+S
+
+#77064
+Meadow~
+This lush, flower-spotted meadow is bordered by a paved road to the
+
+north, and an ivy-covered cottage to the east, while to the south and
+
+west the meadow continues.  To the far west can be seen the sparkling of
+
+light upon water, as well as the sound of water gently lapping against a
+
+shore.
+
+~
+[Janua] .
+
+~
+-235405303 3 9 0
+D0
+~
+~
+0 -1 77043 10 10 5
+D2
+~
+~
+0 -1 77065 10 10 5
+D3
+~
+~
+0 -1 77063 10 10 5
+E
+house cottage~
+Decorated with braids of ivy growing up its walls and along its gabled
+
+roof, this well kept house seems to have been built to blend in well with
+
+its surroundings.
+
+~
+-1
+S
+
+#77065
+Meadow~
+Many tiny blue and pink flowers dot the lush grasses of the meadow, with
+
+some of the flowers growing up the stone fence to the south, and
+
+intermingling with the ivy that is growing up the stone cottages wall to
+
+the east.  Some branches from the apple orchard to the south overhang the
+
+southern wall and provide a bit of shade.  Coming from the not to far
+
+west is the sound of water gently lapping against a shore, while the
+
+meadow continues to the north and west.
+
+~
+[Janua] .
+
+~
+-235405303 3 9 0
+D0
+~
+~
+0 -1 77064 10 10 5
+D3
+~
+~
+0 -1 77066 10 10 5
+E
+fence~
+The fence is about two feet high, and has been constructed by carefully
+
+stacking large stones on top of another, with the occasional use of
+
+mortar to add strength and stability to the fence.  As a result of this
+
+method of construction, the base is slightly broader than the top.
+
+~
+755 9 1509949540 3 0
+755 9 1509949540 3 0
+3875 17 1509949540 -2 0
+-1
+S
+
+#77066
+Meadow~
+Bordered by the stone fence of the apple orchard to the south and the
+
+gentle waters of Appleglen lake to the west, this section of the meadow
+
+is kept shaded by some overhanging branches.  Thick grasses dotted with
+
+tiny blue and pink flowers merge with the lakes reeds and make it hard to
+
+judge exactly where the lake begins and the meadow ends.  The meadow
+
+continues to both the north and east.
+
+~
+[Janua] .
+
+~
+-235405303 3 9 0
+D0
+~
+~
+0 -1 77063 10 10 5
+D1
+~
+~
+0 -1 77065 10 10 5
+D3
+~
+~
+0 -1 77068 10 10 5
+E
+fence~
+The fence is about two feet high, and has been constructed by carefully
+
+stacking large stones on top of another, with the occasional use of
+
+mortar to add strength and stability to the fence.  As a result of this
+
+method of construction, the base is slightly broader than the top.
+
+~
+-1
+S
+
+#77067
+Lake~
+The waters of the lake gently lap at the shores to the north and east. 
+
+Northward the shore consists of a gently rising hill, while beyond a thin
+
+bank of reeds to the east a meadow can be seen.  The depth of the water
+
+here varies, near the shoreline the water is about a foot deep, and then
+
+gets deeper the further away you get from the shoreline, till is seems to
+
+level out at about three feet in depth.  The clarity of the water is not
+
+that good, although the bottom is barely visible at the edge of the lake.
+
+~
+[Janua] .
+
+~
+-235405311 6 9 0
+D0
+~
+~
+0 -1 41507 10 10 5
+D1
+~
+~
+0 -1 77063 10 10 5
+D2
+~
+~
+0 -1 77068 10 10 5
+D3
+~
+~
+0 -1 77072 10 10 5
+1872 17 1509949540 -2 0
+-1
+S
+
+#77068
+Lake~
+The lake's waters gently lap up against the reed-lined shore to the east,
+
+while to the north, south and west the lake continues.  At the shoreline
+
+the water is approximately one foot in depth with the bottom barely
+
+visible through the dirt-clouded waters.  The waters then get deeper the
+
+further away from the shore you get, eventually levelling out to about
+
+three feet in depth.
+
+~
+[Janua] .
+
+~
+-235405311 6 9 0
+D0
+~
+~
+0 -1 77067 10 10 5
+D1
+~
+~
+0 -1 77066 10 10 5
+D2
+~
+~
+0 -1 77069 10 10 5
+D3
+~
+~
+0 -1 77071 10 10 5
+576 9 1509949540 3 0
+1872 17 1509949540 -2 0
+-1
+S
+
+#77069
+Lake - Amongst the Reeds~
+A mass of thick reeds grow along the east and southern shores, making it
+
+impossible to see what lies beyond them as well as preventing any further
+
+passage that way.  The reeds continue along the southern bank of the
+
+lake, while to the north they seem to thin out substantially.
+
+~
+[Janua] .
+
+~
+-235405311 6 9 0
+D0
+~
+~
+0 -1 77068 10 10 5
+D3
+~
+~
+0 -1 77070 10 10 5
+A
+~
+~
+send_to_room( #ripple, room );
+
+~
+E
+ripple~
+A slight breeze sends the reeds rippling.
+
+~
+!
+2 150 0
+1872 17 1509949540 -2 0
+-1
+S
+
+#77070
+Lake - At a Bank of Reeds~
+A bank of reeds so thick as to be almost impenetrable, lines the southern
+
+shore of the lake.  These reeds continue along the southern bank to both
+
+the east and west.  The waters of the lake here are about three feet
+
+deep, with the bottom unable to be seen through the dirt-clouded waters.
+
+~
+~
+-235405311 6 9 0
+D0
+~
+~
+0 -1 77071 10 10 5
+D1
+~
+~
+0 -1 77069 10 10 5
+D3
+~
+~
+0 -1 77075 10 10 5
+A
+~
+~
+acode( find_room( 77069 ), 1 );
+
+~
+!
+2 150 0
+418 9 1509949540 3 0
+1872 17 1509949540 -2 0
+-1
+S
+
+#77071
+Lake~
+This part of the lake is approximately three feet in depth, however the
+
+dirt-clouded water makes it impossible to see the lakes bottom.  The
+
+occasional dead leaf drifts through here on its journey to other parts of
+
+the lake, while the odd movement in the water can be detected.
+
+~
+[Janua] .
+
+~
+-235405311 6 9 0
+D0
+~
+~
+0 -1 77072 10 10 5
+D1
+~
+~
+0 -1 77068 10 10 5
+D2
+~
+~
+0 -1 77070 10 10 5
+D3
+~
+~
+0 -1 77074 10 10 5
+A
+~
+~
+ch = rand_char( room );
+
+send_to_char( #brush, ch );
+
+~
+E
+brush~
+Something in the water brushes against your leg!
+
+~
+!
+2 150 0
+1872 17 1509949540 -2 0
+2332 9 1509949540 3 0
+-1
+S
+
+#77072
+Lake~
+The lake's waters caress against the foot of the small hill to the north
+
+that has come down to meet with its silky embrace, while to the east,
+
+west and south the waters continue.  The dusky water makes it hard to see
+
+the bottom here, even though the depth of the water is about one foot
+
+deep near the shoreline.  Further away from the shoreline, the depth of
+
+the water gets to be approximately three feet deep.
+
+~
+[Janua] .
+
+~
+-235405311 6 9 0
+D0
+~
+~
+0 -1 41506 10 10 5
+D1
+~
+~
+0 -1 77067 10 10 5
+D2
+~
+~
+0 -1 77071 10 10 5
+D3
+~
+~
+0 -1 77073 10 10 5
+1872 17 1509949540 -2 0
+-1
+S
+
+#77073
+Lake~
+A small hill rises out of the gently buffeting waters to the north, while
+
+to the south, east and west the waters spread their sparkling influences. 
+
+The dusky water makes it hard to see the bottom of the water at the
+
+shoreline, even though it is barely one foot deep, and as the level of the
+
+water increases in depth the further away from the shore is gets, the
+
+bottom becomes impossible to see at all.
+
+~
+~
+-235405311 6 9 0
+D0
+~
+~
+0 -1 41505 10 10 5
+D1
+~
+~
+0 -1 77072 10 10 5
+D2
+~
+~
+0 -1 77074 10 10 5
+D3
+~
+~
+0 -1 77082 10 10 5
+1872 17 1509949540 -2 0
+-1
+S
+
+#77074
+Lake~
+The dirt-clouded water of the lake starts to get dramatically deeper the
+
+further west you travel here.  The depth of the water to the east is
+
+about three to four feet deep, but toward the west, the depth plunges to
+
+well over six feet.
+
+~
+[Janua] .
+
+~
+-235405311 6 9 0
+D0
+~
+~
+0 -1 77073 10 10 5
+D1
+~
+~
+0 -1 77071 10 10 5
+D2
+~
+~
+0 -1 77075 10 10 5
+D3
+~
+~
+0 -1 77081 10 10 5
+A
+~
+~
+acode( find_room( 77071 ), 1 );
+
+~
+!
+2 200 0
+183 9 1509949540 3 0
+1872 17 1509949540 -2 0
+-1
+S
+
+#77075
+Lake - At a Bank of Reeds~
+The waters of the lake start to get deeper here as the lakes bottom
+
+slants down from the east to the west.  Toward the east the depth of the
+
+lake is approximately three feet, while to the west the lake manages to
+
+reach depths of about four to five feet.  A bank of thick reeds line the
+
+southern bank of the lake, making it just about impossible to climb out
+
+of the lake.
+
+~
+[Janua] .
+
+~
+-235405311 6 9 0
+D0
+~
+~
+0 -1 77074 10 10 5
+D1
+~
+~
+0 -1 77070 10 10 5
+D3
+~
+~
+0 -1 77076 10 10 5
+A
+~
+~
+acode( find_room( 77069 ), 1 );
+
+~
+!
+2 150 0
+183 9 1509949540 3 0
+418 9 1509949540 3 0
+1872 17 1509949540 -2 0
+-1
+S
+
+#77076
+Lake~
+The lake's dirt-clouded waters bob and rise to a rhythm all their own
+
+while the occasional twig or leaf uses the rhythm to propel themselves
+
+across the surface of this great lake.  To the southeast is a large bank
+
+of thick reeds, while in other directions are clear of obstacles.
+
+~
+~
+-235405311 6 9 0
+D0
+~
+~
+0 -1 77081 10 10 5
+D1
+~
+~
+0 -1 77075 10 10 5
+D2
+~
+~
+0 -1 77077 10 10 5
+D3
+~
+~
+0 -1 77079 10 10 5
+418 9 1509949540 3 0
+1872 17 1509949540 -2 0
+-1
+S
+
+#77077
+Lake~
+A thick bank of reeds blocks any movement to the east while thick forest
+
+growing right up to the shoreline bars any exit from of the lake to the
+
+south.  The dirt-clouded waters depth is about a foot deep near the
+
+shore, while further to the north, the depth drops to about three feet.
+
+~
+~
+-235405311 6 9 0
+D0
+~
+~
+0 -1 77076 10 10 5
+D1
+reeds~
+reeds~
+2219 -1 77095 3 10 5
+D3
+~
+~
+0 -1 77078 10 10 5
+A
+~
+~
+acode( find_room( 77069 ), 1 );
+
+~
+!
+2 200 0
+A
+move search~
+reeds~
+if( !is_open( room, east ) ) {
+
+  act_tochar( #open, ch );
+
+  act_notchar( #ropen, ch );
+
+  open( room, east );
+
+  send_to_room( #aopen, find_room( 77095) );
+
+  }
+
+else
+
+  act_tochar( #opened, ch );
+
+~
+E
+open~
+You part the reeds to discover a secret hiding spot.
+
+~
+E
+ropen~
+$n parts the reeds, revealing a secret hiding spot.
+
+~
+E
+aopen~
+Someone parts the reeds that hides this spot from the rest of the lake.
+
+~
+E
+opened~
+The reeds have already be moved aside.
+
+~
+!
+0 0 0
+1872 17 1509949540 -2 0
+2332 9 1509949540 3 0
+-1
+S
+
+#77078
+Lake~
+The dusky waters of the lake lap against a cutback lake bank to the south. 
+
+The bank rises straight up to about five feet above the water and is
+
+topped by many trees and bushes that grow right up to the very edge, with
+
+some of them only barely managing to prevent themselves from falling into
+
+the lake.  The waters depth at the edge of the lake is about three feet
+
+deep with the depth increasing the further north the lake travels.
+
+~
+~
+-235405311 6 9 0
+D0
+~
+~
+0 -1 77079 10 10 5
+D1
+~
+~
+0 -1 77077 10 10 5
+D3
+~
+~
+0 -1 77089 10 10 5
+901 9 1509949540 3 0
+1872 17 1509949540 -2 0
+-1
+S
+
+#77079
+Middle of the Lake~
+The occasional piece of pond weed and stray leaf bobs along in the very
+
+deep, dusky waters on a journey to other parts of the lake.  To the not
+
+too distant south can be seen a bank covered thickly with trees and
+
+bushes, while to all other directions the lake spreads it watery
+
+influence.
+
+~
+~
+-235405311 6 9 0
+D0
+~
+~
+0 -1 77080 10 10 5
+D1
+~
+~
+0 -1 77076 10 10 5
+D2
+~
+~
+0 -1 77078 10 10 5
+D3
+~
+~
+0 -1 77088 10 10 5
+A
+~
+~
+acode( find_room( 77071 ), 1 );
+
+~
+!
+2 200 0
+1872 17 1509949540 -2 0
+-1
+S
+
+#77080
+Middle of the Lake~
+The dirt-clouded waters expertly conceal the depth of the lake here
+
+allowing only guesses of at least six feet deep, but most likely much
+
+more as the lakes bottom seems unable to be touched, no matter what
+
+method is used to do so.  To the north a floating patch of green can be
+
+seen bobbing on top of the waters, while in all other directions the lake
+
+continues.
+
+~
+~
+-235405311 6 9 0
+D0
+~
+~
+0 -1 77083 10 10 5
+D1
+~
+~
+0 -1 77081 10 10 5
+D2
+~
+~
+0 -1 77079 10 10 5
+D3
+~
+~
+0 -1 77087 10 10 5
+A
+~
+~
+acode( find_room( 77071 ), 1 );
+
+~
+!
+2 200 0
+183 9 1509949540 3 0
+1872 17 1509949540 -2 0
+-1
+S
+
+#77081
+The Middle of the Lake~
+The dirt-clouded water gives no hint as to how deep the lake is here, but
+
+it seems that the depth is easily greater then six feet.  To the distant
+
+north an extremely steep hill can be seen buffeting what appears to be
+
+some sort of farm, while to the far south and far west a dense forest can
+
+be seen.  The township of Appleglen can be spied off to the far distant
+
+east.
+
+~
+~
+-235405311 6 9 0
+D0
+~
+~
+0 -1 77082 10 10 5
+D1
+~
+~
+0 -1 77074 10 10 5
+D2
+~
+~
+0 -1 77076 10 10 5
+D3
+~
+~
+0 -1 77080 10 10 5
+A
+~
+~
+acode( find_room( 77071 ), 1 );
+
+~
+!
+2 200 0
+1872 17 1509949540 -2 0
+2332 9 1509949540 3 0
+-1
+S
+
+#77082
+Lake~
+An extremely steep hill, that looks to be just about unclimbable, borders
+
+the lake to the north, while to the west can be seen a mass of green pond
+
+weeds.  The dirt-clouded waters' depth varies here, being approximately a
+
+foot deep near the shoreline, but increasing in depth the further away
+
+from the shoreline it gets.
+
+~
+~
+-235405311 6 9 0
+D1
+~
+~
+0 -1 77073 10 10 5
+D2
+~
+~
+0 -1 77081 10 10 5
+D3
+~
+~
+0 -1 77083 10 10 5
+1872 17 1509949540 -2 0
+-1
+S
+
+#77083
+Lake - Amongst the Pond Weeds~
+Covering the surface of the lake is a thick entangling mass of pond weeds
+
+that seem determined to make life difficult for whatever strays into its
+
+midst.  More of this pond weed lies to the north and west, while to the
+
+east and south the weeds are yet to spread their influence.
+
+~
+~
+-235405311 6 9 0
+D0
+~
+~
+0 -1 77084 10 10 5
+D1
+~
+~
+0 -1 77082 10 10 5
+D2
+~
+~
+0 -1 77080 10 10 5
+D3
+~
+~
+0 -1 77086 10 10 5
+A
+~
+~
+acode( find_room( 77071 ), 1 );
+
+~
+!
+2 200 0
+A
+~
+~
+if( find_stat( ch, dex ) <= random( 3, 18 ) ) {
+
+  act_tochar( #tangled, ch );
+
+  act_notchar( #rtangled, ch );
+
+  }
+
+else
+
+  continue;
+
+~
+E
+tangled~
+@GYou get entangled in the pond weeds preventing you from moving on.@n 
+
+~
+E
+rtangled~
+$n gets entangled in the pond weeds preventing $m from moving on.
+
+~
+!
+3 0 15
+1872 17 1509949540 -2 0
+3503 17 1509949540 -2 0
+-1
+S
+
+#77084
+Lake - Amongst the Pond Weeds~
+An extremely steep hill to the north and east comes down to meet the
+
+lakes edge.  The green of the hills grass carries on down and blends with
+
+the green of the of the pond weeds that covers the lakes surface.  More
+
+of the entangling pond weeds can be seen to the south and west.
+
+~
+~
+-235405311 6 9 0
+D2
+~
+~
+0 -1 77083 10 10 5
+D3
+~
+~
+0 -1 77085 10 10 5
+A
+~
+~
+acode( find_room( 77071 ), 1 );
+
+~
+!
+2 200 0
+A
+~
+~
+if( find_stat( ch, dex ) <= random( 3, 18 ) ) {
+
+  act_tochar( #tangled, ch );
+
+  act_notchar( #rtangled, ch );
+
+  end;
+
+  }
+
+else
+
+  continue;
+
+~
+E
+tangled~
+@GYou get entangled in the pond weeds preventing you from moving on.@n
+
+~
+E
+rtangled~
+$n gets entangled in the pond weeds preventing $m from moving on.
+
+~
+!
+3 0 15
+576 9 1509949540 3 0
+1872 17 1509949540 -2 0
+3503 17 1509949540 -2 0
+-1
+S
+
+#77085
+Lake - Amongst the Pond Weeds~
+An extremely steep hill rises out of the water to the north and gives the
+
+impression that it is wearing a cloak of green that spreads down its back
+
+and out onto the top of the lake.  The source of this illusion is a mass
+
+of pond weeds that grow in profusion here and then spread out to the
+
+south, east and west. 
+
+~
+~
+-235405311 6 9 0
+D1
+~
+~
+0 -1 77084 10 10 5
+D2
+~
+~
+0 -1 77086 10 10 5
+D3
+~
+~
+0 -1 77094 10 10 5
+A
+~
+~
+acode( find_room( 77071 ), 1 );
+
+~
+!
+2 200 0
+A
+~
+~
+if( find_stat( ch, dex ) <= random( 3, 18 ) ) {
+
+  act_tochar( #tangled, ch );
+
+  act_notchar( #rtangled, ch );
+
+  end;
+
+  }
+
+else
+
+  continue;
+
+~
+E
+tangled~
+@GYou get entangled in the pond weeds preventing you from moving on.@n
+
+~
+E
+rtangled~
+$n gets entangled in the pond weeds preventing $m from moving on.
+
+~
+!
+3 0 15
+901 9 1509949540 3 0
+1872 17 1509949540 -2 0
+3503 17 1509949540 -2 0
+-1
+S
+
+#77086
+Lake - Amongst the Pond Weeds~
+A mass of thick green pond weeds covers the surface of the lake here
+
+making movement difficult for anything that finds itself entangled within
+
+their long aquatic roots.  The pond weeds continue their influence to the
+
+north and east, while west and south is clear of them.
+
+~
+~
+-235405311 6 9 0
+D0
+~
+~
+0 -1 77085 10 10 5
+D1
+~
+~
+0 -1 77083 10 10 5
+D2
+~
+~
+0 -1 77087 10 10 5
+D3
+~
+~
+0 -1 77093 10 10 5
+A
+~
+~
+acode( find_room( 77071 ), 1 );
+
+~
+!
+2 200 0
+A
+~
+~
+if( is_player( ch ) ) {
+
+  if( !mob_in_room( 2284, room ) ) {
+
+    if( rflag( reset0, room ) ) {
+
+      if( random( 1, 10 ) <= 3 ) {
+
+        remove_rflag( reset0, room );
+
+        send_to_room( #murky, room );
+
+        mload( 2284, room );
+
+        }
+
+      }
+
+    }
+
+  }
+
+else
+
+  continue;
+
+~
+E
+murky~
+@CFrom the murky depths below a pale eel erupts through the pond weeds!!@n
+
+~
+!
+1 0 15
+A
+~
+~
+if( find_stat( ch, dex ) <= random( 3, 18 ) ) {
+
+  act_tochar( #tangled, ch );
+
+  act_notchar( #rtangled, ch );
+
+  }
+
+else
+
+  continue;
+
+~
+E
+tangled~
+@GYou get entangled in the pond weeds preventing you from moving on.@n
+
+~
+E
+rtangled~
+$n gets entangled in the pond weeds preventing $m from moving on.
+
+~
+!
+3 0 15
+576 9 1509949540 3 0
+1872 17 1509949540 -2 0
+3503 17 1509949540 -2 0
+2335 9 1509949540 3 0
+2335 9 1509949540 3 0
+2335 9 1509949540 3 0
+2335 9 1509949540 3 0
+2335 9 1509949540 3 0
+-1
+S
+
+#77087
+Middle of the Lake~
+A bobbing patch of green to the north breaks up the monotony of the
+
+surrounding dusky waters that spread out in all directions from this
+
+spot, although to the not too distant west can be spied a bank of thickly
+
+growing trees.
+
+~
+~
+-235405311 6 9 0
+D0
+~
+~
+0 -1 77086 10 10 5
+D1
+~
+~
+0 -1 77080 10 10 5
+D2
+~
+~
+0 -1 77088 10 10 5
+D3
+~
+~
+0 -1 77092 10 10 5
+1872 17 1509949540 -2 0
+-1
+S
+
+#77088
+Middle of the Lake~
+The depth of the dusky waters is hard to judge here but they must be at
+
+least six feet deep, if not more.  Every now and then an odd movement in
+
+the waters can be detected, while the occasional piece of pond weed
+
+drifts past.  To the south and west a bit tree covered banks can be seen,
+
+while to the north and east the lakes stretches on.
+
+~
+~
+-235405311 6 9 0
+D0
+~
+~
+0 -1 77087 10 10 5
+D1
+~
+~
+0 -1 77079 10 10 5
+D2
+~
+~
+0 -1 77089 10 10 5
+D3
+~
+~
+0 -1 77091 10 10 5
+-1
+S
+
+#77089
+Lake~
+To the south a cutback bank rises up out of the dirt-clouded waters.  At
+
+first look this bank looks like it is unclimbable with the way it sharply
+
+rises out of the waters, teamed with how trees and bushes grow thickly
+
+right up to the very edge, with a couple of them threatening to topple
+
+into the waters at any moment.  But with a more detailed examination
+
+there does seem to be a way that the bank can be scaled.
+
+~
+cli bank to 62539
+
+~
+-235405311 6 9 0
+D0
+~
+~
+0 -1 77088 10 10 5
+D1
+~
+~
+0 -1 77078 10 10 5
+D3
+~
+~
+0 -1 77090 10 10 5
+A
+1 climb scale~
+bank up~
+if( find_skill( ch, climb ) < random( 3, 5 ) ) {
+
+  act_tochar( #fail, ch );
+
+  act_notchar( #rfail, ch );
+
+  }
+
+else {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #rclimb, ch );
+
+  transfer( ch, find_room( 62539 ) );
+
+  act_notchar( #aclimb, ch );
+
+  }
+
+~
+E
+climb~
+Utilizing some tree roots and unlikely footholds, you manage to climb up
+
+the bank.
+
+~
+E
+rclimb~
+$n manages to scramble up the bank.
+
+~
+E
+aclimb~
+$n climbs up from below.
+
+~
+E
+fail~
+No matter how you try, you can't work out how to scale the lake's bank.
+
+~
+E
+rfail~
+$n tries to scale the lake's bank but fails miserably.
+
+~
+!
+0 0 0
+A
+~
+~
+if( mob_in_room( 2334, find_room( 62539 ) ) )
+
+  send_to_room( #fish, room );
+
+~
+E
+fish~
+A fishing line with baited hook comes sailing down from overhead, landing
+
+in the water with a quiet splash.
+
+~
+!
+2 400 0
+1872 17 1509949540 -2 0
+-1
+S
+
+#77090
+Lake~
+Thick forest surrounds the lake on its southern and western shores, with
+
+the southern bank rising a few feet above the waters surface.  The
+
+dirt-clouded waters make it hard to see the bottom of the lake, even
+
+though at this section the waters are around three feet in depth,
+
+although further away from the shore the waters manage to get to depths
+
+of four to five feet.
+
+~
+~
+-235405311 6 9 0
+D0
+~
+~
+0 -1 77091 10 10 5
+D1
+~
+~
+0 -1 77089 10 10 5
+1872 17 1509949540 -2 0
+-1
+S
+
+#77091
+Lake~
+Densely growing trees and bushes line the western edge of the lake
+
+preventing any movement in that direction.  The dusky waters are about
+
+three feet in depth here, with the bottom unable to be seen, and toward
+
+the east the waters start to get much deeper.
+
+~
+~
+-235405311 6 9 0
+D0
+~
+~
+0 -1 77092 10 10 5
+D1
+~
+~
+0 -1 77088 10 10 5
+D2
+~
+~
+0 -1 77090 10 10 5
+1872 17 1509949540 -2 0
+-1
+S
+
+#77092
+Lake~
+A bank of thickly growing trees and bushes line the western side of the
+
+lake here and would block any exit out of the lake if it werent for a
+
+small break in the vegetation that looks barely wide enough to let an
+
+ogre pass through.  The lapping waters of the lake vary in depth from
+
+about one foot deep near the shore to four to five feet in depth the
+
+further east the lake goes.
+
+~
+[Belgar] werent -> weren't
+
+~
+-235405311 6 9 0
+D0
+~
+~
+0 -1 77093 10 10 5
+D1
+~
+~
+0 -1 77087 10 10 5
+D2
+~
+~
+0 -1 77091 10 10 5
+D3
+~
+~
+0 -1 62502 10 10 5
+1872 17 1509949540 -2 0
+-1
+S
+
+#77093
+Lake~
+This part of the lake is surrounded by various shades of green on all
+
+sides bar south.  On the western bank a thick wall of trees and bushes
+
+prevents any further access that way, while to the north and east are
+
+masses of thick pond weeds.  The dirt-clouded waters here aren't too
+
+deep, ranging from one foot to three feet in depth.
+
+~
+~
+-235405311 6 9 0
+D0
+~
+~
+0 -1 77094 10 10 5
+D1
+~
+~
+0 -1 77086 10 10 5
+D2
+~
+~
+0 -1 77092 10 10 5
+1872 17 1509949540 -2 0
+-1
+S
+
+#77094
+Lake - Amongst the Pond Weeds~
+This corner of the lake is buffeted by a steep hill to the north and a
+
+thick wall of trees and bushes to the west, both having the effect of
+
+limiting movement in those directions.  In the immediate vicinity a mass
+
+of pond weeds makes movement difficult for those that venture into its
+
+grasp.  The weeds spread out toward the east while to the south is clear
+
+water.
+
+~
+~
+-235405311 6 9 0
+D1
+~
+~
+0 -1 77085 10 10 5
+D2
+~
+~
+0 -1 77093 10 10 5
+A
+~
+~
+acode( find_room( 77071 ), 1 );
+
+~
+!
+2 200 0
+A
+~
+~
+if( find_stat( ch, dex ) <= random( 3, 18 ) ) {
+
+  act_tochar( #tangled, ch );
+
+  act_notchar( #rtangled, ch );
+
+  end;
+
+  }
+
+else
+
+  continue;
+
+~
+E
+tangled~
+@GYou get entangled in the pond weeds preventing you from moving on.@n
+
+~
+E
+rtangled~
+$n gets entangled in the pond weeds preventing $m from moving on.
+
+~
+!
+3 0 15
+901 9 1509949540 3 0
+1872 17 1509949540 -2 0
+3503 17 1509949540 -2 0
+-1
+S
+
+#77095
+Within the Reeds~
+Tall, thick reeds surrounds a small patch of ground and grow overhead,
+
+almost melding together in an attempt to block out the sky above.  In the
+
+center of the slightly boggy ground is a nest made up of a mound of reeds
+
+that has been lined with soft, downy feathers.
+
+~
+~
+-235405311 11 5 0
+D3
+reeds~
+reeds~
+2219 -1 77077 10 10 5
+A
+1 north 1 east 1 south~
+~
+act_tochar( #reed, ch );
+
+~
+E
+reed~
+The reeds are just too thick to move through.
+
+~
+!
+0 0 0
+A
+move search~
+reeds~
+if( !is_open( room, west ) ) {
+
+  act_tochar( #open, ch );
+
+  act_notchar( #ropen, ch );
+
+  open( room, west );
+
+  send_to_room( #aopen, find_room( 77077 ) );
+
+  }
+
+else
+
+  act_tochar( #opened, ch );
+
+~
+E
+open~
+You part the reeds gaining access to a lake.
+
+~
+E
+ropen~
+$n parts the reeds, allowing access to a lake.
+
+~
+E
+aopen~
+Someone parts the reeds.
+
+~
+E
+opened~
+The reeds have already been parted.
+
+~
+!
+0 0 0
+2333 9 1509949540 3 0
+2333 9 1509949540 3 0
+2333 9 1509949540 3 0
+-1
+S
+
+#77096
+Guest Room~
+This room features a generously sized bed that could easily hold two
+
+ogres, a small fireplace on the northern wall which has a thickly padded
+
+chair and round table before it, a carved wooden wardrobe along the
+
+eastern wall, and a window in the western wall.
+
+~
+~
+-235405307 0 9 0
+D1
+wooden door~
+wooden door~
+131 -1 77017 3 10 5
+-1
+S
+
+#77097
+Guest Room~
+This room features a generously sized bed that could easily hold two
+
+ogres, a small fireplace on the northern wall which has a thickly padded
+
+chair and round table before it, a carved wooden wardrobe along the
+
+western wall, and a window in the eastern wall.  Though fairly neat and
+
+tidy, the many trinkets and knick knacks around the room, as well as the
+
+stacks of papers on the table and the pile of books next to the padded
+
+chair, seem to suggest that the resident of this room has been here for
+
+some time.
+
+~
+[Belgar] well dressed halfing -> halfling
+
+[Ingra] When typing custom: two flat  kunzite gems (two spaces instead of one)
+
+~
+-235405305 0 9 0
+D3
+~
+~
+131 -1 77017 10 10 5
+2347 9 1509949540 3 0
+128 17 1509949490 -1 0
+1255 17 1509949515 -1 0
+1293 17 1509949515 -1 0
+-1
+S
+
+#0
+

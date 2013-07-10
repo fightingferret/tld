@@ -1,0 +1,3454 @@
+#AREA
+Mountain Valley~
+Borodin~
+~
+
+0 0
+3
+#ROOMS
+
+#72000
+Entrance to a Mountain Valley~
+Bordered on the south and west by steep mountains, this portion of the
+
+valley lacks the thick vegetation.  The stone littered ground is
+
+treacherous to navigate, forcing slower movement.  To the north, the
+
+valley expands, while more of the entrance area is to the east.
+
+~
+~
+-235405312 2 8 0
+D0
+~
+~
+0 -1 72001 10 10 5
+D1
+~
+~
+0 -1 72002 10 10 5
+-1
+S
+
+#72001
+Entrance to a Mountain Valley~
+In sharp contrast to the area to the south, the ground here has several
+
+patches of grass growing.  Waxy to the touch, the grass appears to be at
+
+home in the cold weather.  To the west rises a mountain slope, forming
+
+part of the valley's bordering walls.  The western mountain runs to the
+
+south and meets the southern range, boxing in this entrance area.  To the
+
+north, the valley spreads out, offering space for the wildlife.
+
+~
+~
+-235405312 2 8 0
+D0
+~
+~
+0 -1 72005 10 10 5
+D1
+~
+~
+0 -1 72003 10 10 5
+D2
+~
+~
+0 -1 72000 10 10 5
+-1
+S
+
+#72002
+Entrance to a Mountain Valley~
+Expanding to the north, this large mountain valley appears surprising
+
+fertile compared to the stony mountains surrounding it.  Although the
+
+climate is very cold, the ground is practically covered with a waist-high
+
+variety of grass which has adapted to growing in the cold.  To the south,
+
+a ravine leads out of the valley.  Steep, mountainous terrain is directly
+
+to the east and in the distance to the west.
+
+~
+~
+-235405312 2 8 0
+D0
+~
+~
+0 -1 72003 10 10 5
+D2
+~
+~
+0 -1 72146 10 10 5
+D3
+~
+~
+0 -1 72000 10 10 5
+-1
+S
+
+#72003
+Entrance to a Mountain Valley~
+The ground here is covered in a hearty, waist-high grass, which seems to
+
+thrive in the cold climate of the mountain.  To the north, the valley
+
+extends, as the eastern mountain slopes to the valley floor.  Far to the
+
+west, a mountain continues to border the valley, as well as farther to
+
+the south.
+
+~
+~
+-235405312 2 8 0
+D0
+~
+~
+0 -1 72078 10 10 5
+D2
+~
+~
+0 -1 72002 10 10 5
+D3
+~
+~
+0 -1 72001 10 10 5
+-1
+S
+
+#72004
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+-1
+S
+
+#72005
+A Valley Meadow~
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72080 10 10 5
+D1
+~
+~
+0 -1 72078 10 10 5
+D2
+~
+~
+0 -1 72001 10 10 5
+D3
+~
+~
+0 -1 72006 10 10 5
+-1
+S
+
+#72006
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72007 10 10 5
+D1
+~
+~
+0 -1 72005 10 10 5
+-1
+S
+
+#72007
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72108 10 10 5
+D1
+~
+~
+0 -1 72080 10 10 5
+D2
+~
+~
+0 -1 72006 10 10 5
+D3
+~
+~
+0 -1 72008 10 10 5
+-1
+S
+
+#72008
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 72114 10 10 5
+D1
+~
+~
+0 -1 72007 10 10 5
+D3
+~
+~
+0 -1 72009 10 10 5
+-1
+S
+
+#72009
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 14 9 0
+D0
+~
+~
+0 -1 72115 10 10 5
+D1
+~
+~
+0 -1 72008 10 10 5
+D2
+~
+~
+0 -1 72010 10 10 5
+D3
+~
+~
+0 -1 72120 10 10 5
+-1
+S
+
+#72010
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 14 9 0
+D0
+~
+~
+0 -1 72009 10 10 5
+D3
+~
+~
+0 -1 72011 10 10 5
+-1
+S
+
+#72011
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 14 9 0
+D0
+~
+~
+0 -1 72120 10 10 5
+D1
+~
+~
+0 -1 72010 10 10 5
+D2
+~
+~
+0 -1 72012 10 10 5
+D3
+~
+~
+0 -1 72121 10 10 5
+-1
+S
+
+#72012
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 14 9 0
+D0
+~
+~
+0 -1 72011 10 10 5
+D3
+~
+~
+0 -1 72013 10 10 5
+-1
+S
+
+#72013
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 14 9 0
+D0
+~
+~
+0 -1 72121 10 10 5
+D1
+~
+~
+0 -1 72012 10 10 5
+D3
+~
+~
+0 -1 72014 10 10 5
+-1
+S
+
+#72014
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 14 9 0
+D0
+~
+~
+0 -1 72126 10 10 5
+D1
+~
+~
+0 -1 72013 10 10 5
+D3
+~
+~
+0 -1 72015 10 10 5
+-1
+S
+
+#72015
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 14 9 0
+D0
+~
+~
+0 -1 72016 10 10 5
+D1
+~
+~
+0 -1 72014 10 10 5
+-1
+S
+
+#72016
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 14 9 0
+D0
+~
+~
+0 -1 72027 10 10 5
+D1
+~
+~
+0 -1 72126 10 10 5
+D2
+~
+~
+0 -1 72015 10 10 5
+D3
+~
+~
+0 -1 72017 10 10 5
+-1
+S
+
+#72017
+Entrance to a Cave~
+Upon entering the cave, the icy valley wind all but stops.  Instead, a
+
+muffled silence fills the air and all that is left is a gnawing cold. 
+
+The walls are rough, and the ceiling a mere nine feet above the ground. 
+
+The floor of the cave is remarkably free of debris in the center, while
+
+small pieces of rock are cluttered up next to the walls.  The cave
+
+continues into the mountain to the west.  narrowing slightly as it does.
+
+~
+~
+-235405308 11 5 0
+D1
+~
+~
+0 -1 72016 10 10 5
+D3
+~
+~
+0 -1 72018 10 10 5
+-1
+S
+
+#72018
+Twist in the Tunnel~
+Turning sharply by ninety degrees, the cave continues to tunnel into the
+
+mountain.  With the wind softly moaning to the east, the tunnel continues
+
+to the north, leading out of sight of the entrance.  The floor continues
+
+to be cleared in the middle, while clutter piles against the walls. 
+
+Occasionally, a tuft of fur on the ground would appear with the small
+
+rocks, or a dark stain on the ground.
+
+~
+~
+-235405308 11 5 0
+D0
+~
+~
+0 -1 72019 10 10 5
+D1
+~
+~
+0 -1 72017 10 10 5
+-1
+S
+
+#72019
+Tunnel into the Mountain~
+Appearing like the area around the entrance, the walls here are rough in
+
+texture.  The air continues to be cold, causing patches of ice to form on
+
+the walls.  The wind of the valley can no longer be heard, but the cave
+
+is not completely silent.  Although it is hard to make out, there does
+
+seem like something is deeper in the cave.
+
+~
+~
+-235405308 11 5 0
+D0
+~
+~
+0 -1 72020 10 10 5
+D2
+~
+~
+0 -1 72018 10 10 5
+-1
+S
+
+#72020
+Turn in the Tunnel~
+The tunnel once again changes direction, this time to resume the a path
+
+into the west.  Athough still providing ample room for even an ogre, the
+
+tunnel seems to be narrowing slightly.  It is almost as if the floor has
+
+a slight slant to it.  To the south, the tunnel leads back to the
+
+entrance and the relative safety of the mountain valley.
+
+~
+~
+-235405308 11 5 0
+D2
+~
+~
+0 -1 72019 10 10 5
+D3
+~
+~
+0 -1 72021 10 10 5
+-1
+S
+
+#72021
+At a Large Crevice~
+The tunnel continues to work its way into the mountain.  Appearing along
+
+the north wall in this section is a large crevice, just wide enough for a
+
+young human child to fit.  A low rumbling can be heard from the west, as
+
+the tunnel looks to broaden, while to the east, the tunnel returns to the
+
+valley.
+
+~
+~
+-235405308 11 5 0
+D0
+~
+~
+0 -1 72026 10 10 5
+D1
+~
+~
+0 -1 72020 10 10 5
+D3
+~
+~
+0 -1 72022 10 10 5
+-1
+S
+
+#72022
+Entering an Animal Den~
+The tunnel widens here as it becomes a large cavern.  The air is slightly
+
+warmer here, suggesting that the cavern is used as a den.  Stale smells
+
+of rotting meat and excrement fill the air as well as the sound of low
+
+growls.  The cavern extends to the west and south, while the entrance
+
+tunnel is to the east.
+
+~
+~
+-235405308 11 7 0
+D1
+~
+~
+0 -1 72021 10 10 5
+D2
+~
+~
+0 -1 72023 10 10 5
+D3
+~
+~
+0 -1 72025 10 10 5
+-1
+S
+
+#72023
+An Ice Tiger Den~
+Covered in cracks and crevices, the walls about this area have a very
+
+rough surface to them, almost to the point of being jagged.  The ceiling
+
+shares the walls' surface texture and even has a few small stalactites
+
+periodically extending from it.  The floor seems relatively smooth
+
+compared to the walls and ceiling, as tiger paws have worn it down.  The
+
+cave continues to the north and west.
+
+~
+~
+-235405308 11 7 0
+D0
+~
+~
+0 -1 72022 10 10 5
+D3
+~
+~
+0 -1 72024 10 10 5
+-1
+S
+
+#72024
+Amongst the Piles of Bone~
+Smelling of rotting carcasses, this portion of the cave is littered with
+
+the remains of the pride's meals.  Bones of several different types of
+
+animals are scattered about, including deer and small mammoth.  Although
+
+the bones are of mostly of the creatures of the valley, there are a few
+
+sets that resemble bipeds.  Appartantly past visitors to this region
+
+received a less than kind welcome.
+
+~
+~
+-235405308 11 7 0
+D0
+~
+~
+0 -1 72025 10 10 5
+D1
+~
+~
+0 -1 72023 10 10 5
+-1
+S
+
+#72025
+An Ice Tiger Den~
+Rising up in the corner of the den is a large stalagmite, reaching almost
+
+to the ceiling.  The high, arching ceiling is rough and craggy, much like
+
+the walls.  This surface texture has a way of absorbing the light casst
+
+at it, leading to deep shadows through the room, especially behind the
+
+stalagmite.  The cavern continues to the south and east, while walls
+
+block any exit to the north or west.
+
+~
+~
+-235405308 11 7 0
+D1
+~
+~
+0 -1 72022 10 10 5
+D2
+~
+~
+0 -1 72024 10 10 5
+-1
+S
+
+#72026
+A Small Alcove~
+Barely more than a large crevice in the wall, this alcove ends roughly
+
+seven feet into the wall, but is barely wide enough for a dwarf to enter. 
+
+The rock surrounding this area has been worn smooth and is slightly damp
+
+to the touch.  Towards the back of this nook, the light reflects
+
+strangly, almost glittering.  The only exit from this part of the cave is
+
+back towards the south.
+
+~
+~
+-235405308 11 3 0
+D2
+~
+~
+0 -1 72021 10 10 5
+-1
+S
+
+#72027
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 14 9 0
+D0
+~
+~
+0 -1 72028 10 10 5
+D1
+~
+~
+0 -1 72125 10 10 5
+D2
+~
+~
+0 -1 72016 10 10 5
+-1
+S
+
+#72028
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 14 9 0
+D1
+~
+~
+0 -1 72029 10 10 5
+D2
+~
+~
+0 -1 72027 10 10 5
+-1
+S
+
+#72029
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 14 9 0
+D0
+~
+~
+0 -1 72030 10 10 5
+D1
+~
+~
+0 -1 72123 10 10 5
+D2
+~
+~
+0 -1 72125 10 10 5
+D3
+~
+~
+0 -1 72028 10 10 5
+-1
+S
+
+#72030
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 14 9 0
+D0
+~
+~
+0 -1 72031 10 10 5
+D1
+~
+~
+0 -1 72124 10 10 5
+D2
+~
+~
+0 -1 72029 10 10 5
+-1
+S
+
+#72031
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 14 9 0
+D1
+~
+~
+0 -1 72042 10 10 5
+D2
+~
+~
+0 -1 72030 10 10 5
+D3
+~
+~
+0 -1 72032 10 10 5
+-1
+S
+
+#72032
+Path Through the Mountains~
+Under Construction.
+
+~
+~
+-235405312 14 8 0
+D0
+~
+~
+0 -1 72033 10 10 5
+D1
+~
+~
+0 -1 72031 10 10 5
+-1
+S
+
+#72033
+Path Through the Mountains~
+Under Construction.
+
+~
+~
+-235405312 14 8 0
+D2
+~
+~
+0 -1 72032 10 10 5
+D3
+~
+~
+0 -1 72034 10 10 5
+-1
+S
+
+#72034
+Path Through the Mountains~
+Under Construction.
+
+~
+~
+-235405312 14 8 0
+D0
+~
+~
+0 -1 72036 10 10 5
+D1
+~
+~
+0 -1 72033 10 10 5
+-1
+S
+
+#72035
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+-1
+S
+
+#72036
+Path Through the Mountains~
+Under Construction.
+
+~
+~
+-235405312 14 8 0
+D0
+~
+~
+0 -1 72037 10 10 5
+D2
+~
+~
+0 -1 72034 10 10 5
+-1
+S
+
+#72037
+Path Through the Mountains~
+Under Construction.
+
+~
+~
+-235405312 14 8 0
+D2
+~
+~
+0 -1 72036 10 10 5
+D3
+~
+~
+0 -1 72038 10 10 5
+-1
+S
+
+#72038
+Broadening of the Path~
+The path from the southern valley broadens here, widening to the north
+
+and east enough for about any creature to navigate.  The pure white snow
+
+is dry and powdery, making it easially blown by the wind.  Tiny wisps of
+
+smoke can be seen to the west, the markings of fire perhaps.  To the
+
+east, the path continues to the mountain valley.
+
+~
+~
+-235405312 14 9 0
+D0
+~
+~
+0 -1 72041 10 10 5
+D1
+~
+~
+0 -1 72037 10 10 5
+D3
+~
+~
+0 -1 72039 10 10 5
+-1
+S
+
+#72039
+Remains of a Campsite~
+In this corner of the mountain pass, a hastily abandoned campsite
+
+clutters the snow covered ground.  With some embers still burning, the
+
+site's fire radiates warmth into the cold, mountain air.  A small pile of
+
+bones lies at the edge of the campsite, obviously the remains of
+
+someone's dinner.  The pass continues to the north and east, while
+
+sizable boulders block the way to the western and southern mountain
+
+slopes.
+
+~
+~
+-235405312 14 9 0
+D0
+~
+~
+0 -1 72040 10 10 5
+D1
+~
+~
+0 -1 72038 10 10 5
+1357 17 1509949540 -2 0
+-1
+S
+
+#72040
+Before an Ice Filled Pass~
+As the path merges into the mountain pass through the northern mountains,
+
+it quickly becomes unusable.  Large amounts of snow from an avalanche
+
+have filled the pass and threaten to spill further south onto the path. 
+
+The path continues to the south and east, while the mountains block any
+
+exit to the west.
+
+~
+~
+-235405312 14 8 0
+D1
+~
+~
+0 -1 72041 10 10 5
+D2
+~
+~
+0 -1 72039 10 10 5
+-1
+S
+
+#72041
+Approaching a Mountain Pass~
+Nestled in the snow capped hills before the mountains, this area is a
+
+temporary widening of the path that leads from the valley to the south. 
+
+The path looks to narrow again to the west, as it approaches a pass
+
+through the northern mountains.  The pristine snow covering most of the
+
+ground is only marred by a few tracks, mostly from rabbit, deer and wolf. 
+
+The chilling wind has blown some patches clear from snow, leaving behind
+
+the rocky terrain of the path.
+
+~
+~
+-235405312 14 8 0
+D2
+~
+~
+0 -1 72038 10 10 5
+D3
+~
+~
+0 -1 72040 10 10 5
+-1
+S
+
+#72042
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 14 9 0
+D1
+~
+~
+0 -1 72043 10 10 5
+D2
+~
+~
+0 -1 72124 10 10 5
+D3
+~
+~
+0 -1 72031 10 10 5
+-1
+S
+
+#72043
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 14 9 0
+D0
+~
+~
+0 -1 72044 10 10 5
+D1
+~
+~
+0 -1 72117 10 10 5
+D2
+~
+~
+0 -1 72118 10 10 5
+D3
+~
+~
+0 -1 72042 10 10 5
+-1
+S
+
+#72044
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 14 9 0
+D1
+~
+~
+0 -1 72045 10 10 5
+D2
+~
+~
+0 -1 72043 10 10 5
+-1
+S
+
+#72045
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 72046 10 10 5
+D2
+~
+~
+0 -1 72117 10 10 5
+D3
+~
+~
+0 -1 72044 10 10 5
+-1
+S
+
+#72046
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 72047 10 10 5
+D1
+~
+~
+0 -1 72111 10 10 5
+D2
+~
+~
+0 -1 72134 10 10 5
+D3
+~
+~
+0 -1 72045 10 10 5
+-1
+S
+
+#72047
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 72048 10 10 5
+D2
+~
+~
+0 -1 72046 10 10 5
+-1
+S
+
+#72048
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D1
+~
+~
+0 -1 72049 10 10 5
+D2
+~
+~
+0 -1 72111 10 10 5
+D3
+~
+~
+0 -1 72047 10 10 5
+-1
+S
+
+#72049
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D1
+~
+~
+0 -1 72050 10 10 5
+D2
+~
+~
+0 -1 72104 10 10 5
+D3
+~
+~
+0 -1 72048 10 10 5
+-1
+S
+
+#72050
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D1
+~
+~
+0 -1 72051 10 10 5
+D2
+~
+~
+0 -1 72103 10 10 5
+D3
+~
+~
+0 -1 72049 10 10 5
+-1
+S
+
+#72051
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D2
+~
+~
+0 -1 72090 10 10 5
+D3
+~
+~
+0 -1 72050 10 10 5
+-1
+S
+
+#72052
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+-1
+S
+
+#72053
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+-1
+S
+
+#72054
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+-1
+S
+
+#72055
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+-1
+S
+
+#72056
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D1
+~
+~
+0 -1 72057 10 10 5
+D2
+~
+~
+0 -1 72091 10 10 5
+D3
+~
+~
+0 -1 72089 10 10 5
+-1
+S
+
+#72057
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 2 9 0
+D2
+~
+~
+0 -1 72058 10 10 5
+D3
+~
+~
+0 -1 72056 10 10 5
+-1
+S
+
+#72058
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72057 10 10 5
+D1
+~
+~
+0 -1 72059 10 10 5
+D2
+~
+~
+0 -1 72087 10 10 5
+D3
+~
+~
+0 -1 72091 10 10 5
+-1
+S
+
+#72059
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D1
+~
+~
+0 -1 72060 10 10 5
+D2
+~
+~
+0 -1 72086 10 10 5
+D3
+~
+~
+0 -1 72058 10 10 5
+-1
+S
+
+#72060
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72127 10 10 5
+D1
+~
+~
+0 -1 72061 10 10 5
+D2
+~
+~
+0 -1 72084 10 10 5
+D3
+~
+~
+0 -1 72059 10 10 5
+-1
+S
+
+#72061
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D2
+~
+~
+0 -1 72062 10 10 5
+D3
+~
+~
+0 -1 72060 10 10 5
+-1
+S
+
+#72062
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72061 10 10 5
+D1
+~
+~
+0 -1 72063 10 10 5
+D2
+~
+~
+0 -1 72082 10 10 5
+D3
+~
+~
+0 -1 72084 10 10 5
+-1
+S
+
+#72063
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D2
+~
+~
+0 -1 72064 10 10 5
+D3
+~
+~
+0 -1 72062 10 10 5
+-1
+S
+
+#72064
+At a Frozen Waterfall~
+Glistening in the light, the frozen waterfall appears as a thick sheet of
+
+ice running from high in the western cliff to the basin.  The basin
+
+collects at the base of the cliff and is the start of a channel that runs
+
+to the east and empties into the lake.  The basin and channel are frozen
+
+as well, allowing for relatively easy crossing.
+
+~
+~
+-235405312 16 9 0
+D0
+~
+~
+0 -1 72063 10 10 5
+D2
+~
+~
+0 -1 72065 10 10 5
+D3
+~
+~
+0 -1 72082 10 10 5
+E
+waterfall~
+Frozen slowly over time, this waterfall is a spectacle to behold. 
+
+Shining prismicly in the light, the dizzying array of colors distracts
+
+your attention from the surroundings.  You find your mind fills with
+
+questions of life's purpose and of what is true beauty.  Obviously, a
+
+brief repose in such a violent life.
+
+~
+-1
+S
+
+#72065
+Edge of the Valley~
+Rising sharply to the east and south, pine covered ground leads high into
+
+the mountain.  Although much less dense than on the slope, a scattering
+
+of pine trees grow on this edge of the valley.  The hearty grass grows
+
+tall around the pines, sharing the land with the tall trees, up until the
+
+waterfall and basin to the north.  The grass also grows to the west,
+
+along the base of the slope to the southern mountains.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72064 10 10 5
+D3
+~
+~
+0 -1 72066 10 10 5
+-1
+S
+
+#72066
+Edge of the Valley~
+Waist-high grass covers the ground, as it slopes down towards the north. 
+
+The much steeper slopes to the south rise sharply up into the mountain
+
+range and support several pine trees.  Several large boulders lie at the
+
+end of the steep slope, looking rather worn by the elements.  To the
+
+north, an icy channel can be seen running from the lake to the mountains.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72082 10 10 5
+D1
+~
+~
+0 -1 72065 10 10 5
+D3
+~
+~
+0 -1 72067 10 10 5
+-1
+S
+
+#72067
+Near a Frozen Lake~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72083 10 10 5
+D1
+~
+~
+0 -1 72066 10 10 5
+D2
+~
+~
+0 -1 72068 10 10 5
+D3
+~
+~
+0 -1 72081 10 10 5
+-1
+S
+
+#72068
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72067 10 10 5
+D3
+~
+~
+0 -1 72069 10 10 5
+-1
+S
+
+#72069
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72081 10 10 5
+D1
+~
+~
+0 -1 72068 10 10 5
+D3
+~
+~
+0 -1 72070 10 10 5
+-1
+S
+
+#72070
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72071 10 10 5
+D1
+~
+~
+0 -1 72069 10 10 5
+-1
+S
+
+#72071
+Southern Edge of a Frozen Lake~
+Under Construction.
+
+~
+~
+-235405312 16 9 0
+D0
+~
+~
+0 -1 72088 10 10 5
+D1
+~
+~
+0 -1 72081 10 10 5
+D2
+~
+~
+0 -1 72070 10 10 5
+D3
+~
+~
+0 -1 72072 10 10 5
+-1
+S
+
+#72072
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72093 10 10 5
+D1
+~
+~
+0 -1 72071 10 10 5
+D3
+~
+~
+0 -1 72075 10 10 5
+-1
+S
+
+#72073
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+-1
+S
+
+#72074
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+-1
+S
+
+#72075
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72094 10 10 5
+D1
+~
+~
+0 -1 72072 10 10 5
+D3
+~
+~
+0 -1 72076 10 10 5
+-1
+S
+
+#72076
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72099 10 10 5
+D1
+~
+~
+0 -1 72075 10 10 5
+D2
+~
+~
+0 -1 72077 10 10 5
+D3
+~
+~
+0 -1 72079 10 10 5
+-1
+S
+
+#72077
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72076 10 10 5
+D3
+~
+~
+0 -1 72078 10 10 5
+-1
+S
+
+#72078
+A Valley Meadow~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72079 10 10 5
+D1
+~
+~
+0 -1 72077 10 10 5
+D2
+~
+~
+0 -1 72003 10 10 5
+D3
+~
+~
+0 -1 72005 10 10 5
+-1
+S
+
+#72079
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72100 10 10 5
+D1
+~
+~
+0 -1 72076 10 10 5
+D2
+~
+~
+0 -1 72078 10 10 5
+D3
+~
+~
+0 -1 72080 10 10 5
+-1
+S
+
+#72080
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72107 10 10 5
+D1
+~
+~
+0 -1 72079 10 10 5
+D2
+~
+~
+0 -1 72005 10 10 5
+D3
+~
+~
+0 -1 72007 10 10 5
+-1
+S
+
+#72081
+Southern Edge of a Frozen Lake~
+Under Construction.
+
+~
+~
+-235405312 16 9 0
+D0
+~
+~
+0 -1 72085 10 10 5
+D1
+~
+~
+0 -1 72067 10 10 5
+D2
+~
+~
+0 -1 72069 10 10 5
+D3
+~
+~
+0 -1 72071 10 10 5
+-1
+S
+
+#72082
+A Frozen Channel~
+Running from east to west, this channel brings fresh water into the lake,
+
+or would if it wasn't frozen.  To the east, the cliffs and step hills of
+
+the mountain can be seen, as well as a waterfall.  To the west, the
+
+valley's lake lies frozen.  The grassy plains of the valley extend around
+
+the lake to the north and south, the hearty grasses growing right up to
+
+the lake's edge.
+
+~
+~
+-235405312 16 9 0
+D0
+~
+~
+0 -1 72062 10 10 5
+D1
+~
+~
+0 -1 72064 10 10 5
+D2
+~
+~
+0 -1 72066 10 10 5
+D3
+~
+~
+0 -1 72083 10 10 5
+-1
+S
+
+#72083
+Southeastern Edge of a Frozen Lake~
+Under Construction.
+
+~
+~
+-235405312 16 9 0
+D0
+~
+~
+0 -1 72084 10 10 5
+D1
+~
+~
+0 -1 72082 10 10 5
+D2
+~
+~
+0 -1 72067 10 10 5
+D3
+~
+~
+0 -1 72085 10 10 5
+-1
+S
+
+#72084
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 72060 10 10 5
+D1
+~
+~
+0 -1 72062 10 10 5
+D2
+~
+~
+0 -1 72083 10 10 5
+D3
+~
+~
+0 -1 72086 10 10 5
+-1
+S
+
+#72085
+Out on a Frozen Lake~
+Under Construction.
+
+~
+~
+-235405312 16 9 0
+D0
+~
+~
+0 -1 72086 10 10 5
+D1
+~
+~
+0 -1 72083 10 10 5
+D2
+~
+~
+0 -1 72081 10 10 5
+D3
+~
+~
+0 -1 72088 10 10 5
+-1
+S
+
+#72086
+Eastern Edge of a Frozen Lake~
+Under Construction.
+
+~
+~
+-235405312 16 9 0
+D0
+~
+~
+0 -1 72059 10 10 5
+D1
+~
+~
+0 -1 72084 10 10 5
+D2
+~
+~
+0 -1 72085 10 10 5
+D3
+~
+~
+0 -1 72087 10 10 5
+-1
+S
+
+#72087
+Edge of a Frozen Lake~
+Under Construction.
+
+~
+~
+-235405312 16 9 0
+D0
+~
+~
+0 -1 72058 10 10 5
+D1
+~
+~
+0 -1 72086 10 10 5
+D2
+~
+~
+0 -1 72088 10 10 5
+D3
+~
+~
+0 -1 72092 10 10 5
+-1
+S
+
+#72088
+Out on a Frozen Lake~
+Under Construction.
+
+~
+~
+-235405312 16 9 0
+D0
+~
+~
+0 -1 72087 10 10 5
+D1
+~
+~
+0 -1 72085 10 10 5
+D2
+~
+~
+0 -1 72071 10 10 5
+D3
+~
+~
+0 -1 72093 10 10 5
+-1
+S
+
+#72089
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D1
+~
+~
+0 -1 72056 10 10 5
+D2
+~
+~
+0 -1 72096 10 10 5
+D3
+~
+~
+0 -1 72090 10 10 5
+-1
+S
+
+#72090
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72051 10 10 5
+D1
+~
+~
+0 -1 72089 10 10 5
+D2
+~
+~
+0 -1 72097 10 10 5
+D3
+~
+~
+0 -1 72103 10 10 5
+-1
+S
+
+#72091
+Northeastern Edge of a Frozen Lake~
+Under Construction.
+
+~
+~
+-235405312 16 9 0
+D0
+~
+~
+0 -1 72056 10 10 5
+D1
+~
+~
+0 -1 72058 10 10 5
+D2
+~
+~
+0 -1 72092 10 10 5
+D3
+~
+~
+0 -1 72096 10 10 5
+-1
+S
+
+#72092
+At a Fishing Hole in the Ice~
+Under Construction.
+
+~
+~
+-235405312 16 9 0
+D0
+~
+~
+0 -1 72091 10 10 5
+D1
+~
+~
+0 -1 72087 10 10 5
+D2
+~
+~
+0 -1 72093 10 10 5
+D3
+~
+~
+0 -1 72095 10 10 5
+D5
+~
+~
+0 -1 72135 10 10 5
+-1
+S
+
+#72093
+Edge of a Frozen Lake~
+Under Construction.
+
+~
+~
+-235405312 16 9 0
+D0
+~
+~
+0 -1 72092 10 10 5
+D1
+~
+~
+0 -1 72088 10 10 5
+D2
+~
+~
+0 -1 72072 10 10 5
+D3
+~
+~
+0 -1 72094 10 10 5
+-1
+S
+
+#72094
+Southwestern Edge of a Frozen Lake~
+Under Construction.
+
+~
+~
+-235405312 16 9 0
+D0
+~
+~
+0 -1 72095 10 10 5
+D1
+~
+~
+0 -1 72093 10 10 5
+D2
+~
+~
+0 -1 72075 10 10 5
+D3
+~
+~
+0 -1 72099 10 10 5
+-1
+S
+
+#72095
+Out on a Frozen Lake~
+Under Construction.
+
+~
+~
+-235405312 16 9 0
+D0
+~
+~
+0 -1 72096 10 10 5
+D1
+~
+~
+0 -1 72092 10 10 5
+D2
+~
+~
+0 -1 72094 10 10 5
+D3
+~
+~
+0 -1 72098 10 10 5
+-1
+S
+
+#72096
+Northern Edge of a Frozen Lake~
+Under Construction.
+
+~
+~
+-235405312 16 9 0
+D0
+~
+~
+0 -1 72089 10 10 5
+D1
+~
+~
+0 -1 72091 10 10 5
+D2
+~
+~
+0 -1 72095 10 10 5
+D3
+~
+~
+0 -1 72097 10 10 5
+-1
+S
+
+#72097
+Northwestern Edge of a Frozen Lake~
+Under Construction.
+
+~
+~
+-235405312 16 9 0
+D0
+~
+~
+0 -1 72090 10 10 5
+D1
+~
+~
+0 -1 72096 10 10 5
+D2
+~
+~
+0 -1 72098 10 10 5
+D3
+~
+~
+0 -1 72102 10 10 5
+-1
+S
+
+#72098
+Western Edge of a Frozen Lake~
+Under Construction.
+
+~
+~
+-235405312 16 9 0
+D0
+~
+~
+0 -1 72097 10 10 5
+D1
+~
+~
+0 -1 72095 10 10 5
+D2
+~
+~
+0 -1 72099 10 10 5
+D3
+~
+~
+0 -1 72101 10 10 5
+-1
+S
+
+#72099
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72098 10 10 5
+D1
+~
+~
+0 -1 72094 10 10 5
+D2
+~
+~
+0 -1 72076 10 10 5
+D3
+~
+~
+0 -1 72100 10 10 5
+-1
+S
+
+#72100
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72101 10 10 5
+D1
+~
+~
+0 -1 72099 10 10 5
+D2
+~
+~
+0 -1 72079 10 10 5
+D3
+~
+~
+0 -1 72107 10 10 5
+-1
+S
+
+#72101
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72102 10 10 5
+D1
+~
+~
+0 -1 72098 10 10 5
+D2
+~
+~
+0 -1 72100 10 10 5
+D3
+~
+~
+0 -1 72106 10 10 5
+-1
+S
+
+#72102
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72103 10 10 5
+D1
+~
+~
+0 -1 72097 10 10 5
+D2
+~
+~
+0 -1 72101 10 10 5
+D3
+~
+~
+0 -1 72105 10 10 5
+-1
+S
+
+#72103
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72050 10 10 5
+D1
+~
+~
+0 -1 72090 10 10 5
+D2
+~
+~
+0 -1 72102 10 10 5
+D3
+~
+~
+0 -1 72104 10 10 5
+-1
+S
+
+#72104
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72049 10 10 5
+D1
+~
+~
+0 -1 72103 10 10 5
+D2
+~
+~
+0 -1 72105 10 10 5
+D3
+~
+~
+0 -1 72111 10 10 5
+-1
+S
+
+#72105
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72104 10 10 5
+D1
+~
+~
+0 -1 72102 10 10 5
+D2
+~
+~
+0 -1 72106 10 10 5
+D3
+~
+~
+0 -1 72110 10 10 5
+-1
+S
+
+#72106
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72105 10 10 5
+D1
+~
+~
+0 -1 72101 10 10 5
+D2
+~
+~
+0 -1 72107 10 10 5
+D3
+~
+~
+0 -1 72109 10 10 5
+-1
+S
+
+#72107
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72106 10 10 5
+D1
+~
+~
+0 -1 72100 10 10 5
+D2
+~
+~
+0 -1 72080 10 10 5
+D3
+~
+~
+0 -1 72108 10 10 5
+-1
+S
+
+#72108
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72109 10 10 5
+D1
+~
+~
+0 -1 72107 10 10 5
+D2
+~
+~
+0 -1 72007 10 10 5
+D3
+~
+~
+0 -1 72114 10 10 5
+-1
+S
+
+#72109
+Base of a Large Glacier~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72110 10 10 5
+D1
+~
+~
+0 -1 72106 10 10 5
+D2
+~
+~
+0 -1 72108 10 10 5
+-1
+S
+
+#72110
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72111 10 10 5
+D1
+~
+~
+0 -1 72105 10 10 5
+D2
+~
+~
+0 -1 72109 10 10 5
+D3
+~
+~
+0 -1 72134 10 10 5
+-1
+S
+
+#72111
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 72048 10 10 5
+D1
+~
+~
+0 -1 72104 10 10 5
+D2
+~
+~
+0 -1 72110 10 10 5
+D3
+~
+~
+0 -1 72046 10 10 5
+-1
+S
+
+#72112
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+-1
+S
+
+#72113
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+-1
+S
+
+#72114
+South of a Large Glacier~
+Under Construction.
+
+~
+~
+-235405312 14 9 0
+D1
+~
+~
+0 -1 72108 10 10 5
+D2
+~
+~
+0 -1 72008 10 10 5
+D3
+~
+~
+0 -1 72115 10 10 5
+-1
+S
+
+#72115
+Along a Huge Glacier~
+Under Construction.
+
+~
+~
+-235405312 14 9 0
+D1
+~
+~
+0 -1 72114 10 10 5
+D2
+~
+~
+0 -1 72009 10 10 5
+-1
+S
+
+#72116
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+-1
+S
+
+#72117
+North of a Large Glacier~
+Under Construction.
+
+~
+~
+-235405312 14 9 0
+D0
+~
+~
+0 -1 72045 10 10 5
+D1
+~
+~
+0 -1 72134 10 10 5
+D3
+~
+~
+0 -1 72043 10 10 5
+-1
+S
+
+#72118
+At the Base of a Glacier~
+Under Construction.
+
+~
+~
+-235405312 14 9 0
+D0
+~
+~
+0 -1 72043 10 10 5
+D3
+~
+~
+0 -1 72124 10 10 5
+-1
+S
+
+#72119
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+-1
+S
+
+#72120
+Approaching a Glacier~
+Under Construction.
+
+~
+~
+-235405312 14 9 0
+D1
+~
+~
+0 -1 72009 10 10 5
+D2
+~
+~
+0 -1 72011 10 10 5
+-1
+S
+
+#72121
+South of a Large Glacier~
+Under Construction.
+
+~
+~
+-235405312 14 9 0
+D1
+~
+~
+0 -1 72011 10 10 5
+D2
+~
+~
+0 -1 72013 10 10 5
+D3
+~
+~
+0 -1 72126 10 10 5
+-1
+S
+
+#72122
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+-1
+S
+
+#72123
+Near a Mountain of Ice~
+Under Construction.
+
+~
+~
+-235405312 14 9 0
+D0
+~
+~
+0 -1 72124 10 10 5
+D3
+~
+~
+0 -1 72029 10 10 5
+-1
+S
+
+#72124
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 14 9 0
+D0
+~
+~
+0 -1 72042 10 10 5
+D1
+~
+~
+0 -1 72118 10 10 5
+D2
+~
+~
+0 -1 72123 10 10 5
+D3
+~
+~
+0 -1 72030 10 10 5
+-1
+S
+
+#72125
+At the Base of a Glacier~
+Under Construction.
+
+~
+~
+-235405312 14 9 0
+D0
+~
+~
+0 -1 72029 10 10 5
+D2
+~
+~
+0 -1 72126 10 10 5
+D3
+~
+~
+0 -1 72027 10 10 5
+-1
+S
+
+#72126
+Nothing~
+Under Construction.
+
+~
+~
+-235405312 14 9 0
+D0
+~
+~
+0 -1 72125 10 10 5
+D1
+~
+~
+0 -1 72121 10 10 5
+D2
+~
+~
+0 -1 72014 10 10 5
+D3
+~
+~
+0 -1 72016 10 10 5
+-1
+S
+
+#72127
+The Beginning of a Narrow Passage~
+Under Construction.
+
+~
+~
+-235405312 5 5 0
+D0
+~
+~
+0 -1 72128 10 10 5
+D2
+~
+~
+0 -1 72060 10 10 5
+-1
+S
+
+#72128
+A Narrow Passage~
+Under Construction.
+
+~
+~
+-235405312 5 5 0
+D1
+~
+~
+0 -1 72129 10 10 5
+D2
+~
+~
+0 -1 72127 10 10 5
+-1
+S
+
+#72129
+A Narrow Passage~
+Under Construction.
+
+~
+~
+-235405312 5 5 0
+D1
+~
+~
+0 -1 72130 10 10 5
+D3
+~
+~
+0 -1 72128 10 10 5
+-1
+S
+
+#72130
+Entering a Small Encampment~
+Guarding the entrance to the encampment, two small tents stand on either
+
+side of the ravine edge.  After the guard posts, a wide open area gives
+
+entrance to the camp.  Close to the southern cliff, a rock platform has
+
+been set, most likely used by someone to address an assembly.  To the
+
+north a large tent can be seen as well as several fires.  From the west,
+
+a pungent odor enters the area, while a couple small tents can be seen.
+
+~
+~
+-235405311 12 8 0
+D0
+~
+~
+0 -1 72131 10 10 5
+D1
+~
+~
+0 -1 72133 10 10 5
+D3
+~
+~
+0 -1 72129 10 10 5
+-1
+S
+
+#72131
+The Ice Hunter's Encampment~
+A large tent fills most of this area, surrounded by several small cooking
+
+fires.  Just inside a raised tent flap, several sleeping furs are
+
+littered about.  Fresh stew is cooking over several of the fires,
+
+simmering unattended.  Along the north and west cliff walls, fire wood is
+
+piled up, more than enough to keep the encampment warm for several months. 
+
+The entrance to the camp is to the south, while more tents are erected to
+
+the east.
+
+~
+~
+-235405311 12 8 0
+D1
+~
+~
+0 -1 72132 10 10 5
+D2
+~
+~
+0 -1 72130 10 10 5
+-1
+S
+
+#72132
+The Ice Hunter's Encampment~
+Several hide tents and wooden lean-tos prodive shelter from the elements
+
+in this part of the camp.  The high cliff, blocking exit to the north and
+
+east, provide rear walls for most of the shelters.  This area appears to
+
+be a work area for the ice hunters.  Large fire pits and various crafting
+
+tools are positioned about the area, mostly for crafting spears.  The
+
+rest of the camp can be found to the east and south.
+
+~
+~
+-235405311 12 8 0
+D2
+~
+~
+0 -1 72133 10 10 5
+D3
+~
+~
+0 -1 72131 10 10 5
+-1
+S
+
+#72133
+The Ice Hunter's Encampment~
+With only a couple small tents in this portion of the camp, the area
+
+looks rather vacant.  Several systems of poles have been raised to serve
+
+as racks for tanning hides.  Although no hides are being treated right
+
+now, the air is filled with the odor of the process.  Piles of bone and
+
+unusable animal parts line the cliff walls to the south and east, adding
+
+to the odor.  Sounds of metal working drift in from the north, while the
+
+camp's entrance can be seen to the west.
+
+~
+~
+-235405311 12 8 0
+D0
+~
+~
+0 -1 72132 10 10 5
+D3
+~
+~
+0 -1 72130 10 10 5
+-1
+S
+
+#72134
+North of a Large Glacier~
+Under Construction.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 72046 10 10 5
+D1
+~
+~
+0 -1 72110 10 10 5
+D3
+~
+~
+0 -1 72117 10 10 5
+-1
+S
+
+#72135
+Under a Fishing Hole in the Ice~
+Under roughly several feet of ice, the water here is bitterly cold.  Any
+
+light from the surface is absorbed by the ice, making the area as dark as
+
+a cave.  The lake continues in all directions, except up, which is where
+
+the fishing hole was bored.
+
+~
+~
+-235405308 7 9 0
+D0
+~
+~
+0 -1 72140 10 10 5
+D1
+~
+~
+0 -1 72143 10 10 5
+D2
+~
+~
+0 -1 72144 10 10 5
+D3
+~
+~
+0 -1 72142 10 10 5
+D4
+~
+~
+0 -1 72092 10 10 5
+D5
+~
+~
+0 -1 72136 10 10 5
+-1
+S
+
+#72136
+Depths of the Frozen Lake~
+Surrounded by steep, rocky slopes, this part of the lake is rather far
+
+down from the icy surface.  The bottom of the lake is covered in stones,
+
+which are jagged in appearance.  On the eastern slope, there is a dark
+
+hole burrowing in the the rock.  The hole looks wide enough for even an
+
+ent to fit through.  The only other exit at this depth is to return
+
+towards the surface.
+
+~
+~
+-235405308 7 8 0
+D1
+~
+~
+0 -1 72145 10 10 5
+D4
+~
+~
+0 -1 72135 10 10 5
+-1
+S
+
+#72137
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+-1
+S
+
+#72138
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+-1
+S
+
+#72139
+Nothing~
+Under Construction.
+
+~
+~
+-235405311 3 9 0
+-1
+S
+
+#72140
+Trapped Under Ice~
+With the lake floor varying in depth up to thirty feet, the slope of the
+
+floor descends sharply to the south.  The floor is visibly rough, with
+
+sharp chunks of rock jutting up at irregular intervals.  With so little
+
+vegetation on the floor of the lake, the fish must have a hard time
+
+finding enough food to survive.  The ice above meets the shore to the
+
+north and east, blocking any exit in those directions.
+
+~
+~
+-235405308 7 8 0
+D2
+~
+~
+0 -1 72135 10 10 5
+D3
+~
+~
+0 -1 72141 10 10 5
+-1
+S
+
+#72141
+Trapped Under Ice~
+The lake bed below slopes rapidly to the unknown depths of the lake to
+
+the southeast.  The surface of the lake bed is craggy, with sharp pieces
+
+of rock appearing frequently.  The several feet of ice above you meets
+
+the rocky lake bed to the north and west, making passage impossible.  To
+
+the east and south, more of the lake can be explored.
+
+~
+~
+-235405308 7 7 0
+D1
+~
+~
+0 -1 72140 10 10 5
+D2
+~
+~
+0 -1 72142 10 10 5
+-1
+S
+
+#72142
+Trapped Under Ice~
+Dropping sharply to the west, the lake bottom rises up to meet the sheet
+
+of ice in the western and southern directions.  The lake water is
+
+bitterly cold, seemingly on the verge of freezing completely.  Despite
+
+the cold, the fish appear quite content in the lake, even if the
+
+vegetation is scarce.  The lake is mostly thawed to the north and east,
+
+allowing travel to those areas.
+
+~
+~
+-235405308 7 8 0
+D0
+~
+~
+0 -1 72141 10 10 5
+D1
+~
+~
+0 -1 72135 10 10 5
+-1
+S
+
+#72143
+Trapped Under Ice~
+This small niche in the ice exists due to the curvature of the lake floor. 
+
+The bottom of the lake drops off almost vertically to the west, while it
+
+rises somewhat to the north, south, and east.  The lake floor here is
+
+rather sandy, with only a few rocks protruding up from the sand.  The
+
+only exit from here is to the west.
+
+~
+~
+-235405308 7 4 0
+D3
+~
+~
+0 -1 72135 10 10 5
+-1
+S
+
+#72144
+Trapped Under Ice~
+Cut into the steep lake bottom, this crevice is large enough for most
+
+creatures to enter.  The V-shaped chasm is easially twenty feet deep and
+
+extends south for roughly thirty feet, before closing off.  The layer of
+
+ice overhead partially extends into the chasm, preventing exit in any
+
+direction except north.
+
+~
+~
+-235405308 7 7 0
+D0
+~
+~
+0 -1 72135 10 10 5
+-1
+S
+
+#72145
+A Small, Underwater Cavern~
+Completely filled with water, this small cavern appears to be the home of
+
+some beast.  Oddly enough, the water in this cavern is actually somewhat
+
+warm, at least compared to the rest of the lake.  Littering the ground
+
+are the bones of several fish and the skeleton of some humanoid unlucky
+
+enough to venture to the lake's depths.  The cavern opening is to the
+
+west, the only visible means of exit.
+
+~
+~
+-235274236 7 7 0
+D3
+~
+~
+0 -1 72136 10 10 5
+E
+skeleton~
+No description.
+
+~
+-1
+S
+
+#72146
+Steep-walled Ravine~
+This stretch of the ravine continues to narrow until it suddenly opens up
+
+to the valley to the north.  Although cold and with limited exposure to
+
+sunlight, some vegetation does grow in the ravine.  This growth is not
+
+even close to being enough to hinder travel but it does suggest that the
+
+ravine is not frequently transversed.  Some animal tracks can be seen in
+
+the semi-frozen earth, nothing unusual though, The ravine continues to
+
+the south, heading back to the mountain road.
+
+~
+~
+-235405312 5 6 0
+D0
+~
+~
+0 -1 72002 10 10 5
+D2
+~
+~
+0 -1 72147 10 10 5
+-1
+S
+
+#72147
+Steep-walled Ravine~
+Narrowing slightly, the ravine starts to get a claustrophobic feel to it. 
+
+The semi-frozen ground has little give to it, making the ruts and hollows
+
+dangerous to fast travel.  Although cold, a hearty variety of plant life
+
+has evolved here in the hills.  Dull compared to lusher vegetation found
+
+in lower locations, the plants appear to thrive in this cold climate. 
+
+The ravine continues to the north and south, with a valley visible off to
+
+the north.
+
+~
+~
+-235405312 5 6 0
+D0
+~
+~
+0 -1 72146 10 10 5
+D2
+~
+~
+0 -1 72148 10 10 5
+-1
+S
+
+#72148
+Entering a Steep-walled Ravine~
+This narrow passage through the mountains is littered with bits of stone
+
+and vegetation.  Small, stunted trees grow sparatically on the steep
+
+slopes of the ravine, giving the ravine a gloomy look.  Continuing to the
+
+north, the passage looks to broaden far in the distance, possibly leading
+
+to an open area.  To the south, the mountain road sets, awaiting
+
+travellers.
+
+~
+~
+-235405312 5 7 0
+D0
+~
+~
+0 -1 72147 10 10 5
+-1
+S
+
+#72149
+Trapped Under Ice~
+Under Construction.
+
+~
+~
+-235405308 7 7 0
+-1
+S
+
+#0
+

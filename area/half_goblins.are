@@ -1,0 +1,2306 @@
+#AREA
+Half-Goblin War Camp~
+Deimos~
+Half-Goblin War Camp~
+
+18 0
+0
+#ROOMS
+
+#39753
+Trail in the Hills~
+The trail cuts down a hilly slope from here, winding northward past a low
+
+stone wall.  There are many trees here, casting a great span of shade
+
+across the ground.  The air is very cool and damp here, and smells
+
+slightly of wood smoke, which seems to be coming from the north.  In the
+
+middle of the trail is a single short stake, stained with old blood.  A
+
+humanoid skull has been driven onto the top of the stake.
+
+~
+~
+-235405311 4 9 0
+D0
+~
+~
+0 -1 39781 10 10 5
+D3
+~
+~
+0 -1 39804 10 10 5
+E
+stake~
+The stake has been driven into the middle of the path, and judging by the
+
+blood stains and the skull stuck atop it is probably a warning of some
+
+sort.  The blood itself has long since dried, staining the wood where it
+
+soaked in.  A few flies are buzzing around the skull, which judging by
+
+its shape and size once belonged to a human.
+
+~
+E
+skull~
+This is the skull of a human, although you can discern little more than
+
+that.  It is stained a reddish-brown colour on its left side, probably
+
+from blood, and there is a crack running up the center of the stain.  The
+
+jaw is also missing, and the skull is slightly scratched at the back of
+
+its right cheekbone.
+
+~
+A
+touch get pull push~
+skull stake~
+act_tochar( #touch, ch ); 
+
+act_notchar( #rtouch, ch );
+
+do_spell( chilling touch, ch );
+
+~
+E
+touch~
+As you reach for the skull, it's eyes light up with a pale green light.
+
+You are unable to move as spectral tendrils reach out and lash at you
+
+with their icy touch.
+
+~
+E
+rtouch~
+$n reaches towards the skull, but pauses for a moment, looking at it
+
+oddly.  Suddenly $e stumbles backward as a rush of cold air whips
+
+around them!
+
+~
+!
+0 0 0
+-1
+S
+
+#39754
+Racing Track~
+Under Construction.
+
+~
+~
+-235405311 0 9 0
+-1
+S
+
+#39755
+Between Two Tents~
+The ground has been cleared of foliage here, allowing access to two tents
+
+that have been set up under the trees.  The tents themselves are rather
+
+large, capable of housing three human-sized people comfortably.  In the
+
+center of the cleared area here is a small campfire surrounded by four
+
+short, round logs that apparently serve as seats.  The fire is burning
+
+low, and provides little light, but still manages to provide some warmth
+
+in this cool section of the hills.
+
+~
+~
+-235405311 0 9 0
+D0
+tent flap~
+tent flap~
+131 -1 39782 0 10 5
+D2
+~
+~
+0 -1 39781 10 10 5
+D3
+tent flap~
+tent flap~
+131 -1 39783 0 10 5
+E
+tents~
+These tents are made of a thick, greyish canvas, supported by strong oak
+
+poles.  They are stained, and largely splattered with dried mud.  Whoever
+
+uses them isn't too concerned about hygene, apparently.
+
+~
+-1
+S
+
+#39756
+The Entrance to the Aquapolis~
+Under Construction.
+
+~
+~
+-235405311 0 9 0
+D0
+~
+~
+0 -1 39761 10 10 5
+-1
+S
+
+#39757
+The Great Hall of Belial~
+Under Construction.
+
+~
+~
+-235405311 0 9 0
+D0
+~
+~
+0 -1 39762 10 10 5
+D1
+~
+~
+0 -1 39758 10 10 5
+D3
+~
+~
+0 -1 39754 10 10 5
+-1
+S
+
+#39758
+The Entrance to the Aquapolis~
+Under Construction.
+
+~
+~
+-235405311 0 9 0
+D0
+~
+~
+0 -1 39763 10 10 5
+D3
+~
+~
+0 -1 39757 10 10 5
+-1
+S
+
+#39759
+The Circle of Beliefs~
+Under Construction.
+
+~
+~
+-235405311 0 9 0
+D0
+~
+~
+0 -1 39766 10 10 5
+D1
+~
+~
+0 -1 39762 10 10 5
+D2
+~
+~
+0 -1 39754 10 10 5
+D3
+~
+~
+0 -1 39760 10 10 5
+-1
+S
+
+#39760
+The Circle of Beliefs~
+Under Construction.
+
+~
+~
+-235405311 0 9 0
+D0
+~
+~
+0 -1 39765 10 10 5
+D1
+~
+~
+0 -1 39759 10 10 5
+D3
+~
+~
+0 -1 39761 10 10 5
+-1
+S
+
+#39761
+The Great Hall of Belial~
+Under Construction.
+
+~
+~
+-235405311 0 9 0
+D0
+~
+~
+0 -1 39764 10 10 5
+D1
+~
+~
+0 -1 39760 10 10 5
+D2
+~
+~
+0 -1 39756 10 10 5
+-1
+S
+
+#39762
+The Circle of Beliefs~
+Under Construction.
+
+~
+~
+-235405311 0 9 0
+D0
+~
+~
+0 -1 39767 10 10 5
+D1
+~
+~
+0 -1 39763 10 10 5
+D2
+~
+~
+0 -1 39757 10 10 5
+D3
+~
+~
+0 -1 39759 10 10 5
+-1
+S
+
+#39763
+The Great Hall of Belial~
+Under Construction.
+
+~
+~
+-235405311 0 9 0
+D0
+~
+~
+0 -1 39768 10 10 5
+D2
+~
+~
+0 -1 39758 10 10 5
+D3
+~
+~
+0 -1 39762 10 10 5
+-1
+S
+
+#39764
+The Great Hall of Belial~
+Under Construction.
+
+~
+~
+-235405311 0 9 0
+D0
+~
+~
+0 -1 39773 10 10 5
+D1
+~
+~
+0 -1 39765 10 10 5
+D2
+~
+~
+0 -1 39761 10 10 5
+-1
+S
+
+#39765
+The Circle of Beliefs~
+Under Construction.
+
+~
+~
+-235405311 0 9 0
+D0
+~
+~
+0 -1 39772 10 10 5
+D1
+~
+~
+0 -1 39766 10 10 5
+D2
+~
+~
+0 -1 39760 10 10 5
+D3
+~
+~
+0 -1 39764 10 10 5
+-1
+S
+
+#39766
+In the Eye of the Chaos~
+You are standing in the center of the melee, in The Eye of the Chaos. 
+
+Around you, the other creatures stare and point at the adventurers who
+
+have thusfar been the only ones to be permitted to cross into the Eye... 
+
+you!  In the middle of the room sits a well, with a black hand protruding
+
+from the center.  The hand is open, as if it was supposed to hold
+
+something in it.  The well here runs black.  You have a somewhat safe
+
+feeling in this room, as if this was truly the eye of the tornado.  Savor
+
+your time here adventurer, it may be your last.
+
+~
+rm # 38159 has dam and inflict stuff
+
+gotta find same thing for evil, but heal, not harm
+
+~
+-235405281 0 9 0
+D0
+~
+~
+0 -1 39771 10 10 5
+D1
+~
+~
+0 -1 39767 10 10 5
+D2
+~
+~
+0 -1 39759 10 10 5
+D3
+~
+~
+0 -1 39765 10 10 5
+E
+black hand~
+This black obsidian hand reaches with an open palm towards the heavens.
+
+~
+A
+2 drink~
+1 well~
+if( find_stat( ch, align ) == 0 ) {
+
+  send_to_char( #zap, ch );
+
+  end;
+
+  }
+
+if( find_stat( ch, align ) == 2 ) {
+
+  send_to_char( #ahh, ch );
+
+  end;
+
+  }
+
+else
+
+  continue;
+
+~
+E
+ahh~
+The water from this well sends a peculiar feeling running down your
+
+spine...you feel much better!
+
+~
+E
+zap~
+As you bend down to take a drink from the well, a stinging blast of
+
+energy emulates from the hand in the center of the water.
+
+~
+!
+0 0 0
+82 17 1509949540 -2 0
+-1
+S
+
+#39767
+The Circle of Beliefs~
+Under Construction.
+
+~
+~
+-235405311 0 9 0
+D0
+~
+~
+0 -1 39770 10 10 5
+D1
+~
+~
+0 -1 39768 10 10 5
+D2
+~
+~
+0 -1 39762 10 10 5
+D3
+~
+~
+0 -1 39766 10 10 5
+-1
+S
+
+#39768
+The Great Hall of Belial~
+Under Construction.
+
+~
+~
+-235405311 0 9 0
+D0
+~
+~
+0 -1 39769 10 10 5
+D2
+~
+~
+0 -1 39763 10 10 5
+D3
+~
+~
+0 -1 39767 10 10 5
+-1
+S
+
+#39769
+The Great Hall of Belial~
+Under Construction.
+
+~
+~
+-235405311 0 9 0
+D0
+~
+~
+0 -1 39778 10 10 5
+D2
+~
+~
+0 -1 39768 10 10 5
+D3
+~
+~
+0 -1 39770 10 10 5
+-1
+S
+
+#39770
+The Circle of Beliefs~
+Under Construction.
+
+~
+~
+-235405311 0 9 0
+D0
+~
+~
+0 -1 39777 10 10 5
+D1
+~
+~
+0 -1 39769 10 10 5
+D2
+~
+~
+0 -1 39767 10 10 5
+D3
+~
+~
+0 -1 39771 10 10 5
+-1
+S
+
+#39771
+The Circle of Beliefs~
+Under Construction.
+
+~
+~
+-235405311 0 9 0
+D0
+~
+~
+0 -1 39776 10 10 5
+D1
+~
+~
+0 -1 39770 10 10 5
+D2
+~
+~
+0 -1 39766 10 10 5
+D3
+~
+~
+0 -1 39772 10 10 5
+-1
+S
+
+#39772
+The Circle of Beliefs~
+Under Construction.
+
+~
+~
+-235405311 0 9 0
+D0
+~
+~
+0 -1 39775 10 10 5
+D1
+~
+~
+0 -1 39771 10 10 5
+D2
+~
+~
+0 -1 39765 10 10 5
+D3
+~
+~
+0 -1 39773 10 10 5
+-1
+S
+
+#39773
+The Great Hall of Belial~
+Under Construction.
+
+~
+~
+-235405311 0 9 0
+D0
+~
+~
+0 -1 39774 10 10 5
+D1
+~
+~
+0 -1 39772 10 10 5
+D2
+~
+~
+0 -1 39764 10 10 5
+-1
+S
+
+#39774
+The Entrance to the Aeropolis~
+Under Construction.
+
+~
+~
+-235405311 0 9 0
+D1
+~
+~
+0 -1 39775 10 10 5
+D2
+~
+~
+0 -1 39773 10 10 5
+-1
+S
+
+#39775
+The Great Hall of Belial~
+Under Construction.
+
+~
+~
+-235405311 0 9 0
+D1
+~
+~
+0 -1 39776 10 10 5
+D2
+~
+~
+0 -1 39772 10 10 5
+D3
+~
+~
+0 -1 39774 10 10 5
+-1
+S
+
+#39776
+The Great Hall of Belial~
+You are standing in the Great Hall of Belial.  In this hall reside some
+
+of the most vile creatures in the Realm.  Some say that these creatures
+
+are prisoners of the Gods, never to leave this tower again.  The same
+
+black architecture dominates this building in every respect: ornate ebony
+
+arches rise into the ceiling and the smooth black floor is polished to a
+
+high sheen.
+
+~
+~
+-235405311 0 9 0
+D1
+~
+~
+0 -1 39777 10 10 5
+D2
+~
+~
+0 -1 39771 10 10 5
+D3
+~
+~
+0 -1 39775 10 10 5
+-1
+S
+
+#39777
+The Great Hall of Belial~
+Under Construction.
+
+~
+~
+-235405311 0 9 0
+D1
+~
+~
+0 -1 39778 10 10 5
+D2
+~
+~
+0 -1 39770 10 10 5
+D3
+~
+~
+0 -1 39776 10 10 5
+-1
+S
+
+#39778
+The Entrance to the Necropolis~
+Here lies the entrance to the Necropolis.  The Steeple of the Necromancer
+
+is rumored to be the home of the most powerful wizard in the Realm.  This
+
+entire room is matted in rough obsidian brick and blood...it gathers in
+
+little pools upon the floor, flows from the porus walls, and drips from
+
+the ceiling.  One must wonder where all of this blood comes from...
+
+~
+~
+-235405311 0 9 0
+D2
+~
+~
+0 -1 39769 10 10 5
+D3
+~
+~
+0 -1 39777 10 10 5
+825 9 1509949540 3 0
+-1
+S
+
+#39779
+Dusty Trail Through the Camp~
+The camp grounds stretch on through the hills to the east, linked by this
+
+winding trail.  The terrain descends to the north into a large open area
+
+that surrounds what appears to be the camp's main fire pit. To the south
+
+the ground climbs sharply and is covered with trees and thick underbrush.
+
+A number of small stones have been laid out at the side of the trail, but
+
+they seem to serve more of a decorative purpose than anything else.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 39784 10 10 5
+D1
+~
+~
+0 -1 39785 10 10 5
+D3
+~
+~
+0 -1 39781 10 10 5
+E
+1 north~
+To the north you see the main firepit.  It is surrounded by a number of
+
+tree stumps and logs that serve as makeshift seats.  All around the area
+
+are a number of poles with what appear to be banners attached to them.
+
+~
+E
+stones~
+Aside from serving as slightly decorative trail markers, there is nothing
+
+special about these stones.  The are similar to the other rocks in the
+
+black hills.  They line the edge of the trail and the cleared area here
+
+and to the north.
+
+~
+-1
+S
+
+#39780
+The Display~
+Along both walls here seems to be a display area.  Embedded in the walls
+
+are four glass display cases, each containing a trophy.  Each case is
+
+outlined in a gold frame, amazingly crafted by hand with a pattern that
+
+mortal eyes do not have the privilege to gaze upon very often.
+
+~
+~
+-235405311 0 9 0
+-1
+S
+
+#39781
+Before a Large Encampment~
+The trail leads into a large area of stone-laden ground that is marked by
+
+numerous tents, trees, large rocks and rises. A short wall, constructed
+
+of stone and mud mortar wraps around the encampment as far as you are
+
+able to see.  There are shields outside some of the tents, but most of
+
+these appear to be more for decoration and display of heraldry.  At the
+
+entrance of the camp hangs a large black banner with a red fist
+
+emblazoned on it.
+
+~
+~
+-235405311 3 9 0
+D0
+~
+~
+0 -1 39755 10 10 5
+D1
+~
+~
+0 -1 39779 10 10 5
+D2
+~
+~
+0 -1 39753 10 10 5
+E
+shields~
+These are all wooden kite shields, but due to the thickness of the wood
+
+used in making them, they would be largely useless in actual combat. 
+
+Instead they serve as heraldic displays, showing symbols ranging from
+
+crossed axes to dark red lightning bolts.
+
+~
+E
+tents~
+The tents in this camp are all made of a thick canvas, nailed down with
+
+rusty iron stakes and supported by stout oak poles. They are grey-brown
+
+in colour, and several of them have dried mud on them.  You notice a few,
+
+however, that are impeccably clean, and far to the rear of the camp you
+
+can see a large pavilion.
+
+~
+E
+banner~
+This is the largest of all the heraldic displays in this camp. It is
+
+made of a thick black cloth, with a large, painted red fist emblazoned on
+
+the center.  It ripples lightly in the wind, appearing almost noble and
+
+forboding at the same time.
+
+~
+2266 9 1509949540 3 0
+2266 9 1509949540 3 0
+-1
+S
+
+#39782
+In a Tent~
+The wooden pole that holds the tent up appears to have broken at some
+
+point, and has been tied about the middle with a length of light grey
+
+cord to keep it from collapsing.  There are three bedrolls on the canvas
+
+floor mat, and their owners appear to be concerned about the state of the
+
+support pole, having placed them as far from the center as possible.  At
+
+the back of the tent is a line of old boots in various states of
+
+disrepair.  It appears that one of the residents of this tent has been
+
+working on them however, and has left cobbling equipment strewn out
+
+across his bedroll.
+
+~
+~
+-235405307 0 9 0
+D2
+tent flap~
+tent flap~
+131 -1 39755 0 10 5
+E
+boots~
+There are a number of boots that are being worked on here.  Most of them
+
+are far from finished.  They have been laid out near a small pile of
+
+cobbling tools.
+
+~
+E
+bedrolls~
+The bedrolls in here are stained with mud, and all of them smell quite
+
+stale.  That anyone could sleep in them, much less want to, is surprising.
+
+~
+E
+cobbling~
+The cobbling tools are scattered across the floor, but most of them have
+
+been left at the end of one of the bedrolls, which has a number of boots
+
+set around it.  The tools seem to be mostly rusty and worn from use,
+
+which is not surprising considering the rocky terrain in the area.  They
+
+also indicate that perhaps the denizens of the camp are planning on
+
+staying in the area for a while longer.
+
+~
+A
+get take~
+boot boots~
+act_tochar( #get, ch );
+
+~
+E
+get~
+None of these seem to be worth taking.
+
+~
+!
+0 0 0
+2267 9 1509949540 3 0
+-1
+S
+
+#39783
+In a Tent~
+A large canvas mat has been set on the ground here, covering the rocky
+
+dirt.  It doesn't appear to be helping much, however, as mud has been
+
+tracked in recently, and several lumps indicate that it doesn't make the
+
+ground much more comfortable.  There are four bedrolls laid out on the
+
+ground, but they appear to be of even worse quality than the tent itself. 
+
+At the foot of one of the bedrolls is a worn pair of boots, and set on a
+
+hook in the pole that holds the tent up is a muddy grey cloak.
+
+~
+[Janua] acode fine :)
+
+~
+-235405307 0 9 0
+D1
+tent flap~
+tent flap~
+131 -1 39755 0 10 5
+E
+boots~
+The boots are rather worn, showing signs of long marching through the
+
+hills.  One of them has a hole in the toe.
+
+~
+E
+cloak~
+This cloak hangs loosely on the pole that supports the tent.  It is
+
+muddy, and ragged at the bottom from getting caught on thorns in the
+
+bushes.  A thin tear runs up one side of it, and it doesn't appear to be
+
+very comfortable to wear anymore.
+
+~
+A
+get take~
+boots cloak~
+act_tochar( #get, ch );
+
+~
+E
+get~
+Neither the boots nor the cloak seem worth taking.
+
+~
+!
+0 0 0
+2267 9 1509949540 3 0
+-1
+S
+
+#39784
+The Main Firepit~
+In the center of this large open area is a wide firepit, some seven or
+
+eight feet across.  Presently the fire in it burns low, but a large stack
+
+of wood has been set to one side, and the trees have been cut down or
+
+trimmed to a safe distance, allowing much larger bonfires.  A great many
+
+tree stumps remain in the area, serving as seats around the bonfire, and
+
+these have been supplemented with short, squat logs.  All around the edge
+
+of this area are tall spears, each proudly displaying various small
+
+banners and flags.  From here you can also see the trail that winds
+
+through the camp wrapping around the south and east edge of the main
+
+firepit and continuing to the northeast.
+
+~
+[Eryn] when you look at the stump you get a missing description message
+
+~
+-235405311 3 9 0
+D1
+~
+~
+0 -1 39787 10 10 5
+D2
+~
+~
+0 -1 39779 10 10 5
+E
+seats~
+Most of these are short, wide logs that have been set around the main
+
+firepit, but a few of them were trees that used to be in this area.  They
+
+were long since cut down, but the stumps remain as makeshift chairs.
+
+~
+E
+spears~
+The spears are about 8 feet long, and driven into the ground.  They have
+
+dull, painted wooden points, indicating that their sole purpose of design
+
+was to look good while supporting the various banners that hang from them.
+
+~
+E
+banners~
+These banners seem to indicate families or clans to which the various
+
+denizens of the camp belong.
+
+~
+E
+flags~
+The flags are all black, with small red circles in the center.  They are
+
+otherwise unadorned.
+
+~
+2267 9 1509949540 3 0
+2267 9 1509949540 3 0
+2272 9 1509949540 3 0
+3399 17 1509949540 -2 0
+3399 17 1509949540 -2 0
+3399 17 1509949540 -2 0
+-1
+S
+
+#39785
+Trail Near Two Small Tents~
+The trail continues around the south side of the camp, turning northward
+
+from here past two small tents.  It is marked by more of the small, light
+
+stones that are laid out across the rest of the cleared ground. To the
+
+northeast is a large firepit, with thin wisps of light grey smoke rising
+
+from the small fire within.  The trees are thick to the south and east,
+
+resting around the tents.  Where the trees don't grow, however, bushes
+
+do, belying a great amount of work required to clear the area.
+
+~
+~
+-235405311 0 9 0
+D0
+~
+~
+0 -1 39787 10 10 5
+D1
+tent flap~
+tent flap~
+131 -1 39805 0 10 5
+D2
+tent flap~
+tent flap~
+131 -1 39786 0 10 5
+D3
+~
+~
+0 -1 39779 10 10 5
+E
+tents~
+These tents are smaller than the other ones you have seen so far in the
+
+camp.  They are made of the same grey canvas, stained brown in places by
+
+mud.
+
+~
+-1
+S
+
+#39786
+Inside a Small Tent~
+This tent is smaller than most of the others in the camp, capable of
+
+housing only two human-sized people comfortably.  It is tall, however,
+
+held up by an eight-foot oak pole, and there is still enough room to move
+
+around, if somewhat slowly.  Only one bedroll has been set up in here,
+
+and the canvas floor is much less worn than the other material around the
+
+camp.  Hanging on the pole in the center of the tent is a plain grey
+
+cloak and an empty scabbard.
+
+~
+~
+-235405307 0 9 0
+D0
+tent flap~
+tent flap~
+131 -1 39785 0 10 5
+E
+scabbard~
+The scabbard is made out of wood bound with rusty iron. The wood has
+
+warped however, causing some of the metal bands to come loose.
+
+~
+E
+cloak~
+This cloak is made of a plain, thick grey canvas material.  It appears to
+
+be the same canvas that was used to make the tents.
+
+~
+A
+search get~
+cloak~
+act_tochar( #search, ch );
+
+act_notchar( #rsearch, ch );
+
+~
+E
+search~
+You look the cloak over, but find nothing of interest.
+
+~
+E
+rsearch~
+$n searches the cloak quickly.
+
+~
+!
+9 0 0
+2267 9 1509949540 3 0
+-1
+S
+
+#39787
+Split in the Trail~
+The trail splits here, continuing north toward several tents.  To the
+
+east it winds past a medium-sized tent down through the hills.  You
+
+cannot see where the trail leads, however, as it turns around a large
+
+rock some thirty feet long.  To the northwest the trail winds its way to
+
+a very large tent at the far side of the warcamp.  Along the sides of the
+
+trail, decorative stones have been laid and continue over what seems to
+
+be the entire outer edge of the cleared area.
+
+~
+~
+-235405311 0 9 0
+D0
+~
+~
+0 -1 39788 10 10 5
+D1
+~
+~
+0 -1 39789 10 10 5
+D2
+~
+~
+0 -1 39785 10 10 5
+D3
+~
+~
+0 -1 39784 10 10 5
+E
+rock~
+It is difficult to see the boulder from here, but what you can make out is
+
+that it is incredibly massive and seems to be composed mostly of a
+
+greyish stone - perhaps granite.
+
+~
+-1
+S
+
+#39788
+North Camp Trail~
+Smoke wafts in from the main firepit to the west, partially obscuring
+
+your view of what lies beyond at the north side of the camp.  Here it
+
+passes another tent, and farther to the north it curves to the west
+
+toward an incredibly large pavilion. There are two smaller tents to the
+
+north, dwarfed by the pavilion, but they are still large in their own
+
+rights.  Back to the south the trail passes an east-running split and
+
+continues around the main firepit toward the camp's entrance.
+
+~
+~
+-235405311 0 9 0
+D0
+~
+~
+0 -1 39791 10 10 5
+D1
+tent flap~
+tent flap~
+131 -1 39790 0 10 5
+D2
+~
+~
+0 -1 39787 10 10 5
+E
+tents~
+These are plain, canvas military tents that look like they can
+
+comfortably house four or five man-sized creatures.
+
+~
+-1
+S
+
+#39789
+Along the Camp Trail~
+The trail curves between small hills on either side, and is lined with
+
+trees and large, leafy bushes.  Farther along there is what appears to be
+
+a small guard tent.  You cannot see farther east down the trail, as a
+
+large rock blocks your view from here.  Back to the west, the trail joins
+
+up with the main path that winds through the camp.  The signs of passing
+
+are light here, making it seem that there is little reason for the
+
+camp-dwellers to go this way.
+
+~
+~
+-235405311 0 9 0
+D1
+~
+~
+0 -1 39798 10 10 5
+D3
+~
+~
+0 -1 39787 10 10 5
+-1
+S
+
+#39790
+Inside a Tent~
+This is a large tent, some eight feet tall and supported by two oak poles. 
+
+It is long enough to provide comforable sleeping space for six
+
+human-sized people, and has that many bedrolls in it.  Various articles
+
+of clothing and pieces of armor are scattered across the floor, and on
+
+one bed there is a bowl of half-eaten stew.  It smells fairly bad in 
+
+here, as though the tent is rarely aired out.
+
+~
+[Orb] *spit* That stew sucks No wonder goblins are green :O 
+
+[Belgar] comforable - comfortable
+
+~
+-235405307 0 9 0
+D3
+tent flap~
+tent flap~
+131 -1 39788 0 10 5
+E
+clothing armor~
+The armor is all old and worn, and most of it is caked in mud as well. 
+
+It seems to largely be light leathers.  The clothing is all made of a
+
+light canvas-like cloth.
+
+~
+E
+stew~
+This simple wooden bowl has a little bit of stew left in it.  The stew
+
+itself smells slightly sour.
+
+~
+E
+bedrolls~
+These bedrolls don't appear to be very comfortably.  They have a few
+
+holes in them, aren't very thick, and on closer inspection are slightly
+
+damp as well.
+
+~
+A
+eat~
+stew~
+act_tochar( #eat, ch );
+
+act_notchar( #reat, ch );
+
+~
+E
+eat~
+You take a bite of the stew, but promptly spit the vile stuff back out.
+
+~
+E
+reat~
+$n takes a bite of the stew, but promptly spits it back out.
+
+~
+!
+0 0 0
+2267 9 1509949540 3 0
+2267 9 1509949540 3 0
+-1
+S
+
+#39791
+End of the Trail~
+The trail turns slightly to the west here, stopping just before the large
+
+pavilion at the back of the camp.  Along its sides, up to about fifteen
+
+or so feet from the pavilion, are two other tents nestled between the
+
+trees and bushes.  The pavilion has a large banner hanging over its
+
+entrance, depicting a black background with a red fist.  The trail
+
+continues back away from here toward the center of the camp, where you
+
+can see the large firepit.
+
+~
+~
+-235405311 0 9 0
+D0
+tent flap~
+tent flap~
+131 -1 39793 0 10 5
+D1
+tent flap~
+tent flap~
+131 -1 39792 0 10 5
+D2
+~
+~
+0 -1 39788 10 10 5
+D3
+tent flap~
+tent flap~
+131 -1 39794 0 10 5
+E
+tents~
+These two tents are larger than most of the others you can see in the
+
+camp.  They must either house many of the creatures that live here or be
+
+reserved for the more important camp-dwellers.
+
+~
+E
+banner~
+This is a large, plain black banner marked by a red fist.  It is
+
+otherwise unadorned.
+
+~
+-1
+S
+
+#39792
+Inside a Large Tent~
+This tent is very large, capable of comfortably housing eight man-sized
+
+creatures with room to spare.  The bedrolls have been scattered
+
+haphazardly across the canvas floor, making it seem that the residents
+
+don't care how they sleep so much as they get to at all.  The floor and
+
+tent sides are caked with dried mud, and a good deal of the stuff has
+
+been tracked across a few of the bedrolls as well.  There is also a dark,
+
+red-brown stain at the far right side of the tent that is probably the
+
+result of a disagreement.
+
+~
+~
+-235405307 0 9 0
+D3
+tent flap~
+tent flap~
+131 -1 39791 0 10 5
+E
+stain~
+It looks as though someone lost a great deal of blood here a while ago. 
+
+The blood has long since dried, however, leaving a large red-brown stain.
+
+~
+2267 9 1509949540 3 0
+2267 9 1509949540 3 0
+-1
+S
+
+#39793
+Inside a Large Tent~
+This large tent has four bedrolls laid out neatly and evenly spaced
+
+against its rear side, and each bedroll has a small box at its foot. 
+
+There are worn grey cloaks hanging from hooks on the pole that holds the
+
+tent up.  The air in here smells stale, but it is considerably better
+
+than the other tents.  Back outside the cool breeze blows, carrying with
+
+it the faint smell of woodsmoke.
+
+~
+~
+-235405307 0 9 0
+D2
+tent flap~
+tent flap~
+131 -1 39791 10 10 5
+E
+cloaks~
+These cloaks are all weather-worn, and most of them have thin tears along
+
+their ends.
+
+~
+2272 9 1509949540 3 0
+2272 9 1509949540 3 0
+-1
+S
+
+#39794
+Inside the Pavilion~
+You are just inside the large pavilion at the rear of the warcamp.  To
+
+the north an open flap leads into what appears to be a small conference
+
+room, judging by the table and maps you can see from here, and a thick
+
+canvas flap covers the back end of the tent from view.  Many boxes lie
+
+piled up along the sides of this entrance room, but most appear to be
+
+empty and those that don't have precious little in them.  There are also
+
+several sacks of grain and a few broken spears dumped around the boxes.
+
+~
+~
+-235405307 0 9 0
+D0
+~
+~
+0 -1 39795 10 10 5
+D1
+tent flap~
+tent flap~
+131 -1 39791 0 10 5
+D3
+tent flap~
+tent flap~
+131 -1 39796 0 10 5
+E
+grain sacks boxes~
+The sacks are full of a thick, oaty grain.  They are slightly dirty, and
+
+a few of them are tied at the top with a thin rope.  The boxes near them
+
+all contain spear shafts, but you cannot see any heads anywhere.
+
+~
+E
+table map~
+You cannot see the map on the table very clearly from over here.
+
+~
+2266 9 1509949540 3 0
+2266 9 1509949540 3 0
+-1
+S
+
+#39795
+Conference Room in the Pavilion~
+A large table sits in the center of this room, surrounded by the only
+
+real chairs in the entire camp.  A map has been nailed to the table, and
+
+a few empty goblets lie scattered across it.  A few banners have been
+
+hung on the sides of the room, and a number of boxes and damaged crates
+
+are haphazardly scattered across the floor.  The chair at the far side of
+
+the table is far more extravagant than anything else in the camp.
+
+~
+~
+-235405307 0 9 0
+D2
+~
+~
+0 -1 39794 10 10 5
+E
+table~
+The table is large, and crafted of strong, albeit old oak.  It seems to
+
+have been taken good care of, however, as not a speck of mud can be found
+
+on it.
+
+~
+E
+chair~
+This chair is carved from polished oak, and has a soft, blue velvet
+
+cushion tacked to it.  Intricate carvings run along the arms and back,
+
+all depicting what appear to be goblin women in various states of undress.
+
+~
+E
+map~
+This is a map of a hilly area with a long river running up one side of it. 
+
+A small town has been marked off at the southwest side, and there are a
+
+few buildings marked as well.
+
+~
+E
+crates boxes~
+A quick look over shows the crates and boxes in this room to be empty. 
+
+Most of them are damaged in some way or another, and appear to have been
+
+dumped here on a whim.
+
+~
+E
+banners~
+All of the banners are marked by a small circle in the bottom right
+
+corner, emblazoned with a red fist.  A diagonal slash cuts from the top
+
+right to the bottom left corner in each of them as well, and the two
+
+sides bear various heraldic symbols.
+
+~
+2268 9 1509949540 3 0
+-1
+S
+
+#39796
+The Warchief's Room~
+This extravagant room is separated from the other half of the tent by a
+
+thick canvas flap.  The floor is strewn with pillows and blankets, and a
+
+number of small piles of clothing, boots, and the like are scattered
+
+around the south side of the room.  A small lantern hangs from above,
+
+shedding a pittance of light over the room.  It smells faintly of sweat
+
+in here, largely masked by the thick scent of strong ale.
+
+~
+~
+-235405307 0 9 0
+D0
+tent flap~
+tent flap~
+131 -1 39797 0 10 5
+D1
+tent flap~
+tent flap~
+131 -1 39794 0 10 5
+2269 9 1509949540 3 0
+23 17 1509949540 -2 3
+-1
+S
+
+#39797
+The Treasure Room~
+This is where the goblin raiders store their battle-won loot.  A number
+
+of boxes and chests have been scattered across the floor, covered with
+
+rolls of fabric, sacks of grain, spears, swords, and suits of armor. 
+
+Much of the loot is in bad shape, however, having been won in combat and
+
+stripped from the corpses of those the raiders have slain.  Regardless,
+
+there is a lot here, so it seems the goblins have been "collecting" for
+
+quite some time.
+
+~
+~
+-235405307 0 9 0
+D2
+tent flap~
+tent flap~
+131 -1 39796 0 10 5
+E
+boxes~
+The boxes are made of oak, banded with bronze strips.  Most of them are
+
+fairly large, and the ones that are open have clothing in them.
+
+~
+E
+chests~
+The chests are all small, and seem to be used for carrying cash and small
+
+valuables, such as gems and jewelry.  The stuff that is in them appears
+
+to be tarnished, bent, or otherwise damaged to the point of being
+
+worthless.  If they ever held anything of value, it must have been all
+
+spent on new supplies.
+
+~
+E
+loot~
+There is a large amount of loot here.  The grain sacks have the mark of
+
+Pennan on them, and it seems that most of what is in here comes from
+
+there and the surrounding area.
+
+~
+A
+search~
+boxes chests loot floor sacks armor weapons~
+if( rflag( reset0, room ) ) {
+
+  if( random( 1, 10 ) <= 9 ) {
+
+    obj = oload( 75 );
+
+    obj_to_char( obj, ch );
+
+    }
+
+  if( random( 1, 10) <= 6 ) {
+
+    obj = oload( 75 );
+
+    obj_to_char( obj, ch );
+
+    }
+
+  if( random( 1, 10 ) <= 3 ) {
+
+    obj = oload( 75 );
+
+    obj_to_char( obj, ch );
+
+    }
+
+  act_tochar( #loot, ch );
+
+  act_notchar( #rloot, ch );
+
+  remove_rflag( reset0, room );
+
+  }
+
+else {
+
+  act_tochar( #noloot, ch );
+
+  act_notchar( #rnoloot, ch );
+
+  }
+
+~
+E
+loot~
+You dig around through the piles of loot, pushing aside suits of armor
+
+and boxes of junk.  After several minutes of digging, you run across a
+
+small box of steel rings. Most of them are rusty and unusable, but you
+
+pull out the ones that are worth keeping.
+
+~
+E
+rloot~
+$n digs through the pile of loot, scattering rusty armor and swords
+
+around. Eventually $e pauses, having found something.
+
+~
+E
+noloot~
+You dig through the pile of loot for a few minutes but find nothing worth
+
+keeping.
+
+~
+E
+rnoloot~
+$n digs through the pile of loot for a few minutes but finds nothing
+
+worth keeping.
+
+~
+!
+9 0 0
+1068 17 1509949445 -2 0
+1066 17 1509949465 -2 0
+1023 17 1509949445 -2 0
+1296 17 1509949445 -2 0
+688 16 1509949445 -2 0
+-1
+S
+
+#39798
+South of a Small Guard Tent~
+A small guard tent lies to the north, although the largely undisturbed
+
+trail seems to indicate that nothing passes this way very often.  The
+
+stone-marked trail continues past the tent around a large rock to the
+
+east.  A small firepit has been dug in front of the tent to the north,
+
+and two short logs have been set up as chairs.  A small spear has been
+
+rammed into the ground at the path here, and an old worn black banner
+
+with a red fist on it is attached to the end, blowing lazily in the
+
+breeze.
+
+~
+~
+-235405311 0 9 0
+D0
+~
+~
+0 -1 39799 10 10 5
+D1
+~
+~
+0 -1 39800 10 10 5
+D3
+~
+~
+0 -1 39789 10 10 5
+E
+spear banner~
+The banner ripples lazily in the light breeze that blows in from the west. 
+
+It is quite old, judging from how faded it is, and there are a few small
+
+tears along the left side.
+
+~
+-1
+S
+
+#39799
+Before a Small Guard Tent~
+A fire burns low in the small fire pit here, providing a great deal more
+
+warmth than you would expect from one its size.  Around it are two short,
+
+wide logs that serve as makeshift chairs, and a rusty iron pot lies on
+
+its side near one of them.  Against the large bushes in the back rests a
+
+small but wide pup tent, and a battered shield hangs from a tree branch
+
+that stretches out over it.  An axehead sticks out of the ground near the
+
+fire pit, but there is no sign of its haft anywhere.
+
+~
+~
+-235405311 0 9 0
+D2
+~
+~
+0 -1 39798 10 10 5
+E
+tent~
+This is just a small pup-tent, about two and a half feet tall.  It is
+
+only five feet long as well, so the guard who resides in it can't be any
+
+taller.
+
+~
+A
+enter open~
+tent~
+act_tochar( #tent, ch );
+
+~
+E
+tent~
+This little pup tent is much too small for you to comfortably enter.
+
+~
+!
+0 0 0
+2266 9 1509949540 3 0
+-1
+S
+
+#39800
+By the Large Rock~
+This gargantuan rock rests at the side of the trail, against a small rise. 
+
+It must have proved impossible to move, judging from the clumsily winding
+
+path around it.  You cannot clearly see where the trail leads to from
+
+here, but you can make out the glint of sunlight on water to the east. 
+
+The smell of wood smoke wafts in clearly on the breeze coming in from the
+
+west, masking the smell of the brisk, cool air.
+
+~
+~
+-235405311 0 9 0
+D2
+~
+~
+0 -1 39802 10 10 5
+D3
+~
+~
+0 -1 39798 10 10 5
+E
+east~
+It seems that the trail leads down towards a small pool, but you cannot
+
+clearly see from here.
+
+~
+E
+rock~
+Aside from its tremendous size, there is nothing special about this rock. 
+
+It is a plain slate grey colour, and stands a good twenty-five or more
+
+feet in height, and is over thirty feet across.
+
+~
+-1
+S
+
+#39801
+nothing~
+Under Construction.
+
+~
+~
+-235405309 0 9 0
+-1
+S
+
+#39802
+Below the Large Rock~
+A large rock rests uneasily against a tall incline to your west, and the
+
+dusty trail winds up around it to the north.  East of here you can see a
+
+clearing with a pool of water in the center.  The hills have grown
+
+uncomfortably quiet, and the increased number of close trees leaves the
+
+area fairly dark, providing a stark contrast to the clearing east of here. 
+
+It is also fairly cold here, with a brisk breeze blowing calmly through
+
+the trees.
+
+~
+~
+-235405311 0 9 0
+D0
+~
+~
+0 -1 39800 10 10 5
+D1
+~
+~
+0 -1 39803 10 10 5
+E
+incline~
+West of here, the ground rises up, with the trail winding in that
+
+direction around the large boulder to the north.
+
+~
+-1
+S
+
+#39803
+The Mushroom Clearing~
+This large clearing is well-lit, but not from above.  The canopy of
+
+leaves blocks off all light from the skies, keeping the air cold, dark,
+
+and damp.  The light instead seems to be coming from the large quantities
+
+of mushrooms that grow around a small, murky pond in the center of the
+
+clearing.  The ground is almost completely covered with mushrooms of all
+
+shapes and sizes, but the more notable ones are tall, with light blue
+
+caps, and shed a soft, pale-blue light across the area.
+
+~
+[Orb] Very nice.
+
+[Orb] I like the mushrooms.
+
+[Janua] maybe add an extra for the white stone (or make that plural so it
+
+doesn't look like it might be something) 
+
+[Belgar] in search mushroom - You rummage aroud.
+
+~
+-235405303 0 9 0
+D3
+~
+~
+0 -1 39802 10 10 5
+E
+mushrooms~
+Most of the mushrooms are fairly common, but a few interesting ones catch
+
+your eye.  There are small patches of tall mushrooms with light blue caps
+
+that shed a pale-blue light.  It would probably not be enough to see by
+
+in the dark, but it certainly draws your attention to them.
+
+~
+E
+pool~
+The pool is crystal clear, despite the shade provided by all the trees
+
+here, and almost seems to provide a light of it's own.  It is so clear,
+
+in fact, that you can see the rough, white stone bed down at its bottom.
+
+~
+E
+white stone bed~
+Through the cold water, you can see the smooth white stone that covers
+
+the base of the pond.  It is smooth to the point of having no nooks,
+
+crannies, or jutting points. There are no other distinguishing features
+
+about it.
+
+~
+A
+search pick~
+mushrooms patch~
+if( rflag( reset0, room ) ) {
+
+  send_to_char( #find, ch );
+
+  act_notchar( #ofind, ch );
+
+  if( random( 1, 5 ) == 1 ) {
+
+    obj = oload( 2986 );
+
+    obj_to_char( obj, ch );
+
+    }
+
+  else {
+
+    obj = oload( 2936 );
+
+    obj_to_char( obj, ch );
+
+    }
+
+  remove_rflag( reset0, room );
+
+  }
+
+else {
+
+  send_to_char( #none, ch );
+
+  act_notchar( #onone, ch );
+
+  }
+
+~
+E
+find~
+You rummage around through the mushroom patch, and find something
+
+interesting!
+
+~
+E
+none~
+You rummage aroud through the mushroom patch, but find nothing of
+
+interest.
+
+~
+E
+ofind~
+$n rummages through the mushroom patch for a while, and finds something!
+
+~
+E
+onone~
+$n rummages through the mushroom patch, but finds nothing of interest.
+
+~
+!
+0 0 0
+2271 9 1509949540 3 0
+-1
+S
+
+#39804
+Old Dusty Trail~
+A thin, dusty trail winds up into the forested hills. It is quiet
+
+here, save for the cool wind blowing softly through the trees.  Leafy
+
+green bushes are scattered across the sides of the trail, which itself is
+
+strewn with numerous small stones.  Several creatures appear to have
+
+passed this way, as evidenced by their tracks in the dust, and every now
+
+and then there is an undisturbed booted footprint.
+
+~
+~
+-235405311 4 9 0
+D1
+~
+~
+0 -1 39753 10 10 5
+D3
+~
+~
+0 -1 39806 10 10 5
+E
+tracks~
+They seem to be mostly humanoid footprints, although it is hard to be
+
+certain as a great many of them run over each other.  The few that are
+
+clear indicate, judging from their size and shape, a humanoid creature of
+
+light build.
+
+~
+E
+bushes~
+The bushes are large, dark green, and leafy.  They cover most of the
+
+ground that the trees don't, save for the trail.
+
+~
+-1
+S
+
+#39805
+In a Small Tent~
+This tent is larger inside than it appears from the outside, but it is
+
+still smaller than most of the other tents in the camp.  The oak pole in
+
+the center of the tent stands about eight feet tall, holding the cover a
+
+fair distance above the ground.  There is only one bedroll on the canvas
+
+floor, which has had mud tracked across it numerous times.  A spearshaft
+
+has been left resting against the pole, and it appears to have been
+
+whittled where the head used to be.
+
+~
+~
+-235405307 0 9 0
+D3
+tent flape~
+tent flap~
+131 -1 39785 0 10 5
+E
+spearshaft~
+This six-foot wooden pole is slightly warped and appears to be worm-eaten. 
+
+The owner has carved a few grooves into one end of it, and scratches near
+
+the grooves indicate that the whittling was used to remove the spear's
+
+head.
+
+~
+E
+bedroll~
+This is quite possibly one of the filthiest bedrolls you have ever seen. 
+
+It is literally caked with mud, and appears to have been stained by a few
+
+unidentifiable liquids as well.
+
+~
+A
+get~
+spear shaft~
+act_tochar( #get, ch );
+
+act_notchar( #rget, ch );
+
+dam_message( ch, 1d1, "a splinter" );
+
+inflict( ch, mob, 1d1, "a splinter" );
+
+~
+E
+get~
+You reach for the spear shaft, but get a sharp splinter stuck in your
+
+finger!
+
+~
+E
+rget~
+$n reaches for the spear shaft, but suddenly pulls $s hand back, wincing.
+
+~
+!
+0 0 0
+2267 9 1509949540 3 0
+-1
+S
+
+#39806
+Old Dusty Trail~
+This is a trail winding up into a densely forested area in the hills to
+
+the east, and towards a wide bridge across the Elhanni to the west.  A
+
+light breeze blows through the area, whispering through the leaves.  The
+
+trail has been cleared of grass, and is now a dusty five-foot wide strip
+
+of dull, rocky dirt.
+
+~
+~
+-235405311 4 9 0
+D1
+~
+~
+0 -1 39804 10 10 5
+D3
+~
+~
+0 -1 39807 10 10 5
+-1
+S
+
+#39807
+Bridge Over The Elhanni~
+This wide, wooden bridge spans the width of the Elhanni river.  The sound
+
+of rushing water fills the cool air, and the bridge creaks precariously
+
+in a light breeze.  To the west lie the expansive rocky rises of the
+
+Black Hills, and to the east is a densely wooded hilly area climbing
+
+along the base of the mountains.
+
+~
+no.mob
+
+~
+-235405303 12 9 0
+D1
+~
+~
+0 -1 39806 10 10 5
+D3
+~
+~
+0 -1 39056 10 10 5
+-1
+S
+
+#0
+

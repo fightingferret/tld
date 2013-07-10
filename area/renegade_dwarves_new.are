@@ -1,0 +1,1740 @@
+#AREA
+Renegade Dwarves~
+Carth~
+~
+
+0 0
+0
+#ROOMS
+
+#78750
+Bottom of a Spiral Staircase~
+The floor at the base of the staircase has been worn smooth, apparently
+
+by the passage of many feet.  To the west and south stretch brightly lit
+
+tunnels that have been hewed out of the rock of the mountain.  The
+
+workmanship is magnificent, the floors are smooth and even and the walls
+
+straight, climbing up from the floor at a perfect ninty degree angle.  To
+
+the east stands a wooden door that has been covered by intricate carvings
+
+and, to the north, is a dimly lit cubbyhole.
+
+~
+[Carth] door e, guard post n
+
+[Carth] up here will link to the renegade durfs
+
+[Carth] look door/east shows engravings of dwarves fighting
+
+[Carth] bar/brothel s
+
+[Carth] Action needed here. This room will be empty but, on entering the room, any guards in the northern room who arent fighting will run in and attack.
+
+~
+-235274235 11 5 0
+D0
+~
+~
+0 -1 78751 10 10 5
+D1
+engraved wooden door~
+engraved wooden door~
+131 -1 78755 10 10 5
+D2
+~
+~
+0 -1 78791 10 10 5
+D3
+~
+~
+0 -1 78752 10 10 5
+D4
+~
+~
+0 -1 78800 10 10 5
+E
+carved wooden door 1 east~
+The door is covered with intricate carvings.  They have an angular
+
+quality to them that is typical of the artwork seen elsewhere and depict
+
+muscled dwarves wielding weapons.  The artwork is less bloody however,
+
+the carvings depict more warriors training.
+
+~
+E
+wall floor~
+The quality of the tunneling could only be dwarven.  all the surfaces are
+
+perfectly flat, smooth and join to the other surfaces at a perfect ninety
+
+degree angle.
+
+~
+E
+1 north cubbyhole guardpost~
+The small room to the north provides a perfect vantage point for
+
+controlling access to the level.  From that you surmise it is used by the
+
+inhabitants as a guardpost.
+
+~
+2401 137 1509949540 3 0
+2401 9 1509949540 3 0
+2428 169 1509949540 3 0
+2429 73 1509949480 3 0
+2430 72 1509949500 3 0
+2431 137 1509949540 3 0
+2432 9 1509949540 3 0
+2433 9 1509949540 3 0
+-1
+S
+
+#78751
+A Guard Post~
+While just a simple hole in the wall, the decorations found everywhere
+
+else continue into this room.  Every flat surface, except the floor, are
+
+covered with vivid murals depicting combat and ritual sacrifice.  Other
+
+than the paintings, the room is devoid of any other decoration, except
+
+for a simple stone bench set against the northern wall.  The only obvious
+
+exit is to the south.
+
+~
+[Carth] A few acodes need to be set up here. Any opening of the southern door, entering or leaving that room should be reported here
+
+[Carth] the guard(s) here will attack if any character moves south
+
+~
+-235274235 11 7 0
+D2
+~
+~
+0 -1 78750 10 10 5
+E
+bed canopy~
+Before you rests a gorgeous canopy bed covered in pillows of every shape
+
+and size.  The long bedposts are made of a soild ironwood and draped with
+
+a translucent satin.  The comforter is trimmed with a silken lacework and
+
+is a stunning aquamarine in color.  The whole picture just begs to be
+
+rested on and rolled around in.
+
+~
+E
+rug~
+You see a beautifuly plush bearskin rug before you.  It's long furry coat
+
+is tempting you to lay upon it and relax.  The thick brown hide reminds
+
+you of the great grizzlies of the forest.  It is incredibly soft to the
+
+touch and feels like the smoothest silk against your skin.
+
+~
+E
+walls paintings murals decorations~
+As vivid as all the others you have seen, yet bloodier still, some of the
+
+murals seem positively disturbing in the amount of blood shed. 
+
+Fortunately you have a strong stomach.
+
+~
+E
+1 south~
+Looking south you see how perfect a guardpost this cubbyhole is.  Nobody
+
+can enter or leave without passing through the guarpost's field of vision.
+
+~
+2401 137 1509949540 3 0
+2401 137 1509949490 3 0
+3689 17 1509949540 -2 0
+-1
+S
+
+#78752
+A Corridor~
+The northern wall is dominated by a large door with an intricate rune set
+
+into it.  The corridor leads east and south from here and stretches off
+
+in both directions, the southern corridor ending in what appears to be a
+
+temple and the western stopping short near a spiral staircase.  The
+
+eastern wall has had a hole tunnelled into it that leads off into a room
+
+illuminated by a dull @rred@n glow.
+
+~
+[Carth] mage n, entrance to the mine w
+
+[Carth] look door/rune/north for a door description
+
+~
+-235274235 11 7 0
+D0
+rune engraved door~
+rune engraved door~
+131 -1 78766 10 10 5
+D1
+~
+~
+0 -1 78750 10 10 5
+D2
+~
+~
+0 -1 78771 10 10 5
+D3
+~
+~
+0 -1 78788 10 10 5
+E
+door rune 1 north~
+Mounted upon the northern wall, this door is bare compared to others in
+
+this area.  It has only one thing engraved upon it, an angular, runic
+
+symbol that defies translation or even description.
+
+~
+E
+1 west red glow~
+The western room glows in a dull @rred@n colour.  Looking in that
+
+direction you can vaguely make out a brazier of glowing coals and an
+
+anvil set in the centre of the room.  Mounted next to the door is a small
+
+sign.
+
+~
+E
+sign~
+@I@I@I@GDon't waste worthless armour and weapons!@n
+
+@I @I@I@I@I@ISell them back to the smith 
+
+
+Recycle and we will have the weapons to wipe out chiiron!
+
+~
+-1
+S
+
+#78753
+The Practice Room~
+~
+[Carth] door n to sleeping quarters
+
+~
+-235274235 11 7 0
+D0
+heavy oak door~
+heavy oak door~
+131 -1 78762 10 10 5
+D1
+~
+~
+0 -1 78754 10 10 5
+D2
+~
+~
+0 -1 78756 10 10 5
+D3
+~
+~
+0 -1 78755 10 10 5
+-1
+S
+
+#78754
+The Practice Room~
+Under Construction.
+
+~
+~
+-235274235 11 7 0
+D2
+~
+~
+0 -1 78758 10 10 5
+D3
+~
+~
+0 -1 78753 10 10 5
+-1
+S
+
+#78755
+The Practice Room~
+Under Construction.
+
+~
+~
+-235274235 11 7 0
+D1
+~
+~
+0 -1 78753 10 10 5
+D2
+~
+~
+0 -1 78757 10 10 5
+D3
+wooden door~
+wooden door~
+131 -1 78750 10 10 5
+-1
+S
+
+#78756
+The Practice Room - Raised Area~
+Under Construction.
+
+~
+[Carth] training area
+
+~
+-235274235 11 7 0
+D0
+~
+~
+0 -1 78753 10 10 5
+D1
+~
+~
+0 -1 78758 10 10 5
+D2
+~
+~
+0 -1 78760 10 10 5
+D3
+~
+~
+0 -1 78757 10 10 5
+-1
+S
+
+#78757
+The Practice Room~
+Under Construction.
+
+~
+~
+-235274235 11 5 0
+D0
+~
+~
+0 -1 78755 10 10 5
+D1
+~
+~
+0 -1 78756 10 10 5
+D2
+~
+~
+0 -1 78759 10 10 5
+-1
+S
+
+#78758
+The Practice Room~
+Under Construction.
+
+~
+~
+-235274235 11 7 0
+D0
+~
+~
+0 -1 78754 10 10 5
+D2
+~
+~
+0 -1 78761 10 10 5
+D3
+~
+~
+0 -1 78756 10 10 5
+-1
+S
+
+#78759
+The Practice Room~
+Under Construction.
+
+~
+~
+-235274235 11 7 0
+D0
+~
+~
+0 -1 78757 10 10 5
+D1
+~
+~
+0 -1 78760 10 10 5
+D3
+pine door~
+pine door~
+131 -1 78792 10 10 5
+-1
+S
+
+#78760
+The Practice Room~
+Under Construction.
+
+~
+~
+-235274235 11 7 0
+D0
+~
+~
+0 -1 78756 10 10 5
+D1
+~
+~
+0 -1 78761 10 10 5
+D3
+~
+~
+0 -1 78759 10 10 5
+-1
+S
+
+#78761
+The Practice Room~
+Under Construction.
+
+~
+~
+-235274235 11 7 0
+D0
+~
+~
+0 -1 78758 10 10 5
+D3
+~
+~
+0 -1 78760 10 10 5
+-1
+S
+
+#78762
+Sleeping Quaters~
+Under Construction.
+
+~
+[Carth] sleeping quarters... beds, one or two dwarves sleeping... seaerchable lockers
+
+~
+-235274235 11 7 0
+D0
+~
+~
+0 -1 78763 10 10 5
+D1
+~
+~
+0 -1 78764 10 10 5
+D2
+heavy oak door~
+heavy oak door~
+131 -1 78753 10 10 5
+-1
+S
+
+#78763
+Sleeping Quaters~
+Under Construction.
+
+~
+~
+-235274235 11 7 0
+D1
+~
+~
+0 -1 78765 10 10 5
+D2
+~
+~
+0 -1 78762 10 10 5
+-1
+S
+
+#78764
+Sleeping Quaters~
+Under Construction.
+
+~
+~
+-235274235 11 7 0
+D0
+~
+~
+0 -1 78765 10 10 5
+D3
+~
+~
+0 -1 78762 10 10 5
+-1
+S
+
+#78765
+Sleeping Quaters~
+Under Construction.
+
+~
+~
+-235274235 11 7 0
+D2
+~
+~
+0 -1 78764 10 10 5
+D3
+~
+~
+0 -1 78763 10 10 5
+-1
+S
+
+#78766
+A Carpeted Room~
+Under Construction.
+
+~
+[Carth] hall before the mage's rooms
+
+~
+-235274235 11 7 0
+D0
+~
+~
+0 -1 78768 10 10 5
+D2
+rune engraved door~
+rune engraved door~
+131 -1 78752 10 10 5
+D3
+~
+~
+0 -1 78767 10 10 5
+-1
+S
+
+#78767
+An Alchemist's Lab~
+Under Construction.
+
+~
+[Carth] experimetal area... cauldron... bubbling stuff
+
+~
+-235274235 11 7 0
+D0
+~
+~
+0 -1 78769 10 10 5
+D1
+~
+~
+0 -1 78766 10 10 5
+-1
+S
+
+#78768
+An Office~
+Under Construction.
+
+~
+[Carth] desk here... mage
+
+[Carth] search desk for reagents
+
+~
+-235274235 11 7 0
+D2
+~
+~
+0 -1 78766 10 10 5
+D3
+~
+~
+0 -1 78769 10 10 5
+-1
+S
+
+#78769
+The Library~
+Under Construction.
+
+~
+[Carth] bookshelf here, open to secret room w
+
+~
+-235274235 11 7 0
+D1
+~
+~
+0 -1 78768 10 10 5
+D2
+~
+~
+0 -1 78767 10 10 5
+D3
+the bookshelf~
+bookshelf~
+2219 -1 78770 10 10 5
+A
+~
+bookshelf~
+act_tochar( "You take a look at the bookshelves.", ch );
+
+act_notchar( "$n starts looking at the books.", ch );
+
+wait( 1 );
+
+if( find_skill( ch, searching ) > random( 1, 8 ) )
+
+  act_tochar( #find, ch );
+
+else
+
+  act_tochar( "You find nothing more than musty old books.", ch );
+
+~
+E
+find~
+@GYou notice that one of the books is fixed to the bookshelf!  Perhaps
+
+pulling on it would do something...
+
+~
+!
+9 0 0
+A
+pull get~
+book~
+if( !rflag( reset0, room ) )
+
+  act_tochar( "The door is already open!", ch );
+
+else {
+
+  remove_rflag( reset0, room );
+
+  open( room, west );
+
+  act_tochar( "Pulling on the book causes the bookshelf to swing open!", ch );
+
+  act_notchar( #pull, ch );
+
+  send_to_room( "One of the panels in the eastern wall swings open!", find_room( 78770 ) );
+
+  }
+
+~
+E
+pull~
+$n pulls on a book and a section of the bookshelves swing open!
+
+~
+!
+0 0 0
+A
+close~
+1 west bookshelf~
+if( rflag( reset0, room ) )
+
+  send_to_char( "There is nothing to close there.", ch );
+
+else {
+
+  close( room, west );
+
+  set_rflag( reset0, room );
+
+  act_tochar( "As you close the bookshelf it settles into place with an audible click.", ch );
+
+  act_notchar( "$n closes the bookshelf.", ch );
+
+  send_to_room( "The door swings shut behind you!", find_room( 78770 ) );
+
+  }
+
+~
+!
+0 0 0
+-1
+S
+
+#78770
+Sleeping Quaters~
+Under Construction.
+
+~
+[Carth] secret room... sleeping quarters
+
+[Carth] search, open - east wooden door to get out
+
+~
+-235274235 11 7 0
+D1
+plain wooden door~
+plain wooden door bookshelf~
+2219 -1 78769 10 10 5
+A
+close~
+1 east plain wooden door bookshelf~
+room = find_room( 78769 );
+
+if( rflag( reset0, room ) )
+
+act_tochar( "The door has already been closed.", ch );
+
+else {
+
+close( room, west );
+
+set_rflag( reset0, room );
+
+act_tochar( "You close the plain wooden door to the east.", ch );
+
+act_notchar( "$n closes the plain wooden door to the east", ch );
+
+send_to_room( "The bookshelf swings shut with a click.", room );
+
+act_room( "@GThe door blends into the surrounding boards completely!@n");
+
+}
+
+~
+!
+0 0 0
+A
+open search look~
+1 east wooden door panel~
+room = find_room( 78769 );
+
+if( !rflag( reset0, room ) )
+
+  act_tochar( "The door has already been opened!", ch );
+
+else {
+
+  open( room, west );
+
+  remove_rflag( reset0, room );
+
+  act_tochar( "A little searching reveals a hidden catch. You press it and the door swings open.", ch );
+
+  act_notchar( #search, ch );
+
+send_to_room( "The bookcase swings to one side revealing a hidden door!", room );
+
+  }
+
+~
+E
+search~
+$n searches the wooden panels.  After a moment $e presses something and
+
+the door swings open!
+
+~
+!
+0 0 0
+-1
+S
+
+#78771
+End of the Corridor~
+Illustrations of dwarves fighting cover the walls and extend down the
+
+corridor to the north.  The corridor ends at a large archway set in a
+
+southern wall that is strangely lacking in drawings compared to the other
+
+walls.  Only one is there, a large illustration of what appears to be an
+
+altar which has been inscribed over the arch.  Set in the western wall is
+
+a large, iron door.
+
+~
+[Carth] temple south
+
+~
+-235274235 11 7 0
+D0
+~
+~
+0 -1 78752 10 10 5
+D2
+~
+~
+0 -1 78774 10 10 5
+D3
+heavy iron door~
+heavy iron door~
+131 -1 78772 10 10 5
+E
+illustrations drawings dwarves fighting 1 west altar walls~
+Many of the drawings are of dwarves fighting, dwarves killing, dwarves
+
+vanquishing their foes in a number of horrible ways.  The one that
+
+catches your eye, however, is the drawing set above the arch on the
+
+southern wall.  It depicts a simple, rectangular shape with a dwarf
+
+standing behind it, a knife held high in his hand.  Everything about this
+
+drawing gives the impression that the shape is that of an altar.
+
+~
+E
+1 south archway~
+What appears to be merely a carving in the rock turns out, on closer
+
+inspection, to be a construction of dressed stone blocks.  Slightly
+
+different in colour to the granite around it the stone has a slightly
+
+translucent quality and reflects the light shone on it back in a myriad
+
+of flickering points of light.  Drawn above the archway is a drawing, the
+
+only one on the southern wall, that depicts a dwarf standing behind an
+
+altar.
+
+~
+A
+~
+~
+act_tochar( "@GAs you step under the archway a frisson of unaccountable fear shivers down your spine.", ch );
+
+continue;
+
+~
+!
+3 0 4
+-1
+S
+
+#78772
+The Entrance to the Mine~
+Under Construction.
+
+~
+[Carth] entrance to the mine here... use an elevator to move them down like in tinytown
+
+[Carth] mine manager's office s and a guard here
+
+[Carth] entrance to lift west
+
+~
+-235274235 11 7 0
+D1
+heavy iron door~
+heavy iron door~
+131 -1 78771 10 10 5
+D2
+~
+~
+0 -1 78773 10 10 5
+D3
+~
+~
+0 -1 78790 10 10 5
+-1
+S
+
+#78773
+Mine Manager's Office~
+Under Construction.
+
+~
+[Carth] mine manager's office
+
+~
+-235274235 11 7 0
+D0
+~
+~
+0 -1 78772 10 10 5
+-1
+S
+
+#78774
+The Dark Temple~
+~
+[Carth] entrance to temple... put chairs etc here and mention the altar s
+
+~
+-235274235 11 7 0
+D0
+~
+~
+0 -1 78771 10 10 5
+D2
+~
+~
+0 -1 78775 10 10 5
+-1
+S
+
+#78775
+The Dark Temple - Bloodstained Altar~
+The south of this room is dominated by a crude altar.  Devoid of all
+
+carvings or decoration it is simply a square cut block of grey stone. 
+
+The walls are similarly deviod of decoration but the cieling has been
+
+covered with one large drawing, a mirror image of the room but with all
+
+the seats occupied and a female human stretched out upon the altar.  the
+
+drawing is quite accurate and the depiction of the cut into the victim's
+
+throat turns your stomach somewhat.
+
+~
+[Carth] altar... dwarf cleric... lotsa nasty stuff
+
+[Carth] note blood on altar... make altar a container for a few treasures
+
+[Carth] do a ring here, as treasure
+
+[Carth] no affects, just wearable and saleable.... could go in wedding ring slot
+
+[Carth] a good chance of there being one random dwarf here
+
+~
+-235274235 11 7 0
+D0
+~
+~
+0 -1 78774 10 10 5
+A
+~
+~
+if( !is_player( ch ) )
+
+  if( race( ch ) == dwarf ) { 
+
+  act_tochar( "you kneel before the altar, placing your head against it.", ch );
+
+  act_notchar( "@g$n kneels and places $s head against the altar.@n", ch );
+
+  set_pos( ch, 6 );
+
+  wait( 1 );
+
+  if( get_pos( ch ) == 6 ) {
+
+    act_notchar( "@r$n stands after a moment.", ch );
+
+    set_pos( ch, 8 );
+
+    }
+
+  wait( 1 );
+
+  act_room( "@RThe altar glows in a pale @Wwhite@R light@n", ch );
+
+  loop( all_in_room ) {
+
+    if( is_player( rch ) ) { 
+
+      act_tochar( "@BA bolt of @Wwhite@B lighning shoots out from the altar, striking you!", rch );
+
+      act_notchar( "@bA bolt of @Wwhite@b lightning shoots from the altar and strikes $n!", rch );
+
+      i = 2d8+10;
+
+      dam_element( rch, i, "The bolt of unholy power", 4 );
+
+      inflict_shock( rch, mob, i, "A bolt of unholy lightning" );
+
+      do_spell( faerie fire, ch, rch );
+
+      }
+
+    }
+
+  }
+
+~
+!
+1 0 1
+3710 49 1509949540 -2 0
+16 81 1509949450 -2 0
+15 65 1509949540 -2 0
+12 81 1509949540 -2 0
+12 81 1509949530 -2 0
+12 81 1509949520 -2 0
+12 81 1509949510 -2 0
+12 81 1509949500 -2 0
+12 81 1509949490 -2 0
+12 81 1509949480 -2 0
+12 81 1509949470 -2 0
+12 81 1509949460 -2 0
+12 81 1509949450 -2 0
+14 81 1509949520 -2 0
+14 81 1509949500 -2 0
+14 81 1509949480 -2 0
+14 81 1509949460 -2 0
+2 81 1509949500 -2 0
+2 81 1509949470 -2 0
+317 9 1509949470 3 0
+319 136 1509949470 3 0
+2401 136 1509949470 3 0
+2428 136 1509949470 3 0
+2431 136 1509949470 3 0
+2432 136 1509949470 3 0
+2473 9 1509949540 3 0
+-1
+S
+
+#78776
+The Lift~
+Under Construction.
+
+~
+[Carth] mine.... passages s and w
+
+[Carth] guard here
+
+~
+-235274235 11 7 0
+D2
+~
+~
+0 -1 78777 10 10 5
+D3
+~
+~
+0 -1 78787 10 10 5
+D4
+~
+~
+0 -1 78790 10 10 5
+-1
+S
+
+#78777
+A Tunnel~
+Under Construction.
+
+~
+~
+-235274235 11 7 0
+D0
+~
+~
+0 -1 78776 10 10 5
+D2
+~
+~
+0 -1 78778 10 10 5
+-1
+S
+
+#78778
+A Tunnel~
+Under Construction.
+
+~
+~
+-235274235 11 7 0
+D0
+~
+~
+0 -1 78777 10 10 5
+D2
+~
+~
+0 -1 78779 10 10 5
+-1
+S
+
+#78779
+A Tunnel~
+Under Construction.
+
+~
+~
+-235274235 11 7 0
+D0
+~
+~
+0 -1 78778 10 10 5
+D2
+~
+~
+0 -1 78780 10 10 5
+D3
+~
+~
+0 -1 78782 10 10 5
+-1
+S
+
+#78780
+A Tunnel~
+Under Construction.
+
+~
+~
+-235274235 11 7 0
+D0
+~
+~
+0 -1 78779 10 10 5
+D1
+~
+~
+0 -1 78781 10 10 5
+-1
+S
+
+#78781
+Dead End in the Tunnels~
+Under Construction.
+
+~
+[Carth] face being worked on... iron seam in wall
+
+~
+-235274235 11 7 0
+D3
+~
+~
+0 -1 78780 10 10 5
+-1
+S
+
+#78782
+A Tunnel~
+Under Construction.
+
+~
+[Carth] mine brances off west... note that the tunnel seems hurredly dug
+
+~
+-235274235 11 7 0
+D0
+~
+~
+0 -1 78785 10 10 5
+D1
+~
+~
+0 -1 78779 10 10 5
+D2
+~
+~
+0 -1 78784 10 10 5
+D3
+~
+~
+0 -1 78783 10 10 5
+-1
+S
+
+#78783
+Dead End in the Tunnels~
+Under Construction.
+
+~
+[Carth] face being worked on.... nite codite seam
+
+~
+-235274235 11 7 0
+D1
+~
+~
+0 -1 78782 10 10 5
+-1
+S
+
+#78784
+Dead End in the Tunnels~
+Under Construction.
+
+~
+[Carth] face being worked on... note iron seam
+
+~
+-235274235 11 7 0
+D0
+~
+~
+0 -1 78782 10 10 5
+-1
+S
+
+#78785
+A Tunnel~
+Under Construction.
+
+~
+~
+-235274235 11 7 0
+D0
+~
+~
+0 -1 78786 10 10 5
+D2
+~
+~
+0 -1 78782 10 10 5
+-1
+S
+
+#78786
+A Tunnel~
+Under Construction.
+
+~
+~
+-235274235 11 7 0
+D0
+~
+~
+0 -1 78787 10 10 5
+D2
+~
+~
+0 -1 78785 10 10 5
+-1
+S
+
+#78787
+A Tunnel~
+Under Construction.
+
+~
+[Carth] key pops on mine chief... hsouldnt be 100%
+
+~
+-235274235 11 7 0
+D0
+iron-bound stone door~
+iron-bound bound stone door~
+391 3605 78799 10 10 5
+D1
+~
+~
+0 -1 78776 10 10 5
+D2
+~
+~
+0 -1 78786 10 10 5
+-1
+S
+
+#78788
+The Weaponsmith's Workshop~
+Compared to the eastern corridor this room is stark and bare.  Dominating
+
+the centre of the room is a large anvil which appears mounted to the
+
+floor and a large brazier has been set against the southern wall.  Coals
+
+glow in the brazier, giving off a tremendous amount of heat and a dull
+
+@rred@n glow that serves as illumination for the room.  Over the brazier
+
+has been constructed a large chimney made of well shaped granite bricks. 
+
+The chimney leads up, almost to the ceiling where, just above it, a small
+
+hole leads up and out of the room.  Set in the western wall is a large
+
+oaken door with no handle or other apparent means of opening.
+
+~
+[Carth] smith....
+
+[Carth] note chimney arrangement going off into the rock
+
+[Carth] forge, anvil, box to search through for ingot/ore
+
+[Carth] move anvil to open western room
+
+~
+-235274235 11 7 0
+D1
+~
+~
+0 -1 78752 10 10 5
+D3
+large oaken door~
+large oaken door~
+131 -1 78789 10 10 5
+E
+anvil~
+The anvil has been made from wrought iron and looks too heavy for even a
+
+troll to lift.  It appears to be bolted driectly to the ground but, when
+
+you examine it closely, you notice a series of parralel scratches leading
+
+from the anvil and along the floor to the north.
+
+~
+E
+brazier~
+the burning coals have made the wrought iron stand white hot.  whisps of
+
+smoke rise from the fire and are sucked up the chimney.
+
+~
+E
+chimney~
+The chimney has been sturdily built and leans solidly against the
+
+southern wall.  There appears to be a slight draught coming from it as
+
+all the smoke from the brazier gets sucked up through it.
+
+~
+E
+door wooden 1 west~
+A large wooden door made from heavy planks of wood has been set into the
+
+western wall.  At least, you think it is a door.  The general doorishness
+
+is disrupted by the lack of a handle or any other means of opening it.
+
+~
+A
+open~
+1 west large oaken door~
+act_tochar( "There is no handle or other obvious way of opening the door.", ch );
+
+~
+!
+0 0 0
+A
+move pull~
+anvil~
+if( mob_in_room( 2451, room ) ) {
+
+  act_tochar( "@YThe dwarf growls when you touch the anvil. you quickly draw back.", ch );
+
+  act_notchar( "@YThe dwarf growls when $n touches the anvil.", ch );
+
+  end;
+
+  }
+
+if( !rflag( reset0, room ) )
+
+  act_tochar( "The anvil has been moved as far as it will go!.", ch );
+
+else {
+
+  act_tochar( "You pull the anvil along the tracks.", ch );
+
+  act_notchar( "$n moves the anvil along the tracks.", ch );
+
+  act_tochar( "@GThe western door swings silently open.", ch );
+
+  act_notchar( "@GThe western door swings silently open.@n", ch );
+
+  open( find_room( 78788 ), west );
+
+  remove_rflag( reset0, room );
+
+  send_to_room( "The door silently swings open.", find_room( 78789 ) );
+
+  }
+
+~
+!
+0 0 0
+A
+close~
+1 west large oaken door~
+if( rflag( reset0, room ) )
+
+  act_tochar( "The door is already closed.", ch );
+
+else {
+
+  act_tochar( "@GAs you close the door the anvil slides back into position!", ch );
+
+  act_notchar( "@GAs $n closes the western door the anvil slides back to its original position!@n", ch );
+
+  set_rflag( reset0, room );
+
+  close( room, west );
+
+  send_to_room( "The door silently swings shut.", find_room( 78789 ) );
+
+  }
+
+~
+!
+0 0 0
+A
+touch search move~
+brazier coals~
+act_tochar( "You reach out and lightly touch the brazier.", ch );
+
+act_notchar( "$n reaches out and touches the brazier.", ch );
+
+interpret( ch, "scream" );
+
+i = 4d5+20;
+
+dam_element( ch, i, "the searing hot metal", 1 );
+
+inflict_fire( ch, mob, i, "searing hot metal" );
+
+~
+!
+0 0 0
+2451 137 1509949540 3 0
+-1
+S
+
+#78789
+A Storeroom~
+Under Construction.
+
+~
+[Carth] racks of weapons, box of stuff
+
+[Carth] search either for a chance of items
+
+~
+-235274235 11 7 0
+D1
+large oaken door~
+large oaken door~
+131 -1 78788 10 10 5
+D5
+trapdoor~
+trapdoor door~
+131 -1 78798 10 10 5
+A
+open~
+1 east large oaken door~
+if( !rflag( reset0, find_room( 78788 ) ) )
+
+  act_tochar( "The door is already open.", ch );
+
+else {
+
+act_tochar( "You open the large oaken door to the east.", ch );
+
+act_notchar( "$n opens the large oaken door to the east.", ch );
+
+remove_rflag( reset0, find_room( 78788 ) );
+
+open( room, east );
+
+send_to_room( #open, find_room( 78788 ) );
+
+}
+
+~
+E
+open~
+With a quiet grinding sound the anvil moves along its tracks and the
+
+westorn door opens!
+
+~
+!
+0 0 0
+A
+~
+~
+if( !is_follower( ch ) ) {
+
+act_room( "@GThe door swings silently shut behind you.", ch );
+
+close( room, east );
+
+set_rflag( reset0, find_room( 78788 ) );
+
+send_to_room( #close, find_room( 78788 ) );
+
+}
+
+~
+E
+close~
+The western door swings silently shut.
+
+~
+!
+1 0 2
+-1
+S
+
+#78790
+The Lift~
+Under Construction.
+
+~
+~
+-235274235 11 7 0
+D1
+~
+~
+0 -1 78772 10 10 5
+D5
+~
+~
+0 -1 78776 10 10 5
+-1
+S
+
+#78791
+A Corridor~
+Under Construction.
+
+~
+~
+-235274235 11 7 0
+D0
+~
+~
+0 -1 78750 10 10 5
+D2
+~
+~
+0 -1 78792 10 10 5
+-1
+S
+
+#78792
+A Corridor~
+Under Construction.
+
+~
+[Carth] entrance to the training room e
+
+[Carth] door to bar/brothel s
+
+~
+-235274235 11 7 0
+D0
+~
+~
+0 -1 78791 10 10 5
+D1
+pine door~
+pine door~
+131 -1 78759 10 10 5
+D2
+tavern door~
+tavern door~
+131 -1 78793 10 10 5
+-1
+S
+
+#78793
+The Bar~
+Under Construction.
+
+~
+[Carth] chairs and tables here
+
+~
+-235274235 11 7 0
+D0
+tavern door~
+tavern door~
+131 -1 78792 10 10 5
+D1
+~
+~
+0 -1 78794 10 10 5
+-1
+S
+
+#78794
+The Bar~
+Under Construction.
+
+~
+[Carth] bar
+
+~
+-235274235 11 7 0
+D2
+thick wooden door~
+thick wooden door~
+131 -1 78795 10 10 5
+D3
+~
+~
+0 -1 78793 10 10 5
+-1
+S
+
+#78795
+The 'Entertainments' Suite~
+Under Construction.
+
+~
+[Carth] madam here - perhaps she charges ingots for service?
+
+~
+-235274235 11 7 0
+D0
+thick wooden door~
+thick wooden door~
+131 -1 78794 10 10 5
+D1
+blank wooden door~
+blank wooden door~
+391 3597 78797 10 10 5
+D3
+blank wooden door~
+blank wooden door~
+391 3597 78796 10 10 5
+-1
+S
+
+#78796
+A Bedroom~
+Under Construction.
+
+~
+[Carth] bedroom, beaded dwarven prostitute here
+
+~
+-235274235 11 7 0
+D1
+blank wooden door~
+blank wooden door~
+391 -1 78795 10 10 5
+-1
+S
+
+#78797
+A Bedroom~
+Under Construction.
+
+~
+[Carth] another bedrom, another pro
+
+~
+-235274235 11 7 0
+D3
+~
+~
+391 -1 78795 10 10 5
+-1
+S
+
+#78798
+A Storeroom~
+Under Construction.
+
+~
+~
+-235272187 11 7 0
+D3
+~
+~
+0 -1 78799 10 10 5
+D4
+trapdoor~
+trapdoor door~
+131 -1 78789 10 10 5
+-1
+S
+
+#78799
+A Storeroom~
+Under Construction.
+
+~
+~
+-235274235 11 7 0
+D1
+~
+~
+0 -1 78798 10 10 5
+D2
+iron-bound stone door~
+iron-bound bound stone door~
+391 3605 78787 10 10 5
+-1
+S
+
+#78800
+At the Top of a Ladder~
+The walls of this room have been decorated heavily, but with no apparent
+
+plan.  Carvings and drawings adorn all the available space, the colours
+
+of the drawings especially vivid, full of oranges and bright greens. 
+
+Each picture shows a dwarf in battle.  The combatants are usually
+
+fighting a dwarf or elf, though occasionally another dwarf is the victim. 
+
+In the centre of the room a spiral staircase leads down.
+
+~
+[Carth] door to the first level will be s of here
+
+~
+-235405307 11 7 0
+D5
+~
+~
+0 -1 78750 10 10 5
+E
+carvings drawings paintings~
+It is plain that no two drawings were done by one hand.  The style
+
+changes from crude and simplistic to complex.  Also, some drawings
+
+parially overlap others and, within some drawings, traces of older
+
+paintings can be found.  This drawing has been going on for some time.
+
+~
+E
+staircase 1 down spiral~
+Made from wrought iron and well crafted stone, the stair descends to the
+
+lower level.  Looking down you can see a well lit corridor below.
+
+~
+2401 137 1509949540 3 0
+-1
+S
+
+#0
+

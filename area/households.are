@@ -1,0 +1,338 @@
+#AREA
+households~
+Noone~
+~
+
+0 0
+0
+#ROOMS
+
+#49000
+Stone Paved Path~
+To the north is a waterfall, the constant rumbling fills the air about
+
+you with a muffled roar.  Flowing south from the falls runs a small
+
+stream of deep blue water.  The gorge is narrow at this point, barely
+
+large enough to walk three paces across, yet it is very deep with smooth,
+
+stone walls rising above you to the east and to the west.  The ground is
+
+covered in a rich, green grass which grows in abundance here and to the
+
+south where it thins out to be replaced by a few trees which arch over
+
+the stream.  Beds of gardenias, growing in a myriad of oranges and
+
+yellows, grow along the northern banks of the stream.  Set into the
+
+eastern wall, and looking incongrous in such a natural setting, is a
+
+small, oaken door.
+
+~
+~
+-235405311 3 5 0
+D1
+small, oaken door~
+small oaken door~
+131 -1 49001 10 10 4
+E
+roses bushes~
+The roses bloom in a vibrant splay of reddish-orange and offer their
+
+sweet scent for all to enjoy.
+
+~
+A
+~
+~
+if( !has_obj( 3467, ch ) ) {
+
+  act_tochar( "Make what?", ch );
+
+  end;
+
+  }
+
+
+act_tochar( "You add a little water to the phial.", ch );
+
+act_notchar( "$n adds some water to a phial.", ch );
+
+wait( 1 );
+
+act_tochar( "Suddenly a ladder starts to form from the dust!", ch );
+
+act_notchar( "Amazingly, a @gladder@n begins to form within the phial!", ch );
+
+wait( 1 );
+
+act_tochar( "You place the ladder over the cliff edge and scurry down it.", ch );
+
+act_notchar( "$n places the ladder over the cliff edge and climbs down it.", ch );
+
+transfer( ch, find_room( 49000 ) );
+
+act_notchar( "A ladder appears over the side of the western cliff and $n climbs down.", ch );
+
+remove_rflag( reset0, find_room( 49000 ) );
+
+loop( all_in_room ) {
+
+  if( has_obj( 3467, rch ) ) {
+
+    act_tochar( "You quickly climb down too.", rch );
+
+    act_notchar( "$n quickly climbs down the ladder.", rch );
+
+    transfer( rch, find_room( 49000 ) );
+
+    }
+
+  }
+
+act_room( #ladder, ch );
+
+set_rflag( reset0, find_room( 49000 ) );
+
+~
+E
+ladder~
+The ladder suddenly crumbles! Yet, instead of falling to the ground, the
+
+particles are swept up into the air and sucked back into the phial!
+
+~
+!
+0 0 0
+A
+~
+~
+if( !rflag( reset0, room ) )
+
+  act_tochar( "Moving now would disrupt the ladder!", ch );
+
+else
+
+  continue;
+
+~
+!
+3 0 55
+A
+climb~
+1 west 1 up cliff~
+if( !rflag( reset0, room ) )
+
+  act_tochar( "Climbing up now would disrupt the ladder!", ch );
+
+else {
+
+  act_tochar( "Making use of natural handholds you quickly climb up the cliff face.", ch );
+
+  act_notchar( "$n climbs up the western cliff face.", ch );
+
+  transfer( ch, find_room( 42265 ) );
+
+  act_notchar( "$n climbs up from the gorge.", ch );
+
+  }
+
+~
+!
+0 0 0
+2462 9 1509949540 3 0
+-1
+S
+
+#49001
+Smallburrow Hall~
+This room is dominated by a large portrait on the eastern wall.  It is
+
+twice the height of a gnome and portrays a stern-looking gnomish woman
+
+and, for some reason, a frog.  The room is reasonably spacious by gnomish
+
+standards and richly decorated, with ornaments set upon a wide table set
+
+against the northern wall and a deep blue carpet which covers the floor
+
+from wall to wall.  The southern wall is blank and unadorned, the stone
+
+neatly trimmed and sanded to provide a smooth, flat surface.  Built into
+
+a corner of the room, next to the portrait, are the beginings of a spiral
+
+staircase.  The steps are wide and even, and constructed from a stone
+
+which shines like marble.  However, only three of them have currently
+
+been fixed to the central support.
+
+~
+~
+-235405311 11 4 0
+D1
+portrait~
+portrait~
+139 -1 49002 10 10 5
+D3
+small, oaken door~
+small oaken door~
+131 -1 49000 10 10 5
+D4
+~
+~
+0 -1 49003 10 10 5
+E
+painting portrait l east~
+Affixed to the picture frame is a small plaque containing a sign in
+
+gnomish.
+
+@I
+
+@I
+
+@I@I@I@I@I@I@I@I@I@I@I@I@I@I@I@RMy In-laws@n
+
+@I@I@I@I@I@I@I@I@I@I@I@I@RBy Narri Smallburrow@n
+
+~
+E
+table ornaments north~
+Upon the table, along with a few stones from Narak and golden ornaments
+
+from Kha-Da, one item immediately catches your eye.  It's the first
+
+device created by the legendary inventor Jedadiah Smallburrow. 
+
+Amazingly, it hasn't exploded yet.
+
+~
+A
+open move~
+portrait painting 1 east~
+if( rflag( reset0, room ) ) {
+
+  act_tochar( "You move the portrait to one side.", ch );
+
+  act_notchar( "$n moves the portrait to one side.", ch );
+
+  open( room, east );
+
+  remove_rflag( reset0, room );
+
+  }
+
+else {
+
+  act_tochar( "You move the portrait back over the opening.", ch );
+
+  act_notchar( "$n moves the portrait back over the opening.", ch );
+
+  close( room, east );
+
+  set_rflag( reset0, room );
+
+  }
+
+~
+!
+0 0 0
+-1
+S
+
+#49002
+Smallburrow Hall~
+The room concealed behind the portrait is small and cramped.  The walls
+
+are simple, smooth stone.  Like the other rooms, the walls are perfectly
+
+finished.  Yet they have no markings or other adornment.  The only exit
+
+is back west.
+
+~
+~
+-235337723 11 4 0
+D3
+portrait~
+protrait west~
+139 -1 49001 10 10 5
+A
+move open~
+1 west portrait painting~
+if( rflag( reset0, find_room( 49001 ) ) ) {
+
+  act_tochar( "You move the portrait to the side.", ch );
+
+  act_notchar( "$n moves the portrait to the side.", ch );
+
+  open( room, west );
+
+  remove_rflag( reset0, find_room( 49001 ) );
+
+  }
+
+else
+
+  act_tochar( "The painting cannot be moved from this side.", ch );
+
+~
+!
+0 0 0
+-1
+S
+
+#49003
+The Solarium~
+Under Construction.
+
+~
+~
+-235405311 11 9 0
+D4
+~
+~
+0 -1 49004 10 10 5
+D5
+~
+~
+0 -1 49001 10 10 5
+-1
+S
+
+#49004
+A Clifftop Garden~
+This part of the clifftop has been changed into a garden.  Stretching off
+
+to the east run row after row of lemon trees and, to the south, a patch
+
+of ground has been cleared and herbs have been planted.  Looking to the
+
+west you see the edge of the cliff with the river and the entrance to the
+
+Smallburrow house far below you.
+
+~
+~
+-235405311 3 9 0
+D5
+~
+~
+0 -1 49003 10 10 5
+189 17 1509949540 -2 0
+189 17 1509949540 -2 0
+189 17 1509949540 -2 0
+2108 9 1509949540 3 0
+2108 9 1509949540 3 0
+2108 9 1509949540 3 0
+2108 9 1509949540 3 0
+-1
+S
+
+#0
+

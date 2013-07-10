@@ -1,0 +1,1254 @@
+#AREA
+Thief Trainer~
+Ylena Necros~
+~
+
+0 0
+0
+#ROOMS
+
+#75750
+Small Cave~
+Anyone over the height of six foot is forced to hunch over or risk
+
+bumping their head upon the caves rough ceiling.  The walls to the north
+
+and south are rough with many bumps protruding from them, while to the
+
+west is an unusually smooth stone wall and eastward can be found a smooth
+
+cut exit.  The floor of this cave is clear of any debris.
+
+~
+~
+-235274236 11 5 0
+D1
+stone door~
+stone door~
+0 -1 75751 10 10 5
+D3
+~
+~
+139 -1 35925 10 10 5
+A
+search~
+stone wall smooth west~
+if( find_skill( ch, searching ) >= 7 ) {
+
+  act_tochar( #spot, ch );
+
+  act_notchar( #rspot, ch );
+
+  show( ch, room, west );
+
+  }
+
+else
+
+  act_tochar( #nothing, ch );
+
+~
+E
+spot~
+You can just make out an outline of a cleverly constructed door in the
+
+west wall.
+
+~
+E
+rspot~
+$n cries out in discovery!
+
+~
+E
+nothing~
+Your search doesn't turn up anything of note.
+
+~
+!
+0 0 0
+A
+open push~
+door 1 west stone~
+if( !is_open( room, west ) ) {
+
+  act_tochar( #open, ch );
+
+  act_notchar( #ropen, ch );
+
+  open( room, west );
+
+  }
+
+else
+
+  act_tochar( #already, ch );
+
+~
+E
+open~
+You open the stone door to the west.
+
+~
+E
+ropen~
+$n opens the stone door to the west.
+
+~
+E
+already~
+The way west is already open.
+
+~
+!
+0 0 0
+-1
+S
+
+#75751
+Room of Doors~
+The grey stone walls, floor and ceiling of this room have been carved to
+
+an almost perfectly smooth finish with just the odd flaw to detract from
+
+an otherwise well done job.  An open doorway allows free passage to the
+
+west, however in all other directions sturdy doors block the way.  The
+
+northern door is a heavy wooden door that has been bound with blackened
+
+iron, to the east is a steel door featuring copper filigree patterning,
+
+while the southern door is made from brass and also features copper
+
+filigree.
+
+~
+~
+-235274235 0 9 0
+D0
+heavy wooden door~
+heavy wooden door north~
+391 3586 75756 3 10 5
+D1
+steel door~
+steel door east~
+391 3587 75752 3 10 5
+D2
+brass door~
+brass door south~
+391 3588 75757 3 10 5
+D3
+~
+~
+0 -1 75750 10 10 5
+A
+pick~
+east steel~
+if( find_skill( ch, pick lock ) >= random( 6, 8 ) ) {
+
+  send_to_room( #click, room );
+
+  unlock( room, east );
+
+  }
+
+else
+
+  act_tochar( #noclick, ch );
+
+~
+E
+click~
+*Click* 
+
+~
+E
+noclick~
+The lock is just to complex for your feeble skills to pick.
+
+~
+!
+0 0 0
+A
+pick~
+south brass~
+if( find_skill( ch, pick lock ) >= random( 6, 8 ) ) {
+
+  send_to_room( #click, room );
+
+  unlock( room, south );
+
+  }
+
+else
+
+  act_tochar( #noclick, ch );
+
+~
+E
+click~
+*Click* 
+
+~
+E
+noclick~
+The lock is just to complex for your feeble skills to pick.
+
+~
+!
+0 0 0
+A
+pick~
+door~
+act_tochar( #msg, ch );
+
+~
+E
+msg~
+Which door do you wish to pick?  North?  East?  South?
+
+~
+!
+0 0 0
+-1
+S
+
+#75752
+A Well-lit Corridor~
+Regularly placed torches, in elaborately decorated brass sconces, line
+
+the smooth, almost gleaming, white marble walls of this corridor.  The
+
+floors and ceiling are also lined with the same white marble that is
+
+found upon the walls.  A steel door that features copper filigree
+
+patterning blocks the way west, while toward the east the corridor
+
+continues unhindered.
+
+~
+~
+-235274235 0 5 0
+D1
+~
+~
+0 -1 75753 10 10 5
+D3
+steel door~
+steel door west~
+391 3587 75751 3 10 5
+-1
+S
+
+#75753
+A Well-lit Corridor~
+The light from the regularly placed torches is picked up by the white
+
+marble floor, walls and ceiling and then reflected onto a bronze statue
+
+that stands against the northern side of the corridor.  The corridor
+
+continues to head to both the east and west.
+
+~
+~
+-235274235 0 5 0
+D1
+~
+~
+0 -1 75754 10 10 5
+D3
+~
+~
+0 -1 75752 10 10 5
+A
+~
+~
+if( is_player( ch ) ) {
+
+  if( !is_follower( ch ) ) {
+
+    if( obj_in_room( 3610, room ) ) {
+
+      if( !mob_in_room( 2384, room ) ) {
+
+        junk_obj( obj_in_room( 3610, room ), 1 );
+
+        mload( 2384, room );
+
+        send_to_room( #move, room );
+
+        }
+
+      }
+
+    }
+
+  }
+
+else
+
+  acode( room, 2 );
+
+continue;
+
+~
+E
+move~
+Just as you leave the room you think you saw the statue move.
+
+~
+!
+3 0 2
+A
+~
+~
+mob = mob_in_room( 2384, room );
+
+junk_mob( mob );
+
+if( !obj_in_room( 3610, room ) )
+
+  obj_to_room( oload( 3610 ), room );
+
+continue;
+
+~
+!
+3 0 8
+A
+~
+~
+if( obj_in_room( 3610, room ) )
+
+  junk_mob( mob_in_room( 2384, room ) );
+
+~
+!
+2 1000 0
+3610 17 100 -2 0
+-1
+S
+
+#75754
+A Turn in a Well-lit Corridor~
+The white marble corridor turns in a ninety degree angle heading both
+
+south and to the west.  Elaborate brass sconces are spaced at regular
+
+intervals along the walls and hold torches to keep this area well-lit.
+
+~
+~
+-235274235 0 5 0
+D2
+~
+~
+0 -1 75755 10 10 5
+D3
+~
+~
+0 -1 75753 10 10 5
+E
+sconce torch~
+These sconces are made from brass and feature a pattern of random,
+
+interlocking circles.  A torch is held in each sconce and surprisingly
+
+dont seem to emit any smoke.
+
+~
+-1
+S
+
+#75755
+A Dead End in the Well-lit Corridor~
+The white marble corridor comes to an abrupt end here with the only item
+
+of note being a statue of a bronze warrior standing against the southern
+
+wall.  Torches in elaborately decorated brass sconces keep this dead end
+
+well lit.  The only exit from here is to the north.
+
+~
+~
+-235274235 0 5 0
+D0
+~
+~
+0 -1 75754 10 10 5
+A
+~
+~
+if( !mob_in_room( 2384, room ) ) {
+
+  if( rflag( reset0, room ) ) {
+
+    remove_rflag( reset0, room );
+
+    junk_obj( obj_in_room( 3610, room ), 1 );
+
+    mload( 2384, room );
+
+    }
+
+  }
+
+~
+!
+1 0 1
+A
+~
+~
+mob = mob_in_room( 2384, room );
+
+junk_mob( mob );
+
+if( !obj_in_room( 3610, room ) )
+
+  obj_to_room( oload( 3610 ), room );
+
+continue;
+
+~
+!
+3 0 1
+3610 17 100 -2 0
+-1
+S
+
+#75756
+Dark Room~
+This small room is somewhat dark and gloomy and reeks with an
+
+overpowering musky odor.  About the edges of the room are scattered bits
+
+of bone, pieces of cloth, and the odd bit of unidentifiable debris.  The
+
+only way out of this room is via a heavy wooden door that has been bound
+
+with blackened iron.
+
+~
+~
+-235405312 3 9 0
+D2
+heavy wooden door~
+heavy wooden door south~
+391 3586 75751 3 10 5
+A
+~
+~
+if( is_open( room, south ) ) {
+
+  send_to_room( #shut, room );
+
+  close( room, south );
+
+  lock( room, south );
+
+  }
+
+~
+E
+shut~
+The door swings shut behind you with a click!
+
+~
+!
+1 0 4
+2385 9 1509949540 3 0
+-1
+S
+
+#75757
+A Plain Corridor~
+The walls of this crudely constructed corridor still bear many tool marks
+
+of its excavation.  Though the ceiling is high enough to allow even an
+
+ogre passage there are still a couple of protrusions that they would have
+
+to avoid.  A brass door, with delicate copper filigree patterning, lies
+
+to the north while the corridor continues toward the south.
+
+~
+~
+-235274235 0 5 0
+D0
+brass door~
+brass door north~
+391 3588 75751 3 10 5
+D2
+~
+~
+0 -1 75758 10 10 5
+-1
+S
+
+#75758
+A Dead End~
+This roughly constructed corridor ends in a crudely squared off dead end. 
+
+Chunks of rock litter the ground, providing the odd bit of treacherous
+
+footing.  The only way out of here appears to be the exit to the north.
+
+~
+~
+-235274227 0 5 0
+D0
+~
+~
+0 -1 75757 10 10 5
+D2
+~
+~
+2219 -1 75759 10 10 5
+E
+1 south~
+At first glance this wall looks like a poorly finished ending of this
+
+crudely constructed tunnel.  However on careful examination you can just
+
+make out the feint outline of door sized block of stone.  There doesn't
+
+appear to be a handle or any other obvious way to move this block of
+
+stone.
+
+~
+A
+search~
+rocks ground~
+act_tochar( #rock, ch );
+
+act_notchar( #rrock, ch );
+
+~
+E
+rock~
+You search through the rocks upon the ground and find a concealed lever.
+
+~
+E
+rrock~
+$n searches through the rocks on the ground.
+
+~
+!
+0 0 0
+A
+inspect~
+door wall south ceiling~
+if( find_skill( ch, inspect ) >= 7 ) {
+
+  act_tochar( #found, ch );
+
+  remove_rflag( reset1, room );
+
+  }
+
+else
+
+  act_tochar( #unfound, ch );
+
+~
+E
+found~
+After careful inspection of the door and surrounding area in the south
+
+wall you notice a very thin gap in the ceiling.  Something within the gap
+
+glints as you raise your light source up to shed more light upon the area.
+
+~
+E
+unfound~
+You find nothing out of the ordinary.
+
+~
+!
+0 0 0
+A
+untrap~
+door wall south ceiling~
+if( rflag( reset1, room ) ) {
+
+  act_tochar( #what_trap, ch );
+
+  end;
+
+  }
+
+if( find_skill( ch, untrap ) >= 7 ) {
+
+  remove_rflag( reset0, room );
+
+  act_tochar( #success, ch );
+
+  }
+
+else
+
+  act_tochar( #failure, ch );
+
+~
+E
+success~
+You manage to successfully disarm the trap.
+
+~
+E
+failure~
+The trap is just too complicated for you to work out.
+
+~
+E
+what_trap~
+You haven't found a trap to disarm yet.
+
+~
+!
+0 0 0
+A
+pull~
+lever~
+if( rflag( reset0, room ) ) {
+
+  act_tochar( #opps, ch );
+
+  act_notchar( #ropps, ch );
+
+  i = 4d20+40;
+
+  dam_message( ch, i, "the falling blade" );
+
+  inflict( ch, mob, i, "a blade trap" );
+
+  send_to_room( #spring, room );
+
+  }
+
+else {
+
+  act_tochar( #pull, ch );
+
+  act_notchar( #rpull, ch );
+
+  open( room, south );
+
+  }
+
+~
+E
+pull~
+You pull the lever and the block of stone glides quietly open.
+
+~
+E
+rpull~
+$n pulls a lever causing the block of stone to glide quietly open.
+
+~
+E
+opps~
+@GYou pull on the lever releasing a blade from the ceiling!!@n 
+
+~
+E
+ropps~
+@G$n pulls on a lever releasing a blade from the ceiling!!@n 
+
+~
+E
+spring~
+The blade is pulled back up into the ceiling.
+
+~
+!
+0 0 0
+-1
+S
+
+#75759
+A Guard Post~
+The walls of this alcove are roughly hewn rock.  Set into the east wall
+
+is a most unusual door.  The rough hewn surface of the the north wall is
+
+interrupted by a slab of much darker stone, it's surface worked to an
+
+almost glassy polish in stark contrast to the walls themselves.  There is
+
+a mottly assortment of dry bones and other refuse in the southwest corner
+
+of the room.
+
+~
+IMM NOTE: only way to get the key is to steal it from the guard.  This is
+
+deliberate ;) 
+
+~
+-235274235 0 5 0
+D0
+~
+~
+2219 -1 75758 10 10 5
+D1
+Opaque glass door~
+opaque glass door~
+407 3617 75760 3 10 5
+E
+glass door~
+This most unusual door is made from opaque, white glass which has a fine
+
+netting of metal through it to add strength.  It is only possible to make
+
+out vague shapes on the other side of the door.  The doors lock is of a
+
+delicate glass construction that looks too fragile to actually be usable.
+
+~
+E
+slab~
+This slab of stone in the north wall has a smooth, almost glassy texture
+
+to it, as if it has either been heated to an extreme temperature, or
+
+thousands of hands have polished it.  A small lever is set in the wall
+
+next to it.
+
+~
+A
+pull~
+lever~
+if( is_open( room, north ) ) {
+
+  act_tochar( #close, ch );
+
+  act_notchar( #rclose, ch );
+
+  close( room, north );
+
+  }
+
+else {
+
+  act_tochar( #open, ch );
+
+  act_notchar( #ropen, ch );
+
+  open( room, north );
+
+  }
+
+~
+E
+open~
+You pull the lever and the slab of stone glides open with barely a sound.
+
+~
+E
+ropen~
+$n pulls a lever and the slab of stone glides open with barely a sound.
+
+~
+E
+close~
+You pull the lever and the slab of stone glides closes with barely a
+
+sound.
+
+~
+E
+rclose~
+$n pulls a lever and the slab of stone glides closes with barely a sound.
+
+~
+!
+0 0 0
+A
+pick~
+door 1 east opaque glass~
+act_tochar( #pick, ch );
+
+act_notchar( #rpick, ch );
+
+remove_rflag( reset0, room );
+
+~
+E
+pick~
+Your attempts to pick the lock on the opaque glass door only result in
+
+you destroying the lock mechanism.
+
+~
+E
+rpick~
+$n attempts to pick the opaque glass door only result in much cursing
+
+arising from $m.
+
+~
+!
+0 0 0
+A
+unlock~
+1 east opaque glass door~
+if( has_obj( 3617, ch ) ) {
+
+  if( rflag( reset0, room ) ) {
+
+    act_tochar( #unlock, ch );
+
+    act_notchar( #runlock, ch );
+
+    unlock( room, east );
+
+    }
+
+  else {
+
+    act_tochar( #nope, ch );
+
+    act_notchar( #rnope, ch );
+
+    }
+
+  }
+
+else
+
+  continue;
+
+~
+E
+unlock~
+You unlock the Opaque glass door to the east with a delicate glass key.
+
+~
+E
+runlock~
+$n unlocks the Opaque glass door to the east with a delicate glass key.
+
+~
+E
+nope~
+You try to unlock the door but the lock mechanism has been shattered.
+
+~
+E
+rnope~
+No matter what $n tries, $e can't unlock the door.
+
+~
+!
+0 0 0
+A
+break smash~
+opaque glass door 1 east~
+if( rflag( reset1, room ) ) {
+
+remove_rflag( reset1, room );
+
+  act_tochar( #break, ch );
+
+  act_notchar( #rbreak, ch );
+
+  i = 4d5;
+
+  dam_message( ch, i, "broken glass" );
+
+  inflict( ch, mob, i, "their attempts to smash a door" );
+
+  }
+
+else {
+
+  act_tochar( #break2, ch );
+
+  act_notchar( #rbreak2, ch );
+
+  i = 4d10;
+
+  dam_message( ch, i, "broken glass" );
+
+  inflict( ch, mob, i, "their attempts to smash a door" );
+
+  }
+
+~
+E
+break~
+You step back from the door a bit, then taking a small run up attempt to
+
+smash the glass door.  From this attempt you manage to shatter some of
+
+the glass, picking up a few scratches as you do this, but the door
+
+remains fairly intact.
+
+~
+E
+rbreak~
+$n attempts to break the opaque glass door by flinging themselves at the
+
+door.  For their trouble they recieve a few scratches, shatter the glass
+
+a bit, but leave the door fairly intact.
+
+~
+E
+break2~
+You launch yourself at the already damaged door, cutting yourself on the
+
+already broken glass.  Although you do manage to shatter some more of the
+
+glass, the metal wiring seems to be impervious to your attempts.
+
+~
+E
+rbreak2~
+$n launches themselves at the already damaged door.  Their efforts only
+
+seem to gain them some nasty cuts from the broken glass and frustration.
+
+~
+!
+0 0 0
+2392 9 1509949540 3 0
+-1
+S
+
+#75760
+A Mirrored Room~
+Mirrors are one the major features of this room with them hanging from
+
+the walls, set into the ceiling and standing freely about the room.  The
+
+other major feature is a large bed in the center of the room which is
+
+covered in richly embroidered bed coverings, fine linen sheets, and many
+
+plump pillows, making it fit for any princess.  The only way out of this
+
+room is an opaque glass door set in the west wall.
+
+~
+~
+-235274235 0 5 0
+D2
+~
+~
+2219 -1 75761 10 10 5
+D3
+Opaque glass door~
+opaque glass door~
+407 3617 75759 3 10 5
+E
+door~
+This most unusual door is made from opaque, white glass which has a fine
+
+netting of metal through it to add strength.  It is only possible to make
+
+out vague shapes on the other side of the door.  The doors lock is of a
+
+delicate glass construction that looks too fragile to actually be usable.
+
+~
+E
+mirrors~
+The mirrors are of different styles, shapes and sizes.  Some have
+
+bevelled edges, others feature finely carved wooden frames, other have
+
+delicate etching on them.  The mirror that catches your attention the
+
+most is a huge mirror on the southern wall.  It is about four foot wide
+
+and goes from floor to ceiling and features an etched design of flowered
+
+vines around its edge.
+
+~
+A
+inspect~
+mirror 1 south~
+if( find_skill( ch, inspect ) >= random( 6, 8 ) )
+
+  act_tochar( #pass, ch );
+
+else
+
+  act_tochar( #fail, ch );
+
+~
+E
+pass~
+After much scrutiny you detect two pressure pads, one of either side of
+
+the mirror.  The pressure pad to the right looks like it is possibly a
+
+dummy pad, while you would think the one to the left probably deactivates
+
+the trap.
+
+~
+E
+fail~
+After much scrutiny you detect two pressure pads, one of either side of
+
+the mirror.  You think one of them will deactivate the trap, but you are
+
+unsure which one.
+
+~
+!
+0 0 0
+A
+press push touch~
+left~
+act_tochar( #press, ch );
+
+act_notchar( #rpress, ch );
+
+remove_rflag( reset0, room );
+
+~
+E
+press~
+You press the pressure plate on the left side of the mirror.
+
+~
+E
+rpress~
+$n presses a section of wall on the left side of the mirror.
+
+~
+!
+0 0 0
+A
+press push touch~
+right~
+act_tochar( #press, ch );
+
+act_notchar( #rpress, ch );
+
+i = 4d20+20;
+
+dam_element( ch, i, "arcs of electricity", 4 );
+
+inflict_shock( ch, mob, i, "a trap" );
+
+~
+E
+press~
+@CAs you press the pressure pad on the right side of the mirror arcs of
+
+electricity leap out and zap you!@n 
+
+~
+E
+rpress~
+@C$n presses a section of wall near the mirror and gets zapped by arcs of
+
+electricity!@n 
+
+~
+!
+0 0 0
+A
+open push~
+mirror~
+if( mob_in_room( 2394, room ) ) {
+
+  act_tochar( #nope, ch );
+
+  act_notchar( #rnope, ch );
+
+  send_to_room( #dirty, room );
+
+  }
+
+else {
+
+  if( !is_open( room, south ) ) {
+
+    if( rflag( reset0, room ) ) {
+
+      act_tochar( #oops, ch );
+
+      act_notchar( #roops, ch );
+
+      i = 4d20+50;
+
+      dam_element( ch, i, "electrical current", 4 );
+
+      inflict_shock( ch, mob, i, "a trap" );
+
+      }
+
+    else {
+
+      act_tochar( #open, ch );
+
+      act_notchar( #ropen, ch );
+
+      open( room, south );
+
+      }
+
+    }
+
+  else
+
+    act_tochar( #already, ch );
+
+  }
+
+~
+E
+open~
+The mirror swivels open at your push, revealing a room to the south.
+
+~
+E
+ropen~
+The mirror swivels open at $n's push, revealing a room to the south.
+
+~
+E
+oops~
+@CYou push on the mirror and get zapped by an electrical current!@n 
+
+~
+E
+roops~
+@C$n pushes on the mirror and gets zapped by an electrical current!@n 
+
+~
+E
+nope~
+You reach out to touch the mirror only to have your hand slapped away by
+
+Calissa.
+
+~
+E
+rnope~
+$n reaches out to touch the mirror only to have $s hand slapped away by
+
+Calissa.
+
+~
+E
+dirty~
+Calissa says:
+
+"Don't touch my mirror!  You will leave dirty marks all over it."
+
+~
+E
+already~
+The way south is already open.
+
+~
+!
+0 0 0
+2394 9 1509949500 3 0
+3711 16 1509957888 -1 0
+-1
+S
+
+#75761
+A Treasure Room~
+This roughly carved out room is only about five feet square.  A couple of
+
+shelves have been put up on the walls, and a few open topped chests line
+
+the walls as well.  In the north wall is a slab of smooth stone that
+
+seems out of place with the rest of the walls in this room.
+
+~
+~
+-235274227 0 5 0
+D0
+~
+~
+2219 -1 75760 10 10 5
+E
+slab north~
+Positioned in the middle of the northern wall this smooth slab of stone
+
+is about four foot wide and reaches from floor to ceiling.  Set in the
+
+wall next to it is a lever.
+
+~
+A
+pull~
+lever~
+if( is_open( room, north ) ) {
+
+  act_tochar( #close, ch );
+
+  act_notchar( #rclose, ch );
+
+  close( room, north );
+
+  }
+
+else {
+
+  act_tochar( #open, ch );
+
+  act_notchar( #ropen, ch );
+
+  open( room, north );
+
+  }
+
+~
+E
+open~
+You pull the lever and the slab of stone pivots open.
+
+~
+E
+ropen~
+$n pulls a lever and the slab of stone pivots open.
+
+~
+E
+close~
+You pull the lever and the slab of stone pivots closed.
+
+~
+E
+rclose~
+$n pulls a lever and the slab of stone pivots closed.
+
+~
+!
+0 0 0
+197 17 1509949465 -2 0
+455 17 1509949475 -2 0
+105 17 1509949480 -2 0
+521 17 1509949445 -2 0
+16 17 1509949490 -2 0
+16 17 1509949465 -2 0
+16 17 1509949450 -2 0
+-1
+S
+
+#0
+

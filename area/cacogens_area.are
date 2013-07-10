@@ -1,0 +1,101 @@
+#AREA
+Cacogen's Area~
+Cacogen~
+~
+
+70 0
+1
+#ROOMS
+
+#77500
+Ledge~
+Out to the east, an inky, still body of water spreads, disappearing into
+
+gloom. A patina of mist hangs in motionless swirls over the smooth
+
+plane.  Below a pile of cracked and split boulders, smashed together and
+
+glistening with moisture, looms over a rough beach of splintered granite. 
+
+The angular ledge here is only a few feet wide, a doorstop wedged against
+
+the rock face forming the western border of the water.  A dark crevice
+
+slides into the rock.
+
+~
+~
+-235405309 11 5 0
+D3
+~
+~
+0 -1 77501 10 10 5
+A
+~
+~
+~
+!
+0 0 0
+-1
+S
+
+#77501
+Nothing~
+A vertical crack angles downwards to the west here, deep inside the
+
+mountain.  Crushed splinters of rose-coloured granite form a rough
+
+sliding floor.  A short scramble up the slope eastwards the crack appears
+
+to end, opening into darkness, atendrils of mist spilling gently down
+
+into this gap.
+
+~
+~
+-235405309 12 9 0
+D1
+~
+~
+0 -1 77500 10 10 5
+D3
+~
+~
+0 -1 77503 10 10 5
+-1
+S
+
+#77502
+Shard Beach~
+Barely ten feet wide, this beach of splintered granite runs along this
+
+part of the west edge of the lake.  The black water lies still to the
+
+east, motionless fog obscuring the distance.  Jagged fang-like
+
+stalagtites dangle from the ceiling as it descends steadily to the east,
+
+motionless fog obscuring the distance.
+
+~
+~
+-235405309 12 9 0
+-1
+S
+
+#77503
+Nothing~
+Here, going west, the crack through the
+
+~
+~
+-235405309 12 9 0
+D1
+~
+~
+0 -1 77501 10 10 5
+-1
+S
+
+#0
+

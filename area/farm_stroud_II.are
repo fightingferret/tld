@@ -1,0 +1,2250 @@
+#AREA
+Stroud Farm~
+Ylena~
+~
+
+0 0
+0
+#ROOMS
+
+#42750
+The Farm Courtyard~
+Although the ground is well compacted dirt, it is spotlessly neat, with
+
+not one weed or any other sign of clutter to be seen, the only
+
+imperfections in the ground are wagon tracks, these tracks continue to
+
+the the east, onto to the road, and also to the north and west.  A white,
+
+wooden gate to the east is the entrance to this farm, on either side of
+
+the gate is a pole, these poles support an overhead sign.  Standing to
+
+the south is a small, neat looking house with a bright red door.
+
+~
+[Janua] I'm too large to go south, too. But that one's okay :)
+
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 42757 10 10 5
+D1
+~
+~
+0 -1 77055 10 10 5
+D2
+door~
+door south~
+131 -1 42751 7 10 5
+D3
+~
+~
+0 -1 42753 10 10 5
+E
+sign~
+A lot of care and detail has gone into the construction of this wooden
+
+sign which spans the width of the gate.  The edges have been bevelled and
+
+then painted a nice, bright red color, the main body of the sign is
+
+white, and the letters of the sign have been made with painted apples. 
+
+The sign reads: Thank-you for visiting Stroud Farm.
+
+~
+E
+house door south~
+The whitewashed walls of this two storey dwelling almost gleam in the
+
+light.  A bright red door with a gingham-curtained window on either side
+
+help lend this dwelling a welcoming feeling.  Beneath each window is a
+
+window-box full of brightly colored petunias.
+
+~
+-1
+S
+
+#42751
+The Farm House~
+The interior of the farm house is warm, cheery and cosy, even if it is a
+
+little cramped for those human-sized or taller.  Just to the side of the
+
+door is a small rack on the ground for shoes, and above that is a row of
+
+pegs for jackets and scarves.  Along the southern wall is a huge
+
+fireplace and a kiln-like oven.  A heavy wooden table with six chairs
+
+around it, is positioned in front of the fireplace.  A brightly decorated
+
+cupboard and a sturdy bench line the eastern wall, and a spiral staircase
+
+on the western side of the room leads to the upper storey.
+
+~
+~
+-201850875 0 5 0
+D0
+door~
+door north~
+131 -1 42750 10 10 5
+D4
+~
+~
+0 -1 42771 10 10 5
+E
+table~
+The table is made of a heavy wood and has been stained a honey color.  A
+
+red-checked, square gingham table cloth has been lain on the table in a
+
+diagonal setting, and in the middle of the tablecloth is a small vase of
+
+bright wildflowers.  The chairs at either end of the table are carved
+
+with patterns of trees, while the two chairs down either side of the
+
+table are plain, but sturdy.
+
+~
+E
+fireplace kiln oven~
+Above the fireplace is a mantle with various little knick-knacks ranging
+
+from small figurines to crudely made ornaments.  To the side of the huge
+
+fireplace is a kiln style oven that has some wonderful odors of apple
+
+pies and roasting chickens emanating from it.  The fireplace itself looks
+
+large enough to accommodate a decent sized cauldron of soup or stew.
+
+~
+E
+cupboard east bench~
+A large kitchen cupboard stands along the east wall.  The upper portion
+
+of the cupboard is open and houses cups, plate, saucers, bowls, pitchers,
+
+and other assorted crockery.  Below this portion is a set of doors that
+
+have been engraved with a huge tree.  A bench with more cupboards
+
+underneath also can be found along the east wall.  On the wall above the
+
+bench hang a few pots on hooks, several strands of dried herbs, a string
+
+of onions, and a couple of kitchen knives.
+
+~
+E
+window~
+The view into the farms bustling courtyard is framed by a pair of gingham
+
+curtains.
+
+~
+2291 9 1509949540 3 0
+-1
+S
+
+#42752
+A Storage Shed~
+Stacked along the side walls are wooden crates filled with various
+
+produce that is waiting to be taken to the markets.  Along the back of
+
+the shed various garden tools are stored neatly, some simply leaning
+
+against the wall, and others hanging from hooks and nails placed in that
+
+wall for that purpose.  Parked in the middle of the shed is a double-axle
+
+wagon.
+
+~
+[Dinnin] LOOK WAGON : Misspelled word "AXEL" should be AXLE
+
+~
+-235405308 0 5 0
+D0
+shed door~
+shed door~
+131 -1 42753 10 10 5
+E
+crate produce~
+The closed, slatted crates contain a number of items ready to go to
+
+market, apples, turnips, zucchini and beans, as well as a smaller crate
+
+of tobacco leaves.
+
+~
+E
+wall tool garden~
+Leaning against the back wall are a few hoes, as well as a couple of
+
+ladders.  Shears, work gloves, shovels, and pick forks are also stored
+
+along the back of the shed.
+
+~
+E
+wagon~
+This wagon, though small by a human-sized or larger race's perspective,
+
+looks like it could still carry a fair load off to market.  The
+
+double-axel design lends stability, making the job of loading and
+
+unloading it much easier.  The sides of the wagon have painted on it a
+
+mural in apples that spells out the name Stroud.
+
+~
+A
+search move~
+crates~
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  if( !mob_in_room( 2301, room ) ) {
+
+    act_tochar( #flush, ch );
+
+    act_notchar( #rflush, ch );
+
+    mload( 2301, room );
+
+    }
+
+  else
+
+    act_tochar( #nothing, ch );
+
+  }
+
+else
+
+  act_tochar( #nothing, ch );
+
+~
+E
+flush~
+Your search of the crates has flushed a field mouse out of hiding!
+
+~
+E
+rflush~
+$n's search of the crates has flushed a field mouse out of hiding!
+
+~
+E
+nothing~
+Your search reveals nothing.
+
+~
+!
+0 0 0
+A
+get take~
+tools hoe ladder~
+if( rflag( reset1, room ) ) {
+
+  remove_rflag( reset1, room );
+
+  act_tochar( #clatter, ch );
+
+  act_notchar( #rclatter, ch );
+
+  }
+
+else
+
+  act_tochar( #mess, ch );
+
+~
+E
+clatter~
+You go to grab one of the tools when you fumble, causing them the
+
+@Cclatter@n to the ground!  hmm..  maybe you better leave before someone
+
+gets here to investigate.
+
+~
+E
+rclatter~
+@CClatter!  Crash!  Bang!@n
+
+$n's attempts to get one of the tools seems to have failed miserably!
+
+~
+E
+mess~
+The tools are in a jumbled mess on the floor.
+
+~
+!
+0 0 0
+-1
+S
+
+#42753
+The Farm Courtyard~
+Wagon tracks in the compacted ground lead into a stone shed to the south,
+
+while located to the west is a small barn.  Various smells of hay,
+
+apples, and other freshly picked produce linger and mix to create a
+
+surprisingly pleasant odor.  Barking, the noises of children playing, the
+
+clucking of chickens and the odd adult voice intermingle with each other
+
+and seem to come from all points of the compass.
+
+~
+[Janua] as a troll, I'm too large to fit west
+
+[Ylena] rooms to both south and west set to ogre sized now..
+
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 42756 10 10 5
+D1
+~
+~
+0 -1 42750 10 10 5
+D2
+shed door~
+shed door south~
+131 -1 42752 10 10 5
+D3
+barn door~
+barn door west~
+131 -1 42754 10 10 5
+E
+barn west~
+This structure is built of a combination of stone and wood.  The lower
+
+section of the barn is all stone work, and the upper being wood.  Double
+
+doors lead into the inside, and each door is composed of two parts, an
+
+upper and lower section.  You would think that this barn could at most
+
+only house two horses.
+
+~
+E
+shed south~
+Built of stone, this shed looks like it could hold a fair amount of gear
+
+and produce.  Two sturdy, wooden doors and a slate roof finish the
+
+building off.  Well-worn track marks in the ground lead into this shed.
+
+~
+A
+open~
+1 south shed~
+if( is_open( room, south ) )
+
+  act_tochar( #open, ch );
+
+else
+
+  if( rflag( reset0, room ) ) {
+
+  if( !is_open( room, south ) ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #splash, ch );
+
+    act_notchar( #rsplash, ch );
+
+    if( mob_in_room( 2319, room ) ) {
+
+      act_tochar( #polly, ch );
+
+      act_notchar( #rpolly, ch );
+
+      }
+
+    if( mob_in_room( 2320, room ) ) {
+
+      act_tochar( #molly, ch );
+
+      act_notchar( #rmolly, ch );
+
+      }
+
+    }
+
+  open( room, south );
+
+  }
+
+else
+
+  if( !rflag( reset0, room ) ) {
+
+  act_tochar( #door, ch );
+
+  act_notchar( #rdoor, ch );
+
+  open( room, south );
+
+  }
+
+~
+E
+polly~
+Polly falls into a giggling fit at your mishap.
+
+~
+E
+rpolly~
+Polly falls into a giggling fit at $n's mishap.
+
+~
+E
+molly~
+Molly falls into a giggling fit at your mishap.
+
+~
+E
+rmolly~
+Molly falls into a giggling fit at $n's mishap.
+
+~
+E
+splash~
+@CSPLASH!!  You are drenched in water that was in a bucket that was
+
+precariously perched above the shed door!@n
+
+~
+E
+rsplash~
+@CSPLASH!!  $n gets drenched in water that was in a bucket that was
+
+precariously perched above the shed door!@n 
+
+~
+E
+open~
+The shed door is already open.
+
+~
+E
+door~
+You open the shed door.
+
+~
+E
+rdoor~
+$n opens the shed door.
+
+~
+!
+0 0 0
+2307 9 1509949540 3 0
+2319 9 1509949540 3 0
+2320 9 1509949540 3 0
+-1
+S
+
+#42754
+A Small Barn~
+Inside this neat little barn are two horse stalls that look like they
+
+could only comfortably house a small pony.  One of the stalls is full of
+
+neatly stacked bales of hay, while the other stall bears evidence that it
+
+is being used for its intended purpose.  Hanging from the ceiling, a
+
+lantern provides a cheery light source.
+
+~
+~
+-235405307 0 5 0
+D1
+barn door~
+barn door east~
+131 -1 42753 10 10 5
+A
+get~
+lantern~
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  if( random( 1, 10 ) == 1 ) {
+
+    act_tochar( #get, ch );
+
+    act_notchar( #rget, ch );
+
+    obj_to_char( oload( 25 ), ch );
+
+    }
+
+  else
+
+    act_tochar( #oops, ch );
+
+  act_notchar( #roops, ch );
+
+  obj_to_room( oload( 3446 ), room );
+
+  }
+
+else
+
+  act_tochar( #nothing, ch );
+
+~
+E
+get~
+You manage to skillfully reach up and unhook the lantern from ceiling!
+
+~
+E
+rget~
+$n manages to skillfully unhook the lantern from ceiling!
+
+~
+E
+oops~
+You had just managed to slip the lantern's handle over the ceiling hook,
+
+when it slipped from your hands, fell to the floor and shattered into a
+
+worthless pile!
+
+~
+E
+roops~
+$n had just managed to slip the lantern's handle over the ceiling hook,
+
+when it slipped from $s hands, fell to the floor and shattered into a
+
+worthless pile!
+
+~
+E
+nothing~
+Someone looks to have already taken the lantern.
+
+~
+!
+0 0 0
+2297 9 1509949540 3 0
+-1
+S
+
+#42755
+Inside the Chicken Coop~
+Lining the back wall of the chicken coop are a series of nesting boxes
+
+which each contains a small pile of straw arranged in a cozy looking nest.
+
+Three long, wooden perches arranged at different heights and distances
+
+from the wall, are set up on the northern side of the coop, while along
+
+the south wall a solitary box, that has been covered with an old burlap
+
+sack, sits on the floor.  A door in the middle of the east wall allows
+
+all non-chicken sized bodies access to the outside, while on either side
+
+of the door a small, latchable flap enables the chickens to come and go
+
+as they please.
+
+~
+~
+-235405308 0 4 0
+D1
+chicken coop door east~
+coop door~
+131 -1 42756 10 10 5
+A
+l lo loo look search~
+solitary box~
+act_tochar( #search, ch );
+
+act_notchar( #rsearch, ch );
+
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  if( !mob_in_room( 2303, room ) ) {
+
+    send_to_room( #chook, room );
+
+    mload( 2303, room );
+
+    }
+
+  else
+
+    act_tochar( #nothing, ch );
+
+  }
+
+else
+
+  act_tochar( #nothing, ch );
+
+~
+E
+search~
+This box is just over one foot square, and rests on the floor so that the
+
+opening is located on the side facing you.  An old burlap sack covers the
+
+box and as you move it aside get a better look inside....
+
+~
+E
+rsearch~
+$n moves aside the old burlap sack on the solitary box to get a better
+
+look inside.
+
+~
+E
+chook~
+@WAn angry flurry of feathers, claws, and pecks errupts from the box,
+
+searching for a target to vent its anger at being disturbed.@n' 
+
+~
+E
+nothing~
+to find that the box is empty, aside from a well used nest.
+
+~
+!
+0 0 0
+A
+search~
+nest~
+i = random( 1, 3 );
+
+if( rflag( reset1, room ) ) {
+
+  remove_rflag( reset1, room );
+
+  if( i == 1 ) {
+
+    act_tochar( #egg, ch );
+
+    act_notchar( #regg, ch );
+
+    obj_to_char( oload( 3439 ), ch );
+
+    }
+
+  if( i == 2 ) {
+
+    act_tochar( #straw, ch );
+
+    act_notchar( #rstraw, ch );
+
+    obj_to_char( oload( 1600 ), ch );
+
+    }
+
+  if( i == 3 ) {
+
+    act_tochar( #nothing, ch );
+
+    act_notchar( #rnothing, ch );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #empty, ch );
+
+~
+E
+egg~
+You rummage through the nest and find a newly laid egg!
+
+~
+E
+regg~
+$n rummages through the nest and finds a newly laid egg!
+
+~
+E
+straw~
+You rummage through the nest and get a piece of straw for your effort!
+
+~
+E
+rstraw~
+$n rummages through the nest and gets a piece of straw for $s effort!
+
+~
+E
+nothing~
+You rummage through the nest but find nothing of worth.
+
+~
+E
+rnothing~
+$n rummages through the nest but finds nothing of worth.
+
+~
+E
+empty~
+The nests look like they have already been disturbed.
+
+~
+!
+0 0 0
+-1
+S
+
+#42756
+The Farm Courtyard~
+Bordered by a low stone fence to the north, and a chicken coop to the
+
+west, the ground of this section of the farms courtyard, though still
+
+neat, bears many tiny scratch marks and evidence of some digging.  Just
+
+over the fence are apples trees, and a branch from one of the closer
+
+trees overhangs the fence and gives a bit of shade from the sun.
+
+~
+[Ghent] shouldn't the brown fox be skinnable?
+
+~
+-235405312 2 9 0
+D1
+~
+~
+0 -1 42757 10 10 5
+D2
+~
+~
+0 -1 42753 10 10 5
+D3
+chicken coop door~
+coop door west~
+131 -1 42755 10 10 5
+E
+coop west~
+Resting on small stilts, the sturdy wooden coop looks like it can keep
+
+the most determined fox out.  A ramp on either side of the building leads
+
+up to a small, flap-like door.  In the center of the small coop is a
+
+single door with a bolt style latch.
+
+~
+E
+fence~
+The fence is about two feet high, and has been constructed by carefully
+
+stacking large stones on top of another, with the occasional use of
+
+mortar to add strength and stability to the fence.  As a result of this
+
+method of construction, the base is slightly broader than the top.
+
+~
+A
+~
+~
+if( random( 1, 4 ) == 1 )
+
+act_tochar( #spy, ch );
+
+~
+E
+spy~
+@yYou think you just saw something slink furtively under the chicken coop.@n
+
+~
+!
+1 0 14
+A
+search l lo loo look~
+under~
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  if( !mob_in_room( 2304, room ) ) {
+
+    act_tochar( #flush, ch );
+
+    act_notchar( #rflush, ch );
+
+    mload( 2304, room );
+
+    }
+
+  else
+
+    act_tochar( #figment, ch );
+
+  }
+
+else
+
+  act_tochar( #figment, ch );
+
+~
+E
+flush~
+You flush out a brown fox from under the chicken coop!
+
+~
+E
+rflush~
+@y$n flushes out a brown fox from under the chicken coop!@n
+
+~
+E
+figment~
+After a quick look under the chicken coop you find nothing.  Maybe the
+
+movement you saw was just a figment of your imagination?
+
+~
+!
+0 0 0
+2309 9 1509949540 3 0
+2310 9 1509949540 3 0
+2310 9 1509949540 3 0
+2310 9 1509949540 3 0
+2311 9 1509949540 3 0
+-1
+S
+
+#42757
+The Farm Courtyard~
+The wagon tracks in the ground bear testimony of much travel, leading
+
+from both the apple orchard to the north, and the vegetable garden to the
+
+east, the tracks then continue toward the south.  A white-washed, wooden
+
+gate separates the vegetable garden from the courtyard, which is in stark
+
+contrast to the unhindered access to the apple orchard.
+
+~
+~
+-235405312 2 9 0
+D0
+~
+~
+0 -1 42762 10 10 5
+D1
+white, wooden gate~
+wooden gate east~
+131 -1 42758 7 10 5
+D2
+~
+~
+0 -1 42750 10 10 5
+D3
+~
+~
+0 -1 42756 7 10 5
+-1
+S
+
+#42758
+A Vegetable Garden~
+The vegetable garden is laid out in neat, well-tended rows that radiate
+
+out from a narrow path.  The path starts at the white, wooden gate to the
+
+west, and then leads to more garden beds to both the north and east.  The
+
+predominate vegetable that is being grown in these garden beds are
+
+zucchini vines that look to be just starting to bear fruit.  A stone
+
+fence blocks access to road to the south and to the north-east you can
+
+see the township of Appleglen.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 42761 10 10 5
+D1
+~
+~
+0 -1 42759 10 10 5
+D3
+white, wooden gate~
+wooden gate west~
+131 -1 42757 10 10 5
+E
+fence~
+The fence is about two feet high, and has been constructed by carefully
+
+stacking large stones on top of another, with the occasional use of
+
+mortar to add strength and stability to the fence.  As a result of this
+
+method of construction, the base is slightly broader than the top.
+
+~
+E
+narrow path ground~
+Constructed by laying heavy, wooden planks into the ground, the path is
+
+barely wide enough to allow you to walk comfortably through the garden
+
+beds that are on either side of the path.
+
+~
+3469 17 1509949540 -2 0
+-1
+S
+
+#42759
+A Vegetable Garden~
+A narrow path runs though garden beds that have been planted with many
+
+neat rows of green beans.  At either end and midpoint of each row is a
+
+stake that has three lines of wire running between them to support the
+
+growing bean plants.  The garden is bordered to the east and south by a
+
+stone fence that prevents access to the road passing by the garden plot,
+
+while the narrow path continues to both the north and west, leading to
+
+more garden beds.  Close by, to the north, the township of Appleglen can
+
+be seen.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 42760 10 10 5
+D3
+~
+~
+0 -1 42758 10 10 5
+E
+narrow path ground~
+Constructed by laying heavy, wooden planks into the ground, the path is
+
+barely wide enough to allow you to walk comfortably through the garden
+
+beds that are on either side of the path.
+
+~
+3460 17 1509949540 -2 0
+-1
+S
+
+#42760
+The Tobacco Patch~
+Tobacco plants that easily reach waist height, crowd the narrow path that
+
+leads to other garden beds to both the west and south.  Almost ready to
+
+be harvested, it is hard to judge where the different rows of tobacco
+
+are, as the leaves from individual plants intertwine with each other and
+
+resemble a tiny jungle.  A stone fence skirts both north and east of the
+
+garden and block access to the road running down the eastern side as well
+
+as hindering access to Appleglen, which is virtually a stones throw away
+
+to the north.
+
+~
+~
+-235405312 3 9 0
+D2
+~
+~
+0 -1 42759 10 10 5
+D3
+~
+~
+0 -1 42761 10 10 5
+E
+narrow path ground~
+Constructed by laying heavy, wooden planks into the ground, the path is
+
+barely wide enough to allow you to walk comfortably through the garden
+
+beds that are on either side of the path.
+
+~
+2314 9 1509949540 3 0
+3457 17 1509949540 -2 0
+-1
+S
+
+#42761
+A Vegetable Garden~
+Many small, leafy plants grow in neat rows on either side of a narrow
+
+path that continues to both the south and east leading to other garden
+
+beds.  A stone fence along the west side of the garden separates the
+
+garden from the neighbouring apple orchid, while a northern fence prevents
+
+access to the nearby town of Appleglen.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 42760 10 10 5
+D2
+~
+~
+0 -1 42758 10 10 5
+E
+narrow path ground~
+Constructed by laying heavy, wooden planks into the ground, the path is
+
+barely wide enough to allow you to walk comfortably through the garden
+
+beds that are on either side of the path.
+
+~
+E
+plant garden~
+These plants consist of a bunch cluster of leaves that originate from the
+
+top of a bulb like root that can just be seen in the soil.  Planted in
+
+neat rows and spaced at approximately four inches apart, the missing
+
+plants towards the back of a couple of rows is glaringly obvious.
+
+~
+A
+pick~
+leafy plant~
+if( rflag( reset0, room ) ) {
+
+  i = random( 1, 4 );
+
+  if( i <= 2 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #pick, ch );
+
+    act_notchar( #rpick, ch );
+
+    obj_to_char( oload( 3470 ), ch );
+
+    }
+
+  if( i == 3 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #nope, ch );
+
+    }
+
+  if( i == 4 ) {
+
+    remove_rflag( reset0, room );
+
+    if( !mob_in_room( 2316, room ) ) {
+
+      act_tochar( #oops, ch );
+
+      act_notchar( #roops, ch );
+
+      obj_to_char( oload( 3470 ), ch );
+
+      send_to_room( #emerged, room );
+
+      mload( 2316, room );
+
+      }
+
+    else {
+
+      act_tochar( #pick, ch );
+
+      act_notchar( #rpick, ch );
+
+      obj_to_char( oload( 3470 ), ch );
+
+      }
+
+    }
+
+  }
+
+else
+
+  act_tochar( #nope, ch );
+
+~
+E
+pick~
+You pull one of the leafy plants from the ground.
+
+~
+E
+rpick~
+$n pulls one of the leafy plants from the ground.
+
+~
+E
+none~
+There are no more plants within easy reach.
+
+~
+E
+nope~
+There are no plants within easy reach.
+
+~
+E
+oops~
+Something seems to be attached to the plant you just have pulled from the
+
+ground.
+
+~
+E
+roops~
+Something seems to be attached to the plant $n just pulled from the
+
+ground.
+
+~
+E
+emerged~
+@GA grey mole has just emerged from the ground.@n
+
+~
+!
+0 0 0
+-1
+S
+
+#42762
+The Apple Grove~
+A set of wagon tracks, running roughly north-south, weaves through the
+
+apple trees in the orchard.  A stone fence divides this orchard from
+
+Appleglen township to the east, while to the north and west the apple
+
+orchard continues.  To the south a gap in the stone wall allows passage
+
+out of the orchard.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 42767 10 10 5
+D2
+~
+~
+0 -1 42757 10 10 5
+D3
+~
+~
+0 -1 42763 10 10 5
+E
+fence~
+The fence is about two feet high, and has been constructed by carefully
+
+stacking large stones on top of another, with the occasional use of
+
+mortar to add strength and stability to the fence.  As a result of this
+
+method of construction, the base is slightly broader than the top.
+
+~
+E
+apple tree~
+Reaching proudly towards the sky, these healthy looking apple trees are
+
+covered in verdant leaves, fruit, both ready to eat and sill ripening,
+
+and the odd, late blooming blossom.
+
+~
+A
+pick get~
+apple~
+if( rflag( reset0, room ) ) {
+
+  i = random( 1, 4 );
+
+  if( i == 1 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #pick, ch );
+
+    act_notchar( #rpickf, ch );
+
+    obj_to_char( oload( 49 ), ch );
+
+    }
+
+  if( i == 2 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #pick, ch );
+
+    obj_to_char( oload( 3440 ), ch );
+
+    }
+
+  if( i == 3 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #pickf, ch );
+
+    obj_to_char( oload( 3448 ), ch );
+
+    }
+
+  if( i == 4 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #nothing, ch );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #nothing, ch );
+
+~
+E
+pick~
+You reach up to the nearest branch and pick an apple from the tree.
+
+~
+E
+rpick~
+$n picks an apple from the tree.
+
+~
+E
+pickf~
+You reach up to pick an apple, but can only reach one of the blossoms.
+
+~
+E
+rpickf~
+$n picks an apple blossom from the tree.
+
+~
+E
+nothing~
+All the apples are beyond your reach.
+
+~
+!
+0 0 0
+-1
+S
+
+#42763
+The Apple Grove~
+The apple tree that is here, slightly overhangs the stone fence that
+
+separates the orchard from a farm courtyard to the south.  More of these
+
+fruit bearing trees grow to the north, west and east, although a tree to
+
+the north seems to be somewhat unhealthy looking.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 8500 10 10 5
+D1
+~
+~
+0 -1 42762 10 10 5
+D3
+~
+~
+0 -1 42764 10 10 5
+E
+fence~
+The fence is about two feet high, and has been constructed by carefully
+
+stacking large stones on top of another, with the occasional use of
+
+mortar to add strength and stability to the fence.  As a result of this
+
+method of construction, the base is slightly broader than the top.
+
+~
+E
+apple tree~
+Reaching proudly towards the sky, these healthy looking apple trees are
+
+covered in verdant leaves, fruit, both ready to eat and sill ripening,
+
+and the odd, late blooming blossom.
+
+~
+A
+pick get~
+apple fruit~
+act_tochar( #nothing, ch );
+
+~
+E
+nothing~
+All the apples are beyond your reach.
+
+~
+!
+0 0 0
+-1
+S
+
+#42764
+The Apple Grove~
+Nestled in this quite corner, the apple tree silently reaches toward the
+
+sky.  The trees strong branches reach out to brush a chicken coop that is
+
+just beyond the stone fence to the south, and to the west they give shade
+
+to a bank of reeds that rises up just behind the western boundary fence
+
+of the orchard.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 42765 10 10 5
+D1
+~
+~
+0 -1 42763 10 10 5
+E
+fence~
+Carefully constructed by stacking large stones on top of each other, this
+
+section of the two foot high fence joins at right angles in the
+
+south-west corner of the apple orchard.  At the base of the fence a dark
+
+hole can be made out past some grass that is growing along the edges of
+
+the wall.
+
+~
+E
+apple tree~
+Reaching proudly towards the sky, these healthy looking apple trees are
+
+covered in verdant leaves, fruit, both ready to eat and sill ripening,
+
+and the odd, late blooming blossom.
+
+~
+E
+reed~
+The thick bank of dark-green reeds block any further view to the west. 
+
+An attempt to part them to see past them just proves to be a lesson in
+
+futility.
+
+~
+A
+pick get~
+fruit apple~
+if( rflag( reset0, room ) ) {
+
+  i = random( 1, 4 );
+
+  if( i == 1 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #pick, ch );
+
+    act_notchar( #rpick, ch );
+
+    obj_to_char( oload( 49 ), ch );
+
+    }
+
+  if( i == 2 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #pick, ch );
+
+    act_notchar( #rpick, ch );
+
+    obj_to_char( oload( 3440 ), ch );
+
+    }
+
+  if( i == 3 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #pickf, ch );
+
+    act_notchar( #rpickf, ch );
+
+    obj_to_char( oload( 3448 ), ch );
+
+    }
+
+  if( i == 4 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #nothing, ch );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #nothing, ch );
+
+~
+E
+pick~
+You reach up to the nearest branch and pick an apple from the tree.
+
+~
+E
+rpick~
+$n picks an apple from the tree.
+
+~
+E
+pickf~
+You reach up to pick an apple, but can only reach one of the blossoms.
+
+~
+E
+rpickf~
+$n picks an apple blossom from the tree.
+
+~
+E
+nothing~
+All the apples are beyond your reach.
+
+~
+!
+0 0 0
+A
+search~
+hole~
+~
+!
+0 0 0
+-1
+S
+
+#42765
+The Apple Grove~
+A thick bank of reeds hugs the stone fence of the western boundary of the
+
+apple orchard and then combines with the overhead branches of the apple
+
+tree to give the impression of having entered a secluded warren.  The
+
+muffled silence brought about by the vegetation is interrupted
+
+occasionally by the odd insect flying past, the chirping of birds, or a
+
+rustling amongst the leaves.  More apples can be seen to the north, south
+
+and east, with the eastern tree looking as though it has seen much better
+
+days.
+
+~
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 42770 10 10 5
+D1
+~
+~
+0 -1 8500 10 10 5
+D2
+~
+~
+0 -1 42764 10 10 5
+E
+tree~
+Reaching proudly towards the sky, these healthy looking apple trees are
+
+covered in verdant leaves, fruit, both ready to eat and sill ripening,
+
+and the odd, late blooming blossom.
+
+~
+E
+reeds west~
+A thick wall of dark green reeds reach up from beyond the stone fence to
+
+the west.  As you look them over, you think you notice some movement
+
+within the reeds.
+
+~
+E
+fence stone~
+The fence is about two feet high, and has been constructed by carefully
+
+stacking large stones on top of another, with the occasional use of
+
+mortar to add strength and stability to the fence.  As a result of this
+
+method of construction, the base is slightly broader than the top.
+
+~
+A
+search part move~
+reeds~
+if( rflag( reset0, room ) ) {
+
+  i = random( 1, 3 );
+
+  if( i == 1 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #disturb, ch );
+
+    act_notchar( #rdisturb, ch );
+
+    mload( 197, room );
+
+    }
+
+  if( i == 2 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #disturb, ch );
+
+    act_notchar( #rdisturb, ch );
+
+    mload( 210, room );
+
+    }
+
+  if( i == 3 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #nothing, ch );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #nothing, ch );
+
+~
+E
+disturb~
+Your search of the reeds seems to have disturbed something!
+
+~
+E
+rdisturb~
+$n's search of the reeds seems to have disturbed something!
+
+~
+E
+nothing~
+Whatever was in the reeds seems to have moved on.
+
+~
+!
+0 0 0
+A
+get pick~
+apple fruit~
+if( rflag( reset0, room ) ) {
+
+  i = random( 1, 4 );
+
+  if( i == 1 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #pick, ch );
+
+    act_notchar( #rpick, ch );
+
+    obj_to_char( oload( 49 ), ch );
+
+    }
+
+  if( i == 2 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #pick, ch );
+
+    act_notchar( #rpick, ch );
+
+    obj_to_char( oload( 3440 ), ch );
+
+    }
+
+  if( i == 3 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #pickf, ch );
+
+    act_notchar( #rpickf, ch );
+
+    obj_to_char( oload( 3448 ), ch );
+
+    }
+
+  if( i == 4 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #nothing, ch );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #nothing, ch );
+
+~
+E
+pick~
+You reach up to the nearest branch and pick an apple from the tree.
+
+~
+E
+rpick~
+$n picks an apple from the tree.
+
+~
+E
+pickf~
+You reach up to pick an apple, but can only reach one of the blossoms.
+
+~
+E
+rpickf~
+$n picks an apple blossom from the tree.
+
+~
+E
+nothing~
+All the apples are beyond your reach.
+
+~
+!
+0 0 0
+-1
+S
+
+#42766
+Farm House - Sleeping Area~
+On either side of a gingham-curtained window is a small bed which have
+
+each been outfitted with a pale green feather eiderdown.  At the base of
+
+each bed is a small wooden chest, while along the western wall is a
+
+wardrobe.  A large picture hangs on the southern wall, while a gingham
+
+curtain bares the way to the east. 
+
+~
+~
+-201850875 0 4 0
+D1
+gingham curtain~
+gingham curtain east~
+131 -1 42771 10 10 5
+E
+picture wall~
+Hanging on the southern wall, this picture is of a sleeping baby blue
+
+dragon, snuggled in a cloud and hugging a stuffed bear in one claw, while
+
+the other he is contentedly sucking on his thumb.
+
+~
+E
+window~
+The view into the farms bustling courtyard is framed by a pair of gingham
+
+curtains.
+
+~
+A
+~
+~
+acode( find_room( 42771 ), 1 );
+
+~
+!
+2 300 0
+-1
+S
+
+#42767
+The Apple Grove~
+Wagon tracks meander in a north-south direction through this part of the
+
+apple orchard.  A stone fence to the east separates the orchard from the
+
+hustle and bustle in the township of Appleglen.  Apple trees surround
+
+this one to the north, south and west, with the tree to the west looking
+
+decidedly sick.
+
+~
+[Dinnin] Misspelled word: "SILL" should be "STILL"
+
+[Dinnin] That was for LOOK TREE
+
+~
+-235405312 3 9 0
+D0
+~
+~
+0 -1 42768 10 10 5
+D2
+~
+~
+0 -1 42762 10 10 5
+D3
+~
+~
+0 -1 8500 10 10 5
+E
+fence~
+The fence is about two feet high, and has been constructed by carefully
+
+stacking large stones on top of another, with the occasional use of
+
+mortar to add strength and stability to the fence.  As a result of this
+
+method of construction, the base is slightly broader than the top.
+
+~
+E
+apple tree~
+Reaching proudly towards the sky, these healthy looking apple trees are
+
+covered in verdant leaves, fruit, both ready to eat and sill ripening,
+
+and the odd, late blooming blossom.
+
+~
+A
+pick get~
+apple fruit~
+if( rflag( reset0, room ) ) {
+
+  i = random( 1, 4 );
+
+  if( i == 1 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #pick, ch );
+
+    act_notchar( #rpick, ch );
+
+    obj_to_char( oload( 49 ), ch );
+
+    }
+
+  if( i == 2 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #pick, ch );
+
+    act_notchar( #rpick, ch );
+
+    obj_to_char( oload( 3440 ), ch );
+
+    }
+
+  if( i == 3 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #pickf, ch );
+
+    act_notchar( #rpickf, ch );
+
+    obj_to_char( oload( 3448 ), ch );
+
+    }
+
+  if( i == 4 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #nothing, ch );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #nothing, ch );
+
+~
+E
+pick~
+You reach up to the nearest branch and pick an apple from the tree.
+
+~
+E
+rpick~
+$n picks an apple from the tree.
+
+~
+E
+pickf~
+You reach up to pick an apple, but can only reach one of the blossoms.
+
+~
+E
+rpickf~
+$n picks an apple blossom from the tree.
+
+~
+E
+nothing~
+All the apples are beyond your reach.
+
+~
+!
+0 0 0
+2312 9 1509949540 3 0
+-1
+S
+
+#42768
+The Apple Grove~
+The sounds from the adjacent township of Appleglen can easily be heard in
+
+this corner of the apple orchard, while just over the north and east
+
+fences the hustle and bustle of the township can be observed.  Wagon
+
+trucks run between the fence and the apple tree and head both south and
+
+west.
+
+~
+~
+-235405312 3 9 0
+D2
+~
+~
+0 -1 42767 10 10 5
+D3
+~
+~
+0 -1 42769 10 10 5
+E
+apple tree~
+Reaching proudly towards the sky, these healthy looking apple trees are
+
+covered in verdant leaves, fruit, both ready to eat and sill ripening,
+
+and the odd, late blooming blossom.
+
+~
+E
+fence~
+Carefully constructed by stacking large stones on top of each other, this
+
+section of the two foot high fence joins at right angles in the
+
+north-east corner of the apple orchard.
+
+~
+A
+pick get~
+apple fruit~
+act_tochar( #nothing, ch );
+
+~
+E
+nothing~
+All the apples are beyond your reach.
+
+~
+!
+0 0 0
+-1
+S
+
+#42769
+The Apple Grove~
+Over the northern fence some sort of meadow or park can be seen, while
+
+off in a westerly direction the sparkle of light playing on a lake
+
+catches your eye from time to time.  The branches of apple tree that
+
+overhang the fence seems surprisingly devoid of fruit.  Wagon tracks can
+
+be found between the fence and apple tree and run in a east-west
+
+direction.  More trees can be seen to the east and west, as well a sick
+
+looking apple tree to the south.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 42768 10 10 5
+D2
+~
+~
+0 -1 8500 10 10 5
+D3
+~
+~
+0 -1 42770 10 10 5
+E
+fence~
+The fence is about two feet high, and has been constructed by carefully
+
+stacking large stones on top of another, with the occasional use of
+
+mortar to add strength and stability to the fence.  As a result of this
+
+method of construction, the base is slightly broader than the top.
+
+~
+E
+apple tree~
+Reaching proudly towards the sky, these healthy looking apple trees are
+
+covered in verdant leaves, fruit, both ready to eat and sill ripening,
+
+and the odd, late blooming blossom.
+
+~
+A
+pick get~
+apple fruit~
+if( rflag( reset0, room ) ) {
+
+  i = random( 1, 4 );
+
+  if( i == 1 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #pick, ch );
+
+    act_notchar( #rpick, ch );
+
+    obj_to_char( oload( 49 ), ch );
+
+    }
+
+  if( i == 2 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #pick, ch );
+
+    act_notchar( #rpick, ch );
+
+    obj_to_char( oload( 3440 ), ch );
+
+    }
+
+  if( i == 3 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #pickf, ch );
+
+    act_notchar( #rpickf, ch );
+
+    obj_to_char( oload( 3448 ), ch );
+
+    }
+
+  if( i == 4 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #nothing, ch );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #nothing, ch );
+
+~
+E
+pick~
+You reach up to the nearest branch and pick an apple from the tree.
+
+~
+E
+rpick~
+$n picks an apple from the tree.
+
+~
+E
+pickf~
+You reach up to pick an apple, but can only reach one of the blossoms.
+
+~
+E
+rpickf~
+$n picks an apple blossom from the tree.
+
+~
+E
+nothing~
+All the apples are beyond your reach.
+
+~
+!
+0 0 0
+A
+~
+~
+~
+!
+0 0 0
+-1
+S
+
+#42770
+The Apple Grove~
+This corner of the apple orchard overlooks a large pond to the west,
+
+while just north of the wall is a small meadow or park.  Reeds from the
+
+pond crowds the western fence, and an occasional splash in the water can
+
+be heard.  A set of wagon tracks leading east runs between the fence and
+
+the apple tree that is quietly reaching skyward here.
+
+~
+~
+-235405312 3 9 0
+D1
+~
+~
+0 -1 42769 10 10 5
+D2
+~
+~
+0 -1 42765 10 10 5
+E
+apple tree~
+Reaching proudly towards the sky, these healthy looking apple trees are
+
+covered in verdant leaves, fruit, both ready to eat and sill ripening,
+
+and the odd, late blooming blossom.
+
+~
+E
+stone wall~
+The fence is about two feet high, and has been constructed by carefully
+
+stacking large stones on top of another, with the occasional use of
+
+mortar to add strength and stability to the fence.  As a result of this
+
+method of construction, the base is slightly broader than the top.
+
+~
+E
+fence~
+Carefully constructed by stacking large stones on top of each other, this
+
+section of the two foot high fence joins at right angles in the
+
+north-west corner of the apple orchard.
+
+~
+A
+pick get~
+apple fruit~
+act_tochar( #nothing, ch );
+
+~
+E
+nothing~
+All the apples are beyond your reach.
+
+~
+!
+0 0 0
+-1
+S
+
+#42771
+Farm House - Sleeping Area~
+A gingham-curtained window, which is situated above a bed that would
+
+comfortably sleep two halfling-sized bodies, makes this bedroom light and
+
+breezy.  A rocking chair in the north-east corner of the room is draped
+
+in a quilted blanket, and a pair of mud-caked boots sits to the side of
+
+the chair.  The room is finished by a chest of drawers which has a mirror
+
+sitting on top of it, and a wardrobe.  A gingham curtain blocks the way
+
+into a room to the west, and a spiral staircase leads downward.
+
+~
+~
+-201850875 0 4 0
+D3
+gingham curtain~
+gingham curtain west~
+131 -1 42766 0 10 5
+D5
+~
+~
+0 -1 42751 10 10 5
+E
+mirror~
+Looking into the mirror that is bordered by a carved wooden frame, you
+
+can't but help come to the conclusion that you are one fine looking
+
+specimen!
+
+~
+E
+window~
+The view into the farms bustling courtyard is framed by a pair of gingham
+
+curtains.
+
+~
+A
+~
+~
+send_to_room( #billow, room );
+
+~
+E
+billow~
+The @Rg@Win@Rg@Wha@Rm@n curtains billow slightly as a gentle breeze
+
+enters the room.
+
+~
+!
+2 300 0
+-1
+S
+
+#0
+

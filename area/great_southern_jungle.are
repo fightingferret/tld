@@ -1,0 +1,7377 @@
+#AREA
+Great Southern Jungle~
+Ylena~
+great southern jungle~
+
+50 0
+0
+#ROOMS
+
+#46250
+Just Under the Jungle's Canopy~
+Interlocking branches make a somewhat stable platform that can be walked
+
+on as long as care is taken.  The view of the jungle that is able to be
+
+seen through the many leaves shows that the jungle stretches for a great
+
+distance, although just to the east a clearing can be seen.  Many thick
+
+vines hang about in the jungle's canopy, with some of them bearing
+
+flowers, and other a yellow fruit.  seen.  Many thick vines hang about in
+
+the jungle's canopy, with some of them bearing flowers, and others a
+
+yellow fruit.  This natural platform continues in a southerly direction.
+
+~
+~
+-235405311 18 9 0
+D2
+~
+~
+0 -1 46251 10 10 5
+E
+vines~
+There looks to be a couple of different varieties of vines.  There is a
+
+type that bears some spectacularly colored blooms, others that are so
+
+thick they look as though you could use them to swing from place to
+
+place, and another type that bears a yellow, pulpy fruit.
+
+~
+A
+pick~
+fruit~
+if( rflag( reset0, room ) ) {
+
+  if( random( 1, 5 ) <= 2 ) {
+
+    act_tochar( #pick, ch );
+
+    act_notchar( #rpick, ch );
+
+    obj_to_char( oload( 3792 ), ch );
+
+    }
+
+  else {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #nope, ch );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #nope, ch );
+
+~
+E
+pick~
+Leaning out a bit, you manage to pick a yellow, pulpy fruit from off the
+
+vines.
+
+~
+E
+rpick~
+Leaning out a bit, $n manages to pick a yellow, pulpy fruit from off the
+
+vines.
+
+~
+E
+nope~
+There is no fruit in easy reach.
+
+~
+!
+0 0 0
+A
+swing~
+vines~
+act_tochar( #swing, ch );
+
+act_notchar( #rswing, ch );
+
+if( random( 1, 15 ) == 1 ) {
+
+  act_tochar( #fall, ch );
+
+  act_notchar( #rfall, ch );
+
+  transfer( ch, find_room( 46270 ) );
+
+  act_notchar( #afall, ch );
+
+  i = 3d20+20;
+
+  dam_message( ch, i, "the fall" );
+
+  inflict( ch, mob, i, "a fall" );
+
+  }
+
+else {
+
+  act_tochar( #land, ch );
+
+  j = random( 1, 2 );
+
+  if( j == 1 ) {
+
+    k = random( 46261, 46262 );
+
+    transfer( ch, find_room( k ) );
+
+    act_notchar( #rland, ch );
+
+    }
+
+  if( j == 2 ) {
+
+    l = random( 46267, 46268 );
+
+    transfer( ch, find_room( l ) );
+
+    act_notchar( #rland, ch );
+
+    }
+
+  }
+
+~
+E
+swing~
+You grab ahold of one of the thick vines, take a step back, then launch
+
+yourself off the platform.
+
+~
+E
+rswing~
+$n grabs ahold of one of the thick vines, takes a step back, then
+
+launches $mself off the platform.
+
+~
+E
+land~
+After a short flight through the jungle, and having managed to avoid
+
+hitting any of the many trees you hurtled past, you land on the floor of
+
+the jungle.
+
+~
+E
+rland~
+$n lands next to you after swinging in on a thick vine.
+
+~
+E
+fall~
+Just a moment too late you realise that the vine wasn't as strong as it
+
+looked as it snaps, causing you to fall to the ground below!
+
+~
+E
+rfall~
+Just after $n launches himself from off the platform the vine snaps,
+
+sending him hurtling to the floor below.
+
+~
+E
+afall~
+$n falls to the ground at your feet.
+
+~
+!
+0 0 0
+2476 9 1509949540 3 0
+2476 9 1509949540 3 0
+-1
+S
+
+#46251
+Just Under the Jungle's Canopy~
+The close growth patterns of the jungles trees enables a natural platform
+
+of interlocking branches to form.  This platform is fairly strong and
+
+feels like it could support the weight of many individuals, however some
+
+care has to be taken when moving about so not to step in the myriad gaps
+
+in the platform.  North and east this natural platform continues,
+
+although some careful manoeuvring around a tree trunk is needed to go est. 
+
+Prolific in number, vines hang from everywhere here.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+0 -1 46250 10 10 5
+D1
+~
+~
+0 -1 46252 10 10 5
+E
+vines~
+There looks to be a couple of different varieties of vines.  There is a
+
+type that bears some spectacularly colored blooms, others that are so
+
+thick they look as though you could use them to swing from place to
+
+place, and another type that bears a yellow, pulpy fruit.
+
+~
+A
+~
+~
+act_tochar( #tree, ch );
+
+act_notchar( #rtree, ch );
+
+continue;
+
+~
+E
+tree~
+You carefully skirt around a tree trunk.
+
+~
+E
+rtree~
+$n carefully skirts around a tree trunk.
+
+~
+!
+3 0 2
+A
+pick~
+fruit~
+acode( find_room( 46250 ), 1 );
+
+~
+!
+0 0 0
+A
+swing~
+vines~
+act_tochar( #swing, ch );
+
+act_notchar( #rswing, ch );
+
+if( random( 1, 15 ) == 1 ) {
+
+  act_tochar( #fall, ch );
+
+  act_notchar( #rfall, ch );
+
+  transfer( ch, find_room( 46273 ) );
+
+  act_notchar( #afall, ch );
+
+  i = 3d20+20;
+
+  dam_message( ch, i, "the fall" );
+
+  inflict( ch, mob, i, "a fall" );
+
+  }
+
+else {
+
+  if( random( 1, 3 ) == 1 ) {
+
+    act_tochar( #thud, ch );
+
+    transfer( ch, find_room( 46276 ) );
+
+    act_notchar( #rthud, ch );
+
+    j = 3d20+40;
+
+    dam_message( ch, j, "the impact" );
+
+    inflict( ch, mob, j, "an impact with a tree" );
+
+    }
+
+  else {
+
+    k = random( 46274, 46275 );
+
+    act_tochar( #land, ch );
+
+    transfer( ch, find_room( k ) );
+
+    act_notchar( #rland, ch );
+
+    }
+
+  }
+
+~
+E
+swing~
+You grab ahold of one of the thick vines, take a step back, then launch
+
+yourself off the platform.
+
+~
+E
+rswing~
+$n grabs ahold of one of the thick vines, takes a step back, then
+
+launches $mself off the platform.
+
+~
+E
+land~
+After a short flight through the jungle, and having managed to avoid
+
+hitting any of the many trees you hurtled past, you land on the floor of
+
+the jungle.
+
+~
+E
+rland~
+$n lands next to you after swinging in on a thick vine.
+
+~
+E
+fall~
+Just a moment too late you realise that the vine wasn't as strong as it
+
+looked as it snaps, causing you to fall to the ground below!
+
+~
+E
+rfall~
+Just after $n launches himself from off the platform the vine snaps,
+
+sending him hurtling to the floor below.
+
+~
+E
+afall~
+$n falls to the ground at your feet.
+
+~
+E
+thud~
+You are swinging through the trees just fine until you see a thick patch
+
+of jungle fast approaching you.  It is at this time that you realise you
+
+don't know how to stop the vine.  THUD!
+
+~
+E
+rthud~
+$n swings into a thick patch of trees, making a lovely thudding sound.
+
+~
+!
+0 0 0
+2476 9 1509949540 3 0
+-1
+S
+
+#46252
+Just Under the Jungle's Canopy~
+Nestled just under the jungle's canopy is this platform of criss-crossing
+
+branches.  Through the many gaps in the platform it is possible to see
+
+the floor of the jungle far below.  Vines of many types grow in profusion
+
+about the platform.  From here the platform extends both south and west,
+
+although to go west some careful footwork is needed to get past a tree
+
+trunk.
+
+~
+~
+-235405311 18 9 0
+D2
+~
+~
+0 -1 46253 10 10 5
+D3
+~
+~
+0 -1 46251 10 10 5
+E
+vines~
+There looks to be a couple of different varieties of vines.  There is a
+
+type that bears some spectacularly colored blooms, others that are so
+
+thick they look as though you could use them to swing from place to
+
+place, and another type that bears a yellow, pulpy fruit.
+
+~
+A
+~
+~
+acode( find_room( 46251 ), 1 );
+
+continue;
+
+~
+!
+3 0 8
+A
+pick~
+fruit~
+acode( find_room( 46250 ), 1 );
+
+~
+!
+0 0 0
+A
+~
+~
+~
+!
+0 0 0
+A
+swing~
+vines~
+act_tochar( #swing, ch );
+
+act_notchar( #rswing, ch );
+
+if( random( 1, 15 ) == 1 ) {
+
+  act_tochar( #fall, ch );
+
+  act_notchar( #rfall, ch );
+
+  transfer( ch, find_room( 46274 ) );
+
+  act_notchar( #afall, ch );
+
+  i = 3d20+20;
+
+  dam_message( ch, i, "the fall" );
+
+  inflict( ch, mob, i, "a fall" );
+
+  }
+
+else {
+
+  if( random( 1, 3 ) == 1 ) {
+
+    act_tochar( #thud, ch );
+
+    transfer( ch, find_room( 46276 ) );
+
+    act_notchar( #rthud, ch );
+
+    j = 3d20+40;
+
+    dam_message( ch, j, "the impact" );
+
+    inflict( ch, mob, j, "an impact with a tree" );
+
+    }
+
+  else {
+
+    act_tochar( #land, ch );
+
+    k = random( 46275, 46276 );
+
+    transfer( ch, find_room( k ) );
+
+    act_notchar( #rland, ch );
+
+    }
+
+  }
+
+~
+E
+swing~
+You grab ahold of one of the thick vines, take a step back, then launch
+
+yourself off the platform.
+
+~
+E
+rswing~
+$n grabs ahold of one of the thick vines, takes a step back, then
+
+launches $mself off the platform.
+
+~
+E
+land~
+After a short flight through the jungle, and having managed to avoid
+
+hitting any of the many trees you hurtled past, you land on the floor of
+
+the jungle.
+
+~
+E
+rland~
+$n lands next to you after swinging in on a thick vine.
+
+~
+E
+fall~
+Just a moment too late you realise that the vine wasn't as strong as it
+
+looked as it snaps, causing you to fall to the ground below!
+
+~
+E
+rfall~
+Just after $n launches himself from off the platform the vine snaps,
+
+sending him hurtling to the floor below.
+
+~
+E
+afall~
+$n falls to the ground at your feet.
+
+~
+E
+thud~
+You are swinging through the trees just fine until you see a thick patch
+
+of jungle fast approaching you.  It is at this time that you realise you
+
+don't know how to stop the vine.  THUD!
+
+~
+E
+rthud~
+$n swings into a thick patch of trees, making a lovely thudding sound.
+
+~
+!
+0 0 0
+-1
+S
+
+#46253
+Just Under the Jungle's Canopy~
+Branches of closely growing trees criss-cross to form a natural platform
+
+just beneath the jungle's canopy.  Through the many gaps in the platform
+
+the floor of the jungle can be seen far below, however the trees grow too
+
+thickly together to allow a far reaching view of the jungle.  Many vines
+
+dangle down from above, almost like curtaining.  The platform continues
+
+to the north.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+0 -1 46252 10 10 5
+E
+vines~
+There looks to be a couple of different varieties of vines.  There is a
+
+type that bears some spectacularly colored blooms, others that are so
+
+thick they look as though you could use them to swing from place to
+
+place, and another type that bears a yellow, pulpy fruit.
+
+~
+A
+pick~
+fruit~
+acode( find_room( 46250 ), 1 );
+
+~
+!
+0 0 0
+A
+swing~
+vines~
+act_tochar( #swing, ch );
+
+act_notchar( #swing, ch );
+
+if( random( 1, 15 ) == 1 ) {
+
+  act_tochar( #fall, ch );
+
+  act_notchar( #rfall, ch );
+
+  transfer( ch, find_room( 46277 ) );
+
+  act_notchar( #afall, ch );
+
+  i = 3d20+20;
+
+  dam_message( ch, i, "the fall" );
+
+  inflict( ch, mob, i, "a fall" );
+
+  }
+
+else {
+
+  act_tochar( #land, ch );
+
+  j = random( 46278, 46281 );
+
+  transfer( ch, find_room( j ) );
+
+  act_notchar( #rland, ch );
+
+  }
+
+~
+E
+swing~
+You grab ahold of one of the thick vines, take a step back, then launch
+
+yourself off the platform.
+
+~
+E
+rswing~
+$n grabs ahold of one of the thick vines, takes a step back, then
+
+launches $mself off the platform.
+
+~
+E
+land~
+After a short flight through the jungle, and having managed to avoid
+
+hitting any of the many trees you hurtled past, you land on the floor of
+
+the jungle.
+
+~
+E
+fall~
+Just a moment too late you realise that the vine wasn't as strong as it
+
+looked as it snaps, causing you to fall to the ground below!
+
+~
+E
+rfall~
+Just after $n launches himself from off the platform the vine snaps,
+
+sending him hurtling to the floor below.
+
+~
+E
+rland~
+$n lands next to you after swinging in on a thick vine.
+
+~
+E
+afall~
+$n falls to the ground at your feet.
+
+~
+!
+0 0 0
+2476 9 1509949540 3 0
+-1
+S
+
+#46254
+Just Under the Jungle's Canopy~
+Under Construction.
+
+~
+~
+-235405311 18 9 0
+D1
+~
+~
+0 -1 46255 10 10 5
+-1
+S
+
+#46255
+Steaming Jungle~
+Under Construction.
+
+~
+~
+-235405311 18 9 0
+D3
+~
+~
+0 -1 46254 10 10 5
+-1
+S
+
+#46256
+Steaming Jungle - at the Edge of a Lake~
+The thick, steamy jungle comes to meet with the edge of a large, still
+
+lake.  Flowered vines dangle down from the trees to mingle with some
+
+thorny vines that grow around the lake's edge.  More jungle stretches out
+
+to the south and east, while to the west is a strip of mud.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+0 -1 31058 10 10 5
+D1
+~
+~
+0 -1 46257 10 10 5
+D2
+~
+~
+0 -1 46259 10 10 5
+D3
+~
+~
+0 -1 31056 10 10 5
+E
+vines~
+Vines sporting velvet-textured flowers compete with thorned vines for
+
+dominion of the lake's edge.  At this point in time the battle seems to
+
+be a stalemate.
+
+~
+E
+mud~
+Thick, dark mud awaits any that venture west.
+
+~
+E
+lake~
+A large, still lake stretches as far as the eye can see to the north.
+
+~
+-1
+S
+
+#46257
+Steaming Jungle - At the Edge of a Lake~
+A small creek breaks away from the large lake to the north, then flows
+
+south to a clearing.  To the west and east thick jungle, strewn with many
+
+vines, awaits.  The overhead canopy keeps the floor well-sheltered from
+
+the overhead elements.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+0 -1 31059 10 10 5
+D1
+~
+~
+0 -1 46258 10 10 5
+D2
+~
+~
+0 -1 46260 10 10 5
+D3
+~
+~
+0 -1 46256 10 10 5
+755 17 1509949540 -2 0
+2484 9 1509949540 3 0
+660 17 1509949540 -2 0
+-1
+S
+
+#46258
+Steaming Jungle - At the Edge of a Lake~
+Thick, vine-choked jungle makes it impossible to go any further east,
+
+although to the south and west much more open jungle waits to be explored. 
+
+To the north a large, still lake shimmers in the light.  Some of the
+
+jungle's vines have snaked their way down to the lake's edge to soak
+
+themselves in its waters.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+0 -1 31060 10 10 5
+D2
+~
+~
+0 -1 46261 10 10 5
+D3
+~
+~
+0 -1 46257 10 10 5
+E
+vines~
+Vines dangle down from the trees and snake along the ground to dangle
+
+their ends into the cool waters of the lake.
+
+~
+-1
+S
+
+#46259
+Steaming Jungle~
+Vines bedecked in flowers hang down from the many trees that make up this
+
+jungle.  The overhead canopy not only shades the floor, but also provides
+
+the leaves that make up the layer of mulch that carpets the ground.  More
+
+jungle stretches to the north and south, while to the west a solid wall
+
+of tree trunks blocks any progress, and eastward lies a clearing.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+0 -1 46256 10 10 5
+D1
+~
+~
+0 -1 46260 10 10 5
+D2
+~
+~
+0 -1 46270 10 10 5
+E
+vines flowers~
+Vines, the thickness of a thumb, are strung through the trees.  With
+
+their crimson-red flowers they make a striking accessory for the trees
+
+that have them hanging from their branches and clinging to their trunks. 
+
+The flowers have a velvety look to them and it is easy to imagine them
+
+being used to make a fine lady's regal gown.
+
+~
+-1
+S
+
+#46260
+A Clearing in the Steaming Jungle~
+Like a desert oasis, this clearing in the jungle is a welcome change from
+
+the encroaching jungle.  Overhead the celestial bodies can be easily
+
+seen, while the air here does not feel as hot and sticky as it does under
+
+the jungle's canopy.  A small creek bordered with ferns and wildflowers
+
+flows through the clearing, entering from the north to leave via the east. 
+
+The clearing continues south, while in every other direction vine-covered
+
+jungle waits.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+0 -1 46257 10 10 5
+D1
+~
+~
+0 -1 46261 10 10 5
+D2
+~
+~
+0 -1 46269 10 10 5
+D3
+~
+~
+0 -1 46259 10 10 5
+E
+wildflowers~
+These large pale-pink and lilac flowers grow on single stems, reaching up
+
+towards the heavenly bodies to show off their delicate perfection.  They
+
+have a delicate aroma that seems to tickle the back of your nose.
+
+~
+660 17 1509949540 -2 0
+3695 17 1509949540 -2 0
+-1
+S
+
+#46261
+Steaming Jungle~
+The faint trickling of a creek, that flows in from the west and then
+
+departs via the south, can just be heard above the sounds of many insects
+
+and the squawking of birds.  Overhead, the jungle's canopy keeps all but
+
+the most determined ray of light from reaching the mulch-covered ground. 
+
+The jungle stretches in all directions, except for a clearing to the west.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+0 -1 46258 10 10 5
+D1
+~
+~
+0 -1 46262 10 10 5
+D2
+~
+~
+0 -1 46268 10 10 5
+D3
+~
+~
+0 -1 46260 10 10 5
+E
+mulch ground~
+A thick layer of damp mulch covers the ground.  The mulch is composed of
+
+decaying brown leaves, pieces of bark and other plant debris.
+
+~
+E
+birds insects~
+The songs of the insects competes with those from the birds, although at
+
+moments the different songs do manage to harmonise with each other to
+
+produce a beautiful moment of sound.
+
+~
+660 17 1509949540 -2 0
+2467 9 1509949540 3 0
+2467 9 1509949540 3 0
+-1
+S
+
+#46262
+Steaming Jungle~
+Any attempts to move north are blocked by a thick growth of trees, vines
+
+and other plants.  However, in all other directions navigable jungle
+
+spreads its influence.  The overhead canopy keeps the floor of the jungle
+
+well shaded from the elements, while ensuring that the moist, humid air
+
+remains trapped.
+
+~
+~
+-235405311 18 9 0
+D1
+~
+~
+0 -1 46263 10 10 5
+D2
+~
+~
+0 -1 46267 10 10 5
+D3
+~
+~
+0 -1 46261 10 10 5
+-1
+S
+
+#46263
+Steaming Jungle~
+Thick, impenetrable vines border the northern aspect of this section of
+
+the jungle, while a wall of trees prevents any movement to the east. 
+
+Overhead, the jungle's thick canopy keeps the floor well-shaded from the
+
+elements above, as well as helping trap in the moist, sticky air.  The
+
+jungle spreads out to the west and south.
+
+~
+~
+-235405311 18 9 0
+D2
+~
+~
+0 -1 46266 10 10 5
+D3
+~
+~
+0 -1 46262 10 10 5
+E
+1 east trees wall~
+The trunks of the trees to the east grow so close to each other that it
+
+isn't possible to peek between them to see what is behind them.
+
+~
+E
+vines~
+A thick tangle of vines meld together to form a barrier that precludes
+
+any movement to the north.
+
+~
+2385 9 1509949540 3 0
+-1
+S
+
+#46264
+A Secluded Corner in the Steaming Jungle~
+A thick wall of trees and plants encircles this section of the jungle,
+
+with the only way out being to the south.  It seems that someone has
+
+taken advantage of the natural walls provided by nature and constructed a
+
+lean-to style roof against the northernmost section.  In front of the
+
+lean-to an area has been cleared to allow a small campfire to be built.
+
+~
+~
+-235405303 18 9 0
+D2
+~
+~
+0 -1 46265 10 10 5
+E
+lean-to~
+This lean-to has been made from branches lashed together with vines and
+
+then covered by a layer of thatch to help keep the rain out.  The edge of
+
+the lean-to closest to the ground has been decorated with brightly
+
+colored feathers and strings of animal fangs and claws.
+
+~
+3781 17 1509949540 -2 0
+2489 9 1509949540 3 0
+-1
+S
+
+#46265
+Steaming Jungle~
+Small ferns and plants border a tiny creek that flows in from the west to
+
+disappear into a thick mass of vegetation to the east.  More hospitable,
+
+if somewhat steamy, jungle lies to the south, west and north.  Some sort
+
+of structure, which could be man-made, can be seen through some of the
+
+trees to the north.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+0 -1 46264 10 10 5
+D2
+~
+~
+0 -1 46287 10 10 5
+D3
+~
+~
+0 -1 46266 10 10 5
+E
+ferns plants~
+There are a variety of small plants that have been able to make a living
+
+in the muted light that falls upon the jungle's floor.  Most are ferns of
+
+various types, but there are also mosses, lichens, and the occasional of
+
+structure, which could be man-made, can be seen through some of the trees
+
+to 
+
+~
+660 17 1509949540 -2 0
+-1
+S
+
+#46266
+Steaming Jungle~
+A few flower-covered vines hang like garlands from the trees, their color
+
+livening up the dull greys and browns of their bark.  A few flowers have
+
+fallen into a small creek that runs through the area.  The flower's
+
+colors refract on the surface making it seem as if a dappled rainbow
+
+lives beneath the water.  The creek flows in from the west and continues
+
+its journey toward the east.  In all directions the jungle continues.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+0 -1 46263 10 10 5
+D1
+~
+~
+0 -1 46265 10 10 5
+D2
+~
+~
+0 -1 46286 10 10 5
+D3
+~
+~
+0 -1 46267 10 10 5
+E
+vines flower-covered flowers~
+Vines, the thickness of a thumb, are strung through the trees.  With
+
+their brightly-colored flowers they look more like pretty garlands than
+
+jungle vines.  The flowers are a variety of colors ranging from a deep
+
+purple, scarlet red, fuchsia, canary yellow to a creamy white.  No matter
+
+what the color the flowers are they all have a velvety look about them.
+
+~
+660 17 1509949540 -2 0
+755 17 1509949540 -2 0
+-1
+S
+
+#46267
+Steaming Jungle~
+Trickling through a corridor of small plants and ferns is a small creek
+
+that flows in from the west and then heads east.  Overhead the jungle's
+
+canopy not only keeps in the thick, muggy air, but provides the small
+
+creek with protection from the elements above.  To the south a thick mass
+
+of trees and vines make it impossible to penetrate deeper into the jungle
+
+that way, but in every other direction the jungle awaits to be explored.
+
+~
+~
+-235405312 18 9 0
+D0
+~
+~
+0 -1 46262 10 10 5
+D1
+~
+~
+0 -1 46266 10 10 5
+D3
+~
+~
+0 -1 46268 10 10 5
+E
+1 south~
+A thick patch of jungle lies to the south.  Vines, trees and small bushes
+
+seem to be deliberately trying to stop anyone from entering southward,
+
+almost like they are hiding some sort of dread secret.  The occasional
+
+movement and whisper-like sound can be heard coming from the tangled mess.
+
+~
+E
+plants ferns~
+Many small ferns of various types border the creek.  Even with the
+
+abundant water the ferns have to compete with some small creeper type
+
+plants.
+
+~
+660 17 1509949540 -2 0
+-1
+S
+
+#46268
+Steaming Jungle~
+A tiny creek weaves its way through this section of the steaming jungle,
+
+meandering in from the north to wander out by the east.  Many small ferns
+
+and plants border the edges of the creek.  The canopy, supplied by the
+
+numerous trees, keeps the creek well sheltered from the elements above. 
+
+The jungle stretches out in all direction, including down a steep incline
+
+to the south.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+0 -1 46261 10 10 5
+D1
+~
+~
+0 -1 46267 10 10 5
+D3
+~
+~
+0 -1 46269 10 10 5
+D5
+~
+~
+0 -1 46275 10 10 5
+E
+decline down~
+The steep decline falls for at least ten feet, if not more in places, and
+
+is riddled with many large rocks that look like they have no plans to
+
+move anytime soon.  Trees still manage to grow amongst the rocks, making
+
+the way down quite an obstacle course.
+
+~
+E
+plants ferns~
+Many small ferns of various types border the creek.  Even with the
+
+abundant water the ferns have to compete with some small creeper type
+
+plants.
+
+~
+A
+1 down~
+~
+if( !is_player( ch ) )
+
+  continue;
+
+else {
+
+  if( !is_affected( ch, 44 ) ) {
+
+    if( find_stat( ch, dex ) >= random( 3, 13 ) ) {
+
+      act_tochar( #down, ch );
+
+      act_notchar( #rdown, ch );
+
+      continue;
+
+      }
+
+    else {
+
+      act_tochar( #slide, ch );
+
+      act_notchar( #rslide, ch );
+
+      interpret( ch, "sit" );
+
+      transfer( ch, find_room( 46275 ) );
+
+      act_notchar( #aslide, ch );
+
+      }
+
+    }
+
+  else
+
+    continue;
+
+  }
+
+~
+E
+down~
+With only a bit of slipping and sliding you manage to make it safely down
+
+the steep incline.
+
+~
+E
+rdown~
+With only a bit of slipping and sliding $n manages to make it safely down
+
+the steep incline.
+
+~
+E
+slide~
+You loose your footing and end up sliding down the incline on your behind!
+
+~
+E
+rslide~
+$n looses $s footing and ends up sliding down the incline on $s behind!
+
+~
+E
+aslide~
+$n comes sliding down the steep incline on $s behind!
+
+~
+!
+0 0 0
+660 17 1509949540 -2 0
+3695 17 1509949540 -2 0
+-1
+S
+
+#46269
+A Clearing in the Steaming Jungle~
+This clearing is like an oasis.  It is a break from the surrounding
+
+jungle where the grasses and wildflowers grow no higher than the waist,
+
+and where the sky can easily be seen.  The oasis-like clearing continues
+
+to the north.  In all other directions, including down a steep decline to
+
+the south, thick jungle waits to be explored.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+0 -1 46260 10 10 5
+D1
+~
+~
+0 -1 46268 10 10 5
+D3
+~
+~
+0 -1 46270 10 10 5
+D5
+~
+~
+0 -1 46274 10 10 5
+E
+wildflowers~
+These large pale-pink and lilac flowers grow on single stems, reaching up
+
+towards the heavenly bodies to show off their delicate perfection.  They
+
+have a delicate aroma that seems to tickle the back of your nose.
+
+~
+E
+decline down~
+The steep decline falls for at least ten feet, if not more in places, and
+
+is riddled with many large rocks that look like they have no plans to
+
+move anytime soon.  Trees still manage to grow amongst the rocks, making
+
+the way down quite an obstacle course.
+
+~
+A
+1 down~
+~
+if( !is_player( ch ) )
+
+  continue;
+
+else {
+
+  if( !is_affected( ch, 44 ) ) {
+
+    if( find_stat( ch, dex ) >= random( 6, 13 ) ) {
+
+      act_tochar( #down, ch );
+
+      act_notchar( #rdown, ch );
+
+      continue;
+
+      }
+
+    else {
+
+      act_tochar( #nope, ch );
+
+      act_notchar( #rnope, ch );
+
+      interpret( ch, "sit" );
+
+      transfer( ch, find_room( 46274 ) );
+
+      act_notchar( #anope, ch );
+
+      }
+
+    }
+
+  else
+
+    continue;
+
+  }
+
+~
+E
+down~
+With only a bit of slipping and sliding you manage to make it safely down
+
+the steep incline.
+
+~
+E
+rdown~
+With only a bit of slipping and sliding $n manages to make it safely down
+
+the steep incline.
+
+~
+E
+nope~
+You loose your footing and end up sliding down the incline on your behind!
+
+~
+E
+rnope~
+$n looses $s footing and ends up sliding down the incline on $s behind!
+
+~
+E
+anope~
+$n comes sliding down the steep incline on $s behind!
+
+~
+!
+0 0 0
+-1
+S
+
+#46270
+Steaming Jungle~
+A tangle of vines infests this area, making movement slow and difficult. 
+
+Adding to the difficulty is a haze of humidity that hangs in the air,
+
+sapping the strength out of anything that passes through its sticky
+
+tendrils.  A thick wall of vines and trees blocks any movement to the
+
+west, however a clearing of some kind lies eastward.  To the north, and
+
+down a steep decline to the south, the jungle continues.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+0 -1 46259 10 10 5
+D1
+~
+~
+0 -1 46269 10 10 5
+D5
+~
+~
+0 -1 46273 10 10 5
+E
+canopy~
+Gazing up into the canopy you realise just how high up the trees have to
+
+grow to gain a limited spot in its spreading blanket.  Below the canopy,
+
+but still quite high up, quick movements can be seen.
+
+~
+E
+vines~
+These many vines are a myriad of thicknesses, ranging from extremely
+
+thin, to some as thick as a heavy, hemp rope.  Some of the vines support
+
+large blooms in colors ranging from chartreuse, bright yellow, and a
+
+scarlet red.  It may just be possible to use some of the thicker vines to
+
+climb up.
+
+~
+E
+decline down~
+The steep decline falls for at least ten feet, if not more in places, and
+
+is riddled with many large rocks that look like they have no plans to
+
+move anytime soon.  Trees still manage to grow amongst the rocks, making
+
+the way down quite an obstacle course.
+
+~
+E
+up~
+Looking up you can see a platform of some kind just below the jungle's
+
+canopy.  The platform doesn't have the look of something intentionally
+
+constructed.
+
+~
+A
+1 down~
+~
+if( !is_player( ch ) )
+
+  continue;
+
+else {
+
+  if( !is_affected( ch, 44 ) ) {
+
+    if( find_stat( ch, dex ) >= random( 6, 13 ) ) {
+
+      act_tochar( #down, ch );
+
+      act_notchar( #rdown, ch );
+
+      continue;
+
+      }
+
+    else {
+
+      act_tochar( #nope, ch );
+
+      act_notchar( #rnope, ch );
+
+      interpret( ch, "sit" );
+
+      transfer( ch, find_room( 46273 ) );
+
+      act_notchar( #anope, ch );
+
+      }
+
+    }
+
+  else
+
+    continue;
+
+  }
+
+~
+E
+down~
+With only a bit of slipping and sliding you manage to make it safely down
+
+the steep incline.
+
+~
+E
+rdown~
+With only a bit of slipping and sliding $n manages to make it safely down
+
+the steep incline.
+
+~
+E
+nope~
+You loose your footing and end up sliding down the incline on your behind!
+
+~
+E
+rnope~
+$n looses $s footing and ends up sliding down the incline on $s behind!
+
+~
+E
+anope~
+$n comes sliding down the steep incline on $s behind!
+
+~
+!
+0 0 0
+A
+~
+~
+if( mob_in_room( 2476, find_room( 46250 ) ) ) {
+
+  send_to_room( #shower, room );
+
+  if( random( 1, 15 ) == 1 )
+
+    obj_to_room( oload( 3792 ), room );
+
+  send_to_room( #laugh, room );
+
+  }
+
+~
+E
+shower~
+@YSuddenly from above comes a shower of sticks, leaves and rotten
+
+fruit!@n 
+
+~
+E
+laugh~
+After the shower finishes, you hear much chattering-like laughter coming
+
+from somewhere overhead.
+
+~
+!
+2 400 0
+2385 9 1509949540 3 0
+-1
+S
+
+#46271
+A Hidden Thicket~
+Secluded behind a wall of large fern-like plants to the south, and
+
+bordered by large boulders and thick forest on all other sides, is this
+
+small thicket.  The floor has been lined with trampled plants, their
+
+aroma rising up to play upon the currents of the slight breeze that
+
+passes through here.
+
+~
+~
+-235405311 18 9 0
+D2
+~
+~
+2218 -1 46272 10 10 5
+E
+fern-like plant south~
+These unusual plants look somewhat like a fern, but their large size and
+
+arrangement of leaves are different to the typical fern.  Nestled within
+
+the plants leaves are small, purplish flowers.
+
+~
+A
+enter~
+fern-like plants ferns~
+act_tochar( #enter, ch );
+
+act_notchar( #renter, ch );
+
+transfer( ch, find_room( 46272 ) );
+
+act_notchar( #aenter, ch );
+
+~
+E
+enter~
+You enter the fern-like plants, leaving behind the hidden thicket.
+
+~
+E
+renter~
+$n enters the fern-like plants, disappearing from sight.
+
+~
+E
+aenter~
+After much rustling in the fern-like plants $n finally emerges.
+
+~
+!
+0 0 0
+2482 9 1509949540 3 0
+2483 9 1509949540 3 0
+2483 9 1509949510 3 0
+2483 9 1509949480 3 0
+-1
+S
+
+#46272
+Steaming Jungle - A Quiet Corner~
+This section of the jungle is bordered by thick, vine-choked jungle to
+
+the west and south, a wall of large fern-like plants to the north, and a
+
+curtain-like arrangement of vines to the east.  All these factors, as
+
+well as the protective canopy overhead, imbue the area with a feeling of
+
+seclusion.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+2218 -1 46271 10 10 5
+D1
+~
+~
+0 -1 46273 10 10 5
+E
+fern-like plants north~
+These unusual plants look somewhat like a fern, but their large size and
+
+arrangement of leaves are different to the typical fern.  Nestled within
+
+the plants leaves are small, purplish flowers.  Sounds can be heard
+
+coming from behind the ferns.
+
+~
+E
+vines~
+Vines fall like a curtain to the east, and though they wont prevent you
+
+from leaving here that way, they will certainly be brushing against you
+
+as you do.
+
+~
+A
+enter~
+fern-like plants ferns~
+act_tochar( #enter, ch );
+
+act_notchar( #renter, ch );
+
+transfer( ch, find_room( 46271 ) );
+
+act_notchar( #aenter, ch );
+
+~
+E
+enter~
+You push your way past the many fern-like plants and find yourself in a
+
+secluded thicket.
+
+~
+E
+renter~
+$n pushes $s way through the many fern-like plants, disappearing from
+
+sight.
+
+~
+E
+aenter~
+Pushing $s way through the fern-like plants, $n arrives in the secluded
+
+thicket.
+
+~
+!
+0 0 0
+A
+~
+~
+act_tochar( #vines, ch );
+
+act_notchar( #rvine, ch );
+
+continue;
+
+~
+E
+vines~
+You pass through the curtain of vines.
+
+~
+E
+rvine~
+$n passes through the curtain of vines.
+
+~
+E
+avine~
+$n comes through the curtain of vines.
+
+~
+!
+3 0 2
+-1
+S
+
+#46273
+Steaming Jungle~
+Vines dangle down from above in profusion, almost making it hard to see
+
+the trees themselves.  Through the vines and high above in the canopy can
+
+be heard much movement and chattering.  More vine-riddled jungle lies to
+
+the east, as well as up a steep incline to the north.  Southward the
+
+vines have become so thick as to make it impossible to penetrate further
+
+that way, while to the west, the vines, though still present, grow in
+
+less profusion.
+
+~
+~
+-235405311 18 9 0
+D1
+~
+~
+0 -1 46274 10 10 5
+D3
+~
+~
+0 -1 46272 10 10 5
+D4
+~
+~
+0 -1 46270 10 10 5
+E
+canopy~
+Gazing up into the canopy you realise just how high up the trees have to
+
+grow to gain a limited spot in its spreading blanket.  Below the canopy,
+
+but still quite high up, quick movements can be seen.
+
+~
+E
+incline up~
+This steep incline rises for at least ten feet, if not more in places,
+
+and is riddled with many large rocks that look like they are firmly
+
+embedded.  Amongst the rocks and boulders the jungles trees still manage
+
+to grow.
+
+~
+E
+up~
+Looking up you can see a platform of some kind just below the jungles
+
+canopy.  The platform doesnt have the look of something intentionally
+
+constructed.
+
+~
+E
+up~
+Looking up you can see a platform of some kind just below the jungle's
+
+canopy.  The platform doesn't have the look of something intentionally
+
+constructed.
+
+~
+E
+vines~
+These many vines are a myriad of thicknesses, ranging from extremely
+
+thin, to some as thick as a heavy, hemp rope.  Some of the vines support
+
+large blooms in colors ranging from chartreuse, bright yellow, and a
+
+scarlet red.  It may just be possible to use some of the thicker vines to
+
+climb up.
+
+~
+A
+1 up~
+~
+if( !is_player( ch ) )
+
+  continue;
+
+else {
+
+  if( !is_affected( ch, 44 ) ) {
+
+    if( find_stat( ch, dex ) >= random( 3, 16 ) ) {
+
+      act_tochar( #up, ch );
+
+      act_notchar( #rup, ch );
+
+      continue;
+
+      }
+
+    else {
+
+      act_tochar( #nope, ch );
+
+      act_notchar( #rnope, ch );
+
+      }
+
+    }
+
+  else
+
+    continue;
+
+  }
+
+~
+E
+up~
+Using tree trunks, boulders, and sometimes reverting to scrabbling on all
+
+fours, you eventually make it up the sharp incline.
+
+~
+E
+rup~
+Using tree trunks, boulders, and sometimes reverting to scrabbling on all
+
+fours, $n eventually makes it up the sharp incline.
+
+~
+E
+nope~
+After much scrabbling and scrambling you end up sliding back down the
+
+sharp incline.
+
+~
+E
+rnope~
+After much scrabbling and scrambling $n ends up sliding back down the
+
+sharp incline.
+
+~
+!
+0 0 0
+A
+~
+~
+acode( find_room( 46272 ), 2 );
+
+continue;
+
+~
+!
+3 0 8
+A
+~
+~
+if( mob_in_room( 2476, find_room( 46251 ) ) ) {
+
+  send_to_room( #shower, room );
+
+  if( random( 1, 15 ) == 1 )
+
+    obj_to_room( oload( 3792 ), room );
+
+  send_to_room( #laugh, room );
+
+  }
+
+~
+E
+shower~
+@YSuddenly from above comes a shower of sticks, leaves and rotten
+
+fruit!@n 
+
+~
+E
+laugh~
+After the shower finishes, you hear much chattering-like laughter coming
+
+from somewhere overhead.
+
+~
+!
+2 400 0
+A
+climb~
+vines~
+if( rflag( reset0, room ) ) {
+
+  if( random( 1, 10 ) == 1 ) {
+
+    act_tochar( #break, ch );
+
+    act_notchar( #rbreak, ch );
+
+    obj_to_char( oload( 3800 ), ch );
+
+    if( random( 1, 5 ) == 1 )
+
+      remove_rflag( reset0, room );
+
+    }
+
+  else {
+
+    if( find_skill( ch, climb ) >= random( 6, 8 ) ) {
+
+      act_tochar( #climb, ch );
+
+      act_notchar( #rclimb, ch );
+
+      transfer( ch, find_room( 46251 ) );
+
+      act_notchar( #aclimb, ch );
+
+      }
+
+    else {
+
+      act_tochar( #nope, ch );
+
+      act_notchar( #rnope, ch );
+
+      }
+
+    }
+
+  }
+
+else
+
+  act_tochar( #none, ch );
+
+~
+E
+climb~
+You grab ahold of a vine, give it a quick tug to ensure that it is strong
+
+enough to hold your weight, then proceed to climb up the vine.
+
+~
+E
+rclimb~
+After ensuring the vine will hold $s weight, $n climbs up the vine.
+
+~
+E
+aclimb~
+$n climbs onto the platform.
+
+~
+E
+break~
+You grab ahold of a vine, give it a quick tug to ensure that it is strong
+
+enough to hold your weight only to cause the vine to break off.
+
+~
+E
+rbreak~
+No matter how much you try, you just can't climb up the vine.
+
+~
+E
+rnope~
+$n tries $s hardest to climb the vines, but fails miserably.
+
+~
+E
+none~
+Looking at the available vines, you judge that none of them are suitable
+
+for climbing.
+
+~
+E
+nope~
+No matter how much you try, you just can't climb up the vine.
+
+~
+!
+0 0 0
+755 17 1509949540 -2 0
+2484 9 1509949540 3 0
+-1
+S
+
+#46274
+Steaming Jungle~
+Much movement and chattering comes from the canopy overhead, as well as
+
+the odd shower of leaves.  Many vines dangle down from above, brushing
+
+against the trees, some of the smaller plant life, and even the ground
+
+itself.  More vine-riddled jungle continues to the east, west, and south,
+
+while up a steep incline can be seen a clearing of some sort.
+
+~
+~
+-235405311 18 9 0
+D1
+~
+~
+0 -1 46275 10 10 5
+D2
+~
+~
+0 -1 46277 10 10 5
+D3
+~
+~
+0 -1 46273 10 10 5
+D4
+~
+~
+0 -1 46269 10 10 5
+E
+canopy~
+Gazing up into the canopy you realise just how high up the trees have to
+
+grow to gain a limited spot in its spreading blanket.  Below the canopy,
+
+but still quite high up, quick movements can be seen.
+
+~
+E
+vines~
+These many vines are a myriad of thicknesses, ranging from extremely
+
+thin, to some as thick as a heavy, hemp rope.  Some of the vines support
+
+large blooms in colors ranging from chartreuse, bright yellow, and a
+
+scarlet red.  It may just be possible to use some of the thicker vines to
+
+climb up.
+
+~
+E
+incline up~
+This steep incline rises for at least ten feet, if not more in places,
+
+and is riddled with many large rocks that look like they are firmly
+
+embedded.  Amongst the rocks and boulders the jungles trees still manage
+
+to grow.
+
+~
+E
+up~
+Looking up you can see a platform of some kind just below the jungle's
+
+canopy.  The platform doesn't have the look of something intentionally
+
+constructed.
+
+~
+E
+plants~
+There are a variety of small plants that have been able to make a living
+
+in the muted light that falls upon the jungles floor.  Most are ferns of
+
+various types, but there are also mosses, lichens, and the occasional
+
+small creeper.
+
+~
+A
+1 up~
+~
+if( !is_player( ch ) )
+
+  continue;
+
+else {
+
+  if( !is_affected( ch, 44 ) ) {
+
+    if( find_stat( ch, dex ) >= random( 3, 16 ) ) {
+
+      act_tochar( #climb, ch );
+
+      act_notchar( #rclimb, ch );
+
+      continue;
+
+      }
+
+    else {
+
+      act_tochar( #nope, ch );
+
+      act_notchar( #rnope, ch );
+
+      }
+
+    }
+
+  }
+
+~
+E
+climb~
+Using tree trunks, boulders, and sometimes reverting to scrabbling on all
+
+fours, you eventually make it up the sharp incline.
+
+~
+E
+rclimb~
+Using tree trunks, boulders, and sometimes reverting to scrabbling on all
+
+fours, $n eventually makes it up the sharp incline.
+
+~
+E
+nope~
+After much scrabbling and scrambling you end up sliding back down the
+
+sharp incline.
+
+~
+E
+rnope~
+After much scrabbling and scrambling $n ends up sliding back down the
+
+sharp incline.
+
+~
+!
+0 0 0
+A
+climb~
+vines~
+if( rflag( reset0, room ) ) {
+
+  if( random( 1, 10 ) == 1 ) {
+
+    act_tochar( #break, ch );
+
+    act_notchar( #rbreak, ch );
+
+obj_to_char( oload( 3800 ), ch );
+
+    if( random( 1, 5 ) == 1 )
+
+      remove_rflag( reset0, room );
+
+    }
+
+  else {
+
+    if( find_skill( ch, climb ) >= random( 5, 8 ) ) {
+
+      act_tochar( #climb, ch );
+
+      act_notchar( #rclimb, ch );
+
+      transfer( ch, find_room( 46252 ) );
+
+      act_notchar( #aclimb, ch );
+
+      }
+
+    else {
+
+      act_tochar( #nope, ch );
+
+      act_notchar( #rnope, ch );
+
+      }
+
+    }
+
+  }
+
+else
+
+  act_tochar( #none, ch );
+
+~
+E
+climb~
+You grab ahold of a vine, give it a quick tug to ensure that it is strong
+
+enough to hold your weight, then proceed to climb up the vine.
+
+~
+E
+rclimb~
+After ensuring the vine will hold $s weight, $n climbs up the vine.
+
+~
+E
+break~
+You grab ahold of a vine, give it a quick tug to ensure that it is strong
+
+enough to hold your weight only to cause the vine to break off.
+
+~
+E
+rbreak~
+$n grabs ahold of a vine, gives it a quick tug causing the vine to snap.
+
+~
+E
+rnope~
+$n tries $s hardest to climb the vines, but fails miserably.
+
+~
+E
+none~
+Looking at the available vines, you judge that none of them are suitable
+
+for climbing.
+
+~
+E
+aclimb~
+$n climbs onto the platform.
+
+~
+E
+nope~
+No matter how much you try, you just can't climb up the vine.
+
+~
+!
+0 0 0
+A
+~
+~
+if( mob_in_room( 2476, find_room( 46252 ) ) ) {
+
+  send_to_room( #shower, room );
+
+  if( random( 1, 15 ) == 1 )
+
+    obj_to_room( oload( 3792 ), room );
+
+  send_to_room( #laugh, room );
+
+  }
+
+~
+E
+shower~
+@YSuddenly from above comes a shower of sticks, leaves and rotten
+
+fruit!@n 
+
+~
+E
+laugh~
+After the shower finishes, you hear much chattering-like laughter coming
+
+from somewhere overhead.
+
+~
+!
+2 400 0
+-1
+S
+
+#46275
+Steaming Jungle~
+In every direction the steamy, humidity-laden jungle has exerted its
+
+control, even up the steep, rock-riddled incline to the north.  The
+
+jungle has a complete grip to the east, with it growing so thick that
+
+only the smallest and most agile of creatures would be able to make its
+
+way through the intertwined trees, thick plants and tangled vines.
+
+~
+~
+-235405311 18 9 0
+D2
+~
+~
+0 -1 46276 10 10 5
+D3
+~
+~
+0 -1 46274 10 10 5
+D4
+~
+~
+0 -1 46268 10 10 5
+E
+incline up~
+This steep incline rises for at least ten feet, if not more in places,
+
+and is riddled with many large rocks that look like they are firmly
+
+embedded.  Amongst the rocks and boulders the jungle's trees still manage
+
+to grow.
+
+~
+E
+1 east~
+This dark patch of jungle grows so thick that it would block any of your
+
+attempts to move through it.  However, by the rustling and occasional odd
+
+noise that comes from the thick mass it seems that the jungle does allow
+
+some critters through.
+
+~
+A
+1 up~
+~
+if( !is_player( ch ) )
+
+  continue;
+
+else {
+
+  if( !is_affected( ch, 44 ) ) {
+
+    if( find_stat( ch, dex ) >= random( 3, 16 ) ) {
+
+      act_tochar( #up, ch );
+
+      act_notchar( #rup, ch );
+
+      continue;
+
+      }
+
+    else {
+
+      act_tochar( #nope, ch );
+
+      act_notchar( #rnope, ch );
+
+      }
+
+    }
+
+  else
+
+    continue;
+
+  }
+
+~
+E
+up~
+Using tree trunks, boulders, and sometimes reverting to scrabbling on all
+
+fours, you eventually make it up the sharp incline.
+
+~
+E
+rup~
+Using tree trunks, boulders, and sometimes reverting to scrabbling on all
+
+fours, $n eventually makes it up the sharp incline.
+
+~
+E
+nope~
+After much scrabbling and scrambling you end up sliding back down the
+
+sharp incline.
+
+~
+E
+rnope~
+After much scrabbling and scrambling $n ends up sliding back down the
+
+sharp incline.
+
+~
+!
+0 0 0
+A
+search~
+1 east thick jungle~
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  act_tochar( #yep, ch );
+
+  act_notchar( #ryep, ch );
+
+  i = random( 1, 2 );
+
+  if( i == 1 )
+
+    mload( 2476, room );
+
+  if( i == 2 )
+
+    mload( 2463, room );
+
+  }
+
+else {
+
+  act_tochar( #nope, ch );
+
+  act_notchar( #rnope, ch );
+
+  }
+
+~
+E
+yep~
+@GYou part some branches to get a better look into the thick mass to the
+
+east and disturb something!@n 
+
+~
+E
+ryep~
+@G$n parts some branches belonging to the thick mass to the east and
+
+disturbs something!@n 
+
+~
+E
+nope~
+You part some branches to get a better look into the thick mass to the
+
+east but find nothing.
+
+~
+E
+rnope~
+$n parts some branches belonging to the thick mass of jungle to the east.
+
+~
+!
+0 0 0
+2385 9 1509949540 3 0
+2463 9 1509949540 3 0
+-1
+S
+
+#46276
+Steaming Jungle~
+Rustling, movements and the occasional glint of something shiny can be
+
+detected in the thick mass of impenetrable jungle to the east.  In every
+
+other direction the jungle allows unrestricted access, even if it the
+
+access means having to dodge hanging vines, skirting around trees, and
+
+pushing aside various plants to get through.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+0 -1 46275 10 10 5
+D2
+~
+~
+0 -1 46279 10 10 5
+D3
+~
+~
+0 -1 46277 10 10 5
+E
+1 east~
+The occasional flash of something shiny can be seen in this thick,
+
+imposing patch of jungle.  Rustling sounds and an odd whispering noise
+
+also emanate from the brooding patch.
+
+~
+E
+plants~
+Many varieties of plants abound here, most are small ferns but a couple
+
+of larger plants have managed to eke out a reasonable existence for
+
+themselves.
+
+~
+E
+vines~
+Vines dangle down from the trees as well as cling to the trunks and
+
+branches.  Most of the vines are bare of anything but leaves, but some
+
+have velvety flowers of various colors.
+
+~
+A
+search~
+1 east jungle thick patch branches~
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  act_tochar( #yep, ch );
+
+  act_notchar( #ryep, ch );
+
+  }
+
+else {
+
+  act_tochar( #nope, ch );
+
+  act_notchar( #rnope, ch );
+
+  }
+
+~
+E
+yep~
+@GAs you part some of the branches to get a better look at what the thick
+
+patch of jungle maybe hiding something comes bolting out of there and
+
+scampers off into the forest before you can get a good look at it!@n 
+
+~
+E
+ryep~
+@GAs $n parts some of the branches of the thick patch of jungle something
+
+comes bolting out and scampers past you so fast you are unable to see
+
+what it was.@n 
+
+~
+E
+nope~
+You move aside some of the vegetation to get a better look at what could
+
+be within the thick mass of jungle to the east, but see nothing for your
+
+efforts.
+
+~
+E
+rnope~
+$n plays around in the thick vegetation to the east for a few minutes.
+
+~
+!
+0 0 0
+-1
+S
+
+#46277
+Steaming Jungle~
+Many trees grow here, all competing with each other not just for floor
+
+space, but also a position in the rich overhead canopy.  To the west the
+
+jungle grows together fairly densely, preventing access to its hidden
+
+secrets.  However, in every other direction the jungle awaits to be
+
+explored.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+0 -1 46274 10 10 5
+D1
+~
+~
+0 -1 46276 10 10 5
+D2
+~
+~
+0 -1 46278 10 10 5
+E
+canopy~
+Gazing up into the canopy you realise just how high up the trees have to
+
+grow to gain a limited spot in its spreading blanket.  Below the canopy,
+
+but still quite high up, quick movements can be seen.
+
+~
+E
+up~
+Looking up you can see a platform of some kind just below the jungle's
+
+canopy.  The platform doesn't have the look of something intentionally
+
+constructed.
+
+~
+A
+~
+~
+if( mob_in_room( 2476, find_room( 46253 ) ) ) {
+
+  send_to_room( #shower, room );
+
+  if( random( 1, 15 ) == 1 )
+
+    obj_to_room( oload( 3792 ), room );
+
+  send_to_room( #laugh, room );
+
+  }
+
+~
+E
+shower~
+@YSuddenly from above comes a shower of sticks, leaves and rotten
+
+fruit!@n 
+
+~
+E
+laugh~
+After the shower finishes, you hear much chattering-like laughter coming
+
+from somewhere overhead.
+
+~
+!
+2 400 0
+-1
+S
+
+#46278
+A Corner in the Steaming Jungle~
+A thick bank of trees and large shrubs forms a barrier to prevent any
+
+movement to the west or south.  Much thinner jungle stretches out to the
+
+north and east.  Somewhere beyond the vegetative barrier can be heard the
+
+rushing sound of water.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+0 -1 46277 10 10 5
+D1
+~
+~
+0 -1 46279 10 10 5
+E
+trees shrubs bank~
+This thick bank of trees and shrubs wraps around from the south to the
+
+west.
+
+~
+3695 17 1509949540 -2 0
+2484 9 1509949540 3 0
+-1
+S
+
+#46279
+Steaming Jungle~
+The humidity-laden air not only carries a sticky unpleasantness but also
+
+the delicate perfume of the brightly-colored flowers that the many vines
+
+sport.  These garland-like vines use the many trees here to not only just
+
+support their mass, but to provide their sustenance.  Living off the
+
+scraps of light that the trees' canopy allows through are several small
+
+plants.  The jungle stretches out in every direction.
+
+~
+~
+-235405303 18 9 0
+D0
+~
+~
+0 -1 46276 10 10 5
+D1
+~
+~
+0 -1 46280 10 10 5
+D2
+~
+~
+0 -1 46282 10 10 5
+D3
+~
+~
+0 -1 46278 10 10 5
+E
+flowers vines garlands~
+Vines, the thickness of a thumb, are strung through the trees.  With
+
+their brightly-colored flowers they look more like pretty garlands than
+
+jungle vines.  The flowers are a variety of colors ranging from a deep
+
+purple, scarlet red, fuchsia, to a creamy white.  No matter what the
+
+color the flowers are they all have a velvety look about them.
+
+~
+E
+plants~
+There are a variety of small plants that have been able to make a living
+
+in the muted light that falls upon the jungle's floor.  Most are ferns of
+
+various types, but there are also mosses, lichens, and the occasional
+
+small creeper.
+
+~
+3695 17 1509949540 -2 0
+-1
+S
+
+#46280
+Steaming Jungle~
+A section of trees, vines and other plant-life grows so closely together
+
+that any movement to the north is impossible.  The odd rustle of
+
+vegetation that comes from the north could indicate that some small
+
+creatures use this thick patch of jungle for their home, knowing that not
+
+many large predators could follow them into there.  To the east, west and
+
+south stretches jungle that can be more easily traversed.
+
+~
+~
+-235405311 18 9 0
+D1
+~
+~
+0 -1 46281 10 10 5
+D2
+~
+~
+0 -1 46283 10 10 5
+D3
+~
+~
+0 -1 46279 10 10 5
+E
+1 north~
+Growing so close together to exclude anything but the smallest and most
+
+nimble creatures access is a dark, brooding patch of jungle.
+
+~
+-1
+S
+
+#46281
+Steaming Jungle~
+A wooden wall that blocks passage to both the east and south is covered
+
+in many mosses and lichens, as well as the odd crimson-red flowered vine. 
+
+The lingering humidity in the air provides an ideal atmosphere for the
+
+mosses and lichens, while at the same time ensuring that just about
+
+anything else in the area is made uncomfortable.  Many trees grow here,
+
+their leaves adding to the canopy above.  The jungle continues unhindered
+
+to the north and west.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+0 -1 46291 10 10 5
+D3
+~
+~
+0 -1 46280 10 10 5
+E
+wooden wall~
+This almost fifteen foot high wooden wall has been constructed by
+
+embedding logs vertically into the ground next to each other.  The top of
+
+each of these logs has been sharpened to a fine point.
+
+~
+E
+crimson-red red flowered flowers vine~
+The crimson-red flowers of the vines add a colorful touch to the drab
+
+wooden walls and trees that they hang from.  The flowers have a velvety
+
+look to them and it is easy to imagine them being used to make a fine
+
+lady's regal gown 
+
+~
+E
+mosses lichens~
+Many mosses and lichens cover the perpetually damp wooden walls.  The
+
+golden colors of the lichens compliments the deep greens of the moss.
+
+~
+3739 17 1509949540 -2 0
+2463 9 1509949540 3 0
+-1
+S
+
+#46282
+Steaming Jungle~
+Hot, humid air seems to cling to everything, adding a sticky
+
+unpleasantness to the jungle.  Large trees compete with each other for
+
+the limited floor space, as well as for space amongst the canopy.  Many
+
+vines take advantage of the trees' preoccupation with the battle for
+
+space and quietly spread their flower-covered tendrils about their trunks
+
+and lower branches.  An especially thick section of jungle lies to the
+
+west, preventing any movement in that direction, but more of this steamy
+
+jungle stretches out to the north, south and east.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+0 -1 46279 10 10 5
+D1
+~
+~
+0 -1 46283 10 10 5
+D2
+~
+~
+0 -1 46284 10 10 5
+E
+vines flower-covered tendrils~
+Vines, the thickness of a thumb, are strung through the trees.  With
+
+their brightly-colored flowers they look more like pretty garlands than
+
+jungle vines.  The flowers are a variety of colors ranging from a deep
+
+purple, scarlet red, fuchsia, to a creamy white.  No matter what the
+
+color the flowers are they all have a velvety look about them.
+
+~
+2438 9 1509949540 3 0
+2441 9 1509949540 3 0
+2444 9 1509949540 3 0
+-1
+S
+
+#46283
+Steaming Jungle~
+Vines bearing crimson-red flowers climb up a wooden wall that curves
+
+around from the east to the south, blocking any movement that way. 
+
+Thick, humidity-ridden jungle spreads out to the north and west.  The
+
+canopy above blocks most of the light, and only the odd ray of muted
+
+light manages to reach the jungle's floor.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+0 -1 46280 10 10 5
+D3
+~
+~
+0 -1 46282 10 10 5
+E
+wooden wall~
+This almost fifteen foot high wooden wall has been constructed by
+
+embedding logs vertically into the ground next to each other.  The top of
+
+each of these logs has been sharpened to a fine point.
+
+~
+E
+vines crimson-red red flowers~
+Vines, the thickness of a thumb, are strung through the trees.  With
+
+their crimson-red flowers they make a striking accessory for the trees
+
+that have them hanging from their branches and clinging to their trunks. 
+
+The flowers have a velvety look to them and it is easy to imagine them
+
+being used to make a fine lady's regal gown.
+
+~
+-1
+S
+
+#46284
+Steaming Jungle~
+A fine, sticky mist of warm water hangs in the air and seems to suck the
+
+energy out of everything it touches.  Vine and moss covered trees abound
+
+here, and many large leafed plants vie for both position and the limited
+
+light that the canopy above allows to filter down.  A raging river makes
+
+exploration to the west impossible, while a large wooden wall blocks the
+
+way east.  The humid jungle continues to both the north and south.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+0 -1 46282 10 10 5
+D2
+~
+~
+0 -1 46285 10 10 5
+E
+wooden wall~
+This almost fifteen foot high wooden wall has been constructed by
+
+embedding logs vertically into the ground next to each other.  The top of
+
+each of these logs has been sharpened to a fine point.
+
+~
+E
+plants~
+Many species of large-leafed plants grow here, taking advantage of the
+
+nearby river.  The tallest of the plants would be lucky to come to a
+
+human's waist.
+
+~
+3814 17 1509949540 -2 0
+-1
+S
+
+#46285
+Steaming Jungle~
+Large vine-covered trees grow in profusion with their foliage providing
+
+shade for the jungle floor.  A raging river borders the western side of
+
+the jungle and curves around to the hug the southern section before it
+
+disappears from sight.  The water is travelling at such a fast rate that
+
+swimming in the river is out of the question.  Hanging limply from their
+
+hinges are a pair of wood and thatch gates to a village that lies to the
+
+east.  Two saplings now grow where the gates would have met to block
+
+entry into the village, almost as if they are trying to take over the job
+
+that the gates used to perform.
+
+~
+~
+-235405303 18 9 0
+D0
+~
+~
+0 -1 46284 10 10 5
+D1
+~
+~
+0 -1 46319 10 10 5
+E
+gates~
+These wood and thatch gates look like they are quite heavy and, when they
+
+were attached to their hinges properly, very capable of keeping unwanted
+
+visitors out.
+
+~
+E
+saplings~
+The pale trunks of the saplings stand out against their green leaves. 
+
+Though the saplings tower over you they are nothing compared with their
+
+full-grown counterparts.  Positioned as if they were two guards they now
+
+have taken on the duty of the broken gates to try and keep intruders out.
+
+~
+A
+~
+~
+acode( find_room( 46319 ), 1 );
+
+continue;
+
+~
+!
+3 0 2
+A
+~
+~
+acode( find_room( 46321 ), 1 );
+
+~
+!
+2 300 0
+755 17 1509949540 -2 0
+3814 17 1509949540 -2 0
+-1
+S
+
+#46286
+Steaming Jungle~
+A thick tangle of jungle to the west seems to pulsate with hidden life. 
+
+Leaves move of their own violation, scurried movements can be heard, and
+
+what seems to be a hushed whispering moves through the tangled mess.  In
+
+all other directions the jungle is much more open, with just vine-covered
+
+trees, small plants of numerous varieties, and mulch covered ground to be
+
+spied.  To the south however, is a steep, rocky decline.
+
+~
+~
+-235405303 18 9 0
+D0
+~
+~
+0 -1 46266 10 10 5
+D1
+~
+~
+0 -1 46287 10 10 5
+D5
+~
+~
+0 -1 46291 10 10 5
+E
+decline down~
+The steep decline falls for at least ten feet, if not more in places, and
+
+is riddled with many large rocks that look like they have no plans to
+
+move anytime soon.  Trees still manage to grow amongst the rocks, making
+
+the way down quite an obstacle course.
+
+~
+E
+1 west~
+The jungle to the west is thick, dark and seems to be shielding a secret
+
+of some sort.  Movements and odd whispering noises can be heard
+
+sporadically, and the rustling of the many leaves seems to be out of sync
+
+with the actions of the wind.
+
+~
+A
+1 down~
+~
+if( !is_player( ch ) )
+
+  continue;
+
+else {
+
+  if( !is_affected( ch, 44 ) ) {
+
+    if( find_stat( ch, dex ) >= random( 1, 13 ) ) {
+
+      act_tochar( #down, ch );
+
+      act_notchar( #rdown, ch );
+
+      continue;
+
+      }
+
+    else {
+
+      act_tochar( #nope, ch );
+
+      act_notchar( #rnope, ch );
+
+      interpret( ch, "sit" );
+
+      transfer( ch, find_room( 46291 ) );
+
+      act_notchar( #anope, ch );
+
+      }
+
+    }
+
+  else
+
+    continue;
+
+  }
+
+~
+E
+down~
+With only a bit of slipping and sliding you manage to make it safely down
+
+the steep incline.
+
+~
+E
+rdown~
+With only a bit of slipping and sliding $n manages to make it safely down
+
+the steep incline.
+
+~
+E
+nope~
+You loose your footing and end up sliding down the incline on your behind!
+
+~
+E
+rnope~
+$n looses $s footing and ends up sliding down the incline on $s behind!
+
+~
+E
+anope~
+$n comes sliding down the steep incline on $s behind!
+
+~
+!
+0 0 0
+A
+search~
+1 west jungle~
+act_tochar( #move, ch );
+
+act_notchar( #rmove, ch );
+
+~
+E
+move~
+As you part some of the vines and plants to the west to get a better look
+
+at what could be there, sounds of a rushed retreat can be heard.
+
+~
+E
+rmove~
+As $n parts some of the vines and plants to the west sounds of a rushed
+
+retreat can be heard.
+
+~
+!
+0 0 0
+-1
+S
+
+#46287
+Steaming Jungle~
+Rustling of leaves and the movements of unseen creatures can be heard
+
+from the overhead canopy.  The canopy above filters the light, allowing
+
+only muted rays to bath the floor of the jungle.  Many small plants vie
+
+with each other in an attempt to bask in the soft light.  The jungle
+
+continues in all directions, including down a steep decline to the south.
+
+~
+~
+-235405303 18 9 0
+D0
+~
+~
+0 -1 46265 10 10 5
+D1
+~
+~
+0 -1 46288 10 10 5
+D3
+~
+~
+0 -1 46286 10 10 5
+D5
+~
+~
+0 -1 46292 10 10 5
+E
+decline down~
+The steep decline falls for at least ten feet, if not more in places, and
+
+is riddled with many large rocks that look like they have no plans to
+
+move anytime soon.  Trees still manage to grow amongst the rocks, making
+
+the way down quite an obstacle course.
+
+~
+E
+plants~
+There are a variety of small plants that have been able to make a living
+
+in the muted light that falls upon the jungles floor.  Most are ferns of
+
+various types, but there are also mosses, lichens, and the occasional
+
+small creeper.
+
+~
+E
+canopy~
+Much rustling and movements can be seen in the canopy high overhead.  As
+
+much as you try and spot the cause it eludes you.
+
+~
+A
+1 down~
+~
+if( !is_player( ch ) )
+
+  continue;
+
+else {
+
+  if( !is_affected( ch, 44 ) ) {
+
+    if( find_stat( ch, dex ) >= random( 1, 13 ) ) {
+
+      act_tochar( #down, ch );
+
+      act_notchar( #rdown, ch );
+
+      continue;
+
+      }
+
+    else {
+
+      act_tochar( #nope, ch );
+
+      act_notchar( #rnope, ch );
+
+      interpret( ch, "sit" );
+
+      transfer( ch, find_room( 46292 ) );
+
+      act_notchar( #anope, ch );
+
+      }
+
+    }
+
+  else
+
+    continue;
+
+  }
+
+~
+E
+down~
+With only a bit of slipping and sliding you manage to make it safely down
+
+the steep incline.
+
+~
+E
+rdown~
+With only a bit of slipping and sliding $n manages to make it safely down
+
+the steep incline.
+
+~
+E
+nope~
+You loose your footing and end up sliding down the incline on your behind!
+
+~
+E
+rnope~
+$n looses $s footing and ends up sliding down the incline on $s behind!
+
+~
+E
+anope~
+$n comes sliding down the steep incline on $s behind!
+
+~
+!
+0 0 0
+755 17 1509949540 -2 0
+-1
+S
+
+#46288
+Steaming Jungle~
+A thick mass of trees and vines to the north almost seem intent on
+
+pushing whatever passes through here down a steep, stone-littered decline
+
+to the south.  The few trees in this section of the jungle that allow
+
+easy access through here are covered in vines.  Hanging in the air here
+
+is a permanent cloud of hot, sticky mist which seems to delight in
+
+sapping the strength out of anything it touches.  More, sticky, humid
+
+jungle lies to the east and west.
+
+~
+~
+-235405311 18 9 0
+D1
+~
+~
+0 -1 46289 10 10 5
+D3
+~
+~
+0 -1 46287 10 10 5
+D5
+~
+~
+0 -1 46293 10 10 5
+E
+decline down~
+The steep decline falls for at least ten feet, if not more in places, and
+
+is riddled with many large rocks that look like they have no plans to
+
+move anytime soon.  Trees still manage to grow amongst the rocks, making
+
+the way down quite an obstacle course.
+
+~
+E
+vines~
+Vines dangle down from the trees as well as cling to the trunks and
+
+branches.  Most of the vines are bare of anything but leaves, but some
+
+have velvety flowers of various colors.
+
+~
+A
+1 down~
+~
+if( !is_player( ch ) )
+
+  continue;
+
+else {
+
+  if( !is_affected( ch, 44 ) ) {
+
+    if( find_stat( ch, dex ) >= random( 1, 13 ) ) {
+
+      act_tochar( #down, ch );
+
+      act_notchar( #rdown, ch );
+
+      continue;
+
+      }
+
+    else {
+
+      act_tochar( #nope, ch );
+
+      act_notchar( #rnope, ch );
+
+      interpret( ch, "sit" );
+
+      transfer( ch, find_room( 46293 ) );
+
+      act_notchar( #anope, ch );
+
+      }
+
+    }
+
+  else
+
+    continue;
+
+  }
+
+~
+E
+down~
+With only a bit of slipping and sliding you manage to make it safely down
+
+the steep incline.
+
+~
+E
+rdown~
+With only a bit of slipping and sliding $n manages to make it safely down
+
+the steep incline.
+
+~
+E
+nope~
+You loose your footing and end up sliding down the incline on your behind!
+
+~
+E
+rnope~
+$n looses $s footing and ends up sliding down the incline on $s behind!
+
+~
+E
+anope~
+$n comes sliding down the steep incline on $s behind!
+
+~
+!
+0 0 0
+2438 9 1509949540 3 0
+2441 9 1509949540 3 0
+2444 9 1509949540 3 0
+-1
+S
+
+#46289
+Steaming Jungle~
+A impenetrable wall of trees and vines block any progress to the north,
+
+but to the west, east and south the jungle of trees, vines, small ground
+
+plants, and rolling clouds of thick, steamy mist is much more easily
+
+accessible.  The sounds of a large river can be heard coming from the
+
+east.
+
+~
+~
+-235405311 18 9 0
+D1
+~
+~
+0 -1 46290 10 10 5
+D2
+~
+~
+0 -1 46294 10 10 5
+D3
+~
+~
+0 -1 46288 10 10 5
+-1
+S
+
+#46290
+Steaming Jungle~
+This section of the humid, steaming jungle borders a large, raging river
+
+to the east.  From this point, the jungle also extends its influence
+
+south, west and north.  However, northward, the jungle is just too thick
+
+and vine choked to allow even the most skilled navigator to pass through
+
+it.
+
+~
+~
+-235405311 18 9 0
+D2
+~
+~
+0 -1 46295 10 10 5
+D3
+~
+~
+0 -1 46289 10 10 5
+3814 17 1509949540 -2 0
+-1
+S
+
+#46291
+Steaming Jungle~
+To the west, a dense section of jungle blocks any movement.  Also from
+
+the west comes much rustling within the tightly growing trees and vines. 
+
+To the north is a steep, rocky, jungle-infested rise, while the jungle
+
+continues on a flatter ground to the east and south.  The occasional
+
+cloud of hot, sticky mist passes through the area.
+
+~
+~
+-235405311 18 9 0
+D1
+~
+~
+0 -1 46292 10 10 5
+D2
+~
+~
+0 -1 46281 10 10 5
+D4
+~
+~
+0 -1 46286 10 10 5
+E
+incline up rise~
+This steep incline rises for at least ten feet, if not more in places,
+
+and is riddled with many large rocks that look like they are firmly
+
+embedded.  Amongst the rocks and boulders the jungle's trees still manage
+
+to grow.
+
+~
+E
+1 west~
+The thick, vine-tangled jungle to the west looks determined to deny entry
+
+to anything but the most nimble.  Rustling and an odd whispering noise
+
+can be heard coming from the thick mess sporadically.
+
+~
+A
+1 up~
+~
+if( !is_player( ch ) )
+
+  continue;
+
+else {
+
+  if( !is_affected( ch, 44 ) ) {
+
+    if( find_stat( ch, dex ) >= random( 3, 16 ) ) {
+
+      act_tochar( #up, ch );
+
+      act_notchar( #rup, ch );
+
+      continue;
+
+      }
+
+    else {
+
+      act_tochar( #nope, ch );
+
+      act_notchar( #rnope, ch );
+
+      }
+
+    }
+
+  else
+
+    continue;
+
+  }
+
+~
+E
+up~
+Using tree trunks, boulders, and sometimes reverting to scrabbling on all
+
+fours, you eventually make it up the sharp incline.
+
+~
+E
+rup~
+Using tree trunks, boulders, and sometimes reverting to scrabbling on all
+
+fours, $n eventually makes it up the sharp incline.
+
+~
+E
+nope~
+After much scrabbling and scrambling you end up sliding back down the
+
+sharp incline.
+
+~
+E
+rnope~
+After much scrabbling and scrambling $n ends up sliding back down the
+
+sharp incline.
+
+~
+!
+0 0 0
+-1
+S
+
+#46292
+Steaming Jungle~
+This section of the moisture-laden jungle seems slightly claustrophobic
+
+with the densely growing trees, a steep rise to the north, and a tall
+
+wooden wall to the south.  Adding to the clutter are several vines that
+
+dangle from the tree branches above.  Very little light manages to filter
+
+down to the undergrowth as the jungles canopy does its best to block out
+
+the sky above.  The jungle extends to the north, east, and west, but is
+
+held at bay by the wooden wall to the south.
+
+~
+~
+-235405311 18 9 0
+D1
+~
+~
+0 -1 46293 10 10 5
+D3
+~
+~
+0 -1 46291 10 10 5
+D4
+~
+~
+0 -1 46287 10 10 5
+E
+wooden wall~
+This almost fifteen foot high wooden wall has been constructed by
+
+embedding logs vertically into the ground next to each other.  The top of
+
+each of these logs has been sharpened to a fine point.
+
+~
+E
+incline up rise 1 north~
+This steep incline rises for at least ten feet, if not more in places,
+
+and is riddled with many large rocks that look like they are firmly
+
+embedded.  Amongst the rocks and boulders the jungle's trees still manage
+
+to grow.
+
+~
+E
+vines~
+Vines of various sizes proliferate throughout the area.  A few of them
+
+sport the buds of newly forming flowers, but most are bare of any
+
+decoration.
+
+~
+A
+1 up~
+~
+if( !is_player( ch ) )
+
+  continue;
+
+else {
+
+  if( !is_affected( ch, 44 ) ) {
+
+    if( find_stat( ch, dex ) >= random( 3, 16 ) ) {
+
+      act_tochar( #up, ch );
+
+      act_notchar( #rup, ch );
+
+      continue;
+
+      }
+
+    else {
+
+      act_tochar( #nope, ch );
+
+      act_notchar( #rnope, ch );
+
+      }
+
+    }
+
+  else
+
+    continue;
+
+  }
+
+~
+E
+up~
+Using tree trunks, boulders, and sometimes reverting to scrabbling on all
+
+fours, you eventually make it up the sharp incline.
+
+~
+E
+rup~
+Using tree trunks, boulders, and sometimes reverting to scrabbling on all
+
+fours, $n eventually makes it up the sharp incline.
+
+~
+E
+nope~
+After much scrabbling and scrambling you end up sliding back down the
+
+sharp incline.
+
+~
+E
+rnope~
+After much scrabbling and scrambling $n ends up sliding back down the
+
+sharp incline.
+
+~
+!
+0 0 0
+2463 9 1509949540 3 0
+-1
+S
+
+#46293
+Steaming Jungle~
+A vine-covered sheer rise to the east looks like it wouldn't be worth the
+
+pain and effort to climb up its vertical surface.  However, the steep
+
+rise to the north does look to be more hospitable.  The trees here are
+
+fairly sparse, and their canopy provides little protection from the
+
+elements above.  This allows a greater number of smaller plants to grow. 
+
+To the north, south, and west the jungle thickens again.
+
+~
+~
+-235405311 18 9 0
+D1
+~
+~
+2283 -1 46325 10 10 5
+D2
+~
+~
+0 -1 46296 10 10 5
+D3
+~
+~
+0 -1 46292 10 10 5
+D4
+~
+~
+0 -1 46288 10 10 5
+E
+vines vine-covered rise east sheer~
+A mass of green vines, covered in orange and yellow flowers, brightens up
+
+an otherwise dull-grey, sheer rock wall.  The wall rises to at least ten
+
+feet, and more jungle can be seen atop of it.
+
+~
+E
+incline up rise 1 north~
+This steep incline rises for at least ten feet, if not more in places,
+
+and is riddled with many large rocks that look like they are firmly
+
+embedded.  Amongst the rocks and boulders the jungle's trees still manage
+
+to grow.
+
+~
+A
+move~
+vines~
+if( !is_open( room, east ) ) {
+
+  act_tochar( #open, ch );
+
+  act_notchar( #ropen, ch );
+
+  open( room, east );
+
+  }
+
+else {
+
+  act_tochar( #close, ch );
+
+  act_notchar( #rclose, ch );
+
+  close( room, east );
+
+  }
+
+~
+E
+open~
+You move aside the vines, revealing an opening into a cave.
+
+~
+E
+ropen~
+$n moves some vines, revealing an opening to a cave.
+
+~
+E
+close~
+You move the vines, obscuring the cave's opening 
+
+~
+E
+rclose~
+$n moves the vines, obscuring the cave's opening.
+
+~
+!
+0 0 0
+A
+1 up~
+~
+if( !is_player( ch ) )
+
+  continue;
+
+else {
+
+  if( !is_affected( ch, 44 ) ) {
+
+    if( find_stat( ch, dex ) >= random( 3, 16 ) ) {
+
+      act_tochar( #up, ch );
+
+      act_notchar( #rup, ch );
+
+      continue;
+
+      }
+
+    else {
+
+      act_tochar( #nope, ch );
+
+      act_notchar( #rnope, ch );
+
+      }
+
+    }
+
+  else
+
+    continue;
+
+  }
+
+~
+E
+up~
+Using tree trunks, boulders, and sometimes reverting to scrabbling on all
+
+fours, you eventually make it up the sharp incline.
+
+~
+E
+rup~
+Using tree trunks, boulders, and sometimes reverting to scrabbling on all
+
+fours, $n eventually makes it up the sharp incline.
+
+~
+E
+nope~
+After much scrabbling and scrambling you end up sliding back down the
+
+sharp incline.
+
+~
+E
+rnope~
+After much scrabbling and scrambling $n ends up sliding back down the
+
+sharp incline.
+
+~
+!
+0 0 0
+3695 17 1509949540 -2 0
+-1
+S
+
+#46294
+Steaming Jungle~
+Clinging precariously atop of a cliff face to the west, this section of
+
+the jungle offers a partial view of a village somewhere to the south. 
+
+East and north the floor to the jungle is fairly flat, but southward is a
+
+steep, rocky decline that looks like it will take a bit of care to
+
+traverse.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+0 -1 46289 10 10 5
+D1
+~
+~
+0 -1 46295 10 10 5
+D5
+~
+~
+0 -1 46297 10 10 5
+E
+decline down~
+The steep decline falls for at least ten feet, if not more in places, and
+
+is riddled with many large rocks that look like they have no plans to
+
+move anytime soon.  Trees still manage to grow amongst the rocks, making
+
+the way down quite an obstacle course.
+
+~
+A
+1 down~
+~
+if( !is_player( ch ) )
+
+  continue;
+
+else {
+
+  if( !is_affected( ch, 44 ) ) {
+
+    if( find_stat( ch, dex ) >= random( 1, 13 ) ) {
+
+      act_tochar( #down, ch );
+
+      act_notchar( #rdown, ch );
+
+      continue;
+
+      }
+
+    else {
+
+      act_tochar( #nope, ch );
+
+      act_notchar( #rnope, ch );
+
+      interpret( ch, "sit" );
+
+      transfer( ch, find_room( 446297 ) );
+
+      act_notchar( #anope, ch );
+
+      }
+
+    }
+
+  else
+
+    continue;
+
+  }
+
+~
+E
+down~
+With only a bit of slipping and sliding you manage to make it safely down
+
+the steep incline.
+
+~
+E
+rdown~
+With only a bit of slipping and sliding $n manages to make it safely down
+
+the steep incline.
+
+~
+E
+nope~
+You loose your footing and end up sliding down the incline on your behind!
+
+~
+E
+rnope~
+$n looses $s footing and ends up sliding down the incline on $s behind!
+
+~
+E
+anope~
+$n comes sliding down the steep incline on $s behind!
+
+~
+!
+0 0 0
+-1
+S
+
+#46295
+Steaming Jungle~
+The roaring of a nearby river and waterfall takes the edge off the
+
+constant humidity of the jungle.  A single animal track leads down to the
+
+rivers edge, and a few strands of animal hair have been left behind on
+
+the smaller plants that line the path.  More jungle stretches out to the
+
+north, west, and down a steep, rocky decline to the south.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+0 -1 46290 10 10 5
+D3
+~
+~
+0 -1 46294 10 10 5
+D5
+~
+~
+0 -1 46298 10 10 5
+E
+decline down~
+The steep decline falls for at least ten feet, if not more in places, and
+
+is riddled with many large rocks that look like they have no plans to
+
+move anytime soon.  Trees still manage to grow amongst the rocks, making
+
+the way down quite an obstacle course.
+
+~
+E
+track~
+This single track is only a few inches wide, but looks to be used
+
+frequently to gain access to the nearby river.  Many paw prints can be
+
+seen near the river's edge, but because of the high number of them mixing
+
+together it is hard to work out what kind of animals they belong to.
+
+~
+E
+strands hair~
+There are a few different types of hair strands that have been left
+
+behind on the bushes.  The majority of them are black, but a few sandy
+
+colored strands can also be seen.
+
+~
+A
+1 down~
+~
+if( !is_player( ch ) )
+
+  continue;
+
+else {
+
+  if( !is_affected( ch, 44 ) ) {
+
+    if( find_stat( ch, dex ) >= random( 3, 13 ) ) {
+
+      act_tochar( #down, ch );
+
+      act_notchar( #rdown, ch );
+
+      continue;
+
+      }
+
+    else {
+
+      act_tochar( #nope, ch );
+
+      act_notchar( #rnope, ch );
+
+      interpret( ch, "sit" );
+
+      transfer( ch, find_room( 46298 ) );
+
+      act_notchar( #anope, ch );
+
+      }
+
+    }
+
+  else
+
+    continue;
+
+  }
+
+~
+E
+down~
+With only a bit of slipping and sliding you manage to make it safely down
+
+the steep incline.
+
+~
+E
+rdown~
+With only a bit of slipping and sliding $n manages to make it safely down
+
+the steep incline.
+
+~
+E
+nope~
+You loose your footing and end up sliding down the incline on your behind!
+
+~
+E
+rnope~
+$n looses $s footing and ends up sliding down the incline on $s behind!
+
+~
+E
+anope~
+$n comes sliding down the steep incline on $s behind!
+
+~
+!
+0 0 0
+3695 17 1509949540 -2 0
+3814 17 1509949540 -2 0
+-1
+S
+
+#46296
+Steaming Jungle~
+Although the thick, steaming jungle extends to the north and east with
+
+nothing to stop it, to the south and west a tall wooden wall blocks its
+
+ability to further exert its influence.  The ground here is damp and the
+
+smell of mosses and lichen fills the air whenever the rotting mulch upon
+
+the ground gets disturbed.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+0 -1 46293 10 10 5
+D1
+~
+~
+0 -1 46297 10 10 5
+E
+wooden wall~
+This almost fifteen foot high wooden wall has been constructed by
+
+embedding logs vertically into the ground next to each other.  The top of
+
+each of these logs has been sharpened to a fine point.
+
+~
+E
+mulch ground floor~
+Composed of long discarded leaves, small twigs and other plant matter,
+
+this layer of mulch is several inches thick.
+
+~
+E
+mulch mosses lichens~
+A thick layer of damp mulch covers the ground.  The mulch is composed of
+
+decaying brown leaves, pieces of bark and other plant debris.  Whenever
+
+the mulch gets disturbed a distinctive smell of moss and lichen fills the
+
+air, although the source of this smell is nowhere to be seen.
+
+~
+-1
+S
+
+#46297
+Steaming Jungle~
+Even with a rock-strewn, steep rise to the north, the individual trees
+
+that make up this jungle are still able to procure enough ground to grow
+
+and maintain a thick overhead canopy.  Several vines hang from the trees
+
+as if they are trying to add a bit of color, with their brightly-colored
+
+flowers, to the trees' otherwise drab, brownish bark.  More jungle and
+
+vines continue in all directions.
+
+~
+~
+-235405311 18 9 0
+D1
+~
+~
+0 -1 46298 10 10 5
+D2
+~
+~
+0 -1 46300 10 10 5
+D3
+~
+~
+0 -1 46296 10 10 5
+D4
+~
+~
+0 -1 46294 10 10 5
+E
+incline up rise 1 north~
+This steep incline rises for at least ten feet, if not more in places,
+
+and is riddled with many large rocks that look like they are firmly
+
+embedded.  Amongst the rocks and boulders the jungle's trees still manage
+
+to grow.
+
+~
+E
+vines flowers~
+Vines, the thickness of a thumb, are strung through the trees.  With
+
+their brightly-colored flowers they look more like pretty garlands than
+
+jungle vines.  The flowers are a variety of colors ranging from a deep
+
+purple, scarlet red, fuchsia, canary yellow to a creamy white.  No matter
+
+what the color the flowers are they all have a velvety look about them.
+
+~
+A
+1 up~
+~
+if( !is_player( ch ) )
+
+  continue;
+
+else {
+
+  if( !is_affected( ch, 44 ) ) {
+
+    if( find_stat( ch, dex ) >= random( 3, 16 ) ) {
+
+      act_tochar( #up, ch );
+
+      act_notchar( #rup, ch );
+
+      continue;
+
+      }
+
+    else {
+
+      act_tochar( #nope, ch );
+
+      act_notchar( #rnope, ch );
+
+      }
+
+    }
+
+  else
+
+    continue;
+
+  }
+
+~
+E
+up~
+Using tree trunks, boulders, and sometimes reverting to scrabbling on all
+
+fours, you eventually make it up the sharp incline.
+
+~
+E
+rup~
+Using tree trunks, boulders, and sometimes reverting to scrabbling on all
+
+fours, $n eventually makes it up the sharp incline.
+
+~
+E
+nope~
+After much scrabbling and scrambling you end up sliding back down the
+
+sharp incline.
+
+~
+E
+rnope~
+After much scrabbling and scrambling $n ends up sliding back down the
+
+sharp incline.
+
+~
+!
+0 0 0
+-1
+S
+
+#46298
+Steaming Jungle~
+A thundering waterfall that empties into a pool can be seen beyond some
+
+rocks and boulders to the east while in every other direction is thick,
+
+steaming jungle.  Not only do the many trees of this area provide a
+
+canopy that shades the ground, they also provide support for an abundance
+
+of vines.  The way north is up a steep rock-embedded incline.
+
+~
+~
+-235405311 18 9 0
+D1
+~
+~
+0 -1 46299 10 10 5
+D2
+~
+~
+0 -1 46301 10 10 5
+D3
+~
+~
+0 -1 46297 10 10 5
+D4
+~
+~
+0 -1 46295 10 10 5
+E
+rocks boulders~
+These grey colored rocks and boulders vary in size from those that would
+
+be easy to pick up with both hands, to ones that come up to your waist. 
+
+Although they dont provide a barrier to the pool to the east, they will
+
+take a bit of manoeuvring to get past.
+
+~
+E
+incline up~
+This steep incline rises for at least ten feet, if not more in places,
+
+and is riddled with many large rocks that look like they are firmly
+
+embedded.  Amongst the rocks and boulders the jungle's trees still manage
+
+to grow.
+
+~
+E
+vines~
+Vines of various sizes proliferate throughout the area.  A few of them
+
+sport the buds of newly forming flowers, but most are bare of any
+
+decoration.
+
+~
+A
+~
+~
+act_tochar( #rock, ch );
+
+act_notchar( #rrock, ch );
+
+continue;
+
+~
+E
+rock~
+You weave through the many rocks and boulders that line the lake's edge
+
+before slipping into the crystal clear waters of the pool.
+
+~
+E
+rrock~
+$n weaves through the many rocks and boulders that line the lake's edge
+
+before slipping into the crystal clear waters of the pool.
+
+~
+!
+3 0 2
+A
+1 up~
+~
+if( !is_player( ch ) )
+
+  continue;
+
+else {
+
+  if( !is_affected( ch, 44 ) ) {
+
+    if( find_stat( ch, dex ) >= random( 3, 16 ) ) {
+
+      act_tochar( #up, ch );
+
+      act_notchar( #rup, ch );
+
+      continue;
+
+      }
+
+    else {
+
+      act_tochar( #nope, ch );
+
+      act_notchar( #rnope, ch );
+
+      }
+
+    }
+
+  else
+
+    continue;
+
+  }
+
+~
+E
+up~
+Using tree trunks, boulders, and sometimes reverting to scrabbling on all
+
+fours, you eventually make it up the sharp incline.
+
+~
+E
+rup~
+Using tree trunks, boulders, and sometimes reverting to scrabbling on all
+
+fours, $n eventually makes it up the sharp incline.
+
+~
+E
+nope~
+After much scrabbling and scrambling you end up sliding back down the
+
+sharp incline.
+
+~
+E
+rnope~
+After much scrabbling and scrambling $n ends up sliding back down the
+
+sharp incline.
+
+~
+E
+float~
+You float up the steep incline effortlessly.
+
+~
+E
+rfloat~
+$n floats up the incline effortlessly.
+
+~
+!
+0 0 0
+2457 9 1509949540 3 0
+-1
+S
+
+#46299
+Pool Beneath a Waterfall~
+A thundering stream of crystal-clear water falls from above to feed a
+
+waiting pool which in turn feeds a fast moving stream that heads south. 
+
+A thick, impenetrable jungle borders the eastern side of the pool, while
+
+a few boulders and rocks keep back more hospitable jungle to the west.
+
+~
+~
+-235405311 6 9 0
+D2
+~
+~
+0 -1 46302 10 10 5
+D3
+~
+~
+0 -1 46298 10 10 5
+E
+rocks boulders~
+These grey colored rocks and boulders vary in size from those that would
+
+be easy to pick up with both hands, to ones that come up to your waist. 
+
+Although they don't provide a barrier to the jungle to the west, they
+
+will take a bit of manoeuvring to get past.
+
+~
+E
+1 east~
+Thick, imposing jungle lies westward.  Trees grow together as if forming
+
+a wall to keep unwanted infiltrators out.  What gaps the trees have left
+
+thick, cord-like vines make sure they fill.
+
+~
+A
+~
+~
+act_tochar( #weave, ch );
+
+act_notchar( #rweave, ch );
+
+continue;
+
+~
+E
+weave~
+You carefully weave between the rocks and boulders.
+
+~
+E
+rweave~
+$n carefully weaves between the rocks and boulders.
+
+~
+!
+3 0 8
+A
+1 look~
+waterfall~
+if( rflag( reset0, room ) )
+
+  act_tochar( #water, ch );
+
+else
+
+  act_notchar( #waterno, ch );
+
+~
+E
+water~
+The waterfall comes crashing down a fifteen foot drop to land noisily
+
+upon some large boulders.  These boulders have taken on a smooth, glossy
+
+quality from the constant wash of water they must deal with.  Just behind
+
+the veil of water you think you think you can see a bright-yellow gem or
+
+something.
+
+~
+E
+waterno~
+The waterfall comes crashing down a fifteen foot drop to land noisily
+
+upon some large boulders.  These boulders have taken on a smooth, glossy
+
+quality from the constant wash of water they must deal with.
+
+~
+!
+0 0 0
+A
+get take search~
+gem bright yellow something waterfall~
+if( rflag( reset0, room ) ) {
+
+  remove_rflag( reset0, room );
+
+  act_tochar( #get, ch );
+
+  act_notchar( #rget, ch );
+
+  mload( 2444, room );
+
+  }
+
+else {
+
+  act_tochar( #nothing, ch );
+
+  act_notchar( #rsearch, ch );
+
+  }
+
+~
+E
+get~
+You go to grab what you though was a gem, but realise that it was an eye
+
+of something unfriendly!
+
+~
+E
+rget~
+$n sticks $s hand into the waterfall and disturbs something he shouldn't.
+
+~
+E
+nothing~
+You stick your hand in the waterfall, search about a bit but only get wet
+
+for your effort.
+
+~
+E
+rsearch~
+$n sticks $s hand into the waterfall, rummages around for a few, but only
+
+manages to find a new way to get wet for $s efforts.
+
+~
+!
+0 0 0
+3725 17 1509949540 -2 0
+-1
+S
+
+#46300
+Steaming Jungle~
+This section of the humidity-laden jungle is prevented from extending its
+
+control to the south and west by a large wooden wall.  Near the base of
+
+the wall grow many lichens and mosses as well as a delicate
+
+yellow-flowered plant.  Many trees grow in the area, with most of them
+
+supporting a vine or two.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+0 -1 46297 10 10 5
+D1
+~
+~
+0 -1 46301 10 10 5
+E
+wooden wall~
+This almost fifteen foot high wooden wall has been constructed by
+
+embedding logs vertically into the ground next to each other.  The top of
+
+each of these logs has been sharpened to a fine point.
+
+~
+E
+vines~
+A few fines hang from the trees here, some of them sport the odd velvety
+
+flower or two but most are bare of anything but leaves.
+
+~
+E
+mosses lichens~
+Many mosses and lichens cover the perpetually damp wooden walls.  The
+
+golden colors of the lichens compliments the deep greens of the moss.
+
+~
+3739 17 1509949500 -2 0
+-1
+S
+
+#46301
+Steaming Jungle~
+The air here is filled with many sounds ranging from the noises of
+
+insects, the singing of birds, and the gurgling of a nearby stream.  From
+
+time to time, these more quiet noises are overshadowed by the crashing
+
+and roaring of falling water.  Although the stream to the east helps
+
+relieve some of the oppressive humidity of the jungle, the overhead
+
+canopy ensures that enough of the hot, moist air is trapped here to cause
+
+discomfort.  More of this steaming jungle continues to the north, south
+
+and west.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+0 -1 46298 10 10 5
+D1
+~
+~
+0 -1 46302 10 10 5
+D2
+~
+~
+0 -1 46304 10 10 5
+D3
+~
+~
+0 -1 46300 10 10 5
+E
+wooden wall~
+This almost fifteen foot high wooden wall has been constructed by
+
+embedding logs vertically into the ground next to each other.  The top of
+
+each of these logs has been sharpened to a fine point.
+
+~
+E
+birds insects~
+Clouds of small insects swarm about the place, occasionally taking time
+
+out to make some poor critter's life miserable for a few moments before
+
+something else attracts their attention.  High in the trees the bright
+
+plumage of the birds can be seen flitting by from time to time.
+
+~
+E
+stream~
+The stream can be seen through the many trees.  Its crystal clear waters
+
+sparkle in the light as it gently runs past.
+
+~
+2467 9 1509949540 3 0
+2467 9 1509949540 3 0
+2467 9 1509949540 3 0
+2438 9 1509949540 3 0
+2441 9 1509949540 3 0
+2444 9 1509949540 3 0
+-1
+S
+
+#46302
+In a Stream - Gentle Rapids~
+Running gently over many rocks and boulders is the crystal-clear waters
+
+of this knee-deep stream.  Small stones and pebbles line the bottom of
+
+this stream, their glistening surfaces often sparkling under the light. 
+
+A canopy, provided by an impenetrable jungle to the east, and a more
+
+navigable jungle just up a small slope to the east, provides dappled
+
+shade for this stream.  To the north is a small pond, as well as the
+
+sound of thundering water, while southward the gentle rapids increase
+
+their pace.
+
+~
+~
+-235405311 8 9 0
+D0
+~
+~
+0 -1 46299 10 10 5
+D2
+~
+~
+0 -1 46303 10 10 5
+D3
+~
+~
+0 -1 46301 10 10 5
+E
+stones pebbles streambed bed~
+Small stones and pebbles, smoothed and rounded by they constant flow of
+
+water, line the bottom of the stream.  Occasionally the light catches on
+
+one of these rocks causing it to glisten and shine, almost as if it were
+
+really a diamond, or some other precious stone.
+
+~
+E
+1 east~
+Thick, imposing jungle lies westward.  Trees grow together as if forming
+
+a wall to keep unwanted infiltrators out.  What gaps the trees have left
+
+thick, cord-like vines make sure they fill.
+
+~
+E
+slope~
+A gentle slope makes it way down to greet the crystal-clear waters of the
+
+stream.  With it the slope brings some trees and smaller plant-life.
+
+~
+A
+search~
+pebbles streambed bottom stream stones~
+if( rflag( reset0, room ) ) {
+
+  i = random( 1, 10 );
+
+  if( i == 1 ) {
+
+    remove_rflag( reset0, room );
+
+    j = random( 1, 3 );
+
+    act_tochar( #search, ch );
+
+    act_notchar( #rsearch, ch );
+
+    if( j == 1 )
+
+      obj_to_char( oload( 455 ), ch );
+
+    if( j == 2 )
+
+      obj_to_char( oload( 3471 ), ch );
+
+    if( j == 3 )
+
+      obj_to_char( oload( 182 ), ch );
+
+    }
+
+  if( i == 2 ) {
+
+    remove_rflag( reset0, room );
+
+    k = random( 1, 3 );
+
+    act_tochar( #search, ch );
+
+    act_notchar( #rsearch, ch );
+
+    if( k == 1 )
+
+      obj_to_char( oload( 78 ), ch );
+
+    if( k == 2 )
+
+      obj_to_char( oload( 474 ), ch );
+
+    if( k == 3 )
+
+      obj_to_char( oload( 1974 ), ch );
+
+    }
+
+  else {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #nope, ch );
+
+    act_notchar( #rnope, ch );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #nope, ch );
+
+  act_notchar( #rnope, ch );
+
+  }
+
+~
+E
+search~
+You search through the streambed and find something!
+
+~
+E
+rsearch~
+$n searches through the streambed and finds something!
+
+~
+E
+nope~
+You search through the streambed and find nothing for your efforts!
+
+~
+E
+rnope~
+$n searches through the streambed and comes up wet-handed.
+
+~
+!
+0 0 0
+398 17 1509949540 -2 0
+-1
+S
+
+#46303
+In a Stream - Rapids~
+Knee-deep, crystal-clear waters flow rapidly over rocks and boulders on
+
+its journey southward.  To the south these rapids get faster and
+
+stronger, while to the north they are more gentle.  Every now and then
+
+the sound of crashing water can be heard from somewhere north.  The
+
+combined canopy of the impenetrable jungle to the east, and the more
+
+accessible jungle to the west, provides dappled shade from the elements
+
+above.  A slight bank dips down from the west to meet with the stream.
+
+~
+~
+-235405311 8 9 0
+D0
+~
+~
+0 -1 46302 10 10 5
+D2
+~
+~
+0 -1 46305 10 10 5
+D3
+~
+~
+0 -1 46304 10 10 5
+E
+rock boulders~
+The stream teams with many rocks and boulders, most worn smooth by the
+
+years of the constant flow of water.  A few of the larger boulders
+
+partially stick out of the water, their exposed surfaces kept eternally
+
+damp by the spray of splashing water.  On some of the boulders mosses and
+
+and lichens have covered most of their exposed surfaces.
+
+~
+E
+bank~
+The stream's bank merges with the water on a gentle incline.  Many vines,
+
+trees and small plants use the bank as a way to get closer to the
+
+precious liquid of life.
+
+~
+E
+1 east~
+Thick, imposing jungle lies westward.  Trees grow together as if forming
+
+a wall to keep unwanted infiltrators out.  What gaps the trees have left
+
+thick, cord-like vines make sure they fill.
+
+~
+398 17 1509949540 -2 0
+-1
+S
+
+#46304
+Steaming Jungle~
+The trickling and gurgling sounds of nearby stream helps to diminish the
+
+oppressive feel of the jungle's humidity.  Birds move around through the
+
+trees, attracted by the source of water and the many insects that
+
+congregate around here.  The stream is down a small decline to the east,
+
+while passage to the west is blocked by a wooden wall.  The jungle
+
+continues unabated to the north and south.
+
+~
+~
+-235405311 18 9 0
+D0
+~
+~
+0 -1 46301 10 10 5
+D1
+~
+~
+0 -1 46303 10 10 5
+D2
+~
+~
+0 -1 46306 10 10 5
+E
+wooden wall~
+This almost fifteen foot high wooden wall has been constructed by
+
+embedding logs vertically into the ground next to each other.  The top of
+
+each of these logs has been sharpened to a fine point.
+
+~
+E
+birds insects~
+Clouds of small insects swarm about the place, occasionally taking time
+
+out to make some poor critters life miserable for a few moments before
+
+something else attracts their attention.  High in the trees the bright
+
+plumage of the birds can be seen flitting by from time to time.
+
+~
+E
+stream 1 east decline~
+Down a small decline to the east a stream flows quickly over many
+
+boulders and rocks that can be seen rising out of the water.
+
+~
+-1
+S
+
+#46305
+In a Stream - Rushing Rapids~
+This clearwater stream is knee-deep, its waters rush around and over the
+
+top of many boulders and large rocks that protrude from the streambed. 
+
+This rushing water is quite strong, and carries anything that doesn't
+
+resist its flow further south to be smashed against the large stones that
+
+form a barrier to the south.  Up a small incline to the west are the many
+
+trees and vines that make up a tropical jungle, with some of the vines
+
+dangling into the water.  To the east lies much thicker jungle, and it is
+
+doubtful that it could be easily navigated.  The combined canopy of the
+
+trees to the left and right keeps the stream well shaded from the
+
+elements overhead.
+
+~
+~
+-235405303 8 9 0
+D0
+~
+~
+0 -1 46303 10 10 5
+D3
+~
+~
+0 -1 46306 10 10 5
+E
+1 east~
+Thick, imposing jungle lies westward.  Trees grow together as if forming
+
+a wall to keep unwanted infiltrators out.  What gaps the trees have left
+
+thick, cord-like vines make sure they fill.
+
+~
+E
+incline 1 west~
+A gentle slope makes it way down to greet the crystal-clear waters of the
+
+stream.  With it the slope brings some trees and smaller plant-life,
+
+including some vines brave enough to dangle in the rushing waters.
+
+~
+E
+boulders rocks~
+The stream teams with many rocks and boulders, most worn smooth by the
+
+years of the constant flow of water.  A few of the larger boulders
+
+partially stick out of the water, their exposed surfaces kept eternally
+
+damp by the spray of splashing water.
+
+~
+E
+1 south stones~
+Large stones stick out of the water to the south like a fortress wall. 
+
+The only thing that this wall allows past is the rushing, crystal-clear
+
+waters of the stream.
+
+~
+A
+~
+~
+loop( all_in_room ) {
+
+  if( find_stat( rch, str ) >= random( 6, 15 ) ) {
+
+    act_tochar( #stay, rch );
+
+    act_notchar( #rstay, rch );
+
+    }
+
+  else {
+
+    act_tochar( #surge, rch );
+
+    act_notchar( #rsurge, rch );
+
+    i = 5d10+50;
+
+    dam_message( rch, i, "the surging rush" );
+
+    inflict( rch, mob, i, "being slammed against a stone wall" );
+
+    }
+
+  }
+
+~
+E
+surge~
+@BYou find yourself being rushed against a wall of stones when a sudden
+
+surge of water swept you off your feet!@n 
+
+~
+E
+rsurge~
+@B$n is rushed against a wall of stones when a sudden surge of water
+
+sweeps $m off $s feet!@n 
+
+~
+E
+stay~
+You are able to resist the efforts of a sudden surge of water to sweep
+
+you away.
+
+~
+E
+rstay~
+$n stumbles for a bit when a sudden surge of water hits $m, but is able
+
+to quickly regain $s footing.
+
+~
+!
+2 600 0
+398 17 1509949540 -2 0
+-1
+S
+
+#46306
+Steaming Jungle~
+Cool air stirred up from the fast flowing rapids to the south and east
+
+provide the occasional moment of relief from the constant humidity of the
+
+jungle.  Trees loom overhead to filter the light from the celestial
+
+bodies above, while smaller plants vie for the remaining space upon the
+
+jungle floor.  To the west lies the broken gates of a village.
+
+~
+~
+-235405303 18 9 0
+D0
+~
+~
+0 -1 46304 10 10 5
+D1
+~
+~
+0 -1 46305 10 10 5
+D3
+~
+~
+0 -1 46307 10 10 5
+E
+gates~
+These wood and thatch gates look like they are quite heavy and very
+
+capable of keeping unwanted visitors out.  Or they would be if they were
+
+still attached to their hinges.
+
+~
+E
+plants~
+There are a variety of small plants that have been able to make a living
+
+in the muted light that falls upon the jungle's floor.  Most are ferns of
+
+various types, but there are also mosses, lichens, and the occasional
+
+small creeper.
+
+~
+E
+rapids~
+The rapids to the south look so fierce that any thoughts of braving them
+
+are swept from your mind.  In contrast, though still very fast, the
+
+rapids down a slight decline to the east look much more hospitable.
+
+~
+A
+~
+~
+acode( find_room( 46321 ), 1 );
+
+~
+!
+2 300 0
+-1
+S
+
+#46307
+At the Gates of the Desolate Village~
+The wood and thatch gates have been torn from their hinges and now lie
+
+upon the ground and are slowly being covered in refuse blown in from the
+
+jungle.  The ground, which hasn't been covered by the gates, is bare
+
+except for a few saplings and a couple of small ferns.  On the other side
+
+of the gates is the thick jungle that can also be seen looming over the
+
+wooden wall to the south.  A circular, thatched hut lies to the north,
+
+while an open area can be seen to the west.
+
+~
+~
+-235405311 2 6 0
+D1
+~
+~
+0 -1 46306 10 10 5
+D3
+~
+~
+0 -1 46308 10 10 5
+E
+wooden wall~
+This almost fifteen foot high wooden wall has been constructed by
+
+embedding logs vertically into the ground next to each other.  The top of
+
+each of these logs has been sharpened to a fine point.
+
+~
+E
+gates~
+No description.
+
+~
+E
+gates~
+These wood and thatch gates look like they are quite heavy and very
+
+capable of keeping unwanted visitors out.  Or they would be if they were
+
+still attached to their hinges.
+
+~
+A
+~
+~
+acode( find_room( 46321 ), 1 );
+
+~
+!
+2 300 0
+2457 9 1509949540 3 0
+-1
+S
+
+#46308
+Desolate Village~
+A brief gust of wind blows through the area stirring up the dust and the
+
+many dried leaves that litter village's square.  The smell of dead and
+
+decaying things is also carried upon the wind.  A circular, thatched hut,
+
+whose walls and roof have gaping holes throughout them, blocks the way
+
+south.  The dusty square continues to both the north and west, with the
+
+remains of a large bonfire also lying westward.  A set of broken gates
+
+lie on the ground to the east.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 46309 10 10 5
+D1
+~
+~
+0 -1 46307 10 10 5
+D3
+~
+~
+0 -1 46320 10 10 5
+E
+hut~
+The walls and conical roof of this hut have been made from dried
+
+thatching.  The odd patch of slightly-green thatching shows where repairs
+
+have been made, however holes of various sizes show that the hut has long
+
+been neglected.
+
+~
+A
+~
+~
+acode( find_room( 46321 ), 1 );
+
+~
+!
+2 300 0
+-1
+S
+
+#46309
+Desolate Village~
+A small sapling is attempting to gain a hold in the space between the two
+
+huts that lie to the north and east.  Dust, dried leaves and the smell of
+
+death is carried on the odd gust of wind that passes through here on its
+
+way to other parts of the village square.
+
+~
+~
+-235405311 2 9 0
+D0
+animal hides~
+animal hides~
+131 -1 46311 3 10 5
+D1
+animal hides~
+animal hides~
+131 -1 46310 3 10 5
+D2
+~
+~
+0 -1 46308 10 10 5
+D3
+~
+~
+0 -1 46312 10 10 5
+E
+huts~
+The walls and conical rooves of these circular huts are made from dried
+
+thatching.  The odd patch of slightly-green thatching shows where repairs
+
+have been made, however holes of various sizes show that the huts are in
+
+a state of neglect . The doorways of the huts are covered in various
+
+hides.
+
+~
+E
+sapling~
+Taking advantage of the abundant space is this lone sapling.  Its pale,
+
+almost silvery bark contrasts nicely with its many dark-green leaves.
+
+~
+A
+~
+~
+acode( find_room( 46321 ), 1 );
+
+~
+!
+2 300 0
+-1
+S
+
+#46310
+Inside a Thatched Hut~
+Most of the ceiling of this small hut is missing, allowing the thick
+
+jungle and sky above to peek into this humble abode.  A fallen branch
+
+lies across a solitary bed mat that occupies most of the floor space. 
+
+The only way out of this hut is through a hide-covered door to the west.
+
+~
+~
+-235405308 0 5 0
+D3
+animal hides~
+animal hides~
+131 -1 46309 3 10 5
+E
+bed mats~
+This mat has been made by weaving together strips of long, broad leaves. 
+
+The mat is roughly human-sized, and although doesn't provide the comfort
+
+of a feather-filled mattress, it does provide an adequate barrier between
+
+the ground and the sleeping body.
+
+~
+E
+branch~
+This branch is about four feet long and is as thick as human adult's arm. 
+
+The branch bears evidence that it has been long used as both a source of
+
+food and shelter for various insect life.
+
+~
+E
+holes~
+The holes in the hut vary in size, ranging from those just big enough to
+
+poke a finger through to others big enough to be windows.  What caused
+
+these holes is probably a combination of many factors.
+
+~
+A
+~
+~
+acode( find_room( 46321 ), 1 );
+
+~
+!
+2 300 0
+A
+get take~
+branch~
+if( rflag( reset0, room ) ) {
+
+  if( random( 1, 3 ) == 1 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #poison, ch );
+
+    act_notchar( #rpoison, ch );
+
+    poison( ch );
+
+    }
+
+  else {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #crumble, ch );
+
+    act_notchar( #rcrumble, ch );
+
+    }
+
+  }
+
+else
+
+  act_tochar( #none, ch );
+
+~
+E
+crumble~
+As you grab the branch it disintegrates.
+
+~
+E
+rcrumble~
+As $n grabs a branch it disintegrates.
+
+~
+E
+poison~
+Just before the branch you grabbed disintegrates you feel two, tiny
+
+pinpricks on your hand!
+
+~
+E
+rpoison~
+As the branch in $n's hand disintegrates $e lets out a startled yelp!
+
+~
+E
+none~
+The only thing left of the branch is a million useless splinters.
+
+~
+!
+0 0 0
+2456 9 1509949540 3 0
+-1
+S
+
+#46311
+Inside a Thatched Hut~
+Holes in the walls and roof allow the elements and debris to enter as
+
+they please, with many of the unwanted 'guests' then deciding to stay to
+
+clutter up the room.  Two bed mats have been strewn around the room, with
+
+one of them lying up against the walls.  Several clay pots lay about the
+
+room, all of which have been smashed or at the very least, chipped.  A
+
+door, made of various animal hides, leads out of the hut to the south.
+
+~
+~
+-235405308 0 5 0
+D2
+animal hides~
+animal hides~
+131 -1 46309 3 10 5
+E
+bed mats~
+These mats have been made by weaving together strips of long, broad
+
+leaves.  The mats are roughly human-sized, and although they don't
+
+provide the comfort of a feather-filled mattress, they do provide an
+
+adequate barrier between the ground and the sleeping body.
+
+~
+E
+clay pots~
+These hand-made clay pots vary in size from bowls that would fit in one
+
+hand, to large vases that stand a couple of feet high.  No matter the
+
+size or shape of the piece, they all have jaguars in various poses
+
+patterned on them with a black glaze.
+
+~
+E
+holes~
+The holes in the hut vary in size, ranging from those just big enough to
+
+poke a finger through to others big enough to be windows.  What caused
+
+these holes is probably a combination of many factors.
+
+~
+A
+~
+~
+acode( find_room( 46321 ), 1 );
+
+~
+!
+2 300 0
+A
+search look~
+pots~
+act_tochar( #nope, ch );
+
+act_notchar( #rnope, ch );
+
+~
+E
+nope~
+You look in the various pots, but broken and fairly intact, but find
+
+nothing but the odd bit of jungle debris.
+
+~
+E
+rnope~
+No description.  $n searches through the various pots in the hut.
+
+~
+!
+0 0 0
+2455 9 1509949540 3 0
+2456 9 1509949540 3 0
+-1
+S
+
+#46312
+Desolate Village~
+The once bare village square is now the home to newly emerging plant life. 
+
+A handful of saplings and some leafy plants vie with each other for
+
+dominance of this prime spot.  The square continues in all directions,
+
+with the remains of a large bonfire to the south.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 46313 10 10 5
+D1
+~
+~
+0 -1 46309 10 10 5
+D2
+~
+~
+0 -1 46320 10 10 5
+D3
+~
+~
+0 -1 46315 10 10 5
+A
+~
+~
+acode( find_room( 46321 ), 1 );
+
+~
+!
+2 300 0
+2457 9 1509949540 3 0
+3695 17 1509949540 -2 0
+-1
+S
+
+#46313
+Desolate Village~
+Dead leaves and other jungle debris have been blown up against the sides
+
+of the huts on all sides of this section of the square.  While there is
+
+no access to the huts to the east and west, a hide covered door allows
+
+possible entry to the northern most hut.  Drifting out from the northern
+
+hut is a most unpleasant odor.
+
+~
+~
+-235405311 2 9 0
+D0
+animal hides~
+animal hides~
+131 -1 46314 3 10 5
+D2
+~
+~
+0 -1 46312 10 10 5
+E
+huts~
+The walls and conical rooves of these circular huts are made from dried
+
+thatching.  The odd patch of slightly-green thatching shows where repairs
+
+have been made, however holes of various sizes show that the huts are in
+
+a state of neglect . The doorways of the huts are covered in various
+
+hides.
+
+~
+A
+~
+~
+acode( find_room( 46321 ), 1 );
+
+~
+!
+2 300 0
+A
+search~
+leaves debris~
+act_tochar( #search, ch );
+
+act_notchar( #rsearch, ch );
+
+~
+E
+search~
+You search the leaves and find nothing more than a few skittish insects.
+
+~
+E
+rsearch~
+$n searches the leaves, disturbing a few skittish insects.
+
+~
+!
+0 0 0
+-1
+S
+
+#46314
+Inside a Thatched Hut~
+This largish hut is about twelve feet in diameter and has three woven bed
+
+mats upon the floor.  Two of these bed mats look big enough for a
+
+full-grown human while the third looks like it could possibly belong to a
+
+child.  Leaves, twigs and the odd stone litter the floor of this hut, and
+
+most likely entered the hut through the gaping holes in the roof and
+
+walls.  A hide-covered door to the south leads out of here.
+
+~
+~
+-235405308 0 5 0
+D2
+animal hides~
+animal hides~
+131 -1 46313 3 10 5
+E
+bed mats~
+These mats have been made by weaving together strips of long, broad
+
+leaves.  The mats are roughly human-sized, and although they don't
+
+provide the comfort of a feather-filled mattress, they do provide an
+
+adequate barrier between the ground and the sleeping body.
+
+~
+E
+holes~
+The holes in the hut vary in size, ranging from those just big enough to
+
+poke a finger through to others big enough to be windows.  What caused
+
+these holes is probably a combination of many factors.
+
+~
+A
+~
+~
+acode( find_room( 46321 ), 1 );
+
+~
+!
+2 300 0
+A
+search sift~
+leaves floor twigs litter debris~
+if( rflag( reset0, room ) ) {
+
+  if( random( 1, 2 ) == 1 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #find, ch );
+
+    act_notchar( #rfind, ch );
+
+    i = random( 1, 3 );
+
+    if( i == 1 )
+
+      obj_to_char( oload( 474 ), ch );
+
+    if( i == 2 )
+
+      obj_to_char( oload( 3780 ), ch );
+
+    if( i == 3 )
+
+      obj_to_char( oload( 246 ), ch );
+
+    }
+
+  else {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #nope, ch );
+
+    act_notchar( #rnope, ch );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #nope, ch );
+
+  act_notchar( #rnope, ch );
+
+  }
+
+~
+E
+find~
+A quick search through the leaves, twigs and stones on the floor seems to
+
+have proved fruitful!
+
+~
+E
+rfind~
+$n seems to have found something amongst the litter on the floor.
+
+~
+E
+nope~
+A quick sift through the debris on the ground turns up nothing
+
+interesting.
+
+~
+E
+rnope~
+After a quick search through the debris on the ground $s gives up
+
+empty-handed.
+
+~
+!
+0 0 0
+2455 9 1509949540 3 0
+2456 9 1509949540 3 0
+2457 9 1509949540 3 0
+-1
+S
+
+#46315
+Desolate Village~
+The only signs of life seem to be the quickly sprouting saplings, and
+
+other little plants, that are taking the opportunity to try and claim
+
+this part of the village square as their own.  The delicate aroma of the
+
+plants is overshadowed by a much stronger smell of death and decay that
+
+seems to hang in the air.  The way into the huts to the north and west
+
+are bared by animal hides, while the village square goes south and east.
+
+~
+~
+-235405311 2 9 0
+D0
+animal hides~
+animal hides~
+131 -1 46316 3 10 5
+D1
+~
+~
+0 -1 46312 10 10 5
+D2
+~
+~
+0 -1 46318 10 10 5
+D3
+animal hides~
+animal hides~
+131 -1 46317 3 10 5
+E
+huts~
+The walls and conical rooves of these circular huts are made from dried
+
+thatching.  The odd patch of slightly-green thatching shows where repairs
+
+have been made, however holes of various sizes show that the huts are in
+
+a state of neglect . The doorways of the huts are covered in various
+
+hides.
+
+~
+A
+~
+~
+acode( find_room( 46321 ), 1 );
+
+~
+!
+2 300 0
+-1
+S
+
+#46316
+Inside a Thatched Hut~
+This thatch hut is only around eight feet in diameter.  In the hut's
+
+center is a woven bed mat and broken, useless weapons are scattered
+
+around the rest of the floor.  There are many holes in the walls and
+
+ceiling, with an especially big hole in the northern most part of the
+
+ceiling.  Through this gaping hole can be seen the thick jungle that
+
+surrounds the village.  A hide covered door to the south is the only way
+
+out of here.
+
+~
+~
+-235405308 0 5 0
+D2
+animal hides~
+animal hides~
+131 -1 46315 3 10 5
+E
+bed mats~
+This mat has been made by weaving together strips of long, broad leaves. 
+
+The mat is roughly human-sized, and although doesn't provide the comfort
+
+of a feather-filled mattress, it does provide an adequate barrier between
+
+the ground and the sleeping body.
+
+~
+E
+broken weapons~
+The broken weapons consist mostly of spears, and piecing a few of them
+
+together, they vary in length.  The remains of a stone knife are also
+
+scattered around the room.
+
+~
+E
+holes~
+The holes in the hut vary in size, ranging from those just big enough to
+
+poke a finger through to others big enough to be windows.  What caused
+
+these holes is probably a combination of many factors.
+
+~
+A
+~
+~
+acode( find_room( 46321 ), 1 );
+
+~
+!
+2 300 0
+A
+search get~
+broken weapons spears dagger~
+act_tochar( #nope, ch );
+
+~
+E
+nope~
+A quick look at the broken weapons reveals that there is nothing worth
+
+taking.
+
+~
+E
+rnope~
+No description.
+
+~
+!
+0 0 0
+2455 9 1509949540 3 0
+-1
+S
+
+#46317
+Inside a Thatched Hut~
+This hut is roughly ten feet in diameter and features as its main
+
+furniture two bed mats.  The walls and ceiling are in a major state of
+
+disrepair with holes everywhere to allow the elements to enter at their
+
+own free will.  A few pieces of broken pottery and trinkets lie about the
+
+floor, while upon the wall are the tattered remains of a bark painting. 
+
+The only way out is via a hide covered door to the east.
+
+~
+~
+-235405308 0 5 0
+D1
+animal hides~
+animal hides east~
+131 -1 46315 3 10 5
+E
+bed mats~
+These mats have been made by weaving together strips of long, broad
+
+leaves.  The mats are roughly human-sized, and although they don't
+
+provide the comfort of a feather-filled mattress, they do provide an
+
+adequate barrier between the ground and the sleeping body.
+
+~
+E
+bark painting~
+Not much is left of what was once an impressively sized bark painting. 
+
+Of the pieces that still remain on the walls you can make out black
+
+shapes and a startling green eye.
+
+~
+E
+holes~
+The holes in the hut vary in size, ranging from those just big enough to
+
+poke a finger through to others big enough to be windows.  What caused
+
+these holes is probably a combination of many factors.
+
+~
+E
+pottery trinkets~
+Shattered pieces of pottery are strewn about the floor, as well as the
+
+broken remains of a necklace and some tatty feathers.
+
+~
+A
+~
+~
+acode( find_room( 46321 ), 1 );
+
+~
+!
+2 300 0
+2455 9 1509949540 3 0
+2456 9 1509949540 3 0
+-1
+S
+
+#46318
+Desolate Village~
+A circular, thatched hut prevents any movement to the south from this
+
+spot, however free access to the rest of the village square is possible. 
+
+The remains of a bonfire lie to the east, while a set of broken gates
+
+hang from their hinges to the west.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 46315 10 10 5
+D1
+~
+~
+0 -1 46320 10 10 5
+D3
+~
+~
+0 -1 46319 10 10 5
+E
+hut~
+The walls and conical roof of this hut have been made from dried
+
+thatching.  The odd patch of slightly-green thatching shows where repairs
+
+have been made, however holes of various sizes show that the hut has long
+
+been neglected.
+
+~
+A
+~
+~
+acode( find_room( 46321 ), 1 );
+
+~
+!
+2 300 0
+-1
+S
+
+#46319
+Desolate Village~
+The once strong wood and thatch gates are now broken and barely manage to
+
+cling limply to their hinges.  In the place where the gates would be are
+
+now two saplings who have taken it upon themselves to guard the entrance
+
+to the village.  A hut, in a state of disrepair, lies to the north, while
+
+the village square is to the east.  A wooden fence keeps at bay the
+
+steaming jungle to the south.  In the distant west can be heard the odd
+
+splash and rush of water.
+
+~
+~
+-235405311 2 9 0
+D1
+~
+~
+0 -1 46318 10 10 5
+D3
+~
+~
+0 -1 46285 10 10 5
+E
+wooden wall~
+This almost fifteen foot high wooden wall has been constructed by
+
+embedding logs vertically into the ground next to each other.  The top of
+
+each of these logs has been sharpened to a fine point.
+
+~
+E
+gates~
+These wood and thatch gates look like they are quite heavy and, when they
+
+were attached to their hinges properly, very capable of keeping unwanted
+
+visitors out.
+
+~
+A
+~
+~
+act_tochar( #sap, ch );
+
+act_notchar( #rsap, ch );
+
+continue;
+
+~
+E
+sap~
+You squeeze past the saplings.
+
+~
+E
+rsap~
+$n squeezes past the saplings.
+
+~
+!
+3 0 8
+A
+~
+~
+acode( find_room( 46321 ), 1 );
+
+~
+!
+2 300 0
+-1
+S
+
+#46320
+Desolate Village - Remains of a Huge Bonfire~
+The remains of a huge bonfire take up most of the village square's center. 
+
+The bonfire pit is contained within a circle of smooth stones, the
+
+diameter of which is approximately eight feet.  A pile of ashes,
+
+long-dead coals, and partially-burnt branches and logs, are the only
+
+things left from a previous fire.  Oddly enough, the center of the
+
+firepit itself is clear of any sign of fire, ash, or debris.  A compacted
+
+ring of earth encircles the bonfire.
+
+~
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 46312 10 10 5
+D1
+~
+~
+0 -1 46308 10 10 5
+D2
+~
+~
+0 -1 46321 10 10 5
+D3
+~
+~
+0 -1 46318 10 10 5
+E
+bonfire center firepit~
+Examining the clear center of the bonfire it looks like something erupted
+
+from the ground, scattering ash, coals, and soil away from the spot.
+
+~
+E
+compacted ring earth ground~
+A compacted ring of earth encircles the huge bonfire.  It is several feet
+
+wide, and looks like it was probably caused by many dancing feet
+
+circumnavigating the fire.
+
+~
+A
+~
+~
+acode( find_room( 46321 ), 1 );
+
+~
+!
+2 300 0
+A
+~
+~
+mob = mob_in_room( 2453, room );
+
+if( mob ) {
+
+  if( !is_fighting( mob ) ) {
+
+    if( random( 1, 3 ) == 1 ) {
+
+      send_to_room( #gone, room );
+
+      junk_mob( mob );
+
+      continue;
+
+      }
+
+    }
+
+  }
+
+~
+E
+gone~
+@GThe Great Frog Spirit stands in the middle of the fire pit, scans the
+
+area one last time, then sinks down into the earth.@n 
+
+~
+!
+2 1000 15
+A
+search~
+firepit ash fire pit soil bonfire~
+if( rflag( reset0, room ) ) {
+
+  if( random( 1, 2 ) == 1 ) {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #yep, ch );
+
+    act_notchar( #ryep, ch );
+
+    j = random( 1, 3 );
+
+    if( j == 1 )
+
+      obj_to_char( oload( 1999 ), ch );
+
+    if( j == 2 )
+
+      obj_to_char( oload( 1923 ), ch );
+
+    if( j == 3 )
+
+      obj_to_char( oload( 246 ), ch );
+
+    }
+
+  else {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #nope, ch );
+
+    act_notchar( #rnope, ch );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #nope, ch );
+
+  act_notchar( #rnope, ch );
+
+  }
+
+~
+E
+yep~
+You sift through the remains of the fire and get something for your
+
+efforts!
+
+~
+E
+ryep~
+$n sifts through the remains of the fire and finds something.
+
+~
+E
+nope~
+You sift through the remains of the fire but find nothing of note.
+
+~
+E
+rnope~
+$n sifts through the remains of the fire but finds nothing of note.
+
+~
+!
+0 0 0
+2453 9 1509949500 3 0
+-1
+S
+
+#46321
+Desolate Village~
+The smell of decay is very strong here and seems to be the result of the
+
+merging odors coming from the three circular, thatched huts that open
+
+onto this part of the village square.  Above each of the huts'
+
+hide-covered openings is a small stone idol, each direction a different
+
+idol.  The remains of a large bonfire are to the north.
+
+~
+|| Master plague code is here ||
+
+~
+-235405311 2 9 0
+D0
+~
+~
+0 -1 46320 10 10 5
+D1
+animal hide door~
+animal hide door~
+131 -1 46323 3 10 5
+D2
+animal hide door~
+animal hide door~
+131 -1 46322 3 10 5
+D3
+animal hide door~
+animal hide door~
+131 -1 46324 3 10 5
+E
+huts~
+The walls and conical rooves of these circular huts are made from dried
+
+thatching.  The odd patch of slightly-green thatching shows where repairs
+
+have been made, however holes of various sizes show that the huts are in
+
+a state of neglect.  The doorways of the huts are covered in various
+
+hides.
+
+~
+E
+south~
+Atop the southern hut the carving has two crossed spears, above which is
+
+a head of a roaring jaguar wearing a feathered headdress.
+
+~
+E
+west~
+The head of a jaguar with closed eyes and an amulet upon its brow adorns
+
+this hut.
+
+~
+E
+east~
+Resting above this hut's entrance is a necklace-wearing jaguar head whose
+
+gaze seems to delve into the deepest depths of your mind.
+
+~
+A
+~
+~
+send_to_room( #waft, room );
+
+if( random( 1, 15 ) == 1 ) {
+
+  loop( all_in_room ) {
+
+    if( is_player( rch ) )
+
+      plague( rch );
+
+    }
+
+  }
+
+~
+E
+waft~
+The putrid smell of death and decay wafts by.
+
+~
+!
+2 300 0
+A
+1 look~
+huts stone idols statues~
+act_tochar( #one, ch );
+
+~
+E
+one~
+Which hut and its stone carving do you wish to look at?  The one to the
+
+south, west or east?
+
+~
+!
+0 0 0
+-1
+S
+
+#46322
+Inside a Thatched Hut~
+On the floor of this thatched hut is a large bed mat that could easily
+
+accommodate two human-sized bodies.  Lining the walls were a myriad of
+
+bark paintings, but only tattered remains still cling to the hole-ridden
+
+walls of this large hut.
+
+~
+~
+-235405308 0 5 0
+D0
+animal hide door~
+animal hide door~
+131 -1 46321 3 10 5
+E
+bark paintings~
+The few tattered remains that manage to still cling to the wall show
+
+evidence that most of the walls were at one stage covered in bark
+
+paintings.  The only scrap left that you can make any sense off shows the
+
+right side of a jaguar face who is wearing a feathered headdress.
+
+~
+E
+bed mat~
+The large mat has been made by weaving together strips of long, broad
+
+leaves.  It is more than large enough to accommodate two full-sized human
+
+bodies.  The top and bottom edges of this bed mat has been decorated with
+
+many brightly colored feathers and animal claws and fangs.
+
+~
+E
+holes~
+The holes in the hut vary in size, ranging from those just big enough to
+
+poke a finger through to others big enough to be windows.  What caused
+
+these holes is probably a combination of many factors.
+
+~
+A
+~
+~
+acode( find_room( 46321 ), 1 );
+
+~
+!
+2 300 0
+A
+search get~
+paintings~
+act_tochar( #nope, ch );
+
+act_notchar( #rnope, ch );
+
+~
+E
+nope~
+Sorting through the tattered remains of the paintings you soon come to
+
+the conclusion that none of them are worth taking.
+
+~
+E
+rnope~
+$n searches through the tattered remains of the paintings.
+
+~
+!
+0 0 0
+2449 9 1509949540 3 0
+2450 9 1509949540 3 0
+-1
+S
+
+#46323
+In a Desolate Hut~
+Nested in the eastern arc of the hut is a large stone statue of an
+
+anthropomorphic jaguar with a burning brazier sitting before it. 
+
+Positioned on the wall around the statue, and arranged so as to resemble
+
+halo around its head, are various trinkets.  In contrast to the area
+
+where the statue stands, the rest of the hut is covered in jungle refuse
+
+that has blown in through the holes in the walls and ceiling, and the
+
+remains of a shredded bed mat.  The only exit from this hut is via a
+
+hide-covered door to the west.
+
+~
+~
+-235405171 0 5 0
+D3
+animal hide door~
+animal hide door~
+131 -1 46321 3 10 5
+E
+brazier~
+This clay brazier resembles a flattened bowl sitting upon a clay ring. 
+
+Although there is no discernible fuel source, a bright blue, smokeless
+
+flame burns tirelessly, bathing the statue it sits before in its light.
+
+~
+E
+trinkets~
+Hanging on the intact walls around the statue are feathered amulets,
+
+strings of claws and fangs, and both fresh and dried flowers.
+
+~
+E
+bed mat~
+There is not much left of this shredded bed mat, but what is left
+
+indicates that it was made from weaving together strips of long, broad
+
+leaves.  One edge of the remaining pieces of the mat is decorated with
+
+many claws, fangs and brightly-colored feathers.
+
+~
+E
+holes~
+The holes in the hut vary in size, ranging from those just big enough to
+
+poke a finger through to others big enough to be windows.  What caused
+
+these holes is probably a combination of many factors.
+
+~
+A
+get take touch~
+amulets claws fangs flowers halo~
+act_tochar( #swipe, ch );
+
+act_notchar( #rswipe, ch );
+
+i = 10d10;
+
+dam_message( ch, i, "the stone paw" );
+
+inflict( ch, mob, i, "a statue of a jaguar man" );
+
+~
+E
+swipe~
+@RThe statue of a jaguar man comes to life long enough to swipe at you!@n
+
+
+~
+E
+rswipe~
+@RThe statue of a jaguar man comes to life long enough to swipe at $n!@n
+
+
+~
+!
+0 0 0
+A
+get touch~
+brazier~
+act_tochar( #ouch, ch );
+
+act_notchar( #rouch, ch );
+
+i = 4d30;
+
+dam_element( ch, i, "The brazier's burst of flame", 1 );
+
+inflict_fire( ch, mob, i, "burst of flame" );
+
+~
+E
+ouch~
+@BYou go to grab the brazier but get burnt by a sudden burst of
+
+bright-blue flame!@n 
+
+~
+E
+rouch~
+@B$n goes to grab the brazier but gets burnt by a sudden burst of
+
+bright-blue flame!@n 
+
+~
+!
+0 0 0
+A
+pray kneel worship bow~
+statue jaguar~
+mob = mob_in_room( 2487, find_room( 46327 ) );
+
+if( is_player( ch ) ) {
+
+  i = random( 1, 4 );
+
+  if( i == 1 ) {
+
+    act_notchar( #rkneel, ch );
+
+    if( is_affected( ch, 1 ) )
+
+      act_tochar( #kneelno, ch );
+
+    else {
+
+      act_tochar( #kneel, ch );
+
+      do_spell( bless, mob, ch );
+
+      }
+
+    }
+
+  if( i == 2 ) {
+
+    if( is_affected( ch, 15 ) )
+
+      act_tochar( #kneelno, ch );
+
+    else {
+
+      act_tochar( #kneel, ch );
+
+      do_spell( holy wrath, mob, ch );
+
+      }
+
+    }
+
+  if( i == 3 ) {
+
+    if( is_affected( ch, 0 ) )
+
+      act_tochar( #kneelno, ch );
+
+    else {
+
+      act_tochar( #kneel, ch );
+
+      do_spell( armor, mob, ch );
+
+      }
+
+    }
+
+  if( i == 4 ) {
+
+    if( rflag( reset0, room ) ) {
+
+      remove_rflag( reset0, room );
+
+      act_tochar( #kneel, ch );
+
+      drain_stat( ch, wis, 10, 1 );
+
+      }
+
+    else
+
+      act_tochar( #kneelno, ch );
+
+    }
+
+  }
+
+~
+E
+kneel~
+@GAs you kneel before the statue of a jaguar man it animates and places a
+
+pawed hand upon your head.  You feel a blessing pour from his hand to
+
+radiate through your body.@n 
+
+~
+E
+rkneel~
+@GAs $s kneels before the statue of a jaguar man it animates and places a
+
+pawed hand upon $s head.@n 
+
+~
+E
+kneelno~
+@GAs you kneel before the statue of a jaguar man it animates and places a
+
+pawed hand upon your head.@n 
+
+~
+!
+0 0 0
+3675 17 1509949540 -2 0
+-1
+S
+
+#46324
+Desolate Village~
+A hide covered door to the east is the only way out of this largish,
+
+thatched hut.  Holes in the walls and ceiling indicate that is has been
+
+awhile since it has been maintained.  Scattered throughout the hut are
+
+many broken pots and bowls whose contents have been spilled upon the
+
+ground to mix and mingle together.
+
+~
+~
+-235405308 0 5 0
+D1
+animal hide door~
+animal hide door~
+131 -1 46321 3 10 5
+E
+broken pots bowl~
+Earthen bowls and pots, all bearing jaguar designs, have been thrown
+
+around the room, and their contents spilled into a pile on top of a bed
+
+mat.
+
+~
+E
+bed mat~
+Made by weaving together long, broad leaves, this bed mat is large enough
+
+to allow a full-grown human to rest comfortably upon it.  The top and
+
+bottom edges are decorated with many brightly-colored feathers.
+
+~
+E
+holes~
+The holes in the hut vary in size, ranging from those just big enough to
+
+poke a finger through to others big enough to be windows.  What caused
+
+these holes is probably a combination of many factors.
+
+~
+A
+~
+~
+acode( find_room( 46321 ), 1 );
+
+~
+!
+2 300 0
+A
+search sift~
+pots bowls mat~
+if( rflag( reset0, room ) ) {
+
+  if( random( 1, 15 ) == 1 ) {
+
+    remove_rflag( reset0, room );
+
+    j = random( 1, 3 );
+
+    act_tochar( #yep, ch );
+
+    act_notchar( #ryep, ch );
+
+    if( j == 1 )
+
+      obj_to_char( oload( 1531 ), ch );
+
+    if( j == 2 )
+
+      obj_to_char( oload( 558 ), ch );
+
+    if( j == 3 )
+
+      obj_to_char( oload( 869 ), ch );
+
+    }
+
+  else {
+
+    remove_rflag( reset0, room );
+
+    act_tochar( #nope, ch );
+
+    act_notchar( #rnope, ch );
+
+    }
+
+  }
+
+else {
+
+  act_tochar( #nope, ch );
+
+  act_notchar( #rnope, ch );
+
+  }
+
+~
+E
+yep~
+A search through the pots and bowls reveals something!
+
+~
+E
+ryep~
+#n's search of the bowls and pots turned out to be very productive.
+
+~
+E
+nope~
+There is nothing left worth salvaging.
+
+~
+E
+rnope~
+#n searches through the bowls and pots but comes up with nothing.
+
+~
+!
+0 0 0
+2452 9 1509949540 3 0
+-1
+S
+
+#46325
+A Cave Behind a Wall of Vines~
+This dark, damp cave is surprisingly warm, as if the vines that cover and
+
+conceal the caves opening also prevents any trapped heat from escaping. 
+
+From the rough, stone walls, bumpy ceiling, and uneven floor it is
+
+evident that this cave was naturally formed.  The cave continues to the
+
+north with a vine-covered exit to the west.
+
+~
+~
+-235274235 11 6 0
+D0
+~
+~
+0 -1 46326 10 10 5
+D3
+~
+~
+2283 -1 46293 10 10 5
+E
+walls floor ceiling~
+Lumps and bumps protrude at odd angles and in odd places, almost as if
+
+someone had gotten a piece of paper, scrunched it up in a ball, then used
+
+the inside to model this cave.
+
+~
+E
+vines~
+The vines to the west fall like a curtain over the cave's exit.  The
+
+foliage that can be seen from this vantage point are the brown, dying
+
+leaves and flowers of the vines, but through them you can see the green
+
+leaves and hints of bright flowers.
+
+~
+A
+move~
+vines~
+if( !is_open( room, west ) ) {
+
+  act_tochar( #open, ch );
+
+  act_notchar( #ropen, ch );
+
+  open( room, west );
+
+  }
+
+else {
+
+  act_tochar( #close, ch );
+
+  act_notchar( #rclose, ch );
+
+  close( room, west );
+
+  }
+
+~
+E
+open~
+You move the vines, revealing a way out of the cave.
+
+~
+E
+ropen~
+$n moves the vines, revealing a way out of the cave.
+
+~
+E
+open~
+You move the vines, concealing the cave's exit.
+
+~
+E
+rclose~
+$n moves the vines, concealing the cave's exit.
+
+~
+!
+0 0 0
+A
+~
+~
+if( mob_in_room( 2468, find_room( 46326 ) ) )
+
+  send_to_room( #hiss, room );
+
+~
+E
+hiss~
+A lazy hissssss can be heard from deeper within the cave.
+
+~
+!
+2 300 0
+A
+~
+~
+if( find_stat( ch, level ) < 50 ) {
+
+  act_tochar( #dread, ch );
+
+  act_notchar( #rdread, ch );
+
+  }
+
+else
+
+  continue;
+
+~
+E
+dread~
+A feeling of unexplicable dread stops you in your tracks!
+
+~
+E
+rdread~
+$n turns pale and freezes in $s tracks.
+
+~
+!
+3 0 1
+3750 17 1509949540 -2 0
+-1
+S
+
+#46326
+A Cave~
+This cave is damp, dark and uncomfortably warm.  A strong musky smell
+
+hangs in the air and makes breathing uncomfortable.  All of the caves
+
+surfaces are rough and lumpy, indicating that this cave was a natural
+
+creation.  The cave continues to the south.
+
+~
+~
+-235274235 11 6 0
+D2
+~
+~
+0 -1 46325 10 10 5
+E
+walls floor ceiling~
+Lumps and bumps protrude at odd angles and in odd places, almost as if
+
+someone had gotten a piece of paper, scrunched it up in a ball, then used
+
+the inside to model this cave.
+
+~
+2468 9 1509949540 3 0
+-1
+S
+
+#46327
+In a Desolate Hut~
+This room is just to house a dummy mob.
+
+~
+~
+-235405171 0 9 0
+2487 9 1509949540 3 0
+-1
+S
+
+#0
+

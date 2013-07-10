@@ -1,0 +1,2610 @@
+#AREA
+Trainers, Ranger and Mage~
+Ylena~
+~
+
+0 0
+0
+#ROOMS
+
+#45000
+A Massive Shuvana Root~
+A massive, ribbed shuvana root takes up most of this area in its quest to
+
+provide anchorage and nutrients for the enormous tree it supports.  Some
+
+ferns grow along its edges and in the few spots that haven't been taken
+
+over by the root.  A quiet little glade lies toward the east.
+
+~
+connects to 19064
+
+~
+-235405311 3 5 0
+D1
+~
+~
+0 -1 19064 10 10 5
+A
+look~
+shuvana root~
+if( class( ch ) == ranger )
+
+  act_tochar( #ranger, ch );
+
+else
+
+  act_tochar( #other, ch );
+
+~
+E
+ranger~
+Considering that not all of the root is visible, with some of the root
+
+being below the surface, it still manages to easily tower over you. 
+
+Examining the root with your knowledge of the wilds, you feel that you
+
+maybe able to scale its massive girth.
+
+~
+E
+other~
+Considering that not all of the root is visible, with some of the root
+
+being below the surface, it still manages to easily tower over you.
+
+~
+!
+0 0 0
+A
+climb~
+root up~
+if( is_player( ch ) ) {
+
+  if( class( ch ) == ranger ) {
+
+    if( find_skill( ch, climb ) >= 4 ) {
+
+      act_tochar( #ranger, ch );
+
+      act_notchar( #rranger, ch );
+
+      transfer( ch, find_room( 45007 ) );
+
+      act_notchar( #aranger, ch );
+
+      }
+
+    else {
+
+      act_tochar( #nope, ch );
+
+      act_notchar( #rnope, ch );
+
+      }
+
+    }
+
+  else {
+
+    if( find_skill( ch, climb ) >= 7 ) {
+
+      act_tochar( #other, ch );
+
+      act_notchar( #rother, ch );
+
+      transfer( ch, find_room( 45007 ) );
+
+      act_notchar( #aother, ch );
+
+      }
+
+    else {
+
+      act_tochar( #nope, ch );
+
+      act_notchar( #rnope, ch );
+
+      }
+
+    }
+
+  }
+
+else {
+
+  if( find_skill( ch, climb ) >= 7 ) {
+
+    act_tochar( #other, ch );
+
+    act_notchar( #rother, ch );
+
+    transfer( ch, find_room( 45007 ) );
+
+    act_notchar( #aother, ch );
+
+    }
+
+  else {
+
+    act_tochar( #nope, ch );
+
+    act_notchar( #rnope, ch );
+
+    }
+
+  }
+
+~
+E
+ranger~
+You climb the massive root with the grace and ability of one at home with
+
+nature.
+
+~
+E
+rranger~
+$n climbs the massive root with the grace and ability of one at home with
+
+nature.
+
+~
+E
+other~
+You manage to scramble up the root.
+
+~
+E
+rother~
+With a noticeable lack of style, $n scrambles up the root's side.
+
+~
+E
+nope~
+After many tries and much ungainly scrambling, you just can't manage to
+
+climb the root.
+
+~
+E
+rnope~
+After many tries and much ungainly scrambling, $n fails to climb the root.
+
+~
+E
+aranger~
+With the grace of one at ease with the wildnerness, $n comes climbs up
+
+from below.
+
+~
+E
+aother~
+With much scrambling and huffing and puffing, $n manages to climb up from
+
+below.
+
+~
+!
+0 0 0
+-1
+S
+
+#45001
+On the Trunk of a Shuvana Tree~
+Clinging tightly to the ribbed trunk, you pause for a brief moment in
+
+your climb while you work out the best way to proceed.  Upward, you see
+
+the massive branches of this ancient tree, while below is the top of a
+
+large root.  The view from this spot is impressive.  A mass of green
+
+leaves parts to reveal various animals and the movement of birds to the
+
+east, while you can make out a river, and beyond it, a mountain range, in
+
+the distance to the west.
+
+~
+~
+-235405311 3 9 0
+A
+climb~
+1 down~
+if( class( ch ) == ranger ) {
+
+  act_tochar( #ranger, ch );
+
+  act_notchar( #rranger, ch );
+
+  wait( 1 );
+
+  transfer( ch, find_room( 45007 ) );
+
+  act_notchar( #aranger, ch );
+
+  }
+
+else {
+
+  act_tochar( #other, ch );
+
+  act_notchar( #rother, ch );
+
+  wait( 2 );
+
+  transfer( ch, find_room( 45007 ) );
+
+  act_notchar( #aother, ch );
+
+  }
+
+~
+E
+ranger~
+You take a few seconds to work out the best way to traverse down the
+
+tree, then with care you climb down the trunk.
+
+~
+E
+rranger~
+$n scans the trunk below $m, then starts to climb down the trunk.
+
+~
+E
+aranger~
+$n climbs down from above.
+
+~
+E
+other~
+You climb down the trunk, scrabbling and slipping as you go.
+
+~
+E
+rother~
+$n climbs down the trunk with much scrabbling and slipping, barely
+
+managing to stay on the trunk.
+
+~
+E
+aother~
+$n comes scrabbling down from above, barely managing to cling to the
+
+tree's trunk.
+
+~
+!
+0 0 0
+A
+climb~
+1 up~
+if( class( ch ) == ranger ) {
+
+  if( find_skill( ch, climb ) >= random( 3, 8 ) ) {
+
+    act_tochar( #ranger, ch );
+
+    act_notchar( #rranger, ch );
+
+    wait( 1 );
+
+    transfer( ch, find_room( 45002 ) );
+
+    act_notchar( #aranger, ch );
+
+    }
+
+  else {
+
+    act_tochar( #nope, ch );
+
+    act_notchar( #rnope, ch );
+
+    transfer( ch, find_room( 45000 ) );
+
+    act_notchar( #anope, ch );
+
+    i = 4d20+20;
+
+    dam_message( ch, i, "the fall" );
+
+    inflict( ch, mob, i, "a fall" );
+
+    interpret( ch, "sit" );
+
+    }
+
+  }
+
+else {
+
+  if( find_skill( ch, climb ) >= random( 6, 8 ) ) {
+
+    act_tochar( #other, ch );
+
+    act_notchar( #rother, ch );
+
+    wait( 2 );
+
+    transfer( ch, find_room( 45002 ) );
+
+    act_notchar( #aother, ch );
+
+    }
+
+  else {
+
+    act_tochar( #nope, ch );
+
+    act_notchar( #rnope, ch );
+
+    transfer( ch, find_room( 45000 ) );
+
+    act_notchar( #anope, ch );
+
+    i = 4d20+20;
+
+    dam_message( ch, i, "the fall" );
+
+    inflict( ch, mob, i, "a fall" );
+
+    interpret( ch, "sit" );
+
+    }
+
+  }
+
+~
+E
+ranger~
+With the aid of a small overhead branch, you climb futher up the tree.
+
+~
+E
+rranger~
+Utilizing a small overhead branch, $n climbs further up the tree.
+
+~
+E
+aranger~
+Using a small branch for leverage, $n climbs up from below.
+
+~
+E
+other~
+Fumbling to gain a hold of a small overhead branch, you eventually are
+
+able to use it to help you in your climb upward.
+
+~
+E
+rother~
+Fumbling to reach an overhead branch, $n finally manages to grasp it. 
+
+Using the branch for leverage, $e scrambles up the tree.
+
+~
+E
+aother~
+With the help of a small branch, $n scrambles up from below.
+
+~
+E
+nope~
+You make a hasty grab for a small overhead branch and slip, falling to
+
+the ground below!!
+
+~
+E
+rnope~
+$n makes a hasty grab for a small overhead branch and slips, falling to
+
+the ground below!!
+
+~
+E
+anope~
+Crashing through the overhead branches, $n falls at your feet in a bloody
+
+heap!
+
+~
+!
+0 0 0
+A
+2 sleep~
+~
+act_tochar( #nope, ch );
+
+~
+E
+nope~
+Sleeping on a trunk is a hazardous thing to do.
+
+~
+!
+0 0 0
+-1
+S
+
+#45002
+On the Trunk of a Shuvana - Junction with a Branch~
+A large branch connects with the shuvana tree here and leads off in an
+
+eastward direction.  Looking down from this spot you realise that a fall
+
+from this height could possibly be fatal and, having come to this
+
+conclusion, you cling to the ribbed trunk just that tiny bit harder.  The
+
+tree still towers above you, dominating the sky for many more feet than
+
+you can count.
+
+~
+~
+-235405311 3 9 0
+D1
+~
+~
+0 -1 45003 10 10 5
+A
+climb~
+1 down~
+if( class( ch ) == ranger ) {
+
+  if( find_skill( ch, climb ) >= random( 3, 5 ) ) {
+
+    act_tochar( #ranger, ch );
+
+    act_notchar( #rranger, ch );
+
+    wait( 1 );
+
+    transfer( ch, find_room( 45001 ) );
+
+    act_notchar( #aranger, ch );
+
+    }
+
+  else {
+
+    act_tochar( #nope, ch );
+
+    act_notchar( #rnope, ch );
+
+    transfer( ch, find_room( 45000 ) );
+
+    act_notchar( #anope, ch );
+
+    i = 4d20+20;
+
+    dam_message( ch, i, "the fall" );
+
+    inflict( ch, mob, i, "a fall" );
+
+    interpret( ch, "sit" );
+
+    }
+
+  }
+
+else {
+
+  if( find_skill( ch, climb ) >= random( 6, 8 ) ) {
+
+    act_tochar( #other, ch );
+
+    act_notchar( #rother, ch );
+
+    transfer( ch, find_room( 45001 ) );
+
+    act_notchar( #aother, ch );
+
+    }
+
+  else {
+
+    act_tochar( #nope, ch );
+
+    act_notchar( #rnope, ch );
+
+    transfer( ch, find_room( 45000 ) );
+
+    act_notchar( #anope, ch );
+
+    i = 4d20+20;
+
+    dam_message( ch, i, "the fall" );
+
+    inflict( ch, mob, i, "a fall" );
+
+    interpret( ch, "sit" );
+
+    }
+
+  }
+
+~
+E
+ranger~
+With the aid of a small branch, and careful consideration, you climb down
+
+the massive trunk.
+
+~
+E
+rranger~
+With the aid of a small branch, $n climbs down the massive trunk.
+
+~
+E
+aranger~
+With care and grace, $n comes climbing down from above.
+
+~
+E
+other~
+Using a small branch, you make clumsily scramble down the tree trunk.
+
+~
+E
+rother~
+$n grabs a small branch to aid their clumsy scramble down the massive
+
+tree trunk.
+
+~
+E
+aother~
+$n comes scrambling down the tree trunk.
+
+~
+E
+nope~
+You miscalculate your footing and fall through the branches to the ground
+
+below!!
+
+~
+E
+rnope~
+$n fumbles, loosing $s footing and falls through the branches to the
+
+ground below!!
+
+~
+E
+anope~
+$n comes crashing through the branches above to land at your feet in a
+
+bloody heap!
+
+~
+!
+0 0 0
+A
+climb~
+1 up~
+if( class( ch ) == ranger ) {
+
+act_tochar( #ranger, ch );
+
+act_notchar( #rranger, ch );
+
+wait( 1 );
+
+transfer( ch, find_room( 45004 ) );
+
+act_notchar( #aranger, ch );
+
+}
+
+else {
+
+act_tochar( #other, ch );
+
+act_notchar( #rother, ch );
+
+wait( 2 );
+
+transfer( ch, find_room( 45004 ) );
+
+act_notchar( #aother, ch );
+
+}
+
+~
+E
+ranger~
+With slow, considered movements, you climb up the ribbed trunk.
+
+~
+E
+rranger~
+With slow, considered movements, $n climbs up the ribbed trunk.
+
+~
+E
+aranger~
+With slow, considered movement, $n climbs up from below.
+
+~
+E
+other~
+With what could be described as frantic scrambling, you somehow manage to
+
+climb up the ribbed trunk.
+
+~
+E
+rother~
+With what could be described as frantic scrambling, $n somehow manages to
+
+climb up the ribbed trunk.
+
+~
+E
+aother~
+With much frantic scrambling, $n comes climbing up the tree trunk.
+
+~
+!
+0 0 0
+A
+2 sleep~
+~
+acode( find_room( 45001 ), 3 );
+
+~
+!
+0 0 0
+-1
+S
+
+#45003
+On a Great Branch~
+This thick branch provides a safe place to rest and recuperate.  You can
+
+just sit and watch the movement of the wind in the leaves that almost
+
+encircle this spot and spread on out into a verdant sea in almost every
+
+direction you look.  A thick mass of leaves prevents any further
+
+navigation of this branch.
+
+~
+search routine for here
+
+~
+-235405311 3 9 0
+D3
+~
+~
+0 -1 45002 10 10 5
+E
+leaves~
+The wind plays freely through these large leaves that are as big as an
+
+ogre's hand.  Every now and then the rippling play of the wind is
+
+disturbed by rustling movements.
+
+~
+-1
+S
+
+#45004
+On the Trunk of a Shuvana - Junction with a Branch~
+The ribbed bark of the trunk helps in your climb up this ancient shuvana
+
+tree.  Looking down, you judge the distance between you and the floor of
+
+the forest to be around 450 feet, while upward you estimate is a further
+
+150 foot climb to the crown of the tree.  To the west is a fairly thick
+
+branch.
+
+~
+~
+-235405311 3 9 0
+D3
+~
+~
+0 -1 45006 10 10 5
+A
+climb~
+1 down~
+if( class( ch ) == ranger ) {
+
+  act_tochar( #ranger, ch );
+
+  act_notchar( #rranger, ch );
+
+  wait( 1 );
+
+  transfer( ch, find_room( 45002 ) );
+
+  act_notchar( #aranger, ch );
+
+  }
+
+else {
+
+  act_tochar( #other, ch );
+
+  act_notchar( #rother, ch );
+
+  wait( 2 );
+
+  transfer( ch, find_room( 45002 ) );
+
+  act_notchar( #aother, ch );
+
+  }
+
+~
+E
+ranger~
+With a careful grace, you slowly make your way down the great trunk.
+
+~
+E
+rranger~
+With a careful grace, $n slowly makes $s way down the great trunk.
+
+~
+E
+aranger~
+With a careful grace, $n climbs down the trunk from above.
+
+~
+E
+other~
+With much clumsy manoeuvring, you climb down the trunk.
+
+~
+E
+rother~
+With much clumsy manoeuvring, $n climbs down the trunk.
+
+~
+E
+aother~
+With much clumsy manoeuvring, $n comes climbing down the trunk.
+
+~
+!
+0 0 0
+A
+climb~
+1 up~
+if( class( ch ) == ranger ) {
+
+  act_tochar( #ranger, ch );
+
+  act_notchar( #rranger, ch );
+
+  wait( 2 );
+
+  transfer( ch, find_room( 45005 ) );
+
+  act_notchar( #aranger, ch );
+
+  }
+
+else {
+
+  act_tochar( #other, ch );
+
+  act_notchar( #rother, ch );
+
+  wait( 3 );
+
+  transfer( ch, find_room( 45005 ) );
+
+  act_notchar( #aother, ch );
+
+  }
+
+~
+E
+ranger~
+You begin the long climb to the top of the tree, pausing every so often
+
+on the way to both contemplate the next move, and to take in the view.
+
+~
+E
+rranger~
+$n begins the long climb up to the top of the tree, with a few pauses
+
+along the way.
+
+~
+E
+aranger~
+$n climbs up from below.
+
+~
+E
+other~
+You begin the long scramble to the top of the tree, pausing to catch your
+
+breath every so often.
+
+~
+E
+rother~
+$n begins the long scramble to the top of the tree, pausing occassionally
+
+to catch $s breath.
+
+~
+E
+aother~
+$n comes scrambling up from below.
+
+~
+!
+0 0 0
+A
+2 sleep~
+~
+acode( find_room( 45001 ), 3 );
+
+~
+!
+0 0 0
+-1
+S
+
+#45005
+Crown of the Shuvana Tree~
+Nestled snugly in the massive trees crown is a large nest with a span of
+
+a yard or two.  From this spot you can see the vast canopy of the Vaasa
+
+spreading north, east and south, while far below you, to the west, you
+
+can see a sparkling blue ribbon winding its way between the edge of the
+
+forest and the snow-capped mountains.
+
+~
+~
+-235405311 3 9 0
+E
+nest~
+Made using various branches, smaller twigs and lined with leaves, this
+
+large nest is littered with small bones, the odd scrap of fur, and many
+
+feathers.
+
+~
+A
+climb~
+1 down~
+if( class( ch ) == ranger ) {
+
+  act_tochar( #ranger, ch );
+
+  act_notchar( #rranger, ch );
+
+  wait( 1 );
+
+  transfer( ch, find_room( 45004 ) );
+
+  act_notchar( #aranger, ch );
+
+  }
+
+else {
+
+  act_tochar( #other, ch );
+
+  act_notchar( #rother, ch );
+
+  wait( 2 );
+
+  transfer( ch, find_room( 45004 ) );
+
+  act_notchar( #aother, ch );
+
+  }
+
+~
+E
+ranger~
+You take a deep breath, then carefully start the long climb down.
+
+~
+E
+rranger~
+$n takes a deep breath, then carefully starts the long climb down.
+
+~
+E
+aranger~
+With slow deliberation, $n comes climbing down from above.
+
+~
+E
+other~
+You take a deep breath to still your nerves before starting the long
+
+climb down the tree.
+
+~
+E
+rother~
+Looking a little nervous, $n takes a deep breath before starting the long
+
+climb down the tree.
+
+~
+E
+aother~
+Looking a little shaken, $n climbs down from above.
+
+~
+!
+0 0 0
+A
+cast~
+1 tame black hawk~
+act_tochar( #screech, ch );
+
+act_notchar( #rscreech, ch );
+
+~
+E
+screech~
+The black hawk screeches at you in defiance!
+
+~
+E
+rscreech~
+The black hawk screeches at $n in defiance!
+
+~
+!
+0 0 0
+2413 9 1509949540 3 0
+-1
+S
+
+#45006
+At a Cleverly Constructed Platform on the Branch~
+A small platform, several feet squared, has been erected here amongst the
+
+leaves.  The platform features a slightly-disarrayed bed roll set up in
+
+its center.  The view westward is of a sparkling river and snow-capped
+
+mountains.  The crown of the tree above supplies shade and some
+
+protection from the elements while still allowing glimpses of the sky
+
+above to be observed.
+
+~
+~
+-235405311 3 5 0
+D1
+~
+~
+0 -1 45004 10 10 5
+A
+~
+~
+mob = mob_in_room( 2413, room );
+
+if( mob ) {
+
+  send_to_room( #home, room );
+
+  junk_mob( mob );
+
+  if( !mob_in_room( 2413, find_room( 45005 ) ) )
+
+    mload( 2413, find_room( 45005 ) );
+
+  }
+
+else
+
+  continue;
+
+~
+E
+home~
+A large, black hawk flies up to the top of the tree.
+
+~
+!
+3 400 2
+A
+cast~
+1 tame black hawk~
+acode( find_room( 45005 ), 2 );
+
+~
+!
+0 0 0
+2412 9 1509949540 2 0
+-1
+S
+
+#45007
+On Top of a Massive Root~
+Standing on top of this root that belongs to the tree just to your north,
+
+you are reminded just how insignificant you are.  The ancient tree that
+
+has stood here for many centuries is at least 600 feet tall, maybe more,
+
+and its massive girth can only be guessed at.  While the view to the
+
+north and south is blocked by huge shuvana trees, you see the ferned bank
+
+of a river to the west and a glade to the east.
+
+~
+[Stile] climb down- "After much awkward _maneouvering_ you finally climb off the massive root.
+
+~
+-235405311 3 9 0
+A
+1 look~
+tree shuvana~
+if( class( ch ) == ranger )
+
+  act_tochar( #ranger, ch );
+
+else
+
+  act_tochar( #other, ch );
+
+~
+E
+ranger~
+The ribbed bark of this massive, ancient shuvana tree supports many
+
+lichens and mosses near its base.  The massive trunk of the tree looks as
+
+if it is climbable for one with your abilities and understanding of the
+
+things of nature.
+
+~
+E
+other~
+The ribbed bark of this massive, ancient shuvana tree supports many
+
+lichens and mosses near its base.
+
+~
+!
+0 0 0
+A
+climb~
+root 1 down~
+if( !is_player( ch ) )
+
+  continue;
+
+if( is_player( ch ) )
+
+  if( class( ch ) == ranger )  {
+
+  if( find_skill( ch, climb ) >= 4 ) {
+
+    act_tochar( #ranger, ch );
+
+    act_notchar( #rranger, ch );
+
+    transfer( ch, find_room( 45000 ) );
+
+    act_notchar( #aranger, ch );
+
+    }
+
+  else {
+
+    act_tochar( #nope, ch );
+
+    act_notchar( #rnope, ch );
+
+    act_notchar( #anope, ch );
+
+    transfer( ch, find_room( 45000 ) );
+
+    i = 3d6+5;
+
+    dam_message( ch, i, "the fall" );
+
+    inflict( ch, mob, i, "a fall" );
+
+    }
+
+  }
+
+else {
+
+  if( find_skill( ch, climb ) >= 7 ) {
+
+    act_tochar( #other, ch );
+
+    act_notchar( #rother, ch );
+
+    transfer( ch, find_room( 45000 ) );
+
+    act_notchar( #aother, ch );
+
+    }
+
+  else {
+
+    act_tochar( #nope, ch );
+
+    act_notchar( #rnope, ch );
+
+    transfer( ch, find_room( 45000 ) );
+
+    i = 3d6+5;
+
+    dam_message( ch, i, "the fall" );
+
+    inflict( ch, mob, i, "a fall" );
+
+    }
+
+  }
+
+~
+E
+ranger~
+With ease and grace you climb down off the massive root.
+
+~
+E
+rranger~
+With ease and grace $n climbs down off the massive root.
+
+~
+E
+aranger~
+$n climbs down gracefully off the massive root.
+
+~
+E
+other~
+After much awkward maneouvering you finally climb off the massive root.
+
+~
+E
+rother~
+After much awkward maneouvering $n finally climbs off the massive root.
+
+~
+E
+aother~
+$n comes scrambling down from above.
+
+~
+E
+nope~
+You stumble in your attempts to climb off the root and end up falling to
+
+the ground below!
+
+~
+E
+rnope~
+$n stumbles and falls off the root!
+
+~
+E
+anope~
+$n lands in a heap at your feet!
+
+~
+!
+0 0 0
+A
+climb~
+tree trunk 1 up~
+if( is_player( ch ) )
+
+  if( class( ch ) == ranger ) {
+
+  act_tochar( #ranger, ch );
+
+  act_notchar( #rranger, ch );
+
+  wait( 1 );
+
+  transfer( ch, find_room( 45001 ) );
+
+  act_notchar( #aranger, ch );
+
+  }
+
+else {
+
+  act_tochar( #other, ch );
+
+  act_notchar( #rother, ch );
+
+  wait( 2 );
+
+  transfer( ch, find_room( 45001 ) );
+
+  act_notchar( #aother, ch );
+
+  }
+
+~
+E
+ranger~
+You carefully start the long climb up the shuvana tree.
+
+~
+E
+rranger~
+With care and grace, $n starts the long climb up the shuvana tree.
+
+~
+E
+aranger~
+With steady, thought out moves, $n climbs up from below.
+
+~
+E
+other~
+Scrabbling at first, you finally manage to find a foot hold on the trunk
+
+and begin the long climb up the tree.
+
+~
+E
+rother~
+$n struggles to find a foothold but eventually manages to succeed.  $e
+
+then continues an awkward climb upwards.
+
+~
+E
+aother~
+Huffing and puffing, $n scrabbles up from below.
+
+~
+!
+0 0 0
+-1
+S
+
+#45008
+A Fluctuating Tunnel~
+Every aspect of this tunnel seems to be in a constant flux of change. 
+
+The flickering of the light off misshapen walls plays upon your
+
+overactive imagination, making it difficult to judge your footing. 
+
+Fingers of ice intrude from the north while the ceiling above resembles a
+
+stream of water.  Just able to be seen are a set of transparent stairs
+
+leading up to the unusual-looking ceiling.
+
+~
+IMM NOTE: a player needs the ability to see invis to open the door up. 
+
+This is deliberate.
+
+~
+-235274239 0 5 0
+D0
+~
+~
+0 -1 45009 10 10 5
+D4
+~
+~
+235 -1 51753 10 10 5
+A
+~
+~
+send_to_room( #ripple, room );
+
+loop( all_in_room ) {
+
+  ch = rch;
+
+  if( get_pos( ch ) == 4 ) {
+
+    act_tochar( #wake, ch );
+
+    act_notchar( #rwake, ch );
+
+    interpret( ch, "sit" );
+
+    }
+
+  if( get_pos( ch ) == 8 ) {
+
+    if( find_stat( ch, dex ) < random( 6, 14 ) ) {
+
+      act_tochar( #fall, ch );
+
+      act_notchar( #rfall, ch );
+
+      interpret( ch, "sit" );
+
+      }
+
+    else {
+
+      act_tochar( #stay, ch );
+
+      act_notchar( #rstay, ch );
+
+      }
+
+    }
+
+  }
+
+~
+E
+ripple~
+@YA bulging ripple of change goes through the room!@n 
+
+~
+E
+stay~
+You manage to stay on your feet.
+
+~
+E
+rstay~
+$n manages to stay on $s feet.
+
+~
+E
+fall~
+The bulging floor knocks you off your feet!
+
+~
+E
+rfall~
+The bulging floor knocks $n off $s feet!
+
+~
+E
+wake~
+A bulging ripple in the room wakes you from your slumber!
+
+~
+E
+rwake~
+No description.
+
+~
+E
+$n's sleep gets disrupted.~
+~
+!
+2 450 0
+A
+1 look~
+1 up ceiling stream~
+if( sees_invis( ch ) )
+
+  act_tochar( #invis, ch );
+
+else
+
+  act_tochar( #up, ch );
+
+~
+E
+up~
+As you study the ceiling you realise that it is really a stream of water
+
+that is above you.  How this feat is possible is beyond your knowledge.
+
+~
+E
+invis~
+As you study the ceiling you realise that it is really a stream of water
+
+that is above you.  How this feat is possible is beyond your knowledge. 
+
+A shimmery outline of a trapdoor can be seen in the ceiling.
+
+~
+!
+0 0 0
+A
+climb use~
+stairs 1 up steps~
+if( is_open( room, up ) ) {
+
+  act_tochar( #climb, ch );
+
+  act_notchar( #rclimb, ch );
+
+  transfer( ch, find_room( 51753 ) );
+
+  act_notchar( #aclimb, ch );
+
+  }
+
+else {
+
+  act_tochar( #nope, ch );
+
+  act_notchar( #rnope, ch );
+
+  }
+
+~
+E
+climb~
+You climb up the stairs and through the stream above.
+
+~
+E
+rclimb~
+$n climbs up the stairs and through the stream above.
+
+~
+E
+aclimb~
+$n emerges from the stream.
+
+~
+E
+rclimbno~
+$n climbs up mid-air and then through the stream above.
+
+~
+E
+nope~
+You climb up the stairs only to bump your head on the strange ceiling
+
+above!
+
+~
+E
+rnope~
+$n climbs up the stairs only to bump $s head on the strange ceiling above!
+
+~
+!
+0 0 0
+A
+1 up~
+~
+if( is_open( room, up ) )
+
+  act_tochar( #open, ch );
+
+else
+
+  act_tochar( #closed, ch );
+
+~
+E
+open~
+Unless you can fly, which you can't, it may be best to use the stairs.
+
+~
+E
+closed~
+It would probably be best to take the stairs, but, there is no opening up.
+
+~
+!
+0 0 0
+A
+1 open~
+ceiling trapdoor 1 up door~
+if( sees_invis( ch ) ) {
+
+  act_tochar( #open, ch );
+
+  act_notchar( #ropen, ch );
+
+  send_to_room( #aopen, find_room( 51753 ) );
+
+  open( room, up );
+
+  }
+
+else
+
+  act_tochar( #nope, ch );
+
+~
+E
+open~
+You open the shimmery door above you.
+
+~
+E
+ropen~
+$n opens a shimmery door above you.
+
+~
+E
+aopen~
+A door on the bottom of the stream mysteriously opens.
+
+~
+E
+nope~
+You can't find anything to open.
+
+~
+!
+0 0 0
+-1
+S
+
+#45009
+A Fluctuating Tunnel~
+This section of the tunnel is made from ice that is constantly melting
+
+and refreezing.  The effect of this is that the dimensions of the tunnel
+
+are in a constant flux of change.  Icicles that were hanging from the
+
+ceiling one minute suddenly melt, only to refreeze on the journey to the
+
+floor and then shatter into pieces.  What is one minute a firm floor is a
+
+puddle of icy cold water the next.  Fingers of ice tentatively explore
+
+into other sections of the tunnel to both the north and south.
+
+~
+~
+-235274239 0 5 0
+D0
+~
+~
+0 -1 45010 10 10 5
+D2
+~
+~
+0 -1 45008 10 10 5
+A
+~
+~
+send_to_room( #hail, room );
+
+loop( all_in_room ) {
+
+  ch = rch;
+
+  if( is_player( ch ) ) {
+
+    if( !is_affected( ch, 25 ) ) {
+
+      i = 3d25;
+
+      dam_element( ch, i, "icy rain", 2 );
+
+      inflict_cold( ch, mob, i, "icy rain" );
+
+      }
+
+    }
+
+  }
+
+~
+E
+hail~
+@WThe tunnel is showered by ice-cold water and bits of ice!@n
+
+~
+!
+2 350 0
+2422 9 1509949540 3 0
+-1
+S
+
+#45010
+A Fluctuating Tunnel~
+This section of the constantly warping tunnels winds in from the east,
+
+bending ninety degrees towards the south.  The footing in the tunnel is
+
+hard to judge, as the actual dimensions of the walls, floor and ceiling
+
+are in a constant flux of change.  Fingers of ice protrude from the
+
+south, while licking flames dart in from the west.
+
+~
+~
+-235274239 0 5 0
+D1
+~
+~
+0 -1 45011 10 10 5
+D2
+~
+~
+0 -1 45009 10 10 5
+A
+~
+~
+acode( find_room( 45008 ), 1 );
+
+~
+!
+2 450 0
+-1
+S
+
+#45011
+A Fluctuating Tunnel~
+Flickering flames line this part of the tunnel, erupting from the floor
+
+to race up the walls to the ceiling, where they end their brief lives.  A
+
+few of the more adventurous flames dart into the south and western parts
+
+of the tunnel, with some of them managing to return before burning out.
+
+~
+~
+-235274239 0 5 0
+D2
+~
+~
+0 -1 45012 10 10 5
+D3
+~
+~
+0 -1 45010 10 10 5
+A
+~
+~
+send_to_room( #flame, room );
+
+loop( all_in_room ) {
+
+  ch = rch;
+
+  if( is_player( rch ) ) {
+
+    if( !is_affected( ch, 25 ) ) {
+
+      i = 3d25;
+
+      dam_element( ch, i, "burst of flame", 1 );
+
+      inflict_fire( mob, ch, i, "burst of flame" );
+
+      }
+
+    }
+
+  }
+
+~
+E
+flame~
+@RA patch of flames erupt from the floor!@n
+
+~
+!
+2 350 0
+2421 9 1509949540 3 0
+-1
+S
+
+#45012
+A Fluctuating Tunnel~
+Rippling walls, a bulging floor, and a billowing ceiling makes it
+
+difficult to judge the real dimensions of the room.  The shifting
+
+features make traversing this area difficult.  Flames quickly dart in
+
+from the north, some to die, and then just as quickly dart back out.  An
+
+odd gust of wind and flashes of light come from the south, in contrast to
+
+the flames.
+
+~
+~
+-235274239 0 5 0
+D0
+~
+~
+0 -1 45011 10 10 5
+D2
+~
+~
+0 -1 45013 10 10 5
+A
+~
+~
+acode( find_room( 45008 ), 1 );
+
+~
+!
+2 450 0
+-1
+S
+
+#45013
+A Fluctuating Tunnel~
+Tiny, transparent clouds float throughout this room, dissipating before
+
+they can venture northward or to the west.  Flashes of lighting
+
+illuminate the room sporadically and the odd gust of wind comes from
+
+nowhere, causing the small clouds to scatter in its wake.
+
+~
+[Dalthas] inflict doesn't work here either
+
+~
+-235274239 0 5 0
+D0
+~
+~
+0 -1 45012 10 10 5
+D1
+~
+~
+0 -1 45014 10 10 5
+A
+~
+~
+send_to_room( #flash, room );
+
+loop( all_in_room ) {
+
+  ch = rch;
+
+  if( is_player( ch ) ) {
+
+    if( !is_affected( ch, 25 ) ) {
+
+      i = 3d25;
+
+      dam_element( ch, i, "flash of lightning", 4 );
+
+      inflict_shock( mob, ch, i, "flash of lightning" );
+
+      }
+
+    }
+
+  }
+
+~
+E
+flash~
+@YA flash of lightning illuminates the room!@n
+
+~
+!
+2 350 0
+2420 9 1509949540 3 0
+-1
+S
+
+#45014
+A Fluctuating Tunnel~
+The odd sod of dirt rolls from the north, pausing before disintegrating
+
+into the ever fluctuating walls, floor or ceiling.  From the west the
+
+occasional gust of wind blows in, and flashes of lightning illuminates a
+
+cloud-filled room for just a brief moment.
+
+~
+~
+-235274239 0 5 0
+D0
+~
+~
+0 -1 45015 10 10 5
+D3
+~
+~
+0 -1 45013 10 10 5
+A
+~
+~
+acode( find_room( 45008 ), 1 );
+
+~
+!
+2 450 0
+-1
+S
+
+#45015
+A Fluctuating Tunnel~
+Thorny vines sprout from the ground to snake through loose piles of soil
+
+on the floor before climbing up the walls which they dominate, and then
+
+attempt to take control of the ceiling.  The life span of the vines is
+
+short, but fast-lived, and with each vine that dies, a new one is already
+
+taking its place.
+
+~
+[Dalthas] nada on inflict here
+
+~
+-235274239 0 5 0
+D0
+~
+~
+0 -1 45016 10 10 5
+D2
+~
+~
+0 -1 45014 10 10 5
+A
+~
+~
+send_to_room( #vines, room );
+
+loop( all_in_room ) {
+
+  ch = rch;
+
+  if( is_player( ch ) ) {
+
+    if( !is_affected( ch, 25 ) ) {
+
+      i = 3d25;
+
+      dam_element( ch, i, "falling thorny vine", 3 );
+
+      inflict_acid( mob, ch, i, "falling vine" );
+
+      }
+
+    }
+
+  }
+
+~
+E
+vines~
+@GA couple of thorny vines fall from the ceiling!@n
+
+~
+!
+2 350 0
+2419 9 1509949540 3 0
+-1
+S
+
+#45016
+A Fluctuating Tunnel~
+The oddly shifting aspects of this room are overshadowed by a huge pillar
+
+of multi-colored light that starts at the ceiling and heads down through
+
+a large hole in the floor.  The only other way out of this part of the
+
+tunnel is south, from which odd clumps of dirt spill into this room.
+
+~
+~
+-235274239 0 5 0
+D2
+~
+~
+0 -1 45015 10 10 5
+D5
+~
+~
+0 -1 45017 10 10 5
+E
+beam multi-colored multicolored light~
+This beam of light is composed of the colors red, white, blue and green. 
+
+The colors swirl together to form a column that starts at the ceiling and
+
+goes through a large hole in the floor.  Particles can be seen in the
+
+beam.  These particles float within the beam to drift slowly downward.
+
+~
+E
+l down floor~
+The floor of this part of the tunnel has a large hole that takes up most
+
+of the space here.  A beam of multicolored light passes through the hole
+
+down into a chamber below.
+
+~
+E
+hole~
+Looking through the hole you realise that it is a long way down to the
+
+floor of the chamber below.
+
+~
+A
+enter step~
+light~
+act_tochar( #float, ch );
+
+act_notchar( #rfloat, ch );
+
+transfer( ch, find_room( 45017 ) );
+
+act_notchar( #afloat, ch );
+
+~
+E
+nope~
+nope
+
+~
+E
+float~
+You step into the multicolored beam of light and gently float down to the
+
+chamber below.
+
+~
+E
+rfloat~
+$n steps into the multicolored beam of light and gently floats down to
+
+the chamber below.
+
+~
+E
+afloat~
+$n floats down gently from above in the beam of multicolored light.
+
+~
+E
+fall~
+You try and enter the beam of light but are repulsed back.  It is almost
+
+as if you are too heavy to enter the beam.
+
+~
+E
+rfall~
+$n tries to enter the beam of light but is repulsed back.
+
+~
+!
+0 0 0
+A
+1 down~
+~
+act_tochar( #down, ch );
+
+act_notchar( #rdown, ch );
+
+transfer( ch, find_room( 45017 ) );
+
+i = 4d20;
+
+dam_message( ch, i, "the fall" );
+
+inflict( ch, mob, i, "a fall" );
+
+act_notchar( #adown, ch );
+
+~
+E
+down~
+The floor of the chamber below is sure a long way down.  Luckily the
+
+journey to the floor is quick once you took that first step into the hole.
+
+~
+E
+rdown~
+$n steps out into the hole and plumments to the floor of the chamber
+
+below!
+
+~
+E
+adown~
+$n plummets down from above!
+
+~
+!
+0 0 0
+-1
+S
+
+#45017
+A Central Chamber~
+The main feature of this room is a beam of multicolored light that
+
+emanates from the floor and heads up through a round hole in the ceiling. 
+
+Exits exist for all the cardinal points from this room.  The exit to the
+
+north is bordered by leaping flames, in contrast to the southern exit
+
+through which the odd flash of lightning and drifting clouds can be spied. 
+
+A frosty mist billows out from the eastern exit, while flowered vines
+
+frame the way west.   
+
+~
+~
+-235405311 0 5 0
+D0
+~
+~
+0 -1 45018 10 10 5
+D1
+~
+~
+0 -1 45019 10 10 5
+D2
+~
+~
+0 -1 45020 10 10 5
+D3
+~
+~
+0 -1 45021 10 10 5
+D4
+~
+~
+0 -1 45016 10 10 5
+E
+beam multi-colored multicolored light~
+This beam of light is composed of the colors red, white, blue and green. 
+
+The colors swirl together to form a column that starts at the floor and
+
+goes through a large hole in the high ceiling.  Particles can be seen in
+
+the beam.  These particles float within the beam to drift slowly upwards.
+
+~
+E
+1 up ceiling~
+The ceiling of this chamber is at least fifteen feet high and has a large
+
+hole in its center.  There is no way to reach this hole, however, a beam
+
+of light passes through it.
+
+~
+A
+enter step~
+beam light~
+act_tochar( #up, ch );
+
+act_notchar( #rup, ch );
+
+transfer( ch, find_room( 45016 ) );
+
+act_notchar( #aup, ch );
+
+~
+E
+up~
+You step into the multicolored beam of light and then effortlessly float
+
+up.
+
+~
+E
+rup~
+$n steps into the multicolored beam of light and then effortlessly floats
+
+up.
+
+~
+E
+nope~
+You step into the multicolored beam of light but nothing happens.
+
+~
+E
+rnope~
+$n steps into the multicolored beam of light but nothing happens.
+
+~
+E
+aup~
+$n floats up from below within the beam of multicolored light!
+
+~
+!
+0 0 0
+A
+1 up~
+~
+act_tochar( #up, ch );
+
+~
+E
+up~
+The hole in the ceiling is to high up for you to climb through.
+
+~
+!
+0 0 0
+-1
+S
+
+#45018
+A Fiery Chamber~
+This chamber undulates in the wild play of the crackling flames that make
+
+up the floor, walls and ceiling.  The flames come in hues of red, orange,
+
+yellow and the occasional flash of blue and green.  New eruptions of fire
+
+burst from the floor at erratic intervals, some leaping as high as the
+
+ceiling, while others fizzle out or explode with a spray of embers.  The
+
+only way out of this fiery inferno is to the south, toward a multicolored
+
+beam of light.
+
+~
+~
+-235274239 0 5 0
+D2
+~
+~
+0 -1 45017 10 10 5
+A
+~
+~
+send_to_room( #flame, room );
+
+loop( all_in_room ) {
+
+  ch = rch;
+
+  if( is_player( ch ) ) {
+
+    if( is_affected( ch, 25 ) )
+
+      i = 0;
+
+    else {
+
+      i = 4d20;
+
+      dam_element( ch, i, "fiery burst", 1 );
+
+      inflict_fire( mob, ch, i, "burst of flame" );
+
+      }
+
+    }
+
+  }
+
+~
+E
+flame~
+@RA burst of flame errupts from the floor, engulfing the whole room!@n
+
+
+~
+!
+2 350 0
+2415 9 1509949540 3 0
+-1
+S
+
+#45019
+A Crystalline Chamber~
+The frosty cold temperatures of this chamber are perfect to keep the
+
+sparkling ice that makes up the walls, floor and ceiling from melting. 
+
+The back wall of the chamber looks as though it was a waterfall that was
+
+suddenly frozen to allow one to see the flow and rhythm that makes up a
+
+brief moment in the movement of the falling water.  A multicolored beam
+
+of light can be seen to the west.
+
+~
+~
+-235274239 0 5 0
+D3
+~
+~
+0 -1 45017 10 10 5
+A
+~
+~
+send_to_room( #icy, room );
+
+loop( all_in_room ) {
+
+  ch = rch;
+
+  if( is_player( ch ) ) {
+
+    if( is_affected( ch, 25 ) )
+
+      i = 0;
+
+    else {
+
+      i = 4d20;
+
+      dam_element( ch, i, "icy blast", 2 );
+
+      inflict_cold( ch, mob, i, "icy wind" );
+
+      }
+
+    }
+
+  }
+
+~
+E
+icy~
+@WAn icy blast of wind passes through the chamber!@n
+
+~
+!
+2 350 0
+2416 9 1509949540 3 0
+-1
+S
+
+#45020
+An Airy Chamber~
+Although it feels like there is a floor beneath your feet, your eyes tell
+
+you that you are suspended in mid-air.  Thick, fluffy clouds float by,
+
+their shapes constantly changing into all sorts of images, ranging from
+
+nonsensical, to animal, to monster.  Occasionally a flash of lightning
+
+streaks past, leaving behind the distinctive smell of ozone.  Toward the
+
+north is a beam of multicolored light.
+
+~
+~
+-235274239 0 5 0
+D0
+~
+~
+0 -1 45017 10 10 5
+A
+~
+~
+send_to_room( #flash, room );
+
+loop( all_in_room ) {
+
+  ch = rch;
+
+  if( is_player( ch ) ) {
+
+    if( is_affected( ch, 25 ) )
+
+      i = 0;
+
+    else {
+
+      i = 4d20;
+
+      dam_element( ch, i, "flash of lightning", 4 );
+
+      inflict_shock( ch, mob, i, "lightning strike" );
+
+      }
+
+    }
+
+  }
+
+~
+E
+flash~
+@YA flash of lightning brightens the room!@n
+
+~
+!
+2 350 0
+2417 9 1509949540 3 0
+-1
+S
+
+#45021
+An Earthen Chamber~
+Growing from a central point in the floor is a tangle of thorny vines
+
+that runs along the floor, up the walls and merges to form the ceiling of
+
+this chamber.  Flowers of all hues hang from the vines, releasing their
+
+delicate perfume to drift upon the slight currents in the room.  To the
+
+east is a large column of multicolored light.
+
+~
+~
+-235405311 0 5 0
+D1
+~
+~
+0 -1 45017 10 10 5
+A
+~
+~
+send_to_room( #thorn, room );
+
+loop( all_in_room ) {
+
+  ch = rch;
+
+  if( is_player( ch ) ) {
+
+    if( is_affected( ch, 25 ) )
+
+      i = 0;
+
+    else {
+
+      i = 4d20;
+
+      dam_element( ch, i, "thorny vine", 3 );
+
+      inflict_acid( mob, ch, i, "sprouting vine" );
+
+      }
+
+    }
+
+  }
+
+~
+E
+thorn~
+@GA thorny vine sprouts wildly from the floor!@n
+
+~
+!
+2 350 0
+2418 9 1509949540 3 0
+-1
+S
+
+#45022
+Twilight~
+This strange place seems to be an example of contradiction.  It is
+
+neither light nor dark here, and though the walls, floor and ceiling all
+
+feel solid, your eyes tell you that there are none of these things here. 
+
+This spot is caught between a realm of light to the west, a realm of
+
+night to the east and a place of floral beauty to the north.
+
+~
+[Janua] spectacular is an adjective, and I think you want a noun?
+
+~
+-235274239 0 9 0
+D0
+~
+~
+0 -1 45023 10 10 5
+D1
+~
+~
+0 -1 45024 10 10 5
+D2
+~
+~
+0 -1 45026 10 10 5
+D3
+~
+~
+0 -1 45025 10 10 5
+-1
+S
+
+#45023
+Bouquet~
+The best way to describe this spot is that it is a bouquet.  Flowers of
+
+all varieties and hues form walls and ceiling, while the ground is
+
+carpeted in a myriad of wild flowers.  It is impossible to find the light
+
+source that keeps this spot bathed in a warm, golden glow.  The buzzing
+
+of bees drone in the background, which when coupled with the delightful
+
+warmth of this place, imbue the area with a sleepy calm.  The only way
+
+out of here is to move south.
+
+~
+~
+-235274239 0 9 0
+D2
+~
+~
+0 -1 45022 10 10 5
+A
+~
+~
+act_tochar( #poof, ch );
+
+act_notchar( #rhaze, ch );
+
+transfer( ch, find_room( 62506 ) );
+
+act_notchar( #ahaze, ch );
+
+~
+E
+poof~
+@CAs you leave the room a strange haze descends around you.  When it
+
+clears you find yourself somewhere else.@n 
+
+~
+E
+rhaze~
+@CAs $n leaves the room a strange haze descends around $m.  When it
+
+clears $n is nowhere to be seen.@n 
+
+~
+E
+ahaze~
+@CA strange haze suddenly appears.  It quickly dissipates to reveal $n
+
+standing there.@n 
+
+~
+!
+3 0 4
+2491 9 1509949540 3 0
+-1
+S
+
+#45024
+Moonbeams~
+Sparkling stars make up the ground of this area with a moon overhead
+
+providing the light for them to reflect.  The moon also considerately
+
+provides a constant shower of moonbeams for whomever wishes to play
+
+amongst them.  The walls and ceiling, for want of a better term, are made
+
+up of dark velvety night which has suspended through it sparkling dots of
+
+light.
+
+~
+~
+-235274239 0 9 0
+D3
+~
+~
+0 -1 45022 10 10 5
+A
+~
+~
+acode( find_room( 45023 ), 1 );
+
+~
+!
+3 0 8
+2514 9 1509949540 3 0
+-1
+S
+
+#45025
+Sunshine~
+Bright, warm sunshine shines down on a thickly grassed meadow.  There
+
+seems to not be a sun here as such, but walls and a ceiling of pure
+
+sunlight that keeps the meadow perpetually lit.  The sounds of birds
+
+singing a great natural symphony comes from some unknown source.  The
+
+warmth of the sunshine and the birds' song imbue the area with a
+
+lethargic well-being.
+
+~
+~
+-235274239 0 9 0
+D1
+~
+~
+0 -1 45022 10 10 5
+A
+~
+~
+acode( find_room( 45023 ), 1 );
+
+~
+!
+3 0 2
+2515 9 1509949540 3 0
+-1
+S
+
+#45026
+A Room of Rainbows~
+Rainbows adorn this area as if they were blossoms hanging off bowers. 
+
+The many rainbows arch over, through, under and around each other, as
+
+well as enabling one to have something to stand upon.  In all directions
+
+except north rainbow upon rainbow can be seen, though it is impossible to
+
+move amongst the far off ribbons of color.
+
+~
+~
+-235274239 0 9 0
+D0
+~
+~
+0 -1 45022 10 10 5
+2536 9 1509949540 3 0
+-1
+S
+
+#0
+

@@ -1,0 +1,1288 @@
+#AREA
+Broken Forest~
+Deimos~
+~
+
+45 0
+0
+#ROOMS
+
+#64000
+At the Twisted Throne~
+This is the top of a small rise in the middle of a broken forest.  All
+
+around blackened stumps and jagged tree trunks poke out of the thick
+
+misty haze that rests uneasily over the area.  A curving line of smooth,
+
+block-like stones form a sort of stairyway down from the mound. At the
+
+back of the mound is a wide, gnarled grey trunk that seems to be somewhat
+
+in the shape of a chair, or perhaps a throne.  At either side of it rest
+
+short wooden pillars, topped with softly glowing yellowish spheres.
+
+~
+~
+-235405311 4 5 0
+-1
+S
+
+#64001
+On a Secluded Path~
+This thin path winds through the hills, past several dry shrubs.  The air
+
+here feels cool, and little light gets through the canopy of trees.  The
+
+trail itself is rough-hewn, as though someone hacked their way through
+
+the bushes.  The grass at your feet seems to have died and rotted away,
+
+leaving only a sickly brown covering to mark the trail.  The foliage at
+
+the sides of the path is healthy, as far as you can tell.
+
+~
+west is room 64002
+
+~
+-235405311 4 9 0
+D3
+~
+~
+0 -1 64002 10 10 5
+A
+~
+~
+act_tochar( #mist, ch );
+
+continue;
+
+~
+E
+mist~
+As you move further down the trail, a great mist rises up around you, obscuring your vision.
+
+~
+!
+3 0 8
+-1
+S
+
+#64002
+In the Mist~
+A great mist hangs over this area, making it difficult to see much
+
+further than a few feet in front of you.  All around, the sounds of
+
+strange animals pierce the air, and there is a faint stench of death. 
+
+The ground seems to be devoid of plantlife; it is merely a dusty trail
+
+covered with small, sharp stones.  Every now and then, you think you can
+
+see a shadowed shape moving past at the sides of the trail.
+
+~
+~
+-235405311 4 9 0
+D1
+~
+~
+0 -1 64001 10 10 5
+D3
+~
+~
+0 -1 64003 10 10 5
+A
+~
+~
+act_tochar( #enter, ch );
+
+continue;
+
+~
+E
+enter~
+As you move through the mist, it gradually clears up.
+
+~
+!
+3 0 10
+-1
+S
+
+#64003
+On the Trail~
+The trail is surrounded on its sides by shrubs and trees that appear to
+
+have been badly burned.  The smell of burnt plantlife is in the air, and
+
+all about the trail lie bits of burnt bark and other plants.  A short,
+
+high-pitched screech pierces the air, and black birds scatter from the
+
+nearby trees at the sound.  Below the sudden burst of noise, you think
+
+you can hear a low growl.
+
+~
+~
+-235405311 4 9 0
+D0
+~
+~
+0 -1 64004 10 10 5
+D1
+~
+~
+0 -1 64002 10 10 5
+D3
+~
+~
+0 -1 64006 10 10 5
+A
+~
+~
+act_tochar( #mist, ch );
+
+continue;
+
+~
+E
+mist~
+As you move further down the trail, a great mist rises up around you, obscuring your vision.
+
+~
+!
+3 0 2
+-1
+S
+
+#64004
+By the Dark Pool~
+There is a dark pool of some sort of thick liquid here.  A bent,
+
+blackened tree leans by the side of the pool, and a light breeze sends
+
+slow ripples across the liquid's surface.  A number of sharp rocks litter
+
+the ground around the pool, and there is an acrid smell in the air.  Half
+
+submerged in the dark liquid, a skeleton clings to a fallen branch on the
+
+tree.
+
+~
+~
+-235405311 4 9 0
+D2
+~
+~
+0 -1 64003 10 10 5
+D3
+~
+~
+0 -1 64005 10 10 5
+E
+skeleton~
+This appears to be the skeleton of an elf of some sort.  It is fairly
+
+well wedged in the pool, probably caught about the aankle.  There doesn't
+
+appear to be anything unusual about it though.
+
+~
+E
+pool~
+This is a pool of a thick liquid.  It is quite dark, and you can't see
+
+anything beyond its surface, but it ripples in the breeze.  And odd
+
+attribute for a liquid as thick as it is.
+
+~
+2327 9 1509949540 3 0
+-1
+S
+
+#64005
+On the Trail~
+A large rock blocks the way to the north, and the trail continues past
+
+it; around to the west and southwards.  To the east you can see light
+
+glistening off something - possible a pool of some sort.  An acrid smell
+
+hangs about the air here, and judging from the breeze it seems to have
+
+ridden in from the east.  A large skull lies on the ground in the middle
+
+of the trail, and it seems to be grinning at you.
+
+~
+~
+-235405311 4 9 0
+D1
+~
+~
+0 -1 64004 10 10 5
+D2
+~
+~
+0 -1 64006 10 10 5
+D3
+~
+~
+0 -1 64007 10 10 5
+E
+skull~
+This is the skull of some large creature, possible an ogre or a trooll. 
+
+It seems to be grinning at you.
+
+~
+E
+rock~
+This is a large grey stone, carbon-stained from whatever great
+
+conflagration struck this place.  It stands about seven feet tall, and is
+
+easily ten feet across.
+
+~
+A
+get~
+skull~
+act_tochar( #get, ch );
+
+~
+E
+get~
+You reach down and try to pick up the skull, but as you pull on it, you
+
+find out that it is stuck.  Perhaps there is something holding it down,
+
+beneath the ground.
+
+~
+!
+0 0 0
+A
+dig~
+skull~
+act_tochar( #dig, ch );
+
+~
+E
+dig~
+As you dig around the skull, you find that it seems to be attached to at
+
+least part of the rest of the skeleton.  It seems this creature was
+
+buried underground and left to die here.
+
+~
+!
+0 0 0
+-1
+S
+
+#64006
+On the Trail~
+The trail curves between a thick patch of trees and shrubbery, all of
+
+which bear the similar blackened colour of the rest of this place.  It
+
+smells foul here, but you cannot put a finger on what the smell is. 
+
+Sharp stones litter the ground, and every now and then you can see a
+
+small piece of bone.
+
+~
+~
+-235405311 4 9 0
+D0
+~
+~
+0 -1 64005 10 10 5
+D1
+~
+~
+0 -1 64003 10 10 5
+2355 9 1509949540 3 0
+-1
+S
+
+#64007
+On the Trail~
+The trail curves around a large rock that lies to the north west.  Most
+
+of the shrubs here are torn off at their base, leaving small stumps.  The
+
+trees seem to have been likewise dealt with, and the few that still stand
+
+are badly burned.  All about the ground like small sharp stones and bits
+
+of bone.  To the west the ground drops off down a sharp incline that is
+
+riddled with sharp, jagged rocks and thorny shrubs.
+
+~
+~
+-235405311 4 9 0
+D0
+~
+~
+0 -1 64008 10 10 5
+D1
+~
+~
+0 -1 64005 10 10 5
+E
+cliff west~
+You don't think you could make it down there.  The rocks are very sharp,
+
+and the shrubs block any passage between them.
+
+~
+E
+rock~
+This large rock appears to be about six to eight feet tall, and is, from
+
+this angle, some seven feet wide.
+
+~
+2327 9 1509949540 3 0
+-1
+S
+
+#64008
+Between the Boulders~
+The trail cuts between two large boulders here.  One of them lies to the
+
+southeast, and the other rests to the north, surrounded by burned shrubs
+
+and trees.  A single footprint has been cast in dried mud in the ground
+
+here, and it is splattered with dried blood.  A large pool of blood
+
+appears to have dried in its heel, as well.
+
+~
+~
+-235405311 4 9 0
+D1
+~
+~
+0 -1 64009 10 10 5
+D2
+~
+~
+0 -1 64007 10 10 5
+D3
+~
+~
+0 -1 64011 10 10 5
+E
+footprint~
+The mud seems to have been formed by an outwash of water from the east. 
+
+A slight incline led the water downhill to the west, and whoever left the
+
+footprint must have stepped in it on their way north.  Judging from the
+
+angle of the print, and that there are no others around, whoever left it
+
+may very well have been running.
+
+~
+-1
+S
+
+#64009
+By the Boulder~
+A large boulder, easily the size of two ogres, rests just at the south
+
+edge of the trail here.  Charred shrubs litter the sides of the trail,
+
+and every now and then you can see a short, black stump.  The air here
+
+smells of stagnant water and rotting vegetation.
+
+~
+~
+-235405311 4 9 0
+D0
+~
+~
+0 -1 64014 10 10 5
+D1
+~
+~
+0 -1 64010 10 10 5
+D3
+~
+~
+0 -1 64008 10 10 5
+-1
+S
+
+#64010
+Marshy Ground~
+This is a small, shallow patch of marshy ground.  Rotting brown
+
+vegetation floats on the surface of the stagnant water here, and small
+
+insects flit about the area.  The air here is quite foul, smelling of
+
+stagnant water and rotting vegetation, and something else you cannot
+
+identify.  There is an unnervingly eerie feel to this place.
+
+~
+~
+-235405311 4 9 0
+D3
+~
+~
+0 -1 64009 10 10 5
+2327 9 1509949540 3 0
+-1
+S
+
+#64011
+Along the Cliff~
+The path runs along the side of a tall cliff here, and is pressed against
+
+it by a large boulder to the east.  Sharp rocks and thorny, blackened
+
+shrubs litter the side of the cliff, which rests at a sharp incline.  It
+
+is not a straight drop, but rather leans out enough that one falling over
+
+it would roll through the rocks and shrubs on their way down.
+
+~
+~
+-235405311 4 9 0
+D0
+~
+~
+0 -1 64012 10 10 5
+D1
+~
+~
+0 -1 64008 10 10 5
+-1
+S
+
+#64012
+Along the Cliff~
+A tall spire of stone blocks the way north, and so the path winds around
+
+it to the east, and also continues south along a cliffside.  Sharp rocks
+
+and burned shrubs litter the side of the cliff, and the path is strewn
+
+with sandy black dust and small sharp stones as well.  There are a few
+
+broken, burned trees here as well, marked by a series of deep scratches,
+
+as if they have been clawed at.
+
+~
+~
+-235405311 4 9 0
+D1
+~
+~
+0 -1 64013 10 10 5
+D2
+~
+~
+0 -1 64011 10 10 5
+2327 9 1509949540 3 0
+-1
+S
+
+#64013
+North of the Boulder~
+A winding trail here stretches around a large boulder to the south,
+
+heading west towards a cliff.  The boulder stands a good ten feet tall,
+
+and is easily another twelve feet wide.  Charred trees surround it,
+
+nestled amongst similarly damaged shrubs, so you can't see further south
+
+around the large rock.  The ground here is stained with old, dried blood,
+
+and you can see some patches of thick, greyish fur scattered about the
+
+bloodstains.
+
+~
+~
+-235405311 4 9 0
+D0
+~
+~
+0 -1 64018 10 10 5
+D1
+~
+~
+0 -1 64014 10 10 5
+D3
+~
+~
+0 -1 64012 10 10 5
+2355 9 1509949540 3 0
+-1
+S
+
+#64014
+On the Trail~
+The trail splits here, winding northwards through a small ravine, and
+
+working its way also around a boulder to the southwest.  Small, sharp
+
+stones litter the ground, and there are blackened shrubs and broken trees
+
+all along the sides of the trail.  A light mist rests over the area, but
+
+it is not enough to limit your vision any more than the trees and boulder
+
+already do.
+
+~
+~
+-235405311 4 9 0
+D0
+~
+~
+0 -1 64015 10 10 5
+D2
+~
+~
+0 -1 64009 10 10 5
+D3
+~
+~
+0 -1 64013 10 10 5
+-1
+S
+
+#64015
+Trail Through a Ravine~
+The trail burrows deep into the ravine, as the walls climb high up at
+
+your sides.  There are a few brown shrubs clinging to the walls, and
+
+sharp stones litter the ground.  A thin line of mud marks the center of
+
+the trail, indicating that water flowed through here fairly recently.  At
+
+one point, the mud widens, and has a large, clawed footprint in it.
+
+~
+~
+-235405311 4 9 0
+D1
+~
+~
+0 -1 64016 10 10 5
+D2
+~
+~
+0 -1 64014 10 10 5
+2355 9 1509949540 3 0
+-1
+S
+
+#64016
+Trail Through a Ravine~
+The trail curves here, following the horseshoe shape of the ravine walls. 
+
+A thin line of mud marks the center of the trail, but it widens in
+
+places, and some of them have a clawed footprint in them.  Dry, brownish
+
+vegetation hangs from the ravine walls, and every now and then a light
+
+rumble sends small pebbles and dust down on top of you.
+
+~
+~
+-235405303 4 9 0
+D2
+~
+~
+0 -1 64017 10 10 5
+D3
+~
+~
+0 -1 64015 10 10 5
+-1
+S
+
+#64017
+End of the Ravine~
+The ground here is very muddy, as though it had rained here recently.  A
+
+number of clawed footprints can be seen in the mud, and judging from
+
+other marks around them, whatever left them was moving around in a rather
+
+chaotic manner.  Looking along the path they take, you soon find out why. 
+
+The grey-furred creature that appears to have left these prints lies in a
+
+corner, in a pool of its own blood.
+
+~
+~
+-235405311 4 9 0
+D0
+~
+~
+0 -1 64016 10 10 5
+2330 9 1509949540 3 0
+-1
+S
+
+#64018
+On the Trail~
+The trail is blocked off at the sides by thickly packed shrubs and trees. 
+
+All of the vegetation is charred, as if by some great inferno, and many
+
+of the trees are little more than tall, jagged stumps.  A light mist
+
+rests over the area here, and blocks off any further sight past the
+
+burned flora.
+
+~
+~
+-235405311 4 9 0
+D0
+~
+~
+0 -1 64019 10 10 5
+D2
+~
+~
+0 -1 64013 10 10 5
+2327 9 1509949540 3 0
+-1
+S
+
+#64019
+On the Trail~
+The trail curves through the blackened, broken forest here.  The smell of
+
+burned wood and plantlife fills the mist-laden air here, but it is also
+
+tainted with another, unidentifiable odor.  Small, sharp stones litter
+
+the soot-mixed dirt of the trail, and a few black leaves can be seen
+
+among them.
+
+~
+~
+-235405311 4 9 0
+D1
+~
+~
+0 -1 64020 10 10 5
+D2
+~
+~
+0 -1 64018 10 10 5
+2355 9 1509949540 3 0
+-1
+S
+
+#64020
+On the Trail~
+The trail winds past a small cave here, nestled amongst a large swath of
+
+rocky ground that rises up to the east.  A number of burned tree stumps
+
+litter the area here, one of which grows in the middle of the trail.  It
+
+is quite warm here, and a faint smell of burned vegetation lingers in the
+
+air.
+
+~
+~
+-235405311 4 9 0
+D0
+~
+~
+0 -1 64022 10 10 5
+D1
+~
+~
+0 -1 64021 10 10 5
+D3
+~
+~
+0 -1 64019 10 10 5
+2327 9 1509949540 3 0
+-1
+S
+
+#64021
+Small Cave~
+It is fairly dark here, and the air is quite musty.  You can hear water
+
+dripping somewhere off in the back of the cave, and the wind blowing
+
+through here makes an eerie sound.  The ground is almost entirely rock,
+
+with a few patches of mud and small, shallow pools of water in places. 
+
+It is very cold here, some of the pools of water are partially frozen
+
+over.
+
+~
+~
+-235405303 4 9 0
+D3
+~
+~
+0 -1 64020 10 10 5
+A
+~
+~
+wait( 1 );
+
+if( rflag( reset2, room ) ){
+
+  mload( 2328, room );
+
+  act_room( #fear, ch );
+
+  remove_rflag( reset2, room );
+
+}
+
+continue;
+
+~
+E
+fear~
+The wind rises up to a shrill pitch, and coalesces into a shadowy form in front of you!
+
+~
+!
+1 0 8
+-1
+S
+
+#64022
+On the Trail~
+The trail winds past a cave that is nestled in the tall, rocky rise to
+
+the north.  Tall, jagged tree stumps rest at the sides of the trail, and
+
+jut out of the ground on the rise.  Sharp stones litter the ground here,
+
+scattered amidst a layer of black soot and brown dirt.
+
+~
+~
+-235405311 4 9 0
+D0
+~
+~
+0 -1 64023 10 10 5
+D2
+~
+~
+0 -1 64020 10 10 5
+D3
+~
+~
+0 -1 64024 10 10 5
+2355 9 1509949540 3 0
+-1
+S
+
+#64023
+Small Cave~
+This cave is quite dark, and a chill wind blows through it, making eerie
+
+sounds.  The air is musty, and you can barely make out the sound of water
+
+dripping somewhere off in the darkness.  The floor of the cave is almost
+
+all rock, with a few frozen pools scattered across it.
+
+~
+~
+-235405303 4 9 0
+D2
+~
+~
+0 -1 64022 10 10 5
+A
+~
+~
+wait( 1 );
+
+if( rflag( reset2, room ) ){
+
+  mload( 2328, room );
+
+  act_room( #fear, ch );
+
+  remove_rflag( reset2, room );
+
+}
+
+continue;
+
+~
+E
+fear~
+The wind rises up to a shrill pitch, and coalesces into a shadowy form in
+
+front of you!
+
+~
+!
+1 0 4
+-1
+S
+
+#64024
+On the Trail~
+The trail winds between a rise to the northeast and a thick swath of
+
+blackened shrubs and trees to the south.  The air is slightly misty here,
+
+but not so much that it impairs your vision.  A thick stench of burned
+
+vegetation is purvasive in this place, making breathing a little more
+
+difficult.  North of here you can see an incredibly large tree that must
+
+stand at least a hundred feet tall.
+
+~
+~
+-235405311 4 9 0
+D0
+~
+~
+0 -1 64025 10 10 5
+D1
+~
+~
+0 -1 64022 10 10 5
+2327 9 1509949540 3 0
+-1
+S
+
+#64025
+Before the Great Tree~
+This tree, were it still alive, might rival the great Shuvana trees in
+
+the Vaasa.  It stands easily over a hundred feet tall, maybe even as much
+
+as two hundred, and is over sixty feet wide.  A set of black stone steps
+
+extend from it, leading up to a great opening that has been cut to look
+
+like a vicious, gaping maw.  There are a few more smaller openings
+
+further up above the maw, that seem to serve as windows.
+
+~
+~
+-235405311 4 9 0
+D2
+~
+~
+0 -1 64024 10 10 5
+A
+climb~
+stairs up~
+transfer( ch, find_room( 64031 ) );
+
+loop( followers )
+
+  transfer( ch, find_room( 64031 ) );
+
+~
+!
+0 0 0
+-1
+S
+
+#64026
+By the Blazing Forge~
+The heat in this place is incredible.  A great fire burns furiously in a
+
+large forge set against a back wall, and an anvil on a big chunk of
+
+granite sits next to the forge.  A barrel of water in the corner of the
+
+room has a puddle formed about its base.  Along the walls, poles of
+
+various metals have been laid, and there are a few sacks of powder
+
+scattered about the room.
+
+~
+[Coventine] looking at Fahrth: No description.
+
+~
+-235401209 4 9 0
+D1
+~
+~
+0 -1 64027 10 10 5
+2465 9 1509949540 3 0
+-1
+S
+
+#64027
+Inside the Smithy~
+This room is quite warm.  The heat is emanating from the large room to
+
+the west.  Firelight dances about the walls in here, casting eerie
+
+shadows across the dull grey stones.  Somewhere under the smell of
+
+burning coals, you think you can detect the smell of berries of some kind. 
+
+The room itself is mostly unadorned, with no furniture other than large
+
+stone benches set against the walls.
+
+~
+~
+-235405307 4 9 0
+D0
+~
+~
+0 -1 64028 10 10 5
+D1
+door~
+~
+131 -1 64029 10 10 5
+D3
+~
+~
+0 -1 64026 10 10 5
+-1
+S
+
+#64028
+A Large Kitchen~
+The smell of a freshly baked berry pie is pervasive in this room.  Heat
+
+radiates from a large oven at the back wall, and you can see flames
+
+flickering about in its base.  Numerous counters and cupboards line the
+
+walls, most of which stand open.  You can see a number of bags, bottles
+
+of spices, and a few tins set in them.
+
+~
+~
+-235401209 4 9 0
+D2
+~
+~
+0 -1 64027 10 10 5
+2466 9 1509949540 3 0
+2951 17 1509949540 -1 0
+3262 17 1509949540 -1 0
+1134 17 1509949540 -1 0
+3257 17 1509949540 -1 0
+3338 17 1509949540 -1 0
+-1
+S
+
+#64029
+Outside the Smithy~
+This little side path stops before a small smithy.  The building is
+
+surrounded by trees and is nestled in the hilly terrain, so it would be
+
+difficult to see from any other spot than where you are now.  Smoke wafts
+
+up from three great chimneys at the back of the building, and you can
+
+smell what seems to be a hot berry pie of some sort.
+
+~
+~
+-235405311 4 9 0
+D2
+~
+~
+0 -1 64030 10 10 5
+D3
+door~
+~
+131 -1 64027 10 10 5
+-1
+S
+
+#64030
+Small Side Path~
+This is a little side path off the main road.  It winds between bushes
+
+and large rocks, and you tread carefully to avoid losing your footing. 
+
+The path itself is just cleared ground, with little stones and weeds
+
+scattered across it.  It doesn't seem to have been traveled much, but you
+
+can see one large booted footprint in some dried mud at the side of the
+
+path.
+
+~
+~
+-235405311 4 9 0
+D0
+~
+~
+0 -1 64029 10 10 5
+D2
+~
+~
+0 -1 26567 10 10 5
+-1
+S
+
+#64031
+Entrance Hall~
+The entrance hall to the dark tree is very foreboding.  Tall, pitch black
+
+walls rise up to an arched ceiling that continues on for several hundred
+
+feet to the north.  Pillars of polished, black material stand a few feet
+
+out from the walls, joining with the ceiling above.  A wide set of steps
+
+leads down through an open arch, to the outside of the tree.
+
+~
+~
+-235405299 4 9 0
+D0
+~
+~
+0 -1 64032 10 10 5
+A
+climb~
+stairs down~
+transfer( ch, find_room( 64025 ) );
+
+loop( followers )
+
+  transfer( ch, find_room( 64025 ) );
+
+~
+!
+0 0 0
+-1
+S
+
+#64032
+Dark Hallway~
+Under Construction.
+
+~
+~
+-235405311 4 9 0
+D0
+~
+~
+0 -1 64035 10 10 5
+D1
+~
+~
+0 -1 64034 10 10 5
+D2
+~
+~
+0 -1 64031 10 10 5
+D3
+~
+~
+0 -1 64033 10 10 5
+-1
+S
+
+#64033
+Guard Chamber~
+Under Construction.
+
+~
+~
+-235405311 4 9 0
+D1
+~
+~
+0 -1 64032 10 10 5
+2531 9 1509949540 3 0
+-1
+S
+
+#64034
+Guard Chamber~
+Under Construction.
+
+~
+~
+-235405311 4 9 0
+D3
+~
+~
+0 -1 64032 10 10 5
+2531 9 1509949540 3 0
+-1
+S
+
+#64035
+Dark Hallway~
+Under Construction.
+
+~
+~
+-235405311 4 9 0
+D0
+~
+~
+0 -1 64036 10 10 5
+D2
+~
+~
+0 -1 64032 10 10 5
+-1
+S
+
+#64036
+Spiral Stairwell~
+Under Construction.
+
+~
+~
+-235405311 4 9 0
+D2
+~
+~
+0 -1 64035 10 10 5
+D4
+~
+~
+0 -1 64037 10 10 5
+A
+~
+~
+act_tochar( #ascend, ch );
+
+continue;
+
+~
+E
+ascend~
+You ascend the spiral stairway, climbing slowly to the next floor.
+
+~
+!
+3 0 16
+2531 9 1509949540 3 0
+-1
+S
+
+#64037
+Top of the Stairwell~
+Under Construction.
+
+~
+~
+-235405303 4 9 0
+D2
+~
+~
+0 -1 64038 10 10 5
+D5
+~
+~
+0 -1 64036 10 10 5
+A
+~
+~
+act_tochar( #descend, ch );
+
+continue;
+
+~
+E
+descend~
+You slowly climb down the stairwell, descending to the floor below.
+
+~
+!
+3 0 32
+-1
+S
+
+#64038
+Great Hall~
+~
+~
+-235405311 4 9 0
+D0
+~
+~
+0 -1 64037 10 10 5
+D2
+~
+~
+0 -1 64039 10 10 5
+2460 9 1509949540 3 0
+-1
+S
+
+#64039
+By the Blackoak Throne~
+The blackened oak walls spread out into a large chamber here, at the back
+
+of which a throne has been cut from the dead wood.  There is light in
+
+here, although it is difficult to tell from where it comes.  A red carpet
+
+runs from the throne out into a hall behind you, and tapestries hang from
+
+the sides of the room.
+
+~
+~
+-235405311 4 9 0
+D0
+~
+~
+0 -1 64038 10 10 5
+2329 9 1509949540 3 0
+-1
+S
+
+#0
+
